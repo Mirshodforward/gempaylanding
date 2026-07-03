@@ -1,0 +1,92 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Navbar from "../../components/Navbar.astro";
+import Hero from "../../components/Hero.astro";
+import Games from "../../components/Games.astro";
+import Features from "../../components/Features.astro";
+import HowItWorks from "../../components/HowItWorks.astro";
+import Stats from "../../components/Stats.astro";
+import Developers from "../../components/Developers.astro";
+import FAQ from "../../components/FAQ.astro";
+import CTA from "../../components/CTA.astro";
+import Footer from "../../components/Footer.astro";
+import { COPY, GAMES, BOT_URL, DOCS_URL } from "../../i18n/copy";
+
+const lang = "ru";
+const t = COPY[lang];
+const SITE = "https://gempay.uz";
+
+const schema = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Gempay",
+    url: `${SITE}/ru`,
+    inLanguage: "ru-RU",
+    description: t.metaDescription,
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Gempay",
+    url: SITE,
+    logo: `${SITE}/icon-512x512.png`,
+    description: t.metaDescription,
+    sameAs: [BOT_URL, DOCS_URL],
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    serviceType: "Game currency top-up",
+    name: "Gempay — игровая валюта",
+    url: `${SITE}/ru`,
+    inLanguage: ["ru", "uz"],
+    areaServed: { "@type": "Country", name: "Uzbekistan" },
+    provider: { "@type": "Organization", name: "Gempay", url: SITE },
+    description: t.metaDescription,
+    offers: {
+      "@type": "AggregateOffer",
+      priceCurrency: "UZS",
+      availability: "https://schema.org/InStock",
+      offerCount: 4600,
+    },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Games",
+      itemListElement: GAMES.map((g) => ({
+        "@type": "Offer",
+        itemOffered: { "@type": "Product", name: `${g.name} ${g[lang].currency}` },
+      })),
+    },
+  },
+];
+---
+
+<Layout
+  title={t.htmlTitle}
+  description={t.metaDescription}
+  keywords={t.keywords}
+  canonical={`${SITE}/ru`}
+  lang="ru"
+  hreflangs={[
+    { lang: "uz", href: SITE },
+    { lang: "ru", href: `${SITE}/ru` },
+  ]}
+>
+  {schema.map((s) => (
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify(s)} />
+  ))}
+
+  <Navbar lang="ru" />
+  <main>
+    <Hero lang="ru" />
+    <Stats lang="ru" />
+    <Games lang="ru" />
+    <Features lang="ru" />
+    <HowItWorks lang="ru" />
+    <Developers lang="ru" />
+    <FAQ lang="ru" />
+    <CTA lang="ru" />
+  </main>
+  <Footer lang="ru" />
+</Layout>

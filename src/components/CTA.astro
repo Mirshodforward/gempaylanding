@@ -1,0 +1,70 @@
+---
+import { COPY, APP_URL, DOCS_URL, type Lang } from "../i18n/copy";
+import Icon from "./Icon.astro";
+import Logo from "./Logo.astro";
+interface Props { lang?: Lang }
+const { lang = "uz" } = Astro.props;
+const t = COPY[lang].cta;
+---
+
+<section class="cta-section">
+  <div class="cta-box fade-in">
+    <div class="cta-glow" aria-hidden="true"></div>
+    <div class="cta-logo"><Logo size={64} withText={false} /></div>
+    <h2 class="cta-title font-display">{t.title}</h2>
+    <p class="cta-text">{t.text}</p>
+    <div class="cta-buttons">
+      <a href={APP_URL} class="btn-cyan btn-pulse" target="_blank" rel="noopener"><Icon name="telegram" size={17} /> {t.play}</a>
+      <a href={DOCS_URL} class="btn-secondary" target="_blank" rel="noopener"><Icon name="code" size={16} /> {t.docs}</a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .cta-section { padding: 90px 24px; }
+  .cta-box {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 70px 32px;
+    border-radius: 28px;
+    overflow: hidden;
+    background:
+      radial-gradient(circle at 50% 0%, rgba(124, 92, 255, 0.18), transparent 60%),
+      linear-gradient(180deg, var(--bg-2), var(--card));
+    border: 1px solid var(--border);
+  }
+  .cta-glow {
+    position: absolute;
+    left: 50%; top: -40%;
+    width: 520px; height: 520px;
+    transform: translateX(-50%);
+    background: radial-gradient(circle, rgba(34, 211, 238, 0.14), transparent 65%);
+    pointer-events: none;
+    animation: glow-pulse 4s ease-in-out infinite;
+  }
+  .cta-logo { display: flex; justify-content: center; margin-bottom: 18px; position: relative; animation: float 5s ease-in-out infinite; }
+  .cta-title {
+    font-size: clamp(1.9rem, 5vw, 3rem);
+    font-weight: 800;
+    margin-bottom: 14px;
+    position: relative;
+  }
+  .cta-text {
+    color: var(--text-muted);
+    font-size: 1.1rem;
+    max-width: 540px;
+    margin: 0 auto 32px;
+    line-height: 1.7;
+    position: relative;
+  }
+  .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; position: relative; }
+
+  @media (max-width: 520px) {
+    .cta-section { padding: 60px 16px; }
+    .cta-box { padding: 50px 20px; border-radius: 20px; }
+    .cta-text { font-size: 1rem; }
+    .cta-buttons :global(.btn-cyan), .cta-buttons :global(.btn-secondary) { width: 100%; justify-content: center; }
+  }
+</style>

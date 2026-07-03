@@ -1,0 +1,233 @@
+---
+import { COPY, APP_URL, type Lang } from "../i18n/copy";
+import Icon from "./Icon.astro";
+interface Props { lang?: Lang }
+const { lang = "uz" } = Astro.props;
+const t = COPY[lang].hero;
+---
+
+<section class="hero" id="hero">
+  <!-- ambience layers -->
+  <div class="glow glow-1" aria-hidden="true"></div>
+  <div class="glow glow-2" aria-hidden="true"></div>
+  <div class="sparks" aria-hidden="true">
+    {Array.from({ length: 14 }).map((_, i) => (
+      <span style={`left:${(i * 7 + 4) % 100}%; animation-delay:${(i * 0.9).toFixed(1)}s; animation-duration:${(7 + (i % 5)).toFixed(0)}s;`}></span>
+    ))}
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-content">
+      <span class="hero-badge fade-in">
+        <span class="live-dot"></span>{t.badge}
+      </span>
+      <h1 class="hero-title font-display fade-in">
+        {t.titleA}<br />
+        <span class="hero-hi">{t.titleHi}</span> {t.titleB}
+      </h1>
+      <p class="hero-desc fade-in">{t.desc}</p>
+
+      <div class="hero-buttons fade-in">
+        <a href={APP_URL} class="btn-primary btn-pulse" target="_blank" rel="noopener">
+          <Icon name="bolt" size={17} /> {t.play}
+        </a>
+        <a href="#games" class="btn-secondary">{t.secondary} <Icon name="arrow-down" size={17} /></a>
+      </div>
+
+      <div class="hero-meta fade-in">
+        <div class="hero-live">
+          <span class="live-dot"></span>
+          <strong data-count="1240">1240</strong>&nbsp;{t.live}
+        </div>
+        <span class="hero-sep" aria-hidden="true"></span>
+        <ul class="pay-legend">
+          <li>Payme</li><li>Click</li><li>{lang === "ru" ? "Карта" : "Karta"}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- AEO direct answer (visible, concise) -->
+  <p class="hero-answer fade-in">{t.answer}</p>
+</section>
+
+<style>
+  .hero {
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 150px 24px 60px;
+    overflow: hidden;
+  }
+
+  /* ── ambience ── */
+  .glow {
+    position: absolute;
+    left: -20%; width: 140%; height: 320px;
+    background: radial-gradient(ellipse at center, rgba(124, 92, 255, 0.12), transparent 70%);
+    filter: blur(20px);
+    pointer-events: none;
+  }
+  .glow-1 { bottom: -60px; animation: drift 26s linear infinite; }
+  .glow-2 { top: 20%; background: radial-gradient(ellipse at center, rgba(34, 211, 238, 0.1), transparent 70%); animation: drift 34s linear infinite reverse; }
+  @keyframes drift { 0% { transform: translateX(-6%); } 50% { transform: translateX(6%); } 100% { transform: translateX(-6%); } }
+
+  .sparks { position: absolute; inset: 0; pointer-events: none; }
+  .sparks span {
+    position: absolute;
+    bottom: -10px;
+    width: 4px; height: 4px;
+    border-radius: 50%;
+    background: var(--cyan);
+    box-shadow: 0 0 8px 2px rgba(34, 211, 238, 0.6);
+    opacity: 0;
+    animation: spark-rise linear infinite;
+  }
+  @keyframes spark-rise {
+    0% { transform: translateY(0) scale(1); opacity: 0; }
+    15% { opacity: 0.9; }
+    100% { transform: translateY(-86vh) scale(0.3); opacity: 0; }
+  }
+
+  /* ── content ── */
+  .hero-inner {
+    max-width: var(--maxw);
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: relative;
+    z-index: 2;
+  }
+  .hero-content { flex: 1; min-width: 0; }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 7px 16px;
+    background: rgba(124, 92, 255, 0.1);
+    border: 1px solid rgba(124, 92, 255, 0.3);
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 24px;
+  }
+  .live-dot {
+    width: 9px; height: 9px; border-radius: 50%;
+    background: #2ee06a;
+    box-shadow: 0 0 0 0 rgba(46, 224, 106, 0.6);
+    animation: live-ping 1.8s ease-out infinite;
+    flex: none;
+  }
+  @keyframes live-ping {
+    0% { box-shadow: 0 0 0 0 rgba(46, 224, 106, 0.55); }
+    100% { box-shadow: 0 0 0 9px rgba(46, 224, 106, 0); }
+  }
+
+  .hero-title {
+    font-size: clamp(2.5rem, 6vw, 4.2rem);
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.5px;
+    margin-bottom: 22px;
+    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  }
+  .hero-hi {
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 26px rgba(124, 92, 255, 0.45));
+  }
+
+  .hero-desc {
+    font-size: 1.18rem;
+    color: var(--text-muted);
+    max-width: 540px;
+    line-height: 1.75;
+    margin-bottom: 34px;
+  }
+  .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 28px; }
+  .hero-buttons :global(svg) { flex: none; }
+
+  /* live + payment legend row */
+  .hero-meta { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+  .hero-live { display: inline-flex; align-items: center; gap: 10px; font-size: 0.95rem; color: var(--text-muted); }
+  .hero-live strong { color: var(--text); font-variant-numeric: tabular-nums; }
+  .hero-sep { width: 1px; height: 20px; background: var(--border); }
+  .pay-legend { display: flex; gap: 10px; list-style: none; flex-wrap: wrap; }
+  .pay-legend li {
+    font-size: 0.78rem; font-weight: 600; color: var(--text-muted);
+    padding: 4px 11px; border: 1px solid var(--border); border-radius: 50px;
+  }
+
+  /* AEO answer */
+  .hero-answer {
+    position: relative;
+    z-index: 2;
+    max-width: 780px;
+    margin: 48px auto 0;
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.98rem;
+    line-height: 1.7;
+    padding: 16px 22px;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-sm);
+    background: rgba(255, 255, 255, 0.015);
+  }
+
+  @media (max-width: 980px) {
+    .hero-inner { text-align: center; }
+    .hero-desc { margin-left: auto; margin-right: auto; }
+    .hero-buttons { justify-content: center; }
+    .hero-meta { justify-content: center; }
+  }
+  @media (max-width: 640px) {
+    .hero { padding: 120px 16px 48px; }
+    .hero-desc { font-size: 1.05rem; margin-bottom: 28px; }
+    .hero-badge { font-size: 0.78rem; padding: 6px 14px; max-width: 100%; }
+    .hero-answer { margin-top: 36px; font-size: 0.9rem; padding: 14px 16px; }
+  }
+  @media (max-width: 560px) {
+    .hero-sep { display: none; }
+    .hero-buttons :global(.btn-primary), .hero-buttons :global(.btn-secondary) { width: 100%; justify-content: center; }
+    .hero-meta { flex-direction: column; align-items: center; gap: 12px; }
+    .pay-legend { justify-content: center; }
+  }
+  @media (max-width: 380px) {
+    .hero { padding: 112px 12px 40px; }
+    .hero-title { font-size: clamp(2rem, 9vw, 2.5rem); }
+  }
+</style>
+
+<script>
+  // Count-up for the "delivered today" figure when it scrolls into view.
+  const el = document.querySelector<HTMLElement>(".hero-live strong[data-count]");
+  if (el) {
+    const target = parseInt(el.dataset.count || "0", 10);
+    let started = false;
+    const run = () => {
+      if (started) return;
+      started = true;
+      const start = performance.now();
+      const dur = 1400;
+      const tick = (now: number) => {
+        const p = Math.min((now - start) / dur, 1);
+        el.textContent = Math.floor(p * target).toLocaleString();
+        if (p < 1) requestAnimationFrame(tick);
+      };
+      requestAnimationFrame(tick);
+    };
+    new IntersectionObserver((e, o) => {
+      if (e[0].isIntersecting) { run(); o.disconnect(); }
+    }).observe(el);
+  }
+</script>

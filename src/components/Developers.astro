@@ -1,0 +1,95 @@
+---
+import { COPY, DOCS_URL, API_URL, type Lang } from "../i18n/copy";
+import Icon from "./Icon.astro";
+interface Props { lang?: Lang }
+const { lang = "uz" } = Astro.props;
+const t = COPY[lang].developersSection;
+
+const code = `# 1) ${lang === "ru" ? "Игры и цены" : "O'yinlar va narxlar"}
+curl ${API_URL}/api/v1/games \\
+  -H "X-API-Key: gp_..."
+
+# 2) ${lang === "ru" ? "Заказ" : "Buyurtma berish"}
+curl -X POST ${API_URL}/api/v1/order \\
+  -H "X-API-Key: gp_..." \\
+  -H "Content-Type: application/json" \\
+  -d '{"product_id":2793,"player_id":"123456789"}'`;
+---
+
+<section id="developers" class="dev">
+  <div class="container dev-inner">
+    <div class="dev-content fade-in">
+      <span class="section-label">{t.label}</span>
+      <h2 class="section-title">{t.title}</h2>
+      <p class="dev-text">{t.text}</p>
+      <ul class="dev-points">
+        {t.points.map((p) => (
+          <li><Icon name="check" size={20} class="dev-check" />{p}</li>
+        ))}
+      </ul>
+      <a href={DOCS_URL} class="btn-primary" target="_blank" rel="noopener">
+        <Icon name="code" size={17} /> {t.cta}
+      </a>
+    </div>
+
+    <div class="dev-code fade-in">
+      <div class="code-head">
+        <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="code-title">{t.codeTitle}</span>
+      </div>
+      <pre><code>{code}</code></pre>
+    </div>
+  </div>
+</section>
+
+<style>
+  .dev { position: relative; }
+  .dev-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+  }
+  .dev-text { color: var(--text-muted); font-size: 1.08rem; line-height: 1.7; margin-bottom: 24px; max-width: 520px; }
+  .dev-points { list-style: none; display: flex; flex-direction: column; gap: 13px; margin-bottom: 30px; }
+  .dev-points li { display: flex; align-items: flex-start; gap: 11px; color: var(--text); font-size: 0.98rem; line-height: 1.5; }
+  .dev-points :global(.dev-check) { color: var(--emerald); flex: none; margin-top: 1px; }
+
+  .dev-code {
+    background: #070B16;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 24px 60px -30px rgba(0, 0, 0, 0.9);
+  }
+  .code-head {
+    display: flex; align-items: center; gap: 12px;
+    padding: 13px 18px;
+    border-bottom: 1px solid var(--border-light);
+    background: rgba(255, 255, 255, 0.02);
+  }
+  .dots { display: inline-flex; gap: 6px; }
+  .dots i { width: 11px; height: 11px; border-radius: 50%; background: var(--border); }
+  .dots i:first-child { background: #FB7185; }
+  .dots i:nth-child(2) { background: var(--gold); }
+  .dots i:last-child { background: var(--emerald); }
+  .code-title { font-size: 0.82rem; color: var(--text-dim); font-weight: 600; }
+  .dev-code pre { margin: 0; padding: 22px; overflow-x: auto; }
+  .dev-code code {
+    font-family: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+    font-size: 0.84rem;
+    line-height: 1.7;
+    color: #9FE7C9;
+    white-space: pre;
+  }
+
+  @media (max-width: 880px) {
+    .dev-inner { grid-template-columns: 1fr; gap: 36px; }
+    .dev-text { max-width: 100%; }
+  }
+  @media (max-width: 480px) {
+    .dev-code pre { padding: 16px; }
+    .dev-code code { font-size: 0.72rem; }
+    .dev-content :global(.btn-primary) { width: 100%; justify-content: center; }
+  }
+</style>

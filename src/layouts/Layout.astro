@@ -1,0 +1,133 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+  canonical?: string;
+  keywords?: string;
+  lang?: string;
+  ogType?: string;
+  ogImage?: string;
+  hreflangs?: { lang: string; href: string }[];
+}
+
+const {
+  title,
+  description = "Gempay — 200+ o'yin uchun valyuta va top-up paketlarini arzon va bir daqiqada to'ldirish. PUBG UC, Mobile Legends olmos, Free Fire — Telegram orqali xavfsiz to'lov.",
+  canonical = "https://gempay.uz",
+  keywords = "gempay, o'yin valyutalari, pubg uc, pubg uc arzon, mobile legends olmos, free fire olmos, o'yin pulini to'ldirish, top up, game currency uzbekistan",
+  lang = "uz",
+  ogType = "website",
+  ogImage = "https://gempay.uz/og-image.png",
+  hreflangs = [],
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="description" content={description} />
+    <meta name="keywords" content={keywords} />
+    <meta name="author" content="Gempay" />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#070A14" />
+    <link rel="canonical" href={canonical} />
+
+    {hreflangs.map((hl) => (
+      <link rel="alternate" hreflang={hl.lang} href={hl.href} />
+    ))}
+    {hreflangs.length > 0 && (
+      <link
+        rel="alternate"
+        hreflang="x-default"
+        href={hreflangs.find((h) => h.lang === "uz")?.href || hreflangs[0].href}
+      />
+    )}
+
+    <!-- Open Graph -->
+    <meta property="og:type" content={ogType} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:site_name" content="Gempay" />
+    <meta property="og:locale" content={lang === "ru" ? "ru_RU" : lang === "en" ? "en_US" : "uz_UZ"} />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={ogImage} />
+
+    <!-- Icons -->
+    <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>{title}</title>
+
+    <slot name="head" />
+  </head>
+  <body>
+    <slot />
+
+    <script>
+      // Scroll-reveal animations
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12, rootMargin: '0px 0px -60px 0px' }
+      );
+      document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
+
+      // Navbar shrink-on-scroll
+      const nav = document.querySelector('.nav');
+      const onScroll = () => nav?.classList.toggle('scrolled', window.scrollY > 24);
+      onScroll();
+      window.addEventListener('scroll', onScroll, { passive: true });
+
+      // Smooth scroll for in-page anchors + close mobile menu
+      const closeNav = () => {
+        document.querySelector(".nav-links")?.classList.remove("open");
+        document.getElementById("burger")?.classList.remove("open");
+        document.getElementById("burger")?.setAttribute("aria-expanded", "false");
+        document.body.classList.remove("nav-open");
+      };
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', function (this: HTMLAnchorElement, e) {
+          const href = this.getAttribute('href');
+          if (!href || href === '#') return;
+          const target = document.querySelector(href);
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            closeNav();
+          }
+        });
+      });
+    </script>
+
+    <style is:global>
+      @import '../styles/global.css';
+    </style>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+---
+// Gempay brand mark — raster logo from public/gempaylogo.png.
+// `size` sets the mark height in px; wordmark is optional (mark-only when withText=false).
+interface Props {
+  size?: number;
+  withText?: boolean;
+  class?: string;
+}
+const { size = 34, withText = true, class: cls } = Astro.props;
+---
+
+<span class:list={["logo", cls]} aria-label="Gempay" style={`--logo-h:${size}px`}>
+  <img
+    src="/gempaylogo.png"
+    alt=""
+    class="logo-mark"
+    width={size}
+    height={size}
+    loading="eager"
+    decoding="async"
+  />
+  {withText && (
+    <span class="logo-text font-display">Gem<span class="logo-accent">pay</span></span>
+  )}
+</span>
+
+<style>
+  .logo { display: inline-flex; align-items: center; gap: 10px; }
+  .logo-mark {
+    width: auto;
+    height: var(--logo-h, 34px);
+    object-fit: contain;
+    filter: drop-shadow(0 2px 12px rgba(124, 92, 255, 0.5));
+    flex: none;
+  }
+  .logo-text { font-size: 1.25rem; font-weight: 800; letter-spacing: 0.3px; color: var(--text); }
+  .logo-accent {
+    background: var(--gradient-cyan);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+</style>
