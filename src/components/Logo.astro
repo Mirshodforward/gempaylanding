@@ -1,43 +1,58 @@
 ---
-// Gempay brand mark — raster logo from public/gempaylogo.png.
-// `size` sets the mark height in px; wordmark is optional (mark-only when withText=false).
+/** GemPay belgisi + so'z-logo. Sarlavhada va futerda ishlatiladi. */
+import { Image } from "astro:assets";
+import mark from "../assets/brand/gempay-mark.png";
+import { localePath, type Locale } from "../data/site";
+
 interface Props {
+  locale: Locale;
   size?: number;
-  withText?: boolean;
+  /** Faqat belgi — so'z-logosiz (kichik ekranlar uchun) */
+  markOnly?: boolean;
   class?: string;
 }
-const { size = 34, withText = true, class: cls } = Astro.props;
+
+const { locale, size = 34, markOnly = false, class: cls = "" } = Astro.props;
+const home = localePath(locale);
 ---
 
-<span class:list={["logo", cls]} aria-label="Gempay" style={`--logo-h:${size}px`}>
-  <img
-    src="/gempaylogo.png"
+<a class:list={["logo", cls]} href={home} aria-label="GemPay — bosh sahifa">
+  <Image
+    src={mark}
     alt=""
-    class="logo-mark"
-    width={size}
+    width={size * 1.47}
     height={size}
+    densities={[1, 2]}
     loading="eager"
-    decoding="async"
+    class="logo__mark"
   />
-  {withText && (
-    <span class="logo-text font-display">Gem<span class="logo-accent">pay</span></span>
-  )}
-</span>
+  {!markOnly && <span class="logo__word">GemPay</span>}
+</a>
 
 <style>
-  .logo { display: inline-flex; align-items: center; gap: 10px; }
-  .logo-mark {
-    width: auto;
-    height: var(--logo-h, 34px);
-    object-fit: contain;
-    filter: drop-shadow(0 2px 12px rgba(124, 92, 255, 0.5));
-    flex: none;
+  .logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    /* Logo — sahifadagi eng muhim havola, uni bosish oson bo'lsin */
+    padding: 4px;
+    margin: -4px;
+    border-radius: var(--r-sm);
   }
-  .logo-text { font-size: 1.25rem; font-weight: 800; letter-spacing: 0.3px; color: var(--text); }
-  .logo-accent {
-    background: var(--gradient-cyan);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+
+  .logo__mark {
+    width: auto;
+    /* Belgining o'zida nur bor, shuning uchun qo'shimcha soya kerak emas */
+    filter: drop-shadow(0 2px 12px rgba(var(--brand-rgb), 0.45));
+  }
+
+  .logo__word {
+    font-family: var(--font-display);
+    font-size: 1.22rem;
+    font-weight: 700;
+    letter-spacing: -0.045em;
+    color: var(--text);
+    /* Logotip matni hech qachon o'ralmasin */
+    white-space: nowrap;
   }
 </style>

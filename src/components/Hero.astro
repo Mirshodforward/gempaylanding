@@ -1,233 +1,293 @@
 ---
-import { COPY, APP_URL, type Lang } from "../i18n/copy";
+/**
+ * Bosh ekran.
+ *
+ * DIZAYN QARORI — nega markazlashtirilgan matn + pastda o'yin lentasi:
+ * mijoz sahifaga «mening o'yinim bormi?» degan savol bilan keladi. Matnni
+ * chapga, rasmni o'ngga qo'ysak, mobil ekranda muqovalar birinchi ekrandan
+ * butunlay chiqib ketardi. Lenta esa telefonda ham darhol ko'rinadi va
+ * savolga bir qarashda javob beradi.
+ */
+import { Image } from "astro:assets";
 import Icon from "./Icon.astro";
-interface Props { lang?: Lang }
-const { lang = "uz" } = Astro.props;
-const t = COPY[lang].hero;
+import { t } from "../i18n/ui";
+import { CATALOG } from "../data/games";
+import { gameImage } from "../lib/gameImages";
+import { ORG, botLinkFor, type Locale } from "../data/site";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const c = t(locale);
+
+// Lenta uzluksiz aylanishi uchun ro'yxat IKKI MARTA chiziladi: birinchi
+// nusxa oxiriga yetganda ikkinchisi aynan o'sha joyda turadi, sakrash
+// ko'rinmaydi.
+const strip = [...CATALOG, ...CATALOG];
 ---
 
-<section class="hero" id="hero">
-  <!-- ambience layers -->
-  <div class="glow glow-1" aria-hidden="true"></div>
-  <div class="glow glow-2" aria-hidden="true"></div>
-  <div class="sparks" aria-hidden="true">
-    {Array.from({ length: 14 }).map((_, i) => (
-      <span style={`left:${(i * 7 + 4) % 100}%; animation-delay:${(i * 0.9).toFixed(1)}s; animation-duration:${(7 + (i % 5)).toFixed(0)}s;`}></span>
-    ))}
+<section class="hero">
+  <div class="wrap hero__in">
+    <p class="chip hero__badge">
+      <Icon name="gem" size={14} />
+      {c.hero.badge}
+    </p>
+
+    <h1 class="hero__title">
+      {c.hero.titleLead}{" "}
+      <span class="grad">{c.hero.titleAccent}</span>
+      {c.hero.titleTail && ` ${c.hero.titleTail}`}
+    </h1>
+
+    <p class="lede hero__lede">{c.hero.lede}</p>
+
+    <div class="hero__actions">
+      <a class="btn btn--primary btn--lg" href={botLinkFor()} target="_blank" rel="noopener">
+        <Icon name="telegram" size={19} />
+        {c.hero.ctaPrimary}
+      </a>
+      <a class="btn btn--lg btn--ghost" href="#oyinlar">
+        {c.hero.ctaSecondary}
+        <Icon name="chevron-down" size={17} />
+      </a>
+    </div>
+
+    <div class="hero__pay">
+      <span class="hero__pay-label">{c.hero.payLabel}</span>
+      <ul class="hero__pay-list">
+        {ORG.paymentMethods.map((m) => <li class="hero__pay-item">{m}</li>)}
+      </ul>
+    </div>
+
+    <ul class="hero__stats">
+      {
+        c.hero.stats.map((s) => (
+          <li class="hero__stat">
+            <span class="hero__stat-v">{s.value}</span>
+            <span class="hero__stat-l">{s.label}</span>
+          </li>
+        ))
+      }
+    </ul>
   </div>
 
-  <div class="hero-inner">
-    <div class="hero-content">
-      <span class="hero-badge fade-in">
-        <span class="live-dot"></span>{t.badge}
-      </span>
-      <h1 class="hero-title font-display fade-in">
-        {t.titleA}<br />
-        <span class="hero-hi">{t.titleHi}</span> {t.titleB}
-      </h1>
-      <p class="hero-desc fade-in">{t.desc}</p>
-
-      <div class="hero-buttons fade-in">
-        <a href={APP_URL} class="btn-primary btn-pulse" target="_blank" rel="noopener">
-          <Icon name="bolt" size={17} /> {t.play}
-        </a>
-        <a href="#games" class="btn-secondary">{t.secondary} <Icon name="arrow-down" size={17} /></a>
-      </div>
-
-      <div class="hero-meta fade-in">
-        <div class="hero-live">
-          <span class="live-dot"></span>
-          <strong data-count="1240">1240</strong>&nbsp;{t.live}
-        </div>
-        <span class="hero-sep" aria-hidden="true"></span>
-        <ul class="pay-legend">
-          <li>Payme</li><li>Click</li><li>{lang === "ru" ? "Карта" : "Karta"}</li>
-        </ul>
-      </div>
+  {/* O'yin lentasi — bezak, shuning uchun skrinriderdan yashirilgan.
+      Xuddi shu o'yinlar pastdagi katalogda haqiqiy havola bo'lib turadi. */}
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      {
+        strip.map((g) => {
+          const img = gameImage(g.slug);
+          return (
+            <span class="marquee__item" style={`--a:${g.accent}`}>
+              {img && (
+                <Image
+                  src={img}
+                  alt=""
+                  width={132}
+                  height={132}
+                  densities={[1, 2]}
+                  loading="lazy"
+                  class:list={["marquee__img", g.lightArtwork && "is-light"]}
+                />
+              )}
+            </span>
+          );
+        })
+      }
     </div>
   </div>
-
-  <!-- AEO direct answer (visible, concise) -->
-  <p class="hero-answer fade-in">{t.answer}</p>
 </section>
 
 <style>
   .hero {
-    min-height: 100vh;
-    min-height: 100svh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: relative;
-    padding: 150px 24px 60px;
+    z-index: var(--z-body);
+    padding-top: clamp(48px, 8vw, 96px);
+    padding-bottom: clamp(40px, 6vw, 72px);
     overflow: hidden;
   }
 
-  /* ── ambience ── */
-  .glow {
-    position: absolute;
-    left: -20%; width: 140%; height: 320px;
-    background: radial-gradient(ellipse at center, rgba(124, 92, 255, 0.12), transparent 70%);
-    filter: blur(20px);
-    pointer-events: none;
-  }
-  .glow-1 { bottom: -60px; animation: drift 26s linear infinite; }
-  .glow-2 { top: 20%; background: radial-gradient(ellipse at center, rgba(34, 211, 238, 0.1), transparent 70%); animation: drift 34s linear infinite reverse; }
-  @keyframes drift { 0% { transform: translateX(-6%); } 50% { transform: translateX(6%); } 100% { transform: translateX(-6%); } }
-
-  .sparks { position: absolute; inset: 0; pointer-events: none; }
-  .sparks span {
-    position: absolute;
-    bottom: -10px;
-    width: 4px; height: 4px;
-    border-radius: 50%;
-    background: var(--cyan);
-    box-shadow: 0 0 8px 2px rgba(34, 211, 238, 0.6);
-    opacity: 0;
-    animation: spark-rise linear infinite;
-  }
-  @keyframes spark-rise {
-    0% { transform: translateY(0) scale(1); opacity: 0; }
-    15% { opacity: 0.9; }
-    100% { transform: translateY(-86vh) scale(0.3); opacity: 0; }
-  }
-
-  /* ── content ── */
-  .hero-inner {
-    max-width: var(--maxw);
-    width: 100%;
-    margin: 0 auto;
+  .hero__in {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 40px;
-    position: relative;
-    z-index: 2;
+    text-align: center;
+    gap: var(--sp-5);
   }
-  .hero-content { flex: 1; min-width: 0; }
 
-  .hero-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 9px;
-    padding: 7px 16px;
-    background: rgba(124, 92, 255, 0.1);
-    border: 1px solid rgba(124, 92, 255, 0.3);
-    border-radius: 50px;
-    font-size: 0.85rem;
-    font-weight: 600;
+  .hero__badge {
+    /* Chip standart holatda matn rangida; bu yerda aksent bo'lsin */
     color: var(--text);
-    margin-bottom: 24px;
-  }
-  .live-dot {
-    width: 9px; height: 9px; border-radius: 50%;
-    background: #2ee06a;
-    box-shadow: 0 0 0 0 rgba(46, 224, 106, 0.6);
-    animation: live-ping 1.8s ease-out infinite;
-    flex: none;
-  }
-  @keyframes live-ping {
-    0% { box-shadow: 0 0 0 0 rgba(46, 224, 106, 0.55); }
-    100% { box-shadow: 0 0 0 9px rgba(46, 224, 106, 0); }
   }
 
-  .hero-title {
-    font-size: clamp(2.5rem, 6vw, 4.2rem);
-    font-weight: 800;
-    line-height: 1.08;
-    letter-spacing: -0.5px;
-    margin-bottom: 22px;
-    text-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  .hero__title {
+    font-size: var(--t-hero);
+    max-width: 16ch;
+    /* Sarlavha juda katta bo'lgani uchun qator oralig'i qisqartiriladi,
+       aks holda uch qator «uzilib» ketadi */
+    line-height: 1.02;
   }
-  .hero-hi {
-    background: var(--gradient);
+
+  .hero__lede {
+    max-width: 56ch;
+    text-align: center;
+  }
+
+  .hero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--sp-3);
+    margin-top: var(--sp-2);
+  }
+
+  /* ------------------------------------------------------------ to'lov -- */
+
+  .hero__pay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--sp-3);
+    margin-top: var(--sp-3);
+  }
+
+  .hero__pay-label {
+    font-size: var(--t-xs);
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-3);
+  }
+
+  .hero__pay-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--sp-2);
+    list-style: none;
+  }
+
+  /* To'lov tizimlari LOGO emas, so'z-yorliq sifatida beriladi: mavjud
+     logolar to'plami to'liq emas (HUMO/Payme/Paynet yo'q), aralashtirish
+     esa nomutanosib ko'rinardi. */
+  .hero__pay-item {
+    padding: 7px 15px;
+    border-radius: var(--r-pill);
+    border: 1px solid var(--line);
+    background: var(--surface);
+    font-size: var(--t-xs);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: var(--text-2);
+  }
+
+  /* ------------------------------------------------------------ raqam --- */
+
+  .hero__stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(20px, 5vw, 56px);
+    margin-top: var(--sp-5);
+    padding-top: var(--sp-5);
+    border-top: 1px solid var(--line);
+    list-style: none;
+    width: min(100%, 620px);
+  }
+
+  .hero__stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+
+  .hero__stat-v {
+    font-family: var(--font-display);
+    font-size: var(--t-xl);
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    background: var(--grad-brand);
     -webkit-background-clip: text;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 0 26px rgba(124, 92, 255, 0.45));
+    color: transparent;
   }
 
-  .hero-desc {
-    font-size: 1.18rem;
-    color: var(--text-muted);
-    max-width: 540px;
-    line-height: 1.75;
-    margin-bottom: 34px;
-  }
-  .hero-buttons { display: flex; gap: 16px; flex-wrap: wrap; margin-bottom: 28px; }
-  .hero-buttons :global(svg) { flex: none; }
-
-  /* live + payment legend row */
-  .hero-meta { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
-  .hero-live { display: inline-flex; align-items: center; gap: 10px; font-size: 0.95rem; color: var(--text-muted); }
-  .hero-live strong { color: var(--text); font-variant-numeric: tabular-nums; }
-  .hero-sep { width: 1px; height: 20px; background: var(--border); }
-  .pay-legend { display: flex; gap: 10px; list-style: none; flex-wrap: wrap; }
-  .pay-legend li {
-    font-size: 0.78rem; font-weight: 600; color: var(--text-muted);
-    padding: 4px 11px; border: 1px solid var(--border); border-radius: 50px;
-  }
-
-  /* AEO answer */
-  .hero-answer {
-    position: relative;
-    z-index: 2;
-    max-width: 780px;
-    margin: 48px auto 0;
+  .hero__stat-l {
+    font-size: var(--t-xs);
+    color: var(--text-3);
     text-align: center;
-    color: var(--text-dim);
-    font-size: 0.98rem;
-    line-height: 1.7;
-    padding: 16px 22px;
-    border: 1px solid var(--border-light);
-    border-radius: var(--radius-sm);
-    background: rgba(255, 255, 255, 0.015);
   }
 
-  @media (max-width: 980px) {
-    .hero-inner { text-align: center; }
-    .hero-desc { margin-left: auto; margin-right: auto; }
-    .hero-buttons { justify-content: center; }
-    .hero-meta { justify-content: center; }
+  /* ----------------------------------------------------------- lenta ---- */
+
+  .marquee {
+    margin-top: clamp(40px, 7vw, 80px);
+    /* Chekkalarda so'nadi — lenta ekrandan «kesilgandek» emas, davom
+       etayotgandek ko'rinadi */
+    -webkit-mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent);
+    mask-image: linear-gradient(90deg, transparent, #000 9%, #000 91%, transparent);
   }
+
+  .marquee__track {
+    display: flex;
+    gap: var(--sp-4);
+    width: max-content;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .marquee__track {
+      /* Ro'yxat ikki marta chizilgani uchun -50% aynan bir aylanish */
+      animation: slide 46s linear infinite;
+    }
+    .marquee:hover .marquee__track {
+      animation-play-state: paused;
+    }
+  }
+
+  @keyframes slide {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .marquee__item {
+    position: relative;
+    display: block;
+    width: 132px;
+    height: 132px;
+    border-radius: var(--r-lg);
+    overflow: hidden;
+    border: 1px solid var(--line);
+    /* Har muqova o'z rangida nur beradi — lenta bir xil kulrang bo'lib
+       qolmaydi */
+    box-shadow:
+      0 10px 34px -14px var(--a),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+    flex: none;
+  }
+
+  .marquee__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Oq muqovalar (MLBB, Asphalt, Bigo, Steam) to'q fonda «suzib» qolmasin */
+  .marquee__img.is-light {
+    background: #fff;
+    object-fit: contain;
+    padding: 10px;
+  }
+
   @media (max-width: 640px) {
-    .hero { padding: 120px 16px 48px; }
-    .hero-desc { font-size: 1.05rem; margin-bottom: 28px; }
-    .hero-badge { font-size: 0.78rem; padding: 6px 14px; max-width: 100%; }
-    .hero-answer { margin-top: 36px; font-size: 0.9rem; padding: 14px 16px; }
-  }
-  @media (max-width: 560px) {
-    .hero-sep { display: none; }
-    .hero-buttons :global(.btn-primary), .hero-buttons :global(.btn-secondary) { width: 100%; justify-content: center; }
-    .hero-meta { flex-direction: column; align-items: center; gap: 12px; }
-    .pay-legend { justify-content: center; }
-  }
-  @media (max-width: 380px) {
-    .hero { padding: 112px 12px 40px; }
-    .hero-title { font-size: clamp(2rem, 9vw, 2.5rem); }
+    .marquee__item {
+      width: 104px;
+      height: 104px;
+      border-radius: var(--r-md);
+    }
   }
 </style>
-
-<script>
-  // Count-up for the "delivered today" figure when it scrolls into view.
-  const el = document.querySelector<HTMLElement>(".hero-live strong[data-count]");
-  if (el) {
-    const target = parseInt(el.dataset.count || "0", 10);
-    let started = false;
-    const run = () => {
-      if (started) return;
-      started = true;
-      const start = performance.now();
-      const dur = 1400;
-      const tick = (now: number) => {
-        const p = Math.min((now - start) / dur, 1);
-        el.textContent = Math.floor(p * target).toLocaleString();
-        if (p < 1) requestAnimationFrame(tick);
-      };
-      requestAnimationFrame(tick);
-    };
-    new IntersectionObserver((e, o) => {
-      if (e[0].isIntersecting) { run(); o.disconnect(); }
-    }).observe(el);
-  }
-</script>

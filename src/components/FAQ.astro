@@ -1,84 +1,104 @@
 ---
-import { COPY, type Lang } from "../i18n/copy";
-interface Props { lang?: Lang }
-const { lang = "uz" } = Astro.props;
-const t = COPY[lang].faqSection;
+/**
+ * Savol-javob.
+ *
+ * `<details>` ishlatiladi, JS'siz akkordeon uchun emas — SEO uchun ham:
+ * `<details>` ichidagi matn Googlebot uchun YOPIQ holatda ham to'liq
+ * ko'rinadi va indekslanadi (JS bilan yashirilgan tarkifdan farqli).
+ * Shu bois FAQPage sxemasi bilan mos keladi va «yashirin matn» jarimasi
+ * yuzaga kelmaydi.
+ */
+import SectionHead from "./SectionHead.astro";
+import Icon from "./Icon.astro";
+
+interface Props {
+  eyebrow: string;
+  title: string;
+  lede?: string;
+  items: { q: string; a: string }[];
+  id?: string;
+}
+
+const { eyebrow, title, lede, items, id = "faq" } = Astro.props;
 ---
 
-<script
-  type="application/ld+json"
-  set:html={JSON.stringify({
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    mainEntity: t.items.map((f) => ({
-      "@type": "Question",
-      name: f.q,
-      acceptedAnswer: { "@type": "Answer", text: f.a },
-    })),
-  })}
-/>
+<section class="section" id={id}>
+  <div class="wrap">
+    <SectionHead eyebrow={eyebrow} title={title} lede={lede} center />
 
-<section id="faq">
-  <div class="container">
-    <div class="section-header fade-in">
-      <span class="section-label">{t.label}</span>
-      <h2 class="section-title">{t.title}</h2>
-      <p class="section-subtitle">{t.subtitle}</p>
-    </div>
-
-    <div class="faq-list">
-      {t.items.map((f, i) => (
-        <details class="faq-item fade-in" open={i === 0} style={`transition-delay:${i * 50}ms;`}>
-          <summary class="faq-q">
-            <span>{f.q}</span>
-            <span class="faq-toggle">+</span>
-          </summary>
-          <div class="faq-a">{f.a}</div>
-        </details>
-      ))}
+    <div class="faq">
+      {
+        items.map((f, i) => (
+          <details class="faq__i" name="faq" open={i === 0}>
+            <summary class="faq__q">
+              <span>{f.q}</span>
+              <Icon name="chevron-down" size={19} />
+            </summary>
+            <div class="faq__a"><p>{f.a}</p></div>
+          </details>
+        ))
+      }
     </div>
   </div>
 </section>
 
 <style>
-  .faq-list { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
-  .faq-item {
-    background: var(--card);
-    border: 1px solid var(--border-light);
-    border-radius: var(--radius-sm);
-    overflow: hidden;
-    transition: border-color 0.3s, box-shadow 0.3s, opacity 0.7s, translate 0.7s;
-  }
-  .faq-item[open] { border-color: rgba(124, 92, 255, 0.35); box-shadow: 0 8px 26px -14px rgba(124, 92, 255, 0.6); }
-  .faq-q {
-    list-style: none;
-    cursor: pointer;
-    padding: 20px 24px;
-    display: flex; align-items: center; justify-content: space-between; gap: 16px;
-    font-weight: 600; font-size: 1.02rem;
-    color: var(--text);
-  }
-  .faq-q::-webkit-details-marker { display: none; }
-  .faq-q:hover { color: var(--brand-hover); }
-  .faq-toggle {
-    width: 28px; height: 28px; min-width: 28px;
-    border-radius: 8px;
-    display: grid; place-items: center;
-    font-size: 1.2rem; line-height: 1;
-    color: var(--brand-hover);
-    background: rgba(124, 92, 255, 0.1);
-    transition: transform 0.3s;
-  }
-  .faq-item[open] .faq-toggle { transform: rotate(45deg); }
-  .faq-a {
-    padding: 0 24px 20px;
-    color: var(--text-muted);
-    font-size: 0.96rem;
-    line-height: 1.75;
+  .faq {
+    max-width: 800px;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-2);
   }
 
-  @media (max-width: 640px) {
-    .faq-q { padding: 16px 18px; font-size: 0.95rem; gap: 12px; }
-    .faq-a { padding: 0 18px 16px; font-size: 0.9rem; }
+  .faq__i {
+    border-radius: var(--r-md);
+    border: 1px solid var(--line);
+    background: var(--surface);
+    overflow: hidden;
+    transition: border-color var(--dur-fast) var(--ease);
+  }
+
+  .faq__i[open] {
+    border-color: rgba(var(--accent-rgb), 0.32);
+    background: var(--surface-2);
+  }
+
+  .faq__q {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--sp-4);
+    padding: 18px 20px;
+    cursor: pointer;
+    list-style: none;
+    font-family: var(--font-display);
+    font-size: var(--t-base);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    line-height: 1.4;
+  }
+
+  .faq__q::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq__q :global(svg) {
+    flex: none;
+    color: var(--text-3);
+    transition: transform var(--dur) var(--ease), color var(--dur) var(--ease);
+  }
+
+  .faq__i[open] .faq__q :global(svg) {
+    transform: rotate(180deg);
+    color: var(--accent);
+  }
+
+  .faq__a {
+    padding: 0 20px 20px;
+    font-size: var(--t-sm);
+    color: var(--text-2);
+    line-height: 1.7;
+    max-width: 72ch;
   }
 </style>

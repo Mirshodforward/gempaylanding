@@ -1,0 +1,141 @@
+/* =============================================================================
+   GemPay dizayn tokenlari
+   -----------------------------------------------------------------------------
+   Konsept — «gem-cut» (qirrali tosh). Logo qirrali olti burchak, shuning uchun
+   butun sayt shu tilda gapiradi:
+
+     · Fon — to'q kosmos, ustida binafsha↔moviy «aurora» dog'lari
+     · Yuzalar — qora soya emas, RANGLI NUR bilan ko'tariladi
+     · Chegara — bir tomoni yorug' gradient (qirraga tushgan yorug'lik)
+     · Har o'yin o'z rangini beradi: `--accent` almashsa, butun sahifa bo'yaladi
+
+   Ranglar `oklch` da emas, `hex`+`rgb` da — eski Android WebView va Yandex
+   brauzerining eskiroq versiyalari `oklch` ni tushunmaydi va sahifa rangsiz
+   qolardi. Shaffoflik uchun `--*-rgb` juftlari saqlanadi.
+   ========================================================================== */
+
+:root {
+  /* ------------------------------------------------------------- brend --- */
+  --brand: #7c5cff;
+  --brand-rgb: 124, 92, 255;
+  --brand-bright: #9c86ff;
+  --brand-deep: #4f36c9;
+
+  --cyan: #22d3ee;
+  --cyan-rgb: 34, 211, 238;
+  --mint: #34d399;
+  --gold: #fbbf24;
+  --rose: #f43f5e;
+
+  /* Sahifa aksenti. O'yin sahifasi buni o'z rangiga almashtiradi — qolgan
+     hamma narsa (tugma, chegara, nur, belgi) avtomatik ergashadi. */
+  --accent: var(--brand);
+  --accent-rgb: var(--brand-rgb);
+  --accent-2: var(--cyan);
+
+  /* --------------------------------------------------------------- fon --- */
+  --bg: #070a14;
+  --bg-rgb: 7, 10, 20;
+  --bg-raised: #0c1120;
+  --bg-sunken: #04060d;
+
+  /* Kartochka yuzalari — shaffof, chunki ostidagi aurora ko'rinib turishi
+     kerak. To'liq qoraytirilsa sahifa yassi bo'lib qoladi. */
+  --surface: rgba(255, 255, 255, 0.035);
+  --surface-2: rgba(255, 255, 255, 0.055);
+  --surface-solid: #0e1424;
+
+  /* ------------------------------------------------------------- matn --- */
+  --text: #eef2fb;
+  --text-2: #a8b3c9;
+  --text-3: #6b7791;
+
+  /* ---------------------------------------------------------- chegara --- */
+  --line: rgba(255, 255, 255, 0.09);
+  --line-strong: rgba(255, 255, 255, 0.16);
+
+  /* --------------------------------------------------------- gradient --- */
+  --grad-brand: linear-gradient(135deg, var(--brand) 0%, var(--cyan) 100%);
+  --grad-accent: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+  /* Qirra yorug'ligi: yuqori-chapdan pastga so'nadi */
+  --grad-edge: linear-gradient(
+    145deg,
+    rgba(255, 255, 255, 0.22) 0%,
+    rgba(255, 255, 255, 0.06) 32%,
+    rgba(255, 255, 255, 0) 62%
+  );
+
+  /* ------------------------------------------------------------- nur ----- */
+  --glow-sm: 0 4px 20px -6px rgba(var(--accent-rgb), 0.4);
+  --glow: 0 12px 44px -12px rgba(var(--accent-rgb), 0.55);
+  --glow-lg: 0 28px 90px -20px rgba(var(--accent-rgb), 0.6);
+  /* Chuqurlik uchun qora soya ham kerak — lekin nurdan KEYIN, yumshoqroq */
+  --lift: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 30px -10px rgba(0, 0, 0, 0.6);
+
+  /* --------------------------------------------------------- radius ----- */
+  --r-xs: 8px;
+  --r-sm: 12px;
+  --r-md: 16px;
+  --r-lg: 22px;
+  --r-xl: 30px;
+  --r-pill: 999px;
+
+  /* -------------------------------------------------------- masofa ------ */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 24px;
+  --sp-6: 32px;
+  --sp-7: 48px;
+  --sp-8: 64px;
+  --sp-9: 96px;
+  --sp-10: 128px;
+
+  /* Bo'limlar orasidagi masofa ekran bilan birga o'sadi.
+     Qiymat qo'shni bo'limlarda IKKI marta qo'shiladi (pastki + yuqori),
+     shuning uchun u ko'ringanidan ikki barobar katta ishlaydi — 128px
+     bergan versiyada bo'limlar orasi 256px bo'lib, sahifa uzilib qolgandek
+     ko'rinardi. */
+  --section-y: clamp(48px, 6vw, 84px);
+  --gutter: clamp(16px, 4vw, 32px);
+  --maxw: 1200px;
+  --maxw-prose: 68ch;
+
+  /* -------------------------------------------------------- shrift ------ */
+  --font-display: "Unbounded", "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font: "Manrope", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+
+  /* Suyuq shkala — 360px dan 1200px gacha silliq o'sadi */
+  --t-xs: clamp(0.75rem, 0.72rem + 0.15vw, 0.8125rem);
+  --t-sm: clamp(0.8125rem, 0.78rem + 0.18vw, 0.9375rem);
+  --t-base: clamp(0.9375rem, 0.9rem + 0.22vw, 1.0625rem);
+  --t-md: clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem);
+  --t-lg: clamp(1.25rem, 1.1rem + 0.7vw, 1.5rem);
+  --t-xl: clamp(1.5rem, 1.25rem + 1.2vw, 2rem);
+  --t-2xl: clamp(1.875rem, 1.4rem + 2.2vw, 2.75rem);
+  --t-3xl: clamp(2.25rem, 1.5rem + 3.4vw, 4rem);
+  --t-hero: clamp(2.5rem, 1.4rem + 5vw, 5rem);
+
+  /* -------------------------------------------------------- harakat ----- */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-fast: 140ms;
+  --dur: 260ms;
+  --dur-slow: 520ms;
+
+  /* ---------------------------------------------------------- qatlam ---- */
+  --z-decor: 0;
+  --z-body: 1;
+  --z-sticky: 40;
+  --z-nav: 50;
+  --z-modal: 100;
+}
+
+/* Yorug' rejim ATAYLAB yo'q: mahsulot (Mini App) to'q, o'yin muqovalari to'q
+   fonda yaxshi ko'rinadi va auditoriya kechqurun kiradi. Brauzerga ham shuni
+   aytamiz — shunda forma elementlari va scrollbar mos rangda chiziladi. */
+:root {
+  color-scheme: dark;
+}

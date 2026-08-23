@@ -1,0 +1,5 @@
+/* Yagona kirish nuqtasi — `Layout.astro` faqat shu faylni import qiladi.
+   Tartib muhim: shrift → tokenlar → asos. */
+@import "./fonts.css";
+@import "./tokens.css";
+@import "./base.css";

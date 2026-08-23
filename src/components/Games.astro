@@ -1,257 +1,44 @@
 ---
-import { COPY, GAMES, APP_URL, type Lang } from "../i18n/copy";
-import Icon from "./Icon.astro";
-interface Props { lang?: Lang }
-const { lang = "uz" } = Astro.props;
-const t = COPY[lang].gamesSection;
+/** Katalog — 9 o'yin + Steam. Sahifadagi asosiy konversiya nuqtasi. */
+import SectionHead from "./SectionHead.astro";
+import GameCard from "./GameCard.astro";
+import { CATALOG } from "../data/games";
+import { t } from "../i18n/ui";
+import type { Locale } from "../data/site";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const c = t(locale);
 ---
 
-<section id="games">
-  <div class="container">
-    <div class="section-header fade-in">
-      <span class="section-label">{t.label}</span>
-      <h2 class="section-title">{t.title}</h2>
-      <p class="section-subtitle">{t.subtitle}</p>
-    </div>
+<section class="section" id="oyinlar">
+  <div class="wrap">
+    <SectionHead eyebrow={c.games.eyebrow} title={c.games.title} lede={c.games.lede} center />
 
-    <div class="games-grid">
-      {GAMES.map((game, i) => (
-        <a
-          href={APP_URL}
-          target="_blank"
-          rel="noopener"
-          class="game-card fade-in"
-          style={`--c:${game.color}; transition-delay:${(i % 4) * 60}ms;`}
-        >
-          <div class="game-thumb" aria-hidden="true">
-            <div class="game-thumb-glow"></div>
-            <div class="game-icon-box">
-              <img
-                src={`/games/${game.slug}.svg`}
-                alt=""
-                class="game-icon"
-                width="44"
-                height="44"
-                loading="lazy"
-                decoding="async"
-              />
-            </div>
-            {game.popular && <span class="game-badge">{t.popular}</span>}
+    <div class="ggrid">
+      {
+        CATALOG.map((g, i) => (
+          <div class="rise" style={`--i:${i}`}>
+            {/* Birinchi qator birinchi ekranda ko'rinishi mumkin — LCP
+                nishoni bo'lgani uchun kechiktirilmaydi */}
+            <GameCard game={g} locale={locale} index={i} eager={i < 5} />
           </div>
-
-          <div class="game-body">
-            <h3 class="game-name font-display">{game.name}</h3>
-            <span class="game-pill">
-              <span class="game-pill-label">{t.currencyLabel}</span>
-              <strong>{game[lang].currency}</strong>
-            </span>
-          </div>
-
-          <span class="game-arrow" aria-hidden="true">
-            <Icon name="arrow-right" size={18} />
-          </span>
-        </a>
-      ))}
-    </div>
-
-    <div class="games-more fade-in">
-      <a href={APP_URL} target="_blank" rel="noopener" class="games-more-link">{t.more}</a>
+        ))
+      }
     </div>
   </div>
 </section>
 
 <style>
-  .games-grid {
+  .ggrid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
-    gap: 20px;
-  }
-
-  .game-card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(165deg, var(--card-hover) 0%, var(--card) 55%, #0a0f1c 100%);
-    border: 1px solid var(--border-light);
-    border-radius: var(--radius);
-    overflow: hidden;
-    isolation: isolate;
-    transition:
-      transform 0.32s cubic-bezier(.2,.7,.2,1),
-      border-color 0.32s,
-      box-shadow 0.32s,
-      opacity 0.7s,
-      translate 0.7s;
-  }
-  .game-card::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    border-radius: inherit;
-    padding: 1px;
-    background: linear-gradient(145deg, color-mix(in srgb, var(--c) 55%, transparent), transparent 55%);
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    opacity: 0;
-    transition: opacity 0.32s;
-    pointer-events: none;
-  }
-  .game-card:hover {
-    transform: translateY(-8px);
-    border-color: color-mix(in srgb, var(--c) 45%, var(--border));
-    box-shadow:
-      0 24px 52px -22px color-mix(in srgb, var(--c) 55%, transparent),
-      0 0 0 1px color-mix(in srgb, var(--c) 12%, transparent);
-  }
-  .game-card:hover::after { opacity: 1; }
-  .game-card:hover .game-arrow {
-    opacity: 1;
-    transform: translate(0, -50%);
-  }
-  .game-card:hover .game-icon-box {
-    transform: scale(1.06);
-    box-shadow: 0 14px 32px -12px color-mix(in srgb, var(--c) 70%, black);
-  }
-
-  /* icon header */
-  .game-thumb {
-    position: relative;
-    display: grid;
-    place-items: center;
-    height: 108px;
-    background:
-      radial-gradient(ellipse 90% 80% at 50% 110%, color-mix(in srgb, var(--c) 28%, transparent), transparent 70%),
-      linear-gradient(180deg, color-mix(in srgb, var(--c) 14%, transparent) 0%, transparent 100%);
-    border-bottom: 1px solid color-mix(in srgb, var(--c) 12%, var(--border-light));
-  }
-  .game-thumb-glow {
-    position: absolute;
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background: radial-gradient(circle, color-mix(in srgb, var(--c) 35%, transparent), transparent 68%);
-    filter: blur(12px);
-    opacity: 0.75;
-  }
-  .game-icon-box {
-    position: relative;
-    z-index: 1;
-    width: 64px;
-    height: 64px;
-    border-radius: 16px;
-    display: grid;
-    place-items: center;
-    background:
-      linear-gradient(145deg, color-mix(in srgb, var(--c) 42%, #1a2238), color-mix(in srgb, var(--c) 18%, #0d1220));
-    border: 1px solid color-mix(in srgb, var(--c) 50%, transparent);
-    box-shadow:
-      0 10px 28px -14px color-mix(in srgb, var(--c) 65%, black),
-      inset 0 1px 0 rgba(255, 255, 255, 0.12);
-    transition: transform 0.32s cubic-bezier(.2,.7,.2,1), box-shadow 0.32s;
-  }
-  .game-icon {
-    width: 44px;
-    height: 44px;
-    object-fit: contain;
-    filter: drop-shadow(0 2px 6px rgba(0, 0, 0, 0.35));
-  }
-
-  .game-badge {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    z-index: 2;
-    font-size: 0.6rem;
-    font-weight: 800;
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-    padding: 4px 9px;
-    border-radius: 50px;
-    color: var(--c);
-    background: rgba(7, 10, 20, 0.72);
-    backdrop-filter: blur(8px);
-    border: 1px solid color-mix(in srgb, var(--c) 45%, transparent);
-  }
-
-  /* content */
-  .game-body {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    padding: 18px 18px 20px;
-  }
-  .game-name {
-    font-size: 1.05rem;
-    font-weight: 700;
-    color: var(--text);
-    line-height: 1.25;
-    padding-right: 28px;
-  }
-  .game-pill {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    align-self: flex-start;
-    padding: 6px 12px;
-    border-radius: 50px;
-    font-size: 0.78rem;
-    background: color-mix(in srgb, var(--c) 10%, var(--bg-3));
-    border: 1px solid color-mix(in srgb, var(--c) 28%, var(--border));
-  }
-  .game-pill-label {
-    color: var(--text-dim);
-    font-weight: 500;
-  }
-  .game-pill strong {
-    color: var(--c);
-    font-weight: 700;
-  }
-
-  .game-arrow {
-    position: absolute;
-    right: 16px;
-    top: calc(108px + 22px);
-    transform: translate(6px, -50%);
-    color: var(--c);
-    opacity: 0;
-    transition: opacity 0.28s, transform 0.28s;
-  }
-
-  .games-more { text-align: center; margin-top: 44px; }
-  .games-more-link {
-    display: inline-block;
-    color: var(--text-muted);
-    font-weight: 600;
-    padding: 12px 26px;
-    border: 1px solid var(--border);
-    border-radius: 50px;
-    transition: color 0.2s, border-color 0.2s, background 0.2s;
-  }
-  .games-more-link:hover {
-    color: var(--text);
-    border-color: var(--brand);
-    background: rgba(124, 92, 255, 0.08);
-  }
-
-  @media (max-width: 640px) {
-    .games-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
-  }
-  @media (max-width: 480px) {
-    .game-thumb { height: 92px; }
-    .game-icon-box { width: 56px; height: 56px; border-radius: 14px; }
-    .game-icon { width: 38px; height: 38px; }
-    .game-body { padding: 14px 14px 16px; gap: 10px; }
-    .game-name { font-size: 0.92rem; line-height: 1.2; }
-    .game-pill { font-size: 0.68rem; padding: 5px 8px; gap: 5px; flex-wrap: wrap; }
-    .game-pill-label { display: none; }
-    .game-arrow { display: none; }
-    .game-badge { top: 8px; right: 8px; font-size: 0.55rem; padding: 3px 7px; }
-  }
-  @media (max-width: 360px) {
-    .games-grid { grid-template-columns: 1fr; }
-    .game-thumb { height: 100px; }
+    /* `auto-fill` + `minmax` — media query'siz moslashadi: 360px da 2 ustun,
+       planshetda 3-4, keng ekranda 5. Har bir sinish nuqtasini qo'lda
+       yozishdan ko'ra ishonchliroq. */
+    grid-template-columns: repeat(auto-fill, minmax(clamp(140px, 19vw, 196px), 1fr));
+    gap: clamp(10px, 1.6vw, 18px);
   }
 </style>

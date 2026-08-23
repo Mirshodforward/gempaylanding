@@ -1,82 +1,124 @@
 ---
-import { COPY, APP_URL, type Lang } from "../i18n/copy";
+/**
+ * «Qanday ishlaydi» — to'rt qadam.
+ *
+ * Bu bo'lim `HowTo` JSON-LD bilan juftlashadi (sahifa o'zi yasaydi), shuning
+ * uchun qadam matnlari sahifada AYNAN sxemadagidek ko'rinishi shart.
+ */
+import SectionHead from "./SectionHead.astro";
 import Icon from "./Icon.astro";
-interface Props { lang?: Lang }
-const { lang = "uz" } = Astro.props;
-const t = COPY[lang].howSection;
+import { t } from "../i18n/ui";
+import type { Locale } from "../data/site";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const c = t(locale);
 ---
 
-<section id="how">
-  <div class="container">
-    <div class="section-header fade-in">
-      <span class="section-label">{t.label}</span>
-      <h2 class="section-title">{t.title}</h2>
-      <p class="section-subtitle">{t.subtitle}</p>
-    </div>
+<section class="section" id="qanday">
+  <div class="wrap">
+    <SectionHead eyebrow={c.how.eyebrow} title={c.how.title} lede={c.how.lede} />
 
-    <div class="steps">
-      {t.steps.map((s, i) => (
-        <div class="step fade-in" style={`transition-delay:${i * 90}ms;`}>
-          <div class="step-num font-display">{i + 1}</div>
-          <h3 class="step-title">{s.title}</h3>
-          <p class="step-text">{s.text}</p>
-        </div>
-      ))}
-    </div>
+    <ol class="steps">
+      {
+        c.how.steps.map((s, i) => (
+          <li class="step rise" style={`--i:${i}`}>
+            <span class="step__n">{i + 1}</span>
+            <div class="step__txt">
+              <h3 class="step__t">{s.title}</h3>
+              <p class="step__d">{s.text}</p>
+            </div>
+          </li>
+        ))
+      }
+    </ol>
 
-    <div class="how-cta fade-in">
-      <a href={APP_URL} class="btn-cyan" target="_blank" rel="noopener"><Icon name="bolt" size={17} /> {COPY[lang].hero.play}</a>
-    </div>
+    <p class="how-note">
+      <Icon name="shield-check" size={17} />
+      <span>{c.how.note}</span>
+    </p>
   </div>
 </section>
 
 <style>
   .steps {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    position: relative;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: clamp(16px, 2.4vw, 26px);
+    list-style: none;
+    counter-reset: step;
   }
-  .steps::before {
-    content: "";
-    position: absolute;
-    top: 44px; left: 16%; right: 16%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, var(--border), var(--brand), var(--border), transparent);
-    z-index: 0;
-  }
+
   .step {
     position: relative;
-    z-index: 1;
-    text-align: center;
-    padding: 30px 24px;
-    background: var(--card);
-    border: 1px solid var(--border-light);
-    border-radius: var(--radius);
-    transition: transform 0.25s, border-color 0.25s, opacity 0.7s, translate 0.7s;
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-4);
+    padding: clamp(20px, 2.6vw, 28px);
+    border-radius: var(--r-lg);
+    border: 1px solid var(--line);
+    background: var(--surface);
   }
-  .step:hover { transform: translateY(-5px); border-color: rgba(34, 211, 238, 0.4); }
-  .step-num {
-    width: 56px; height: 56px;
-    margin: 0 auto 18px;
-    border-radius: 50%;
-    display: grid; place-items: center;
-    font-size: 1.5rem; font-weight: 800;
-    color: #fff;
-    background: var(--gradient-violet);
-    box-shadow: 0 0 28px -4px rgba(124, 92, 255, 0.7);
-  }
-  .step-title { font-family: var(--font-display); font-size: 1.3rem; font-weight: 700; margin-bottom: 10px; }
-  .step-text { color: var(--text-muted); font-size: 0.96rem; line-height: 1.7; }
 
-  .how-cta { text-align: center; margin-top: 48px; }
-
-  @media (max-width: 760px) {
-    .steps { grid-template-columns: 1fr; }
-    .steps::before { display: none; }
+  /* Qadamlar orasidagi ulovchi chiziq — faqat keng ekranda, chunki bir
+     ustunli joylashuvda u pastga emas, yon tomonga ketib qolardi. */
+  @media (min-width: 1000px) {
+    .step:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      top: 46px;
+      inset-inline-end: calc(clamp(16px, 2.4vw, 26px) * -1);
+      width: clamp(16px, 2.4vw, 26px);
+      height: 1px;
+      background: linear-gradient(90deg, var(--line-strong), transparent);
+    }
   }
-  @media (max-width: 480px) {
-    .step { padding: 24px 18px; }
-    .how-cta :global(.btn-cyan) { width: 100%; justify-content: center; }
+
+  .step__n {
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    flex: none;
+    border-radius: var(--r-md);
+    background: rgba(var(--accent-rgb), 0.13);
+    border: 1px solid rgba(var(--accent-rgb), 0.3);
+    font-family: var(--font-display);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--accent);
+  }
+
+  .step__t {
+    font-size: var(--t-md);
+    margin-bottom: 7px;
+  }
+
+  .step__d {
+    font-size: var(--t-sm);
+    color: var(--text-2);
+    line-height: 1.65;
+  }
+
+  .how-note {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--sp-3);
+    margin-top: clamp(20px, 3vw, 32px);
+    padding: 16px 20px;
+    border-radius: var(--r-md);
+    background: rgba(52, 211, 153, 0.08);
+    border: 1px solid rgba(52, 211, 153, 0.24);
+    font-size: var(--t-sm);
+    color: var(--text);
+  }
+
+  .how-note :global(svg) {
+    flex: none;
+    margin-top: 2px;
+    color: var(--mint);
   }
 </style>

@@ -1,0 +1,157 @@
+---
+/**
+ * Bosh sahifa — uchala til uchun BITTA qolip.
+ *
+ * `src/pages/index.astro`, `ru/index.astro`, `en/index.astro` faqat
+ * `locale` beradi. Shu tufayli tillar bir-biridan uzilib qolmaydi: bo'lim
+ * qo'shsangiz u darhol uchalasida ham paydo bo'ladi.
+ */
+import Layout from "../../layouts/Layout.astro";
+import Aurora from "../Aurora.astro";
+import Header from "../Header.astro";
+import Hero from "../Hero.astro";
+import AnswerBox from "../AnswerBox.astro";
+import Games from "../Games.astro";
+import HowItWorks from "../HowItWorks.astro";
+import Why from "../Why.astro";
+import Trust from "../Trust.astro";
+import Faq from "../Faq.astro";
+import Cta from "../Cta.astro";
+import Footer from "../Footer.astro";
+
+import { t } from "../../i18n/ui";
+import { CATALOG } from "../../data/games";
+import type { Locale } from "../../data/site";
+import {
+  graph,
+  organizationSchema,
+  websiteSchema,
+  serviceSchema,
+  faqSchema,
+  howToSchema,
+  itemListSchema,
+} from "../../lib/seo";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const c = t(locale);
+
+const games = CATALOG.map((g) => ({ title: g.title, slug: g.slug, unit: g.unit[locale] }));
+
+const META = {
+  uz: {
+    // `<title>` ≤60 belgi: uzunrog'i Google natijasida kesiladi va kalit
+    // so'z ko'rinmay qolishi mumkin. `description` 140-160 belgi.
+    title: "O'yin hisobini so'mda to'ldirish — PUBG UC, ML | GemPay",
+    description:
+      "PUBG UC, Mobile Legends olmosi, Free Fire va yana 7 xizmatni so'mda to'ldiring. " +
+      "UzCard, HUMO, Click, Payme. ID bepul tekshiriladi, 1-5 daqiqada yetadi.",
+    keywords: [
+      "pubg uc sotib olish",
+      "mobile legends olmos",
+      "o'yin hisobini to'ldirish",
+      "free fire olmos",
+      "uc arzon narxda",
+      "so'mda o'yin to'ldirish",
+      "codm cp sotib olish",
+      "telegram bot o'yin to'ldirish",
+    ],
+    serviceName: "O'yin valyutasini so'mda to'ldirish",
+  },
+  ru: {
+    title: "Пополнение игр за сумы — UC для PUBG, алмазы ML | GemPay",
+    description:
+      "Пополните UC для PUBG, алмазы Mobile Legends, Free Fire и ещё 7 сервисов в сумах. " +
+      "UzCard, HUMO, Click, Payme. Проверка ID бесплатна, зачисление за 1-5 минут.",
+    keywords: [
+      "купить uc pubg узбекистан",
+      "алмазы мобайл легенд",
+      "пополнить игру за сумы",
+      "free fire алмазы узбекистан",
+      "uc за сумы",
+      "пополнение игр ташкент",
+      "codm cp купить",
+    ],
+    serviceName: "Пополнение игровой валюты за сумы",
+  },
+  en: {
+    title: "Game Top-Up in Uzbek So'm — PUBG UC, ML Diamonds | GemPay",
+    description:
+      "Top up PUBG UC, Mobile Legends diamonds, Free Fire and seven more services in Uzbek so'm. " +
+      "UzCard, HUMO, Click, Payme. Free ID check, delivered in 1-5 minutes.",
+    keywords: [
+      "buy pubg uc uzbekistan",
+      "mobile legends diamonds uzbekistan",
+      "game top up uzbek som",
+      "free fire diamonds uzbekistan",
+      "uzcard game topup",
+    ],
+    serviceName: "Game currency top-up in Uzbek so'm",
+  },
+}[locale];
+
+/** Sahifadagi `HowItWorks` qadamlari bilan AYNAN bir xil — sxema va
+ *  ko'rinadigan matn farq qilsa Google buni nomuvofiqlik deb belgilaydi. */
+const schema = graph(
+  organizationSchema(),
+  websiteSchema(locale),
+  serviceSchema(locale, games, { name: META.serviceName, description: META.description }),
+  itemListSchema(locale, games, META.serviceName),
+  howToSchema({
+    name: c.how.title,
+    description: c.how.lede,
+    steps: c.how.steps.map((s) => ({ name: s.title, text: s.text })),
+    totalMinutes: 2,
+    image: "/og/default.png",
+  }),
+  faqSchema(c.faq.items),
+);
+---
+
+<Layout
+  locale={locale}
+  path=""
+  title={META.title}
+  description={META.description}
+  keywords={META.keywords}
+  image="/og/default.png"
+  schema={schema}
+>
+  <Aurora />
+  <Header locale={locale} path="" />
+
+  <main id="main">
+    <Hero locale={locale} />
+
+    {/* AEO javob bloki — hero'dan keyin, katalogdan oldin. Javob mashinalari
+        sahifaning boshidan iqtibos olishga moyil. */}
+    <div class="wrap answer-slot">
+      <AnswerBox title={c.blog.answerTitle} text={c.hero.answer} />
+    </div>
+
+    <Games locale={locale} />
+    <HowItWorks locale={locale} />
+    <Why locale={locale} />
+    <Trust locale={locale} />
+    <Faq
+      eyebrow={c.faq.eyebrow}
+      title={c.faq.title}
+      lede={c.faq.lede}
+      items={c.faq.items}
+    />
+    <Cta locale={locale} />
+  </main>
+
+  <Footer locale={locale} />
+</Layout>
+
+<style>
+  .answer-slot {
+    position: relative;
+    z-index: var(--z-body);
+    margin-top: clamp(28px, 5vw, 56px);
+  }
+</style>

@@ -1,70 +1,82 @@
 ---
-import { COPY, APP_URL, DOCS_URL, type Lang } from "../i18n/copy";
+/** Yakuniy chaqiriq — sahifa oxiridagi oxirgi konversiya imkoniyati. */
 import Icon from "./Icon.astro";
-import Logo from "./Logo.astro";
-interface Props { lang?: Lang }
-const { lang = "uz" } = Astro.props;
-const t = COPY[lang].cta;
+import { botLinkFor, localePath, type Locale } from "../data/site";
+import { t } from "../i18n/ui";
+
+interface Props {
+  locale: Locale;
+  /** Sarlavhani almashtirish — o'yin sahifasida «PUBG hisobini to'ldiring» */
+  title?: string;
+  lede?: string;
+  /** Botga o'tishda yuboriladigan o'yin kodi (atributsiya) */
+  gameCode?: string;
+}
+
+const { locale, title, lede, gameCode } = Astro.props;
+const c = t(locale);
 ---
 
-<section class="cta-section">
-  <div class="cta-box fade-in">
-    <div class="cta-glow" aria-hidden="true"></div>
-    <div class="cta-logo"><Logo size={64} withText={false} /></div>
-    <h2 class="cta-title font-display">{t.title}</h2>
-    <p class="cta-text">{t.text}</p>
-    <div class="cta-buttons">
-      <a href={APP_URL} class="btn-cyan btn-pulse" target="_blank" rel="noopener"><Icon name="telegram" size={17} /> {t.play}</a>
-      <a href={DOCS_URL} class="btn-secondary" target="_blank" rel="noopener"><Icon name="code" size={16} /> {t.docs}</a>
+<section class="section">
+  <div class="wrap">
+    <div class="cta">
+      <h2 class="cta__title">{title ?? c.cta.title}</h2>
+      <p class="lede cta__lede">{lede ?? c.cta.lede}</p>
+      <div class="cta__actions">
+        <a class="btn btn--primary btn--lg" href={botLinkFor(gameCode)} target="_blank" rel="noopener">
+          <Icon name="telegram" size={19} />
+          {c.cta.primary}
+        </a>
+        <a class="btn btn--lg btn--ghost" href={localePath(locale, "blog")}>
+          <Icon name="book" size={17} />
+          {c.cta.secondary}
+        </a>
+      </div>
     </div>
   </div>
 </section>
 
 <style>
-  .cta-section { padding: 90px 24px; }
-  .cta-box {
+  .cta {
     position: relative;
-    max-width: 900px;
-    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 70px 32px;
-    border-radius: 28px;
+    gap: var(--sp-4);
+    padding: clamp(40px, 6vw, 76px) clamp(24px, 4vw, 56px);
+    border-radius: var(--r-xl);
     overflow: hidden;
+    border: 1px solid rgba(var(--accent-rgb), 0.26);
     background:
-      radial-gradient(circle at 50% 0%, rgba(124, 92, 255, 0.18), transparent 60%),
-      linear-gradient(180deg, var(--bg-2), var(--card));
-    border: 1px solid var(--border);
+      radial-gradient(ellipse 90% 130% at 50% 0%, rgba(var(--accent-rgb), 0.24), transparent 66%),
+      var(--surface);
   }
-  .cta-glow {
-    position: absolute;
-    left: 50%; top: -40%;
-    width: 520px; height: 520px;
-    transform: translateX(-50%);
-    background: radial-gradient(circle, rgba(34, 211, 238, 0.14), transparent 65%);
-    pointer-events: none;
-    animation: glow-pulse 4s ease-in-out infinite;
-  }
-  .cta-logo { display: flex; justify-content: center; margin-bottom: 18px; position: relative; animation: float 5s ease-in-out infinite; }
-  .cta-title {
-    font-size: clamp(1.9rem, 5vw, 3rem);
-    font-weight: 800;
-    margin-bottom: 14px;
-    position: relative;
-  }
-  .cta-text {
-    color: var(--text-muted);
-    font-size: 1.1rem;
-    max-width: 540px;
-    margin: 0 auto 32px;
-    line-height: 1.7;
-    position: relative;
-  }
-  .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; position: relative; }
 
-  @media (max-width: 520px) {
-    .cta-section { padding: 60px 16px; }
-    .cta-box { padding: 50px 20px; border-radius: 20px; }
-    .cta-text { font-size: 1rem; }
-    .cta-buttons :global(.btn-cyan), .cta-buttons :global(.btn-secondary) { width: 100%; justify-content: center; }
+  /* Yuqori qirradagi yorug' chiziq — «gem-cut» tilining takrori */
+  .cta::before {
+    content: "";
+    position: absolute;
+    inset-inline: 18%;
+    top: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  }
+
+  .cta__title {
+    max-width: 18ch;
+  }
+
+  .cta__lede {
+    text-align: center;
+    max-width: 52ch;
+  }
+
+  .cta__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--sp-3);
+    margin-top: var(--sp-2);
   }
 </style>

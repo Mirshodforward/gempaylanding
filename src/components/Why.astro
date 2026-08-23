@@ -1,0 +1,78 @@
+---
+/** «Nega GemPay» — olti afzallik. Har biri MAHSULOT haqiqatan qiladigan ish. */
+import SectionHead from "./SectionHead.astro";
+import Icon from "./Icon.astro";
+import type { IconName } from "./icons";
+import { t } from "../i18n/ui";
+import type { Locale } from "../data/site";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const c = t(locale);
+---
+
+<section class="section" id="nega">
+  <div class="wrap">
+    <SectionHead eyebrow={c.why.eyebrow} title={c.why.title} lede={c.why.lede} />
+
+    <ul class="feats">
+      {
+        c.why.items.map((f, i) => (
+          <li class="feat card rise" style={`--i:${i}`}>
+            <span class="feat__ic"><Icon name={f.icon as IconName} size={21} /></span>
+            <h3 class="feat__t">{f.title}</h3>
+            <p class="feat__d">{f.text}</p>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
+
+<style>
+  .feats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(clamp(260px, 30%, 340px), 1fr));
+    gap: clamp(12px, 1.8vw, 20px);
+    list-style: none;
+  }
+
+  .feat {
+    padding: clamp(22px, 2.8vw, 30px);
+    transition:
+      transform var(--dur) var(--ease),
+      background-color var(--dur) var(--ease);
+  }
+
+  .feat:hover {
+    transform: translateY(-3px);
+    background: var(--surface-2);
+  }
+
+  .feat__ic {
+    display: grid;
+    place-items: center;
+    width: 46px;
+    height: 46px;
+    margin-bottom: var(--sp-4);
+    border-radius: var(--r-md);
+    /* Har ikona gradient plita ustida — bo'lim yassi ko'rinmasin */
+    background: linear-gradient(140deg, rgba(var(--brand-rgb), 0.22), rgba(var(--cyan-rgb), 0.12));
+    border: 1px solid rgba(var(--brand-rgb), 0.24);
+    color: var(--brand-bright);
+  }
+
+  .feat__t {
+    font-size: var(--t-md);
+    margin-bottom: 9px;
+  }
+
+  .feat__d {
+    font-size: var(--t-sm);
+    color: var(--text-2);
+    line-height: 1.66;
+  }
+</style>

@@ -1,133 +1,157 @@
 ---
+/**
+ * Sayt qobig'i — `<head>` dagi BARCHA SEO/AEO signallari shu yerda.
+ *
+ * Har sahifa faqat ma'lumot beradi (sarlavha, tavsif, JSON-LD tugunlari),
+ * teglarni qanday chizishni esa faqat shu fayl biladi. Shu tufayli
+ * canonical/hreflang/OG hech qayerda unutilib qolmaydi.
+ */
+import {
+  SITE_URL,
+  ORG,
+  LOCALE_TAG,
+  LOCALE_OG,
+  LOCALES,
+  VERIFICATION,
+  absoluteUrl,
+  localePath,
+  type Locale,
+} from "../data/site";
+import { alternatesFor, type Alternate } from "../lib/seo";
+import "../styles/app.css";
+
 interface Props {
+  locale: Locale;
+  /** `<title>` — kalit so'z oldinda, ≤60 belgi */
   title: string;
-  description?: string;
-  canonical?: string;
-  keywords?: string;
-  lang?: string;
-  ogType?: string;
-  ogImage?: string;
-  hreflangs?: { lang: string; href: string }[];
+  description: string;
+  /** Tilsiz yo'l: `""`, `"oyinlar/pubg-mobile"`, `"blog/..."` */
+  path: string;
+  /** OG rasm — `/og/...` dan. Berilmasa umumiy rasm. */
+  image?: string;
+  keywords?: string[];
+  /** Tarjimasi bor tillar. Blog maqolasi hamma tilda bo'lmasligi mumkin. */
+  availableLocales?: readonly Locale[];
+  /** `true` bo'lsa sahifa indekslanmaydi (tarjimasiz dublikatlar uchun) */
+  noindex?: boolean;
+  /** `og:type` — maqolalarda `article` */
+  ogType?: "website" | "article";
+  /** `graph(...)` natijasi — sahifa sxemalari */
+  schema?: object | null;
+  /** `<body>` ga qo'shimcha sinf (masalan o'yin aksenti uchun) */
+  bodyClass?: string;
+  /** Sahifa aksentini almashtirish — o'yin sahifalarida */
+  accent?: { color: string; rgb: string; color2: string };
 }
 
 const {
+  locale,
   title,
-  description = "Gempay — 200+ o'yin uchun valyuta va top-up paketlarini arzon va bir daqiqada to'ldirish. PUBG UC, Mobile Legends olmos, Free Fire — Telegram orqali xavfsiz to'lov.",
-  canonical = "https://gempay.uz",
-  keywords = "gempay, o'yin valyutalari, pubg uc, pubg uc arzon, mobile legends olmos, free fire olmos, o'yin pulini to'ldirish, top up, game currency uzbekistan",
-  lang = "uz",
+  description,
+  path,
+  image = "/og/default.png",
+  keywords = [],
+  availableLocales = LOCALES,
+  noindex = false,
   ogType = "website",
-  ogImage = "https://gempay.uz/og-image.png",
-  hreflangs = [],
+  schema = null,
+  bodyClass = "",
+  accent,
 } = Astro.props;
+
+// Canonical va hreflang AYNAN bir manbadan (`localePath` + `absoluteUrl`)
+// yasaladi — qo'lda yig'ilgan satr ertami-kechmi ulardan biri bilan
+// farq qilib qolardi va hreflang klasteri buzilardi.
+const canonical = absoluteUrl(localePath(locale, path));
+const alternates: Alternate[] = alternatesFor(path, availableLocales);
+const ogImage = absoluteUrl(image);
+
+/** Sahifa aksentini `:root` ustidan qayta yozadi — tokenlar shundan ergashadi. */
+const accentStyle = accent
+  ? `--accent:${accent.color};--accent-rgb:${accent.rgb};--accent-2:${accent.color2};`
+  : undefined;
 ---
 
 <!doctype html>
-<html lang={lang}>
+<html lang={LOCALE_TAG[locale]} dir="ltr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+
+    <title>{title}</title>
     <meta name="description" content={description} />
-    <meta name="keywords" content={keywords} />
-    <meta name="author" content="Gempay" />
-    <meta name="robots" content="index, follow, max-image-preview:large" />
-    <meta name="theme-color" content="#070A14" />
+    {keywords.length > 0 && <meta name="keywords" content={keywords.join(", ")} />}
+
     <link rel="canonical" href={canonical} />
 
-    {hreflangs.map((hl) => (
-      <link rel="alternate" hreflang={hl.lang} href={hl.href} />
-    ))}
-    {hreflangs.length > 0 && (
-      <link
-        rel="alternate"
-        hreflang="x-default"
-        href={hreflangs.find((h) => h.lang === "uz")?.href || hreflangs[0].href}
-      />
-    )}
+    {/* hreflang — har til o'zini VA barcha qardoshlarini ko'rsatishi shart,
+        aks holda Google juftlikni «tasdiqlanmagan» deb tashlab yuboradi. */}
+    {alternates.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
+    <link rel="alternate" type="application/rss+xml" title={`${ORG.name} — blog`} href={absoluteUrl("/rss.xml")} />
 
-    <!-- Open Graph -->
+    {/* `max-image-preview:large` — Google Discover'da katta rasm huquqi;
+        `max-snippet:-1` — javob mashinalari uzun iqtibos ola olishi uchun. */}
+    <meta
+      name="robots"
+      content={noindex ? "noindex, follow" : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"}
+    />
+
+    {/* ------------------------------------------------------- Open Graph -- */}
     <meta property="og:type" content={ogType} />
+    <meta property="og:site_name" content={ORG.name} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
     <meta property="og:image" content={ogImage} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:url" content={canonical} />
-    <meta property="og:site_name" content="Gempay" />
-    <meta property="og:locale" content={lang === "ru" ? "ru_RU" : lang === "en" ? "en_US" : "uz_UZ"} />
+    <meta property="og:image:alt" content={title} />
+    <meta property="og:locale" content={LOCALE_OG[locale]} />
+    {LOCALES.filter((l) => l !== locale).map((l) => (
+      <meta property="og:locale:alternate" content={LOCALE_OG[l]} />
+    ))}
 
-    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={ogImage} />
 
-    <!-- Icons -->
-    <link rel="icon" type="image/png" href="/favicon-48x48.png" sizes="48x48" />
-    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    {/* ------------------------------------------------------------ PWA --- */}
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <meta name="theme-color" content="#070A14" />
+    <meta name="application-name" content={ORG.name} />
+    <meta name="apple-mobile-web-app-title" content={ORG.name} />
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
+    {/* --------------------------------------------------------- shrift --- */}
+    {/* Faqat lotin subseti oldindan yuklanadi — u har sahifada, birinchi
+        ekranda ishlatiladi. Kirill faqat RU sahifada kerak, uni brauzer
+        `unicode-range` bo'yicha o'zi so'raydi. */}
+    <link rel="preload" href="/fonts/unbounded-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
 
-    <title>{title}</title>
+    {/* --------------------------------------------------- tasdiqlashlar -- */}
+    {VERIFICATION.google && <meta name="google-site-verification" content={VERIFICATION.google} />}
+    {VERIFICATION.yandex && <meta name="yandex-verification" content={VERIFICATION.yandex} />}
+    {VERIFICATION.bing && <meta name="msvalidate.01" content={VERIFICATION.bing} />}
+
+    {/* -------------------------------------------------------- JSON-LD --- */}
+    {schema && (
+      <script
+        type="application/ld+json"
+        is:inline
+        set:html={JSON.stringify(schema)}
+      />
+    )}
 
     <slot name="head" />
   </head>
-  <body>
+
+  <body class={bodyClass} style={accentStyle}>
+    <a class="skip-link" href="#main">Asosiy mazmunga o'tish</a>
     <slot />
-
-    <script>
-      // Scroll-reveal animations
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-              observer.unobserve(entry.target);
-            }
-          });
-        },
-        { threshold: 0.12, rootMargin: '0px 0px -60px 0px' }
-      );
-      document.querySelectorAll('.fade-in').forEach((el) => observer.observe(el));
-
-      // Navbar shrink-on-scroll
-      const nav = document.querySelector('.nav');
-      const onScroll = () => nav?.classList.toggle('scrolled', window.scrollY > 24);
-      onScroll();
-      window.addEventListener('scroll', onScroll, { passive: true });
-
-      // Smooth scroll for in-page anchors + close mobile menu
-      const closeNav = () => {
-        document.querySelector(".nav-links")?.classList.remove("open");
-        document.getElementById("burger")?.classList.remove("open");
-        document.getElementById("burger")?.setAttribute("aria-expanded", "false");
-        document.body.classList.remove("nav-open");
-      };
-      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener('click', function (this: HTMLAnchorElement, e) {
-          const href = this.getAttribute('href');
-          if (!href || href === '#') return;
-          const target = document.querySelector(href);
-          if (target) {
-            e.preventDefault();
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            closeNav();
-          }
-        });
-      });
-    </script>
-
-    <style is:global>
-      @import '../styles/global.css';
-    </style>
   </body>
 </html>

@@ -1,0 +1,111 @@
+---
+/**
+ * Til almashtirgich — `<details>` asosida, JS'siz.
+ *
+ * MUHIM SEO nuqtasi: har bir variant HAQIQIY `<a href>`. Agar tilni JS bilan
+ * almashtirsak, Googlebot boshqa tillarni umuman ko'rmaydi va hreflang
+ * juftliklari «tasdiqlanmagan» bo'lib qoladi.
+ */
+import Icon from "./Icon.astro";
+import { LOCALES, LOCALE_LABEL, localePath, type Locale } from "../data/site";
+
+interface Props {
+  locale: Locale;
+  /** Joriy sahifaning tilsiz yo'li — almashgandan keyin shu sahifada qolamiz */
+  path: string;
+}
+
+const { locale, path } = Astro.props;
+---
+
+<details class="lang">
+  <summary class="lang__btn" aria-label={LOCALE_LABEL[locale]}>
+    <Icon name="globe" size={17} />
+    <span class="lang__code">{locale.toUpperCase()}</span>
+  </summary>
+  <ul class="lang__list">
+    {
+      LOCALES.map((l) => (
+        <li>
+          <a
+            class:list={["lang__item", l === locale && "is-active"]}
+            href={localePath(l, path)}
+            hreflang={l}
+            lang={l}
+            aria-current={l === locale ? "true" : undefined}
+          >
+            {LOCALE_LABEL[l]}
+            {l === locale && <Icon name="check" size={15} />}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</details>
+
+<style>
+  .lang {
+    position: relative;
+  }
+
+  .lang__btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 42px;
+    padding-inline: 12px;
+    border-radius: var(--r-sm);
+    border: 1px solid var(--line);
+    background: var(--surface);
+    color: var(--text-2);
+    font-size: var(--t-xs);
+    font-weight: 700;
+    cursor: pointer;
+    list-style: none;
+    transition: color var(--dur-fast) var(--ease);
+  }
+
+  /* Safari `<summary>` uchun o'z markerini chizadi */
+  .lang__btn::-webkit-details-marker {
+    display: none;
+  }
+
+  .lang__btn:hover {
+    color: var(--text);
+  }
+
+  .lang__list {
+    position: absolute;
+    top: calc(100% + 8px);
+    inset-inline-end: 0;
+    min-width: 168px;
+    padding: 6px;
+    list-style: none;
+    background: var(--surface-solid);
+    border: 1px solid var(--line);
+    border-radius: var(--r-md);
+    box-shadow: var(--lift);
+    z-index: var(--z-nav);
+  }
+
+  .lang__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--sp-3);
+    padding: 10px 12px;
+    border-radius: var(--r-sm);
+    font-size: var(--t-sm);
+    font-weight: 600;
+    color: var(--text-2);
+  }
+
+  .lang__item:hover {
+    background: var(--surface-2);
+    color: var(--text);
+  }
+
+  .lang__item.is-active {
+    color: var(--accent);
+  }
+</style>

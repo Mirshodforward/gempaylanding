@@ -1,0 +1,101 @@
+---
+/**
+ * Xavfsizlik bo'limi.
+ *
+ * NEGA ALOHIDA BO'LIM: bu bozorda firibgarlik ko'p va odam «vositachiga
+ * hisobimni berib qo'yamanmi?» degan qo'rquv bilan keladi. Shu qo'rquvni
+ * aytilmagan qoldirish — konversiyani yo'qotish. Blok aniq bir narsani
+ * aytadi: hisobga KIRILMAYDI, faqat ochiq ID kerak.
+ */
+import Icon from "./Icon.astro";
+import { t } from "../i18n/ui";
+import { botLinkFor, type Locale } from "../data/site";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const c = t(locale);
+---
+
+<section class="section">
+  <div class="wrap">
+    <div class="trust card">
+      <div class="trust__txt">
+        <p class="eyebrow">{c.trust.eyebrow}</p>
+        <h2 class="trust__title">{c.trust.title}</h2>
+        <p class="lede">{c.trust.lede}</p>
+        <a class="btn btn--primary trust__cta" href={botLinkFor()} target="_blank" rel="noopener">
+          <Icon name="telegram" size={18} />
+          {c.trust.cta}
+        </a>
+      </div>
+
+      <ul class="trust__list">
+        {
+          c.trust.points.map((p) => (
+            <li class="trust__item">
+              <Icon name="check-circle" size={19} />
+              <span>{p}</span>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+  </div>
+</section>
+
+<style>
+  .trust {
+    display: grid;
+    gap: clamp(28px, 4vw, 56px);
+    padding: clamp(28px, 4.4vw, 56px);
+    /* Yashil tus — «xavfsiz» signali. Sahifadagi yagona joy, shuning uchun
+       ko'z uni darhol ilg'aydi. */
+    background:
+      radial-gradient(ellipse 70% 90% at 8% 0%, rgba(52, 211, 153, 0.12), transparent 62%),
+      var(--surface);
+  }
+
+  @media (min-width: 900px) {
+    .trust {
+      grid-template-columns: 1.05fr 0.95fr;
+      align-items: center;
+    }
+  }
+
+  .trust__title {
+    margin-block: var(--sp-3) var(--sp-4);
+  }
+
+  .trust__cta {
+    margin-top: var(--sp-5);
+  }
+
+  .trust__list {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    list-style: none;
+  }
+
+  .trust__item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--sp-3);
+    padding: 14px 16px;
+    border-radius: var(--r-md);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--line);
+    font-size: var(--t-sm);
+    font-weight: 500;
+    color: var(--text);
+  }
+
+  .trust__item :global(svg) {
+    flex: none;
+    margin-top: 1px;
+    color: var(--mint);
+  }
+</style>

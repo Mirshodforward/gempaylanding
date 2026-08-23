@@ -1,0 +1,77 @@
+---
+/**
+ * AEO javob bloki — sahifadagi eng muhim SEO elementlaridan biri.
+ *
+ * NEGA KERAK: ChatGPT, Perplexity, Gemini va Alisa sahifani o'qiganda
+ * savolga TAYYOR, qisqa va mustaqil javobni qidiradi — matn ichiga
+ * sochilgan ma'lumotni ular kamdan-kam yig'adi. Shu blok aynan o'sha
+ * iqtibos nishoni: 40-60 so'z, mahsulot nomi bilan, kontekstsiz ham
+ * tushunarli.
+ *
+ * MUHIM: bu matn JSON-LD'da ham (`FAQPage`/`Answer`) takrorlanadi, lekin
+ * u yerda YOLG'IZ tursa Google buni «yashirin tarkib» deb hisoblaydi.
+ * Shuning uchun blok sahifada HAR DOIM ko'rinadi.
+ */
+import Icon from "./Icon.astro";
+
+interface Props {
+  title: string;
+  text: string;
+  /** Sarlavha darajasi — o'yin sahifasida h2, blogda h2 dan keyin kelsa h3 */
+  as?: "h2" | "h3" | "p";
+}
+
+const { title, text, as: Tag = "h2" } = Astro.props;
+---
+
+<aside class="answer card">
+  <div class="answer__head">
+    <span class="answer__ic"><Icon name="sparkles" size={16} /></span>
+    <Tag class="answer__title">{title}</Tag>
+  </div>
+  <p class="answer__text">{text}</p>
+</aside>
+
+<style>
+  .answer {
+    padding: clamp(20px, 3.5vw, 30px);
+    /* Aksent bilan bo'yalgan chekka — blok matn oqimidan aniq ajralib tursin */
+    border-inline-start: 3px solid var(--accent);
+    border-start-start-radius: var(--r-sm);
+    border-end-start-radius: var(--r-sm);
+  }
+
+  .answer__head {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-3);
+    margin-bottom: var(--sp-3);
+  }
+
+  .answer__ic {
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    flex: none;
+    border-radius: var(--r-sm);
+    background: rgba(var(--accent-rgb), 0.14);
+    color: var(--accent);
+  }
+
+  .answer__title {
+    font-family: var(--font-display);
+    font-size: var(--t-md);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+
+  .answer__text {
+    font-size: var(--t-base);
+    line-height: 1.7;
+    color: var(--text);
+    /* O'qish uchun qulay kenglik — javob bir qarashda qamrab olinsin */
+    max-width: 74ch;
+  }
+</style>

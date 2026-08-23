@@ -1,0 +1,52 @@
+---
+/** Bo'lim sarlavhasi — yorliq + h2 + izoh. Barcha bo'limlarda bir xil ritm. */
+interface Props {
+  eyebrow: string;
+  title: string;
+  lede?: string;
+  /** Markazga tekislash — katalog va CTA bo'limlarida */
+  center?: boolean;
+  id?: string;
+}
+
+const { eyebrow, title, lede, center = false, id } = Astro.props;
+---
+
+<header class:list={["shead", center && "is-center"]}>
+  <p class="eyebrow">{eyebrow}</p>
+  <h2 class="shead__title" id={id}>{title}</h2>
+  {lede && <p class="lede shead__lede">{lede}</p>}
+</header>
+
+<style>
+  .shead {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-3);
+    margin-bottom: clamp(28px, 4.5vw, 52px);
+    max-width: 44ch;
+  }
+
+  .shead.is-center {
+    align-items: center;
+    text-align: center;
+    max-width: 56ch;
+    margin-inline: auto;
+  }
+
+  .shead__title {
+    max-width: 20ch;
+  }
+
+  .shead.is-center .shead__title {
+    max-width: none;
+  }
+
+  .shead__lede {
+    margin: 0;
+  }
+
+  .shead.is-center .shead__lede {
+    text-align: center;
+  }
+</style>

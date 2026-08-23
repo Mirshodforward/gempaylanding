@@ -1,0 +1,237 @@
+---
+/**
+ * Yopishqoq sarlavha paneli.
+ *
+ * Skroll qilinganda fon paydo bo'ladi (`.is-stuck`) — buni JS emas,
+ * `IntersectionObserver` bilan kuzatiladigan 1px «qorovul» element hal
+ * qiladi. Skroll hodisasiga ulanish har kadrda ishlaydi va mobilda
+ * sezilarli jank beradi; observer esa faqat holat o'zgarganda uyg'onadi.
+ */
+import Logo from "./Logo.astro";
+import Icon from "./Icon.astro";
+import LocaleSwitcher from "./LocaleSwitcher.astro";
+import { t } from "../i18n/ui";
+import { localePath, botLinkFor, type Locale } from "../data/site";
+
+interface Props {
+  locale: Locale;
+  /** Joriy sahifaning tilsiz yo'li — til almashtirgich shu yerda qoladi */
+  path: string;
+}
+
+const { locale, path } = Astro.props;
+const c = t(locale);
+
+const links = [
+  { href: `${localePath(locale)}#oyinlar`, label: c.nav.games },
+  { href: `${localePath(locale)}#qanday`, label: c.nav.how },
+  { href: `${localePath(locale)}#nega`, label: c.nav.why },
+  { href: localePath(locale, "blog"), label: c.nav.blog },
+  { href: `${localePath(locale)}#faq`, label: c.nav.faq },
+];
+---
+
+<div class="sentinel" aria-hidden="true"></div>
+
+<header class="hdr" id="hdr">
+  <div class="wrap hdr__in">
+    <Logo locale={locale} />
+
+    <nav class="hdr__nav" aria-label={c.nav.menu}>
+      {links.map((l) => <a class="hdr__link" href={l.href}>{l.label}</a>)}
+    </nav>
+
+    <div class="hdr__right">
+      <LocaleSwitcher locale={locale} path={path} />
+      <a class="btn btn--primary hdr__cta" href={botLinkFor()} target="_blank" rel="noopener">
+        <Icon name="telegram" size={17} />
+        {c.nav.cta}
+      </a>
+      <button class="hdr__burger" type="button" aria-expanded="false" aria-controls="mnav" aria-label={c.nav.menu}>
+        <Icon name="menu" size={22} />
+      </button>
+    </div>
+  </div>
+</header>
+
+{/* Mobil menyu — sarlavhadan tashqarida, chunki u butun ekranni egallaydi */}
+<div class="mnav" id="mnav" hidden>
+  <div class="mnav__panel">
+    {links.map((l) => <a class="mnav__link" href={l.href}>{l.label}</a>)}
+    <a class="btn btn--primary mnav__cta" href={botLinkFor()} target="_blank" rel="noopener">
+      <Icon name="telegram" size={18} />
+      {c.nav.cta}
+    </a>
+  </div>
+</div>
+
+<style>
+  .sentinel {
+    position: absolute;
+    top: 0;
+    height: 1px;
+    width: 1px;
+  }
+
+  .hdr {
+    position: sticky;
+    top: 0;
+    z-index: var(--z-nav);
+    /* Boshida fon YO'Q — hero bilan qo'shilib ketadi, sahifa balandroq
+       ko'rinadi. Fon faqat skrolldan keyin qo'shiladi. */
+    background: transparent;
+    border-bottom: 1px solid transparent;
+    transition:
+      background-color var(--dur) var(--ease),
+      border-color var(--dur) var(--ease),
+      backdrop-filter var(--dur) var(--ease);
+  }
+
+  .hdr.is-stuck {
+    background: rgba(var(--bg-rgb), 0.72);
+    backdrop-filter: blur(18px) saturate(150%);
+    -webkit-backdrop-filter: blur(18px) saturate(150%);
+    border-bottom-color: var(--line);
+  }
+
+  .hdr__in {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-5);
+    height: 68px;
+  }
+
+  .hdr__nav {
+    display: none;
+    align-items: center;
+    gap: 2px;
+    margin-inline-start: var(--sp-3);
+  }
+
+  .hdr__link {
+    padding: 8px 13px;
+    border-radius: var(--r-sm);
+    font-size: var(--t-sm);
+    font-weight: 600;
+    color: var(--text-2);
+    transition:
+      color var(--dur-fast) var(--ease),
+      background-color var(--dur-fast) var(--ease);
+  }
+
+  .hdr__link:hover {
+    color: var(--text);
+    background: var(--surface);
+  }
+
+  .hdr__right {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+    margin-inline-start: auto;
+  }
+
+  .hdr__cta {
+    display: none;
+    padding: 11px 20px;
+  }
+
+  .hdr__burger {
+    display: grid;
+    place-items: center;
+    width: 42px;
+    height: 42px;
+    border-radius: var(--r-sm);
+    color: var(--text);
+    border: 1px solid var(--line);
+    background: var(--surface);
+  }
+
+  @media (min-width: 900px) {
+    .hdr__nav,
+    .hdr__cta {
+      display: flex;
+    }
+    .hdr__burger {
+      display: none;
+    }
+  }
+
+  /* ---------------------------------------------------------- mobil ----- */
+
+  .mnav {
+    position: fixed;
+    inset: 68px 0 0;
+    z-index: calc(var(--z-nav) - 1);
+    background: rgba(var(--bg-rgb), 0.94);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+    overflow-y: auto;
+  }
+
+  .mnav[hidden] {
+    display: none;
+  }
+
+  .mnav__panel {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-1);
+    padding: var(--sp-5) var(--gutter) var(--sp-8);
+  }
+
+  .mnav__link {
+    padding: 16px 14px;
+    border-radius: var(--r-md);
+    font-family: var(--font-display);
+    font-size: var(--t-lg);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .mnav__cta {
+    margin-top: var(--sp-5);
+    width: 100%;
+  }
+
+  @media (min-width: 900px) {
+    .mnav {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  // 1) Skroll holati — `IntersectionObserver` bilan, skroll hodisasisiz.
+  const sentinel = document.querySelector(".sentinel");
+  const hdr = document.getElementById("hdr");
+  if (sentinel && hdr) {
+    new IntersectionObserver(
+      ([e]) => hdr.classList.toggle("is-stuck", !e.isIntersecting),
+      { threshold: 0 },
+    ).observe(sentinel);
+  }
+
+  // 2) Mobil menyu. `hidden` atributi bilan boshqariladi — shunda menyu
+  //    yopiq holatda skrinriderdan ham, Tab tartibidan ham chiqib ketadi.
+  const burger = document.querySelector<HTMLButtonElement>(".hdr__burger");
+  const mnav = document.getElementById("mnav");
+  if (burger && mnav) {
+    const setOpen = (open: boolean) => {
+      mnav.hidden = !open;
+      burger.setAttribute("aria-expanded", String(open));
+      // Menyu ochiqda orqa fon skroll bo'lmasin
+      document.body.style.overflow = open ? "hidden" : "";
+    };
+
+    burger.addEventListener("click", () => setOpen(mnav.hidden));
+    // Havolaga bosilganda menyu o'zi yopiladi (bir sahifali `#` havolalar)
+    mnav.addEventListener("click", (e) => {
+      if ((e.target as HTMLElement).closest("a")) setOpen(false);
+    });
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && !mnav.hidden) setOpen(false);
+    });
+  }
+</script>
