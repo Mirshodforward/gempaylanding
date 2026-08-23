@@ -68,7 +68,10 @@ const ogImage = absoluteUrl(image);
 
 /** Sahifa aksentini `:root` ustidan qayta yozadi — tokenlar shundan ergashadi. */
 const accentStyle = accent
-  ? `--accent:${accent.color};--accent-rgb:${accent.rgb};--accent-2:${accent.color2};`
+  ? `--accent:${accent.color};--accent-rgb:${accent.rgb};--accent-2:${accent.color2};` +
+    // O'yin rangi matn uchun ham yetarli kontrast beradi (hammasi >5:1),
+    // shuning uchun `--accent-ink` ham o'shanga tenglashtiriladi.
+    `--accent-ink:${accent.color};`
   : undefined;
 ---
 

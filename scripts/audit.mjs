@@ -148,13 +148,74 @@ for (const url of urls) {
             return `PARSE ERROR: ${e.message}`;
           }
         });
+        /**
+         * Erishuvchanlik: nomi yo'q interaktiv elementlar va past kontrast.
+         *
+         * Nomi yo'q havola/tugma skrinrider uchun «link» deb o'qiladi va
+         * foydalanuvchi qayerga borishini bilmaydi. Bu ayni paytda SEO
+         * masalasi ham: Google havola matnidan sahifa mavzusini o'qiydi.
+         */
+        const srgb = (c) => {
+          const v = c / 255;
+          return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4);
+        };
+        const lum = (rgb) => 0.2126 * srgb(rgb[0]) + 0.7152 * srgb(rgb[1]) + 0.0722 * srgb(rgb[2]);
+        const parse = (s) => (s.match(/\d+(\.\d+)?/g) || []).slice(0, 3).map(Number);
+        /** Shaffof fonli elementda haqiqiy fonni topish uchun ota-onalarga chiqamiz. */
+        const bgOf = (el) => {
+          for (let p = el; p; p = p.parentElement) {
+            const c = getComputedStyle(p).backgroundColor;
+            const m = c.match(/rgba?\(([^)]+)\)/);
+            if (!m) continue;
+            const parts = m[1].split(",").map((x) => parseFloat(x));
+            if (parts.length < 4 || parts[3] > 0.85) return parts.slice(0, 3);
+          }
+          return [7, 10, 20];
+        };
+
+        const noName = [];
+        for (const el of document.querySelectorAll("a, button")) {
+          const label =
+            (el.getAttribute("aria-label") || "").trim() ||
+            (el.textContent || "").trim() ||
+            (el.querySelector("img")?.getAttribute("alt") || "").trim();
+          if (!label) noName.push(el.outerHTML.slice(0, 90));
+        }
+
+        const lowContrast = [];
+        const seenCombo = new Set();
+        for (const el of document.querySelectorAll("p, li, span, a, h1, h2, h3, h4, dt, dd, td, th, strong, time")) {
+          const txt = (el.firstChild?.nodeType === 3 ? el.firstChild.textContent : "").trim();
+          if (txt.length < 4) continue;
+          const cs = getComputedStyle(el);
+          // Gradient bilan bo'yalgan matn (`background-clip: text`) da
+          // `color` shaffof bo'ladi — kontrastni rang emas, gradient
+          // belgilaydi va uni shu yo'l bilan o'lchab bo'lmaydi.
+          if (cs.color.includes("rgba") && cs.color.endsWith(", 0)")) continue;
+          const fg = parse(cs.color);
+          if (fg.length < 3) continue;
+          const bg = bgOf(el);
+          const key = `${cs.color}|${bg.join()}`;
+          if (seenCombo.has(key)) continue;
+          seenCombo.add(key);
+          const [a, b] = [lum(fg), lum(bg)].sort((x, y) => y - x);
+          const ratio = (a + 0.05) / (b + 0.05);
+          const size = parseFloat(cs.fontSize);
+          const bold = Number(cs.fontWeight) >= 700;
+          // WCAG AA: katta matn 3:1, oddiy matn 4.5:1
+          const need = size >= 24 || (size >= 18.66 && bold) ? 3 : 4.5;
+          if (ratio < need) {
+            lowContrast.push(`${ratio.toFixed(2)}:1 (kerak ${need}) ${cs.color} — "${txt.slice(0, 40)}"`);
+          }
+        }
+
         const title = document.title;
         const desc = document.querySelector('meta[name="description"]')?.content || "";
         const canon = document.querySelector('link[rel="canonical"]')?.href || "";
         const noindex = /noindex/.test(
           document.querySelector('meta[name="robots"]')?.getAttribute("content") || "",
         );
-        return { h1, jumps, noAlt, ld, title, desc, canon, noindex };
+        return { h1, jumps, noAlt, ld, title, desc, canon, noindex, noName, lowContrast };
       });
 
       if (struct.h1.length !== 1) {
@@ -169,6 +230,16 @@ for (const url of urls) {
       if (struct.noAlt.length) {
         problems++;
         console.log(`  ✗ alt yo'q: ${struct.noAlt.length} ta rasm`);
+      }
+      if (struct.noName.length) {
+        problems++;
+        console.log(`  ✗ nomi yo'q havola/tugma: ${struct.noName.length} ta`);
+        struct.noName.slice(0, 4).forEach((h) => console.log(`      ${h}`));
+      }
+      if (struct.lowContrast.length) {
+        problems++;
+        console.log(`  ✗ past kontrast: ${struct.lowContrast.length} ta rang juftligi`);
+        struct.lowContrast.slice(0, 6).forEach((x) => console.log(`      ${x}`));
       }
       // `noindex` sahifa qidiruv natijasida ko'rinmaydi — meta uzunligining
       // ahamiyati yo'q, shuning uchun tekshirilmaydi.

@@ -166,7 +166,8 @@ button {
   left: var(--sp-4);
   z-index: var(--z-modal);
   padding: var(--sp-3) var(--sp-5);
-  background: var(--brand);
+  /* To'q binafsha: oq matn bilan 7.7:1 (brendning asosiy tusida 4.35 edi) */
+  background: var(--brand-deep);
   color: #fff;
   border-radius: var(--r-sm);
   font-weight: 600;
@@ -196,7 +197,7 @@ button {
   font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--accent);
+  color: var(--accent-ink);
 }
 
 .lede {

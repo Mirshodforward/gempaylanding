@@ -33,6 +33,19 @@
   --accent-rgb: var(--brand-rgb);
   --accent-2: var(--cyan);
 
+  /*
+   * MATN uchun aksent — fon va chegara uchun ishlatiladiganidan ALOHIDA.
+   *
+   * NEGA: brend binafshasi (#7c5cff) to'q fonda 4.22:1 beradi, WCAG AA esa
+   * oddiy matn uchun 4.5:1 talab qiladi. Fon yoki 1px chegara sifatida u
+   * mutlaqo yaxshi — kontrast talabi faqat MATNGA tegishli. Shuning uchun
+   * matn uchun yorug'roq tus ishlatiladi.
+   *
+   * O'yin sahifalarida bu qiymat o'yin rangiga almashadi: barcha o'yin
+   * ranglari to'q fonda 5:1 dan yuqori (eng pasti Free Fire ~5.1).
+   */
+  --accent-ink: var(--brand-bright);
+
   /* --------------------------------------------------------------- fon --- */
   --bg: #070a14;
   --bg-rgb: 7, 10, 20;
@@ -48,7 +61,8 @@
   /* ------------------------------------------------------------- matn --- */
   --text: #eef2fb;
   --text-2: #a8b3c9;
-  --text-3: #6b7791;
+  /* 4.5:1 dan o'tishi uchun yorug'roq: oldingi #6b7791 to'q fonda 4.40 berardi */
+  --text-3: #8996ad;
 
   /* ---------------------------------------------------------- chegara --- */
   --line: rgba(255, 255, 255, 0.09);
