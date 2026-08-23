@@ -38,6 +38,8 @@ function collect(): Entry[] {
     { path: "", lastmod: STATIC_LASTMOD, changefreq: "weekly", priority: 1.0, locales: LOCALES },
     // Katalog hub — o'ziga xos matni bor va har sahifadan havola oladi
     { path: "oyinlar", lastmod: STATIC_LASTMOD, changefreq: "weekly", priority: 0.95, locales: LOCALES },
+    // Ishonch sahifasi — E-E-A-T signali, har tilda to'liq matni bor
+    { path: "haqida", lastmod: STATIC_LASTMOD, changefreq: "monthly", priority: 0.6, locales: LOCALES },
   ];
 
   // Blog ro'yxati faqat MAQOLASI BOR tillarda. Bo'sh ro'yxat sahifasi

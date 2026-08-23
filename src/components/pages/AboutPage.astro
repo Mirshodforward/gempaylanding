@@ -1,0 +1,501 @@
+---
+/**
+ * «Biz haqimizda» — `/haqida`.
+ *
+ * NEGA BU SAHIFA SEO UCHUN MUHIM: GemPay pul bilan ishlaydi. Google bunday
+ * mavzularni («Your Money or Your Life» ga yaqin) qat'iyroq baholaydi va
+ * saytdan quyidagilarni kutadi: kim ishlatayotgani, qanday ishlashi,
+ * cheklovlar nimada, muammo bo'lsa kimga murojaat qilinishi.
+ *
+ * Bu sahifa aynan shularni ochiq aytadi — jumladan noqulay narsalarni ham
+ * (rasmiy hamkor emasligimiz, narx nega o'zgarishi, nimani kafolatlay
+ * olmasligimiz). Kamchilikni yashirgan sahifadan ko'ra, uni ochiq aytgan
+ * sahifa ko'proq ishonch qozonadi.
+ */
+import Layout from "../../layouts/Layout.astro";
+import Aurora from "../Aurora.astro";
+import Header from "../Header.astro";
+import Footer from "../Footer.astro";
+import Icon from "../Icon.astro";
+import AnswerBox from "../AnswerBox.astro";
+import Breadcrumbs from "../Breadcrumbs.astro";
+import Cta from "../Cta.astro";
+import Faq from "../Faq.astro";
+
+import { t } from "../../i18n/ui";
+import { SITE_URL, SUPPORT_URL, STARSPAYMEE_URL, localePath, type Locale } from "../../data/site";
+import {
+  graph,
+  organizationSchema,
+  websiteSchema,
+  breadcrumbSchema,
+  faqSchema,
+} from "../../lib/seo";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const c = t(locale);
+const path = "haqida";
+
+const COPY = {
+  uz: {
+    title: "GemPay haqida — kim ishlatadi va qanday ishlaydi",
+    description:
+      "GemPay kimniki, buyurtma qanday bajariladi va nimani kafolatlaymiz. " +
+      "Narx nega saytda yo'q, qanday ma'lumot saqlanadi va muammoda kimga yozish kerak.",
+    h1: "GemPay haqida",
+    answer:
+      "GemPay — O'zbekistondagi o'yinchilar uchun o'yin valyutasini so'mda to'ldirish xizmati. " +
+      "U StarsPaymee ekotizimining bir qismi va Telegram Mini App sifatida ishlaydi. " +
+      "Buyurtma provayder API'si orqali avtomatik bajariladi; biz o'yin hisobingizga kirmaymiz, " +
+      "faqat ochiq Player ID bo'yicha yetkazamiz.",
+    sections: [
+      {
+        icon: "gamepad",
+        h: "Nima qilamiz",
+        p: [
+          "Katalogimizda o'nta xizmat bor: to'qqizta o'yin va Steam hamyoni. Har biri uchun " +
+            "provayder bilan to'g'ridan-to'g'ri integratsiya qilingan, ya'ni buyurtma odam qo'li " +
+            "bilan emas, API orqali bajariladi.",
+          "Siz Telegram'dagi botni ochasiz, o'yinni tanlaysiz, ochiq Player ID ni kiritasiz va " +
+            "so'mda to'laysiz. Kredit o'yinga qarab 1-5 daqiqada tushadi.",
+        ],
+      },
+      {
+        icon: "shield-check",
+        h: "Nimani so'ramaymiz",
+        p: [
+          "Parol, SMS kod, elektron pochta paroli yoki hisobingizga kirish — bularning hech biri " +
+            "to'ldirish uchun kerak emas va biz ularni hech qachon so'ramaymiz.",
+          "To'ldirish uchun yagona kerakli narsa — ochiq Player ID. Bu o'yin profilingizda har kim " +
+            "ko'radigan raqam: uni bilgan odam sizga narsa yubora oladi, lekin hisobingizga kira olmaydi.",
+        ],
+      },
+      {
+        icon: "wallet",
+        h: "Narx nega saytda yozilmagan",
+        p: [
+          "Narx provayder katalogidan jonli olinadi va dollar kursiga bog'liq. Saytga yozilgan raqam " +
+            "bir haftada eskiradi va noto'g'ri va'daga aylanadi, shuning uchun biz uni ataylab " +
+            "yozmaymiz.",
+          "Aniq summa botda, paket tanlash bosqichida, to'lovdan OLDIN ko'rsatiladi. Siz ko'rgan " +
+            "summa — to'laydigan summangiz; yashirin qo'shimcha yo'q.",
+        ],
+      },
+      {
+        icon: "alert-triangle",
+        h: "Nimani kafolatlay olmaymiz",
+        p: [
+          "Biz o'yin nashriyotlarining rasmiy hamkori emasmiz. O'yin nomlari va logolari o'z " +
+            "egalarining savdo belgilari.",
+          "Nashriyot hududiy cheklov qo'ysa yoki hisobingizga o'zi cheklov qo'ysa, biz buni " +
+            "aylanib o'ta olmaymiz. Shuningdek provayder tomonidagi texnik uzilishlar yetkazishni " +
+            "kechiktirishi mumkin — bunday holatda buyurtma bajarilmasa, pul qaytariladi.",
+        ],
+      },
+      {
+        icon: "headset",
+        h: "Muammo bo'lsa",
+        p: [
+          "Har bir buyurtma botdagi «Tarix» bo'limida saqlanadi: qaysi o'yin, qaysi ID, qancha va " +
+            "qachon. Bahsli holatda ko'rsatadigan narsangiz shu.",
+          "Belgilangan vaqtdan keyin ham kredit tushmasa, buyurtma raqami bilan qo'llab-quvvatlashga " +
+            "yozing — tekshiramiz va yo yetkazamiz, yo pulni qaytaramiz.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "GemPay kim tomonidan ishlatiladi?",
+        a:
+          "GemPay — StarsPaymee ekotizimining bir qismi. Bu ekotizim Telegram Stars, Premium va " +
+          "sovg'alar bilan ham ishlaydi va bir necha yildan beri O'zbekiston bozorida faoliyat " +
+          "yuritadi. Ikkala loyiha ham bitta jamoa va bitta qo'llab-quvvatlash xizmatiga ega.",
+      },
+      {
+        q: "Bu rasmiy xizmatmi?",
+        a:
+          "GemPay mustaqil xizmat va o'yin nashriyotlarining rasmiy hamkori emas. Biz litsenziyalangan " +
+          "provayder orqali ishlaymiz va yetkazish ularning API'si orqali bajariladi. O'yin nomlari va " +
+          "logolari o'z egalarining savdo belgilari.",
+      },
+      {
+        q: "Pul qaytarilishi mumkinmi?",
+        a:
+          "Ha, buyurtma bajarilmasa. Kredit yetkazilgandan keyin uni qaytarib bo'lmaydi — bu o'yin " +
+          "tomonidagi cheklov, chunki valyuta hisobga tushgach uni chiqarish imkoni yo'q. Aynan shu " +
+          "sababli ID to'lovdan oldin tekshiriladi.",
+      },
+      {
+        q: "Ma'lumotlarim qanday saqlanadi?",
+        a:
+          "Buyurtma uchun Telegram hisobingiz va siz kiritgan ochiq Player ID saqlanadi — bu tarix va " +
+          "chek uchun kerak. Karta ma'lumotlari bizga umuman kelmaydi: to'lov O'zbekiston to'lov " +
+          "tizimlari tomonida bajariladi.",
+      },
+    ],
+  },
+  ru: {
+    title: "О GemPay — кто мы и как работает сервис",
+    description:
+      "Кто стоит за GemPay, как выполняется заказ, что мы гарантируем и чего не можем. " +
+      "Почему цен нет на сайте, какие данные храним и куда писать при проблеме.",
+    h1: "О GemPay",
+    answer:
+      "GemPay — сервис пополнения игровой валюты в сумах для игроков в Узбекистане. Он входит в " +
+      "экосистему StarsPaymee и работает как Telegram Mini App. Заказ выполняется автоматически " +
+      "через API провайдера; мы не заходим в ваш игровой аккаунт, а доставляем по открытому Player ID.",
+    sections: [
+      {
+        icon: "gamepad",
+        h: "Что мы делаем",
+        p: [
+          "В каталоге десять сервисов: девять игр и кошелёк Steam. По каждому есть прямая интеграция " +
+            "с провайдером, то есть заказ выполняется через API, а не руками оператора.",
+          "Вы открываете бота в Telegram, выбираете игру, вводите открытый Player ID и платите в сумах. " +
+            "Зачисление занимает 1-5 минут в зависимости от игры.",
+        ],
+      },
+      {
+        icon: "shield-check",
+        h: "Чего мы не спрашиваем",
+        p: [
+          "Пароль, SMS-код, пароль от почты или доступ к аккаунту — ничего из этого для пополнения не " +
+            "нужно, и мы никогда этого не запрашиваем.",
+          "Единственное, что требуется — открытый Player ID. Это номер, который виден в вашем игровом " +
+            "профиле любому: зная его, можно отправить вам что-то, но не войти в аккаунт.",
+        ],
+      },
+      {
+        icon: "wallet",
+        h: "Почему цен нет на сайте",
+        p: [
+          "Цена берётся из каталога провайдера вживую и зависит от курса доллара. Число, написанное на " +
+            "сайте, устареет за неделю и превратится в неверное обещание, поэтому мы его намеренно не " +
+            "публикуем.",
+          "Точная сумма показывается в боте на шаге выбора пакета, ДО оплаты. Сколько видите — столько " +
+            "и платите, скрытых доплат нет.",
+        ],
+      },
+      {
+        icon: "alert-triangle",
+        h: "Чего мы не гарантируем",
+        p: [
+          "Мы не являемся официальным партнёром игровых издателей. Названия и логотипы игр — товарные " +
+            "знаки их владельцев.",
+          "Если издатель ввёл региональное ограничение или ограничил ваш аккаунт, обойти это мы не " +
+            "можем. Технические сбои на стороне провайдера тоже могут задержать доставку — если заказ " +
+            "не выполнен, деньги возвращаются.",
+        ],
+      },
+      {
+        icon: "headset",
+        h: "Если что-то пошло не так",
+        p: [
+          "Каждый заказ сохраняется в разделе «История» в боте: какая игра, какой ID, сколько и когда. " +
+            "В спорной ситуации это ваше подтверждение.",
+          "Если после заявленного времени зачисления нет, напишите в поддержку с номером заказа — " +
+            "проверим и либо доставим, либо вернём деньги.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Кто стоит за GemPay?",
+        a:
+          "GemPay входит в экосистему StarsPaymee, которая работает также с Telegram Stars, Premium и " +
+          "подарками и присутствует на рынке Узбекистана несколько лет. У обоих проектов одна команда " +
+          "и одна служба поддержки.",
+      },
+      {
+        q: "Это официальный сервис?",
+        a:
+          "GemPay — независимый сервис и не является официальным партнёром игровых издателей. Мы " +
+          "работаем через лицензированного провайдера, и доставка выполняется через его API. Названия " +
+          "и логотипы игр — товарные знаки их владельцев.",
+      },
+      {
+        q: "Можно ли вернуть деньги?",
+        a:
+          "Да, если заказ не выполнен. После зачисления возврат невозможен — это ограничение на стороне " +
+          "игры: выведенную на счёт валюту обратно не забрать. Именно поэтому ID проверяется до оплаты.",
+      },
+      {
+        q: "Как хранятся мои данные?",
+        a:
+          "Для заказа сохраняются ваш аккаунт Telegram и введённый вами открытый Player ID — это нужно " +
+          "для истории и чека. Данные карты к нам вообще не попадают: оплата проходит на стороне " +
+          "платёжных систем Узбекистана.",
+      },
+    ],
+  },
+  en: {
+    title: "About GemPay — who runs it and how it works",
+    description:
+      "Who is behind GemPay, how orders are fulfilled and what we guarantee. " +
+      "Why prices are not on the site, what data we keep and where to get help.",
+    h1: "About GemPay",
+    answer:
+      "GemPay tops up in-game currency in Uzbek so'm for players in Uzbekistan. It is part of the " +
+      "StarsPaymee ecosystem and runs as a Telegram Mini App. Orders are fulfilled automatically " +
+      "through a provider API; we never log into your game account and deliver by public Player ID only.",
+    sections: [
+      {
+        icon: "gamepad",
+        h: "What we do",
+        p: [
+          "The catalogue covers ten services: nine games and the Steam wallet. Each has a direct " +
+            "provider integration, so an order is fulfilled through an API rather than by hand.",
+          "You open the bot in Telegram, pick your game, enter your public Player ID and pay in so'm. " +
+            "The credit lands in 1-5 minutes depending on the game.",
+        ],
+      },
+      {
+        icon: "shield-check",
+        h: "What we never ask for",
+        p: [
+          "A password, an SMS code, your email password or account access — none of it is needed to top " +
+            "up, and we never ask for it.",
+          "The only thing required is your public Player ID: the number anyone can see on your in-game " +
+            "profile. Knowing it lets someone send you something; it does not let them into your account.",
+        ],
+      },
+      {
+        icon: "wallet",
+        h: "Why prices are not on this site",
+        p: [
+          "Prices come live from the provider catalogue and follow the dollar rate. A number printed on " +
+            "a static page goes stale within a week and becomes a false promise, so we deliberately " +
+            "leave it out.",
+          "The exact amount is shown in the bot at the pack-selection step, BEFORE payment. What you see " +
+            "is what you pay — there are no hidden additions.",
+        ],
+      },
+      {
+        icon: "alert-triangle",
+        h: "What we cannot guarantee",
+        p: [
+          "We are not an official partner of any game publisher. Game names and logos are trademarks of " +
+            "their respective owners.",
+          "If a publisher applies a regional restriction, or restricts your account, we cannot work " +
+            "around it. Technical faults on the provider side can also delay delivery — if an order is " +
+            "not fulfilled, you get your money back.",
+        ],
+      },
+      {
+        icon: "headset",
+        h: "If something goes wrong",
+        p: [
+          "Every order is stored under History in the bot: which game, which ID, how much and when. " +
+            "That is your record if anything is disputed.",
+          "If the credit has not arrived past the stated time, message support with the order number — " +
+            "we will check and either deliver it or refund you.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "Who is behind GemPay?",
+        a:
+          "GemPay is part of the StarsPaymee ecosystem, which also handles Telegram Stars, Premium and " +
+          "gifts and has operated in the Uzbek market for several years. Both projects share one team " +
+          "and one support channel.",
+      },
+      {
+        q: "Is this an official service?",
+        a:
+          "GemPay is independent and is not an official partner of any game publisher. We work through a " +
+          "licensed provider and delivery runs on their API. Game names and logos are trademarks of " +
+          "their respective owners.",
+      },
+      {
+        q: "Can I get a refund?",
+        a:
+          "Yes, if the order was not fulfilled. Once the credit is delivered a refund is not possible — " +
+          "that is a limitation on the game's side, since currency credited to an account cannot be " +
+          "withdrawn. This is exactly why the ID is verified before payment.",
+      },
+      {
+        q: "How is my data stored?",
+        a:
+          "An order stores your Telegram account and the public Player ID you entered — needed for your " +
+          "history and receipt. Card details never reach us: payment is handled by Uzbekistan's payment " +
+          "systems.",
+      },
+    ],
+  },
+}[locale];
+
+const crumbs = [
+  { name: c.game.breadcrumbHome, path: "" },
+  { name: c.footer.about, path },
+];
+
+const schema = graph(
+  organizationSchema(),
+  websiteSchema(locale),
+  breadcrumbSchema(locale, crumbs),
+  faqSchema(COPY.faq),
+  {
+    // `mainEntity` tashkilot tuguniga ishora qiladi — shu sahifa AYNAN
+    // GemPay haqida ekanini bildiradi va `Organization` bilan bog'laydi.
+    "@type": "AboutPage",
+    name: COPY.h1,
+    description: COPY.description,
+    inLanguage: locale,
+    mainEntity: { "@id": `${SITE_URL}/#organization` },
+  },
+);
+---
+
+<Layout
+  locale={locale}
+  path={path}
+  title={`${COPY.title} | GemPay`}
+  description={COPY.description}
+  image="/og/default.png"
+  schema={schema}
+>
+  <Aurora />
+  <Header locale={locale} path={path} />
+
+  <main id="main">
+    <div class="wrap">
+      <Breadcrumbs items={crumbs} locale={locale} />
+
+      <header class="ahead">
+        <h1>{COPY.h1}</h1>
+      </header>
+
+      <AnswerBox title={c.blog.answerTitle} text={COPY.answer} />
+
+      <div class="asecs">
+        {
+          COPY.sections.map((s) => (
+            <section class="asec">
+              <span class="asec__ic"><Icon name={s.icon as any} size={20} /></span>
+              <div class="asec__body">
+                <h2 class="asec__h">{s.h}</h2>
+                {s.p.map((para) => <p class="asec__p">{para}</p>)}
+              </div>
+            </section>
+          ))
+        }
+      </div>
+
+      <nav class="alinks" aria-label={c.footer.colHelp}>
+        <a class="alink" href={SUPPORT_URL} target="_blank" rel="noopener">
+          <Icon name="headset" size={17} />
+          {c.footer.support}
+          <Icon name="external-link" size={13} />
+        </a>
+        <a class="alink" href={STARSPAYMEE_URL} target="_blank" rel="noopener">
+          <Icon name="sparkles" size={17} />
+          {c.footer.ecosystem}
+          <Icon name="external-link" size={13} />
+        </a>
+        <a class="alink" href={localePath(locale, "oyinlar")}>
+          <Icon name="gamepad" size={17} />
+          {c.games.all}
+          <Icon name="chevron-right" size={13} />
+        </a>
+      </nav>
+    </div>
+
+    <Faq eyebrow={c.faq.eyebrow} title={c.faq.title} items={COPY.faq} id="faq" />
+
+    <Cta locale={locale} />
+  </main>
+
+  <Footer locale={locale} />
+</Layout>
+
+<style>
+  .ahead {
+    position: relative;
+    z-index: var(--z-body);
+    padding-block: clamp(24px, 4vw, 44px) clamp(20px, 3vw, 32px);
+  }
+
+  .asecs {
+    position: relative;
+    z-index: var(--z-body);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(24px, 3.5vw, 40px);
+    margin-top: clamp(32px, 5vw, 56px);
+    max-width: 74ch;
+  }
+
+  .asec {
+    display: flex;
+    gap: var(--sp-4);
+  }
+
+  .asec__ic {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    flex: none;
+    border-radius: var(--r-md);
+    background: linear-gradient(140deg, rgba(var(--brand-rgb), 0.22), rgba(var(--cyan-rgb), 0.1));
+    border: 1px solid rgba(var(--brand-rgb), 0.24);
+    color: var(--brand-bright);
+  }
+
+  .asec__h {
+    font-size: var(--t-md);
+    margin-bottom: var(--sp-3);
+  }
+
+  .asec__p {
+    font-size: var(--t-base);
+    color: var(--text-2);
+    line-height: 1.75;
+  }
+
+  .asec__p + .asec__p {
+    margin-top: var(--sp-3);
+  }
+
+  .alinks {
+    position: relative;
+    z-index: var(--z-body);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+    margin-top: clamp(32px, 5vw, 52px);
+  }
+
+  .alink {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-2);
+    padding: 11px 18px;
+    border-radius: var(--r-pill);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    font-size: var(--t-sm);
+    font-weight: 600;
+    transition:
+      border-color var(--dur-fast) var(--ease),
+      transform var(--dur-fast) var(--ease);
+  }
+
+  .alink:hover {
+    transform: translateY(-2px);
+    border-color: var(--line-strong);
+  }
+
+  .alink :global(svg:first-child) {
+    color: var(--accent);
+  }
+
+  .alink :global(svg:last-child) {
+    opacity: 0.5;
+  }
+</style>

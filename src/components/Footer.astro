@@ -64,6 +64,7 @@ const year = new Date().getFullYear();
       <nav class="ftr__col" aria-labelledby="f-co">
         <h2 class="ftr__h" id="f-co">{c.footer.colCompany}</h2>
         <ul class="ftr__list">
+          <li><a class="ftr__link" href={localePath(locale, "haqida")}>{c.footer.about}</a></li>
           <li><a class="ftr__link" href={localePath(locale, "blog")}>{c.footer.blog}</a></li>
           <li>
             <a class="ftr__link" href={STARSPAYMEE_URL} target="_blank" rel="noopener">
