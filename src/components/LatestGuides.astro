@@ -1,0 +1,99 @@
+---
+/**
+ * Bosh sahifadagi qo'llanmalar bloki.
+ *
+ * NEGA BOSH SAHIFADA: bosh sahifa saytdagi eng ko'p tashqi havola oladigan
+ * sahifa. Undan maqolalarga havola bo'lmasa, maqolalar faqat blog
+ * ro'yxatidan og'irlik oladi — bu ancha uzoq yo'l. Uch-to'rt kartochka
+ * eng muhim qo'llanmalarni bosh sahifadan bir qadam narida qoldiradi.
+ *
+ * Tanlov TASODIFIY EMAS: `pillar` deb belgilangan maqolalar birinchi
+ * o'ringa chiqadi — bular pul so'rovlariga mo'ljallangan asosiy sahifalar.
+ */
+import SectionHead from "./SectionHead.astro";
+import ArticleCard from "./ArticleCard.astro";
+import Icon from "./Icon.astro";
+import { articlesFor } from "../data/blog";
+import { t } from "../i18n/ui";
+import { localePath, type Locale } from "../data/site";
+
+interface Props {
+  locale: Locale;
+  limit?: number;
+}
+
+const { locale, limit = 3 } = Astro.props;
+const c = t(locale);
+
+const posts = articlesFor(locale)
+  .slice()
+  .sort((a, b) => Number(Boolean(b.pillar)) - Number(Boolean(a.pillar)))
+  .slice(0, limit);
+
+const HEAD = {
+  uz: {
+    eyebrow: "Qo'llanmalar",
+    title: "Avval o'qib olsangiz",
+    lede: "Har o'yin uchun: qanday to'ldirish, ID ni qayerdan topish va nimadir noto'g'ri ketsa nima qilish.",
+  },
+  ru: {
+    eyebrow: "Руководства",
+    title: "Стоит прочитать заранее",
+    lede: "По каждой игре: как пополнить, где найти ID и что делать, если что-то пошло не так.",
+  },
+  en: {
+    eyebrow: "Guides",
+    title: "Worth reading first",
+    lede: "For every game: how to top up, where to find your ID, and what to do when something goes wrong.",
+  },
+}[locale];
+---
+
+{
+  posts.length > 0 && (
+    <section class="section">
+      <div class="wrap">
+        <SectionHead eyebrow={HEAD.eyebrow} title={HEAD.title} lede={HEAD.lede} />
+
+        <div class="lg">
+          {posts.map((a) => <ArticleCard article={a} locale={locale} />)}
+        </div>
+
+        <a class="lg__all" href={localePath(locale, "blog")}>
+          {c.blog.allPosts}
+          <Icon name="arrow-right" size={16} />
+        </a>
+      </div>
+    </section>
+  )
+}
+
+<style>
+  .lg {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: var(--sp-3);
+  }
+
+  .lg__all {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-2);
+    margin-top: var(--sp-5);
+    padding: 11px 20px;
+    border-radius: var(--r-pill);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    font-size: var(--t-sm);
+    font-weight: 700;
+    transition:
+      border-color var(--dur-fast) var(--ease),
+      transform var(--dur-fast) var(--ease);
+  }
+
+  .lg__all:hover {
+    transform: translateY(-2px);
+    border-color: var(--line-strong);
+    color: var(--accent);
+  }
+</style>

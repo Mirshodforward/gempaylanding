@@ -15,6 +15,7 @@ import Games from "../Games.astro";
 import HowItWorks from "../HowItWorks.astro";
 import Why from "../Why.astro";
 import Trust from "../Trust.astro";
+import LatestGuides from "../LatestGuides.astro";
 import Faq from "../Faq.astro";
 import Cta from "../Cta.astro";
 import Footer from "../Footer.astro";
@@ -136,6 +137,9 @@ const schema = graph(
     <HowItWorks locale={locale} />
     <Why locale={locale} />
     <Trust locale={locale} />
+    {/* Qo'llanmalar Trust'dan KEYIN: o'quvchi avval «bu xavfsizmi?» degan
+        savolga javob oladi, keyin chuqurroq o'qishga taklif qilinadi. */}
+    <LatestGuides locale={locale} />
     <Faq
       eyebrow={c.faq.eyebrow}
       title={c.faq.title}
