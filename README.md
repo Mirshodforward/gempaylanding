@@ -142,3 +142,43 @@ sitemap ishlaydi).
    `noindex` bo'lib qoladi
 
 Katak, futer, sitemap, JSON-LD va OG rasm o'zi yangilanadi.
+
+## Deploy oldidan
+
+```bash
+npm run build
+npm run links     # o'lik havola bo'lmasin — MAJBURIY
+npm run audit -- http://localhost:4399/ ...   # kerakli sahifalarni
+```
+
+`links` xato bersa deploy qilmang: o'lik ichki havola foydalanuvchini
+yo'qotadi va Google uni «soft 404» deb belgilab, sahifaga bo'lgan ishonchni
+tushiradi.
+
+### Bir marta bajariladigan sozlashlar
+
+Bular `src/data/site.ts` da bo'sh turibdi va sayt ularsiz ham ishlaydi —
+lekin ularsiz indekslanish sekin boradi:
+
+1. **Google Search Console** → Settings → Ownership verification → HTML tag →
+   `content="..."` qiymatini `VERIFICATION.google` ga qo'ying.
+2. **Yandex Webmaster** → Индексирование → Мета-тег → `VERIFICATION.yandex`.
+   Yandex O'zbekistonda ikkinchi asosiy qidiruv, uni tashlab ketmang.
+3. **Bing Webmaster** → HTML Meta Tag → `VERIFICATION.bing`.
+4. **IndexNow** — `npm run indexnow` ko'rsatmani o'zi chiqaradi. Kalit
+   qo'yilgach har deploydan keyin ishga tushiring.
+5. Har uchala panelga sitemap manzilini bering: `https://gempay.uz/sitemap.xml`
+
+### Domen
+
+`astro.config.mjs` va `src/data/site.ts` da `https://gempay.uz`. Vercel apex
+domenni `www` ga yo'naltirmasligi kerak — aks holda sitemapdagi har bir
+manzil redirect'ga aylanadi va Google ularni «Page with redirect» deb
+indeksdan chiqaradi. Agar `www` kanonik bo'lsa, ikkala faylda ham
+o'zgartiring.
+
+### Bot username
+
+`src/data/site.ts` → `BOT_USERNAME`. Hozir `Gempayuz_bot`. Bot havolalari
+`?start=g_<kod>` payload bilan ketadi — bot uni hozircha marshrutlashda
+ishlatmaydi, lekin atributsiya uchun tayyor turadi.
