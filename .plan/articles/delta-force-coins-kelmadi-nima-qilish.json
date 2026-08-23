@@ -1,0 +1,185 @@
+{
+  "slug": "delta-force-coins-kelmadi-nima-qilish",
+  "game": "delta-force",
+  "gameTitle": "Delta Force",
+  "type": "problem",
+  "spec": {
+    "slug": "delta-force-coins-kelmadi-nima-qilish",
+    "type": "problem",
+    "h1": "Delta Coins kelmadi yoki ID topilmadi: sabablari va yechimi",
+    "metaTitle": "Delta Coins kelmadi — Delta Force xatosi yechimi",
+    "metaDescription": "Delta Coins kelmadimi yoki ID topilmadimi? Sabablarni belgilar bo'yicha aniqlang, 10 daqiqalik tekshiruvni bajaring va supportga to'g'ri murojaat qiling.",
+    "searchIntent": "Muammoli/shoshilinch. Foydalanuvchi to'lov qilgan yoki qilmoqchi, lekin coin ko'rinmayapti yoki bot ID ni topmayapti. Bu klasterda umuman o'zbekcha kontent yo'q; sahifa qo'llab-quvvatlash yukini kamaytiradi va ishonch hosil qiladi.",
+    "primaryKeyword": "delta force coins kelmadi",
+    "secondaryKeywords": [
+      "delta force id topilmadi",
+      "delta coins tushmadi nima qilish",
+      "delta force toldirish xatolik",
+      "delta force player id notogri",
+      "не пришли монеты delta force что делать",
+      "delta force global garena farqi"
+    ],
+    "answerBox": "Delta Coins kelmasa, avval o'yindan to'liq chiqib qayta kiring va botdagi Player ID bilan o'yindagi ID ni solishtiring. To'lov tasdiqlangan bo'lsa, coinlar odatda 5 daqiqada tushadi. 15 daqiqadan oshsa, chek, buyurtma raqami va Player ID bilan @StarsPaymeeSupport ga yozing — buyurtma qo'lda tekshiriladi.",
+    "outline": [
+      {
+        "h2": "Qisqacha javob va 4 ta asosiy sabab",
+        "covers": "To'g'ridan-to'g'ri javob, so'ng qisqa fakt kartochkalari: sabab 1 — Player ID xato kiritilgan; sabab 2 — akkaunt Garena versiyasiga tegishli yoki boshqa platformadagi hamyon; sabab 3 — o'yin ilovasi eski balansni ko'rsatyapti; sabab 4 — to'lov bank tomonida hali tasdiqlanmagan. Har biri qaysi belgidan bilinishi bir qatorda.",
+        "block": "key-facts"
+      },
+      {
+        "h2": "Birinchi 10 daqiqada nima qilish kerak",
+        "covers": "Qadamlar: 1) botdagi buyurtma holatini ochish (to'lov o'tganmi yoki kutilyaptimi); 2) o'yindan to'liq chiqib, ilovani yopib qayta kirish; 3) profilda coin balansini tekshirish; 4) botda ko'rsatilgan Player ID va niknemni o'yindagi bilan belgi-belgi solishtirish; 5) 15 daqiqa kutish; 6) hali ham yo'q bo'lsa supportga yozish. Har qadam nima uchun kerakligini bir jumlada aytish.",
+        "block": "steps"
+      },
+      {
+        "h2": "Belgisiga qarab sabab va yechim",
+        "covers": "Jadval ustunlari: belgi, ehtimoliy sabab, nima qilish. Qatorlar: 'bot ID ni topmadi' → ID xato ko'chirilgan yoki akkaunt hali o'yinga kirmagan yoki Garena versiyasi → ID ni 'Copy' bilan qayta olish; 'niknem begona chiqdi' → boshqa odamning ID si → TO'LAMASLIK; 'to'lov o'tdi, coin yo'q' → kesh yoki navbat → qayta kirish, keyin support; 'pul yechildi, buyurtma yaratilmadi' → bank hold → chek bilan support; 'coin bor, lekin boshqa ekranda' → platforma hamyoni alohida → qaysi akkauntda ekanini tekshirish.",
+        "block": "compare-table"
+      },
+      {
+        "h2": "Sabab 1: Player ID xato kiritilgan",
+        "covers": "Eng ko'p uchraydigan va eng og'riqli holat: coin kiritilgan ID egasiga tushadi va uni qaytarib bo'lmaydi — bu barcha to'ldirish xizmatlarida shunday, xalqaro platformalarda ham. Eng ko'p xatolar: ID ni qo'lda terish, bo'sh joy yoki qo'shimcha belgi qo'shilishi, do'stning ID sini nusxalab qo'yish. GemPay to'lovdan OLDIN niknemni bepul ko'rsatgani uchun bu xato to'lovgacha tutiladi — niknem mos kelmasa to'lamang.",
+        "block": "warning"
+      },
+      {
+        "h2": "Sabab 2: Global emas, Garena versiyasi yoki boshqa platforma",
+        "covers": "Delta Force ikki alohida ekotizimda ishlaydi: Global (Level Infinite) va Garena (Janubi-Sharqiy Osiyo, Turkiya, MENA, Lotin Amerikasi). O'zbekistondagi o'yinchilar odatda global versiyada. Global to'ldirish Garena akkaunti uchun ishlamaydi — xalqaro xizmatlar buni ochiq yozib qo'yadi. Yana bir nuqta: progress LIPASS orqali sinxronlansa ham, coin balansi platformaga bog'liq bo'lishi mumkin. Qaysi versiyadaligini qanday aniqlash — ID qo'llanmasiga havola.",
+        "block": "prose"
+      },
+      {
+        "h2": "Sabab 3: to'lov o'tdi, lekin o'yin eski balansni ko'rsatyapti",
+        "covers": "Ilova balansni keshda saqlaydi. Yechim ketma-ketligi: o'yindan chiqish → ilovani xotiradan yopish → qayta kirish → do'kon bo'limini ochish. PC'da launcher'ni qayta ishga tushirish. Shuningdek Steam va o'yin ichidagi to'lovlarda kuzatiladigan xatolar (to'lov xizmati xatosi, buyurtma 'yakunlanmagan' holati) haqida qisqa izoh va ID orqali to'ldirish nega bu muammolardan xoli ekani.",
+        "block": "prose"
+      },
+      {
+        "h2": "Supportga murojaat: nima yuborish kerak",
+        "covers": "Tekshirish ro'yxati: buyurtma raqami; to'lov cheki yoki bank SMS skrinshoti; Player ID; botda ko'rsatilgan niknem; to'lov vaqti (sana va soat); o'yindagi balans skrinshoti. Shu to'plam bilan @StarsPaymeeSupport ga yozilsa, tekshiruv tez bo'ladi. Parol, SMS kod yoki akkaunt ma'lumotlarini HECH KIMGA, hatto supportga ham bermaslik kerakligi alohida ta'kidlansin.",
+        "block": "checklist"
+      },
+      {
+        "h2": "Keyingi safar xatoni takrorlamaslik",
+        "covers": "Qisqa yakun: ID ni doim 'Copy' tugmasi bilan olish, niknem tasdig'ini o'qib chiqish, birinchi marta kichik paket bilan sinash, chekni saqlash. So'ng botga chaqiriq va asosiy sotib olish qo'llanmasiga havola.",
+        "block": "inline-cta"
+      }
+    ],
+    "faq": [
+      {
+        "q": "To'lov o'tdi, lekin coin kelmadi. Qancha kutish kerak?",
+        "a": "Odatda 5 daqiqa yetarli. Yuklama yoki texnik ishlar paytida 15 daqiqagacha cho'zilishi mumkin. Shu vaqtdan keyin ham ko'rinmasa, o'yindan chiqib qayta kiring; baribir yo'q bo'lsa chek va Player ID bilan @StarsPaymeeSupport ga yozing."
+      },
+      {
+        "q": "Noto'g'ri Player ID kiritsam, coin qaytadimi?",
+        "a": "Yo'q. Coin siz kiritgan ID egasiga tushadi va uni qaytarib bo'lmaydi — bu qoida barcha to'ldirish xizmatlarida amal qiladi. GemPay aynan shuning uchun to'lovdan oldin niknemni bepul ko'rsatadi: niknem sizniki bo'lmasa, to'lamang."
+      },
+      {
+        "q": "Bot 'ID topilmadi' deyapti, nega?",
+        "a": "Uch sabab bor: ID xato ko'chirilgan (bo'sh joy yoki qo'shimcha belgi bilan), akkaunt hali o'yinga birinchi marta kirib personaj yaratmagan, yoki ID Garena versiyasiga tegishli. ID ni o'yindagi 'Copy' tugmasi bilan qayta nusxalab urinib ko'ring."
+      },
+      {
+        "q": "Garena versiyasidagi akkauntimga to'ldirsam bo'ladimi?",
+        "a": "Yo'q. Global va Garena — alohida ekotizimlar, va global to'ldirish Garena akkauntida ko'rinmaydi. Xalqaro xizmatlar ham buni ochiq ogohlantiradi. Botga to'lov qilishdan oldin qaysi versiyada o'ynayotganingizni aniqlang."
+      },
+      {
+        "q": "Coin bor deyapti, lekin o'yinda ko'rinmayapti",
+        "a": "Avval o'yindan to'liq chiqib, ilovani xotiradan yopib qayta kiring — balans keshda eski qolgan bo'lishi mumkin. Shundan keyin ham ko'rinmasa, boshqa akkauntga kirmaganingizni tekshiring va balans skrinshoti bilan supportga yozing."
+      },
+      {
+        "q": "Pulim yechildi, lekin buyurtma yaratilmadi",
+        "a": "Bunday holatda summa ko'pincha bank tomonida vaqtincha ushlab turiladi va o'zi qaytadi. Chek, vaqt va karta turini @StarsPaymeeSupport ga yuboring — buyurtma bazadan tekshiriladi va holat aniqlanadi."
+      },
+      {
+        "q": "Support mendan parol so'raydimi?",
+        "a": "Yo'q, hech qachon. To'ldirish va tekshiruv uchun faqat Player ID, buyurtma raqami va chek yetarli. Parol, SMS kod yoki akkauntga kirish havolasini so'ragan har qanday odam firibgar — hatto GemPay nomidan yozgan bo'lsa ham."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "HowTo",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "internalLinks": [
+      "/oyinlar/delta-force",
+      "delta-force-delta-coins-sotib-olish",
+      "delta-force-player-id-qayerda",
+      "delta-force-coins-arzon-qayerdan-olish",
+      "/blog/gempay-ishonli-xizmat"
+    ],
+    "wordCount": 1500
+  },
+  "gameKeywords": {
+    "primary": [
+      "delta force delta coins sotib olish",
+      "delta force coins sotib olish",
+      "delta coins olish uzcard",
+      "delta force donat uzbekistan",
+      "delta force coins toldirish",
+      "delta force oyiniga pul quyish"
+    ],
+    "questions": [
+      "delta force delta coins ni qanday sotib olish mumkin",
+      "delta force player id qayerda turadi",
+      "delta coins necha daqiqada tushadi",
+      "delta coins kelmasa nima qilish kerak",
+      "delta force uchun uzcard va humo ishlaydimi",
+      "delta coins nima va unga nima olish mumkin",
+      "delta force battle pass qancha coin turadi",
+      "global va garena delta force farqi nima",
+      "steamda olingan coin mobilda ishlaydimi",
+      "player id berish xavfsizmi",
+      "delta coins narxi nega ozgarib turadi",
+      "notogri id kiritsam coin qaytadimi"
+    ],
+    "russian": [
+      "купить delta coins узбекистан",
+      "пополнить delta force узбекистан",
+      "донат delta force узбекистан в сумах",
+      "delta force монеты купить по id",
+      "дельта форс донат uzcard humo",
+      "delta force пополнение click payme",
+      "как узнать id в delta force",
+      "не пришли монеты delta force что делать",
+      "delta force global или garena отличия",
+      "delta force battle pass купить"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE (WebSearch + WebFetch, 2026-08-23). (1) UZBEK-LANGUAGE SERP IS EMPTY. Repeated Uzbek-Latin queries ('delta force delta coins sotib olish O'zbekiston', 'delta force o'yin uzbek qo'llanma skin sotib olish', 'delta force donat uzbekistan uzcard humo') returned ZERO Uzbek editorial pages — only Turkish resellers (btkgame, dijipin, gamesatis, oyunfor), Russian donat sites, Wikipedia, TikTok discovery pages and generic Telegram channel listings. There is literally no Uzbek authority page for this game. This is the single strongest finding and matches the brief: fastest ranking win in the portfolio. (2) RUSSIAN CLUSTER TARGETS RU/KZ, NOT UZ. Fetched vc.ru 'TOP-8 servislari' review: the listed services (BattlePass.ru, GGSEL, code-top, donatov.net, kupikod, funpay, fnfun) accept rubles and tenge, Mir cards, SBP and crypto (USDT/BTC); Kazakhstan is named explicitly, Uzbekistan is NOT. kupikod, donatov, igm.gg, MTS Oplata, Yandex Igromir all serve RF/CIS-with-rubles. So 'узбекистан'-qualified RU queries are wide open. (3) UZCARD/HUMO CANNOT PAY FOREIGN SITES — verified fact, citable: local card schemes 'only work inside Uzbekistan and only in the national currency, the som'. This is the whole economic argument for the comparison article, and it is a verified statement, not marketing. (4) OFFICIAL CHANNEL = MIDASBUY. Midasbuy is Delta Force's official top-up center and DOES have an Uzbekistan-localised path (midasbuy.com/midasbuy/uz/shop/dfm exists and is indexed). Its payment list is JS-rendered and my fetch returned only the base64 banner, so I could NOT verify whether it accepts UzCard/HUMO — articles must therefore NOT claim 'Midasbuy UzCard ni qabul qilmaydi'. Phrase it as the verified general fact instead (local cards are domestic-only, international checkouts usually ask Visa/Mastercard/PayPal). (5) ONLY PLAYER ID IS NEEDED — no server/platform field. Verified on SEAGM's global Delta Force listing: 'Only one field is mandatory: Player ID'. Confirms needsServer:false. (6) COMPETITORS DO NOT VERIFY THE NICKNAME. SEAGM explicitly shows no nickname/account confirmation before payment; topuplive's own FAQ says a wrong ID 'may cause delay/failure or wrong delivery — contact customer service immediately'; JollyMax's flow requires a support ticket if coins went to a non-existent account. GemPay's FREE pre-payment nickname check is therefore a genuine, differentiating claim for this game. (7) GLOBAL vs GARENA IS THE REAL FAILURE MODE — bigger here than in most games. Garena publishes Delta Force only for SEA, Taiwan, MENA, LATAM/Brazil/Mexico and Turkey; Global (Level Infinite) covers NA/EU — so Uzbek players are on GLOBAL. Top-up pages carry hard warnings: SEAGM 'This Top Up Service is Not Applicable for Garena Delta Force'; topuplive 'only supports International Server. And not valid for the Garena Delta Force service region'. (8) COIN WALLETS ARE PLATFORM-SEPARATE while progress is not: cross-progression syncs skins/operators/Battle Pass through the Level Infinite Pass (LIPASS) account, but coin balances are per-platform and cross-platform coin transfer is not supported. Articles must hedge this exactly this way. (9) IN-GAME/STEAM PURCHASE GENUINELY BREAKS: Steam discussions show recurring 'Payment Service Error', 'The current payment order is not yet complete' and 'Top up / buy delta coins does not work in the game' threads, plus LIPASS-linked-to-wrong-Steam-account login errors (Login failed ID 4/35). That gives the comparison and problem articles real, verifiable substance. (10) DELIVERY BENCHMARK: competitors state 5-10 minutes (topuplive guide, Yandex Igromir 5-10 min, IGM.GG 10-15 min). GemPay's ~5 min is competitive but must not be oversold as 'instant'. (11) CURRENCY MODEL: three currencies — Delta Coins (premium, purchased, buys Battle Pass/skins/operators, convertible to Tickets), Delta Tickets (earned by playing), Mandel Coins/Mandelbricks (marketplace). Verified: 'Unlike Delta Tickets, Delta Coins cannot be earned through normal gameplay'. (12) PACKAGE LADDER (official, USD-listed): 30, 60, 300+20, 680+70, 1280+200, 1680+300, 3280+670, 6480+1620, 12960+3240, 19440+4860 — bonus share grows with pack size; discounts on resale ~9-20%. Two sources gave slightly different ladders, so articles must present it as 'taxminiy qator, aniq ro'yxat botda'. (13) ID LOCATION: mobile — avatar icon bottom-right of main screen, ID under nickname with a Copy button; PC — lobby top-left / bottom-right profile page, one-click UID copy. Multiple YouTube tutorials 'How to find your Player ID in Delta Force' exist = verified demand for the ID guide article, none in Uzbek. (14) GAME CONTEXT: Team Jade / TiMi, PC Dec 2024, mobile global 21-22 Apr 2025, consoles Aug 2025 — the game is new, which is exactly why Uzbek content does not exist yet. INFERRED, NOT VERIFIED: no search-volume or KD numbers — the Ahrefs and Semrush MCP connectors are unauthorized in this non-interactive session (OAuth cannot run), so there are ZERO hard volume figures here; the user should authorize them in claude.ai connector settings for real numbers. All Uzbek query strings above are constructed from Uzbek morphology (sotib olish / olish / to'ldirish / quyish / donat), from indexed competitor title patterns, and from the transliteration habits of UZ gamers — not from an autocomplete API. Battle Pass coin prices (Season 3: 520 Base / 720 Deluxe) come from third-party news and change every season — hedge, never state as fixed. COMPETITION READ / ATTACK ORDER: 1) pillar money query (no Uzbek competitor at all — take it first, unlike PUBG where the pillar was contested), 2) Player ID guide (pure informational, zero Uzbek coverage, feeds AI answer engines), 3) problem cluster (ID topilmadi / Garena mismatch — zero Uzbek coverage, highest support-cost reduction), 4) comparison (needs care because Midasbuy payment support is unverified), 5) info/explainer (lowest urgency, best for internal-link authority and AEO breadth). Volume here is smaller than PUBG or Free Fire, but so is competition — this cluster should be cheap to rank and worth doing before the game's Uzbek audience grows.",
+  "siblings": [
+    {
+      "slug": "delta-force-delta-coins-sotib-olish",
+      "h1": "Delta Force Delta Coins sotib olish: O'zbekistonda so'mda, 5 daqiqada",
+      "type": "howto"
+    },
+    {
+      "slug": "delta-force-coins-arzon-qayerdan-olish",
+      "h1": "Delta Coins qayerdan olish arzon: GemPay, rasmiy sahifa va o'yin ichidagi xarid",
+      "type": "comparison"
+    },
+    {
+      "slug": "delta-force-delta-coins-nima-va-paketlar",
+      "h1": "Delta Coins nima va unga nima olish mumkin: paketlar, Ticket va Battle Pass",
+      "type": "info"
+    },
+    {
+      "slug": "delta-force-player-id-qayerda",
+      "h1": "Delta Force Player ID qayerda: mobil, PC va konsolda topish",
+      "type": "trust"
+    }
+  ],
+  "cannibalisationFixes": [
+    {
+      "with": [
+        "delta-force-player-id-qayerda",
+        "delta-force-delta-coins-sotib-olish"
+      ],
+      "problem": "\"delta force global garena farqi\" is a declared secondaryKeyword on the problem article, a warning H2 on the trust article and a warning block on the pillar — three pages, one query, no owner, and no dedicated version page (unlike CODM, which at least has one).",
+      "fix": "Give the trust page sole ownership: add \"delta force global garena farqi\" as its second primary and put version identification above the ID steps. The problem article keeps only the symptom (\"ID topilmadi → ehtimol Garena akkaunti\") in two sentences plus link. The pillar keeps one checklist line."
+    }
+  ],
+  "mustLinkTo": [
+    "/oyinlar/delta-force",
+    "delta-force-delta-coins-sotib-olish",
+    "delta-force-player-id-qayerda"
+  ],
+  "publishRank": 36
+}

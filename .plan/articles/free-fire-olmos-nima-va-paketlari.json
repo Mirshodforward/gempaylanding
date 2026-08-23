@@ -1,0 +1,178 @@
+{
+  "slug": "free-fire-olmos-nima-va-paketlari",
+  "game": "free-fire",
+  "gameTitle": "Free Fire",
+  "type": "info",
+  "spec": {
+    "slug": "free-fire-olmos-nima-va-paketlari",
+    "type": "info",
+    "h1": "Free Fire olmosi nima, qanday paketlar bor va narx nimaga bog'liq",
+    "metaTitle": "Free Fire olmosi nima va qanday paketlar bor",
+    "metaDescription": "Free Fire olmosi nima, qanday paketlar bor, Weekly va Monthly Membership hamda Booyah Pass nima beradi va so'mdagi narx nimaga qarab o'zgaradi.",
+    "searchIntent": "Informatsion — foydalanuvchi olmos nima ekanini, qaysi paket unga to'g'ri kelishini va nimaga sarflashni tushunmoqchi. Sahifa xarid qarorini shakllantiradi va pillarga uzatadi.",
+    "primaryKeyword": "free fire olmos nima",
+    "secondaryKeywords": [
+      "free fire olmos paketlari",
+      "free fire weekly membership",
+      "free fire monthly membership",
+      "free fire booyah pass",
+      "free fire elite pass olmos",
+      "free fire bonus olmos",
+      "free fire olmos nimaga ishlatiladi"
+    ],
+    "answerBox": "Olmos (diamond) Free Fire'ning ichki pulli valyutasi. U bilan skin, personaj, pet, Booyah Pass (avvalgi Elite Pass nomi), Weekly va Monthly Membership hamda Diamond Royale aylanishlari olinadi. Paketlar asosiy va bonus olmosdan iborat: 100+10 dan 5600+560 gacha. So'mdagi narx USDT kursiga qarab o'zgaradi va botda ko'rsatiladi.",
+    "outline": [
+      {
+        "h2": "Olmos nima va qayerda ishlatiladi",
+        "covers": "Olmos — Garena tomonidan sotiladigan yagona pulli valyuta; oltin (gold) bilan farqi: oltin o'ynab topiladi va faqat cheklangan buyumlarga yetadi, olmos esa premium kontentga kiradi. Olmos bilan olinadigan narsalar ro'yxati: qurol va personaj skinlari, personajlar, petlar, bundle'lar, Diamond Royale va Weapon Royale aylanishlari, nik o'zgartirish kartasi, guild va event buyumlari.",
+        "block": "prose"
+      },
+      {
+        "h2": "Paketlar qanday tuzilgan: asosiy + bonus",
+        "covers": "Paket zinapoyasi va bonus mantiqi: 100+10, 310+31, 520+52, 1060+106, 2180+218, 5600+560 — natijada 110, 341, 572, 1166, 2398, 6160. Bonus ulushi taxminan 10% va katta paketda ham nisbat saqlanadi, lekin bir martalik xarid kamroq bosqich talab qiladi. Ro'yxat region va aksiyaga qarab o'zgarishi mumkin, joriy variantlar botda ko'rsatiladi.",
+        "block": "key-facts"
+      },
+      {
+        "h2": "Weekly va Monthly Membership",
+        "covers": "Obuna mantiqi: Weekly Membership — darhol beriladigan bir qism olmos va 7 kun davomida har kuni qo'shimcha olmos, ustiga kunlik bonuslar; Monthly Membership — kattaroq boshlang'ich qism va 30 kun davomida kunlik olmos hamda imtiyozlar. Har kuni o'yinga kirish shartligi, obuna avtomatik uzaytirilmasligi va bir vaqtda ikkalasini olish mumkinligi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Booyah Pass va eski «Elite Pass»",
+        "covers": "Sezonli pass tizimi: bepul yo'nalish va Premium (odatda 399 olmos) hamda Premium Plus (odatda 899 olmos, darhol darajalar bilan); mukofotlar sezon davomida ochiladi va sezon tugagach yo'qoladi. «Elite Pass» — o'sha tizimning eski nomi, ko'p o'yinchilar hali ham shunday qidiradi. Passni olishdan oldin sezon necha kun qolganini tekshirish maslahati.",
+        "block": "prose"
+      },
+      {
+        "h2": "Qaysi paket kimga to'g'ri keladi",
+        "covers": "Jadval: maqsad | tavsiya etiladigan xarid turi | e'tibor beriladigan nuqta. Qatorlar: faqat pass olish; kunlik olmos oqimi (Weekly/Monthly); bitta bundle yoki skin; Diamond Royale aylanishlari; katta yig'ish (kattaroq paket kamroq tranzaksiya). Aniq so'm summalari ko'rsatilmaydi.",
+        "block": "compare-table"
+      },
+      {
+        "h2": "Narx nimaga qarab o'zgaradi",
+        "covers": "So'mdagi narxni belgilaydigan omillar: Garena paket narxi, provayder narxi USDT'da, joriy USDT/so'm kursi, aksiya davrlari. Shuning uchun sayt qat'iy raqam e'lon qilmaydi — yakuniy summa botda, to'lovdan oldin ko'rsatiladi. Bir olmosga tushadigan narx katta paketda odatda pastroq bo'lishining sababi.",
+        "block": "price-logic"
+      },
+      {
+        "h2": "Bonus olmos va cheklovlar haqida bilish kerak bo'lgan narsalar",
+        "covers": "Bonus olmos alohida hisoblanishi, ba'zi aksiya yoki bo'limlarda ishlamasligi mumkinligi; olmos akkauntga biriktirilgani va boshqa akkauntga o'tkazilmasligi; olmos qaytarilmasligi; Free Fire va Free Fire MAX bitta balansni bo'lishishi.",
+        "block": "warning"
+      },
+      {
+        "h2": "Paketni tanlab, to'ldirishga o'tish",
+        "covers": "Joriy paketlar va Membership variantlarini botda ko'rish, nikni bepul tekshirish va so'mda to'lash taklifi; batafsil qadamlar uchun asosiy qo'llanmaga havola.",
+        "block": "inline-cta"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Free Fire'da olmos nimaga kerak?",
+        "a": "Olmos premium kontent uchun ishlatiladi: skinlar, personajlar, petlar, bundle'lar, Booyah Pass, Membership obunalari, Diamond Royale aylanishlari va nik o'zgartirish kartasi. Oltin bilan bularning ko'pini olib bo'lmaydi."
+      },
+      {
+        "q": "Qanday paketlar mavjud?",
+        "a": "Odatdagi zinapoya 100+10 dan boshlanib 5600+560 gacha boradi, ya'ni 110, 341, 572, 1166, 2398 va 6160 olmos. Ro'yxat region va aksiyaga qarab farq qilishi mumkin — joriy variantlar botda ko'rsatiladi."
+      },
+      {
+        "q": "Weekly Membership nima beradi?",
+        "a": "Sotib olganda bir qism olmos darhol beriladi, keyin 7 kun davomida har kuni qo'shimcha olmos tushadi. Olish uchun har kuni o'yinga kirish shart, aks holda o'sha kungi ulush yo'qoladi."
+      },
+      {
+        "q": "Monthly Membership Weekly'dan farqi nimada?",
+        "a": "Monthly kattaroq boshlang'ich ulush beradi va 30 kun davomida kunlik olmos hamda qo'shimcha imtiyozlar bilan keladi. Uzoq muddat o'ynaydiganlar uchun bir olmosga tushadigan narx odatda qulayroq."
+      },
+      {
+        "q": "Booyah Pass bilan Elite Pass bir xilmi?",
+        "a": "Ha, bu bitta sezonli pass tizimining eski va yangi nomi. Hozir u Booyah Pass deb ataladi: Premium odatda 399, Premium Plus 899 olmos turadi va mukofotlar sezon tugagach yo'qoladi."
+      },
+      {
+        "q": "Bonus olmos oddiy olmosdan farq qiladimi?",
+        "a": "Ko'p holatda farqi yo'q va oddiy xaridlarga o'tadi, lekin ayrim aksiya va bo'limlarda bonus olmosga cheklov qo'yilishi mumkin. Bu Garena tomonidagi qoida."
+      },
+      {
+        "q": "Olmosni do'stimga o'tkaza olamanmi?",
+        "a": "Yo'q. Olmos akkauntga biriktirilgan va boshqa akkauntga o'tkazilmaydi. Do'stingizga sovg'a qilmoqchi bo'lsangiz, to'g'ridan-to'g'ri uning Player ID siga to'ldiring."
+      },
+      {
+        "q": "Nega narx doim bir xil emas?",
+        "a": "Chunki xarid USDT'dagi provayder narxi orqali o'tadi va so'mdagi summa joriy kursga bog'liq. Shuning uchun aniq narx faqat botda, to'lovni tasdiqlashdan oldin ko'rsatiladi."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "FAQPage",
+      "BreadcrumbList",
+      "ItemList"
+    ],
+    "internalLinks": [
+      "/oyinlar/free-fire",
+      "free-fire-olmos-sotib-olish",
+      "free-fire-olmos-arzon-qayerdan-olish",
+      "free-fire-olmos-kelmadi-id-topilmadi"
+    ],
+    "wordCount": 1600
+  },
+  "gameKeywords": {
+    "primary": [
+      "free fire olmos sotib olish",
+      "free fire olmos to'ldirish",
+      "ff olmos sotib olish",
+      "free fire donat uzbekistan",
+      "garena free fire olmos narxi",
+      "free fire olmos player id bilan"
+    ],
+    "questions": [
+      "free fire olmos qanday sotib olinadi",
+      "free fire uid qayerdan topiladi",
+      "free fire olmos nega kelmadi",
+      "free fire bepul olmos haqiqatmi",
+      "free fire olmos qancha turadi",
+      "free fire max va free fire olmosi bir xilmi",
+      "free fire id topilmadi nima qilish kerak",
+      "free fire weekly membership nima beradi",
+      "free fire olmos sotib olish xavfsizmi",
+      "как узнать uid в free fire",
+      "можно ли пополнить free fire картой uzcard",
+      "почему пишет неверный id free fire"
+    ],
+    "russian": [
+      "купить алмазы фри фаер узбекистан",
+      "пополнить free fire по id узбекистан",
+      "free fire алмазы humo uzcard",
+      "донат фри фаер ташкент сум",
+      "купить алмазы free fire click payme",
+      "алмазы фри фаер дешево по uid",
+      "free fire weekly membership купить",
+      "почему не пришли алмазы free fire"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE (Google SERP + sahifalarni ochib): (1) O'zbek tilidagi \"free fire olmos sotib olish\" so'rovi bo'yicha TOP natijalar — mtcgame.com/uz (mashinaviy tarjima qilingan sahifalar, so'm va mahalliy karta yo'q), bitsika.com ning \"O'zbekistonda Free Fire Top-Up — kripto yoki so'm\" sahifasi, doctorsim/hablax/topup-balance kabi gift-card + kripto saytlari. Qolgan TOP-10 ni codigosdefreefire.gratis, mytruko.com, projaker.com kabi \"bepul olmos\" spam sahifalari egallagan. Ya'ni: o'zbek tilida haqiqiy, mahalliy to'lovli, tirik kontent YO'Q — raqobat juda zaif, bu eng tez g'alaba qiladigan klaster. (2) Rus tilida O'zbekistonga aniq qaratilgan yagona sahifa — 1pay.uz/blog/bystraya-oplata-free-fire-cherez-humo-i-uzcard (Humo/UzCard bo'yicha), lekin sahifa WebFetch'da 403 qaytardi va domen \"redemption period\" holatida ko'rinadi — ya'ni bu pozitsiya bo'shashi ehtimoli yuqori. Qolganlari RU/CIS bozoriga qaratilgan (donatov.net, battlepass.ru, kupikod, firelootshop, payclarus, funpay) — ular so'm, UzCard/HUMO, Click/Payme bilan ishlamaydi. (3) Codashop O'zbekiston uchun Free Fire top-up bermaydi (ru-kz versiyasi bor, uz yo'q) — bu taqqoslash maqolasi uchun kuchli, tekshirilgan fakt. (4) Mahsulot faktlari tekshirildi: UID profil avatarida, nik ostida, odatda 8-12 raqam, o'zgarmaydi (nik o'zgaradi); Free Fire va Free Fire MAX Firelink orqali bitta akkaunt va bitta olmos balansini bo'lishadi; akkaunt regioni birinchi kirishda IP bo'yicha biriktiriladi va keyin o'zgartirilmaydi, shuning uchun provayder marshruti mos kelmasa buyurtma tushmaydi; paketlar asosiy+bonus ko'rinishida (100+10, 310+31, 520+52, 1060+106, 2180+218, 5600+560 → 110/341/572/1166/2398/6160); joriy sezonli pass nomi Booyah Pass (Premium 399, Premium Plus 899 olmos), \"Elite Pass\" eski nom, lekin foydalanuvchilar hali ham shunday qidiradi; guest akkauntlar tiklanmaydi, Google/Facebook/VK ga bog'lash shart. (5) \"Diamonds not received\" / \"invalid UID\" muammolari resellerlarda eng ko'p uchraydigan qo'llab-quvvatlash keysi ekani bir necha manbada tasdiqlandi. INFERRED (tekshirilmagan): aniq qidiruv hajmlari va CPC — Ahrefs va Semrush MCP konnektorlari bu sessiyada avtorizatsiya qilinmagani uchun ishlatib bo'lmadi, shuning uchun so'rovlar chastotasi emas, SERP tarkibi va so'rov formulirovkalari asosida tanlangan. Shuningdek: o'zbek o'yinchilarining \"olmos\" vs \"almaz\" nisbati, Telegram orqali qidiruv ulushi va Yandex.uz dagi aniq pozitsiyalar taxminiy. Strategik xulosa: (a) o'zbek tilidagi 5 ta maqolaning barchasi bo'sh maydonga tushadi; (b) eng katta trafik \"bepul olmos\" klasterida, lekin u spam bilan to'lgan — halol \"firibgarlik\" maqolasi shu trafikni ushlab, konvertatsiyaga olib chiqadi; (c) \"olmos kelmadi / ID topilmadi\" klasteri kam raqobatli, lekin eng yuqori niyatli (odam allaqachon to'lagan yoki to'lamoqchi).",
+  "siblings": [
+    {
+      "slug": "free-fire-olmos-sotib-olish",
+      "h1": "Free Fire olmos sotib olish — O'zbekistonda so'mda, 2 daqiqada",
+      "type": "howto"
+    },
+    {
+      "slug": "free-fire-olmos-kelmadi-id-topilmadi",
+      "h1": "Free Fire olmos kelmadi yoki «ID topilmadi» — sabablari va yechimi",
+      "type": "problem"
+    },
+    {
+      "slug": "free-fire-olmos-arzon-qayerdan-olish",
+      "h1": "Free Fire olmosini qayerdan olish arzon va xavfsiz — usullar taqqoslovi",
+      "type": "comparison"
+    },
+    {
+      "slug": "free-fire-bepul-olmos-haqiqatmi",
+      "h1": "Free Fire bepul olmos: qaysi usullar haqiqiy, qaysilari firibgarlik",
+      "type": "trust"
+    }
+  ],
+  "cannibalisationFixes": [],
+  "mustLinkTo": [
+    "/oyinlar/free-fire",
+    "free-fire-olmos-sotib-olish",
+    "free-fire-olmos-arzon-qayerdan-olish"
+  ],
+  "publishRank": 20
+}

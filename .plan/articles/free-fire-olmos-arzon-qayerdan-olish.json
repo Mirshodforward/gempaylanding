@@ -1,0 +1,179 @@
+{
+  "slug": "free-fire-olmos-arzon-qayerdan-olish",
+  "game": "free-fire",
+  "gameTitle": "Free Fire",
+  "type": "comparison",
+  "spec": {
+    "slug": "free-fire-olmos-arzon-qayerdan-olish",
+    "type": "comparison",
+    "h1": "Free Fire olmosini qayerdan olish arzon va xavfsiz — usullar taqqoslovi",
+    "metaTitle": "Free Fire olmos arzon qayerdan olinadi",
+    "metaDescription": "Free Fire olmosini qayerdan olish arzon: o'yin do'koni, xorijiy saytlar va GemPay boti taqqoslandi. Mahalliy karta, so'm va ID bo'yicha to'ldirish farqi.",
+    "searchIntent": "Tijoriy tadqiqot — foydalanuvchi sotib olishga tayyor, lekin qaysi kanal arzonroq va xavfsizroq ekanini hal qilmoqchi. Sahifa halol jadval berib, mahalliy to'lov ustunligini isbotlashi kerak.",
+    "primaryKeyword": "free fire olmos arzon",
+    "secondaryKeywords": [
+      "free fire olmos qayerdan olish",
+      "codashop free fire uzbekistan",
+      "free fire olmos o'yin ichidan sotib olish",
+      "free fire olmos sotuvchilar",
+      "free fire akkaunt orqali to'ldirish xavfi",
+      "free fire olmos taqqoslash"
+    ],
+    "answerBox": "O'zbekistonda Free Fire olmosini olishning uchta yo'li bor: o'yin ichidagi do'kon (Visa yoki Mastercard talab qiladi), xorijiy top-up saytlari (so'm va mahalliy kartani qabul qilmaydi) hamda GemPay boti (UzCard, HUMO, Click, Payme, so'mda). Player ID bo'yicha to'ldirish eng xavfsizi, chunki akkaunt logini hech kimga berilmaydi.",
+    "outline": [
+      {
+        "h2": "Qisqacha xulosa: kim uchun qaysi usul",
+        "covers": "Uch qatorlik yakun: xorijiy kartasi bor va konvertatsiyaga rozi bo'lgan o'yinchi uchun o'yin do'koni; faqat mahalliy kartasi bor va so'mda to'lamoqchi bo'lgan o'yinchi uchun GemPay boti; akkaunt logini so'raydigan har qanday sotuvchi esa umuman tavsiya qilinmaydi.",
+        "block": "key-facts"
+      },
+      {
+        "h2": "1-usul: o'yin ichidagi do'kon (Google Play / App Store)",
+        "covers": "Rasmiy va ishonchli, lekin O'zbekistondan to'lash uchun Visa yoki Mastercard, ba'zan chet el Google Play balansi kerak; UzCard va HUMO ko'p hollarda rad etiladi; valyuta konvertatsiyasi va bank komissiyasi qo'shiladi; paket narxi do'kon regioniga bog'liq.",
+        "block": "prose"
+      },
+      {
+        "h2": "2-usul: xorijiy top-up saytlari",
+        "covers": "Codashop, MTCGame va shunga o'xshash saytlar: interfeys ba'zan o'zbekchaga mashinaviy tarjima qilingan, lekin so'm valyutasi va mahalliy to'lov usullari yo'q; Codashop O'zbekiston uchun Free Fire to'ldirishni taklif qilmaydi; to'lov xorijiy karta yoki hamyon talab qiladi; qo'llab-quvvatlash ingliz tilida va sekin.",
+        "block": "prose"
+      },
+      {
+        "h2": "3-usul: kripto va gift-card saytlari",
+        "covers": "Kripto bilan to'lash taklif qiladigan xalqaro platformalar: kirish uchun birja, hamyon va USDT kerak; kurs farqi va tarmoq komissiyasi qo'shiladi; oddiy o'yinchi uchun ortiqcha bosqichlar; gift-kartani noto'g'ri regionga sotib olib qo'yish xavfi.",
+        "block": "prose"
+      },
+      {
+        "h2": "4-usul: shaxsiy sotuvchilar va «akkauntga kirib to'ldiramiz» takliflari",
+        "covers": "Eng arzon ko'rinadigan, lekin eng xavfli kanal: login va parol so'raladi, bu Garena qoidalarini buzadi va akkaunt bloklanishi yoki o'g'irlanishi bilan tugashi mumkin; kafolat va chek yo'q; nizoni hal qiladigan tomon yo'q. Halol pozitsiya: ID bo'yicha to'ldirish qonuniy, akkaunt berish esa emas.",
+        "block": "warning"
+      },
+      {
+        "h2": "5-usul: GemPay boti — so'mda, mahalliy karta bilan",
+        "covers": "Telegram Mini App; faqat Player ID kerak; nik to'lovdan oldin bepul tekshiriladi; to'lov UzCard, HUMO, Click, Payme, Paynet orqali so'mda; yetkazish o'rtacha 2 daqiqa; chek va buyurtma raqami saqlanadi; qo'llab-quvvatlash o'zbek tilida @StarsPaymeeSupport.",
+        "block": "prose"
+      },
+      {
+        "h2": "Yonma-yon jadval",
+        "covers": "Ustunlar: usul | to'lov valyutasi | mahalliy karta ishlaydimi | login so'raladimi | yetkazish vaqti | qo'llab-quvvatlash tili | asosiy risk. Qatorlar: o'yin do'koni, xorijiy top-up saytlari, kripto/gift-card, shaxsiy sotuvchi, GemPay. Hech qanday so'm raqami yozilmaydi — faqat sifat ko'rsatkichlari.",
+        "block": "compare-table"
+      },
+      {
+        "h2": "«Arzon» aslida nimaga bog'liq",
+        "covers": "Yakuniy narxga ta'sir qiladigan omillar: Garena paket tuzilishi (katta paketda bonus ulushi yuqori), provayder narxi USDT'da, joriy USDT/so'm kursi, bank konvertatsiyasi va kartadagi qo'shimcha komissiya, aksiya davrlari. Xorijiy kartada ko'rinadigan «arzon» narx konvertatsiyadan keyin qimmatlashishi. Aniq summa har doim to'lovdan oldin botda ko'rsatiladi.",
+        "block": "price-logic"
+      },
+      {
+        "h2": "Xulosa va keyingi qadam",
+        "covers": "Mahalliy karta + so'm + ID bo'yicha to'ldirish kombinatsiyasi O'zbekiston o'yinchisi uchun eng kam ishqalanishli yo'l; botga o'tish va nikni bepul tekshirib ko'rish taklifi.",
+        "block": "inline-cta"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Free Fire olmosini o'yin ichidan UzCard bilan sotib olsam bo'ladimi?",
+        "a": "Odatda yo'q. Google Play va App Store xaridlari xalqaro karta yoki do'kon balansini talab qiladi, UzCard va HUMO esa ko'p hollarda rad etiladi. Shuning uchun O'zbekistonda ID bo'yicha to'ldirish keng tarqalgan."
+      },
+      {
+        "q": "Codashop O'zbekistonda ishlaydimi?",
+        "a": "Codashop har bir mamlakat uchun alohida versiyaga ega va Free Fire to'ldirish barcha regionlarda mavjud emas. O'zbekiston uchun so'mda to'lov va mahalliy karta varianti taklif qilinmaydi."
+      },
+      {
+        "q": "Akkauntimni berib to'ldirsam arzonroq bo'ladimi?",
+        "a": "Arzonroq ko'rinishi mumkin, lekin login va parolni berish Garena qoidalarini buzadi va akkaunt bloklanishi yoki butunlay o'g'irlanishi bilan tugaydi. Faqat UID so'raydigan xizmatdan foydalaning."
+      },
+      {
+        "q": "Nega har xil joyda narx har xil?",
+        "a": "Chunki narx zanjiri turlicha: paket tuzilishi, provayder narxi USDT'da, kurs, bank konvertatsiyasi va komissiyalar. Xorijiy kartada ko'rsatilgan narx konvertatsiyadan keyin oshib ketishi mumkin."
+      },
+      {
+        "q": "Kripto orqali olish arzonroqmi?",
+        "a": "Ko'pincha emas. Birja komissiyasi, tarmoq to'lovi va kurs farqi qo'shilgandan keyin tejash yo'qoladi, ustiga ortiqcha bosqichlar va xato qilish xavfi qo'shiladi."
+      },
+      {
+        "q": "GemPay orqali to'ldirish rasmiymi?",
+        "a": "To'ldirish Player ID orqali, Garena qabul qiladigan usulda bajariladi — akkauntga kirilmaydi va hech qanday qoida buzilmaydi. Siz faqat UID berasiz, login ma'lumotlari hech qachon so'ralmaydi."
+      },
+      {
+        "q": "Qaysi usul eng tez?",
+        "a": "ID bo'yicha to'ldirish: to'lovdan keyin olmos odatda 2 daqiqada tushadi. Gift-kartani sotib olib, keyin uni faollashtirish esa qo'shimcha qadamlar va kutishni talab qiladi."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "FAQPage",
+      "BreadcrumbList",
+      "ItemList"
+    ],
+    "internalLinks": [
+      "/oyinlar/free-fire",
+      "free-fire-olmos-sotib-olish",
+      "free-fire-olmos-nima-va-paketlari",
+      "free-fire-bepul-olmos-haqiqatmi"
+    ],
+    "wordCount": 1400
+  },
+  "gameKeywords": {
+    "primary": [
+      "free fire olmos sotib olish",
+      "free fire olmos to'ldirish",
+      "ff olmos sotib olish",
+      "free fire donat uzbekistan",
+      "garena free fire olmos narxi",
+      "free fire olmos player id bilan"
+    ],
+    "questions": [
+      "free fire olmos qanday sotib olinadi",
+      "free fire uid qayerdan topiladi",
+      "free fire olmos nega kelmadi",
+      "free fire bepul olmos haqiqatmi",
+      "free fire olmos qancha turadi",
+      "free fire max va free fire olmosi bir xilmi",
+      "free fire id topilmadi nima qilish kerak",
+      "free fire weekly membership nima beradi",
+      "free fire olmos sotib olish xavfsizmi",
+      "как узнать uid в free fire",
+      "можно ли пополнить free fire картой uzcard",
+      "почему пишет неверный id free fire"
+    ],
+    "russian": [
+      "купить алмазы фри фаер узбекистан",
+      "пополнить free fire по id узбекистан",
+      "free fire алмазы humo uzcard",
+      "донат фри фаер ташкент сум",
+      "купить алмазы free fire click payme",
+      "алмазы фри фаер дешево по uid",
+      "free fire weekly membership купить",
+      "почему не пришли алмазы free fire"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE (Google SERP + sahifalarni ochib): (1) O'zbek tilidagi \"free fire olmos sotib olish\" so'rovi bo'yicha TOP natijalar — mtcgame.com/uz (mashinaviy tarjima qilingan sahifalar, so'm va mahalliy karta yo'q), bitsika.com ning \"O'zbekistonda Free Fire Top-Up — kripto yoki so'm\" sahifasi, doctorsim/hablax/topup-balance kabi gift-card + kripto saytlari. Qolgan TOP-10 ni codigosdefreefire.gratis, mytruko.com, projaker.com kabi \"bepul olmos\" spam sahifalari egallagan. Ya'ni: o'zbek tilida haqiqiy, mahalliy to'lovli, tirik kontent YO'Q — raqobat juda zaif, bu eng tez g'alaba qiladigan klaster. (2) Rus tilida O'zbekistonga aniq qaratilgan yagona sahifa — 1pay.uz/blog/bystraya-oplata-free-fire-cherez-humo-i-uzcard (Humo/UzCard bo'yicha), lekin sahifa WebFetch'da 403 qaytardi va domen \"redemption period\" holatida ko'rinadi — ya'ni bu pozitsiya bo'shashi ehtimoli yuqori. Qolganlari RU/CIS bozoriga qaratilgan (donatov.net, battlepass.ru, kupikod, firelootshop, payclarus, funpay) — ular so'm, UzCard/HUMO, Click/Payme bilan ishlamaydi. (3) Codashop O'zbekiston uchun Free Fire top-up bermaydi (ru-kz versiyasi bor, uz yo'q) — bu taqqoslash maqolasi uchun kuchli, tekshirilgan fakt. (4) Mahsulot faktlari tekshirildi: UID profil avatarida, nik ostida, odatda 8-12 raqam, o'zgarmaydi (nik o'zgaradi); Free Fire va Free Fire MAX Firelink orqali bitta akkaunt va bitta olmos balansini bo'lishadi; akkaunt regioni birinchi kirishda IP bo'yicha biriktiriladi va keyin o'zgartirilmaydi, shuning uchun provayder marshruti mos kelmasa buyurtma tushmaydi; paketlar asosiy+bonus ko'rinishida (100+10, 310+31, 520+52, 1060+106, 2180+218, 5600+560 → 110/341/572/1166/2398/6160); joriy sezonli pass nomi Booyah Pass (Premium 399, Premium Plus 899 olmos), \"Elite Pass\" eski nom, lekin foydalanuvchilar hali ham shunday qidiradi; guest akkauntlar tiklanmaydi, Google/Facebook/VK ga bog'lash shart. (5) \"Diamonds not received\" / \"invalid UID\" muammolari resellerlarda eng ko'p uchraydigan qo'llab-quvvatlash keysi ekani bir necha manbada tasdiqlandi. INFERRED (tekshirilmagan): aniq qidiruv hajmlari va CPC — Ahrefs va Semrush MCP konnektorlari bu sessiyada avtorizatsiya qilinmagani uchun ishlatib bo'lmadi, shuning uchun so'rovlar chastotasi emas, SERP tarkibi va so'rov formulirovkalari asosida tanlangan. Shuningdek: o'zbek o'yinchilarining \"olmos\" vs \"almaz\" nisbati, Telegram orqali qidiruv ulushi va Yandex.uz dagi aniq pozitsiyalar taxminiy. Strategik xulosa: (a) o'zbek tilidagi 5 ta maqolaning barchasi bo'sh maydonga tushadi; (b) eng katta trafik \"bepul olmos\" klasterida, lekin u spam bilan to'lgan — halol \"firibgarlik\" maqolasi shu trafikni ushlab, konvertatsiyaga olib chiqadi; (c) \"olmos kelmadi / ID topilmadi\" klasteri kam raqobatli, lekin eng yuqori niyatli (odam allaqachon to'lagan yoki to'lamoqchi).",
+  "siblings": [
+    {
+      "slug": "free-fire-olmos-sotib-olish",
+      "h1": "Free Fire olmos sotib olish — O'zbekistonda so'mda, 2 daqiqada",
+      "type": "howto"
+    },
+    {
+      "slug": "free-fire-olmos-kelmadi-id-topilmadi",
+      "h1": "Free Fire olmos kelmadi yoki «ID topilmadi» — sabablari va yechimi",
+      "type": "problem"
+    },
+    {
+      "slug": "free-fire-olmos-nima-va-paketlari",
+      "h1": "Free Fire olmosi nima, qanday paketlar bor va narx nimaga bog'liq",
+      "type": "info"
+    },
+    {
+      "slug": "free-fire-bepul-olmos-haqiqatmi",
+      "h1": "Free Fire bepul olmos: qaysi usullar haqiqiy, qaysilari firibgarlik",
+      "type": "trust"
+    }
+  ],
+  "cannibalisationFixes": [],
+  "mustLinkTo": [
+    "/oyinlar/free-fire",
+    "free-fire-olmos-sotib-olish",
+    "free-fire-olmos-nima-va-paketlari",
+    "oyin-valyutasi-qayerdan-arzon"
+  ],
+  "publishRank": 13
+}

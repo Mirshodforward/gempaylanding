@@ -1,0 +1,186 @@
+{
+  "slug": "free-fire-olmos-kelmadi-id-topilmadi",
+  "game": "free-fire",
+  "gameTitle": "Free Fire",
+  "type": "problem",
+  "spec": {
+    "slug": "free-fire-olmos-kelmadi-id-topilmadi",
+    "type": "problem",
+    "h1": "Free Fire olmos kelmadi yoki «ID topilmadi» — sabablari va yechimi",
+    "metaTitle": "Free Fire olmos kelmadi? ID xatosi yechimi",
+    "metaDescription": "Free Fire olmosi kelmadimi yoki ID topilmadimi? Xatoning 6 ta sababi, 15 daqiqalik tekshiruv rejasi va supportga nima yuborish kerakligi bir sahifada.",
+    "searchIntent": "Muammoli — foydalanuvchi allaqachon urinib ko'rgan yoki to'lagan, hozir xato bilan turibdi va tez yechim izlaydi. Sahifa diagnostika daraxti bo'lishi va oxirida aniq harakatga olib chiqishi kerak.",
+    "primaryKeyword": "free fire olmos kelmadi",
+    "secondaryKeywords": [
+      "free fire id topilmadi",
+      "free fire uid xato",
+      "free fire olmos tushmadi",
+      "free fire region qo'llab-quvvatlanmaydi",
+      "free fire to'lov o'tdi olmos yo'q",
+      "free fire noto'g'ri id ga to'ldirdim"
+    ],
+    "answerBox": "Free Fire olmosi kelmasligining asosiy sabablari: noto'g'ri Player ID, nik o'rniga UID kiritilmagani, akkaunt regioni qo'llab-quvvatlanmasligi yoki Garena tomonidagi navbat. Avval o'yinni to'liq yopib qayta oching va balansni tekshiring. Olmos 15 daqiqada ham kelmasa, to'lov chekini va UID ni @StarsPaymeeSupport ga yuboring: buyurtma qo'lda tekshiriladi.",
+    "outline": [
+      {
+        "h2": "Avval shuni qiling: 60 soniyalik tekshiruv",
+        "covers": "Eng ko'p yordam beradigan uchta harakat tartib bilan: o'yinni fon rejimidan emas, to'liq yopib qayta oching; balansni yuqori o'ng burchakda tekshiring; botdagi buyurtma statusini ko'ring. Ko'p holatda olmos allaqachon tushgan, faqat mijoz ilovasi yangilanmagan bo'ladi.",
+        "block": "steps"
+      },
+      {
+        "h2": "«ID topilmadi» xatosining 6 ta sababi",
+        "covers": "1) nik yoki e-mail kiritilgan, UID emas; 2) UID da ortiqcha probel yoki nusxalashda tushib qolgan raqam; 3) yangi yaratilgan akkaunt hali serverda ko'rinmaydi; 4) guest akkaunt hech qayerga bog'lanmagan; 5) akkaunt regioni qo'llab-quvvatlanmaydigan serverda; 6) akkaunt bloklangan yoki o'chirilgan. Har biri uchun aniq tekshirish usuli.",
+        "block": "prose"
+      },
+      {
+        "h2": "Bot boshqa odamning nikini ko'rsatdi — to'lamang",
+        "covers": "Bu noto'g'ri UID belgisidir va bu bosqichda hali hech narsa yo'qolmagan. UID ni profildan qayta nusxalash, do'stning UID si bilan chalkashtirmaslik, o'xshash raqamlar (0/8, 1/7) xatosi. Agar to'lov allaqachon o'tgan bo'lsa — Garena olmosni bir akkauntdan boshqasiga ko'chirmasligi, shuning uchun nik tekshiruvi majburiy qadam ekani.",
+        "block": "warning"
+      },
+      {
+        "h2": "Akkaunt regioni mos kelmasa nima bo'ladi",
+        "covers": "Free Fire regioni birinchi kirishda IP bo'yicha biriktiriladi va keyin o'zgartirilmaydi; to'ldirish marshrutlari ham regionga bog'langan. GemPay Global versiya bilan ishlaydi. Agar akkaunt boshqa regionda bo'lsa, buyurtma tushmaydi va pul qaytariladi. VPN bilan region aldash tavsiya qilinmaydi — bu Garena qoidalarini buzadi va akkaunt bloklanishiga olib keladi. To'g'ri yo'l: nik tekshiruvidan o'tish va support bilan bog'lanish.",
+        "block": "prose"
+      },
+      {
+        "h2": "To'lov o'tdi, olmos yo'q: 15 daqiqalik reja",
+        "covers": "0-2 daqiqa: kutish, buyurtma odatda shu oraliqda bajariladi. 2-5 daqiqa: o'yinni qayta ishga tushirish, boshqa akkauntga kirib chiqmaslik. 5-15 daqiqa: botdagi buyurtma statusi va to'lov chekini tekshirish. 15 daqiqadan keyin: supportga murojaat. Nima qilmaslik kerak: qayta to'lash, chargeback qilish, boshqa botlarda takrorlash.",
+        "block": "steps"
+      },
+      {
+        "h2": "Free Fire MAX, bonus olmos va «yo'qolgan» balans",
+        "covers": "MAX va oddiy Free Fire bitta balansni bo'lishadi — ikkalasini alohida deb o'ylash chalkashlik keltiradi. Bonus olmoslar asosiy balansdan alohida ko'rinishi va ayrim bo'limlarda ishlamasligi mumkin. Bir nechta akkaunt (Google va Facebook) bo'lsa, boshqa akkauntga kirib qolib, «olmos yo'qoldi» degan xulosa chiqarish xatosi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Supportga nima yuborish kerak",
+        "covers": "Aniq ro'yxat: UID; botdagi buyurtma raqami; to'lov cheki yoki tranzaksiya ID si; to'lov vaqti va usuli (Click, Payme, UzCard...); nik va o'yin ichidagi balans skrinshoti; xato matni skrinshoti. Manzil: @StarsPaymeeSupport. Nima yubormaslik kerak: parol, SMS kod, karta to'liq raqami va CVV.",
+        "block": "checklist"
+      },
+      {
+        "h2": "Keyingi safar xatosiz to'ldirish",
+        "covers": "Nik tekshiruvi bepul ekanini eslatish, UID ni nusxalab qo'yish, akkauntni Google/Facebook/VK ga bog'lash tavsiyasi va botga o'tish havolasi.",
+        "block": "inline-cta"
+      }
+    ],
+    "faq": [
+      {
+        "q": "To'lov o'tdi, lekin olmos kelmadi. Pul yo'qoldimi?",
+        "a": "Yo'q. Har bir to'lov buyurtma raqami bilan qayd etiladi. Agar yetkazib berish bajarilmasa, buyurtma qo'lda tekshiriladi va olmos yuboriladi yoki mablag' qaytariladi. Chekni saqlang va @StarsPaymeeSupport ga yozing."
+      },
+      {
+        "q": "Nega bot mening ID yimni topa olmayapti?",
+        "a": "Ko'p hollarda nik yoki e-mail kiritilgan, UID emas, yoki nusxalashda probel qo'shilgan. Profil avatarini bosib, nik ostidagi raqamni nusxalash tugmasi orqali oling. Yangi yaratilgan akkaunt bir necha soatdan keyin ko'rinishi mumkin."
+      },
+      {
+        "q": "Noto'g'ri UID ga to'ldirdim, qaytarib bo'ladimi?",
+        "a": "Garena olmosni bir akkauntdan boshqasiga ko'chirmaydi, shuning uchun yetkazib berilgan olmosni qaytarish imkonsiz. Aynan shuning uchun bot to'lovdan oldin nikni bepul ko'rsatadi — har doim nikni tekshiring."
+      },
+      {
+        "q": "«Region qo'llab-quvvatlanmaydi» degani nima?",
+        "a": "Free Fire akkaunti birinchi kirishda ma'lum serverga biriktiriladi va bu keyin o'zgarmaydi. To'ldirish marshrutlari ham regionga bog'liq. Global versiya qo'llab-quvvatlanadi; boshqa regiondagi akkauntga buyurtma tushmaydi va to'lov qaytariladi."
+      },
+      {
+        "q": "VPN orqali regionni o'zgartirsam bo'ladimi?",
+        "a": "Tavsiya qilmaymiz. Garena qoidalari bo'yicha region cheklovini chetlab o'tish akkaunt bloklanishiga olib kelishi mumkin, mavjud akkauntning regioni esa baribir o'zgarmaydi. To'g'ri yo'l — nik tekshiruvidan o'tib, support bilan bog'lanish."
+      },
+      {
+        "q": "Olmos Free Fire MAX da ko'rinmayapti, nega?",
+        "a": "Free Fire va Free Fire MAX bitta akkauntni va bitta balansni bo'lishadi. Agar balans ko'rinmasa, siz boshqa akkauntga (masalan, Google o'rniga Facebook) kirgan bo'lishingiz mumkin. Profilni ochib UID ni solishtiring."
+      },
+      {
+        "q": "Bonus olmoslar nega hamma joyda ishlamayapti?",
+        "a": "Paketlar asosiy va bonus olmosdan iborat. Bonus olmoslar odatda oddiy xaridlarga o'tadi, lekin ayrim aksiya va bo'limlarda cheklov bo'lishi mumkin — bu Garena tomonidagi qoida, sotuvchiga bog'liq emas."
+      },
+      {
+        "q": "Qayta to'lasam, olmos ikki marta keladimi?",
+        "a": "Har bir to'lov alohida buyurtma sifatida bajariladi, shuning uchun ikki marta to'lasangiz — ikki marta yetkaziladi. Birinchi buyurtma osilib qolgan bo'lsa, qayta to'lamang, avval supportga yozing."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "HowTo",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "internalLinks": [
+      "/oyinlar/free-fire",
+      "free-fire-olmos-sotib-olish",
+      "free-fire-bepul-olmos-haqiqatmi",
+      "free-fire-olmos-nima-va-paketlari"
+    ],
+    "wordCount": 1500
+  },
+  "gameKeywords": {
+    "primary": [
+      "free fire olmos sotib olish",
+      "free fire olmos to'ldirish",
+      "ff olmos sotib olish",
+      "free fire donat uzbekistan",
+      "garena free fire olmos narxi",
+      "free fire olmos player id bilan"
+    ],
+    "questions": [
+      "free fire olmos qanday sotib olinadi",
+      "free fire uid qayerdan topiladi",
+      "free fire olmos nega kelmadi",
+      "free fire bepul olmos haqiqatmi",
+      "free fire olmos qancha turadi",
+      "free fire max va free fire olmosi bir xilmi",
+      "free fire id topilmadi nima qilish kerak",
+      "free fire weekly membership nima beradi",
+      "free fire olmos sotib olish xavfsizmi",
+      "как узнать uid в free fire",
+      "можно ли пополнить free fire картой uzcard",
+      "почему пишет неверный id free fire"
+    ],
+    "russian": [
+      "купить алмазы фри фаер узбекистан",
+      "пополнить free fire по id узбекистан",
+      "free fire алмазы humo uzcard",
+      "донат фри фаер ташкент сум",
+      "купить алмазы free fire click payme",
+      "алмазы фри фаер дешево по uid",
+      "free fire weekly membership купить",
+      "почему не пришли алмазы free fire"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE (Google SERP + sahifalarni ochib): (1) O'zbek tilidagi \"free fire olmos sotib olish\" so'rovi bo'yicha TOP natijalar — mtcgame.com/uz (mashinaviy tarjima qilingan sahifalar, so'm va mahalliy karta yo'q), bitsika.com ning \"O'zbekistonda Free Fire Top-Up — kripto yoki so'm\" sahifasi, doctorsim/hablax/topup-balance kabi gift-card + kripto saytlari. Qolgan TOP-10 ni codigosdefreefire.gratis, mytruko.com, projaker.com kabi \"bepul olmos\" spam sahifalari egallagan. Ya'ni: o'zbek tilida haqiqiy, mahalliy to'lovli, tirik kontent YO'Q — raqobat juda zaif, bu eng tez g'alaba qiladigan klaster. (2) Rus tilida O'zbekistonga aniq qaratilgan yagona sahifa — 1pay.uz/blog/bystraya-oplata-free-fire-cherez-humo-i-uzcard (Humo/UzCard bo'yicha), lekin sahifa WebFetch'da 403 qaytardi va domen \"redemption period\" holatida ko'rinadi — ya'ni bu pozitsiya bo'shashi ehtimoli yuqori. Qolganlari RU/CIS bozoriga qaratilgan (donatov.net, battlepass.ru, kupikod, firelootshop, payclarus, funpay) — ular so'm, UzCard/HUMO, Click/Payme bilan ishlamaydi. (3) Codashop O'zbekiston uchun Free Fire top-up bermaydi (ru-kz versiyasi bor, uz yo'q) — bu taqqoslash maqolasi uchun kuchli, tekshirilgan fakt. (4) Mahsulot faktlari tekshirildi: UID profil avatarida, nik ostida, odatda 8-12 raqam, o'zgarmaydi (nik o'zgaradi); Free Fire va Free Fire MAX Firelink orqali bitta akkaunt va bitta olmos balansini bo'lishadi; akkaunt regioni birinchi kirishda IP bo'yicha biriktiriladi va keyin o'zgartirilmaydi, shuning uchun provayder marshruti mos kelmasa buyurtma tushmaydi; paketlar asosiy+bonus ko'rinishida (100+10, 310+31, 520+52, 1060+106, 2180+218, 5600+560 → 110/341/572/1166/2398/6160); joriy sezonli pass nomi Booyah Pass (Premium 399, Premium Plus 899 olmos), \"Elite Pass\" eski nom, lekin foydalanuvchilar hali ham shunday qidiradi; guest akkauntlar tiklanmaydi, Google/Facebook/VK ga bog'lash shart. (5) \"Diamonds not received\" / \"invalid UID\" muammolari resellerlarda eng ko'p uchraydigan qo'llab-quvvatlash keysi ekani bir necha manbada tasdiqlandi. INFERRED (tekshirilmagan): aniq qidiruv hajmlari va CPC — Ahrefs va Semrush MCP konnektorlari bu sessiyada avtorizatsiya qilinmagani uchun ishlatib bo'lmadi, shuning uchun so'rovlar chastotasi emas, SERP tarkibi va so'rov formulirovkalari asosida tanlangan. Shuningdek: o'zbek o'yinchilarining \"olmos\" vs \"almaz\" nisbati, Telegram orqali qidiruv ulushi va Yandex.uz dagi aniq pozitsiyalar taxminiy. Strategik xulosa: (a) o'zbek tilidagi 5 ta maqolaning barchasi bo'sh maydonga tushadi; (b) eng katta trafik \"bepul olmos\" klasterida, lekin u spam bilan to'lgan — halol \"firibgarlik\" maqolasi shu trafikni ushlab, konvertatsiyaga olib chiqadi; (c) \"olmos kelmadi / ID topilmadi\" klasteri kam raqobatli, lekin eng yuqori niyatli (odam allaqachon to'lagan yoki to'lamoqchi).",
+  "siblings": [
+    {
+      "slug": "free-fire-olmos-sotib-olish",
+      "h1": "Free Fire olmos sotib olish — O'zbekistonda so'mda, 2 daqiqada",
+      "type": "howto"
+    },
+    {
+      "slug": "free-fire-olmos-arzon-qayerdan-olish",
+      "h1": "Free Fire olmosini qayerdan olish arzon va xavfsiz — usullar taqqoslovi",
+      "type": "comparison"
+    },
+    {
+      "slug": "free-fire-olmos-nima-va-paketlari",
+      "h1": "Free Fire olmosi nima, qanday paketlar bor va narx nimaga bog'liq",
+      "type": "info"
+    },
+    {
+      "slug": "free-fire-bepul-olmos-haqiqatmi",
+      "h1": "Free Fire bepul olmos: qaysi usullar haqiqiy, qaysilari firibgarlik",
+      "type": "trust"
+    }
+  ],
+  "cannibalisationFixes": [
+    {
+      "with": [
+        "free-fire-olmos-sotib-olish",
+        "free-fire-bepul-olmos-haqiqatmi"
+      ],
+      "problem": "Free Fire is a top-3 demand cluster and the only one of those with no dedicated ID page, so \"free fire uid qayerda / player id topish\" — a query the plan's own research lists as a top question — is split three ways: a 4-step H2 in the pillar, the six-reason \"ID topilmadi\" section in the problem article, and \"uid berish xavfsizmi\" in the trust article. Three partial answers, no rankable page.",
+      "fix": "Swap the trust slot: replace free-fire-bepul-olmos-haqiqatmi with free-fire-uid-qayerda-va-xavfsizmi (UID location + is-it-safe-to-share + free-diamond scam section folded in as one H2), matching the archetype used by seven other clusters. Cut the pillar's ID H2 to three sentences plus link. The problem article keeps \"ID topilmadi\" strictly as an error state, not as a find-your-ID guide."
+    }
+  ],
+  "mustLinkTo": [
+    "/oyinlar/free-fire",
+    "free-fire-olmos-sotib-olish",
+    "free-fire-bepul-olmos-haqiqatmi"
+  ],
+  "publishRank": 6
+}

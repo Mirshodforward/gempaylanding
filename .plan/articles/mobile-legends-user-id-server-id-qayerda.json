@@ -1,0 +1,181 @@
+{
+  "slug": "mobile-legends-user-id-server-id-qayerda",
+  "game": "mobile-legends",
+  "gameTitle": "Mobile Legends: Bang Bang",
+  "type": "trust",
+  "spec": {
+    "slug": "mobile-legends-user-id-server-id-qayerda",
+    "type": "trust",
+    "h1": "Mobile Legends User ID va Server ID qayerda turadi",
+    "metaTitle": "Mobile Legends User ID va Server ID qayerda",
+    "metaDescription": "Mobile Legends User ID va Server ID qayerda turadi: profil orqali topish, Zone ID farqi va qaysi ma'lumotni hech kimga bermaslik kerakligi haqida.",
+    "searchIntent": "Aralash: instruksion + ishonch. Foydalanuvchi to'ldirish oldida ID'ni izlayapti va ayni paytda \"buni berish xavfsizmi\" deb o'ylayapti. Bu klasterdagi eng zaif raqobatli va eng yuqori niyatli so'rov — o'zbek tilida deyarli hech kim yopmagan.",
+    "primaryKeyword": "mobile legends server id qayerda",
+    "secondaryKeywords": [
+      "mobile legends user id qayerda",
+      "mobile legends id qanday bilish",
+      "mobile legends zone id nima",
+      "user id va server id farqi",
+      "как узнать server id mobile legends",
+      "mobile legends id tekshirish"
+    ],
+    "answerBox": "Mobile Legends'da avatarni bosib profilni oching — pastda ID 123456789 (1234) ko'rinishida turadi. Birinchi raqam — User ID, qavs ichidagisi — Server ID, ba'zi saytlarda Zone ID deb yoziladi. Olmos to'ldirish uchun ikkalasi ham kerak. Bu raqamlar ochiq, lekin parolni hech kimga bermang.",
+    "outline": [
+      {
+        "h2": "Qisqa javob: qavs ichidagi raqam — Server ID",
+        "covers": "Format 123456789 (1234) ni misolda ko'rsatadi va ikkala raqamni nomlaydi. Server ID ni tushirib qoldirish eng ko'p uchraydigan xato ekanini darhol aytadi. To'ldirish uchun ikkalasi majburiy.",
+        "block": "key-facts"
+      },
+      {
+        "h2": "ID ni topish: qadam-baqadam",
+        "covers": "Yo'l 1 — lobbi → yuqori chapdagi avatar → profil oynasi → pastdagi ID qatori. Yo'l 2 — bosh ekrandagi olmos/do'kon belgisi → Recharge oynasi, u yerda ham ID va server ko'rinadi. Raqamni qo'lda ko'chirishda bo'sh joy va qavs belgilarini olib tashlash. Android va iOS'da joylashuv bir xilligi. HowTo schema shu bo'limdan.",
+        "block": "steps"
+      },
+      {
+        "h2": "Zone ID, Server ID, Region — farqi bormi",
+        "covers": "Zone ID va Server ID — bir xil narsa, faqat turli saytlarda turlicha atalgan (rus tilidagi xizmatlar odatda Zone ID deydi). Region esa boshqa tushuncha: akkaunt qaysi mintaqaviy klientda ochilgani; u ID formatini o'zgartirmaydi, lekin to'ldirish qaysi bazada topilishini belgilaydi. Bu farq \"ID topilmadi\" xatosini tushunishga yordam beradi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Nickname orqali ID topib bo'ladimi",
+        "covers": "Teskari yo'nalish ishlashini tushuntiradi: ID bo'yicha nickname aniqlanadi, nickname bo'yicha ID emas. GemPay botida ID kiritilgach nickname avtomatik chiqishi va bu tekshiruv to'lovdan oldin, bepul bo'lishi. Nickname mos kelmasa to'xtash kerakligi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Qaysi ma'lumot ochiq, qaysisini hech qachon bermaslik kerak",
+        "covers": "Ochiq: User ID, Server ID, nickname, avatar — bular do'stlar ro'yxatida ham ko'rinadi va ular bilan akkauntga kirib bo'lmaydi. Hech qachon berilmaydigan: parol, bog'langan pochta va uning paroli, Moonton/Google/Facebook kirish kodi, SMS yoki Telegram tasdiqlash kodi, ekran ulashish. Akkaunt so'ragan xizmat firibgar ekani. Ikki bosqichli himoyani yoqish tavsiyasi.",
+        "block": "warning"
+      },
+      {
+        "h2": "To'lovdan oldin oxirgi tekshiruv ro'yxati",
+        "covers": "Beshta belgi: User ID to'liq ko'chirilganmi; Server ID qavssiz kiritilganmi; nickname sizniki (yoki sovg'a qilayotgan odamniki) mi; paket to'g'ri tanlanganmi; to'lov usuli tayyormi. Shu ro'yxat bajarilsa xato ehtimoli deyarli nolga tushishi.",
+        "block": "checklist"
+      },
+      {
+        "h2": "ID tayyor — botda tekshirib ko'ring",
+        "covers": "@Gempayuz_bot havolasi, /oyinlar/mobile-legends sahifasi. Nickname tekshiruvi bepul va to'lovsiz ekani; agar nickname noto'g'ri chiqsa nima qilish. @StarsPaymeeSupport havolasi.",
+        "block": "inline-cta"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Server ID qayerda turadi?",
+        "a": "O'yin lobbisida yuqori chapdagi avatarni bosing — profil oynasi pastida ID ko'rinadi. U 123456789 (1234) ko'rinishida yoziladi: birinchi raqam User ID, qavs ichidagisi Server ID. To'ldirish uchun ikkalasini ham kiritish shart."
+      },
+      {
+        "q": "Zone ID bilan Server ID bir xilmi?",
+        "a": "Ha, bu bir xil raqam. Ba'zi xizmatlar uni Zone ID, ba'zilari Server ID yoki oddiy qilib \"server raqami\" deb yozadi. Region esa boshqa narsa — u akkaunt qaysi mintaqaviy versiyada ochilganini bildiradi."
+      },
+      {
+        "q": "ID'imni birovga berish xavflimi?",
+        "a": "User ID va Server ID ochiq ma'lumot — ular do'stlar ro'yxatida ham ko'rinadi va ular bilan akkauntga kirib bo'lmaydi. Xavfli bo'lgani parol, bog'langan pochta, kirish kodi va SMS kod. Bularni hech kimga, hech qachon bermang."
+      },
+      {
+        "q": "ID'ni nickname orqali topib bo'ladimi?",
+        "a": "Yo'q, teskarisi ishlaydi: ID bo'yicha nickname aniqlanadi. Shu sababli botga ID kiritganingizda nickname chiqadi va siz to'lovdan oldin akkauntni tasdiqlaysiz. Bu tekshiruv bepul va hech narsa yechilmaydi."
+      },
+      {
+        "q": "Nickname noto'g'ri chiqsa nima qilay?",
+        "a": "To'xtang va to'lamang — demak ID yoki server raqamida xato bor. Raqamlarni profil oynasidan qaytadan ko'chiring, bo'sh joy va qavs belgilarini olib tashlang, so'ng qayta urinib ko'ring. Nickname to'g'ri chiqqandan keyingina to'lang."
+      },
+      {
+        "q": "O'yinga kirmasdan ID'ni bilsam bo'ladimi?",
+        "a": "Ishonchli yo'li yo'q — ID o'yin profilida saqlanadi. Ilovaga kira olmayotgan bo'lsangiz, avval akkauntni tiklang. Ba'zan eski skrinshot yoki do'stingizning do'stlar ro'yxatidagi profilingiz ham ID'ni ko'rsatib qoladi."
+      },
+      {
+        "q": "ID o'zgarib qoladimi?",
+        "a": "Yo'q. User ID akkaunt yaratilganda beriladi va o'zgarmaydi, nickname'ni almashtirsangiz ham o'sha bo'lib qoladi. Server ID ham o'zgarmaydi. Shuning uchun ID'ni bir marta yozib qo'ysangiz, keyingi to'ldirishlar tezroq bo'ladi."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "HowTo",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "internalLinks": [
+      "/oyinlar/mobile-legends",
+      "mobile-legends-olmos-sotib-olish",
+      "mobile-legends-olmos-kelmadi-nima-qilish",
+      "mobile-legends-olmos-nima-va-paketlar"
+    ],
+    "wordCount": 1200
+  },
+  "gameKeywords": {
+    "primary": [
+      "mobile legends olmos sotib olish",
+      "mobile legends olmos to'ldirish",
+      "mlbb olmos sotib olish",
+      "mobile legends donat",
+      "mobile legends olmos arzon",
+      "mobile legends server id",
+      "mobile legends olmos narxi",
+      "mobile legends diamond uzbekistan"
+    ],
+    "questions": [
+      "mobile legends server id qayerda turadi?",
+      "user id va server id farqi nima?",
+      "zone id bilan server id bir xilmi?",
+      "olmos qancha vaqtda tushadi?",
+      "olmos kelmasa nima qilish kerak?",
+      "donat uchun akkaunt bloklanadimi?",
+      "olmosni do'stimga sovg'a qilsam bo'ladimi?",
+      "VPN yoki Visa karta kerakmi?",
+      "narx nega o'zgarib turadi?",
+      "Starlight va Weekly Diamond Pass qaysi biri foydali?",
+      "как узнать server id в mobile legends?",
+      "почему не пришли алмазы после оплаты?"
+    ],
+    "russian": [
+      "купить алмазы mobile legends узбекистан",
+      "пополнение mobile legends сум",
+      "донат mlbb узбекистан",
+      "алмазы мобайл легенд ташкент",
+      "пополнить mobile legends через click",
+      "пополнить mobile legends payme",
+      "как узнать zone id mobile legends",
+      "алмазы не пришли mobile legends",
+      "mobile legends starlight купить",
+      "где дешевле купить алмазы mlbb"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE (WebSearch + WebFetch, avgust 2026): (1) O'zbek tilidagi MLBB donat SERP'i deyarli BO'SH — \"mobile legends olmos sotib olish\", \"olmos to'ldirish narxi\", \"server id qayerda\" kabi so'rovlarda birinchi sahifa Wikipedia, TikTok, YouTube va tasodifiy natijalar bilan to'ladi; hech bir kuchli o'zbekcha tijorat sahifasi yo'q. Bu — eng tez g'alaba nuqtasi. (2) Rus tilida raqobat kuchli, lekin u ROSSIYA sahifalari (kupikod.com, donatov.net, ggpay.gg, vc.ru/DTF gaydlari, prepodsteam) — ular UZS, Click/Payme/UzCard/HUMO'ni umuman ko'rmaydi. O'zbekistonga qaratilgan \".uz\" raqobatchilar zaif: adek.uz (kod orqali, Toshkent do'koni, faqat ruscha katalog sahifalari, kontent yo'q), wildberries.uz karta sahifalari. Global o'yinchilar (mtcgame /uz/ mashina tarjimasi — sahifa 403 qaytardi, codashop, smile.one, topup-balance, hablax, doctorsim) O'zbekiston uchun lokal to'lovni ko'rsatmaydi va kripto/xorijiy karta so'raydi. Ya'ni \"so'mda + mahalliy karta + o'zbekcha\" burchagi egallanmagan. (3) Kupikod FAQ tahlili (WebFetch) real savol shakllarini tasdiqladi: \"olmos nima uchun kerak\", \"pass nima beradi\", \"olmos kelmasa nima qilish\", \"donat uchun ban beriladimi\", \"boshqa odamga sovg'a qilish\", \"yetkazish tezligi\" — 5 ta maqolaning FAQ bloklari shu klasterlarga bog'landi. (4) User ID / Server ID chalkashligi tasdiqlandi: format 123456789 (1234), qavs ichidagi raqam = Server ID; rus segmentida u \"Zone ID\" deb yuritiladi (kupikod, dtf, ggpay hammasi \"User ID va Zone ID\" deydi) — shuning uchun \"zone id\" sinonimini maqola ichida ochiq berish kerak. Bu so'rovda faqat inglizcha bloglar (gpdsgameshop) va YouTube raqobatlashadi — o'zbekcha bo'sh. (5) Region masalasi ham real: Global va Rossiya/MDH klientlari alohida akkaunt bazasi, ID'lar mos kelmaydi — bu \"ID topilmadi\" xatosining haqiqiy sababi. (6) Starlight / Weekly Diamond Pass fakti: Starlight — oylik a'zolik (bazasi 300 olmos, Plus 750), WDP — darhol 80 olmos + 7 kun davomida kuniga 20 olmos (jami ~220); bu raqamlar Moonton tomonidan o'zgartirilishi mumkin, shuning uchun maqolada \"tuzilma\" sifatida beriladi, so'mdagi narx esa hech qayerda yozilmaydi. INFERRED (tasdiqlanmagan): aniq qidiruv hajmlari (volume) — Ahrefs va Semrush MCP konnektorlari bu sessiyada avtorizatsiya qilinmagan, shuning uchun raqamli volume yo'q; kalit so'zlar tartibi SERP zichligi, avtokomplit shakllari va raqobatchi sarlavhalari asosida baholandi. Shuningdek o'zbek foydalanuvchilari \"olmos\" (o'zbekcha) va \"diamond/almaz\" (translit) ni aralash yozadi degan xulosa — bu Telegram MLBB UZ kanallari nomlanishi va aralash so'rovlar asosida taxmin, aniq ulush o'lchanmagan. Strategiya: 5 maqola ham o'zbek tilida yoziladi, lekin har birida ruscha sinonim (алмазы, Zone ID, пополнение) matn ichida tabiiy tilga olinadi — Yandex.uz ruscha so'rovlarda ham ushlab qolsin.",
+  "siblings": [
+    {
+      "slug": "mobile-legends-olmos-sotib-olish",
+      "h1": "Mobile Legends olmos sotib olish: to'liq qo'llanma",
+      "type": "howto"
+    },
+    {
+      "slug": "mobile-legends-olmos-kelmadi-nima-qilish",
+      "h1": "Mobile Legends olmos kelmadi: sabablari va yechimi",
+      "type": "problem"
+    },
+    {
+      "slug": "mobile-legends-olmos-arzon-qayerdan-olish",
+      "h1": "Mobile Legends olmosni qayerdan olish arzon va xavfsiz",
+      "type": "comparison"
+    },
+    {
+      "slug": "mobile-legends-olmos-nima-va-paketlar",
+      "h1": "Mobile Legends olmos nima va unga nima sotib olinadi",
+      "type": "info"
+    }
+  ],
+  "cannibalisationFixes": [
+    {
+      "with": [
+        "magic-chess-go-go-user-id-server-id-qayerda"
+      ],
+      "problem": "Near-identical slugs, same publisher (Moonton), same 123456789(1234) explanation, same Zone-ID synonym section. Both chase unbranded \"user id va server id farqi\" and \"zone id nima\". The relationship is asymmetric: the MCGG page makes \"MLBB ID bilan farqi\" a core H2 while the MLBB page never mentions MCGG — so Google reads MLBB as the canonical answer and MCGG as a thin duplicate of it.",
+      "fix": "MLBB owns all unbranded ID terminology (unbranded terms allowed in H1, intro, answerBox). MCGG drops every unbranded ID keyword and targets only \"magic chess go go id topish\", \"mcgg va mobile legends id bir xilmi\", \"magic chess id topilmadi\". Add reciprocal links with distinct disambiguating anchors so the pair reads as a disambiguation pair, not a duplicate pair."
+    }
+  ],
+  "mustLinkTo": [
+    "/oyinlar/mobile-legends",
+    "mobile-legends-olmos-sotib-olish",
+    "mobile-legends-olmos-kelmadi-nima-qilish",
+    "magic-chess-go-go-user-id-server-id-qayerda"
+  ],
+  "publishRank": 4
+}

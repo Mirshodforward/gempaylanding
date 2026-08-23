@@ -1,0 +1,171 @@
+{
+  "slug": "asphalt-9-token-nima",
+  "game": "asphalt-9",
+  "gameTitle": "Asphalt 9: Legends (Asphalt Legends) — Token",
+  "type": "info",
+  "spec": {
+    "slug": "asphalt-9-token-nima",
+    "type": "info",
+    "h1": "Asphalt 9 tokeni nima va unga nima sotib olish mumkin",
+    "metaTitle": "Asphalt 9 token nima? Paketlar va sarflash",
+    "metaDescription": "Asphalt 9 tokeni — o'yinning pullik valyutasi. Token paketlari, Season Token bilan farqi, nimaga sarflash arziydi va narx nimaga bog'liq — batafsil.",
+    "searchIntent": "Informatsion. Foydalanuvchi hali sotib olmagan, avval token nima ekanini, qanday paketlar borligini va uni nimaga sarflashni tushunmoqchi. Sahifa pillarga trafik uzatuvchi kirish nuqtasi.",
+    "primaryKeyword": "asphalt 9 token nima",
+    "secondaryKeywords": [
+      "asphalt 9 token nima uchun kerak",
+      "asphalt 9 token paketlari",
+      "asphalt 9 season token farqi",
+      "asphalt 9 credits va token",
+      "asphalt 9 tokenni nimaga sarflash",
+      "asphalt legends token"
+    ],
+    "answerBox": "Asphalt 9 tokeni — o'yinning pullik valyutasi. U Credits dan farqli o'laroq kamdan-kam beriladi va asosan Card Pack, Relay Pack, Legend Store chizmalari, kredit sotib olish hamda kutish vaqtini o'tkazib yuborish uchun ishlatiladi. Do'konda Token Pack ko'rinishidagi paketlar sotiladi, masalan 220 tokenlik paket. Amaldagi narx botda ko'rsatiladi.",
+    "outline": [
+      {
+        "h2": "Token nima va Credits dan farqi",
+        "covers": "Token — premium valyuta, Credits — oddiy valyuta. Credits poyga uchun beriladi va ko'p to'planadi; Token esa kam beriladi, shu sababli qadrli. Token mavsumga bog'lanmaydi, hisobda to'planib turaveradi.",
+        "block": "key-facts"
+      },
+      {
+        "h2": "Token paketlari qanday nomlanadi",
+        "covers": "Do'konda paketlar 'Token Pack' ko'rinishida raqamlanadi va har birida ma'lum token soni bo'ladi. Bozorda ko'p uchraydigan hajmlar: 40, 105, 220, 470, 1275 va 3000 token. Bu ROQAMLAR TOKEN SONI, so'mdagi narx emas. Katta paketda bir token hisobiga tejam ko'proq bo'lishini tushuntirish, lekin hech qanday so'm raqami yozmaslik.",
+        "block": "prose"
+      },
+      {
+        "h2": "Season Token — bu butunlay boshqa valyuta",
+        "covers": "Season Token mavsumiy tadbirlarda ishlab topiladi va faqat o'sha mavsum mukofotlariga (mashina chizmalari, epic import qismlar) almashtiriladi. Uni sotib olib bo'lmaydi va oddiy Token o'rniga ishlatib bo'lmaydi. Ko'p o'yinchi shu ikkisini chalkashtirib, noto'g'ri narsa kutadi.",
+        "block": "warning"
+      },
+      {
+        "h2": "Tokenni nimaga sarflash arziydi",
+        "covers": "Ro'yxat: cheklangan vaqtli Featured Car Pack — S-Class va event mashinalari uchun eng samarali; Legend Store dagi kerakli chizmalar; Card Pack va Relay Pack; ustuvor mashinani yig'ishni yakunlash. Har bandda nega arziydi degan bir jumla izoh.",
+        "block": "checklist"
+      },
+      {
+        "h2": "Tokenni nimaga sarflamaslik kerak",
+        "covers": "Yoqilg'i to'ldirish, tadbir chiptasini qayta tiklash, kutish vaqtini har safar o'tkazib yuborish — bularga token sarflash eng katta yo'qotish, chunki ular reklama ko'rish yoki kutish orqali tekin olinadi. Tokenni to'plab, cheklangan taklif chiqqanda ishlatish strategiyasi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Token narxi nimaga bog'liq",
+        "covers": "Narx provayderdan keladi va USDT kursiga qarab kun davomida o'zgaradi, shuning uchun bu sahifada aniq so'm ko'rsatilmaydi. Katta paket odatda bir token hisobida foydaliroq. Yakuniy summa botda paket tanlanganda ko'rinadi va to'lovdan oldin tasdiqlanadi.",
+        "block": "price-logic"
+      },
+      {
+        "h2": "Token olishga tayyormisiz",
+        "covers": "Botga havola, Player ID va platforma kerakligini eslatish, /oyinlar/asphalt-9 va to'liq sotib olish qo'llanmasiga havola.",
+        "block": "inline-cta"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Token va Credits o'rtasidagi farq nima?",
+        "a": "Credits poygalarda ko'p miqdorda ishlab topiladigan oddiy valyuta. Token esa kam beriladigan premium valyuta bo'lib, uni asosan cheklangan takliflar, chizmalar va paketlarga sarflanadi."
+      },
+      {
+        "q": "Tokenni tekin olsa bo'ladimi?",
+        "a": "Ha, cheklangan miqdorda: mavsumiy tadbirlar, karyera bosqichlarini yakunlash, multiplayer ligasi mukofotlari, kunlik vazifalar va tekin paketlar orqali. Lekin katta xaridlar uchun bu odatda yetmaydi."
+      },
+      {
+        "q": "Season Token ni sotib olsa bo'ladimi?",
+        "a": "Yo'q. Season Token faqat mavsum davomidagi tadbirlarda ishlab topiladi va faqat o'sha mavsum mukofotlariga almashtiriladi. Sotib olinadigan valyuta — oddiy Token."
+      },
+      {
+        "q": "Qaysi paketni olish foydaliroq?",
+        "a": "Odatda katta paketda bir token hisobiga tejam ko'proq bo'ladi. Ammo o'zingizga kerak bo'lgan miqdordan ortiq olishning ma'nosi yo'q — avval nimaga sarflashni rejalashtiring, keyin paket tanlang."
+      },
+      {
+        "q": "Token muddati tugaydimi?",
+        "a": "Yo'q, oddiy Token mavsumga bog'lanmaydi va hisobingizda to'planib turaveradi. Muddati bor narsa — cheklangan vaqtli takliflar, ya'ni tokenni sarflash imkoniyati, tokenning o'zi emas."
+      },
+      {
+        "q": "220 token nima degani?",
+        "a": "Bu paketdagi token soni, narx emas. Do'konlarda ko'p uchraydigan hajmlar 40, 105, 220, 470, 1275 va 3000 token. So'mdagi narx botda amaldagi kursga qarab ko'rsatiladi."
+      },
+      {
+        "q": "Token bilan mashina sotib olsam bo'ladimi?",
+        "a": "Bevosita emas — token bilan mashina chizmalari va ular chiqadigan paketlar olinadi. Ayniqsa cheklangan vaqtli Featured Car Pack S-Class mashinalarni yig'ish uchun eng samarali yo'l hisoblanadi."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "FAQPage",
+      "BreadcrumbList",
+      "ItemList"
+    ],
+    "internalLinks": [
+      "/oyinlar/asphalt-9",
+      "asphalt-9-token-sotib-olish",
+      "asphalt-9-donat-usullari-taqqoslash",
+      "asphalt-9-player-id-va-platforma"
+    ],
+    "wordCount": 1250
+  },
+  "gameKeywords": {
+    "primary": [
+      "asphalt 9 token sotib olish",
+      "asphalt 9 donat",
+      "asphalt 9 token olish uzbekistan",
+      "asfalt 9 token sotib olish",
+      "asphalt legends token sotib olish",
+      "asphalt 9 tokenlarini to'ldirish",
+      "asphalt 9 uc kabi token olish"
+    ],
+    "questions": [
+      "Asphalt 9 da Player ID qayerdan topiladi?",
+      "Asphalt 9 tokenlari qancha vaqtda keladi?",
+      "Asphalt 9 uchun nega platforma so'raladi?",
+      "Android da olingan token iOS da ishlaydimi?",
+      "Asphalt 9 token sotib olish xavfsizmi?",
+      "Token olish uchun parol yoki akkaunt berish kerakmi?",
+      "Asphalt 9 va Asphalt Legends bir xil o'yinmi?",
+      "Token kelmasa nima qilish kerak?",
+      "Asphalt 9 tokenini so'mda to'lash mumkinmi?",
+      "Season Token va oddiy Token farqi nima?",
+      "Asphalt 9 token narxi qanday belgilanadi?",
+      "Microsoft Store dan olingan token telefonda ishlaydimi?"
+    ],
+    "russian": [
+      "донат асфальт 9 узбекистан",
+      "купить токены asphalt 9",
+      "asphalt 9 пополнение по id",
+      "асфальт 9 донат без входа в аккаунт",
+      "как задонатить в asphalt 9 из узбекистана",
+      "asphalt legends unite донат токены",
+      "asphalt 9 player id где найти",
+      "asphalt 9 токены не пришли что делать",
+      "оплата uzcard humo click asphalt 9",
+      "asphalt 9 токены android ios windows разница"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE (WebSearch + WebFetch, avgust 2026): (1) Nom o'zgarishi — o'yin 2018-yilda 'Asphalt 9: Legends', 2024-yil 17-iyulda 'Asphalt Legends Unite', 2025-yil 24-iyulda esa 'Asphalt Legends' deb qayta nomlangan (Wikipedia/Asphalt Legends). Bu SEO uchun katta imkoniyat: qidiruvlar hamon 'Asphalt 9' bilan yuritiladi, lekin yangi kontent 'Asphalt Legends' nomiga o'tib ketmoqda — ikkala nomni bitta sahifada ushlagan sayt ikkala klasterni oladi. (2) Token paket hajmlari real do'konlarda tasdiqlandi: 40, 105, 220, 470, 1275, 3000 token (FunPay lot 1667, Xbox/plati.market '220 Tokens', G2A '105 Tokens'). So'mdagi narx hech qayerda olinmadi va maqolalarda ishlatilmaydi. (3) Platforma qulfi tasdiqlandi: Microsoft Store orqali olingan tokenlar Xbox/PC da ishlaydi, mobil qurilmaga o'tmaydi; Gameloft yordam markazi progressni faqat bir xil OS ichida ko'chirishni tavsiflaydi. Wikipedia 2024 'Unite' yangilanishi bulutli progressni qo'shganini, PlayStation va Switch bundan mustasno ekanini yozadi. Ya'ni akkaunt ko'chishi mumkin, lekin xarid hamyoni platformaga bog'lanib qoladi — bu aynan bizning 'server maydoni aslida platforma' maqolamizning yadrosi. (4) Player ID ikki xil yo'l bilan topiladi: Hangar'da chap yuqoridagi avatar > Profile > nik ostidagi ID (bosib nusxalanadi) va Menu/Settings > About > Gameloft Player ID. Gameloft yordam markazi (helpshift) sahifasi WebFetch uchun 403 qaytardi, shu sababli qadamlar qidiruv snippetlari va uchinchi tomon qo'llanmalaridan yig'ildi — matn yozishdan oldin o'yin ichida bir marta tekshirib chiqilishi kerak. (5) Tokenlar nimaga sarflanishi tasdiqlandi: Card Pack, Relay Pack, Legend Store blueprint'lari, kredit sotib olish, kutish vaqtini o'tkazib yuborish, S-Class/event mashinalari uchun Featured Car Pack. 'Season Token' esa alohida, event valyutasi — foydalanuvchilar buni doimiy Token bilan chalkashtiradi. (6) RAQOBAT juda zaif: o'zbek tilida bu mavzuda bitta ham normal sahifa topilmadi — google.uz o'zbekcha SERP amalda bo'sh. Butun raqobat rus tilida (donatov.net, szmarket.ru, goplaydonate.ru, mobime.ru, topit.store, dtf.ru), turkcha (kopazar) yoki global (Codashop, G2G, G2A, LotKeys, FunPay, MTCGame). Ularning hech birida UZS, UzCard/HUMO/Click/Payme yo'q. Bu klaster 3-6 oyda to'liq egallanadi. (7) Ishonch bo'shlig'i tasdiqlandi: FunPay da ikki xil yetkazish bor — 'Top Up with ID (NO LOGIN)' va 'with account login'; ba'zi rus saytlari sanksiya xavfi haqida ogohlantiradi. GemPay uchun 'faqat ID, parol so'ralmaydi' pozitsiyasi real farqlovchi ustunlik. INFERRED (tasdiqlanmagan): aniq qidiruv hajmlari. Ahrefs va Semrush konnektorlari bu sessiyada avtorizatsiya qilinmagan (foydalanuvchi claude.ai connector sozlamalarida ruxsat berishi kerak), shuning uchun volume raqamlari yo'q. Baholash: o'zbekcha so'rovlar absolyut hajmi kichik (oyiga o'nlab), lekin KD deyarli nol; asosiy trafik ruscha 'донат асфальт 9' + Yandex.uz dan va 'asfalt/asphalt' aralash transliteratsiyadan keladi. Shu sababli har bir maqolada ruscha atamalar (донат, токены, пополнение по ID) matn ichida tabiiy tarzda eslatib o'tilishi tavsiya etiladi.",
+  "siblings": [
+    {
+      "slug": "asphalt-9-token-sotib-olish",
+      "h1": "Asphalt 9 tokenlarini O'zbekistonda sotib olish",
+      "type": "howto"
+    },
+    {
+      "slug": "asphalt-9-token-kelmadi-nima-qilish",
+      "h1": "Asphalt 9 tokenlari kelmadi yoki ID topilmadi: nima qilish",
+      "type": "problem"
+    },
+    {
+      "slug": "asphalt-9-donat-usullari-taqqoslash",
+      "h1": "Asphalt 9 donat: GemPay, Google Play, App Store va chet el saytlari",
+      "type": "comparison"
+    },
+    {
+      "slug": "asphalt-9-player-id-va-platforma",
+      "h1": "Asphalt 9 Player ID qayerda va platformani qanday tanlash",
+      "type": "trust"
+    }
+  ],
+  "cannibalisationFixes": [],
+  "mustLinkTo": [
+    "/oyinlar/asphalt-9",
+    "asphalt-9-token-sotib-olish",
+    "asphalt-9-donat-usullari-taqqoslash"
+  ],
+  "publishRank": 45
+}

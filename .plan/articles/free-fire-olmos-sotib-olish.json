@@ -1,0 +1,224 @@
+{
+  "slug": "free-fire-olmos-sotib-olish",
+  "game": "free-fire",
+  "gameTitle": "Free Fire",
+  "type": "howto",
+  "spec": {
+    "slug": "free-fire-olmos-sotib-olish",
+    "type": "howto",
+    "h1": "Free Fire olmos sotib olish — O'zbekistonda so'mda, 2 daqiqada",
+    "metaTitle": "Free Fire olmos sotib olish: so'mda 2 daqiqada",
+    "metaDescription": "Free Fire olmos sotib olish: Player ID kiritasiz, nik bepul tekshiriladi, UzCard, HUMO, Click yoki Payme bilan so'mda to'laysiz. Olmos 2 daqiqada keladi.",
+    "searchIntent": "Transaksion — foydalanuvchi hozir olmos to'ldirmoqchi va O'zbekistondan, so'mda, mahalliy karta bilan buni qanday qilishni bilmoqchi. Sahifa uni qadam-baqadam botga olib borishi kerak.",
+    "primaryKeyword": "free fire olmos sotib olish",
+    "secondaryKeywords": [
+      "free fire olmos to'ldirish",
+      "ff olmos sotib olish",
+      "free fire donat uzbekistan",
+      "free fire olmos click orqali",
+      "free fire olmos payme uzcard",
+      "garena free fire to'ldirish",
+      "free fire player id bilan olmos"
+    ],
+    "answerBox": "Free Fire olmosini O'zbekistonda sotib olish uchun GemPay botini oching, Free Fire'ni tanlang va Player ID (UID) ni kiriting. Bot nikingizni to'lovdan oldin bepul ko'rsatadi. So'ngra paketni tanlab, UzCard, HUMO, Click, Payme yoki Paynet orqali so'mda to'laysiz. Olmos o'rtacha 2 daqiqada tushadi: parol, VPN yoki Visa karta kerak emas.",
+    "outline": [
+      {
+        "h2": "Qisqacha: nima kerak va qancha vaqt oladi",
+        "covers": "Bitta ekranda jamlangan faktlar: kerak bo'lgan yagona ma'lumot — Player ID (UID, odatda 8-12 raqam); to'lov usullari — UzCard, HUMO, Click, Payme, Paynet; valyuta — so'm; yetkazish — o'rtacha 2 daqiqa; qo'llab-quvvatlanadigan versiya — Global (Free Fire va Free Fire MAX bitta akkaunt); kerak EMAS bo'lgan narsalar — parol, tasdiqlash kodi, VPN, Visa/Mastercard, kripto.",
+        "block": "key-facts"
+      },
+      {
+        "h2": "Player ID (UID) nima va nima uchun faqat shu kerak",
+        "covers": "UID — akkauntning ochiq, o'zgarmas raqamli identifikatori; nik o'zgaradi, UID hech qachon o'zgarmaydi. UID ni berish xavfsiz, chunki u bilan hech kim akkauntga kira olmaydi — kirish uchun Google/Facebook/VK logini kerak, uni esa hech kimga bermaslik shart. Nik yoki e-mail bilan to'ldirib bo'lmasligi tushuntiriladi.",
+        "block": "prose"
+      },
+      {
+        "h2": "UID ni qayerdan topasiz: 4 qadam",
+        "covers": "1) Free Fire yoki Free Fire MAX ni oching; 2) chap yuqoridagi avatar/profilni bosing; 3) nik ostidagi raqamlar qatorini toping; 4) yonidagi nusxalash (Copy) tugmasini bosing va botga qo'ying. Qo'lda terganda 0/O va probel xatolari uchrashini, MAX'da ham aynan shu UID ekanini aytish.",
+        "block": "steps"
+      },
+      {
+        "h2": "GemPay botida olmos to'ldirish: bosqichma-bosqich",
+        "covers": "1) @Gempayuz_bot ni oching va Mini App'ni ishga tushiring; 2) o'yinlar ro'yxatidan Free Fire'ni tanlang; 3) UID ni joylang; 4) bot nikni BEPUL ko'rsatadi — to'lovdan oldin tekshirib oling; 5) olmos paketini yoki Membership'ni tanlang; 6) UzCard/HUMO/Click/Payme/Paynet orqali so'mda to'lang; 7) o'yinni to'liq yopib qayta oching va balansni ko'ring.",
+        "block": "steps"
+      },
+      {
+        "h2": "To'lov usullari: qaysi birini tanlash kerak",
+        "covers": "Jadval: UzCard va HUMO (karta raqami bilan to'g'ridan-to'g'ri), Click va Payme (ilova orqali, eng tez), Paynet (naqd pul bilan to'ldirilgan hamyon). Har biri uchun kimga qulayligi va nima talab qilinishi. Visa/Mastercard, kripto va xorijiy hamyonlar qabul qilinmasligi hamda buning sabab emas, balki afzallik ekani — mahalliy kartada konvertatsiya yo'q.",
+        "block": "compare-table"
+      },
+      {
+        "h2": "Narx qanday shakllanadi va nega o'zgarib turadi",
+        "covers": "Narx zanjiri: Garena paket narxi → provayder narxi (USDT'da) → joriy USDT/so'm kursi → botdagi yakuniy so'm summasi. Shuning uchun sayt narx e'lon qilmaydi: yakuniy summa to'lovdan OLDIN ekranda ko'rsatiladi va to'lasangizgina qabul qilinadi. Katta paketlar bir olmosga nisbatan odatda arzonroq tushishi — bu Garena paket tuzilishidan kelib chiqadi. Hech qanday aniq so'm raqami berilmaydi.",
+        "block": "price-logic"
+      },
+      {
+        "h2": "To'ldirgandan keyin: olmos qayerda ko'rinadi",
+        "covers": "O'yinni to'liq yopib qayta ochish shart (fon rejimida balans yangilanmasligi mumkin); balans yuqori o'ng burchakda; Free Fire va Free Fire MAX bitta balansni bo'lishadi; bonus olmoslar alohida hisoblanishi va ba'zi bo'limlarda cheklovi bo'lishi; chek va buyurtma raqamini saqlab qo'yish tavsiyasi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Xatolardan saqlanish uchun tekshiruv ro'yxati",
+        "covers": "UID ni qo'lda emas, nusxalab kiriting; botdagi nik AYNAN sizniki ekaniga ishonch hosil qiling; guest akkauntga to'ldirmang — avval Google/Facebook/VK ga bog'lang; akkaunt Global versiyada ekanini bilib oling; to'lov chekini saqlang; hech kimga login, parol yoki SMS kodini bermang.",
+        "block": "checklist"
+      },
+      {
+        "h2": "Hozir to'ldirish",
+        "covers": "Botga o'tish chaqiruvi: nik tekshiruvi bepul, to'lovsiz sinab ko'rish mumkin; muammo bo'lsa @StarsPaymeeSupport; muammolar bo'yicha yordamchi maqolaga havola.",
+        "block": "inline-cta"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Free Fire olmos sotib olish uchun akkaunt parolim kerakmi?",
+        "a": "Yo'q. Faqat Player ID (UID) kerak — u ochiq ma'lumot va uni berish xavfsiz. Parol, SMS kod yoki Google/Facebook logini hech qachon so'ralmaydi. Kimdir bulardan birini so'rasa, bu firibgarlik."
+      },
+      {
+        "q": "Olmos qancha vaqtda keladi?",
+        "a": "Odatda 2 daqiqa ichida. Garena tomonida navbat bo'lgan paytlarda bu 10-15 daqiqagacha cho'zilishi mumkin. Balans yangilanmasa, o'yinni to'liq yopib qayta oching."
+      },
+      {
+        "q": "Visa yoki Mastercard bo'lmasa to'ldira olamanmi?",
+        "a": "Ha. GemPay aynan mahalliy kartalar uchun ishlaydi: UzCard, HUMO, Click, Payme va Paynet. Xorijiy karta ham, VPN ham, kripto ham kerak emas."
+      },
+      {
+        "q": "Free Fire MAX o'ynasam, olmos qayerga tushadi?",
+        "a": "Free Fire va Free Fire MAX Firelink orqali bitta akkauntni va bitta olmos balansini bo'lishadi. Qaysi biriga to'ldirsangiz ham, olmos ikkalasida ham ko'rinadi — UID bir xil bo'lganligi uchun."
+      },
+      {
+        "q": "Narxni oldindan qayerdan bilaman?",
+        "a": "Narx botda, paketni tanlaganingizda ko'rsatiladi. U USDT kursiga bog'liq bo'lgani uchun kun davomida o'zgarib turadi, shu sababli saytda qat'iy so'm narxi e'lon qilinmaydi. To'lovni tasdiqlashdan oldin aniq summani ko'rasiz."
+      },
+      {
+        "q": "Nikimni to'lovdan oldin tekshira olamanmi?",
+        "a": "Ha, va bu bepul. UID ni kiritganingizdan so'ng bot akkaunt nikini ko'rsatadi. Nik sizniki bo'lmasa — to'lamang, UID ni qayta tekshiring. Bu noto'g'ri akkauntga to'ldirishning oldini oladigan asosiy himoya."
+      },
+      {
+        "q": "Qaysi versiya qo'llab-quvvatlanadi?",
+        "a": "Global versiya. Free Fire akkaunt regioni birinchi kirishda biriktiriladi va keyin o'zgartirilmaydi, shuning uchun ba'zi regional akkauntlarga to'ldirish marshruti mavjud emas. Nik tekshiruvi bu holatni to'lovdan oldin ko'rsatib beradi."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "HowTo",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "internalLinks": [
+      "/oyinlar/free-fire",
+      "free-fire-olmos-kelmadi-id-topilmadi",
+      "free-fire-olmos-arzon-qayerdan-olish",
+      "free-fire-olmos-nima-va-paketlari",
+      "free-fire-bepul-olmos-haqiqatmi"
+    ],
+    "wordCount": 1700
+  },
+  "gameKeywords": {
+    "primary": [
+      "free fire olmos sotib olish",
+      "free fire olmos to'ldirish",
+      "ff olmos sotib olish",
+      "free fire donat uzbekistan",
+      "garena free fire olmos narxi",
+      "free fire olmos player id bilan"
+    ],
+    "questions": [
+      "free fire olmos qanday sotib olinadi",
+      "free fire uid qayerdan topiladi",
+      "free fire olmos nega kelmadi",
+      "free fire bepul olmos haqiqatmi",
+      "free fire olmos qancha turadi",
+      "free fire max va free fire olmosi bir xilmi",
+      "free fire id topilmadi nima qilish kerak",
+      "free fire weekly membership nima beradi",
+      "free fire olmos sotib olish xavfsizmi",
+      "как узнать uid в free fire",
+      "можно ли пополнить free fire картой uzcard",
+      "почему пишет неверный id free fire"
+    ],
+    "russian": [
+      "купить алмазы фри фаер узбекистан",
+      "пополнить free fire по id узбекистан",
+      "free fire алмазы humo uzcard",
+      "донат фри фаер ташкент сум",
+      "купить алмазы free fire click payme",
+      "алмазы фри фаер дешево по uid",
+      "free fire weekly membership купить",
+      "почему не пришли алмазы free fire"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE (Google SERP + sahifalarni ochib): (1) O'zbek tilidagi \"free fire olmos sotib olish\" so'rovi bo'yicha TOP natijalar — mtcgame.com/uz (mashinaviy tarjima qilingan sahifalar, so'm va mahalliy karta yo'q), bitsika.com ning \"O'zbekistonda Free Fire Top-Up — kripto yoki so'm\" sahifasi, doctorsim/hablax/topup-balance kabi gift-card + kripto saytlari. Qolgan TOP-10 ni codigosdefreefire.gratis, mytruko.com, projaker.com kabi \"bepul olmos\" spam sahifalari egallagan. Ya'ni: o'zbek tilida haqiqiy, mahalliy to'lovli, tirik kontent YO'Q — raqobat juda zaif, bu eng tez g'alaba qiladigan klaster. (2) Rus tilida O'zbekistonga aniq qaratilgan yagona sahifa — 1pay.uz/blog/bystraya-oplata-free-fire-cherez-humo-i-uzcard (Humo/UzCard bo'yicha), lekin sahifa WebFetch'da 403 qaytardi va domen \"redemption period\" holatida ko'rinadi — ya'ni bu pozitsiya bo'shashi ehtimoli yuqori. Qolganlari RU/CIS bozoriga qaratilgan (donatov.net, battlepass.ru, kupikod, firelootshop, payclarus, funpay) — ular so'm, UzCard/HUMO, Click/Payme bilan ishlamaydi. (3) Codashop O'zbekiston uchun Free Fire top-up bermaydi (ru-kz versiyasi bor, uz yo'q) — bu taqqoslash maqolasi uchun kuchli, tekshirilgan fakt. (4) Mahsulot faktlari tekshirildi: UID profil avatarida, nik ostida, odatda 8-12 raqam, o'zgarmaydi (nik o'zgaradi); Free Fire va Free Fire MAX Firelink orqali bitta akkaunt va bitta olmos balansini bo'lishadi; akkaunt regioni birinchi kirishda IP bo'yicha biriktiriladi va keyin o'zgartirilmaydi, shuning uchun provayder marshruti mos kelmasa buyurtma tushmaydi; paketlar asosiy+bonus ko'rinishida (100+10, 310+31, 520+52, 1060+106, 2180+218, 5600+560 → 110/341/572/1166/2398/6160); joriy sezonli pass nomi Booyah Pass (Premium 399, Premium Plus 899 olmos), \"Elite Pass\" eski nom, lekin foydalanuvchilar hali ham shunday qidiradi; guest akkauntlar tiklanmaydi, Google/Facebook/VK ga bog'lash shart. (5) \"Diamonds not received\" / \"invalid UID\" muammolari resellerlarda eng ko'p uchraydigan qo'llab-quvvatlash keysi ekani bir necha manbada tasdiqlandi. INFERRED (tekshirilmagan): aniq qidiruv hajmlari va CPC — Ahrefs va Semrush MCP konnektorlari bu sessiyada avtorizatsiya qilinmagani uchun ishlatib bo'lmadi, shuning uchun so'rovlar chastotasi emas, SERP tarkibi va so'rov formulirovkalari asosida tanlangan. Shuningdek: o'zbek o'yinchilarining \"olmos\" vs \"almaz\" nisbati, Telegram orqali qidiruv ulushi va Yandex.uz dagi aniq pozitsiyalar taxminiy. Strategik xulosa: (a) o'zbek tilidagi 5 ta maqolaning barchasi bo'sh maydonga tushadi; (b) eng katta trafik \"bepul olmos\" klasterida, lekin u spam bilan to'lgan — halol \"firibgarlik\" maqolasi shu trafikni ushlab, konvertatsiyaga olib chiqadi; (c) \"olmos kelmadi / ID topilmadi\" klasteri kam raqobatli, lekin eng yuqori niyatli (odam allaqachon to'lagan yoki to'lamoqchi).",
+  "siblings": [
+    {
+      "slug": "free-fire-olmos-kelmadi-id-topilmadi",
+      "h1": "Free Fire olmos kelmadi yoki «ID topilmadi» — sabablari va yechimi",
+      "type": "problem"
+    },
+    {
+      "slug": "free-fire-olmos-arzon-qayerdan-olish",
+      "h1": "Free Fire olmosini qayerdan olish arzon va xavfsiz — usullar taqqoslovi",
+      "type": "comparison"
+    },
+    {
+      "slug": "free-fire-olmos-nima-va-paketlari",
+      "h1": "Free Fire olmosi nima, qanday paketlar bor va narx nimaga bog'liq",
+      "type": "info"
+    },
+    {
+      "slug": "free-fire-bepul-olmos-haqiqatmi",
+      "h1": "Free Fire bepul olmos: qaysi usullar haqiqiy, qaysilari firibgarlik",
+      "type": "trust"
+    }
+  ],
+  "cannibalisationFixes": [
+    {
+      "with": [
+        "mobile-legends-olmos-sotib-olish",
+        "magic-chess-go-go-olmos-sotib-olish",
+        "bigo-live-olmos-sotib-olish"
+      ],
+      "problem": "Unbranded \"olmos sotib olish\", \"olmos to'ldirish\", \"olmos kelmadi\", \"olmos nima\" are real Uzbek queries, and four pillars plus four problem articles compete for them with no designated owner. Worse, one of the four is a live-streaming app, so the same head term maps to two different buyer intents.",
+      "fix": "Designate MLBB the unbranded-\"olmos\" owner (highest UZ demand): it may lead with the bare term. The other three must place the brand token before \"olmos\" in H1, metaTitle and the first five words of the answerBox, and drop unbranded variants from their keyword sets. Route the unbranded head through the cross-game hub oyin-valyutasi-qayerdan-arzon, which links down to all four."
+    },
+    {
+      "with": [
+        "free-fire-olmos-kelmadi-id-topilmadi",
+        "free-fire-bepul-olmos-haqiqatmi"
+      ],
+      "problem": "Free Fire is a top-3 demand cluster and the only one of those with no dedicated ID page, so \"free fire uid qayerda / player id topish\" — a query the plan's own research lists as a top question — is split three ways: a 4-step H2 in the pillar, the six-reason \"ID topilmadi\" section in the problem article, and \"uid berish xavfsizmi\" in the trust article. Three partial answers, no rankable page.",
+      "fix": "Swap the trust slot: replace free-fire-bepul-olmos-haqiqatmi with free-fire-uid-qayerda-va-xavfsizmi (UID location + is-it-safe-to-share + free-diamond scam section folded in as one H2), matching the archetype used by seven other clusters. Cut the pillar's ID H2 to three sentences plus link. The problem article keeps \"ID topilmadi\" strictly as an error state, not as a find-your-ID guide."
+    },
+    {
+      "with": [
+        "pubg-mobile-uc-sotib-olish",
+        "mobile-legends-olmos-sotib-olish",
+        "magic-chess-go-go-olmos-sotib-olish",
+        "call-of-duty-mobile-cp-sotib-olish",
+        "honor-of-kings-token-sotib-olish",
+        "delta-force-delta-coins-sotib-olish",
+        "asphalt-9-token-sotib-olish",
+        "bigo-live-olmos-sotib-olish"
+      ],
+      "problem": "All nine clusters repeat a near-identical price-logic block (USDT kursi → narx botda ko'rsatiladi), a near-identical \"parol hech qachon so'ralmaydi\" safety block, and a near-identical \"bepul generator = firibgarlik\" block. That is 27+ near-duplicate sections across 45 URLs, and — critically — no single page can rank for the unbranded queries those sections answer: \"donat narxi nega o'zgaradi\", \"o'yinga pul quyish xavfsizmi\", \"bepul olmos generatori ishlaydimi\", \"eng arzon donat qayerda\".",
+      "fix": "Build the three cross-game hubs the plans already link to fourteen times but never planned: oyin-valyutasi-qayerdan-arzon (price mechanics + how to compare), oyin-pul-xavfsiz-toldirish (ID vs password, scam patterns, account recovery), gempay-ishonli-xizmat (who we are, refunds, order IDs, support SLA). Ship them in Wave 1, cut each in-article block to 2-3 sentences plus a link, and let the hubs own the unbranded terms and absorb the duplication."
+    },
+    {
+      "with": [
+        "pubg-mobile-uc-sotib-olish",
+        "mobile-legends-olmos-sotib-olish",
+        "honor-of-kings-token-sotib-olish",
+        "bigo-live-olmos-sotib-olish"
+      ],
+      "problem": "Every plan researched a Russian keyword set — and Honor of Kings verified live Yandex suggest demand for \"хонор оф кингс донат\" while proving the Uzbek equivalents return nothing — yet all 45 pages are Uzbek-only, with Russian strings dropped into secondaryKeywords. An Uzbek-language page will not rank for \"купить алмазы mobile legends узбекистан\". Five pillars nominally target overlapping RU queries that none of them can win, so the plan double-counts traffic that does not exist.",
+      "fix": "Either (a) ship /ru/ twins for the 9 pillars and 9 problem articles with proper hreflang uz-UZ / ru-UZ / x-default and self-referencing canonicals, treating RU as the near-term traffic engine for HOK, Delta Force and Bigo where Uzbek demand is not yet measurable; or (b) delete all Russian keywords from the Uzbek pages' targeting and stop forecasting that traffic. Do not build bilingual single pages — that loses both."
+    }
+  ],
+  "mustLinkTo": [
+    "/oyinlar/free-fire",
+    "free-fire-olmos-kelmadi-id-topilmadi",
+    "free-fire-olmos-arzon-qayerdan-olish",
+    "free-fire-olmos-nima-va-paketlari",
+    "free-fire-bepul-olmos-haqiqatmi"
+  ],
+  "publishRank": 3
+}

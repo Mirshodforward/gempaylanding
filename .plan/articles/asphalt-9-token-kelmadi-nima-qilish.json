@@ -1,0 +1,185 @@
+{
+  "slug": "asphalt-9-token-kelmadi-nima-qilish",
+  "game": "asphalt-9",
+  "gameTitle": "Asphalt 9: Legends (Asphalt Legends) — Token",
+  "type": "problem",
+  "spec": {
+    "slug": "asphalt-9-token-kelmadi-nima-qilish",
+    "type": "problem",
+    "h1": "Asphalt 9 tokenlari kelmadi yoki ID topilmadi: nima qilish",
+    "metaTitle": "Asphalt 9 token kelmadi? ID xatosi yechimi",
+    "metaDescription": "Asphalt 9 tokenlari 5 daqiqada kelmadimi yoki Player ID topilmadimi? Sabablari, o'zingiz tekshiradigan qadamlar va qo'llab-quvvatlashga nima yozish kerak.",
+    "searchIntent": "Muammo hal qilish. Foydalanuvchi allaqachon to'lov qilgan yoki botda xato olgan va tez, aniq yechim izlaydi. Sahifa panikani tushirib, tartib bilan diagnostika berishi kerak.",
+    "primaryKeyword": "asphalt 9 token kelmadi",
+    "secondaryKeywords": [
+      "asphalt 9 player id topilmadi",
+      "asphalt 9 token tushmadi nima qilish",
+      "asphalt 9 donat kelmadi",
+      "asphalt 9 noto'g'ri platforma tanladim",
+      "asphalt 9 токены не пришли"
+    ],
+    "answerBox": "Asphalt 9 tokenlari odatda 5 daqiqada keladi. Agar ko'rinmasa, avval o'yinni to'liq yopib qayta oching — ko'p hollarda token allaqachon tushgan, faqat interfeys yangilanmagan. Keyin Player ID va tanlangan platforma to'g'ri ekanini tekshiring. Muammo saqlansa, chek, Player ID va platformani @StarsPaymeeSupport ga yuboring.",
+    "outline": [
+      {
+        "h2": "Avval: normal yetkazish vaqti qancha",
+        "covers": "Odatiy vaqt ~5 daqiqa. Ba'zi hollarda provayder navbati sababli uzayadi. Shu sababli birinchi 10 daqiqada takroriy buyurtma bermaslik kerak — aks holda ikki marta to'lab qo'yasiz. Bu bo'limda kutish chegarasini aniq belgilash.",
+        "block": "key-facts"
+      },
+      {
+        "h2": "1-sabab: o'yin qayta ishga tushirilmagan",
+        "covers": "Eng ko'p uchraydigan holat. Qadamlar: o'yinni fon rejimidan ham to'liq yopish, internetni tekshirish, o'yinni qaytadan ochish, Hangar va do'kon ekranini ko'rish. Windows/Xbox da Microsoft Store hisobiga qayta kirish kerak bo'lishi mumkin.",
+        "block": "steps"
+      },
+      {
+        "h2": "2-sabab: Player ID xato yoki 'topilmadi' deyilmoqda",
+        "covers": "ID ni qo'lda terganda 0 va O, 1 va l aralashib ketadi — shuning uchun o'yin ichidan bosib nusxalash kerak. Botda ID kiritilgach nik chiqmasa yoki begona nik chiqsa, to'lash mumkin emas. ID ni topishning ikki yo'lini qisqacha berib, to'liq qo'llanmaga havola qilish.",
+        "block": "steps"
+      },
+      {
+        "h2": "3-sabab: noto'g'ri platforma tanlangan",
+        "covers": "Eng og'riqli holat. Agar Windows tanlangan bo'lsa, token Microsoft Store hamyoniga tushadi va telefonda ko'rinmaydi — aksincha ham shunday. Buni qanday aniqlash: o'sha platformada o'yinni ochib tekshirish. Nima qilish kerak: darhol qo'llab-quvvatlashga yozish va o'z-o'zidan hal bo'lishini kutmaslik. Takroriy buyurtma berishdan oldin javob kutish.",
+        "block": "warning"
+      },
+      {
+        "h2": "4-sabab: to'lov o'tmagan yoki qayta ishlanmoqda",
+        "covers": "Karta limiti, mablag' yetishmasligi, bank tomonidan bloklangan tranzaksiya, Click/Payme tomonida kechikish. Bank SMS xabarini tekshirish, pul yechilgan-yechilmaganini aniqlash. Pul yechilmagan bo'lsa buyurtma umuman yaratilmagan — qaytadan urinish kerak.",
+        "block": "prose"
+      },
+      {
+        "h2": "Qo'llab-quvvatlashga nima yuborish kerak",
+        "covers": "Aniq ro'yxat: Player ID, tanlangan platforma, buyurtma vaqti (sana va soat), to'lov usuli va bank chekining skrinshoti, o'yin ichidagi nik, Telegram username. Shu beshta narsa bo'lsa masala tez hal bo'ladi. Manzil: @StarsPaymeeSupport.",
+        "block": "checklist"
+      },
+      {
+        "h2": "Yordam bermaydigan va zarar keltiradigan harakatlar",
+        "covers": "O'yinni o'chirib qayta o'rnatish (progress yo'qolishi mumkin), akkauntni birovga berib 'tekshirtirish', mod/hack APK o'rnatish, boshqa saytda takroriy to'lov qilish, chargeback so'rash. Nega ularning har biri holatni yomonlashtirishini qisqa tushuntirish.",
+        "block": "prose"
+      },
+      {
+        "h2": "Hali ham hal bo'lmadimi",
+        "covers": "@StarsPaymeeSupport ga yozish uchun havola, /oyinlar/asphalt-9 sahifasiga qaytish va keyingi safar xatoning oldini olish uchun Player ID va platforma qo'llanmasiga havola.",
+        "block": "inline-cta"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Tokenlar 5 daqiqada kelmadi, yana to'lasammi?",
+        "a": "Yo'q, qayta to'lamang. Avval o'yinni to'liq yopib qayta oching. Agar 15-20 daqiqadan keyin ham yo'q bo'lsa, chek va Player ID bilan qo'llab-quvvatlashga yozing. Takroriy to'lov ikkinchi buyurtma yaratadi va pulingiz ikki marta ketadi."
+      },
+      {
+        "q": "Nega o'yinda token soni o'zgarmayapti?",
+        "a": "Ko'pincha o'yin eski ma'lumotni ko'rsatib turadi. O'yinni fon rejimidan ham to'liq yoping, internetni tekshiring va qaytadan oching. Token soni Hangar ekranining yuqori qismida yangilanadi."
+      },
+      {
+        "q": "Bot 'Player ID topilmadi' deyapti, sababi nima?",
+        "a": "Ehtimol ID noto'g'ri terilgan yoki boshqa platformaning ID si kiritilgan. ID ni o'yin ichida bosib nusxalang, qo'lda termang. Nusxalangan ID bilan bot nikni ko'rsatishi kerak."
+      },
+      {
+        "q": "Noto'g'ri platforma tanlab yubordim, tokenni ko'chirsa bo'ladimi?",
+        "a": "Mustaqil ravishda ko'chirib bo'lmaydi, chunki mobil va Microsoft Store hamyonlari alohida. Shu sababli darhol @StarsPaymeeSupport ga buyurtma ma'lumotlari bilan yozing — holatga qarab yechim izlanadi. Yangi buyurtma bermay turing."
+      },
+      {
+        "q": "Boshqa odamning ID sini kiritib yubordim, qaytarib bo'ladimi?",
+        "a": "Token allaqachon o'sha hisobga tushgan bo'lsa, uni qaytarib olish texnik jihatdan mumkin emas. Aynan shuning uchun bot to'lovdan oldin nikni bepul ko'rsatadi — nik notanish bo'lsa, o'sha yerda to'xtash kerak."
+      },
+      {
+        "q": "Pul yechildi, lekin botda buyurtma ko'rinmayapti.",
+        "a": "Bank chekini saqlang va vaqtni yozib oling. Shu chek bilan qo'llab-quvvatlashga murojaat qiling — to'lov identifikatori bo'yicha buyurtma topiladi va qo'lda yakunlanadi."
+      },
+      {
+        "q": "Qo'llab-quvvatlash qancha vaqtda javob beradi?",
+        "a": "@StarsPaymeeSupport odatda tezda javob qaytaradi. Javobni tezlashtirish uchun birinchi xabaringizdayoq Player ID, platforma, vaqt va chek skrinshotini yuboring."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "HowTo",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "internalLinks": [
+      "/oyinlar/asphalt-9",
+      "asphalt-9-player-id-va-platforma",
+      "asphalt-9-token-sotib-olish",
+      "asphalt-9-donat-usullari-taqqoslash"
+    ],
+    "wordCount": 1350
+  },
+  "gameKeywords": {
+    "primary": [
+      "asphalt 9 token sotib olish",
+      "asphalt 9 donat",
+      "asphalt 9 token olish uzbekistan",
+      "asfalt 9 token sotib olish",
+      "asphalt legends token sotib olish",
+      "asphalt 9 tokenlarini to'ldirish",
+      "asphalt 9 uc kabi token olish"
+    ],
+    "questions": [
+      "Asphalt 9 da Player ID qayerdan topiladi?",
+      "Asphalt 9 tokenlari qancha vaqtda keladi?",
+      "Asphalt 9 uchun nega platforma so'raladi?",
+      "Android da olingan token iOS da ishlaydimi?",
+      "Asphalt 9 token sotib olish xavfsizmi?",
+      "Token olish uchun parol yoki akkaunt berish kerakmi?",
+      "Asphalt 9 va Asphalt Legends bir xil o'yinmi?",
+      "Token kelmasa nima qilish kerak?",
+      "Asphalt 9 tokenini so'mda to'lash mumkinmi?",
+      "Season Token va oddiy Token farqi nima?",
+      "Asphalt 9 token narxi qanday belgilanadi?",
+      "Microsoft Store dan olingan token telefonda ishlaydimi?"
+    ],
+    "russian": [
+      "донат асфальт 9 узбекистан",
+      "купить токены asphalt 9",
+      "asphalt 9 пополнение по id",
+      "асфальт 9 донат без входа в аккаунт",
+      "как задонатить в asphalt 9 из узбекистана",
+      "asphalt legends unite донат токены",
+      "asphalt 9 player id где найти",
+      "asphalt 9 токены не пришли что делать",
+      "оплата uzcard humo click asphalt 9",
+      "asphalt 9 токены android ios windows разница"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE (WebSearch + WebFetch, avgust 2026): (1) Nom o'zgarishi — o'yin 2018-yilda 'Asphalt 9: Legends', 2024-yil 17-iyulda 'Asphalt Legends Unite', 2025-yil 24-iyulda esa 'Asphalt Legends' deb qayta nomlangan (Wikipedia/Asphalt Legends). Bu SEO uchun katta imkoniyat: qidiruvlar hamon 'Asphalt 9' bilan yuritiladi, lekin yangi kontent 'Asphalt Legends' nomiga o'tib ketmoqda — ikkala nomni bitta sahifada ushlagan sayt ikkala klasterni oladi. (2) Token paket hajmlari real do'konlarda tasdiqlandi: 40, 105, 220, 470, 1275, 3000 token (FunPay lot 1667, Xbox/plati.market '220 Tokens', G2A '105 Tokens'). So'mdagi narx hech qayerda olinmadi va maqolalarda ishlatilmaydi. (3) Platforma qulfi tasdiqlandi: Microsoft Store orqali olingan tokenlar Xbox/PC da ishlaydi, mobil qurilmaga o'tmaydi; Gameloft yordam markazi progressni faqat bir xil OS ichida ko'chirishni tavsiflaydi. Wikipedia 2024 'Unite' yangilanishi bulutli progressni qo'shganini, PlayStation va Switch bundan mustasno ekanini yozadi. Ya'ni akkaunt ko'chishi mumkin, lekin xarid hamyoni platformaga bog'lanib qoladi — bu aynan bizning 'server maydoni aslida platforma' maqolamizning yadrosi. (4) Player ID ikki xil yo'l bilan topiladi: Hangar'da chap yuqoridagi avatar > Profile > nik ostidagi ID (bosib nusxalanadi) va Menu/Settings > About > Gameloft Player ID. Gameloft yordam markazi (helpshift) sahifasi WebFetch uchun 403 qaytardi, shu sababli qadamlar qidiruv snippetlari va uchinchi tomon qo'llanmalaridan yig'ildi — matn yozishdan oldin o'yin ichida bir marta tekshirib chiqilishi kerak. (5) Tokenlar nimaga sarflanishi tasdiqlandi: Card Pack, Relay Pack, Legend Store blueprint'lari, kredit sotib olish, kutish vaqtini o'tkazib yuborish, S-Class/event mashinalari uchun Featured Car Pack. 'Season Token' esa alohida, event valyutasi — foydalanuvchilar buni doimiy Token bilan chalkashtiradi. (6) RAQOBAT juda zaif: o'zbek tilida bu mavzuda bitta ham normal sahifa topilmadi — google.uz o'zbekcha SERP amalda bo'sh. Butun raqobat rus tilida (donatov.net, szmarket.ru, goplaydonate.ru, mobime.ru, topit.store, dtf.ru), turkcha (kopazar) yoki global (Codashop, G2G, G2A, LotKeys, FunPay, MTCGame). Ularning hech birida UZS, UzCard/HUMO/Click/Payme yo'q. Bu klaster 3-6 oyda to'liq egallanadi. (7) Ishonch bo'shlig'i tasdiqlandi: FunPay da ikki xil yetkazish bor — 'Top Up with ID (NO LOGIN)' va 'with account login'; ba'zi rus saytlari sanksiya xavfi haqida ogohlantiradi. GemPay uchun 'faqat ID, parol so'ralmaydi' pozitsiyasi real farqlovchi ustunlik. INFERRED (tasdiqlanmagan): aniq qidiruv hajmlari. Ahrefs va Semrush konnektorlari bu sessiyada avtorizatsiya qilinmagan (foydalanuvchi claude.ai connector sozlamalarida ruxsat berishi kerak), shuning uchun volume raqamlari yo'q. Baholash: o'zbekcha so'rovlar absolyut hajmi kichik (oyiga o'nlab), lekin KD deyarli nol; asosiy trafik ruscha 'донат асфальт 9' + Yandex.uz dan va 'asfalt/asphalt' aralash transliteratsiyadan keladi. Shu sababli har bir maqolada ruscha atamalar (донат, токены, пополнение по ID) matn ichida tabiiy tarzda eslatib o'tilishi tavsiya etiladi.",
+  "siblings": [
+    {
+      "slug": "asphalt-9-token-sotib-olish",
+      "h1": "Asphalt 9 tokenlarini O'zbekistonda sotib olish",
+      "type": "howto"
+    },
+    {
+      "slug": "asphalt-9-donat-usullari-taqqoslash",
+      "h1": "Asphalt 9 donat: GemPay, Google Play, App Store va chet el saytlari",
+      "type": "comparison"
+    },
+    {
+      "slug": "asphalt-9-token-nima",
+      "h1": "Asphalt 9 tokeni nima va unga nima sotib olish mumkin",
+      "type": "info"
+    },
+    {
+      "slug": "asphalt-9-player-id-va-platforma",
+      "h1": "Asphalt 9 Player ID qayerda va platformani qanday tanlash",
+      "type": "trust"
+    }
+  ],
+  "cannibalisationFixes": [
+    {
+      "with": [
+        "asphalt-9-token-sotib-olish",
+        "asphalt-9-donat-usullari-taqqoslash",
+        "asphalt-9-player-id-va-platforma"
+      ],
+      "problem": "Hard collision: \"asphalt 9 donat\" is a declared secondaryKeyword of the pillar AND the declared primaryKeyword of the comparison — the same transactional head term formally assigned to two URLs. Separately, the Microsoft Store platform-wallet lock is explained at length on three pages (trust H2 \"'Server' maydoni aslida platforma\", problem \"Sabab 3\", comparison warning block).",
+      "fix": "\"asphalt 9 donat\" goes to the pillar only (transactional intent belongs to the buy page). Re-target the comparison to \"asphalt 9 token qayerdan olish arzon\" + \"google play uzcard ishlamayapti\". Platform lock gets one full explanation on asphalt-9-player-id-va-platforma; the other two carry a one-sentence symptom plus link."
+    }
+  ],
+  "mustLinkTo": [
+    "/oyinlar/asphalt-9",
+    "asphalt-9-token-sotib-olish",
+    "asphalt-9-player-id-va-platforma"
+  ],
+  "publishRank": 39
+}

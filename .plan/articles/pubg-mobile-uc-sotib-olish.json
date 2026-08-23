@@ -1,0 +1,215 @@
+{
+  "slug": "pubg-mobile-uc-sotib-olish",
+  "game": "pubg-mobile",
+  "gameTitle": "PUBG Mobile",
+  "type": "howto",
+  "spec": {
+    "slug": "pubg-mobile-uc-sotib-olish",
+    "type": "howto",
+    "h1": "PUBG Mobile UC sotib olish: O'zbekistonda so'mda, 2 daqiqada",
+    "metaTitle": "PUBG Mobile UC sotib olish — so'mda, UzCard va HUMO",
+    "metaDescription": "PUBG Mobile UC ni O'zbekistonda so'mda sotib oling: Player ID kiriting, niknem bepul tekshiriladi, UzCard, HUMO, Click yoki Payme bilan to'lang. UC 2 daqiqada.",
+    "searchIntent": "Transaktsion. Foydalanuvchi hozir UC sotib olmoqchi va O'zbekiston kartasi bilan ishlaydigan aniq usulni qidiryapti. Bu sahifa butun saytning asosiy konversiya sahifasi.",
+    "primaryKeyword": "pubg mobile uc sotib olish",
+    "secondaryKeywords": [
+      "pubg uc sotib olish",
+      "uc sotib olish uzcard",
+      "pubg uc humo bilan",
+      "pubg uc click orqali",
+      "pubg mobile donat uzbekistan",
+      "pubg uc quyish",
+      "купить uc pubg узбекистан"
+    ],
+    "answerBox": "PUBG Mobile UC ni O'zbekistonda sotib olish uchun @Gempayuz_bot ni oching, PUBG Mobile o'yinini tanlang va Player ID raqamingizni kiriting. Bot nikneymingizni to'lovdan oldin bepul ko'rsatadi. So'ngra UC paketini tanlab, UzCard, HUMO, Click yoki Payme orqali so'mda to'laysiz. UC hisobingizga taxminan 2 daqiqada tushadi.",
+    "outline": [
+      {
+        "h2": "Qisqacha javob: UC ni so'mda qanday olasiz",
+        "covers": "40-60 so'zlik to'g'ridan-to'g'ri javob, keyin 5 ta asosiy fakt ro'yxati: kerak bo'ladigan yagona ma'lumot — Player ID; to'lov so'mda; UzCard/HUMO/Click/Payme/Paynet ishlaydi; yetkazish ~2 daqiqa; VPN, xorijiy karta va kripto kerak emas. Bu blok AI qidiruv tizimlari uchun sitata maydoni.",
+        "block": "key-facts"
+      },
+      {
+        "h2": "UC sotib olish: 5 qadam",
+        "covers": "Aniq qadamlar: 1) @Gempayuz_bot ni Telegramda ochish; 2) ro'yxatdan PUBG Mobile ni tanlash; 3) Player ID ni kiritish (server yoki platforma tanlash SHART EMAS — PUBG Mobile'da bitta global ID ishlaydi); 4) bot chiqargan niknemni o'z niknemingiz bilan solishtirib tasdiqlash; 5) paketni tanlab so'mda to'lash. Har qadamda nima ko'rinishini tasvirlash.",
+        "block": "steps"
+      },
+      {
+        "h2": "Player ID raqamini qayerda topasiz",
+        "covers": "Qisqa yo'l: o'yin > chap yuqoridagi avatar > profil > niknem tagidagi 10-11 xonali raqam (masalan 51221257198). ID va niknem farqini bir jumlada ajratish va to'liq qo'llanmaga ichki havola berish. Bu bo'lim qisqa bo'lsin, chunki alohida maqola bor.",
+        "block": "prose"
+      },
+      {
+        "h2": "Qaysi to'lov usullari ishlaydi va qaysilari ishlamaydi",
+        "covers": "Jadval: UzCard, HUMO, Click, Payme, Paynet — ishlaydi; Visa/Mastercard, PayPal, kripto — GemPay uchun kerak emas. Ustunlar: usul, ishlaydimi, tasdiqlash vaqti, izoh. Alohida qatorda Midasbuy nima uchun UzCard/HUMO ni qabul qilmasligini bir qatorda aytib, taqqoslash maqolasiga havola.",
+        "block": "compare-table"
+      },
+      {
+        "h2": "UC paketlari va so'mdagi narx qanday shakllanadi",
+        "covers": "Paket qatori: 60, 325, 660, 1800, 3850, 8100 UC va katta paketlarda bonus UC ko'proq bo'lishi. Narx mantiqi: narx provayderdan jonli olinadi va USDT kursiga bog'liq, shuning uchun so'mdagi summa kun sayin o'zgarishi mumkin — aniq narx har doim botda ko'rsatiladi. HECH QANDAY so'm raqami yozilmasin.",
+        "block": "price-logic"
+      },
+      {
+        "h2": "To'lovdan oldin niknem tekshiruvi nega muhim",
+        "covers": "Noto'g'ri Player ID kiritilsa UC begona akkauntga tushadi va uni qaytarib bo'lmaydi — bu butun dunyoda eng ko'p uchraydigan xato. GemPay to'lovdan OLDIN niknemni bepul ko'rsatadi, shuning uchun xato to'lovgacha tutiladi. O'quvchini niknem mos kelmasa to'lamaslikka ogohlantirish.",
+        "block": "warning"
+      },
+      {
+        "h2": "Xarid oldidan tekshirish ro'yxati",
+        "covers": "Belgilash ro'yxati: Player ID nusxalab olindimi; bot ko'rsatgan niknem meniki bilan bir xilmi; paket to'g'ri tanlandimi; kartada yetarli mablag' bormi; Telegramda rasmiy bot @Gempayuz_bot ochilganmi (soxta botlardan ehtiyot bo'lish); chek saqlab qo'yildimi.",
+        "block": "checklist"
+      },
+      {
+        "h2": "Hozir UC sotib olish",
+        "covers": "Qisqa yakuniy chaqiriq: botni ochish havolasi, ~2 daqiqa yetkazish eslatmasi, muammo bo'lsa @StarsPaymeeSupport ga yozish mumkinligi va muammolar maqolasiga havola.",
+        "block": "inline-cta"
+      }
+    ],
+    "faq": [
+      {
+        "q": "PUBG Mobile UC ni UzCard yoki HUMO bilan sotib olsa bo'ladimi?",
+        "a": "Ha. GemPay to'lovni O'zbekiston kartalari — UzCard va HUMO — hamda Click, Payme va Paynet orqali so'mda qabul qiladi. Visa yoki Mastercard, xorijiy hamyon yoki kriptovalyuta talab qilinmaydi. VPN ham kerak emas."
+      },
+      {
+        "q": "UC necha daqiqada hisobga tushadi?",
+        "a": "Odatda taxminan 2 daqiqada. Kun davomida yuklama yuqori bo'lsa, bu vaqt 10-15 daqiqagacha cho'zilishi mumkin. UC tushganini ko'rish uchun o'yinni to'liq yopib qayta oching, chunki eski sessiyada balans yangilanmaydi."
+      },
+      {
+        "q": "UC olish uchun akkaunt parolini berish kerakmi?",
+        "a": "Yo'q va hech qachon bermang. To'ldirish faqat Player ID raqami orqali amalga oshiriladi. Parol, SMS kodi yoki Facebook va Google login ma'lumotlarini so'ragan har qanday sotuvchi firibgardir — bunday xizmatdan darhol voz keching."
+      },
+      {
+        "q": "Server yoki platforma tanlashim kerakmi?",
+        "a": "Yo'q. PUBG Mobile'da bitta global Player ID ishlaydi, shuning uchun Mobile Legends'dagi kabi server yoki zona raqami so'ralmaydi. Android va iOS uchun ham jarayon bir xil — faqat ID raqami yetarli."
+      },
+      {
+        "q": "UC narxi nega har xil bo'lib turadi?",
+        "a": "Chunki narx provayderdan jonli olinadi va USDT kursiga bog'lanadi. Kurs o'zgarganda so'mdagi summa ham o'zgaradi. Shuning uchun biz saytda aniq raqam yozmaymiz — joriy narx har doim botda paket tanlaganingizda ko'rsatiladi."
+      },
+      {
+        "q": "Qaysi paketni olish foydaliroq?",
+        "a": "Katta paketlarda bir UC uchun to'lov odatda arzonroq tushadi, chunki 1800 UC dan boshlab bonus UC qo'shiladi. Agar maqsadingiz Royal Pass bo'lsa, kerakli miqdorni bitta paketda olish ikkita kichik paketdan ko'ra tejamliroq bo'ladi."
+      },
+      {
+        "q": "To'lov o'tdi, lekin UC kelmadi. Nima qilaman?",
+        "a": "Avval o'yinni butunlay yopib qayta kiring. Agar 15 daqiqadan keyin ham ko'rinmasa, buyurtma raqami va to'lov cheki bilan @StarsPaymeeSupport ga yozing. Batafsil yechimlar alohida maqolamizda ko'rsatilgan."
+      },
+      {
+        "q": "GemPay rasmiymi va ishonsa bo'ladimi?",
+        "a": "GemPay — StarsPaymee ekotizimining bir qismi (t.me/StarsPaymee_bot, starstg.uz). To'ldirish faqat rasmiy ID orqali bajariladi, akkauntga kirish yoki parol talab qilinmaydi va har bir buyurtma qo'llab-quvvatlash xizmati orqali kuzatiladi."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "HowTo",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "internalLinks": [
+      "/oyinlar/pubg-mobile",
+      "pubg-mobile-player-id-qayerda",
+      "pubg-uc-kelmadi-nima-qilish",
+      "pubg-uc-qayerdan-sotib-olish-taqqoslash",
+      "pubg-uc-nima-paketlar-royal-pass"
+    ],
+    "wordCount": 1700
+  },
+  "gameKeywords": {
+    "primary": [
+      "pubg mobile uc sotib olish",
+      "pubg uc sotib olish",
+      "uc sotib olish uzcard",
+      "pubg mobile uc olish o'zbekiston",
+      "pubg uc quyish",
+      "pubg mobile donat uzbekistan"
+    ],
+    "questions": [
+      "pubg mobile uc ni qanday sotib olish mumkin",
+      "pubg mobile player id qayerda turadi",
+      "uc kelmadi nima qilish kerak",
+      "pubg uc necha daqiqada tushadi",
+      "midasbuy uzcard qabul qiladimi",
+      "pubg uc sotib olish xavfsizmi",
+      "id berish akkauntni o'g'irlashga olib keladimi",
+      "royal pass necha uc turadi",
+      "uc nima va unga nima olish mumkin",
+      "noto'g'ri id kiritsam uc qaytadimi",
+      "pubg uc narxi nega o'zgarib turadi",
+      "60 uc mi 660 uc mi foydaliroq"
+    ],
+    "russian": [
+      "купить uc pubg узбекистан",
+      "пополнить uc pubg uzcard",
+      "uc pubg humo оплата",
+      "донат pubg mobile узбекистан в сумах",
+      "купить uc pubg по id ташкент",
+      "midasbuy узбекистан оплата картой",
+      "uc pubg mobile click payme",
+      "куда вводить player id pubg",
+      "не пришли uc pubg что делать",
+      "royal pass купить узбекистан"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE (WebSearch + WebFetch on google-index results): (1) The Uzbek-Latin SERP for every PUBG UC query is essentially empty of real editorial content — it is dominated by t.me/s/ Telegram channel previews (UC_BALLU, UmarPubgm, SENATOR_PUBGM, PUBG_STORE_UZ, MeeBo_PUBG), machine-translated international resellers, and one bank product page (ipakyulibank Visa PUBG card). This is the single biggest finding: there is no Uzbek-language authority page to beat. (2) blog.payme.uz has an Uzbek PUBG page but I fetched it and it is ~200-250 words with exactly ONE H2 and no FAQ — trivially outranked by a 1400-word structured article. (3) hablax.com/uz fetched: machine-translated Uzbek (mixed O' / Oʻ diacritics), has FAQ + steps but NO table, and critically its payment list is Credit Card / PayPal / Apple Pay / crypto — NO UzCard, NO HUMO. That is a verified, citable comparison fact, not an assumption. (4) mtcgame.com/uz and bittopup rank on translated content only. (5) Russian cluster is genuinely more competitive: 1pay.uz has a dedicated 'UC через Humo и UzCard' blog post (returned 403 to my fetch, so I only have its indexed title), adek.uz sells UC as a Tashkent e-shop, midasbuy.com/uz serves Russian-first. But most RU-language competitors (prepodsteam, yoomoney, MTS, ggsel) target RUSSIA, not Uzbekistan — so 'узбекистан'-qualified RU queries are still soft. (6) A Russian competitor page states UC arrives 'within 15 minutes, rarely up to 3 hours' — GemPay's ~2 min is a real, defensible differentiator worth stating. (7) The wrong-ID failure mode is confirmed real and widely searched (topuplist, justanswer, Baxity FAQ all cover 'wrong UID = delivered to wrong account, non-refundable') and has ZERO Uzbek coverage — this makes the free pre-payment nickname check GemPay's strongest story. (8) UC packs 60/325/660/1800/3850/8100 confirmed as standard ladder with bonus UC scaling on larger packs. INFERRED / NOT VERIFIED: no keyword volume or difficulty numbers — the Ahrefs and Semrush MCP connectors in this session are unauthorized (OAuth cannot run non-interactively), so I have NO real volume data; the user should authorize those connectors in claude.ai settings to get hard numbers. Query phrasings above are inferred from indexed competitor titles, Telegram channel copy, and Uzbek morphology (sotib olish / olish / quyish / donat variants), not from an autocomplete API. Royal Pass UC costs (Elite ~720, Elite Plus ~1920) come from third-party guides and shift by season — articles must hedge these, never state them as fixed. COMPETITION READ: attack order = problem cluster (zero competition) > question/AEO cluster (zero competition) > pillar money query (weak, translated competition) > comparison (weak) > Russian cluster (moderate, defer).",
+  "siblings": [
+    {
+      "slug": "pubg-uc-kelmadi-nima-qilish",
+      "h1": "PUBG UC kelmadi yoki ID topilmadi — sabablari va aniq yechimi",
+      "type": "problem"
+    },
+    {
+      "slug": "pubg-uc-qayerdan-sotib-olish-taqqoslash",
+      "h1": "PUBG UC ni qayerdan sotib olish kerak: Midasbuy, xalqaro saytlar va GemPay taqqoslandi",
+      "type": "comparison"
+    },
+    {
+      "slug": "pubg-uc-nima-paketlar-royal-pass",
+      "h1": "UC nima va PUBG Mobile'da unga nima sotib olish mumkin",
+      "type": "info"
+    },
+    {
+      "slug": "pubg-mobile-player-id-qayerda",
+      "h1": "PUBG Mobile Player ID raqamini qayerda topish va uni berish xavfsizmi",
+      "type": "trust"
+    }
+  ],
+  "cannibalisationFixes": [
+    {
+      "with": [
+        "pubg-uc-qayerdan-sotib-olish-taqqoslash"
+      ],
+      "problem": "The comparison's primaryKeyword \"pubg uc qayerdan sotib olish\" literally contains the pillar's secondary \"pubg uc sotib olish\". Both carry transactional intent, both answerBoxes resolve to \"GemPay — so'mda, mahalliy kartalar bilan\", both have an inline-cta closing block. Google will alternate between them and neither will hold a stable position on the highest-value money query in the portfolio.",
+      "fix": "Re-target the comparison onto the branded/failure axis its own research verified: primary = \"midasbuy uzcard qabul qiladimi\", H1 = \"Midasbuy O'zbekistonda ishlaydimi: PUBG UC to'lov usullari taqqoslandi\". Delete \"pubg uc sotib olish\" and \"arzon uc qayerdan\" from its keyword set, rewrite the answerBox to open with an evaluative verdict (not the GemPay flow), and remove the step-by-step purchase framing. Every buy-now CTA stays on the pillar."
+    },
+    {
+      "with": [
+        "mobile-legends-olmos-sotib-olish",
+        "magic-chess-go-go-olmos-sotib-olish",
+        "free-fire-olmos-sotib-olish",
+        "call-of-duty-mobile-cp-sotib-olish",
+        "honor-of-kings-token-sotib-olish",
+        "delta-force-delta-coins-sotib-olish",
+        "asphalt-9-token-sotib-olish",
+        "bigo-live-olmos-sotib-olish"
+      ],
+      "problem": "All nine clusters repeat a near-identical price-logic block (USDT kursi → narx botda ko'rsatiladi), a near-identical \"parol hech qachon so'ralmaydi\" safety block, and a near-identical \"bepul generator = firibgarlik\" block. That is 27+ near-duplicate sections across 45 URLs, and — critically — no single page can rank for the unbranded queries those sections answer: \"donat narxi nega o'zgaradi\", \"o'yinga pul quyish xavfsizmi\", \"bepul olmos generatori ishlaydimi\", \"eng arzon donat qayerda\".",
+      "fix": "Build the three cross-game hubs the plans already link to fourteen times but never planned: oyin-valyutasi-qayerdan-arzon (price mechanics + how to compare), oyin-pul-xavfsiz-toldirish (ID vs password, scam patterns, account recovery), gempay-ishonli-xizmat (who we are, refunds, order IDs, support SLA). Ship them in Wave 1, cut each in-article block to 2-3 sentences plus a link, and let the hubs own the unbranded terms and absorb the duplication."
+    },
+    {
+      "with": [
+        "mobile-legends-olmos-sotib-olish",
+        "honor-of-kings-token-sotib-olish",
+        "free-fire-olmos-sotib-olish",
+        "bigo-live-olmos-sotib-olish"
+      ],
+      "problem": "Every plan researched a Russian keyword set — and Honor of Kings verified live Yandex suggest demand for \"хонор оф кингс донат\" while proving the Uzbek equivalents return nothing — yet all 45 pages are Uzbek-only, with Russian strings dropped into secondaryKeywords. An Uzbek-language page will not rank for \"купить алмазы mobile legends узбекистан\". Five pillars nominally target overlapping RU queries that none of them can win, so the plan double-counts traffic that does not exist.",
+      "fix": "Either (a) ship /ru/ twins for the 9 pillars and 9 problem articles with proper hreflang uz-UZ / ru-UZ / x-default and self-referencing canonicals, treating RU as the near-term traffic engine for HOK, Delta Force and Bigo where Uzbek demand is not yet measurable; or (b) delete all Russian keywords from the Uzbek pages' targeting and stop forecasting that traffic. Do not build bilingual single pages — that loses both."
+    }
+  ],
+  "mustLinkTo": [
+    "/oyinlar/pubg-mobile",
+    "pubg-mobile-player-id-qayerda",
+    "pubg-uc-kelmadi-nima-qilish",
+    "pubg-uc-qayerdan-sotib-olish-taqqoslash",
+    "pubg-uc-nima-paketlar-royal-pass"
+  ],
+  "publishRank": 2
+}

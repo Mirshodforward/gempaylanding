@@ -1,0 +1,212 @@
+{
+  "slug": "mobile-legends-olmos-sotib-olish",
+  "game": "mobile-legends",
+  "gameTitle": "Mobile Legends: Bang Bang",
+  "type": "howto",
+  "spec": {
+    "slug": "mobile-legends-olmos-sotib-olish",
+    "type": "howto",
+    "h1": "Mobile Legends olmos sotib olish: to'liq qo'llanma",
+    "metaTitle": "Mobile Legends olmos sotib olish — so'mda, 1 daqiqada",
+    "metaDescription": "Mobile Legends olmos sotib olish: User ID va Server ID kiriting, nickname bepul tekshiriladi, Click, Payme, UzCard yoki HUMO bilan so'mda to'lang.",
+    "searchIntent": "Transaksion. Foydalanuvchi hozir olmos to'ldirmoqchi va \"qanday qilib, nima kerak, qanday to'layman\" degan aniq javob izlaydi. Bu — pul olib keladigan asosiy so'rov (money query) va butun klasterning pillar sahifasi.",
+    "primaryKeyword": "mobile legends olmos sotib olish",
+    "secondaryKeywords": [
+      "mobile legends olmos to'ldirish",
+      "mlbb olmos sotib olish",
+      "mobile legends donat",
+      "mobile legends olmos click orqali",
+      "mobile legends olmos payme",
+      "mobile legends diamond uzbekistan",
+      "mobile legends olmos telegram bot"
+    ],
+    "answerBox": "Mobile Legends olmos sotib olish uchun @Gempayuz_bot ni oching, o'yinni tanlang va User ID hamda Server ID (qavs ichidagi raqam) ni kiriting. Nickname bepul tekshiriladi. Akkaunt to'g'riligiga ishonch hosil qilgach, paketni tanlab Click, Payme, UzCard, HUMO yoki Paynet orqali so'mda to'lang. Olmos taxminan bir daqiqada tushadi.",
+    "outline": [
+      {
+        "h2": "Olmos to'ldirish uchun nima kerak",
+        "covers": "Uchta narsa yetarli ekanini aniq sanaydi: (1) User ID va Server ID, (2) Telegram, (3) O'zbekiston kartasi yoki Click/Payme hisobi. Nima KERAK EMASligini ham ochiq yozadi: parol, Moonton akkaunt, VPN, Visa/Mastercard, xorijiy valyuta hisobi. Akkauntga kirish talab qilinmasligini ta'kidlaydi.",
+        "block": "key-facts"
+      },
+      {
+        "h2": "GemPay orqali olmos olish: qadam-baqadam",
+        "covers": "Botni ochish → Mobile Legends ni tanlash → User ID kiritish → Server ID kiritish → nickname ekranda chiqishi va uni tasdiqlash → paket tanlash → to'lov usulini tanlash → so'mda to'lash → olmos ~1 daqiqada tushishi. Har qadamda foydalanuvchi ekranda nimani ko'rishini tasvirlaydi. HowTo schema aynan shu bo'limdan olinadi.",
+        "block": "steps"
+      },
+      {
+        "h2": "User ID va Server ID ni qayerdan olasiz",
+        "covers": "Qisqa versiya: lobbi → chapdagi avatar → profil oynasi pastida 123456789 (1234) formati; birinchi raqam User ID, qavs ichidagisi Server ID. Recharge oynasi orqali muqobil yo'l. Bu yerda faqat qisqa javob beriladi va to'liq qo'llanmaga (mobile-legends-user-id-server-id-qayerda) havola qilinadi — takrorlanish bo'lmasin.",
+        "block": "steps"
+      },
+      {
+        "h2": "To'lov usullari: Click, Payme, UzCard, HUMO, Paynet",
+        "covers": "Jadval: to'lov usuli | qanday ishlaydi | kimga qulay | odatiy tasdiqlash vaqti. Barchasi so'mda, konvertatsiya yo'q, xorijiy karta shart emas. Karta 3D-Secure/SMS tasdiqlashi haqida qisqa izoh. Hech qanday so'mdagi narx yozilmaydi.",
+        "block": "compare-table"
+      },
+      {
+        "h2": "Narx qanday shakllanadi va nega o'zgaradi",
+        "covers": "Narx provayder tarifi va USDT kursiga bog'liqligini, shuning uchun kun davomida siljishi mumkinligini tushuntiradi. Katta paketlarda bir olmosning tannarxi odatda pasayishi. Saytda qat'iy raqam yozilmasligi sababi va \"joriy narx botda paket tanlaganda ko'rsatiladi\" formulasi. Aniq so'm raqami yo'q.",
+        "block": "price-logic"
+      },
+      {
+        "h2": "Nickname tekshiruvi — to'lovdan oldin va bepul",
+        "covers": "ID kiritilgach nickname avtomatik chiqishi, bu tekshiruv bepul va to'lovsiz ekani; nickname mos kelmasa TO'LAMASLIK kerakligi. Do'stga sovg'a qilishda ham aynan shu tekshiruv himoya vazifasini bajarishi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Ko'p uchraydigan xatolar",
+        "covers": "Server ID ni tushirib qoldirish; qavs ichidagi raqamni User ID ga qo'shib yozish; ID ni bo'sh joy yoki qavs belgilari bilan nusxalash; nickname'ni ID o'rniga yozish; Global emas, boshqa region akkaunti; to'lov paytida ilovadan chiqib ketish. Har biriga bir qatorli yechim. Muammo maqolasiga havola.",
+        "block": "warning"
+      },
+      {
+        "h2": "Botni oching va olmos oling",
+        "covers": "@Gempayuz_bot ga havola, /oyinlar/mobile-legends sahifasiga havola, @StarsPaymeeSupport qo'llab-quvvatlash. Qisqa ishonch qatori: ID orqali ishlaydi, parol so'ralmaydi, ~1 daqiqa.",
+        "block": "inline-cta"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Mobile Legends olmos qancha vaqtda tushadi?",
+        "a": "To'lov tasdiqlangach olmos odatda 1 daqiqa ichida akkauntga tushadi. Moonton serverlari band bo'lgan paytda bu bir necha daqiqagacha cho'zilishi mumkin. Agar ko'rinmasa, o'yinni to'liq yopib qayta oching — ilova ko'pincha eski balansni ko'rsatib turadi."
+      },
+      {
+        "q": "To'lov uchun Visa yoki Mastercard kerakmi?",
+        "a": "Yo'q. GemPay O'zbekiston to'lov tizimlari bilan ishlaydi: UzCard, HUMO, Click, Payme va Paynet. Xorijiy karta ham, valyuta konvertatsiyasi ham, VPN ham talab qilinmaydi."
+      },
+      {
+        "q": "Parolimni yoki akkauntimni berishim kerakmi?",
+        "a": "Hech qachon. To'ldirish faqat User ID va Server ID orqali bajariladi — bular ochiq ma'lumot. Parol, bog'langan pochta yoki SMS kodini so'ragan har qanday xizmat firibgardir."
+      },
+      {
+        "q": "Olmosni do'stimning akkauntiga to'ldirsam bo'ladimi?",
+        "a": "Ha. Botga o'z ID'ingizni emas, do'stingizning User ID va Server ID'sini kiriting. To'lovdan oldin chiqadigan nickname aynan do'stingizniki ekaniga ishonch hosil qiling — shundan keyingina to'lang."
+      },
+      {
+        "q": "Donat uchun akkaunt bloklanadimi?",
+        "a": "Yo'q. To'ldirish o'yindagi rasmiy ID orqali bajariladi va bu Moonton qoidalariga zid emas. Ban xavfi akkauntni birovga topshirish yoki \"bepul olmos\" generatorlaridan foydalanish kabi usullarda paydo bo'ladi."
+      },
+      {
+        "q": "Nega saytda narx yozilmagan?",
+        "a": "Olmos narxi provayder tarifi va USDT kursiga bog'liq bo'lgani uchun kun davomida o'zgaradi. Eskirgan raqam yozib qo'yishdan ko'ra, joriy narxni botda ko'rsatish to'g'riroq. Paket tanlaganingizda aniq summa so'mda chiqadi."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "HowTo",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "internalLinks": [
+      "/oyinlar/mobile-legends",
+      "mobile-legends-user-id-server-id-qayerda",
+      "mobile-legends-olmos-kelmadi-nima-qilish",
+      "mobile-legends-olmos-arzon-qayerdan-olish",
+      "mobile-legends-olmos-nima-va-paketlar",
+      "/oyinlar/pubg-mobile"
+    ],
+    "wordCount": 1800
+  },
+  "gameKeywords": {
+    "primary": [
+      "mobile legends olmos sotib olish",
+      "mobile legends olmos to'ldirish",
+      "mlbb olmos sotib olish",
+      "mobile legends donat",
+      "mobile legends olmos arzon",
+      "mobile legends server id",
+      "mobile legends olmos narxi",
+      "mobile legends diamond uzbekistan"
+    ],
+    "questions": [
+      "mobile legends server id qayerda turadi?",
+      "user id va server id farqi nima?",
+      "zone id bilan server id bir xilmi?",
+      "olmos qancha vaqtda tushadi?",
+      "olmos kelmasa nima qilish kerak?",
+      "donat uchun akkaunt bloklanadimi?",
+      "olmosni do'stimga sovg'a qilsam bo'ladimi?",
+      "VPN yoki Visa karta kerakmi?",
+      "narx nega o'zgarib turadi?",
+      "Starlight va Weekly Diamond Pass qaysi biri foydali?",
+      "как узнать server id в mobile legends?",
+      "почему не пришли алмазы после оплаты?"
+    ],
+    "russian": [
+      "купить алмазы mobile legends узбекистан",
+      "пополнение mobile legends сум",
+      "донат mlbb узбекистан",
+      "алмазы мобайл легенд ташкент",
+      "пополнить mobile legends через click",
+      "пополнить mobile legends payme",
+      "как узнать zone id mobile legends",
+      "алмазы не пришли mobile legends",
+      "mobile legends starlight купить",
+      "где дешевле купить алмазы mlbb"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE (WebSearch + WebFetch, avgust 2026): (1) O'zbek tilidagi MLBB donat SERP'i deyarli BO'SH — \"mobile legends olmos sotib olish\", \"olmos to'ldirish narxi\", \"server id qayerda\" kabi so'rovlarda birinchi sahifa Wikipedia, TikTok, YouTube va tasodifiy natijalar bilan to'ladi; hech bir kuchli o'zbekcha tijorat sahifasi yo'q. Bu — eng tez g'alaba nuqtasi. (2) Rus tilida raqobat kuchli, lekin u ROSSIYA sahifalari (kupikod.com, donatov.net, ggpay.gg, vc.ru/DTF gaydlari, prepodsteam) — ular UZS, Click/Payme/UzCard/HUMO'ni umuman ko'rmaydi. O'zbekistonga qaratilgan \".uz\" raqobatchilar zaif: adek.uz (kod orqali, Toshkent do'koni, faqat ruscha katalog sahifalari, kontent yo'q), wildberries.uz karta sahifalari. Global o'yinchilar (mtcgame /uz/ mashina tarjimasi — sahifa 403 qaytardi, codashop, smile.one, topup-balance, hablax, doctorsim) O'zbekiston uchun lokal to'lovni ko'rsatmaydi va kripto/xorijiy karta so'raydi. Ya'ni \"so'mda + mahalliy karta + o'zbekcha\" burchagi egallanmagan. (3) Kupikod FAQ tahlili (WebFetch) real savol shakllarini tasdiqladi: \"olmos nima uchun kerak\", \"pass nima beradi\", \"olmos kelmasa nima qilish\", \"donat uchun ban beriladimi\", \"boshqa odamga sovg'a qilish\", \"yetkazish tezligi\" — 5 ta maqolaning FAQ bloklari shu klasterlarga bog'landi. (4) User ID / Server ID chalkashligi tasdiqlandi: format 123456789 (1234), qavs ichidagi raqam = Server ID; rus segmentida u \"Zone ID\" deb yuritiladi (kupikod, dtf, ggpay hammasi \"User ID va Zone ID\" deydi) — shuning uchun \"zone id\" sinonimini maqola ichida ochiq berish kerak. Bu so'rovda faqat inglizcha bloglar (gpdsgameshop) va YouTube raqobatlashadi — o'zbekcha bo'sh. (5) Region masalasi ham real: Global va Rossiya/MDH klientlari alohida akkaunt bazasi, ID'lar mos kelmaydi — bu \"ID topilmadi\" xatosining haqiqiy sababi. (6) Starlight / Weekly Diamond Pass fakti: Starlight — oylik a'zolik (bazasi 300 olmos, Plus 750), WDP — darhol 80 olmos + 7 kun davomida kuniga 20 olmos (jami ~220); bu raqamlar Moonton tomonidan o'zgartirilishi mumkin, shuning uchun maqolada \"tuzilma\" sifatida beriladi, so'mdagi narx esa hech qayerda yozilmaydi. INFERRED (tasdiqlanmagan): aniq qidiruv hajmlari (volume) — Ahrefs va Semrush MCP konnektorlari bu sessiyada avtorizatsiya qilinmagan, shuning uchun raqamli volume yo'q; kalit so'zlar tartibi SERP zichligi, avtokomplit shakllari va raqobatchi sarlavhalari asosida baholandi. Shuningdek o'zbek foydalanuvchilari \"olmos\" (o'zbekcha) va \"diamond/almaz\" (translit) ni aralash yozadi degan xulosa — bu Telegram MLBB UZ kanallari nomlanishi va aralash so'rovlar asosida taxmin, aniq ulush o'lchanmagan. Strategiya: 5 maqola ham o'zbek tilida yoziladi, lekin har birida ruscha sinonim (алмазы, Zone ID, пополнение) matn ichida tabiiy tilga olinadi — Yandex.uz ruscha so'rovlarda ham ushlab qolsin.",
+  "siblings": [
+    {
+      "slug": "mobile-legends-olmos-kelmadi-nima-qilish",
+      "h1": "Mobile Legends olmos kelmadi: sabablari va yechimi",
+      "type": "problem"
+    },
+    {
+      "slug": "mobile-legends-olmos-arzon-qayerdan-olish",
+      "h1": "Mobile Legends olmosni qayerdan olish arzon va xavfsiz",
+      "type": "comparison"
+    },
+    {
+      "slug": "mobile-legends-olmos-nima-va-paketlar",
+      "h1": "Mobile Legends olmos nima va unga nima sotib olinadi",
+      "type": "info"
+    },
+    {
+      "slug": "mobile-legends-user-id-server-id-qayerda",
+      "h1": "Mobile Legends User ID va Server ID qayerda turadi",
+      "type": "trust"
+    }
+  ],
+  "cannibalisationFixes": [
+    {
+      "with": [
+        "free-fire-olmos-sotib-olish",
+        "magic-chess-go-go-olmos-sotib-olish",
+        "bigo-live-olmos-sotib-olish"
+      ],
+      "problem": "Unbranded \"olmos sotib olish\", \"olmos to'ldirish\", \"olmos kelmadi\", \"olmos nima\" are real Uzbek queries, and four pillars plus four problem articles compete for them with no designated owner. Worse, one of the four is a live-streaming app, so the same head term maps to two different buyer intents.",
+      "fix": "Designate MLBB the unbranded-\"olmos\" owner (highest UZ demand): it may lead with the bare term. The other three must place the brand token before \"olmos\" in H1, metaTitle and the first five words of the answerBox, and drop unbranded variants from their keyword sets. Route the unbranded head through the cross-game hub oyin-valyutasi-qayerdan-arzon, which links down to all four."
+    },
+    {
+      "with": [
+        "pubg-mobile-uc-sotib-olish",
+        "magic-chess-go-go-olmos-sotib-olish",
+        "free-fire-olmos-sotib-olish",
+        "call-of-duty-mobile-cp-sotib-olish",
+        "honor-of-kings-token-sotib-olish",
+        "delta-force-delta-coins-sotib-olish",
+        "asphalt-9-token-sotib-olish",
+        "bigo-live-olmos-sotib-olish"
+      ],
+      "problem": "All nine clusters repeat a near-identical price-logic block (USDT kursi → narx botda ko'rsatiladi), a near-identical \"parol hech qachon so'ralmaydi\" safety block, and a near-identical \"bepul generator = firibgarlik\" block. That is 27+ near-duplicate sections across 45 URLs, and — critically — no single page can rank for the unbranded queries those sections answer: \"donat narxi nega o'zgaradi\", \"o'yinga pul quyish xavfsizmi\", \"bepul olmos generatori ishlaydimi\", \"eng arzon donat qayerda\".",
+      "fix": "Build the three cross-game hubs the plans already link to fourteen times but never planned: oyin-valyutasi-qayerdan-arzon (price mechanics + how to compare), oyin-pul-xavfsiz-toldirish (ID vs password, scam patterns, account recovery), gempay-ishonli-xizmat (who we are, refunds, order IDs, support SLA). Ship them in Wave 1, cut each in-article block to 2-3 sentences plus a link, and let the hubs own the unbranded terms and absorb the duplication."
+    },
+    {
+      "with": [
+        "pubg-mobile-uc-sotib-olish",
+        "honor-of-kings-token-sotib-olish",
+        "free-fire-olmos-sotib-olish",
+        "bigo-live-olmos-sotib-olish"
+      ],
+      "problem": "Every plan researched a Russian keyword set — and Honor of Kings verified live Yandex suggest demand for \"хонор оф кингс донат\" while proving the Uzbek equivalents return nothing — yet all 45 pages are Uzbek-only, with Russian strings dropped into secondaryKeywords. An Uzbek-language page will not rank for \"купить алмазы mobile legends узбекистан\". Five pillars nominally target overlapping RU queries that none of them can win, so the plan double-counts traffic that does not exist.",
+      "fix": "Either (a) ship /ru/ twins for the 9 pillars and 9 problem articles with proper hreflang uz-UZ / ru-UZ / x-default and self-referencing canonicals, treating RU as the near-term traffic engine for HOK, Delta Force and Bigo where Uzbek demand is not yet measurable; or (b) delete all Russian keywords from the Uzbek pages' targeting and stop forecasting that traffic. Do not build bilingual single pages — that loses both."
+    }
+  ],
+  "mustLinkTo": [
+    "/oyinlar/mobile-legends",
+    "mobile-legends-user-id-server-id-qayerda",
+    "mobile-legends-olmos-kelmadi-nima-qilish",
+    "mobile-legends-olmos-arzon-qayerdan-olish",
+    "mobile-legends-olmos-nima-va-paketlar"
+  ],
+  "publishRank": 1
+}

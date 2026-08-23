@@ -1,0 +1,125 @@
+---
+/**
+ * 404.
+ *
+ * NEGA BO'SH SAHIFA EMAS: noto'g'ri havoladan kelgan odam ketib qolmasligi
+ * uchun bu yerda ham katalog turadi — u aynan qidirayotgan o'yinni shu
+ * yerdan topadi. Sahifa `noindex` oladi (Google 404 ni indekslamasligi
+ * kerak), lekin ichki havolalar ochiq qoladi.
+ */
+import Layout from "../layouts/Layout.astro";
+import Aurora from "../components/Aurora.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import Icon from "../components/Icon.astro";
+import GameCard from "../components/GameCard.astro";
+import { GAMES } from "../data/games";
+import { localePath, botLinkFor } from "../data/site";
+import { t } from "../i18n/ui";
+
+const locale = "uz" as const;
+const c = t(locale);
+---
+
+<Layout
+  locale={locale}
+  path=""
+  title="Sahifa topilmadi — GemPay"
+  description="Bunday sahifa yo'q. Katalogdan o'yiningizni tanlang yoki bosh sahifaga qayting."
+  noindex
+>
+  <Aurora />
+  <Header locale={locale} path="" />
+
+  <main id="main">
+    <section class="nf">
+      <div class="wrap nf__in">
+        <p class="nf__code">404</p>
+        <h1 class="nf__title">Bunday sahifa yo'q</h1>
+        <p class="lede nf__lede">
+          Havola eskirgan yoki manzilda xato bo'lishi mumkin. Quyidagi katalogdan
+          o'yiningizni tanlang — yoki botni to'g'ridan-to'g'ri oching.
+        </p>
+        <div class="nf__actions">
+          <a class="btn btn--primary btn--lg" href={botLinkFor()} target="_blank" rel="noopener">
+            <Icon name="telegram" size={19} />
+            {c.hero.ctaPrimary}
+          </a>
+          <a class="btn btn--lg btn--ghost" href={localePath(locale)}>
+            <Icon name="arrow-right" size={17} />
+            Bosh sahifa
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <h2 class="nf__h2">{c.games.all}</h2>
+        <div class="nf__grid">
+          {GAMES.map((g, i) => <GameCard game={g} locale={locale} index={i} />)}
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer locale={locale} />
+</Layout>
+
+<style>
+  .nf {
+    position: relative;
+    z-index: var(--z-body);
+    padding-block: clamp(48px, 8vw, 96px) clamp(24px, 4vw, 40px);
+  }
+
+  .nf__in {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: var(--sp-4);
+  }
+
+  .nf__code {
+    font-family: var(--font-display);
+    font-size: clamp(4rem, 14vw, 8rem);
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.06em;
+    background: var(--grad-brand);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    /* Raqam bezak — skrinrider sarlavhani o'qisin, raqamni emas */
+    user-select: none;
+  }
+
+  .nf__title {
+    font-size: var(--t-2xl);
+  }
+
+  .nf__lede {
+    text-align: center;
+    max-width: 46ch;
+  }
+
+  .nf__actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--sp-3);
+    margin-top: var(--sp-3);
+  }
+
+  .nf__h2 {
+    font-size: var(--t-lg);
+    margin-bottom: var(--sp-5);
+  }
+
+  .nf__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(clamp(140px, 19vw, 196px), 1fr));
+    gap: clamp(10px, 1.6vw, 18px);
+  }
+</style>

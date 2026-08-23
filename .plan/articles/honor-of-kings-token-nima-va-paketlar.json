@@ -1,0 +1,181 @@
+{
+  "slug": "honor-of-kings-token-nima-va-paketlar",
+  "game": "honor-of-kings",
+  "gameTitle": "Honor of Kings",
+  "type": "info",
+  "spec": {
+    "slug": "honor-of-kings-token-nima-va-paketlar",
+    "type": "info",
+    "h1": "Honor of Kings tokeni nima va unga nima sotib olish mumkin?",
+    "metaTitle": "Honor of Kings token nima? Paketlar va narx mantiqi",
+    "metaDescription": "Honor of Kings tokeni nima, Gold'dan farqi, skin va Honor Pass uchun necha token kerak, paketlar qanday va so'mdagi narx nimaga bog'liq — batafsil.",
+    "searchIntent": "Ma'lumot izlash — foydalanuvchi hali sotib olmagan, avval valyuta qanday ishlashini, nima uchun ishlatilishini va qancha token kerakligini tushunmoqchi.",
+    "primaryKeyword": "honor of kings token nima",
+    "secondaryKeywords": [
+      "honor of kings tokenlar paketlari",
+      "honor of kings skin necha token",
+      "honor of kings honor pass",
+      "honor of kings weekly card",
+      "honor of kings valyuta turlari",
+      "honor of kings gold va token farqi",
+      "что такое жетоны honor of kings"
+    ],
+    "answerBox": "Token — Honor of Kings o'yinidagi pulli asosiy valyuta. U faqat haqiqiy pulga to'ldiriladi va skinlar, qahramonlar, Honor Pass hamda maxsus to'plamlarni ochish uchun ishlatiladi. O'yin ichida ishlab topiladigan Gold undan farq qiladi. Tokenlar turli hajmdagi paketlarda sotiladi; aniq so'm narxi GemPay botida ko'rsatiladi.",
+    "outline": [
+      {
+        "h2": "Token nima va u qanday olinadi",
+        "covers": "Token — Honor of Kings Global'dagi premium valyuta, faqat to'ldirish orqali olinadi (eventlardan tushadigan cheklangan miqdorni hisobga olmaganda). Nima uchun o'yin uni alohida valyuta sifatida ushlab turadi va u qayerda ko'rinadi.",
+        "block": "prose"
+      },
+      {
+        "h2": "O'yindagi valyutalar: Token, Gold va event valyutalari",
+        "covers": "Jadval: valyuta nomi | qanday olinadi | nimaga ishlatiladi | muddati bor-yo'qligi. Token — pulli, deyarli hamma premium buyum uchun; Gold — matchlar va vazifalardan bepul, asosan qahramonlar uchun; event kuponlari va vaqtinchalik valyutalar — muddatli, faqat aksiya doirasida.",
+        "block": "compare-table"
+      },
+      {
+        "h2": "Tokenga nima sotib olish mumkin",
+        "covers": "Skin darajalari va ularning taxminiy token qiymati (oddiy ~288, yuqoriroq ~488, Epic ~888, Legendary ~1688–2888), qahramonlar, Honor Pass, Weekly Card va Weekly Card Plus, event to'plamlari va lotereyalar. Bu raqamlar o'yin ichidagi token qiymatlari ekanligi va yangilanishlar bilan o'zgarishi mumkinligi aniq yoziladi.",
+        "block": "key-facts"
+      },
+      {
+        "h2": "Paketlar qanday tuzilgan",
+        "covers": "Kichik paketdan yirik paketgacha bo'lgan pog'ona (masalan 80, 240, 400, 560, 800+bonus, 1200+bonus ko'rinishida), yirik paketda bir tokenga arzonroq tushishi, ba'zi paketlarga qo'shimcha bonus token biriktirilishi va birinchi marta xarid qilinganda o'yin beradigan bonus. Konkret so'm summasi yozilmaydi.",
+        "block": "key-facts"
+      },
+      {
+        "h2": "So'mdagi narx qanday hisoblanadi",
+        "covers": "Zanjir: provayder narxi (dollarda) + USDT kursi → botdagi so'm narxi, real vaqtda yangilanadi. Shuning uchun sayt qat'iy narx e'lon qilmaydi; kurs tushganda arzonlashadi, ko'tarilganda qimmatlashadi. Foydalanuvchiga tavsiya: xarid oldidan botda joriy narxni ko'rish.",
+        "block": "price-logic"
+      },
+      {
+        "h2": "Qaysi paketni tanlash kerak",
+        "covers": "Amaliy tanlov ro'yxati: maqsadni aniqlang (skin, qahramon, Honor Pass), kerakli token miqdorini oldindan hisoblang, 'ozgina yetmay qolish' holatidan qoching, birinchi to'ldirish bonusi bor paketni birinchi bo'lib oling, event tugash sanasiga qarang.",
+        "block": "checklist"
+      },
+      {
+        "h2": "Bepul token olish mumkinmi?",
+        "covers": "Halol javob: o'yin ichidagi eventlar, kunlik kirish va missiyalar orqali cheklangan miqdorda token yig'iladi, lekin bu sekin jarayon. 'Token generator', 'hack' va 'bepul 10000 token' saytlari firibgarlik — ular akkaunt ma'lumotini o'g'irlash uchun tuzilgan.",
+        "block": "warning"
+      },
+      {
+        "h2": "Tokenni so'mda to'ldirish",
+        "covers": "Kerakli token miqdorini aniqlagach @Gempayuz_bot orqali Player ID bilan to'ldirish, nikning bepul tekshirilishi va ~3 daqiqada yetkazilishi.",
+        "block": "inline-cta"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Token va Gold o'rtasidagi farq nima?",
+        "a": "Gold — matchlar, kunlik vazifalar va eventlardan bepul yig'iladigan valyuta, asosan qahramon ochish uchun ketadi. Token esa pulli valyuta: skinlar, Honor Pass va maxsus to'plamlar aynan unga olinadi. Ikkalasi alohida balansda turadi va bir-biriga almashtirilmaydi."
+      },
+      {
+        "q": "Bitta skin uchun necha token kerak?",
+        "a": "Skin darajasiga bog'liq: oddiy skinlar taxminan 288 token atrofida, o'rta daraja ~488, Epic ~888, Legendary esa 1688 dan 2888 gacha bo'lishi mumkin. Bu qiymatlar o'yin yangilanishlari va aksiyalarga qarab o'zgarib turadi, shuning uchun xariddan oldin do'konda tekshiring."
+      },
+      {
+        "q": "Tokenning muddati tugaydimi?",
+        "a": "To'ldirish orqali olingan tokenlar odatda muddatsiz bo'lib, hisobingizda saqlanib turadi. Ammo eventlar davomida beriladigan vaqtinchalik valyutalar va kuponlarning muddati bor — ularni aksiya tugashidan oldin ishlatish kerak."
+      },
+      {
+        "q": "Birinchi to'ldirish bonusi nima?",
+        "a": "Honor of Kings ko'pincha har bir paketni birinchi marta xarid qilganingizda qo'shimcha token beradi. Ya'ni bir xil summaga birinchi safar ko'proq token tushadi. Shu sababli qaysi paketni birinchi olishni oldindan o'ylab qo'ygan ma'qul."
+      },
+      {
+        "q": "Tokenni boshqa akkauntga o'tkazsa bo'ladimi?",
+        "a": "Yo'q. Tokenlar qaysi Player ID ga tushgan bo'lsa, o'sha hisobda qoladi va o'yinchilar o'rtasida o'tkazilmaydi. Do'stingizga sovg'a qilmoqchi bo'lsangiz, to'ldirishni to'g'ridan-to'g'ri uning ID'siga qilish kerak."
+      },
+      {
+        "q": "Narx nega har safar boshqacha?",
+        "a": "Chunki tokenlar dollar asosidagi tarifda sotib olinadi va so'mdagi yakuniy narx USDT kursiga bog'liq holda o'zgaradi. Shuning uchun biz saytda qat'iy so'm raqamini yozmaymiz — joriy narx doimo botda, paketni tanlagan paytingizda ko'rinadi."
+      },
+      {
+        "q": "Weekly Card olish tokenga arziydimi?",
+        "a": "Weekly Card va uning kengaytirilgan varianti bir necha kun davomida har kuni token beradi, shuning uchun muntazam o'ynaydiganlar uchun foydali bo'lishi mumkin. Faqat mavsum tugashiga bir haftadan kam qolgan bo'lsa, undan to'liq foyda ololmaysiz."
+      },
+      {
+        "q": "Token uchun qancha so'm ketadi?",
+        "a": "Aniq summani oldindan aytib bo'lmaydi, chunki u kursga qarab o'zgaradi. @Gempayuz_bot da o'yinni va paketni tanlashingiz bilan joriy so'm narxi ko'rsatiladi — buning uchun to'lov qilish yoki ro'yxatdan o'tish shart emas."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "FAQPage",
+      "ItemList",
+      "BreadcrumbList"
+    ],
+    "internalLinks": [
+      "/oyinlar/honor-of-kings",
+      "honor-of-kings-token-sotib-olish",
+      "honor-of-kings-token-qayerdan-arzon-olish",
+      "honor-of-kings-player-id-qayerda",
+      "/blog/oyin-valyutasi-qayerdan-arzon"
+    ],
+    "wordCount": 1600
+  },
+  "gameKeywords": {
+    "primary": [
+      "honor of kings token sotib olish",
+      "honor of kings token to'ldirish",
+      "honor of kings donat",
+      "honor of kings player id qayerda",
+      "honor of kings token qayerdan olish",
+      "honor of kings token narxi"
+    ],
+    "questions": [
+      "Honor of Kings token qanday sotib olinadi?",
+      "Honor of Kings Player ID (UID) qayerdan topiladi?",
+      "Honor of Kings tokenlari qancha vaqtda keladi?",
+      "Honor of Kings uchun server yoki zona tanlash kerakmi?",
+      "Honor of Kings tokeni nima va Gold'dan farqi nima?",
+      "Skin uchun necha token kerak?",
+      "Honor of Kings tokenni UzCard yoki Payme bilan olsa bo'ladimi?",
+      "Token kelmasa nima qilish kerak?",
+      "Honor of Kings donati xavfsizmi, akkaunt bloklanadimi?",
+      "Midasbuy O'zbekistonda ishlaydimi?",
+      "Bepul token olish mumkinmi?",
+      "Noto'g'ri ID kiritsam pul qaytariladimi?"
+    ],
+    "russian": [
+      "хонор оф кингс донат",
+      "honor of kings донат",
+      "купить жетоны honor of kings",
+      "купить жетоны хонор оф кингс",
+      "honor of kings пополнить баланс",
+      "пополнение honor of kings",
+      "донат в honor of kings",
+      "honor of kings донат узбекистан",
+      "как узнать id в honor of kings",
+      "honor of kings жетоны узкард"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE (live checks, 23.08.2026). Ahrefs va Semrush MCP konnektorlari bu sessiyada avtorizatsiya qilinmagan — aniq hajm (volume/KD) raqamlari olinmadi, shuning uchun quyidagilar autocomplete va SERP dalillariga asoslangan. (1) Yandex suggest (suggest.yandex.ru + suggest.yandex.uz): 'хонор оф кингс донат' — 'хонор оф кингс' prefiksi bo'yicha TOP-4 taklif; 'honor of kings донат' va 'донат в honor of kings' tasdiqlandi; 'жетоны honor' prefiksi 'купить жетоны honor of kings' va 'купить жетоны хонор оф кингс' beradi; 'honor of kings пополнить' → 'пополнить баланс', 'пополнение'. Ya'ni RUS tilidagi donat talabi real va o'lchanadigan darajada. (2) Google suggest (hl=uz, gl=uz): 'honor of kings player id', 'honor of kings user id', 'honor of kings id number' — real takliflar; 'honor of kings top up' → 'top up cheap', 'top up weekly card', mamlakat bo'yicha variantlar (ph, my, np, mm) bor, lekin UZ yo'q. (3) MUHIM BO'SHLIQ: yandex.uz'da 'honor of kings token', 'honor of kings sotib', 'honor of kings id', 'honor of kings uz' prefikslari BO'SH qaytadi, holbuki 'pubg uc sotib' 5 ta boy taklif beradi. Google'da 'honor of kings token sotib' va 'honor of kings tokenlar' ham bo'sh. Xulosa: o'zbek tilida HOK to'ldirish so'rovi hozircha taklif chegarasidan past — ya'ni deyarli NOL raqobat, lekin nol trafik ham. Bu 'oldindan egallash' o'yini: o'yin O'zbekistonda endi yoyilmoqda (UzDaily: Level Infinite/TiMi O'zbekiston uchun pre-registration e'lon qilgan), shuning uchun uzbek-latin sahifalar hozir yaratilsa, talab o'sganda tayyor turadi. Qisqa muddatli trafik esa RUS tilidagi kalitlardan keladi — har sahifaning /ru versiyasi majburiy. (4) OGOHLANTIRISH: 'honor of kings jeton' prefiksi TURK bozorini tortadi ('jeton satin al', 'ucuz jeton'), shuning uchun o'zbekcha kontentda asosiy atama 'token' bo'lishi kerak, 'jeton' emas. (5) RAQOBAT: SERPda global resellerlar (SEAGM, Codashop, TopUpLive, MTCGame, LootBar, Eneba, Kaleoz) va rus saytlari (donatov.net, battlepass.ru, kupikod, coolgameservice, vc.ru maqolalari) hukmron — hech biri o'zbek tilida emas, hech biri UzCard/HUMO/Payme/Click qabul qilmaydi. Yagona lokal raqib topildi: 1pay.uz'ning ruscha blogi 'Донат в Honor of Kings: как купить жетоны в Узбекистане' (sahifa 403 qaytardi, mazmunini o'qib bo'lmadi — faqat mavjudligi tasdiqlandi). O'zbek tilidagi HOK kontenti umuman topilmadi. (6) O'YIN MEXANIKASI (tasdiqlangan): UID topish yo'li — avatar → profil → yuqori o'ngdagi Settings → 'View UID' (TopUpLive va Kaleoz qo'llanmalari; GPDS: ID profil sahifasida nik ostida ko'rinadi, o'zgarmas). Global versiyada Mobile Legends'dagi kabi alohida zona maydoni YO'Q — region akkaunt yaratilganda belgilanadi va checkout faqat ID so'raydi (brifdagi needsServer:false bilan mos). Paket hajmlari resellerlarda 80 / 240 / 400 / 560 / 800+30 / 1200+45 ko'rinishida (TopUpLive). Skin darajalari taxminan 288 / 488 / 888, Legendary 1688–2888 token; Honor Pass ~2000 token; Weekly Card va Weekly Card Plus mavjud; birinchi to'ldirishda bonus token (Midasbuy 'up to 100% bonus') — bular o'yin ichidagi TOKEN raqamlari, so'm narxi emas, shuning uchun kontent qoidasiga zid emas. Midasbuy/Level Infinite StorePass — rasmiy kanal, uz/ locale sahifasi mavjud. (7) TASDIQLANMAGAN (inferred): Midasbuy UZ sahifasining aniq to'lov usullari ro'yxati (sahifa JS bilan render bo'ladi, WebFetch faqat sarlavhani ko'rdi) — umumiy manbalarda Visa/Mastercard/PayPal/Apple Pay va mamlakatga xos hamyonlar sanaladi, UzCard/HUMO sanalmaydi. Shu sababli 3-maqoladagi taqqoslash jadvali 'odatda xalqaro karta talab qilinadi' tarzida ehtiyotkor yozilishi va yozish paytida qayta tekshirilishi shart. Aniq qidiruv hajmlari, CTR va KD ham inferred — konnektorlar ulanganda qayta o'lchash kerak. (8) TAKTIKA: eng tez g'alaba — 'honor of kings player id / uid' klasteri (Google'da tasdiqlangan taklif, hech kim o'zbekcha yozmagan) va ruscha 'хонор оф кингс донат' klasteri; pillar sahifa esa uzoq muddatga o'sish uchun.",
+  "siblings": [
+    {
+      "slug": "honor-of-kings-token-sotib-olish",
+      "h1": "Honor of Kings token sotib olish: O'zbekistonda so'mda, 3 daqiqada",
+      "type": "howto"
+    },
+    {
+      "slug": "honor-of-kings-token-kelmadi-nima-qilish",
+      "h1": "Honor of Kings token kelmadi yoki ID topilmadi — nima qilish kerak",
+      "type": "problem"
+    },
+    {
+      "slug": "honor-of-kings-token-qayerdan-arzon-olish",
+      "h1": "Honor of Kings token qayerdan arzon va xavfsiz olinadi? Halol taqqoslash",
+      "type": "comparison"
+    },
+    {
+      "slug": "honor-of-kings-player-id-qayerda",
+      "h1": "Honor of Kings Player ID (UID) qayerda — 4 qadamda topish va xavfsizlik",
+      "type": "trust"
+    }
+  ],
+  "cannibalisationFixes": [],
+  "mustLinkTo": [
+    "/oyinlar/honor-of-kings",
+    "honor-of-kings-token-sotib-olish",
+    "honor-of-kings-token-qayerdan-arzon-olish"
+  ],
+  "publishRank": 41
+}

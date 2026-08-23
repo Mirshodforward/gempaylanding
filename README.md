@@ -1,68 +1,144 @@
-# Gempay — Landing (gempay.uz)
+# GemPay — landing (gempay.uz)
 
-Marketing + SEO/AEO sayt: **Astro 5 static**. 200+ o'yin valyutasini (PUBG UC,
-Mobile Legends olmos, Free Fire va h.k.) arzon va bir daqiqada to'ldirish
-xizmatini tanishtiradi. Mahsulotning o'zi shu yerda emas — Mini App Telegram
-botida (**@Gempayuz_bot**), Developer API esa **api.gempay.uz** da.
+Marketing + SEO/AEO sayti. O'yin valyutasini **O'zbekiston so'mida** to'ldirish
+xizmatini tanishtiradi va Telegram botiga yo'naltiradi.
 
-## Nega Astro?
+Mahsulotning o'zi bu yerda emas:
 
-Sof marketing/blog sayt uchun Astro static eng yaxshisi: 0 JS (kerakli joyda
-ozgina), to'liq HTML — Google, Yandex va AI crawlerlar (GPTBot, ClaudeBot,
-PerplexityBot) uchun ideal. Eng tez Core Web Vitals = yuqori reyting.
-Dinamik tizim (kabinet, API, Mini App) alohida Next.js ilovasida qoladi.
+| Nima | Qayerda |
+| --- | --- |
+| Mini App (haqiqiy to'ldirish) | Telegram bot **@Gempayuz_bot** |
+| Backend + narx mantiqi | `starspaymeebot/backend/modules/gameTopup/` |
+| Developer API | **api.gempay.uz** |
+| Qardosh loyiha (Telegram Stars) | **starstg.uz** |
 
-## Texnologiya
+## Nega Astro
 
-- **Astro 5** (`output: static`) + `@astrojs/sitemap` (i18n: uz/ru/en)
-- Komponentlar: `src/components/*.astro`, dizayn tokenlari: `src/styles/global.css`
-- Kontent modeli: `src/i18n/copy.ts` (landing) + `src/i18n/blog.ts` (blog + SEO/JSON-LD helperlar)
-- Ikona tizimi: `src/components/icons.ts` (inline SVG), gem logo: `Logo.astro`
+Sof marketing/blog sayti uchun statik Astro eng mos: sahifada **~1 KB JS**
+(mobil menyu va sarlavha holati), qolgani to'liq HTML. Google, Yandex va AI
+kraulerlar (GPTBot, ClaudeBot, PerplexityBot) uchun ideal — hech narsani
+render qilib kutish shart emas. Eng yaxshi Core Web Vitals = yuqoriroq
+reyting.
+
+## Katalog — yagona haqiqat manbasi
+
+`src/data/games.ts` botdagi `modules/gameTopup/catalog.js` → `GAME_META` ning
+nusxasi: 9 ta o'yin + Steam.
+
+```
+PUBG Mobile (UC) · Mobile Legends (olmos) · Magic Chess: Go Go (olmos)
+Free Fire (olmos) · Call of Duty: Mobile (CP) · Honor of Kings (token)
+Delta Force (Delta Coins) · Asphalt 9 (token) · Bigo Live (olmos) · Steam (hamyon)
+```
+
+Bot katalogi o'zgarsa — avval shu fayl yangilanadi, qolgan hamma narsa
+(katak, futer, sitemap, JSON-LD, OG rasm) undan o'zi ergashadi.
+
+> **NARX SAYTDA YO'Q — ataylab.** Narx provayder katalogidan jonli keladi va
+> USDT kursiga bog'liq. Statik sahifaga yozilgan raqam bir haftada noto'g'ri
+> va'daga aylanadi. `npm run ingest` matnda narx topsa — kiritishni to'xtatadi.
 
 ## Struktura
 
 ```
 src/
-  layouts/Layout.astro        SEO/AEO head (meta, OG, Twitter, hreflang, JSON-LD slot)
-  i18n/copy.ts                landing kontenti (uz/ru) + GAMES + URL'lar
-  i18n/blog.ts                5 ta blog (uz/ru/en) + schema helperlar
-  components/                 Navbar, Hero, Games, Features, HowItWorks, Stats,
-                              Developers, FAQ, CTA, Footer + Blog* + Icon/Logo
+  data/
+    site.ts            domen, bot, tillar, tasdiqlash kodlari
+    games.ts           katalog (bot bilan sinxron)
+    gameContent.ts     har o'yinning O'ZIGA XOS sahifa matni
+    blog/
+      types.ts         maqola blok modeli + yordamchilar
+      index.ts         reyestr (posts/ ni avtomatik yig'adi)
+      posts/*.ts       maqolalar — har biri alohida fayl
+  i18n/ui.ts           landing matnlari (uz/ru/en)
+  lib/
+    seo.ts             JSON-LD quruvchilar + hreflang
+    color.ts, gameImages.ts
+  layouts/Layout.astro <head> dagi BARCHA SEO signallari
+  components/          Hero, Games, GameCard, Faq, blog/ArticleBody ...
   pages/
-    index.astro               UZ bosh sahifa     →  gempay.uz
-    ru/index.astro            RU bosh sahifa     →  gempay.uz/ru
-    blog/                     UZ blog (index + [slug])
-    ru/blog/  en/blog/        RU / EN blog
-public/
-  robots.txt                  AI + qidiruv crawlerlar ochiq, sitemap
-  favicon.svg                 gem logo (SVG)
-  site.webmanifest
-scripts/generate-assets.mjs   PNG ikonalar + og-image.png (sharp orqali)
+    index / ru / en             bosh sahifa
+    oyinlar/ + [game]           katalog hub + 10 sahifa (har tilda)
+    blog/ + [slug]              blog
+    sitemap.xml.ts robots.txt.ts llms.txt.ts rss.xml.ts site.webmanifest.ts
+  styles/              tokens → base → app (fonts.css avtomatik)
+scripts/
+  build-assets.mjs     favicon, PWA ikona, har o'yinga 1200×630 OG rasm
+  fetch-fonts.mjs      Unbounded + Manrope ni yuklab, o'zimizda hostlaydi
+  audit.mjs            haqiqiy brauzerda tekshiruv (pastga qarang)
+  ingest.mjs           yaratilgan matnni tekshirib saytga kiritadi
+  indexnow.mjs         Bing/Yandex ga yangilanish xabari
+.plan/                 kontent rejasi va tadqiqot (repo tarixida qoladi)
 ```
 
 ## Ishga tushirish
 
 ```bash
 npm install
-npm run assets     # favicon-*.png, icon-*.png, og-image.png hosil qiladi (sharp)
-npm run dev        # http://localhost:4321
-npm run build      # dist/ (Vercel'ga tayyor)
+npm run fonts     # public/fonts/*.woff2 + src/styles/fonts.css
+npm run assets    # favicon, PWA ikona, public/og/*.png
+npm run dev       # http://localhost:4321
+npm run build     # dist/ — Vercel'ga tayyor
 ```
 
-> `npm run assets` ni kamida bir marta ishga tushiring — `og-image.png` va PNG
-> ikonalar shundan keyin paydo bo'ladi (SVG favicon allaqachon bor).
+`fonts` va `assets` natijalari git'da yotadi, shuning uchun ularni faqat
+logo yoki katalog o'zgarganda qayta ishga tushirish kerak.
+
+## Tekshiruv
+
+```bash
+npm run build
+npx serve dist          # yoki: python3 -m http.server -d dist 4399
+npm run audit -- http://localhost:4399/ http://localhost:4399/oyinlar.html
+```
+
+`audit` haqiqiy Chromium'da ochib tekshiradi:
+
+- gorizontal overflow (mobil CWV uchun halokatli) va aynan qaysi element
+- `<h1>` soni va sarlavha ierarxiyasidagi sakrashlar
+- `alt` siz rasmlar
+- JSON-LD sintaksisi va sxema turlari
+- `<title>` / `description` uzunligi
+- har sahifaning mobil + desktop skrinshoti (`.audit/`)
 
 ## SEO / AEO
 
-- Har sahifada: canonical, hreflang (uz/ru/en + x-default), OG/Twitter, meta keywords
-- JSON-LD: `WebSite`, `Organization`, `Service` (+ `OfferCatalog`), `FAQPage`,
-  `BlogPosting`, `BreadcrumbList`
-- Hero ichida ko'rinadigan **AEO direct-answer** qatori (LLM'lar iqtibos olishi uchun)
-- `robots.txt` AI crawlerlarni ochiq qoldiradi → ChatGPT/Perplexity/Yandexda topiladi
-- Blog kalit so'zlari: PUBG UC arzon, ML olmos, Free Fire olmos, o'yin valyutasi arzon...
+**Har sahifada:** canonical, hreflang (uz/ru/en + x-default), OG/Twitter,
+`max-image-preview:large`, `max-snippet:-1`.
 
-## Domen / aloqa
+Canonical va hreflang **bitta funksiyadan** yasaladi (`localePath` +
+`absoluteUrl`) — ular bir-biriga zid bo'lib qolishi mumkin emas. Ilgari
+canonical'da `/` bor, hreflang'da yo'q edi; shu farq butun ko'p tilli
+klasterni «tasdiqlanmagan» qilib qo'yardi.
 
-- Sayt: **gempay.uz**
-- Bot / Mini App: **@Gempayuz_bot**
-- Developer API + Swagger: **api.gempay.uz/docs**
+**JSON-LD** bitta `@graph` ichida: `Organization`, `WebSite`, `Service` +
+`OfferCatalog`, `ItemList`, `BreadcrumbList`, `HowTo`, `FAQPage`,
+`BlogPosting`.
+
+**AEO** — javob mashinalari (ChatGPT, Perplexity, Alisa) uchun:
+
+- har sahifada KO'RINADIGAN «Qisqa javob» bloki, 40-60 so'z, mustaqil
+  tushunarli — model aynan shuni iqtibos qiladi
+- `/llms.txt` — saytning bezaksiz xaritasi va o'zgarmas faktlari
+- `robots.txt` AI kraulerlarini ATAYLAB nomma-nom ochadi
+
+**Dublikatga qarshi qoidalar** (buzilishi butun to'plamni cho'ktiradi):
+
+- o'ziga xos matni yo'q o'yin sahifasi `noindex` oladi, `HowTo` sxemasi
+  bermaydi va sitemapga tushmaydi
+- tarjimasi yo'q maqola o'sha tilda umuman yaratilmaydi
+- `<title>` ≤60 belgi — uzun nomli o'yinlarda `seoName` ishlatiladi
+
+**Yandex uchun:** `robots.txt` da `Host`, `site.ts` da `yandex-verification`,
+va `npm run indexnow` (Google IndexNow'ni qo'llab-quvvatlamaydi — unga
+sitemap ishlaydi).
+
+## Yangi o'yin qo'shish
+
+1. `src/data/games.ts` ga yozuv qo'shing (bot `GAME_META` sidan nusxa)
+2. `src/assets/games/<slug>.png` — muqova (492×492 yetadi)
+3. `scripts/build-assets.mjs` dagi `GAMES` ro'yxatiga qo'shing → `npm run assets`
+4. `src/data/gameContent.ts` ga O'ZIGA XOS matn yozing — busiz sahifa
+   `noindex` bo'lib qoladi
+
+Katak, futer, sitemap, JSON-LD va OG rasm o'zi yangilanadi.

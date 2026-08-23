@@ -1,0 +1,185 @@
+{
+  "slug": "pubg-uc-qayerdan-sotib-olish-taqqoslash",
+  "game": "pubg-mobile",
+  "gameTitle": "PUBG Mobile",
+  "type": "comparison",
+  "spec": {
+    "slug": "pubg-uc-qayerdan-sotib-olish-taqqoslash",
+    "type": "comparison",
+    "h1": "PUBG UC ni qayerdan sotib olish kerak: Midasbuy, xalqaro saytlar va GemPay taqqoslandi",
+    "metaTitle": "PUBG UC qayerdan olish: Midasbuy va GemPay",
+    "metaDescription": "O'zbekistonda PUBG UC olishning yo'llari taqqoslandi: Midasbuy, xalqaro saytlar, Telegram sotuvchilari va GemPay. To'lov, valyuta, xavf va tezlik jadvali.",
+    "searchIntent": "Taqqoslash va qaror qabul qilish. Foydalanuvchi bir necha variant borligini biladi va qaysi biri O'zbekiston kartasi bilan haqiqatan ishlashini aniqlamoqchi. Midasbuy'da to'lovi o'tmagan odamlar ham shu sahifaga tushadi.",
+    "primaryKeyword": "pubg uc qayerdan sotib olish",
+    "secondaryKeywords": [
+      "midasbuy uzcard qabul qiladimi",
+      "midasbuy o'zbekiston to'lov",
+      "pubg uc telegram sotuvchi xavfli",
+      "pubg uc rasmiy sayt",
+      "arzon uc qayerdan",
+      "midasbuy узбекистан оплата картой"
+    ],
+    "answerBox": "O'zbekistonda PUBG UC olishning to'rt yo'li bor: Midasbuy — rasmiy, lekin UzCard va HUMO ni qabul qilmaydi; xalqaro saytlar — dollarda va xorijiy karta talab qiladi; Telegram sotuvchilari — kafolatsiz; GemPay — so'mda, mahalliy kartalar bilan va to'lovdan oldin niknem tekshiruvi bilan ishlaydi.",
+    "outline": [
+      {
+        "h2": "Qisqa javob: qaysi usul O'zbekistonda haqiqatan ishlaydi",
+        "covers": "To'g'ridan-to'g'ri javob, keyin asosiy ajratuvchi fakt: mahalliy karta muammosi. Midasbuy rasmiy kanal bo'lsa-da, O'zbekiston foydalanuvchilari uchun to'lov bosqichida to'xtaydi, chunki UzCard va HUMO qo'llab-quvvatlanmaydi. Shu bir jumla butun maqolaning mag'zi.",
+        "block": "key-facts"
+      },
+      {
+        "h2": "To'rt usul yonma-yon: to'liq jadval",
+        "covers": "Ustunlar: usul | valyuta | qabul qilinadigan to'lov | Player ID kerakmi | to'lovdan oldin niknem tekshiruvi | yetkazish vaqti | qo'llab-quvvatlash tili | asosiy xavf. Qatorlar: Midasbuy (rasmiy), xalqaro qayta sotuvchilar (mtcgame, hablax kabi), Telegram shaxsiy sotuvchilari, GemPay. Halol bo'lish: Midasbuy rasmiy ekani va aksiyalari borligini tan olish.",
+        "block": "compare-table"
+      },
+      {
+        "h2": "Midasbuy: rasmiy, lekin mahalliy kartani qabul qilmaydi",
+        "covers": "Midasbuy Tencent'ning rasmiy to'ldirish markazi, shuning uchun ishonchli. Ammo O'zbekiston foydalanuvchisi uchun amaliy to'siq: to'lov usullari orasida UzCard va HUMO yo'q, narx chet el valyutasida ko'rsatiladi va xalqaro karta yoki xorijiy hamyon kerak bo'ladi. Bu kamchilik emas, shunchaki boshqa bozor uchun qurilgan.",
+        "block": "prose"
+      },
+      {
+        "h2": "Xalqaro qayta sotuvchi saytlar: dollar va tarjima muammosi",
+        "covers": "mtcgame, hablax kabi saytlar UC sotadi, lekin to'lov ro'yxati kredit karta, PayPal, Apple Pay va kriptovalyutadan iborat — mahalliy kartalar yo'q. Interfeys mashina tarjimasi, qo'llab-quvvatlash o'zbek tilida emas va narx dollarda, ya'ni konvertatsiya va bank komissiyasi qo'shiladi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Telegram shaxsiy sotuvchilari: arzon, lekin kafolatsiz",
+        "covers": "Halol tahlil: ba'zilari haqiqatan ishlaydi va arzon bo'lishi mumkin, lekin chek, buyurtma raqami, qaytarish siyosati va rasmiy qo'llab-quvvatlash yo'q. Xavf belgilari: oldindan to'lov so'rash, shaxsiy kartaga o'tkazish, akkaunt paroli yoki SMS kodini so'rash. Parol so'ralsa — bu firibgarlik.",
+        "block": "warning"
+      },
+      {
+        "h2": "GemPay nima uchun O'zbekiston uchun qulay",
+        "covers": "So'mda to'lov, UzCard/HUMO/Click/Payme/Paynet, Telegram ichida ishlaydi, o'zbek tilida qo'llab-quvvatlash, to'lovdan oldin bepul niknem tekshiruvi, ~2 daqiqa yetkazish, faqat Player ID orqali — akkauntga kirish talab qilinmaydi. Ortiqcha va'da bermaslik: narx bozorga qarab o'zgaradi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Narxlarni to'g'ri taqqoslash usuli",
+        "covers": "Nima uchun oddiy solishtirish adashtiradi: dollardagi narxga bank konvertatsiyasi va komissiya qo'shiladi, aksiya bonuslari paketga bog'liq, USDT kursi kunlik o'zgaradi. To'g'ri usul: bir xil paket uchun yakuniy so'mdagi summani solishtirish. Aniq raqam yozilmaydi — joriy narx botda ko'rsatiladi.",
+        "block": "price-logic"
+      },
+      {
+        "h2": "Xulosa va tanlash",
+        "covers": "Qisqa tavsiya: xorijiy kartangiz bo'lsa Midasbuy ham variant; faqat UzCard yoki HUMO bo'lsa GemPay eng qisqa yo'l. Botga havola va asosiy qo'llanmaga o'tish taklifi.",
+        "block": "inline-cta"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Midasbuy UzCard yoki HUMO ni qabul qiladimi?",
+        "a": "O'zbekiston foydalanuvchilari uchun Midasbuy to'lov usullari orasida UzCard va HUMO odatda mavjud emas, shuning uchun to'lov bosqichida jarayon to'xtaydi. Xalqaro karta yoki xorijiy hamyon kerak bo'ladi. Mahalliy karta bilan to'lash uchun GemPay qulayroq."
+      },
+      {
+        "q": "Midasbuy'dan olish arzonroqmi?",
+        "a": "Ba'zi aksiya davrlarida rasmiy narx foydali bo'lishi mumkin. Ammo yakuniy summani hisoblashda valyuta konvertatsiyasi va bank komissiyasini ham qo'shish kerak. Shuning uchun taqqoslashni bir xil paket uchun yakuniy so'mdagi summa bo'yicha qiling."
+      },
+      {
+        "q": "Telegramdagi arzon UC sotuvchilariga ishonsa bo'ladimi?",
+        "a": "Ehtiyot bo'ling. Chek, buyurtma raqami va rasmiy qo'llab-quvvatlash bo'lmasa, muammo chiqqanda murojaat qiladigan joy qolmaydi. Agar sotuvchi akkaunt paroli, SMS kodi yoki Facebook login ma'lumotini so'rasa — bu aniq firibgarlik."
+      },
+      {
+        "q": "Akkauntni sotuvchiga berib to'ldirish xavfsizmi?",
+        "a": "Yo'q, bunday usuldan butunlay voz keching. Qonuniy to'ldirish faqat Player ID raqami orqali bajariladi va akkauntga kirish umuman talab qilinmaydi. Akkauntni berish esa uni yo'qotishning eng keng tarqalgan sababi."
+      },
+      {
+        "q": "VPN yoki xorijiy karta kerakmi?",
+        "a": "GemPay orqali olganda kerak emas. Siz Telegram bot ichida qolasiz, so'mda to'laysiz va faqat Player ID kiritasiz. VPN orqali boshqa mamlakat mintaqasiga o'tib to'lash usullarini biz tavsiya qilmaymiz — bu akkaunt uchun xavf tug'diradi."
+      },
+      {
+        "q": "GemPay rasmiy tarqatuvchimi?",
+        "a": "GemPay — StarsPaymee ekotizimidagi to'ldirish xizmati. U rasmiy ID orqali to'ldirish usulidan foydalanadi, ya'ni UC to'g'ridan-to'g'ri sizning Player ID ingizga tushadi. Biz Tencent'ning rasmiy do'koni emasmiz va buni ochiq aytamiz."
+      },
+      {
+        "q": "Qaysi usul eng tez?",
+        "a": "Amalda ID orqali to'ldirish eng tez ishlaydi: GemPay'da odatda taxminan 2 daqiqa. Ko'plab xalqaro xizmatlar 15 daqiqadan bir necha soatgacha muddat ko'rsatadi, kod orqali sotiladigan variantlarda esa kodni qo'lda faollashtirish kerak bo'ladi."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "FAQPage",
+      "ItemList",
+      "BreadcrumbList"
+    ],
+    "internalLinks": [
+      "/oyinlar/pubg-mobile",
+      "pubg-mobile-uc-sotib-olish",
+      "pubg-uc-nima-paketlar-royal-pass",
+      "pubg-mobile-player-id-qayerda",
+      "pubg-uc-kelmadi-nima-qilish"
+    ],
+    "wordCount": 1800
+  },
+  "gameKeywords": {
+    "primary": [
+      "pubg mobile uc sotib olish",
+      "pubg uc sotib olish",
+      "uc sotib olish uzcard",
+      "pubg mobile uc olish o'zbekiston",
+      "pubg uc quyish",
+      "pubg mobile donat uzbekistan"
+    ],
+    "questions": [
+      "pubg mobile uc ni qanday sotib olish mumkin",
+      "pubg mobile player id qayerda turadi",
+      "uc kelmadi nima qilish kerak",
+      "pubg uc necha daqiqada tushadi",
+      "midasbuy uzcard qabul qiladimi",
+      "pubg uc sotib olish xavfsizmi",
+      "id berish akkauntni o'g'irlashga olib keladimi",
+      "royal pass necha uc turadi",
+      "uc nima va unga nima olish mumkin",
+      "noto'g'ri id kiritsam uc qaytadimi",
+      "pubg uc narxi nega o'zgarib turadi",
+      "60 uc mi 660 uc mi foydaliroq"
+    ],
+    "russian": [
+      "купить uc pubg узбекистан",
+      "пополнить uc pubg uzcard",
+      "uc pubg humo оплата",
+      "донат pubg mobile узбекистан в сумах",
+      "купить uc pubg по id ташкент",
+      "midasbuy узбекистан оплата картой",
+      "uc pubg mobile click payme",
+      "куда вводить player id pubg",
+      "не пришли uc pubg что делать",
+      "royal pass купить узбекистан"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE (WebSearch + WebFetch on google-index results): (1) The Uzbek-Latin SERP for every PUBG UC query is essentially empty of real editorial content — it is dominated by t.me/s/ Telegram channel previews (UC_BALLU, UmarPubgm, SENATOR_PUBGM, PUBG_STORE_UZ, MeeBo_PUBG), machine-translated international resellers, and one bank product page (ipakyulibank Visa PUBG card). This is the single biggest finding: there is no Uzbek-language authority page to beat. (2) blog.payme.uz has an Uzbek PUBG page but I fetched it and it is ~200-250 words with exactly ONE H2 and no FAQ — trivially outranked by a 1400-word structured article. (3) hablax.com/uz fetched: machine-translated Uzbek (mixed O' / Oʻ diacritics), has FAQ + steps but NO table, and critically its payment list is Credit Card / PayPal / Apple Pay / crypto — NO UzCard, NO HUMO. That is a verified, citable comparison fact, not an assumption. (4) mtcgame.com/uz and bittopup rank on translated content only. (5) Russian cluster is genuinely more competitive: 1pay.uz has a dedicated 'UC через Humo и UzCard' blog post (returned 403 to my fetch, so I only have its indexed title), adek.uz sells UC as a Tashkent e-shop, midasbuy.com/uz serves Russian-first. But most RU-language competitors (prepodsteam, yoomoney, MTS, ggsel) target RUSSIA, not Uzbekistan — so 'узбекистан'-qualified RU queries are still soft. (6) A Russian competitor page states UC arrives 'within 15 minutes, rarely up to 3 hours' — GemPay's ~2 min is a real, defensible differentiator worth stating. (7) The wrong-ID failure mode is confirmed real and widely searched (topuplist, justanswer, Baxity FAQ all cover 'wrong UID = delivered to wrong account, non-refundable') and has ZERO Uzbek coverage — this makes the free pre-payment nickname check GemPay's strongest story. (8) UC packs 60/325/660/1800/3850/8100 confirmed as standard ladder with bonus UC scaling on larger packs. INFERRED / NOT VERIFIED: no keyword volume or difficulty numbers — the Ahrefs and Semrush MCP connectors in this session are unauthorized (OAuth cannot run non-interactively), so I have NO real volume data; the user should authorize those connectors in claude.ai settings to get hard numbers. Query phrasings above are inferred from indexed competitor titles, Telegram channel copy, and Uzbek morphology (sotib olish / olish / quyish / donat variants), not from an autocomplete API. Royal Pass UC costs (Elite ~720, Elite Plus ~1920) come from third-party guides and shift by season — articles must hedge these, never state them as fixed. COMPETITION READ: attack order = problem cluster (zero competition) > question/AEO cluster (zero competition) > pillar money query (weak, translated competition) > comparison (weak) > Russian cluster (moderate, defer).",
+  "siblings": [
+    {
+      "slug": "pubg-mobile-uc-sotib-olish",
+      "h1": "PUBG Mobile UC sotib olish: O'zbekistonda so'mda, 2 daqiqada",
+      "type": "howto"
+    },
+    {
+      "slug": "pubg-uc-kelmadi-nima-qilish",
+      "h1": "PUBG UC kelmadi yoki ID topilmadi — sabablari va aniq yechimi",
+      "type": "problem"
+    },
+    {
+      "slug": "pubg-uc-nima-paketlar-royal-pass",
+      "h1": "UC nima va PUBG Mobile'da unga nima sotib olish mumkin",
+      "type": "info"
+    },
+    {
+      "slug": "pubg-mobile-player-id-qayerda",
+      "h1": "PUBG Mobile Player ID raqamini qayerda topish va uni berish xavfsizmi",
+      "type": "trust"
+    }
+  ],
+  "cannibalisationFixes": [
+    {
+      "with": [
+        "pubg-mobile-uc-sotib-olish"
+      ],
+      "problem": "The comparison's primaryKeyword \"pubg uc qayerdan sotib olish\" literally contains the pillar's secondary \"pubg uc sotib olish\". Both carry transactional intent, both answerBoxes resolve to \"GemPay — so'mda, mahalliy kartalar bilan\", both have an inline-cta closing block. Google will alternate between them and neither will hold a stable position on the highest-value money query in the portfolio.",
+      "fix": "Re-target the comparison onto the branded/failure axis its own research verified: primary = \"midasbuy uzcard qabul qiladimi\", H1 = \"Midasbuy O'zbekistonda ishlaydimi: PUBG UC to'lov usullari taqqoslandi\". Delete \"pubg uc sotib olish\" and \"arzon uc qayerdan\" from its keyword set, rewrite the answerBox to open with an evaluative verdict (not the GemPay flow), and remove the step-by-step purchase framing. Every buy-now CTA stays on the pillar."
+    }
+  ],
+  "mustLinkTo": [
+    "/oyinlar/pubg-mobile",
+    "pubg-mobile-uc-sotib-olish",
+    "pubg-uc-nima-paketlar-royal-pass",
+    "oyin-valyutasi-qayerdan-arzon"
+  ],
+  "publishRank": 11
+}

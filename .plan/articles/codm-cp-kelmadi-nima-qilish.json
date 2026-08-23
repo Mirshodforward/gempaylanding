@@ -1,0 +1,186 @@
+{
+  "slug": "codm-cp-kelmadi-nima-qilish",
+  "game": "call-of-duty-mobile",
+  "gameTitle": "Call of Duty: Mobile (CP / COD Points — Garena SG/MY)",
+  "type": "problem",
+  "spec": {
+    "slug": "codm-cp-kelmadi-nima-qilish",
+    "type": "problem",
+    "h1": "CODM CP kelmadi: sabablari va qadam-baqadam yechimi",
+    "metaTitle": "CODM CP kelmadi? Sabablari va yechimi | GemPay",
+    "metaDescription": "CODM CP to'lovdan keyin kelmadimi? Player ID xatosi, noto'g'ri versiya, kechikish — barcha sabablar va qadam-baqadam yechim. GemPay qo'llanmasi.",
+    "searchIntent": "Problem / support intent. Foydalanuvchi allaqachon to'lov qilgan va xavotirda; unga darhol tekshiruv ketma-ketligi, halol javob (nima qaytariladi, nima yo'q) va qo'llab-quvvatlashga to'g'ri murojaat qilish yo'li kerak.",
+    "primaryKeyword": "codm cp kelmadi",
+    "secondaryKeywords": [
+      "call of duty mobile cp tushmadi",
+      "codm player id topilmadi",
+      "codm cp kechikmoqda",
+      "noto'g'ri id ga cp tushdi",
+      "codm buyurtma kutilmoqda",
+      "cod mobile to'lov o'tdi cp yo'q"
+    ],
+    "answerBox": "Agar CODM CP 3 daqiqada kelmasa, avval o'yinni to'liq qayta ishga tushiring va pochta (Mail) bo'limini tekshiring. So'ng buyurtmadagi Player ID ni o'z profilingizdagi ID bilan solishtiring va versiya (Garena yoki Global) mosligini aniqlang. Muammo saqlansa, to'lov chekini @StarsPaymeeSupport ga yuboring — buyurtma qo'lda tekshiriladi.",
+    "outline": [
+      {
+        "h2": "Avval shuni bajaring — 60 soniyalik tekshiruv",
+        "covers": "Tartibli ro'yxat: o'yindan to'liq chiqish (fon rejimidan ham) va qayta kirish; CP balansini yangilash; pochta (Mail) bo'limini ochish; botdagi buyurtma holatini ko'rish; to'lov chekining haqiqatan o'tganini bank ilovasidan tasdiqlash. Ko'p holatlar shu bosqichda hal bo'lishini aytish.",
+        "block": "checklist"
+      },
+      {
+        "h2": "Sabab 1: Player ID xato kiritilgan",
+        "covers": "Eng keng tarqalgan sabab — ortiqcha bo'sh joy, tushib qolgan raqam, nickname ni ID o'rniga yozish yoki boshqa o'yin ID sini kiritish. ID ni Settings -> User Settings dan qayta nusxa ko'chirish. Bot 'ID topilmadi' desa — bu aslida himoya, chunki pul noto'g'ri akkauntga ketmaydi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Sabab 2: ID boshqa versiyadan olingan",
+        "covers": "Global (Activision) akkaunt ID si Garena SG/MY to'ldiruviga berilsa, ID tanilmaydi yoki CP boshqa o'yinchiga tushadi. Versiyani qanday aniqlash — codm-garena-global-farqi ga havola. Bu holatda to'lov qilishdan oldin to'xtash kerakligi ogohlantiriladi.",
+        "block": "warning"
+      },
+      {
+        "h2": "Sabab 3: CP keldi, lekin siz uni ko'rmayapsiz",
+        "covers": "Qadamlar: o'yindan chiqib qayta kirish; CP balansi qayerda ko'rsatilishini aytish; bonus CP yoki tadbir mukofoti pochtaga tushishi mumkinligi; boshqa akkaunt bilan kirib qolgan bo'lish ehtimoli (Facebook/Google/Garena orqali) va uni tekshirish.",
+        "block": "steps"
+      },
+      {
+        "h2": "Sabab 4: provayder navbati yoki texnik ish",
+        "covers": "Katta yangilanish, mavsum boshlanishi yoki provayder tomonidagi navbat CP ni bir necha daqiqaga kechiktirishi mumkin. Buyurtma 'kutilmoqda' holatida qolsa nima qilish, qancha kutish oqilona (~15 daqiqa) va keyin murojaat qilish kerakligi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Noto'g'ri ID ga tushgan CP qaytariladimi?",
+        "covers": "Halol javob: CP boshqa o'yinchining hisobiga tushib bo'lgan bo'lsa, uni qaytarish texnik jihatdan imkonsiz — bu barcha ID orqali to'ldirish xizmatlariga tegishli. Aynan shuning uchun to'lovdan oldingi bepul nickname tekshiruvi eng muhim himoya vositasi ekani tushuntiriladi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Qo'llab-quvvatlashga qanday murojaat qilish",
+        "covers": "@StarsPaymeeSupport ga yuboriladigan 4 ta narsa: buyurtma raqami, to'lov cheki skrinshoti, Player ID, to'lov vaqti (sana va soat). Shu ma'lumotlar bilan buyurtma qo'lda tez tekshirilishi; nima yozmaslik kerakligi (parol, karta to'liq raqami, SMS kod).",
+        "block": "steps"
+      },
+      {
+        "h2": "Keyingi safar muammo bo'lmasligi uchun",
+        "covers": "Player ID ni skrinshot qilib saqlash, har doim nik tasdiqlanishini kutish, o'yin ochiq turganda to'lov qilish, faqat rasmiy bot orqali to'lash, chekni saqlash. Oxirida @Gempayuz_bot va /oyinlar/call-of-duty-mobile ga havola.",
+        "block": "checklist"
+      }
+    ],
+    "faq": [
+      {
+        "q": "CP kelmadi — birinchi navbatda nima qilaman?",
+        "a": "O'yindan to'liq chiqing va qayta kiring, so'ng CP balansi bilan pochta (Mail) bo'limini tekshiring. Ko'p hollarda CP allaqachon tushgan bo'ladi, faqat interfeys eski balansni ko'rsatib turadi."
+      },
+      {
+        "q": "Player ID ni noto'g'ri kiritdim, pulni qaytarish mumkinmi?",
+        "a": "Agar CP boshqa o'yinchining ID siga tushib bo'lgan bo'lsa, uni qaytarish texnik jihatdan imkonsiz. Shuning uchun GemPay to'lovdan oldin nikni bepul ko'rsatadi — nik notanish bo'lsa, to'lovni to'xtating."
+      },
+      {
+        "q": "Bot 'ID topilmadi' deb yozyapti, nega?",
+        "a": "Odatda uch sabab bor: ID da ortiqcha bo'sh joy yoki belgi bor, ID Global akkauntdan olingan, yoki umuman boshqa o'yin ID si kiritilgan. ID ni Settings -> User Settings bo'limidan qayta nusxa ko'chirib ko'ring."
+      },
+      {
+        "q": "To'lov o'tdi, lekin buyurtma 'kutilmoqda' holatida turibdi",
+        "a": "Bu odatda provayder navbati yoki texnik ish tufayli bo'ladi va o'zi hal bo'ladi. 15 daqiqadan uzoq davom etsa, chek va buyurtma raqamini @StarsPaymeeSupport ga yuboring."
+      },
+      {
+        "q": "Qo'llab-quvvatlashga nima yuborishim kerak?",
+        "a": "To'rt narsa: buyurtma raqami, to'lov cheki skrinshoti, Player ID va to'lov vaqti. Parol, SMS kod yoki karta to'liq raqamini hech kimga yubormang — ular hech qachon so'ralmaydi."
+      },
+      {
+        "q": "CP keldi, lekin miqdori kutganimdan kam",
+        "a": "Paketlarda asosiy CP va bonus CP alohida hisoblanadi, ba'zan bonus qismi pochta orqali keladi. O'yinga qayta kirib balansni tekshiring; farq saqlansa, chek bilan qo'llab-quvvatlashga murojaat qiling."
+      },
+      {
+        "q": "Shu sababdan akkauntim bloklanmaydimi?",
+        "a": "Player ID orqali to'ldirish o'yin qoidalariga zid emas: parol berilmaydi va akkauntga kirilmaydi. Xavf faqat akkaunt almashish, 'region o'zgartirish' yoki bepul CP generatorlari kabi usullarda paydo bo'ladi."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "HowTo",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "internalLinks": [
+      "/oyinlar/call-of-duty-mobile",
+      "call-of-duty-mobile-cp-sotib-olish",
+      "codm-garena-global-farqi",
+      "codm-cp-arzon-qayerdan-olish"
+    ],
+    "wordCount": 1500
+  },
+  "gameKeywords": {
+    "primary": [
+      "call of duty mobile cp sotib olish",
+      "codm cp sotib olish",
+      "cod mobile cp to'ldirish",
+      "codm garena cp to'ldirish",
+      "codm cp arzon",
+      "call of duty mobile cp uzbekistan",
+      "cod points sotib olish"
+    ],
+    "questions": [
+      "call of duty mobile cp qanday sotib olinadi",
+      "codm player id qayerdan topiladi",
+      "codm garena va global farqi nima",
+      "cp kelmasa nima qilish kerak",
+      "uzcard bilan cp sotib olsa bo'ladimi",
+      "cp qancha vaqtda keladi",
+      "battle pass necha cp turadi",
+      "cp nima va nimaga kerak",
+      "noto'g'ri id ga tushgan cp qaytariladimi",
+      "codm cp sotib olish xavfsizmi",
+      "garena akkauntni global ga ko'chirsa bo'ladimi",
+      "lucky draw qancha cp talab qiladi"
+    ],
+    "russian": [
+      "купить cp call of duty mobile узбекистан",
+      "пополнить cp codm по id",
+      "call of duty mobile гарена пополнение cp",
+      "как узнать player id call of duty mobile",
+      "донат call of duty mobile узбекистан",
+      "cp codm дешево купить",
+      "не пришли cp call of duty mobile",
+      "call of duty mobile garena или global разница",
+      "пополнение codm humo uzcard",
+      "cp call of duty mobile сум оплата"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE: (1) Garena vs Global are two fully separate games — separate publishers (Garena SEA vs Activision), servers, accounts, redeem codes and CP economies; a Garena SG/MY Player ID does NOT work for Global top-ups and vice versa (lootbar, brgeeks, seagm, elitedias). (2) Attempting to transfer/shift an account between builds is punishable by ban — confirmed in multiple community/guide sources, so the region article must WARN, not advise. (3) Player ID location confirmed twice: in-game Settings (top-right) -> User Settings -> Player ID shown at the bottom near 'Legal and Privacy'. (4) Garena SG/MY CP tiers are odd-numbered with bonus CP (114 / 230+23 / 460+69 / 690+104 / 1150+173 / 2300+460 / 4600+1840 / 6858+2744 / 11429+4572 on SEAGM) and differ from Global's round 500/1100/2400/5000 — useful proof that 'which version' changes what you buy. (5) Battle Pass ~560 CP; Lucky Draw is an escalating ladder (25/70/180/360/580/900/1400/2800/4000 CP in one Garena draw, ~10,315 CP total). (6) Codashop's own guidance: they never ask for PlayerID AND password — good trust framing. COMPETITION READ (verified): the Uzbek-language SERP for CODM top-up is effectively EMPTY. Searches in Uzbek Latin ('codm cp to'ldirish o'zbekiston', 'call of duty mobile cp sotib olish uzbekistan') return only YouTube gameplay clips and irrelevant Telegram-bot blog posts — zero commercial pages. The Russian CODM SERP is owned by .ru donate shops (donatov.net, dem-gold, coolgameservice, szmarket, kupikod, ggsel, funpay) plus Codashop KZ — none of which accept UzCard/HUMO/so'm, so 'узбекистан / сум / humo uzcard' modifiers are wide open. By contrast the Uzbek PUBG UC SERP is already contested (Midasbuy UZ, Payme blog, 1pay.uz, hablax, mtcgame, milliysavdo.store) — proof that Uzbek-language money pages DO rank here, and that CODM is the same opportunity with no incumbent. The Telegram-Premium niche (uzgets.uz, starsjoy.uz) shows the exact winning page pattern for this audience: Uzbek Latin + 'so'm' + UzCard/Humo/Click/Payme + bot. INFERRED (not verified with volume data — Ahrefs and Semrush connectors are unauthorized in this session, so there are NO real volume/KD numbers here): relative ordering of the keyword lists, the transliterated spellings ('kod mobayl', 'codm'), and the assumption that a meaningful share of Uzbek CODM players sit on the Garena SG/MY build. That last assumption is exactly why article #2 is written as an identification guide rather than a recommendation — a Global-account reader must be told the honest answer, not pushed into a purchase.",
+  "siblings": [
+    {
+      "slug": "call-of-duty-mobile-cp-sotib-olish",
+      "h1": "Call of Duty: Mobile CP sotib olish — O'zbekistonda so'mda, 3 daqiqada",
+      "type": "howto"
+    },
+    {
+      "slug": "codm-garena-global-farqi",
+      "h1": "CODM Garena va Global farqi: qaysi akkaunt sizda va nega bu CP uchun muhim",
+      "type": "howto"
+    },
+    {
+      "slug": "codm-cp-arzon-qayerdan-olish",
+      "h1": "CODM CP ni qayerdan olish arzon va xavfsiz: usullar taqqoslandi",
+      "type": "comparison"
+    },
+    {
+      "slug": "cod-points-cp-nima",
+      "h1": "CP (COD Points) nima va Call of Duty: Mobile da nimaga ishlatiladi",
+      "type": "info"
+    }
+  ],
+  "cannibalisationFixes": [
+    {
+      "with": [
+        "call-of-duty-mobile-cp-sotib-olish",
+        "codm-garena-global-farqi",
+        "codm-cp-arzon-qayerdan-olish"
+      ],
+      "problem": "CODM is the only cluster with two `howto` articles and no trust/ID article. \"call of duty mobile player id qayerda\" is targeted by both the pillar's H2 and codm-garena-global-farqi. Version mismatch is the whole of codm-garena-global-farqi and \"Sabab 2\" of the problem page. And the Garena page's FAQ \"Qaysi versiyada CP arzonroq?\" answers the comparison page's primary query from a different URL.",
+      "fix": "Retype codm-garena-global-farqi as the cluster's trust/ID page — rename to codm-player-id-va-garena-global, ID location as the H1 promise, version identification as the second half. Move the \"qaysi versiyada arzonroq\" FAQ to codm-cp-arzon-qayerdan-olish. Strip HowTo schema from the pillar's ID section so exactly one URL carries HowTo for ID retrieval."
+    }
+  ],
+  "mustLinkTo": [
+    "/oyinlar/call-of-duty-mobile",
+    "call-of-duty-mobile-cp-sotib-olish",
+    "codm-garena-global-farqi"
+  ],
+  "publishRank": 14
+}

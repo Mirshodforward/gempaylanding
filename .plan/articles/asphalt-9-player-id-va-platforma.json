@@ -1,0 +1,192 @@
+{
+  "slug": "asphalt-9-player-id-va-platforma",
+  "game": "asphalt-9",
+  "gameTitle": "Asphalt 9: Legends (Asphalt Legends) — Token",
+  "type": "trust",
+  "spec": {
+    "slug": "asphalt-9-player-id-va-platforma",
+    "type": "trust",
+    "h1": "Asphalt 9 Player ID qayerda va platformani qanday tanlash",
+    "metaTitle": "Asphalt 9 Player ID qayerda? Platforma tanlash",
+    "metaDescription": "Asphalt 9 Player ID (Gameloft ID) ni Android, iOS va Windows da topish yo'llari, platforma maydoni nega muhim va nega parol hech qachon so'ralmaydi.",
+    "searchIntent": "Navigatsion va ishonch. Foydalanuvchi to'lovdan oldin ID ni topolmayapti yoki 'server' maydoni nima ekanini tushunmayapti, shu bilan birga xizmat xavfsizligini tekshirmoqda. Konversiyaga eng yaqin qo'llanma.",
+    "primaryKeyword": "asphalt 9 player id qayerda",
+    "secondaryKeywords": [
+      "asphalt 9 gameloft id topish",
+      "asphalt 9 platforma tanlash",
+      "asphalt 9 server maydoni",
+      "asphalt 9 token sotib olish xavfsizmi",
+      "asphalt 9 id qanday nusxalanadi",
+      "asphalt 9 player id где найти"
+    ],
+    "answerBox": "Asphalt 9 da Player ID ni topish uchun Hangar ekranida chap yuqoridagi avatarni bosing va Profile bo'limini oching — ID nik ostida turadi, uni bosib nusxalash mumkin. Ikkinchi yo'l: Menu, keyin Settings va About bo'limidagi Gameloft Player ID. GemPay botda shu ID va platforma so'raladi, parol esa hech qachon so'ralmaydi.",
+    "outline": [
+      {
+        "h2": "Player ID nima va u qanday ko'rinadi",
+        "covers": "Player ID (Gameloft ID) — hisobingizning noyob raqam-harfli identifikatori. U nik emas: nik o'zgarishi mumkin, ID o'zgarmaydi. Aynan shu ID bo'yicha token yuboriladi, shuning uchun uni qo'lda termay, nusxalab olish kerak.",
+        "block": "key-facts"
+      },
+      {
+        "h2": "Android va iOS da Player ID ni topish",
+        "covers": "Qadamlar: o'yinni oching, Hangar ekranida chap yuqoridagi avatarni bosing, Profile bo'limiga o'ting, nik ostidagi ID ni bosing — u avtomatik nusxalanadi. Muqobil yo'l: Menu > Settings > About > Gameloft Player ID. Skrinshot joyi belgilanadi.",
+        "block": "steps"
+      },
+      {
+        "h2": "Windows va Microsoft Store da topish",
+        "covers": "PC versiyasida ham xuddi shu Profile yo'li ishlaydi, lekin sichqoncha bilan bosiladi va nusxalash Ctrl+C orqali bo'lishi mumkin. Bu yerda ta'kidlash kerak: PC hisobi Microsoft Store hamyoniga bog'lanadi va uning ID si mobil hisobingizdan farq qilishi mumkin — o'zingiz to'ldirmoqchi bo'lgan qurilmada ochib olish shart.",
+        "block": "steps"
+      },
+      {
+        "h2": "'Server' maydoni aslida platforma — asosiy gotcha",
+        "covers": "Boshqa o'yinlarda (masalan Mobile Legends) server raqami so'raladi, Asphalt 9 da esa server yo'q — o'rniga platforma bor: Android, iOS yoki Windows. Xaridlar platformaga bog'lanadi: Microsoft Store tokeni Xbox va PC da ishlaydi, telefonga o'tmaydi. Qoida: qaysi qurilmada o'ynasangiz va tokenni qayerda ishlatmoqchi bo'lsangiz, o'shani tanlang. Xato tanlov qaytarib bo'lmaydigan yo'qotishga olib kelishi mumkin.",
+        "block": "warning"
+      },
+      {
+        "h2": "Nik tekshiruvi: to'lovdan oldin, bepul",
+        "covers": "GemPay botda ID kiritilgach, o'yin ichidagi nik ekranga chiqadi va bu bosqich bepul. Agar nik sizniki bo'lsa — davom etasiz; begona nik chiqsa — to'xtaysiz va ID ni qayta tekshirasiz. Bu bosqich noto'g'ri hisobga token ketishining asosiy himoyasi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Nega parol va login hech qachon so'ralmaydi",
+        "covers": "ID bo'yicha to'ldirish akkauntga kirishni talab qilmaydi. Sizdan Gameloft yoki Google/Apple parolini, SMS kodini yoki akkauntni vaqtincha berishni so'ragan har qanday xizmat xavfli. Bunday holatda darhol to'xtash va parolni almashtirish kerak. GemPay faqat ID, platforma va to'lovni so'raydi.",
+        "block": "warning"
+      },
+      {
+        "h2": "Xavfsiz xarid tekshiruv ro'yxati",
+        "covers": "ID nusxalanganmi; platforma o'ynaladigan qurilmaga mosmi; botdagi nik sizniki ekanmi; parol so'ralmadimi; rasmiy bot @Gempayuz_bot ekanmi; to'lov mahalliy ilovada qayd etildimi; chek saqlandimi. Har bir band tasdiqlangach to'lash mumkin.",
+        "block": "checklist"
+      },
+      {
+        "h2": "ID ni tayyorlab, botni oching",
+        "covers": "@Gempayuz_bot ga havola, /oyinlar/asphalt-9 sahifasiga havola va agar to'lovdan keyin muammo bo'lsa @StarsPaymeeSupport ga murojaat qilish mumkinligi.",
+        "block": "inline-cta"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Player ID ni qayerdan topaman?",
+        "a": "Hangar ekranida chap yuqoridagi avatarni bosing, Profile bo'limini oching — ID nik ostida turadi va uni bosib nusxalash mumkin. Muqobil yo'l: Menu > Settings > About bo'limidagi Gameloft Player ID."
+      },
+      {
+        "q": "Nik bilan token olsam bo'ladimi?",
+        "a": "Yo'q. Nik o'zgarishi mumkin va bir xil niklar uchraydi, shuning uchun to'ldirish faqat Player ID bo'yicha amalga oshiriladi. Nik esa faqat tekshirish uchun ko'rsatiladi."
+      },
+      {
+        "q": "Nega serverni emas, platformani so'raysizlar?",
+        "a": "Chunki Asphalt 9 da server bo'limi yo'q. Uning o'rniga xaridlar platformaga bog'lanadi: Android, iOS yoki Windows. Bot tokenni to'g'ri hamyonga yuborishi uchun aynan shu ma'lumot kerak."
+      },
+      {
+        "q": "Telefonda ham, PC da ham o'ynayman. Qaysi platformani tanlay?",
+        "a": "Tokenni aynan qayerda ishlatmoqchi bo'lsangiz, o'shani tanlang. Microsoft Store orqali kelgan token telefonda ochilmaydi, mobil uchun kelgani esa PC hamyonida ko'rinmaydi."
+      },
+      {
+        "q": "Parolimni so'rashsa nima qilay?",
+        "a": "Darhol to'xtang va hech narsa yubormang. Qonuniy to'ldirish uchun faqat Player ID va platforma kifoya. Agar parolni allaqachon yuborgan bo'lsangiz, uni zudlik bilan almashtiring va ikki bosqichli himoyani yoqing."
+      },
+      {
+        "q": "ID ni qo'lda tersam bo'ladimi?",
+        "a": "Tavsiya etilmaydi. 0 va O, 1 va l harflari osongina aralashib ketadi. O'yin ichida ID ni bosib nusxalang va botga to'g'ridan-to'g'ri qo'ying."
+      },
+      {
+        "q": "GemPay ishonchlimi?",
+        "a": "GemPay StarsPaymee ekotizimining bir qismi bo'lib, faqat ID bo'yicha qonuniy to'ldirish bilan ishlaydi: parol so'ralmaydi, VPN talab etilmaydi, to'lov mahalliy ilovada chek bilan qayd etiladi va qo'llab-quvvatlash @StarsPaymeeSupport orqali ochiq."
+      },
+      {
+        "q": "ID ni birovga ko'rsatish xavfsizmi?",
+        "a": "Player ID hisobingizga kirish huquqini bermaydi — u faqat manzil vazifasini bajaradi. Xavfli narsa parol, elektron pochtaga kirish va tasdiqlash kodlarini berishdir."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "HowTo",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "internalLinks": [
+      "/oyinlar/asphalt-9",
+      "asphalt-9-token-sotib-olish",
+      "asphalt-9-token-kelmadi-nima-qilish",
+      "asphalt-9-token-nima",
+      "asphalt-9-donat-usullari-taqqoslash"
+    ],
+    "wordCount": 1450
+  },
+  "gameKeywords": {
+    "primary": [
+      "asphalt 9 token sotib olish",
+      "asphalt 9 donat",
+      "asphalt 9 token olish uzbekistan",
+      "asfalt 9 token sotib olish",
+      "asphalt legends token sotib olish",
+      "asphalt 9 tokenlarini to'ldirish",
+      "asphalt 9 uc kabi token olish"
+    ],
+    "questions": [
+      "Asphalt 9 da Player ID qayerdan topiladi?",
+      "Asphalt 9 tokenlari qancha vaqtda keladi?",
+      "Asphalt 9 uchun nega platforma so'raladi?",
+      "Android da olingan token iOS da ishlaydimi?",
+      "Asphalt 9 token sotib olish xavfsizmi?",
+      "Token olish uchun parol yoki akkaunt berish kerakmi?",
+      "Asphalt 9 va Asphalt Legends bir xil o'yinmi?",
+      "Token kelmasa nima qilish kerak?",
+      "Asphalt 9 tokenini so'mda to'lash mumkinmi?",
+      "Season Token va oddiy Token farqi nima?",
+      "Asphalt 9 token narxi qanday belgilanadi?",
+      "Microsoft Store dan olingan token telefonda ishlaydimi?"
+    ],
+    "russian": [
+      "донат асфальт 9 узбекистан",
+      "купить токены asphalt 9",
+      "asphalt 9 пополнение по id",
+      "асфальт 9 донат без входа в аккаунт",
+      "как задонатить в asphalt 9 из узбекистана",
+      "asphalt legends unite донат токены",
+      "asphalt 9 player id где найти",
+      "asphalt 9 токены не пришли что делать",
+      "оплата uzcard humo click asphalt 9",
+      "asphalt 9 токены android ios windows разница"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE (WebSearch + WebFetch, avgust 2026): (1) Nom o'zgarishi — o'yin 2018-yilda 'Asphalt 9: Legends', 2024-yil 17-iyulda 'Asphalt Legends Unite', 2025-yil 24-iyulda esa 'Asphalt Legends' deb qayta nomlangan (Wikipedia/Asphalt Legends). Bu SEO uchun katta imkoniyat: qidiruvlar hamon 'Asphalt 9' bilan yuritiladi, lekin yangi kontent 'Asphalt Legends' nomiga o'tib ketmoqda — ikkala nomni bitta sahifada ushlagan sayt ikkala klasterni oladi. (2) Token paket hajmlari real do'konlarda tasdiqlandi: 40, 105, 220, 470, 1275, 3000 token (FunPay lot 1667, Xbox/plati.market '220 Tokens', G2A '105 Tokens'). So'mdagi narx hech qayerda olinmadi va maqolalarda ishlatilmaydi. (3) Platforma qulfi tasdiqlandi: Microsoft Store orqali olingan tokenlar Xbox/PC da ishlaydi, mobil qurilmaga o'tmaydi; Gameloft yordam markazi progressni faqat bir xil OS ichida ko'chirishni tavsiflaydi. Wikipedia 2024 'Unite' yangilanishi bulutli progressni qo'shganini, PlayStation va Switch bundan mustasno ekanini yozadi. Ya'ni akkaunt ko'chishi mumkin, lekin xarid hamyoni platformaga bog'lanib qoladi — bu aynan bizning 'server maydoni aslida platforma' maqolamizning yadrosi. (4) Player ID ikki xil yo'l bilan topiladi: Hangar'da chap yuqoridagi avatar > Profile > nik ostidagi ID (bosib nusxalanadi) va Menu/Settings > About > Gameloft Player ID. Gameloft yordam markazi (helpshift) sahifasi WebFetch uchun 403 qaytardi, shu sababli qadamlar qidiruv snippetlari va uchinchi tomon qo'llanmalaridan yig'ildi — matn yozishdan oldin o'yin ichida bir marta tekshirib chiqilishi kerak. (5) Tokenlar nimaga sarflanishi tasdiqlandi: Card Pack, Relay Pack, Legend Store blueprint'lari, kredit sotib olish, kutish vaqtini o'tkazib yuborish, S-Class/event mashinalari uchun Featured Car Pack. 'Season Token' esa alohida, event valyutasi — foydalanuvchilar buni doimiy Token bilan chalkashtiradi. (6) RAQOBAT juda zaif: o'zbek tilida bu mavzuda bitta ham normal sahifa topilmadi — google.uz o'zbekcha SERP amalda bo'sh. Butun raqobat rus tilida (donatov.net, szmarket.ru, goplaydonate.ru, mobime.ru, topit.store, dtf.ru), turkcha (kopazar) yoki global (Codashop, G2G, G2A, LotKeys, FunPay, MTCGame). Ularning hech birida UZS, UzCard/HUMO/Click/Payme yo'q. Bu klaster 3-6 oyda to'liq egallanadi. (7) Ishonch bo'shlig'i tasdiqlandi: FunPay da ikki xil yetkazish bor — 'Top Up with ID (NO LOGIN)' va 'with account login'; ba'zi rus saytlari sanksiya xavfi haqida ogohlantiradi. GemPay uchun 'faqat ID, parol so'ralmaydi' pozitsiyasi real farqlovchi ustunlik. INFERRED (tasdiqlanmagan): aniq qidiruv hajmlari. Ahrefs va Semrush konnektorlari bu sessiyada avtorizatsiya qilinmagan (foydalanuvchi claude.ai connector sozlamalarida ruxsat berishi kerak), shuning uchun volume raqamlari yo'q. Baholash: o'zbekcha so'rovlar absolyut hajmi kichik (oyiga o'nlab), lekin KD deyarli nol; asosiy trafik ruscha 'донат асфальт 9' + Yandex.uz dan va 'asfalt/asphalt' aralash transliteratsiyadan keladi. Shu sababli har bir maqolada ruscha atamalar (донат, токены, пополнение по ID) matn ichida tabiiy tarzda eslatib o'tilishi tavsiya etiladi.",
+  "siblings": [
+    {
+      "slug": "asphalt-9-token-sotib-olish",
+      "h1": "Asphalt 9 tokenlarini O'zbekistonda sotib olish",
+      "type": "howto"
+    },
+    {
+      "slug": "asphalt-9-token-kelmadi-nima-qilish",
+      "h1": "Asphalt 9 tokenlari kelmadi yoki ID topilmadi: nima qilish",
+      "type": "problem"
+    },
+    {
+      "slug": "asphalt-9-donat-usullari-taqqoslash",
+      "h1": "Asphalt 9 donat: GemPay, Google Play, App Store va chet el saytlari",
+      "type": "comparison"
+    },
+    {
+      "slug": "asphalt-9-token-nima",
+      "h1": "Asphalt 9 tokeni nima va unga nima sotib olish mumkin",
+      "type": "info"
+    }
+  ],
+  "cannibalisationFixes": [
+    {
+      "with": [
+        "asphalt-9-token-sotib-olish",
+        "asphalt-9-donat-usullari-taqqoslash",
+        "asphalt-9-token-kelmadi-nima-qilish"
+      ],
+      "problem": "Hard collision: \"asphalt 9 donat\" is a declared secondaryKeyword of the pillar AND the declared primaryKeyword of the comparison — the same transactional head term formally assigned to two URLs. Separately, the Microsoft Store platform-wallet lock is explained at length on three pages (trust H2 \"'Server' maydoni aslida platforma\", problem \"Sabab 3\", comparison warning block).",
+      "fix": "\"asphalt 9 donat\" goes to the pillar only (transactional intent belongs to the buy page). Re-target the comparison to \"asphalt 9 token qayerdan olish arzon\" + \"google play uzcard ishlamayapti\". Platform lock gets one full explanation on asphalt-9-player-id-va-platforma; the other two carry a one-sentence symptom plus link."
+    }
+  ],
+  "mustLinkTo": [
+    "/oyinlar/asphalt-9",
+    "asphalt-9-token-sotib-olish",
+    "asphalt-9-token-kelmadi-nima-qilish",
+    "oyin-pul-xavfsiz-toldirish"
+  ],
+  "publishRank": 38
+}

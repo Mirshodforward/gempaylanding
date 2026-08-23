@@ -1,0 +1,177 @@
+{
+  "slug": "mobile-legends-olmos-kelmadi-nima-qilish",
+  "game": "mobile-legends",
+  "gameTitle": "Mobile Legends: Bang Bang",
+  "type": "problem",
+  "spec": {
+    "slug": "mobile-legends-olmos-kelmadi-nima-qilish",
+    "type": "problem",
+    "h1": "Mobile Legends olmos kelmadi: sabablari va yechimi",
+    "metaTitle": "Mobile Legends olmos kelmadi: sabab va yechim",
+    "metaDescription": "Mobile Legends olmos kelmadimi? ID va server xatosi, region, to'lov holati — barcha sabablar va supportga nima yozish kerakligi bo'yicha qo'llanma.",
+    "searchIntent": "Muammoli, o'ta yuqori shoshilinchlik. Foydalanuvchi allaqachon to'lov qilgan va vahima qilyapti; \"olmos kelmadi\", \"ID topilmadi\", \"pul yechildi\" so'rovlari. Maqsad — tinchlantirish, triage berish va supportga to'g'ri murojaatga yo'naltirish.",
+    "primaryKeyword": "mobile legends olmos kelmadi",
+    "secondaryKeywords": [
+      "mobile legends id topilmadi",
+      "mobile legends olmos tushmadi nima qilish",
+      "mlbb pul yechildi olmos yo'q",
+      "алмазы не пришли mobile legends",
+      "mobile legends noto'g'ri server id",
+      "mobile legends olmos boshqa akkauntga ketdi"
+    ],
+    "answerBox": "Mobile Legends olmos kelmasa, avval o'yinni to'liq yopib qayta oching va o'yin ichidagi Pochta bo'limini tekshiring. Keyin kiritilgan User ID va Server ID to'g'riligini solishtiring — sabab ko'pincha shu ikkisida. To'lov o'tgani holda olmos yo'q bo'lsa, chek, ID va to'lov vaqti bilan @StarsPaymeeSupport ga yozing.",
+    "outline": [
+      {
+        "h2": "Birinchi 5 daqiqada nima qilish kerak",
+        "covers": "Tartibli triage: o'yinni to'liq yopib qayta ochish (fon rejimidan emas) → Pochta/Mail bo'limini ochish → Recharge oynasida balansni tekshirish → botdagi buyurtma holatini ko'rish → to'lov tasdig'i kelganini tekshirish. Ko'p holatda muammo shu yerda tugashini aytadi.",
+        "block": "steps"
+      },
+      {
+        "h2": "Sabab 1: ilova eski balansni ko'rsatyapti",
+        "covers": "Olmos serverda allaqachon bor, lekin klient yangilanmagan. Ilovani butunlay yopish, internetni almashtirish, kerak bo'lsa qayta kirish. Bu eng ko'p uchraydigan \"soxta muammo\" ekanini aniq yozadi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Sabab 2: User ID yoki Server ID xato kiritilgan",
+        "covers": "Qavs ichidagi raqam tushirib qoldirilgan, ID ga qo'shib yozilgan, bo'sh joy yoki qavs belgisi nusxalangan, nickname ID o'rniga yozilgan. Bunda olmos boshqa akkauntga tushishi va uni avtomatik qaytarib bo'lmasligi ochiq aytiladi. Nickname tekshiruvi aynan shu xatoni to'xtatish uchun borligi. ID qo'llanmasiga havola.",
+        "block": "warning"
+      },
+      {
+        "h2": "Sabab 3: akkaunt boshqa regionda",
+        "covers": "Global va boshqa mintaqaviy klientlar alohida akkaunt bazasiga ega — bir versiyaning ID'si boshqasida topilmaydi va \"ID topilmadi\" xatosi shundan chiqadi. Foydalanuvchi qaysi versiyada o'ynayotganini qanday aniqlashi. Region almashtirish yoki VPN bilan aldash tavsiya qilinmasligi ochiq yoziladi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Sabab 4: to'lov o'tmagan yoki bank ushlab turibdi",
+        "covers": "Hold (vaqtincha bloklangan summa) bilan haqiqiy yechimning farqi; SMS tasdiqlash bajarilmagani; limit yoki karta cheklovi. Bunday holatda summa odatda o'zi qaytishi va nima kutish kerakligi. Bank ilovasidagi tranzaksiya holatini qanday o'qish.",
+        "block": "prose"
+      },
+      {
+        "h2": "Supportga yozishdan oldin shu ro'yxatni to'ldiring",
+        "covers": "Aniq beshta ma'lumot: User ID, Server ID, nickname, to'lov usuli, to'lov sanasi va vaqti, chek yoki bank skrinshoti (kesilmagan holda). Shu ro'yxat bilan buyurtma daqiqalarda topilishini aytadi. @StarsPaymeeSupport havolasi.",
+        "block": "checklist"
+      },
+      {
+        "h2": "Pul qaytariladimi va qachon",
+        "covers": "Halol chegaralar: agar buyurtma bajarilmagan bo'lsa — qaytariladi; agar olmos noto'g'ri ID ga to'g'ri yetkazilgan bo'lsa — bu texnik jihatdan bajarilgan buyurtma va qaytarish kafolatlanmaydi. Shuning uchun tekshiruv bosqichi muhimligi. Hech qanday muddat kafolati o'ylab topilmaydi — \"support holatga qarab javob beradi\" formulasi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Muammo takrorlanmasligi uchun",
+        "covers": "Keyingi safar uchun qisqa CTA: ID va serverni bir marta to'g'ri saqlab olish, har safar nickname'ga qarash, botdan foydalanish. @Gempayuz_bot va /oyinlar/mobile-legends havolalari.",
+        "block": "inline-cta"
+      }
+    ],
+    "faq": [
+      {
+        "q": "To'lov o'tdi, lekin olmos yo'q. Birinchi navbatda nima qilay?",
+        "a": "O'yinni to'liq yoping va qayta oching — ko'p holatda olmos allaqachon tushgan, faqat ilova eski balansni ko'rsatib turadi. So'ng o'yin ichidagi Pochta bo'limini tekshiring. Shundan keyin ham yo'q bo'lsa, chek va ID bilan supportga yozing."
+      },
+      {
+        "q": "Nima uchun \"ID topilmadi\" degan xato chiqyapti?",
+        "a": "Ko'pincha Server ID kiritilmagan yoki qavs ichidagi raqam User ID ga qo'shib yozilgan. Ba'zan akkaunt boshqa mintaqaviy versiyada bo'ladi va Global bazada topilmaydi. Raqamlarni profil oynasidan qayta ko'chirib, bo'sh joylarni olib tashlang."
+      },
+      {
+        "q": "Olmos boshqa akkauntga ketib qolsa qaytarib bo'ladimi?",
+        "a": "Agar ID xato kiritilgan bo'lsa, olmos o'sha ID egasiga tushadi va uni avtomatik qaytarish imkoni bo'lmaydi. Aynan shuning uchun to'lovdan oldin nickname ko'rsatiladi. Nickname sizniki bo'lmasa, to'lamang va ID ni qaytadan kiriting."
+      },
+      {
+        "q": "Bank puldan yechdi, lekin buyurtma ko'rinmayapti.",
+        "a": "Ba'zi hollarda bank summani vaqtincha ushlab turadi va tranzaksiya tasdiqlanmaydi — bunda pul odatda o'zi qaytadi. Bank ilovasida tranzaksiya \"bajarilgan\" yoki \"kutilmoqda\" ekanini tekshiring. Chek skrinshoti va aniq vaqt bilan supportga murojaat qiling."
+      },
+      {
+        "q": "Supportga aynan nimalarni yozishim kerak?",
+        "a": "User ID, Server ID, nickname, to'lov usuli, to'lov vaqti va chekning to'liq skrinshoti. Shu beshta ma'lumot bo'lsa, buyurtma daqiqalarda topiladi. Skrinshotni kesmang — undagi vaqt va summa qidiruvda ishlatiladi."
+      },
+      {
+        "q": "Qancha kutish normal hisoblanadi?",
+        "a": "Odatiy yetkazish taxminan bir daqiqa. Moonton tomonida texnik ishlar bo'lsa navbat yig'ilib, biroz cho'zilishi mumkin. Sezilarli vaqt o'tib ham hech narsa o'zgarmasa, bu allaqachon support masalasi — kutib o'tirmang."
+      },
+      {
+        "q": "Qayta to'lasam, ikkinchi marta yechilib ketmaydimi?",
+        "a": "Yechilishi mumkin — bajarilmagan buyurtma aniqlanmasidan turib qayta to'lamang. Avval botdagi buyurtma holatini va bank tranzaksiyasini tekshiring, keyin support bilan bog'laning. Ikki marta to'lov ikki marta yetkazishga olib kelishi mumkin."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "HowTo",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "internalLinks": [
+      "/oyinlar/mobile-legends",
+      "mobile-legends-user-id-server-id-qayerda",
+      "mobile-legends-olmos-sotib-olish",
+      "mobile-legends-olmos-arzon-qayerdan-olish"
+    ],
+    "wordCount": 1400
+  },
+  "gameKeywords": {
+    "primary": [
+      "mobile legends olmos sotib olish",
+      "mobile legends olmos to'ldirish",
+      "mlbb olmos sotib olish",
+      "mobile legends donat",
+      "mobile legends olmos arzon",
+      "mobile legends server id",
+      "mobile legends olmos narxi",
+      "mobile legends diamond uzbekistan"
+    ],
+    "questions": [
+      "mobile legends server id qayerda turadi?",
+      "user id va server id farqi nima?",
+      "zone id bilan server id bir xilmi?",
+      "olmos qancha vaqtda tushadi?",
+      "olmos kelmasa nima qilish kerak?",
+      "donat uchun akkaunt bloklanadimi?",
+      "olmosni do'stimga sovg'a qilsam bo'ladimi?",
+      "VPN yoki Visa karta kerakmi?",
+      "narx nega o'zgarib turadi?",
+      "Starlight va Weekly Diamond Pass qaysi biri foydali?",
+      "как узнать server id в mobile legends?",
+      "почему не пришли алмазы после оплаты?"
+    ],
+    "russian": [
+      "купить алмазы mobile legends узбекистан",
+      "пополнение mobile legends сум",
+      "донат mlbb узбекистан",
+      "алмазы мобайл легенд ташкент",
+      "пополнить mobile legends через click",
+      "пополнить mobile legends payme",
+      "как узнать zone id mobile legends",
+      "алмазы не пришли mobile legends",
+      "mobile legends starlight купить",
+      "где дешевле купить алмазы mlbb"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE (WebSearch + WebFetch, avgust 2026): (1) O'zbek tilidagi MLBB donat SERP'i deyarli BO'SH — \"mobile legends olmos sotib olish\", \"olmos to'ldirish narxi\", \"server id qayerda\" kabi so'rovlarda birinchi sahifa Wikipedia, TikTok, YouTube va tasodifiy natijalar bilan to'ladi; hech bir kuchli o'zbekcha tijorat sahifasi yo'q. Bu — eng tez g'alaba nuqtasi. (2) Rus tilida raqobat kuchli, lekin u ROSSIYA sahifalari (kupikod.com, donatov.net, ggpay.gg, vc.ru/DTF gaydlari, prepodsteam) — ular UZS, Click/Payme/UzCard/HUMO'ni umuman ko'rmaydi. O'zbekistonga qaratilgan \".uz\" raqobatchilar zaif: adek.uz (kod orqali, Toshkent do'koni, faqat ruscha katalog sahifalari, kontent yo'q), wildberries.uz karta sahifalari. Global o'yinchilar (mtcgame /uz/ mashina tarjimasi — sahifa 403 qaytardi, codashop, smile.one, topup-balance, hablax, doctorsim) O'zbekiston uchun lokal to'lovni ko'rsatmaydi va kripto/xorijiy karta so'raydi. Ya'ni \"so'mda + mahalliy karta + o'zbekcha\" burchagi egallanmagan. (3) Kupikod FAQ tahlili (WebFetch) real savol shakllarini tasdiqladi: \"olmos nima uchun kerak\", \"pass nima beradi\", \"olmos kelmasa nima qilish\", \"donat uchun ban beriladimi\", \"boshqa odamga sovg'a qilish\", \"yetkazish tezligi\" — 5 ta maqolaning FAQ bloklari shu klasterlarga bog'landi. (4) User ID / Server ID chalkashligi tasdiqlandi: format 123456789 (1234), qavs ichidagi raqam = Server ID; rus segmentida u \"Zone ID\" deb yuritiladi (kupikod, dtf, ggpay hammasi \"User ID va Zone ID\" deydi) — shuning uchun \"zone id\" sinonimini maqola ichida ochiq berish kerak. Bu so'rovda faqat inglizcha bloglar (gpdsgameshop) va YouTube raqobatlashadi — o'zbekcha bo'sh. (5) Region masalasi ham real: Global va Rossiya/MDH klientlari alohida akkaunt bazasi, ID'lar mos kelmaydi — bu \"ID topilmadi\" xatosining haqiqiy sababi. (6) Starlight / Weekly Diamond Pass fakti: Starlight — oylik a'zolik (bazasi 300 olmos, Plus 750), WDP — darhol 80 olmos + 7 kun davomida kuniga 20 olmos (jami ~220); bu raqamlar Moonton tomonidan o'zgartirilishi mumkin, shuning uchun maqolada \"tuzilma\" sifatida beriladi, so'mdagi narx esa hech qayerda yozilmaydi. INFERRED (tasdiqlanmagan): aniq qidiruv hajmlari (volume) — Ahrefs va Semrush MCP konnektorlari bu sessiyada avtorizatsiya qilinmagan, shuning uchun raqamli volume yo'q; kalit so'zlar tartibi SERP zichligi, avtokomplit shakllari va raqobatchi sarlavhalari asosida baholandi. Shuningdek o'zbek foydalanuvchilari \"olmos\" (o'zbekcha) va \"diamond/almaz\" (translit) ni aralash yozadi degan xulosa — bu Telegram MLBB UZ kanallari nomlanishi va aralash so'rovlar asosida taxmin, aniq ulush o'lchanmagan. Strategiya: 5 maqola ham o'zbek tilida yoziladi, lekin har birida ruscha sinonim (алмазы, Zone ID, пополнение) matn ichida tabiiy tilga olinadi — Yandex.uz ruscha so'rovlarda ham ushlab qolsin.",
+  "siblings": [
+    {
+      "slug": "mobile-legends-olmos-sotib-olish",
+      "h1": "Mobile Legends olmos sotib olish: to'liq qo'llanma",
+      "type": "howto"
+    },
+    {
+      "slug": "mobile-legends-olmos-arzon-qayerdan-olish",
+      "h1": "Mobile Legends olmosni qayerdan olish arzon va xavfsiz",
+      "type": "comparison"
+    },
+    {
+      "slug": "mobile-legends-olmos-nima-va-paketlar",
+      "h1": "Mobile Legends olmos nima va unga nima sotib olinadi",
+      "type": "info"
+    },
+    {
+      "slug": "mobile-legends-user-id-server-id-qayerda",
+      "h1": "Mobile Legends User ID va Server ID qayerda turadi",
+      "type": "trust"
+    }
+  ],
+  "cannibalisationFixes": [],
+  "mustLinkTo": [
+    "/oyinlar/mobile-legends",
+    "mobile-legends-olmos-sotib-olish",
+    "mobile-legends-user-id-server-id-qayerda"
+  ],
+  "publishRank": 7
+}

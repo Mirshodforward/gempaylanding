@@ -1,0 +1,179 @@
+{
+  "slug": "pubg-uc-kelmadi-nima-qilish",
+  "game": "pubg-mobile",
+  "gameTitle": "PUBG Mobile",
+  "type": "problem",
+  "spec": {
+    "slug": "pubg-uc-kelmadi-nima-qilish",
+    "type": "problem",
+    "h1": "PUBG UC kelmadi yoki ID topilmadi — sabablari va aniq yechimi",
+    "metaTitle": "PUBG UC kelmadi? Sabablari va yechimi (2026)",
+    "metaDescription": "PUBG UC kelmadi, pul yechildi yoki Player ID topilmadi? Har bir sabab va aniq yechimi: qancha kutish, nima tekshirish va qo'llab-quvvatlashga nima yozish.",
+    "searchIntent": "Muammoli. Foydalanuvchi allaqachon to'lov qilgan yoki qilishga urinmoqda va biror narsa ishlamayapti. Panika holatidagi qidiruv — javob tez, aniq va qadamma-qadam bo'lishi shart. O'zbek tilida bu klaster bo'yicha raqobat deyarli yo'q.",
+    "primaryKeyword": "pubg uc kelmadi",
+    "secondaryKeywords": [
+      "uc tushmadi pubg",
+      "pubg player id topilmadi",
+      "pubg uc pul yechildi kelmadi",
+      "noto'g'ri id ga uc ketdi",
+      "pubg uc kechikmoqda",
+      "не пришли uc pubg что делать"
+    ],
+    "answerBox": "Agar PUBG UC kelmasa, avval o'yinni to'liq yopib qayta oching — UC ko'pincha eski sessiyada ko'rinmaydi. Odatda yetkazish 2 daqiqa, band vaqtda 15 daqiqagacha cho'ziladi. Player ID va niknem to'g'ri ekanini tekshiring, so'ng chek va buyurtma raqami bilan @StarsPaymeeSupport ga murojaat qiling.",
+    "outline": [
+      {
+        "h2": "Tez javob: birinchi navbatda nima qilish kerak",
+        "covers": "To'g'ridan-to'g'ri javob bloki, keyin 3 ta zudlik bilan bajariladigan harakat: o'yinni to'liq yopib qayta ochish; Pochta/Mail bo'limini tekshirish; buyurtma raqami va chekni saqlab qo'yish. Aniq kutish oynasini aytish: 2 daqiqa odatiy, 15 daqiqa chegara.",
+        "block": "key-facts"
+      },
+      {
+        "h2": "Sabab 1: UC tushgan, lekin o'yinda ko'rinmayapti",
+        "covers": "Eng ko'p uchraydigan holat. Balans o'yin sessiyasi ichida yangilanmaydi. Yechim: o'yindan chiqish, ilovani fondan ham yopish, qayta kirish. Shuningdek ba'zi UC va sovg'alar Pochta (Mail) bo'limiga tushishi va qo'lda olinishi kerakligini aytish.",
+        "block": "steps"
+      },
+      {
+        "h2": "Sabab 2: Player ID topilmadi yoki niknem chiqmadi",
+        "covers": "Nega bo'ladi: ID da xato raqam, ortiqcha bo'sh joy, niknem o'rniga ID kiritilgan, yangi yaratilgan akkaunt hali tizimda ko'rinmaydi. Yechim qadamlari: ID ni o'yindan qayta nusxalash, faqat raqamlarni kiritish, 10-11 xonali ekanini tekshirish. ID topish maqolasiga havola.",
+        "block": "steps"
+      },
+      {
+        "h2": "Sabab 3: pul yechildi, lekin buyurtma tasdiqlanmadi",
+        "covers": "Bank tomonida ushlab turilgan to'lov (hold) va haqiqiy yechim farqi. Click/Payme/UzCard tranzaksiyalari ba'zan kechikib tasdiqlanadi va muvaffaqiyatsiz bo'lsa mablag' avtomatik qaytadi. Nima qilish: chekni saqlash, ikkinchi marta to'lamaslik, qo'llab-quvvatlashga yozish.",
+        "block": "prose"
+      },
+      {
+        "h2": "Sabab 4: noto'g'ri Player ID kiritildi",
+        "covers": "Eng jiddiy holat: UC begona akkauntga tushsa, uni qaytarib bo'lmaydi, chunki tizimda operatsiya muvaffaqiyatli hisoblanadi. Shuning uchun to'lovdan OLDIN niknem tekshiruvi bepul beriladi. O'quvchini ogohlantirish: niknem mos kelmasa hech qachon to'lovni davom ettirmang.",
+        "block": "warning"
+      },
+      {
+        "h2": "Muammo turlari va kutilayotgan vaqt",
+        "covers": "Jadval: muammo turi | odatiy sabab | siz bajaradigan harakat | kutish vaqti | qo'llab-quvvatlash kerakmi. Qatorlar: UC ko'rinmayapti, ID topilmadi, to'lov o'tmadi, pul yechildi UC yo'q, noto'g'ri ID, paket noto'g'ri tanlangan.",
+        "block": "compare-table"
+      },
+      {
+        "h2": "Qo'llab-quvvatlashga yozishdan oldin tayyorlang",
+        "covers": "Belgilash ro'yxati: buyurtma raqami; to'lov cheki yoki skrinshot; Player ID; tanlangan paket; to'lov vaqti va usuli; o'yin ichidagi balans skrinshoti. Shu ma'lumotlar bilan murojaat ancha tez hal bo'lishini aytish.",
+        "block": "checklist"
+      },
+      {
+        "h2": "Hali ham hal bo'lmadimi — bizga yozing",
+        "covers": "@StarsPaymeeSupport ga murojaat qilish chaqirig'i, ish vaqti va odatiy javob tezligi haqida real kutish, hamda keyingi safar xatoga yo'l qo'ymaslik uchun asosiy qo'llanmaga havola.",
+        "block": "inline-cta"
+      }
+    ],
+    "faq": [
+      {
+        "q": "UC kelmasa qancha kutishim kerak?",
+        "a": "Odatda UC 2 daqiqada tushadi. Yuklama yuqori bo'lganda 15 daqiqagacha cho'zilishi mumkin. Agar 15 daqiqadan oshsa, kutishni to'xtating va buyurtma raqami bilan qo'llab-quvvatlashga murojaat qiling — takroriy to'lov qilmang."
+      },
+      {
+        "q": "Nega bot mening Player ID mni topa olmayapti?",
+        "a": "Ko'pincha ID da xato raqam bo'ladi yoki nusxalashda ortiqcha bo'sh joy tushib qoladi. ID faqat raqamlardan iborat va 10-11 xonali bo'ladi. Uni niknem bilan aralashtirmang — niknem harflardan iborat va uni o'zgartirish mumkin."
+      },
+      {
+        "q": "Noto'g'ri ID kiritsam UC ni qaytarib olish mumkinmi?",
+        "a": "Afsuski yo'q. UC begona akkauntga tushsa, tizim uchun operatsiya muvaffaqiyatli hisoblanadi va uni bekor qilib bo'lmaydi. Aynan shu sabab biz to'lovdan oldin niknemni bepul ko'rsatamiz — uni albatta solishtiring."
+      },
+      {
+        "q": "Pul kartadan yechildi, lekin buyurtma ko'rinmayapti. Ikkinchi marta to'laymi?",
+        "a": "Yo'q, ikkinchi marta to'lamang. Ba'zan bank mablag'ni vaqtincha ushlab turadi va tranzaksiya tasdiqlanmasa u avtomatik qaytariladi. Chekni saqlab, qo'llab-quvvatlashga yuboring — buyurtma qo'lda tekshiriladi."
+      },
+      {
+        "q": "UC balansda yo'q, lekin Pochtada nimadir bor. Bu nima?",
+        "a": "Ba'zi paketlar va aksiya sovg'alari to'g'ridan-to'g'ri balansga emas, o'yin ichidagi Pochta (Mail) bo'limiga tushadi. U yerga kirib sovg'ani qo'lda qabul qiling, shundan keyin u hisobingizga qo'shiladi."
+      },
+      {
+        "q": "O'yinni qayta ochdim, baribir ko'rinmayapti. Yana nima qilish mumkin?",
+        "a": "Ilovani fon rejimidan ham to'liq yoping, internetni tekshiring va boshqa tarmoqqa ulanib qayta kiring. Ba'zan o'yin serveri balansni kechikib yangilaydi. Shundan keyin ham natija bo'lmasa, chek bilan murojaat qiling."
+      },
+      {
+        "q": "Buyurtma raqamini qayerdan olaman?",
+        "a": "Buyurtma raqami to'lov yakunlangach botdagi tasdiq xabarida yuboriladi. Uni o'chirmang — muammo yuzaga kelsa, aynan shu raqam orqali to'lovingiz tezda topiladi va tekshiriladi."
+      },
+      {
+        "q": "Akkauntim vaqtincha bloklangan bo'lsa, UC tushadimi?",
+        "a": "Bloklangan yoki cheklangan akkauntlarda to'ldirish amalga oshmasligi yoki UC ko'rinmasligi mumkin. Bunday holatda avval PUBG Mobile qo'llab-quvvatlash xizmati bilan akkaunt holatini hal qiling, keyin to'ldirishni takrorlang."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "FAQPage",
+      "HowTo",
+      "BreadcrumbList"
+    ],
+    "internalLinks": [
+      "/oyinlar/pubg-mobile",
+      "pubg-mobile-uc-sotib-olish",
+      "pubg-mobile-player-id-qayerda",
+      "pubg-uc-qayerdan-sotib-olish-taqqoslash"
+    ],
+    "wordCount": 1600
+  },
+  "gameKeywords": {
+    "primary": [
+      "pubg mobile uc sotib olish",
+      "pubg uc sotib olish",
+      "uc sotib olish uzcard",
+      "pubg mobile uc olish o'zbekiston",
+      "pubg uc quyish",
+      "pubg mobile donat uzbekistan"
+    ],
+    "questions": [
+      "pubg mobile uc ni qanday sotib olish mumkin",
+      "pubg mobile player id qayerda turadi",
+      "uc kelmadi nima qilish kerak",
+      "pubg uc necha daqiqada tushadi",
+      "midasbuy uzcard qabul qiladimi",
+      "pubg uc sotib olish xavfsizmi",
+      "id berish akkauntni o'g'irlashga olib keladimi",
+      "royal pass necha uc turadi",
+      "uc nima va unga nima olish mumkin",
+      "noto'g'ri id kiritsam uc qaytadimi",
+      "pubg uc narxi nega o'zgarib turadi",
+      "60 uc mi 660 uc mi foydaliroq"
+    ],
+    "russian": [
+      "купить uc pubg узбекистан",
+      "пополнить uc pubg uzcard",
+      "uc pubg humo оплата",
+      "донат pubg mobile узбекистан в сумах",
+      "купить uc pubg по id ташкент",
+      "midasbuy узбекистан оплата картой",
+      "uc pubg mobile click payme",
+      "куда вводить player id pubg",
+      "не пришли uc pubg что делать",
+      "royal pass купить узбекистан"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE (WebSearch + WebFetch on google-index results): (1) The Uzbek-Latin SERP for every PUBG UC query is essentially empty of real editorial content — it is dominated by t.me/s/ Telegram channel previews (UC_BALLU, UmarPubgm, SENATOR_PUBGM, PUBG_STORE_UZ, MeeBo_PUBG), machine-translated international resellers, and one bank product page (ipakyulibank Visa PUBG card). This is the single biggest finding: there is no Uzbek-language authority page to beat. (2) blog.payme.uz has an Uzbek PUBG page but I fetched it and it is ~200-250 words with exactly ONE H2 and no FAQ — trivially outranked by a 1400-word structured article. (3) hablax.com/uz fetched: machine-translated Uzbek (mixed O' / Oʻ diacritics), has FAQ + steps but NO table, and critically its payment list is Credit Card / PayPal / Apple Pay / crypto — NO UzCard, NO HUMO. That is a verified, citable comparison fact, not an assumption. (4) mtcgame.com/uz and bittopup rank on translated content only. (5) Russian cluster is genuinely more competitive: 1pay.uz has a dedicated 'UC через Humo и UzCard' blog post (returned 403 to my fetch, so I only have its indexed title), adek.uz sells UC as a Tashkent e-shop, midasbuy.com/uz serves Russian-first. But most RU-language competitors (prepodsteam, yoomoney, MTS, ggsel) target RUSSIA, not Uzbekistan — so 'узбекистан'-qualified RU queries are still soft. (6) A Russian competitor page states UC arrives 'within 15 minutes, rarely up to 3 hours' — GemPay's ~2 min is a real, defensible differentiator worth stating. (7) The wrong-ID failure mode is confirmed real and widely searched (topuplist, justanswer, Baxity FAQ all cover 'wrong UID = delivered to wrong account, non-refundable') and has ZERO Uzbek coverage — this makes the free pre-payment nickname check GemPay's strongest story. (8) UC packs 60/325/660/1800/3850/8100 confirmed as standard ladder with bonus UC scaling on larger packs. INFERRED / NOT VERIFIED: no keyword volume or difficulty numbers — the Ahrefs and Semrush MCP connectors in this session are unauthorized (OAuth cannot run non-interactively), so I have NO real volume data; the user should authorize those connectors in claude.ai settings to get hard numbers. Query phrasings above are inferred from indexed competitor titles, Telegram channel copy, and Uzbek morphology (sotib olish / olish / quyish / donat variants), not from an autocomplete API. Royal Pass UC costs (Elite ~720, Elite Plus ~1920) come from third-party guides and shift by season — articles must hedge these, never state them as fixed. COMPETITION READ: attack order = problem cluster (zero competition) > question/AEO cluster (zero competition) > pillar money query (weak, translated competition) > comparison (weak) > Russian cluster (moderate, defer).",
+  "siblings": [
+    {
+      "slug": "pubg-mobile-uc-sotib-olish",
+      "h1": "PUBG Mobile UC sotib olish: O'zbekistonda so'mda, 2 daqiqada",
+      "type": "howto"
+    },
+    {
+      "slug": "pubg-uc-qayerdan-sotib-olish-taqqoslash",
+      "h1": "PUBG UC ni qayerdan sotib olish kerak: Midasbuy, xalqaro saytlar va GemPay taqqoslandi",
+      "type": "comparison"
+    },
+    {
+      "slug": "pubg-uc-nima-paketlar-royal-pass",
+      "h1": "UC nima va PUBG Mobile'da unga nima sotib olish mumkin",
+      "type": "info"
+    },
+    {
+      "slug": "pubg-mobile-player-id-qayerda",
+      "h1": "PUBG Mobile Player ID raqamini qayerda topish va uni berish xavfsizmi",
+      "type": "trust"
+    }
+  ],
+  "cannibalisationFixes": [],
+  "mustLinkTo": [
+    "/oyinlar/pubg-mobile",
+    "pubg-mobile-uc-sotib-olish",
+    "pubg-mobile-player-id-qayerda"
+  ],
+  "publishRank": 8
+}

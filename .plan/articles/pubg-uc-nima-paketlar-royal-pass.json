@@ -1,0 +1,179 @@
+{
+  "slug": "pubg-uc-nima-paketlar-royal-pass",
+  "game": "pubg-mobile",
+  "gameTitle": "PUBG Mobile",
+  "type": "info",
+  "spec": {
+    "slug": "pubg-uc-nima-paketlar-royal-pass",
+    "type": "info",
+    "h1": "UC nima va PUBG Mobile'da unga nima sotib olish mumkin",
+    "metaTitle": "UC nima? PUBG Mobile UC paketlari va Royal Pass",
+    "metaDescription": "UC — PUBG Mobile ichki valyutasi. Qaysi paketlar bor, bonus UC qanday ishlaydi, Royal Pass necha UC turadi va so'mdagi narx nimaga bog'liq — batafsil.",
+    "searchIntent": "Ma'lumot izlash. Ko'pincha yosh yoki yangi o'yinchi: UC nima ekanini, qaysi paket kerakligini va Royal Pass uchun qancha UC yig'ish kerakligini tushunmoqchi. Xarid oldidan o'qiladigan sahifa.",
+    "primaryKeyword": "pubg uc nima",
+    "secondaryKeywords": [
+      "pubg mobile uc paketlari",
+      "royal pass necha uc",
+      "pubg elite pass nima",
+      "bonus uc qanday ishlaydi",
+      "wow coins nima pubg",
+      "pubg uc bilan nima olish mumkin"
+    ],
+    "answerBox": "UC (Unknown Cash) — bu PUBG Mobile ning ichki valyutasi. U bilan Royal Pass, skinlar, qurol ko'rinishlari, sandiqlar va niknem o'zgartirish kartasi olinadi. Asosiy paketlar: 60, 325, 660, 1800, 3850 va 8100 UC. Katta paketlarda bonus UC qo'shiladi, so'mdagi narx esa botda ko'rsatiladi.",
+    "outline": [
+      {
+        "h2": "UC nima va u qanday ishlaydi",
+        "covers": "To'g'ridan-to'g'ri javob, so'ng qisqa faktlar: UC to'liq nomi Unknown Cash; u faqat o'yin ichida ishlaydi; UC akkauntga bog'lanadi va boshqa o'yinchiga to'g'ridan-to'g'ri o'tkazib bo'lmaydi; UC to'ldirish Player ID orqali amalga oshadi.",
+        "block": "key-facts"
+      },
+      {
+        "h2": "UC bilan nimalar sotib olinadi",
+        "covers": "Ro'yxat va tushuntirish: Royal Pass va Elite yangilanishlari, kostyum va skinlar, qurol ko'rinishlari (skin), sandiqlar va crate ochish, mashina skinlari, niknem o'zgartirish kartasi, emotlar, aksiya to'plamlari. Qaysilari doimiy, qaysilari mavsumiy ekanini ajratish.",
+        "block": "prose"
+      },
+      {
+        "h2": "UC paketlari: 60 dan 8100 gacha",
+        "covers": "Jadval: paket (60, 325, 660, 1800, 3850, 8100) | odatda nimaga yetadi | bonus UC bormi | kimga mos. Hech qanday so'm narxi yozilmaydi — faqat UC miqdori va maqsad. Bonus UC katta paketlarda oshib borishini tushuntirish.",
+        "block": "compare-table"
+      },
+      {
+        "h2": "Royal Pass va Elite Pass: qancha UC kerak",
+        "covers": "Royal Pass tuzilishi: bepul yo'nalish, Elite va Elite Plus. Elite odatda ~720 UC, Elite Plus ~1920 UC atrofida bo'ladi, lekin ANIQ miqdor mavsumga qarab o'zgaradi va o'yin ichida ko'rsatiladi — buni ochiq aytish. Darajalarni oshirib borgan sari UC ning bir qismi qaytishi mumkinligini tushuntirish.",
+        "block": "prose"
+      },
+      {
+        "h2": "WOW Coins va boshqa valyutalar",
+        "covers": "UC dan farqli valyutalar: WOW Coins alohida mahsulot va alohida to'ldiriladi; Silver/Kumush tanga bepul yig'iladi va boshqa narsalarga ishlatiladi; AG ba'zi mintaqalarda. Asosiy xabar: UC ni boshqa valyuta bilan aralashtirmang, chunki paket tanlashda xato bo'ladi.",
+        "block": "prose"
+      },
+      {
+        "h2": "So'mdagi narx nimaga bog'liq",
+        "covers": "Narx mantiqi: UC bazasi xalqaro valyutada belgilanadi, provayder narxi USDT kursiga bog'lanadi, so'mdagi yakuniy summa shu kursga qarab kun sayin o'zgaradi. Aksiya davrlarida bonus UC ko'payishi mumkin. Aniq raqam yozilmaydi: joriy narx botda paket tanlaganda ko'rsatiladi.",
+        "block": "price-logic"
+      },
+      {
+        "h2": "Qaysi paketni tanlash kerak",
+        "covers": "Belgilash ro'yxati shaklidagi tavsiya: maqsadingiz Royal Passmi yoki skinmi; kerakli UC miqdorini oldindan hisoblang; bitta katta paket ikkita kichikdan tejamliroq; mavsum boshlanishini kuting, chunki aksiyalar shunda bo'ladi; balansda qolgan UC ni ham hisobga oling.",
+        "block": "checklist"
+      },
+      {
+        "h2": "UC ni so'mda to'ldirish",
+        "covers": "Qisqa o'tish: paketni tanlab bo'lgach, uni GemPay orqali so'mda olish mumkinligi, ~2 daqiqa yetkazish va asosiy qo'llanmaga havola.",
+        "block": "inline-cta"
+      }
+    ],
+    "faq": [
+      {
+        "q": "UC nima degani?",
+        "a": "UC — Unknown Cash so'zlarining qisqartmasi va bu PUBG Mobile ning rasmiy ichki valyutasi. U faqat o'yin ichida ishlaydi: skinlar, sandiqlar, Royal Pass va boshqa narsalar shu valyuta orqali sotib olinadi."
+      },
+      {
+        "q": "PUBG Mobile'da qanday UC paketlari bor?",
+        "a": "Asosiy paketlar 60, 325, 660, 1800, 3850 va 8100 UC. Kichik paketlar arzon narsalar uchun, katta paketlar esa Royal Pass va to'plamlar uchun qulay. Katta paketlarda qo'shimcha bonus UC beriladi."
+      },
+      {
+        "q": "Royal Pass necha UC turadi?",
+        "a": "Elite Pass odatda 720 UC atrofida, Elite Plus esa 1920 UC atrofida bo'ladi. Ammo aniq miqdor har mavsumda o'zgarishi mumkin, shuning uchun xariddan oldin o'yin ichidagi Royal Pass oynasidagi joriy raqamni ko'ring."
+      },
+      {
+        "q": "Bonus UC nima va u qanday ishlaydi?",
+        "a": "Bonus UC — katta paketlarga qo'shib beriladigan qo'shimcha miqdor. Paket qanchalik katta bo'lsa, bonus ulushi shunchalik yuqori bo'ladi. Shu sababli bitta katta paket olish, bir nechta kichik paket olishdan ko'ra tejamliroq chiqadi."
+      },
+      {
+        "q": "UC ni do'stimga o'tkazsam bo'ladimi?",
+        "a": "Yo'q, UC akkauntga bog'langan va uni boshqa o'yinchiga to'g'ridan-to'g'ri o'tkazib bo'lmaydi. Ammo do'stingizga sovg'a qilmoqchi bo'lsangiz, uning Player ID raqamini kiritib, to'ldirishni bevosita uning hisobiga qilishingiz mumkin."
+      },
+      {
+        "q": "WOW Coins UC bilan bir xilmi?",
+        "a": "Yo'q. WOW Coins alohida valyuta va alohida to'ldiriladi, u UC o'rnini bosmaydi. Paket tanlashda ehtiyot bo'ling: UC kerak bo'lsa UC paketini, WOW Coins kerak bo'lsa mos mahsulotni tanlang."
+      },
+      {
+        "q": "UC narxi nega doim o'zgarib turadi?",
+        "a": "Chunki bazaviy narx xalqaro valyutada belgilanadi va provayder narxi USDT kursiga bog'langan. Kurs o'zgarsa, so'mdagi summa ham o'zgaradi. Aynan shu sababli biz maqolada aniq raqam yozmaymiz — joriy narx botda ko'rsatiladi."
+      },
+      {
+        "q": "Bepul UC olish yo'llari bormi?",
+        "a": "Rasmiy yo'llar cheklangan: o'yin ichidagi tadbirlar, aksiyalar va Royal Pass mukofotlari orqali oz miqdorda UC olish mumkin. Internetdagi bepul UC generatorlari esa ishlamaydi va ko'pincha akkauntni o'g'irlash uchun qo'yilgan tuzoqdir."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "FAQPage",
+      "ItemList",
+      "BreadcrumbList"
+    ],
+    "internalLinks": [
+      "/oyinlar/pubg-mobile",
+      "pubg-mobile-uc-sotib-olish",
+      "pubg-uc-qayerdan-sotib-olish-taqqoslash",
+      "pubg-mobile-player-id-qayerda"
+    ],
+    "wordCount": 1600
+  },
+  "gameKeywords": {
+    "primary": [
+      "pubg mobile uc sotib olish",
+      "pubg uc sotib olish",
+      "uc sotib olish uzcard",
+      "pubg mobile uc olish o'zbekiston",
+      "pubg uc quyish",
+      "pubg mobile donat uzbekistan"
+    ],
+    "questions": [
+      "pubg mobile uc ni qanday sotib olish mumkin",
+      "pubg mobile player id qayerda turadi",
+      "uc kelmadi nima qilish kerak",
+      "pubg uc necha daqiqada tushadi",
+      "midasbuy uzcard qabul qiladimi",
+      "pubg uc sotib olish xavfsizmi",
+      "id berish akkauntni o'g'irlashga olib keladimi",
+      "royal pass necha uc turadi",
+      "uc nima va unga nima olish mumkin",
+      "noto'g'ri id kiritsam uc qaytadimi",
+      "pubg uc narxi nega o'zgarib turadi",
+      "60 uc mi 660 uc mi foydaliroq"
+    ],
+    "russian": [
+      "купить uc pubg узбекистан",
+      "пополнить uc pubg uzcard",
+      "uc pubg humo оплата",
+      "донат pubg mobile узбекистан в сумах",
+      "купить uc pubg по id ташкент",
+      "midasbuy узбекистан оплата картой",
+      "uc pubg mobile click payme",
+      "куда вводить player id pubg",
+      "не пришли uc pubg что делать",
+      "royal pass купить узбекистан"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE (WebSearch + WebFetch on google-index results): (1) The Uzbek-Latin SERP for every PUBG UC query is essentially empty of real editorial content — it is dominated by t.me/s/ Telegram channel previews (UC_BALLU, UmarPubgm, SENATOR_PUBGM, PUBG_STORE_UZ, MeeBo_PUBG), machine-translated international resellers, and one bank product page (ipakyulibank Visa PUBG card). This is the single biggest finding: there is no Uzbek-language authority page to beat. (2) blog.payme.uz has an Uzbek PUBG page but I fetched it and it is ~200-250 words with exactly ONE H2 and no FAQ — trivially outranked by a 1400-word structured article. (3) hablax.com/uz fetched: machine-translated Uzbek (mixed O' / Oʻ diacritics), has FAQ + steps but NO table, and critically its payment list is Credit Card / PayPal / Apple Pay / crypto — NO UzCard, NO HUMO. That is a verified, citable comparison fact, not an assumption. (4) mtcgame.com/uz and bittopup rank on translated content only. (5) Russian cluster is genuinely more competitive: 1pay.uz has a dedicated 'UC через Humo и UzCard' blog post (returned 403 to my fetch, so I only have its indexed title), adek.uz sells UC as a Tashkent e-shop, midasbuy.com/uz serves Russian-first. But most RU-language competitors (prepodsteam, yoomoney, MTS, ggsel) target RUSSIA, not Uzbekistan — so 'узбекистан'-qualified RU queries are still soft. (6) A Russian competitor page states UC arrives 'within 15 minutes, rarely up to 3 hours' — GemPay's ~2 min is a real, defensible differentiator worth stating. (7) The wrong-ID failure mode is confirmed real and widely searched (topuplist, justanswer, Baxity FAQ all cover 'wrong UID = delivered to wrong account, non-refundable') and has ZERO Uzbek coverage — this makes the free pre-payment nickname check GemPay's strongest story. (8) UC packs 60/325/660/1800/3850/8100 confirmed as standard ladder with bonus UC scaling on larger packs. INFERRED / NOT VERIFIED: no keyword volume or difficulty numbers — the Ahrefs and Semrush MCP connectors in this session are unauthorized (OAuth cannot run non-interactively), so I have NO real volume data; the user should authorize those connectors in claude.ai settings to get hard numbers. Query phrasings above are inferred from indexed competitor titles, Telegram channel copy, and Uzbek morphology (sotib olish / olish / quyish / donat variants), not from an autocomplete API. Royal Pass UC costs (Elite ~720, Elite Plus ~1920) come from third-party guides and shift by season — articles must hedge these, never state them as fixed. COMPETITION READ: attack order = problem cluster (zero competition) > question/AEO cluster (zero competition) > pillar money query (weak, translated competition) > comparison (weak) > Russian cluster (moderate, defer).",
+  "siblings": [
+    {
+      "slug": "pubg-mobile-uc-sotib-olish",
+      "h1": "PUBG Mobile UC sotib olish: O'zbekistonda so'mda, 2 daqiqada",
+      "type": "howto"
+    },
+    {
+      "slug": "pubg-uc-kelmadi-nima-qilish",
+      "h1": "PUBG UC kelmadi yoki ID topilmadi — sabablari va aniq yechimi",
+      "type": "problem"
+    },
+    {
+      "slug": "pubg-uc-qayerdan-sotib-olish-taqqoslash",
+      "h1": "PUBG UC ni qayerdan sotib olish kerak: Midasbuy, xalqaro saytlar va GemPay taqqoslandi",
+      "type": "comparison"
+    },
+    {
+      "slug": "pubg-mobile-player-id-qayerda",
+      "h1": "PUBG Mobile Player ID raqamini qayerda topish va uni berish xavfsizmi",
+      "type": "trust"
+    }
+  ],
+  "cannibalisationFixes": [],
+  "mustLinkTo": [
+    "/oyinlar/pubg-mobile",
+    "pubg-mobile-uc-sotib-olish",
+    "pubg-uc-qayerdan-sotib-olish-taqqoslash"
+  ],
+  "publishRank": 19
+}

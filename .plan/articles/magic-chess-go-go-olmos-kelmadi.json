@@ -1,0 +1,186 @@
+{
+  "slug": "magic-chess-go-go-olmos-kelmadi",
+  "game": "magic-chess-go-go",
+  "gameTitle": "Magic Chess: Go Go",
+  "type": "problem",
+  "spec": {
+    "slug": "magic-chess-go-go-olmos-kelmadi",
+    "type": "problem",
+    "h1": "Magic Chess: Go Go olmos kelmadi? Sabablari va yechimi",
+    "metaTitle": "Magic Chess Go Go olmos kelmadi — sabab va yechim",
+    "metaDescription": "Magic Chess: Go Go olmos kelmadimi? Noto'g'ri Server ID, xato region, band server — asosiy sabablarni va har biri uchun aniq yechimni ko'rsatamiz.",
+    "searchIntent": "Problem-solving, yuqori shoshilinchlik. O'yinchi allaqachon to'lov qilgan va olmos yo'q — u sababni va aniq harakat rejasini qidiradi. Bu klaster GemPay uchun ishonch quradi va qo'llab-quvvatlash yukini kamaytiradi.",
+    "primaryKeyword": "magic chess go go olmos kelmadi",
+    "secondaryKeywords": [
+      "magic chess go go donat kelmadi",
+      "magic chess go go noto'g'ri server id",
+      "magic chess go go buyurtma bajarilmadi",
+      "magic chess go go olmos tushmadi nima qilish",
+      "magic chess go go region xatosi",
+      "magic chess go go pul qaytarish"
+    ],
+    "answerBox": "Magic Chess: Go Go olmosi kelmasligining eng ko'p uchraydigan sababi — noto'g'ri Server ID yoki boshqa region hisobiga to'lov. GemPay'da nik to'lovdan oldin tekshirilgani uchun bunday xato deyarli bo'lmaydi. Agar 15 daqiqada tushmasa, o'yinni to'liq qayta ishga tushiring va buyurtma raqami bilan @StarsPaymeeSupport ga yozing.",
+    "outline": [
+      {
+        "h2": "Avval shuni tekshiring: olmos aslida tushganmi",
+        "covers": "Panika qilishdan oldingi 4 ta tekshiruv: o'yindan to'liq chiqib qayta kirish, to'g'ri akkauntga kirganini tasdiqlash, pochta/xabarlar bo'limini ko'rish, balansni yangilash. Ko'p holat shu bosqichda yopiladi.",
+        "block": "checklist"
+      },
+      {
+        "h2": "Sabab 1: Server ID noto'g'ri kiritilgan",
+        "covers": "Qavs ichidagi raqam tushib qolgani yoki bitta raqam xato yozilgani. Agar ID+Server kombinatsiyasi mavjud bo'lmasa buyurtma bajarilmaydi va mablag' qaytariladi; agar u boshqa real o'yinchiga tegishli bo'lsa, olmos o'shanga tushadi va qaytarilmaydi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Sabab 2: Boshqa region hisobiga to'lov qilingan",
+        "covers": "Ba'zi saytlarda mahsulot region bo'yicha bo'lingan — Rossiya, Global, Turkiya. O'zbekistondagi o'yinchi odatda Global/APAC da. Noto'g'ri region tanlansa buyurtma rad etiladi yoki boshqa serverdagi hisobga ketadi. Bu xato ayniqsa rus donat saytlarida uchraydi.",
+        "block": "warning"
+      },
+      {
+        "h2": "Sabab 3: O'yin keshi yangilanmagan",
+        "covers": "Balans eski holda ko'rinishi. Yechim qadamlari: ilovadan to'liq chiqish (fon jarayonini yopish), internetni tekshirish, qayta kirish, kerak bo'lsa ilovani yangilash.",
+        "block": "steps"
+      },
+      {
+        "h2": "Sabab 4: To'lov o'tmagan yoki qaytgan",
+        "covers": "Kartada limit, bloklangan tranzaksiya, bank tomonidan rad etish. Bank ilovasidan tranzaksiya holatini tekshirish; pul ushlab qolingan bo'lsa odatda avtomatik qaytadi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Sabablar va yechimlar jadvali",
+        "covers": "Jadval: Belgi (olmos yo'q / buyurtma rad etildi / pul yechildi lekin buyurtma yo'q / boshqa nik ko'rindi) — Ehtimoliy sabab — Nima qilish — Pul qaytadimi. Skanerlash uchun qulay format.",
+        "block": "compare-table"
+      },
+      {
+        "h2": "Qo'llab-quvvatlashga qanday yozish kerak",
+        "covers": "@StarsPaymeeSupport ga yozishda nima yuborish: buyurtma raqami, User ID va Server ID, to'lov vaqti va usuli, chek skrinshoti. Shu ma'lumot bilan masala tezroq yopiladi.",
+        "block": "steps"
+      },
+      {
+        "h2": "Keyingi safar xatosiz to'ldirish",
+        "covers": "Nik tekshiruvidan foydalanish va ID ni har safar o'yin ichidan nusxalash chaqirig'i; botga havola.",
+        "block": "inline-cta"
+      }
+    ],
+    "faq": [
+      {
+        "q": "To'lov o'tdi, lekin olmos yo'q. Nima qilay?",
+        "a": "Avval o'yindan to'liq chiqib, qayta kiring — ko'pincha balans shundan keyin yangilanadi. Hali ham yo'q bo'lsa, buyurtma raqami va User ID ni @StarsPaymeeSupport ga yuboring."
+      },
+      {
+        "q": "Noto'g'ri Server ID kiritsam, olmos qayerga ketadi?",
+        "a": "Agar ID va Server ID kombinatsiyasi umuman mavjud bo'lmasa, buyurtma bajarilmaydi va mablag' qaytariladi. Agar u boshqa real o'yinchiga tegishli bo'lsa, olmos o'shanga tushadi va qaytarib bo'lmaydi. Shuning uchun nik tekshiruvini o'tkazib yubormang."
+      },
+      {
+        "q": "Rus saytida to'ldirsam, akkauntimga tushadimi?",
+        "a": "Har doim ham emas. Ba'zi saytlarda mahsulot region bo'yicha ajratilgan — Rossiya, Global va Turkiya. Noto'g'ri region tanlansa, buyurtma rad etiladi yoki boshqa serverdagi hisobga ketadi."
+      },
+      {
+        "q": "Qancha kutish kerak?",
+        "a": "Odatda 2 daqiqa. Yangi mavsum boshlanishi yoki katta yangilanish paytida Moonton serveri sekinlashadi va 10-15 daqiqagacha cho'zilishi mumkin."
+      },
+      {
+        "q": "Pulim qaytariladimi?",
+        "a": "Buyurtma texnik sabab bilan bajarilmasa, mablag' to'lov qilingan usulga qaytariladi. Agar olmos siz kiritgan ID ga muvaffaqiyatli yetkazilgan bo'lsa, qaytarish imkoni yo'q."
+      },
+      {
+        "q": "Buyurtma raqamini qayerdan olaman?",
+        "a": "Har bir to'lovdan keyin bot chek va buyurtma raqamini yuboradi. Uni saqlab qo'ying — qo'llab-quvvatlashga murojaat qilganda birinchi navbatda shu raqam so'raladi."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "HowTo",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "internalLinks": [
+      "/oyinlar/magic-chess-go-go",
+      "magic-chess-go-go-user-id-server-id-qayerda",
+      "magic-chess-go-go-olmos-sotib-olish",
+      "magic-chess-go-go-codashop-yoki-gempay",
+      "gempay-ishonli-xizmat",
+      "pubg-uc-yetkazish-vaqti"
+    ],
+    "wordCount": 1300
+  },
+  "gameKeywords": {
+    "primary": [
+      "magic chess go go olmos sotib olish",
+      "magic chess go go olmos to'ldirish",
+      "magic chess go go donat",
+      "mcgg olmos sotib olish",
+      "magic chess go go to'ldirish O'zbekiston",
+      "magic chess olmos narxi"
+    ],
+    "questions": [
+      "magic chess go go olmosini O'zbekistonda qanday sotib olaman?",
+      "magic chess go go user id va server id qayerda turadi?",
+      "magic chess go go va mobile legends id bir xilmi?",
+      "magic chess go go olmos qancha vaqtda tushadi?",
+      "nega magic chess go go olmos kelmadi?",
+      "magic chess go go da olmos nimaga sarflanadi?",
+      "magic chess go go eng katta olmos paketi qaysi?",
+      "go go pass nima va arziydimi?",
+      "magic chess go go ni uzcard yoki humo bilan to'ldirsa bo'ladimi?",
+      "codashop O'zbekiston kartasini qabul qiladimi?",
+      "magic chess go go bepul olmos generatori ishlaydimi?",
+      "noto'g'ri server id kiritsam olmos qayerga ketadi?"
+    ],
+    "russian": [
+      "донат magic chess go go",
+      "купить алмазы magic chess go go",
+      "magic chess go go пополнение узбекистан",
+      "как задонатить в magic chess go go",
+      "magic chess go go id сервера где найти",
+      "magic chess go go алмазы дешево",
+      "пополнить magic chess go go через click payme",
+      "magic chess go go не пришли алмазы",
+      "магик чесс го го алмазы купить",
+      "magic chess go go донат по id"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE: (1) Uzbek-language SERP for this game is effectively EMPTY — queries like \"Magic Chess Go Go olmos sotib olish O'zbekiston\" and \"'magic chess' olmos to'ldirish Payme Click UzCard Humo\" returned zero relevant results, only Wikipedia/Google Play and Uzbek gambling-affiliate spam (Mostbet, BetWinner, FairPari). There is no Uzbek-language competitor page for MCGG topup at all. This is the single strongest finding: a first-mover land grab. (2) Russian SERP IS contested but by RU-domestic resellers only: KupiKod, Donatov.net, IGM.GG, GroguPay, GalaxyLink, HornyBox, Smile One, PayClarus, CoolGameService, LuukeDonate. None are Uzbekistan-oriented, none list UzCard/HUMO/Click/Payme — so any RU query qualified with \"узбекистан\" / local payment is winnable. (3) ID mechanics verified: MCGG requires User ID + Zone/Server ID in the format 100000520(1234); found by tapping the avatar in the upper-left corner, or via profile \"Основная информация\"/Basic Info. Donatov.net uses the wording \"ID вашего профиля в игре\" + \"ID сервера, на котором играете\". (4) BIG CONTENT GAP: neither Codashop nor donatov.blog's \"how to donate\" guide actually explains WHERE in the game to find the ID — donatov.blog only says \"Внимательно проверьте все цифры!\". A real step-by-step ID guide has zero real competition. (5) Package tiers verified from Codashop: 55, 275, 565, 1160, 1770, 2975, 4165, 6000 diamonds, plus a Weekly Pass and Go Go Pass (1750 diamonds). These are diamond COUNTS, not so'm prices, so they are safe to publish under the no-invented-prices rule. (6) Codashop does NOT verify/display the player nickname before payment — confirmed on its page. GemPay's free pre-payment nickname check is therefore a genuine, provable differentiator, not marketing fluff. (7) Region trap is REAL: donatov.blog shows separate server products \"Для России\" / \"Глобальный\" / \"Турция\", and Smile One sells a distinct \"Magic Chess: Go Go (Россия)\" SKU. Uzbek players are on Global/APAC, so a wrong-region purchase fails or lands elsewhere. (8) Delivery-time gap: donatov.net states \"среднее время доставки около 10 минут\" and admits it can stretch to hours under load; GemPay's ~2 min is a defensible comparison point. (9) MLBB confusion confirmed: MCGG is a separate app (Google Play packages com.mobilechess.gp global and com.mobilechess.us US) that links to the same Moonton account for cross-game rewards — so users genuinely have one Moonton account but distinct game IDs. (10) Diamond sinks verified via BlueStacks guides: Go Go Pass (seasonal skins, emotes, star protection cards, accessories, star-up effects), commander skins, chessboard cosmetics, limited bundles; commanders cost 150 diamonds but Chess Points are the better route. (11) Scam demand is real: a \"Magic Chess Go Go Hack Tool Gold Generator No Human Verification\" spam page ranks in English SERP, justifying the trust/safety angle. INFERRED, NOT VERIFIED: exact search volumes and keyword difficulty — the Ahrefs and Semrush connectors in this session are unauthorized, so no volume data could be pulled; all volume claims are qualitative. Uzbek Latin phrasings (\"olmos sotib olish\", \"to'ldirish\", \"donat\") are extrapolated from how Uzbek gamers phrase MLBB/PUBG queries and from GemPay's existing ranking blog slugs, not from observed MCGG autocomplete — because MCGG Uzbek autocomplete has essentially no data yet. Transliterated forms (\"medjik chess\", \"magik chess\") are inferred. COMPETITION READ: Uzbek = open field, rank achievable with a single well-structured page per cluster. Russian-with-UZ-qualifier = light, beatable on payment-method relevance. Global English = saturated (SEAGM, MooGold, Codashop, Eneba) — do not chase it. AEO note: LLMs currently have almost no Uzbek-language grounding on MCGG topup, so a clean answerBox + FAQ structure is very likely to become the cited source.",
+  "siblings": [
+    {
+      "slug": "magic-chess-go-go-olmos-sotib-olish",
+      "h1": "Magic Chess: Go Go olmos sotib olish — O'zbekistonda 2 daqiqada",
+      "type": "howto"
+    },
+    {
+      "slug": "magic-chess-go-go-codashop-yoki-gempay",
+      "h1": "Magic Chess: Go Go: Codashop, rasmiy do'kon yoki GemPay — qaysi biri O'zbekiston uchun?",
+      "type": "comparison"
+    },
+    {
+      "slug": "magic-chess-go-go-olmos-paketlari",
+      "h1": "Magic Chess: Go Go olmos paketlari va ularga nima olish mumkin",
+      "type": "info"
+    },
+    {
+      "slug": "magic-chess-go-go-user-id-server-id-qayerda",
+      "h1": "Magic Chess: Go Go User ID va Server ID qayerda? To'liq qo'llanma",
+      "type": "trust"
+    }
+  ],
+  "cannibalisationFixes": [
+    {
+      "with": [
+        "magic-chess-go-go-olmos-sotib-olish",
+        "magic-chess-go-go-codashop-yoki-gempay",
+        "magic-chess-go-go-olmos-paketlari",
+        "magic-chess-go-go-user-id-server-id-qayerda",
+        "honor-of-kings-token-sotib-olish",
+        "delta-force-coins-arzon-qayerdan-olish"
+      ],
+      "problem": "Fourteen internal links point at URLs that do not exist in the 45-article set: mobile-legends-olmos-toldirish (the real slug is mobile-legends-olmos-sotib-olish), pubg-uc-payme-click, pubg-uc-yetkazish-vaqti, oyin-valyutasi-qayerdan-arzon, oyin-pul-xavfsiz-toldirish, gempay-ishonli-xizmat, /oyinlar/steam. Three URL conventions are used interchangeably in the same arrays (bare slug, /blog/<slug>, /oyinlar/<slug>), which will produce inconsistent hrefs at build time.",
+      "fix": "One convention: /blog/<slug> for articles, /oyinlar/<slug> for game money pages, /xizmatlar/<slug> for non-game services. Fix mobile-legends-olmos-toldirish → mobile-legends-olmos-sotib-olish. Build the three hubs (they are worth building) and delete the two invented PUBG slugs. Either build /oyinlar/steam with at least one supporting article or remove the link — an orphaned money page with zero supporting content ranks for nothing."
+    }
+  ],
+  "mustLinkTo": [
+    "/oyinlar/magic-chess-go-go",
+    "magic-chess-go-go-olmos-sotib-olish",
+    "magic-chess-go-go-user-id-server-id-qayerda"
+  ],
+  "publishRank": 26
+}

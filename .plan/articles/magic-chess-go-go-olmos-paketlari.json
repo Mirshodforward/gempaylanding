@@ -1,0 +1,188 @@
+{
+  "slug": "magic-chess-go-go-olmos-paketlari",
+  "game": "magic-chess-go-go",
+  "gameTitle": "Magic Chess: Go Go",
+  "type": "info",
+  "spec": {
+    "slug": "magic-chess-go-go-olmos-paketlari",
+    "type": "info",
+    "h1": "Magic Chess: Go Go olmos paketlari va ularga nima olish mumkin",
+    "metaTitle": "Magic Chess Go Go olmos paketlari va Go Go Pass",
+    "metaDescription": "Magic Chess: Go Go olmos paketlari: 55 dan 6000 gacha. Go Go Pass, komandir skinlari va doska bezaklari — olmos nimaga sarflanadi va narx qanday hisoblanadi.",
+    "searchIntent": "Informational / consideration. O'yinchi hali qaror qilmagan: olmos nima, qanday paketlar bor, nimaga sarflash foydali va narx nimaga bog'liq. Klasterning ma'lumot ustuni, pillar sahifaga trafik uzatadi.",
+    "primaryKeyword": "magic chess go go olmos paketlari",
+    "secondaryKeywords": [
+      "magic chess go go olmos nima",
+      "go go pass nima",
+      "magic chess go go komandir skin",
+      "magic chess go go chess points",
+      "magic chess go go olmos nimaga sarflanadi",
+      "magic chess go go haftalik pass"
+    ],
+    "answerBox": "Olmos (Diamonds) — Magic Chess: Go Go ning asosiy pullik valyutasi. Rasmiy paketlar 55, 275, 565, 1160, 1770, 2975, 4165 va 6000 olmosdan iborat, alohida Go Go Pass ham bor. Olmosga komandir skinlari, doska bezaklari, emotelar va Pass mukofotlari olinadi. Aniq narx botda ko'rsatiladi.",
+    "outline": [
+      {
+        "h2": "Olmos nima va Chess Points'dan farqi",
+        "covers": "Olmos — pullik valyuta, Chess Points — o'yin ichida bepul to'planadigan valyuta. Chess Points asosan komandirlarni ochishga ketadi; olmos kosmetika va Pass uchun. Ikkalasini adashtirmaslik kerak.",
+        "block": "prose"
+      },
+      {
+        "h2": "Rasmiy olmos paketlari",
+        "covers": "Jadval: paket hajmi (55, 275, 565, 1160, 1770, 2975, 4165, 6000) va har biri odatda nimaga yetadi (masalan bitta skin, Pass, bir nechta bezak). Faqat olmos soni ko'rsatiladi — so'mdagi narx yozilmaydi.",
+        "block": "compare-table"
+      },
+      {
+        "h2": "Go Go Pass va haftalik pass",
+        "covers": "Go Go Pass — mavsumiy mukofot yo'li (cheklangan skinlar, emotelar, yulduz himoya kartalari, aksessuarlar, yulduz effektlari), taxminan 1750 olmos darajasida. Haftalik pass — kichikroq, muntazam variant. Kimga qaysi biri mos kelishi.",
+        "block": "key-facts"
+      },
+      {
+        "h2": "Olmosni nimaga sarflash foydali",
+        "covers": "Tavsiya tartibi: avval Go Go Pass, keyin komandir skinlari va doska bezaklari. Komandirni 150 olmosga sotib olish odatda isrof — uni Chess Points bilan ochish arzonroq. Cheklangan to'plamlar haqida qisqa izoh.",
+        "block": "prose"
+      },
+      {
+        "h2": "Narx qanday shakllanadi va nega o'zgaradi",
+        "covers": "Narx provayder kursi va USDT kursiga bog'liq; bank komissiyasi va do'kon ustamasi ham ta'sir qiladi. Shuning uchun saytda qat'iy so'm raqami yo'q — aniq narx botda paketni tanlaganda chiqadi. Katta paketlarda olmos birligi odatda arzonroq tushadi.",
+        "block": "price-logic"
+      },
+      {
+        "h2": "Qaysi paketni tanlash kerak",
+        "covers": "Qaror ro'yxati: nima olmoqchisiz (Pass / bitta skin / bir nechta bezak), joriy balansingiz qancha, mavsum qachon tugaydi, ortiqcha olmos kerakmi. Shu savollarga javob paketni aniqlaydi.",
+        "block": "checklist"
+      },
+      {
+        "h2": "Paketni botda ko'rish",
+        "covers": "Botda barcha mavjud paketlar va ularning joriy narxi ko'rinishi; nik tekshiruvi bepul bo'lgani uchun avval ko'rib chiqib, keyin qaror qilish mumkin.",
+        "block": "inline-cta"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Olmos bilan Chess Points farqi nima?",
+        "a": "Chess Points o'yin ichida bepul to'planadi va asosan komandirlarni ochishga ketadi. Olmos esa pullik valyuta — skin, doska bezagi va Pass kabi narsalar uchun. Komandirni olmosga sotib olish odatda tejamli emas."
+      },
+      {
+        "q": "Eng katta olmos paketi qaysi?",
+        "a": "Rasmiy ro'yxatda eng katta paket 6000 olmos. Undan tashqari 55, 275, 565, 1160, 1770, 2975 va 4165 olmoslik variantlar mavjud."
+      },
+      {
+        "q": "Go Go Pass nima va arziydimi?",
+        "a": "Bu mavsumiy mukofot yo'li: cheklangan skinlar, emotelar, yulduz himoya kartalari va aksessuarlar beradi. Muntazam o'ynaydiganlar uchun olmosni sarflashning eng foydali yo'li odatda shu."
+      },
+      {
+        "q": "Nega saytda so'mdagi narx yozilmagan?",
+        "a": "Narx provayder va USDT kursi bilan birga harakatlanadi. Sayt raqamni yozib qo'ysa, u tez orada eskiradi va o'yinchini chalg'itadi. Shuning uchun aniq narx botda paketni tanlaganda ko'rsatiladi."
+      },
+      {
+        "q": "Bir necha kichik paket olganim yaxshimi yoki bitta katta?",
+        "a": "Odatda katta paketlarda olmos birligi arzonroq tushadi. Lekin faqat Pass yoki bitta skin kerak bo'lsa, ortiqcha olmos olishning ma'nosi yo'q — avval nima olishingizni aniqlang."
+      },
+      {
+        "q": "Olmos boshqa o'yinchiga sovg'a qilinadimi?",
+        "a": "Olmosning o'zi to'g'ridan-to'g'ri uzatilmaydi. Do'stingizga yordam bermoqchi bo'lsangiz, uning User ID va Server ID sini olib, o'sha hisobga to'ldirish eng oddiy yo'l."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "FAQPage",
+      "BreadcrumbList",
+      "ItemList",
+      "Product"
+    ],
+    "internalLinks": [
+      "/oyinlar/magic-chess-go-go",
+      "magic-chess-go-go-olmos-sotib-olish",
+      "magic-chess-go-go-codashop-yoki-gempay",
+      "magic-chess-go-go-user-id-server-id-qayerda",
+      "mobile-legends-olmos-toldirish"
+    ],
+    "wordCount": 1400
+  },
+  "gameKeywords": {
+    "primary": [
+      "magic chess go go olmos sotib olish",
+      "magic chess go go olmos to'ldirish",
+      "magic chess go go donat",
+      "mcgg olmos sotib olish",
+      "magic chess go go to'ldirish O'zbekiston",
+      "magic chess olmos narxi"
+    ],
+    "questions": [
+      "magic chess go go olmosini O'zbekistonda qanday sotib olaman?",
+      "magic chess go go user id va server id qayerda turadi?",
+      "magic chess go go va mobile legends id bir xilmi?",
+      "magic chess go go olmos qancha vaqtda tushadi?",
+      "nega magic chess go go olmos kelmadi?",
+      "magic chess go go da olmos nimaga sarflanadi?",
+      "magic chess go go eng katta olmos paketi qaysi?",
+      "go go pass nima va arziydimi?",
+      "magic chess go go ni uzcard yoki humo bilan to'ldirsa bo'ladimi?",
+      "codashop O'zbekiston kartasini qabul qiladimi?",
+      "magic chess go go bepul olmos generatori ishlaydimi?",
+      "noto'g'ri server id kiritsam olmos qayerga ketadi?"
+    ],
+    "russian": [
+      "донат magic chess go go",
+      "купить алмазы magic chess go go",
+      "magic chess go go пополнение узбекистан",
+      "как задонатить в magic chess go go",
+      "magic chess go go id сервера где найти",
+      "magic chess go go алмазы дешево",
+      "пополнить magic chess go go через click payme",
+      "magic chess go go не пришли алмазы",
+      "магик чесс го го алмазы купить",
+      "magic chess go go донат по id"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE: (1) Uzbek-language SERP for this game is effectively EMPTY — queries like \"Magic Chess Go Go olmos sotib olish O'zbekiston\" and \"'magic chess' olmos to'ldirish Payme Click UzCard Humo\" returned zero relevant results, only Wikipedia/Google Play and Uzbek gambling-affiliate spam (Mostbet, BetWinner, FairPari). There is no Uzbek-language competitor page for MCGG topup at all. This is the single strongest finding: a first-mover land grab. (2) Russian SERP IS contested but by RU-domestic resellers only: KupiKod, Donatov.net, IGM.GG, GroguPay, GalaxyLink, HornyBox, Smile One, PayClarus, CoolGameService, LuukeDonate. None are Uzbekistan-oriented, none list UzCard/HUMO/Click/Payme — so any RU query qualified with \"узбекистан\" / local payment is winnable. (3) ID mechanics verified: MCGG requires User ID + Zone/Server ID in the format 100000520(1234); found by tapping the avatar in the upper-left corner, or via profile \"Основная информация\"/Basic Info. Donatov.net uses the wording \"ID вашего профиля в игре\" + \"ID сервера, на котором играете\". (4) BIG CONTENT GAP: neither Codashop nor donatov.blog's \"how to donate\" guide actually explains WHERE in the game to find the ID — donatov.blog only says \"Внимательно проверьте все цифры!\". A real step-by-step ID guide has zero real competition. (5) Package tiers verified from Codashop: 55, 275, 565, 1160, 1770, 2975, 4165, 6000 diamonds, plus a Weekly Pass and Go Go Pass (1750 diamonds). These are diamond COUNTS, not so'm prices, so they are safe to publish under the no-invented-prices rule. (6) Codashop does NOT verify/display the player nickname before payment — confirmed on its page. GemPay's free pre-payment nickname check is therefore a genuine, provable differentiator, not marketing fluff. (7) Region trap is REAL: donatov.blog shows separate server products \"Для России\" / \"Глобальный\" / \"Турция\", and Smile One sells a distinct \"Magic Chess: Go Go (Россия)\" SKU. Uzbek players are on Global/APAC, so a wrong-region purchase fails or lands elsewhere. (8) Delivery-time gap: donatov.net states \"среднее время доставки около 10 минут\" and admits it can stretch to hours under load; GemPay's ~2 min is a defensible comparison point. (9) MLBB confusion confirmed: MCGG is a separate app (Google Play packages com.mobilechess.gp global and com.mobilechess.us US) that links to the same Moonton account for cross-game rewards — so users genuinely have one Moonton account but distinct game IDs. (10) Diamond sinks verified via BlueStacks guides: Go Go Pass (seasonal skins, emotes, star protection cards, accessories, star-up effects), commander skins, chessboard cosmetics, limited bundles; commanders cost 150 diamonds but Chess Points are the better route. (11) Scam demand is real: a \"Magic Chess Go Go Hack Tool Gold Generator No Human Verification\" spam page ranks in English SERP, justifying the trust/safety angle. INFERRED, NOT VERIFIED: exact search volumes and keyword difficulty — the Ahrefs and Semrush connectors in this session are unauthorized, so no volume data could be pulled; all volume claims are qualitative. Uzbek Latin phrasings (\"olmos sotib olish\", \"to'ldirish\", \"donat\") are extrapolated from how Uzbek gamers phrase MLBB/PUBG queries and from GemPay's existing ranking blog slugs, not from observed MCGG autocomplete — because MCGG Uzbek autocomplete has essentially no data yet. Transliterated forms (\"medjik chess\", \"magik chess\") are inferred. COMPETITION READ: Uzbek = open field, rank achievable with a single well-structured page per cluster. Russian-with-UZ-qualifier = light, beatable on payment-method relevance. Global English = saturated (SEAGM, MooGold, Codashop, Eneba) — do not chase it. AEO note: LLMs currently have almost no Uzbek-language grounding on MCGG topup, so a clean answerBox + FAQ structure is very likely to become the cited source.",
+  "siblings": [
+    {
+      "slug": "magic-chess-go-go-olmos-sotib-olish",
+      "h1": "Magic Chess: Go Go olmos sotib olish — O'zbekistonda 2 daqiqada",
+      "type": "howto"
+    },
+    {
+      "slug": "magic-chess-go-go-olmos-kelmadi",
+      "h1": "Magic Chess: Go Go olmos kelmadi? Sabablari va yechimi",
+      "type": "problem"
+    },
+    {
+      "slug": "magic-chess-go-go-codashop-yoki-gempay",
+      "h1": "Magic Chess: Go Go: Codashop, rasmiy do'kon yoki GemPay — qaysi biri O'zbekiston uchun?",
+      "type": "comparison"
+    },
+    {
+      "slug": "magic-chess-go-go-user-id-server-id-qayerda",
+      "h1": "Magic Chess: Go Go User ID va Server ID qayerda? To'liq qo'llanma",
+      "type": "trust"
+    }
+  ],
+  "cannibalisationFixes": [
+    {
+      "with": [
+        "mobile-legends-olmos-nima-va-paketlar"
+      ],
+      "problem": "Both explain \"olmos nima\", package ladders, bonus diamonds and \"bepul olmos\" scams, for two games from the same publisher using the same currency word. MCGG's title term \"olmos paketlari\" sits inside MLBB's declared secondary set. MCGG also declares Product schema on a page that (correctly) carries no prices — that will throw invalid-offer errors in Search Console.",
+      "fix": "Pivot the MCGG info page to what only it has: Go Go Pass, Chess Points vs Diamonds, commander-unlock economics, chessboard cosmetics. Remove \"olmos nima\" and \"bepul olmos\" targeting and link to the MLBB/Free Fire pages for those. Drop Product from its schema array; keep BlogPosting + FAQPage + ItemList."
+    },
+    {
+      "with": [
+        "magic-chess-go-go-olmos-sotib-olish",
+        "magic-chess-go-go-olmos-kelmadi",
+        "magic-chess-go-go-codashop-yoki-gempay",
+        "magic-chess-go-go-user-id-server-id-qayerda",
+        "honor-of-kings-token-sotib-olish",
+        "delta-force-coins-arzon-qayerdan-olish"
+      ],
+      "problem": "Fourteen internal links point at URLs that do not exist in the 45-article set: mobile-legends-olmos-toldirish (the real slug is mobile-legends-olmos-sotib-olish), pubg-uc-payme-click, pubg-uc-yetkazish-vaqti, oyin-valyutasi-qayerdan-arzon, oyin-pul-xavfsiz-toldirish, gempay-ishonli-xizmat, /oyinlar/steam. Three URL conventions are used interchangeably in the same arrays (bare slug, /blog/<slug>, /oyinlar/<slug>), which will produce inconsistent hrefs at build time.",
+      "fix": "One convention: /blog/<slug> for articles, /oyinlar/<slug> for game money pages, /xizmatlar/<slug> for non-game services. Fix mobile-legends-olmos-toldirish → mobile-legends-olmos-sotib-olish. Build the three hubs (they are worth building) and delete the two invented PUBG slugs. Either build /oyinlar/steam with at least one supporting article or remove the link — an orphaned money page with zero supporting content ranks for nothing."
+    }
+  ],
+  "mustLinkTo": [
+    "/oyinlar/magic-chess-go-go",
+    "magic-chess-go-go-olmos-sotib-olish",
+    "magic-chess-go-go-codashop-yoki-gempay"
+  ],
+  "publishRank": 30
+}

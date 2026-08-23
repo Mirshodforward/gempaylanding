@@ -1,0 +1,176 @@
+{
+  "slug": "delta-force-delta-coins-nima-va-paketlar",
+  "game": "delta-force",
+  "gameTitle": "Delta Force",
+  "type": "info",
+  "spec": {
+    "slug": "delta-force-delta-coins-nima-va-paketlar",
+    "type": "info",
+    "h1": "Delta Coins nima va unga nima olish mumkin: paketlar, Ticket va Battle Pass",
+    "metaTitle": "Delta Coins nima — paketlar va Battle Pass",
+    "metaDescription": "Delta Coins nima, Delta Ticket va Mandel valyutalaridan farqi, paketlar qatori, bonus coinlar va Battle Pass: so'mdagi narx qanday shakllanishi tushuntirildi.",
+    "searchIntent": "Ma'lumot izlash. O'yinga yangi kirgan yoki birinchi marta to'ldirmoqchi bo'lgan foydalanuvchi valyutalar tizimini va qaysi paket foydali ekanini tushunmoqchi. AEO uchun eng kuchli sahifa: ta'rif, jadval va ro'yxatlar.",
+    "primaryKeyword": "delta coins nima",
+    "secondaryKeywords": [
+      "delta force valyutasi",
+      "delta ticket nima",
+      "delta force battle pass sotib olish",
+      "delta force skin sotib olish",
+      "delta coins paketlari",
+      "delta force mandel coin"
+    ],
+    "answerBox": "Delta Coins — Delta Force o'yinining pulli asosiy valyutasi. Unga Battle Pass, qurol va operator skinlari hamda tadbir to'plamlari olinadi. Delta Ticket o'ynab yig'iladi, Delta Coins esa faqat to'ldirish orqali keladi. Paketlar kattalashgani sayin bonus coin ulushi oshadi; so'mdagi narx esa botda ko'rsatiladi.",
+    "outline": [
+      {
+        "h2": "Qisqacha javob: Delta Coins nima",
+        "covers": "40-60 so'zlik ta'rif, so'ng fakt kartochkalari: valyuta turi — premium; olish yo'li — faqat to'lov orqali; nimaga sarflanadi — Battle Pass, skin, operator, tadbir; qanday to'ldiriladi — Player ID orqali; qayerda ko'rinadi — o'yin do'koni balansi.",
+        "block": "key-facts"
+      },
+      {
+        "h2": "Delta Coins, Delta Ticket va Mandel valyutalari farqi",
+        "covers": "Jadval ustunlari: valyuta, qanday olinadi, nimaga sarflanadi, sotib olinadimi. Qatorlar: Delta Coins — to'lov orqali, premium tarkib uchun, ha; Delta Ticket — o'ynab yig'iladi yoki coindan almashtiriladi, o'yin ichidagi xaridlar uchun, yo'q; Mandel valyutasi — o'yin ichidagi savdo/marketplace uchun, yo'q. Asosiy ajratuvchi jumla: Delta Ticket'dan farqli o'laroq, Delta Coins oddiy o'yin orqali yig'ilmaydi.",
+        "block": "compare-table"
+      },
+      {
+        "h2": "Delta Coins ga nima olish mumkin",
+        "covers": "Ro'yxat va qisqa izohlar: mavsumiy Battle Pass (Base va yuqori daraja), qurol chizmalari va skinlari, operator ko'rinishlari, texnika skinlari, tadbir to'plamlari va cheklangan takliflar, hamda coinni o'yin ichidagi boshqa valyutaga almashtirish imkoni. Har biri o'yinchi uchun nimani beradi — bir jumlada, obro'sizlantiruvchi da'volarsiz.",
+        "block": "prose"
+      },
+      {
+        "h2": "Battle Pass qancha coin turadi",
+        "covers": "Ikki daraja bor: oddiy va kengaytirilgan (Deluxe) variant, kengaytirilgani qo'shimcha skin va XP tezlatgichlarini beradi. MUHIM HEDGE: coinlardagi narx mavsumdan mavsumga o'zgaradi va aniq raqam o'yin ichidagi Battle Pass ekranida ko'rsatiladi — maqolada qat'iy raqam yozilmasin, faqat 'so'nggi mavsumlarda ikki daraja amal qilgan' darajasida tushuntirilsin. Bir mavsumda faol o'ynaydiganlar uchun pass ko'p Ticket qaytarishi mumkinligi ham hedge bilan aytiladi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Paketlar qatori va bonus coinlar qanday ishlaydi",
+        "covers": "Paketlar kichikdan kattagacha bo'lgan qator sifatida tushuntiriladi (o'nlab coinlik eng kichigidan o'n minglab coinlik eng kattasigacha), katta paketlarda 'asosiy + bonus' ko'rinishida bonus qo'shilishi va bonus ulushi paket kattaligi bilan oshishi. Narx mantiqi: so'mdagi summa provayderdan jonli olinadi va USDT kursiga bog'liq. HECH QANDAY so'm raqami yozilmasin; paket ro'yxati ham 'aniq ro'yxat va joriy bonuslar botda ko'rsatiladi' deb hedge qilinsin.",
+        "block": "price-logic"
+      },
+      {
+        "h2": "Coin qaysi platformada ishlaydi",
+        "covers": "Global versiyada progress — skin, operator, Battle Pass — Level Infinite akkaunti orqali mobil, PC va konsol o'rtasida sinxronlanadi. Lekin coin balansi platformaga bog'liq bo'lishi mumkin va platformalar o'rtasida coin o'tkazish qo'llab-quvvatlanmaydi. Garena versiyasi esa butunlay alohida ekotizim. Shuning uchun to'ldirishdan oldin qaysi akkaunt va versiyada o'ynayotganingizni bilish shart — qo'llanmaga havola.",
+        "block": "prose"
+      },
+      {
+        "h2": "Qaysi paketni tanlash kerak",
+        "covers": "Qaror mantig'i, raqamsiz: faqat Battle Pass olmoqchi bo'lsangiz, unga yetadigan eng kichik paket kifoya; skin va tadbirlarni ham rejalashtirsangiz, bonusi kattaroq o'rta paket bir coin hisobida foydaliroq; birinchi marta yangi xizmatni sinayotgan bo'lsangiz, avval eng kichik paketni oling va yetkazishni tekshiring; ortiqcha coin qoldirmaslik uchun avval o'yin do'konidagi narxni ko'rib chiqing.",
+        "block": "checklist"
+      },
+      {
+        "h2": "Delta Coins ni so'mda to'ldirish",
+        "covers": "Qisqa chaqiriq: paketni tanlab bo'lgach, Player ID bilan botda so'mda to'lash mumkinligi, ~5 daqiqa yetkazish va asosiy sotib olish qo'llanmasiga havola.",
+        "block": "inline-cta"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Delta Coins nima?",
+        "a": "Delta Coins — Delta Force o'yinining pulli asosiy valyutasi. U bilan Battle Pass, qurol va operator skinlari, texnika ko'rinishlari va tadbir to'plamlari olinadi. Coin o'yinchi hisobiga Player ID orqali to'ldiriladi."
+      },
+      {
+        "q": "Delta Coins va Delta Ticket farqi nima?",
+        "a": "Delta Ticket o'ynash orqali yig'iladi va o'yin ichidagi xaridlar uchun ishlatiladi. Delta Coins esa oddiy o'yin bilan topilmaydi — u faqat to'ldirish orqali keladi va premium tarkibga sarflanadi. Coinni Ticket'ga almashtirish imkoni ham bor."
+      },
+      {
+        "q": "Delta Coins ni bepul topsa bo'ladimi?",
+        "a": "Yo'q. Delta Coins premium valyuta bo'lgani uchun oddiy o'yin orqali yig'ilmaydi. 'Bepul coin generatori' va'da qiladigan saytlar ishlamaydi va ko'pincha akkauntingizni o'g'irlash uchun tuzilgan bo'ladi."
+      },
+      {
+        "q": "Battle Pass qancha Delta Coins turadi?",
+        "a": "Battle Pass'ning oddiy va kengaytirilgan darajalari bor, coinlardagi narx esa mavsumdan mavsumga o'zgarib turadi. Shu sababli aniq raqamni o'yin ichidagi Battle Pass ekranidan ko'rish to'g'ri bo'ladi."
+      },
+      {
+        "q": "Katta paket olish foydaliroqmi?",
+        "a": "Odatda ha: katta paketlarda asosiy summaga bonus coin qo'shiladi va bonus ulushi paket kattaligi bilan oshadi, ya'ni bitta coin arzonroqqa tushadi. Ammo faqat kerakli miqdorni oling — ortiqcha coin o'yinda qolib ketadi."
+      },
+      {
+        "q": "Coinni do'stimga o'tkazsam bo'ladimi?",
+        "a": "Yo'q, coin akkauntga bog'langan va rasmiy yo'l bilan boshqa o'yinchiga o'tkazilmaydi. Do'stingizga sovg'a qilmoqchi bo'lsangiz, to'ldirishda uning Player ID sini kiriting — coin to'g'ridan-to'g'ri uning hisobiga tushadi."
+      },
+      {
+        "q": "Steam'da olingan coin mobilda ko'rinadimi?",
+        "a": "Progress Level Infinite akkaunti orqali sinxronlansa ham, coin balansi platformaga bog'liq bo'lishi mumkin va platformalar o'rtasida coin o'tkazish qo'llab-quvvatlanmaydi. Shuning uchun qaysi akkauntda o'ynasangiz, o'shanga to'ldiring."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "FAQPage",
+      "ItemList",
+      "BreadcrumbList"
+    ],
+    "internalLinks": [
+      "/oyinlar/delta-force",
+      "delta-force-delta-coins-sotib-olish",
+      "delta-force-coins-arzon-qayerdan-olish",
+      "delta-force-player-id-qayerda",
+      "delta-force-coins-kelmadi-nima-qilish"
+    ],
+    "wordCount": 1500
+  },
+  "gameKeywords": {
+    "primary": [
+      "delta force delta coins sotib olish",
+      "delta force coins sotib olish",
+      "delta coins olish uzcard",
+      "delta force donat uzbekistan",
+      "delta force coins toldirish",
+      "delta force oyiniga pul quyish"
+    ],
+    "questions": [
+      "delta force delta coins ni qanday sotib olish mumkin",
+      "delta force player id qayerda turadi",
+      "delta coins necha daqiqada tushadi",
+      "delta coins kelmasa nima qilish kerak",
+      "delta force uchun uzcard va humo ishlaydimi",
+      "delta coins nima va unga nima olish mumkin",
+      "delta force battle pass qancha coin turadi",
+      "global va garena delta force farqi nima",
+      "steamda olingan coin mobilda ishlaydimi",
+      "player id berish xavfsizmi",
+      "delta coins narxi nega ozgarib turadi",
+      "notogri id kiritsam coin qaytadimi"
+    ],
+    "russian": [
+      "купить delta coins узбекистан",
+      "пополнить delta force узбекистан",
+      "донат delta force узбекистан в сумах",
+      "delta force монеты купить по id",
+      "дельта форс донат uzcard humo",
+      "delta force пополнение click payme",
+      "как узнать id в delta force",
+      "не пришли монеты delta force что делать",
+      "delta force global или garena отличия",
+      "delta force battle pass купить"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE (WebSearch + WebFetch, 2026-08-23). (1) UZBEK-LANGUAGE SERP IS EMPTY. Repeated Uzbek-Latin queries ('delta force delta coins sotib olish O'zbekiston', 'delta force o'yin uzbek qo'llanma skin sotib olish', 'delta force donat uzbekistan uzcard humo') returned ZERO Uzbek editorial pages — only Turkish resellers (btkgame, dijipin, gamesatis, oyunfor), Russian donat sites, Wikipedia, TikTok discovery pages and generic Telegram channel listings. There is literally no Uzbek authority page for this game. This is the single strongest finding and matches the brief: fastest ranking win in the portfolio. (2) RUSSIAN CLUSTER TARGETS RU/KZ, NOT UZ. Fetched vc.ru 'TOP-8 servislari' review: the listed services (BattlePass.ru, GGSEL, code-top, donatov.net, kupikod, funpay, fnfun) accept rubles and tenge, Mir cards, SBP and crypto (USDT/BTC); Kazakhstan is named explicitly, Uzbekistan is NOT. kupikod, donatov, igm.gg, MTS Oplata, Yandex Igromir all serve RF/CIS-with-rubles. So 'узбекистан'-qualified RU queries are wide open. (3) UZCARD/HUMO CANNOT PAY FOREIGN SITES — verified fact, citable: local card schemes 'only work inside Uzbekistan and only in the national currency, the som'. This is the whole economic argument for the comparison article, and it is a verified statement, not marketing. (4) OFFICIAL CHANNEL = MIDASBUY. Midasbuy is Delta Force's official top-up center and DOES have an Uzbekistan-localised path (midasbuy.com/midasbuy/uz/shop/dfm exists and is indexed). Its payment list is JS-rendered and my fetch returned only the base64 banner, so I could NOT verify whether it accepts UzCard/HUMO — articles must therefore NOT claim 'Midasbuy UzCard ni qabul qilmaydi'. Phrase it as the verified general fact instead (local cards are domestic-only, international checkouts usually ask Visa/Mastercard/PayPal). (5) ONLY PLAYER ID IS NEEDED — no server/platform field. Verified on SEAGM's global Delta Force listing: 'Only one field is mandatory: Player ID'. Confirms needsServer:false. (6) COMPETITORS DO NOT VERIFY THE NICKNAME. SEAGM explicitly shows no nickname/account confirmation before payment; topuplive's own FAQ says a wrong ID 'may cause delay/failure or wrong delivery — contact customer service immediately'; JollyMax's flow requires a support ticket if coins went to a non-existent account. GemPay's FREE pre-payment nickname check is therefore a genuine, differentiating claim for this game. (7) GLOBAL vs GARENA IS THE REAL FAILURE MODE — bigger here than in most games. Garena publishes Delta Force only for SEA, Taiwan, MENA, LATAM/Brazil/Mexico and Turkey; Global (Level Infinite) covers NA/EU — so Uzbek players are on GLOBAL. Top-up pages carry hard warnings: SEAGM 'This Top Up Service is Not Applicable for Garena Delta Force'; topuplive 'only supports International Server. And not valid for the Garena Delta Force service region'. (8) COIN WALLETS ARE PLATFORM-SEPARATE while progress is not: cross-progression syncs skins/operators/Battle Pass through the Level Infinite Pass (LIPASS) account, but coin balances are per-platform and cross-platform coin transfer is not supported. Articles must hedge this exactly this way. (9) IN-GAME/STEAM PURCHASE GENUINELY BREAKS: Steam discussions show recurring 'Payment Service Error', 'The current payment order is not yet complete' and 'Top up / buy delta coins does not work in the game' threads, plus LIPASS-linked-to-wrong-Steam-account login errors (Login failed ID 4/35). That gives the comparison and problem articles real, verifiable substance. (10) DELIVERY BENCHMARK: competitors state 5-10 minutes (topuplive guide, Yandex Igromir 5-10 min, IGM.GG 10-15 min). GemPay's ~5 min is competitive but must not be oversold as 'instant'. (11) CURRENCY MODEL: three currencies — Delta Coins (premium, purchased, buys Battle Pass/skins/operators, convertible to Tickets), Delta Tickets (earned by playing), Mandel Coins/Mandelbricks (marketplace). Verified: 'Unlike Delta Tickets, Delta Coins cannot be earned through normal gameplay'. (12) PACKAGE LADDER (official, USD-listed): 30, 60, 300+20, 680+70, 1280+200, 1680+300, 3280+670, 6480+1620, 12960+3240, 19440+4860 — bonus share grows with pack size; discounts on resale ~9-20%. Two sources gave slightly different ladders, so articles must present it as 'taxminiy qator, aniq ro'yxat botda'. (13) ID LOCATION: mobile — avatar icon bottom-right of main screen, ID under nickname with a Copy button; PC — lobby top-left / bottom-right profile page, one-click UID copy. Multiple YouTube tutorials 'How to find your Player ID in Delta Force' exist = verified demand for the ID guide article, none in Uzbek. (14) GAME CONTEXT: Team Jade / TiMi, PC Dec 2024, mobile global 21-22 Apr 2025, consoles Aug 2025 — the game is new, which is exactly why Uzbek content does not exist yet. INFERRED, NOT VERIFIED: no search-volume or KD numbers — the Ahrefs and Semrush MCP connectors are unauthorized in this non-interactive session (OAuth cannot run), so there are ZERO hard volume figures here; the user should authorize them in claude.ai connector settings for real numbers. All Uzbek query strings above are constructed from Uzbek morphology (sotib olish / olish / to'ldirish / quyish / donat), from indexed competitor title patterns, and from the transliteration habits of UZ gamers — not from an autocomplete API. Battle Pass coin prices (Season 3: 520 Base / 720 Deluxe) come from third-party news and change every season — hedge, never state as fixed. COMPETITION READ / ATTACK ORDER: 1) pillar money query (no Uzbek competitor at all — take it first, unlike PUBG where the pillar was contested), 2) Player ID guide (pure informational, zero Uzbek coverage, feeds AI answer engines), 3) problem cluster (ID topilmadi / Garena mismatch — zero Uzbek coverage, highest support-cost reduction), 4) comparison (needs care because Midasbuy payment support is unverified), 5) info/explainer (lowest urgency, best for internal-link authority and AEO breadth). Volume here is smaller than PUBG or Free Fire, but so is competition — this cluster should be cheap to rank and worth doing before the game's Uzbek audience grows.",
+  "siblings": [
+    {
+      "slug": "delta-force-delta-coins-sotib-olish",
+      "h1": "Delta Force Delta Coins sotib olish: O'zbekistonda so'mda, 5 daqiqada",
+      "type": "howto"
+    },
+    {
+      "slug": "delta-force-coins-kelmadi-nima-qilish",
+      "h1": "Delta Coins kelmadi yoki ID topilmadi: sabablari va yechimi",
+      "type": "problem"
+    },
+    {
+      "slug": "delta-force-coins-arzon-qayerdan-olish",
+      "h1": "Delta Coins qayerdan olish arzon: GemPay, rasmiy sahifa va o'yin ichidagi xarid",
+      "type": "comparison"
+    },
+    {
+      "slug": "delta-force-player-id-qayerda",
+      "h1": "Delta Force Player ID qayerda: mobil, PC va konsolda topish",
+      "type": "trust"
+    }
+  ],
+  "cannibalisationFixes": [],
+  "mustLinkTo": [
+    "/oyinlar/delta-force",
+    "delta-force-delta-coins-sotib-olish",
+    "delta-force-coins-arzon-qayerdan-olish"
+  ],
+  "publishRank": 43
+}

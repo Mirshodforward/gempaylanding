@@ -1,0 +1,191 @@
+{
+  "slug": "bigo-live-olmos-nima-va-sovgalar",
+  "game": "bigo-live",
+  "gameTitle": "Bigo Live",
+  "type": "info",
+  "spec": {
+    "slug": "bigo-live-olmos-nima-va-sovgalar",
+    "type": "info",
+    "h1": "Bigo Live olmosi nima, bin (beans) dan farqi va sovg'alarga qanday sarflanadi",
+    "metaTitle": "Bigo Live olmos nima va sovg'alarga qanday sarflanadi",
+    "metaDescription": "Bigo Live olmosi nima, bin (beans) dan farqi, sovg'alar va PK janglarida qanday ishlatiladi hamda paket narxi nimaga bog'liq — to'liq va sodda tushuntirish.",
+    "searchIntent": "Ma'lumot izlash — foydalanuvchi olmos nima ekanini, uni nimaga sarflashni va strimer nima olishini tushunmoqchi. Xarid qarori shu bilimdan keyin tug'iladi.",
+    "primaryKeyword": "bigo live olmos nima",
+    "secondaryKeywords": [
+      "bigo live bin nima",
+      "bigo live sovg'a narxi olmosda",
+      "bigo live pk jang nima",
+      "bigo live olmos nimaga kerak",
+      "bigo live paketlari",
+      "bigo live fan klub daraja"
+    ],
+    "answerBox": "Olmos — Bigo Live ilovasining ichki valyutasi. U bilan strimerlarga sovg'a yuboriladi, PK janglarida qo'llab-quvvatlanadi va fan-klub yoki daraja imkoniyatlari ochiladi. Strimer sizning sovg'angizni bin (beans) shaklida oladi va keyin pulga aylantiradi. Har bir sovg'aning olmosdagi narxi ilovaning sovg'a panelida ko'rsatiladi.",
+    "outline": [
+      {
+        "h2": "Olmos nima va u qanday ishlaydi",
+        "covers": "Olmos — foydalanuvchi sotib oladigan ichki valyuta; u hisobga yoziladi va faqat ilova ichida sarflanadi. Bigo Live o'yin emas, jonli efir platformasi ekani va olmos asosan boshqa odamni qo'llab-quvvatlash uchun ishlatilishi. Olmos akkauntga bog'langani, boshqa akkauntga o'tkazib bo'lmasligi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Olmos va bin (beans) farqi",
+        "covers": "Jadval: kim sotib oladi / kim oladi; qanday paydo bo'ladi (xarid vs sovg'a); nimaga ishlatiladi (sovg'a yuborish vs strimer daromadi); pulga aylanish yo'nalishi. MUHIM: aniq konvertatsiya kursi (masalan '1 olmos = N bin' yoki 'N bin = 1 dollar') YOZILMAYDI, chunki manbalar bir-biriga zid va kurs Bigo tomonidan o'zgartiriladi — kurs ilovada ko'rsatiladi deyiladi.",
+        "block": "compare-table"
+      },
+      {
+        "h2": "Olmosga nima qilish mumkin",
+        "covers": "Ro'yxat: strimerga sovg'a yuborish; PK jangida o'z tarafingizni qo'llab-quvvatlash; fan-klubga a'zolik va unda ko'rinish; daraja/VIP maqomini oshirish; xonada ajralib turadigan effektlar va nishonlar; ba'zi maxsus tadbirlarda ishtirok. Har bandda foydalanuvchi nima yutishi bir gapda tushuntirilsin.",
+        "block": "key-facts"
+      },
+      {
+        "h2": "Sovg'alar va ularning olmosdagi narxi",
+        "covers": "Sovg'a panelidagi har bir sovg'aning yonida uning olmosdagi narxi turadi — arzon smaylik/gulchadan tortib katta animatsion sovg'alargacha. Katta sovg'alar butun xonaga ko'rinadigan effekt beradi va strimerga ko'proq bin olib keladi. ANIQ RAQAM YOZILMAYDI: Bigo sovg'alar ro'yxatini va narxlarini muntazam yangilaydi, shuning uchun 'joriy narx ilovada ko'rinadi' deyiladi.",
+        "block": "prose"
+      },
+      {
+        "h2": "PK jang, fan-klub va daraja: olmos nega aynan shu paytda kerak bo'ladi",
+        "covers": "PK jang — ikki strimer o'rtasidagi qisqa musobaqa, natijasi tomoshabinlar yuborgan sovg'alarga bog'liq, shuning uchun olmos aynan efir davomida zarur bo'ladi. Fan-klub a'zoligi va daraja tizimi qo'llab-quvvatlovchini xonada ko'rinadigan qiladi. Bu Bigo ni o'yindan farqlaydigan asosiy jihat — olmos raqobat emas, munosabat uchun sarflanadi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Paketlar: kichik olganingiz ma'qulmi yoki katta",
+        "covers": "Paketlar hajmi bo'yicha farqlanadi va kattaroq paketlarda ko'pincha bonus olmos beriladi — bu bir olmosning amaldagi narxini pasaytiradi. To'g'ri hisoblash usuli: umumiy summa / (asosiy olmos + bonus). So'mdagi narx joriy kursga bog'liq va faqat botda ko'rsatiladi. Hech qanday raqam yozilmaydi.",
+        "block": "price-logic"
+      },
+      {
+        "h2": "Sotib olishdan oldin bilishingiz kerak bo'lgan narsalar",
+        "covers": "Ogohlantirishlar: sovg'a qilingan olmos qaytarilmaydi; olmosni pulga qaytarib bo'lmaydi; olmosni boshqa akkauntga o'tkazib bo'lmaydi (faqat o'sha ID ga to'g'ridan-to'g'ri to'ldirish mumkin); balans akkauntga bog'liq, shuning uchun kirish usulini adashtirmaslik kerak; qoidabuzarlik uchun akkaunt cheklansa balans ham bloklanishi mumkin.",
+        "block": "warning"
+      },
+      {
+        "h2": "Tez-tez chalkashtiriladigan tushunchalar",
+        "covers": "Olmos vs bin; sovg'a vs like; daraja vs VIP; strimer daromadi vs tomoshabin xarajati; 'olmos sotish' degan takliflar nega asossiz ekani. Qisqa, aniq javoblar.",
+        "block": "key-facts"
+      },
+      {
+        "h2": "Olmos to'ldirishga tayyormisiz",
+        "covers": "Botga o'tish chaqiruvi, so'mda to'lov va ~3 daqiqa yetkazish eslatmasi, /oyinlar/bigo-live va asosiy qo'llanmaga havola.",
+        "block": "inline-cta"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Olmos va bin (beans) o'rtasidagi farq nima?",
+        "a": "Olmosni tomoshabin sotib oladi va sovg'a yuborish uchun sarflaydi. Strimer esa yuborilgan sovg'ani bin shaklida oladi va uni keyin platforma qoidasiga ko'ra pulga aylantiradi. Ya'ni olmos — xarajat, bin — daromad tomoni."
+      },
+      {
+        "q": "Sovg'a yuborganimda olmosim qayerga ketadi?",
+        "a": "Olmos hisobingizdan yechiladi va strimerga sovg'a sifatida boradi. Bu amalni bekor qilib bo'lmaydi, shuning uchun katta sovg'a yuborishdan oldin tanlovni tekshirib oling."
+      },
+      {
+        "q": "Qaysi sovg'a qancha olmos turadi?",
+        "a": "Har bir sovg'aning narxi efir ekranidagi sovg'a panelida, sovg'a rasmi yonida ko'rsatiladi. Bigo ro'yxatni va narxlarni muntazam yangilab turadi, shuning uchun eng ishonchli manba — ilovaning o'zi."
+      },
+      {
+        "q": "Olmosni pulga qaytarish yoki sotish mumkinmi?",
+        "a": "Yo'q. Olmos faqat ilova ichida sarflanish uchun mo'ljallangan. Olmos sotib olaman yoki naqdga aylantiraman degan takliflar odatda firibgarlik bo'ladi va akkauntingiz uchun xavf tug'diradi."
+      },
+      {
+        "q": "Olmosni do'stimning hisobiga o'tkaza olamanmi?",
+        "a": "Balansdan balansga o'tkazish yo'q. Lekin do'stingizning Bigo ID siga to'g'ridan-to'g'ri olmos to'ldirib berishingiz mumkin — bu odatiy va qonuniy usul, unda uning paroli kerak emas."
+      },
+      {
+        "q": "PK jangda olmos nega muhim?",
+        "a": "PK jang qisqa vaqt davom etadi va g'olib tomoshabinlar yuborgan sovg'alar hisobiga aniqlanadi. Shuning uchun qo'llab-quvvatlovchilar balansni oldindan to'ldirib qo'yadi — jang o'rtasida to'ldirishga ulgurmasligi mumkin."
+      },
+      {
+        "q": "Katta paket olish foydaliroqmi?",
+        "a": "Ko'pincha ha, chunki kattaroq paketlarga bonus olmos qo'shiladi va bir olmosning amaldagi narxi pasayadi. Solishtirish uchun umumiy summani bonus bilan birga olingan olmos soniga bo'ling — narx botda joriy kurs bo'yicha ko'rsatiladi."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "FAQPage",
+      "ItemList",
+      "BreadcrumbList"
+    ],
+    "internalLinks": [
+      "/oyinlar/bigo-live",
+      "bigo-live-olmos-sotib-olish",
+      "bigo-live-olmos-qayerdan-arzon-olish",
+      "bigo-id-qayerda-topiladi"
+    ],
+    "wordCount": 1400
+  },
+  "gameKeywords": {
+    "primary": [
+      "bigo live olmos sotib olish",
+      "bigo live olmos to'ldirish",
+      "bigo olmos sotib olish",
+      "bigo live hisobini to'ldirish",
+      "bigo id orqali olmos to'ldirish",
+      "bigo live donat o'zbekiston"
+    ],
+    "questions": [
+      "bigo live olmosni qanday sotib olish mumkin",
+      "bigo id qayerdan topiladi",
+      "bigo live olmos necha daqiqada tushadi",
+      "bigo id ni birovga berish xavfsizmi",
+      "olmos kelmasa nima qilish kerak",
+      "bigo live da olmos nimaga kerak",
+      "olmos va bin o'rtasida qanday farq bor",
+      "strimerga olmos qanday sovg'a qilinadi",
+      "bigo live da bepul olmos olish mumkinmi",
+      "uzcard bilan bigo live to'ldirsa bo'ladimi",
+      "noto'g'ri id kiritsam olmos qaytadimi",
+      "bigo live olmos narxi nega o'zgarib turadi"
+    ],
+    "russian": [
+      "купить алмазы bigo live узбекистан",
+      "пополнить bigo live в сумах",
+      "биго лайв алмазы uzcard",
+      "bigo live пополнение по id",
+      "как узнать свой bigo id",
+      "алмазы биго не пришли",
+      "сколько стоят алмазы в bigo live",
+      "bigo live бины и алмазы разница",
+      "донат bigo live ташкент",
+      "пополнить биго humo payme click"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE (WebSearch + WebFetch, avgust 2026). (1) ENG MUHIM TOPILMA: Bigo olmosi bo'yicha o'zbek-lotin SERP butunlay bo'sh. \"bigo live olmos sotib olish\", \"bigo live olmos to'ldirish bigo id qayerda\", \"bigo live uz sayt olmos narxi to'ldirish\" so'rovlari bironta ham o'zbek tilidagi tijorat yoki maqola sahifasini qaytarmadi — faqat bigo.tv profil sahifalari, Play Store/App Store listinglari, YouTube/Instagram va bitta uzfor.net maqolasi (\"BIGO LIVE da pul ishlash\"). Ya'ni mavjud yagona o'zbekcha kontent STRIMERGA (pul ishlash) qaratilgan, SOVG'A BERUVCHIGA emas. Hech qaysi .uz sayti bu klasterni egallamagan — raqobat deyarli nol. (2) Rus klasteri real, lekin Rossiyaga qaratilgan, O'zbekistonga emas: donatov.net/bigo, bigo.su, zoy.one/bigo-live, dtf.ru gaydi, pyyplbot, ggsel, plati.market — hammasi rublda va SBP/MIR taklif qiladi. (3) Rasmiy Bigo recharge sahifasini (bigo.tv/ru/blog/bigo-live-recharge) fetch qildim: to'lov usullari sifatida faqat SBP, MIR kartalari va Bigo Card (Smile.One) ko'rsatilgan — UZS/UzCard yo'li rasmiy sahifada yo'q. Bu taqqoslash maqolasi uchun tekshirilgan, iqtibos qilinadigan fakt. (4) O'zbekistonga qaratilgan yagona raqobatchi — hablax.com/en/country/uzbekistan/giftcard-bigo-live-bonus-diamonds: inglizcha gift-card sahifasi, o'zbekcha versiya va mahalliy karta relslari yo'q. play2key.uz Uzcard/Humo bilan Telegram Stars sotadi, lekin unda Bigo Live mahsuloti borligini TASDIQLAY OLMADIM. (5) Bigo ID joylashuvi ikki mustaqil manbada tasdiqlandi: Me bo'limi, nikneym ostidagi 7-10 xonali raqam (shuningdek Settings → Account → User ID). (6) Muammo klasteri tasdiqlandi: \"алмазы не пришли\" / \"ID не найден\" doimiy sarlavha; rasmiy yo'riqnoma — Me → Wallet ni tekshirish, 30 daqiqagacha kutish, Me → Feedback yoki cs@bigo.tv ga buyurtma raqami bilan yozish. (7) Firibgarlik klasteri tasdiqlandi: \"bepul olmos\" generatorlari va MOD APK lar bo'yicha Bigo ning o'z blogida ham sahifa bor (\"BIGO LIVE Hack: Free Diamonds, MOD APKs & Safety\"). (8) O'zbekistonda Bigo Live bloklangani haqida hech qanday dalil topilmadi — shuning uchun maqolalar VPN kerakligini nazarda tutmasligi shart. OGOHLANTIRISH — RAQAMLAR: manbalar olmos↔bin kursida bir-biriga zid (bir joyda 1 olmos = 3 bin, boshqasida 210 bin = 1 USD; sovg'a narxlari ham 2026 yilda o'zgargan). Shu sababli reja hech qaysi maqolada aniq kurs, sovg'a narxi yoki so'mdagi raqam yozishni TAQIQLAYDI — faqat mexanizm tushuntiriladi, raqam ilovada/botda ko'rsatiladi deyiladi. INFERRED (tekshirilmagan): aniq qidiruv hajmlari — bu sessiyada Ahrefs va Semrush konnektorlari avtorizatsiya qilinmagan, shuning uchun volume ma'lumoti yo'q; o'zbekcha iboralarning aniq shakli va transliteratsiya bo'linishi (\"olmos\" vs \"almaz\" vs \"brilliant\"); Toshkentdagi Bigo auditoriyasi ruscha so'rovlarga ko'proq moyil, o'zbek-lotin so'rovlari past hajmli lekin deyarli raqobatsiz degan taxmin; primary/secondary ichidagi tartib — mening bahom, o'lchov emas.",
+  "siblings": [
+    {
+      "slug": "bigo-live-olmos-sotib-olish",
+      "h1": "Bigo Live olmos sotib olish: O'zbekistonda so'mda, 3 daqiqada",
+      "type": "howto"
+    },
+    {
+      "slug": "bigo-live-olmos-kelmadi-nima-qilish",
+      "h1": "Bigo Live olmos kelmadi yoki ID topilmadi — sabablari va yechimi",
+      "type": "problem"
+    },
+    {
+      "slug": "bigo-live-olmos-qayerdan-arzon-olish",
+      "h1": "Bigo Live olmosini qayerdan olish arzon va xavfsiz: usullar taqqoslandi",
+      "type": "comparison"
+    },
+    {
+      "slug": "bigo-id-qayerda-topiladi",
+      "h1": "Bigo ID qayerda turadi, uni berish xavfsizmi va «bepul olmos» firibgarligi",
+      "type": "trust"
+    }
+  ],
+  "cannibalisationFixes": [
+    {
+      "with": [
+        "bigo-live-olmos-sotib-olish",
+        "bigo-id-qayerda-topiladi",
+        "bigo-live-olmos-kelmadi-nima-qilish",
+        "bigo-live-olmos-qayerdan-arzon-olish"
+      ],
+      "problem": "All five Bigo articles link to /oyinlar/bigo-live — a live-streaming app filed inside the games category. It dilutes the topical signal of /oyinlar, and the same defect will repeat with Steam and Telegram Stars. Bigo's buyer intent (gifting a streamer during a PK battle) is also structurally different from game topup, so mixing them weakens both category signals.",
+      "fix": "Move to /xizmatlar/bigo-live (or /toldirish/bigo-live) under a separate non-game category with its own breadcrumb, hub page and sitemap section. Keep exactly one cross-link from the games side, placed inside oyin-pul-xavfsiz-toldirish, not from game pillars."
+    }
+  ],
+  "mustLinkTo": [
+    "/xizmatlar/bigo-live",
+    "bigo-live-olmos-sotib-olish",
+    "bigo-live-olmos-qayerdan-arzon-olish"
+  ],
+  "publishRank": 28
+}

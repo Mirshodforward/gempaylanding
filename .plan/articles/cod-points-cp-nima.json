@@ -1,0 +1,176 @@
+{
+  "slug": "cod-points-cp-nima",
+  "game": "call-of-duty-mobile",
+  "gameTitle": "Call of Duty: Mobile (CP / COD Points — Garena SG/MY)",
+  "type": "info",
+  "spec": {
+    "slug": "cod-points-cp-nima",
+    "type": "info",
+    "h1": "CP (COD Points) nima va Call of Duty: Mobile da nimaga ishlatiladi",
+    "metaTitle": "CP (COD Points) nima va nimaga ishlatiladi?",
+    "metaDescription": "CP (COD Points) — Call of Duty: Mobile pullik valyutasi. Battle Pass, Lucky Draw, skinlar, paketlar va narx qanday shakllanishi haqida to'liq qo'llanma.",
+    "searchIntent": "Informational / yangi o'yinchi. Foydalanuvchi CP nimaligini, nimaga yetishini va qancha kerakligini tushunmoqchi. Sahifa xarid oldidan bilim beradi va pillar sahifaga yo'naltiradi.",
+    "primaryKeyword": "cod points nima",
+    "secondaryKeywords": [
+      "cp nima call of duty mobile",
+      "codm cp paketlari",
+      "codm battle pass qancha cp",
+      "lucky draw qancha cp",
+      "cp va credit farqi",
+      "codm cp nimaga kerak"
+    ],
+    "answerBox": "CP (COD Points) — Call of Duty: Mobile ning pullik ichki valyutasi. U bilan Battle Pass, Lucky Draw (omad qutilari), Legendary qurol va operator skinlari hamda CP do'konidagi cheklangan takliflar olinadi. Paketlar 100 CP dan bir necha ming CP gacha bo'ladi; narx kursga qarab o'zgargani uchun aniq summa botda ko'rsatiladi.",
+    "outline": [
+      {
+        "h2": "CP (COD Points) nima",
+        "covers": "Ta'rif: real pulga sotib olinadigan premium valyuta, o'yin ichida balansda saqlanadi, Player ID ga bog'langan akkauntga tegishli. O'ynash orqali deyarli topilmaydi (faqat ayrim tadbir mukofotlari). Garena va Global versiyalarida CP alohida hisoblanadi va o'tmaydi.",
+        "block": "key-facts"
+      },
+      {
+        "h2": "CP ni nimalarga sarflash mumkin",
+        "covers": "Battle Pass va uning kengaytirilgan varianti; Lucky Draw / Draw tadbirlari; CP do'konidagi Legendary va Mythic qurol skinlari, operator skinlari; mavsumiy to'plamlar va cheklangan takliflar. Har biri qanday qiymat berishini qisqacha izohlash.",
+        "block": "prose"
+      },
+      {
+        "h2": "CP va Credit: farqi nimada",
+        "covers": "Jadval: qanday olinadi (pulga / o'ynab), qayerda ishlatiladi (CP do'koni va Battle Pass / Credit Store), almashtirish mumkinmi (yo'q), qaysi buyumlar mavjud. Yangi o'yinchilar eng ko'p adashadigan joy shu ekani ta'kidlanadi.",
+        "block": "compare-table"
+      },
+      {
+        "h2": "CP paketlari qanday tuziladi",
+        "covers": "Paketlar kichikdan kattagacha bo'ladi; kattaroq paketlarga bonus CP qo'shiladi, ya'ni 1 CP ga to'g'ri keladigan narx pasayadi. Garena SG/MY paketlari nostandart raqamlarda (asosiy + bonus ko'rinishida), Global paketlari yaxlitroq bo'lishi. Hech qanday so'm summasi keltirilmaydi — faqat tuzilma mantiqi.",
+        "block": "key-facts"
+      },
+      {
+        "h2": "Battle Pass va Lucky Draw qancha CP talab qiladi",
+        "covers": "Odatiy Battle Pass taxminan 560 CP atrofida; Plus varianti sezilarli qimmat. Lucky Draw da har bir keyingi urinish qimmatlashib boradi (birinchisi arzon/bepul, oxirgilari minglab CP), to'liq to'plam ko'pincha 10 000 CP dan oshadi. Raqamlar mavsum va versiyaga qarab o'zgarishi mumkinligi ogohlantiriladi — bu o'yin ichidagi CP qiymatlari, so'm narxi emas.",
+        "block": "key-facts"
+      },
+      {
+        "h2": "Narx nima uchun o'zgarib turadi",
+        "covers": "Provayder narxi dollarda belgilanadi, so'mdagi qiymat esa valyuta/USDT kursi bilan birga harakatlanadi; paket hajmi va bonus CP ham yakuniy hisobga ta'sir qiladi. Shuning uchun saytda qat'iy raqam yozilmaydi, narx botda real vaqtda ko'rsatiladi.",
+        "block": "price-logic"
+      },
+      {
+        "h2": "'Bepul CP' va'dalari haqida ogohlantirish",
+        "covers": "CP generatorlari, 'hack' ilovalari va 'akkauntingizni bering, CP to'ldiramiz' takliflari — akkaunt o'g'irlash va bloklanish yo'li. Haqiqiy bepul CP faqat rasmiy tadbirlar, promo kodlar va mukofotlar orqali beriladi, ular ham versiyaga mos bo'lishi kerak.",
+        "block": "warning"
+      },
+      {
+        "h2": "CP kerakmi? Paketni botda ko'ring",
+        "covers": "@Gempayuz_bot da Call of Duty: Mobile ni tanlab, Player ID kiritib, joriy paketlar va narxlarni ko'rish. call-of-duty-mobile-cp-sotib-olish va /oyinlar/call-of-duty-mobile ga havola.",
+        "block": "inline-cta"
+      }
+    ],
+    "faq": [
+      {
+        "q": "CP nima degani?",
+        "a": "CP — COD Points, ya'ni Call of Duty: Mobile ning pullik ichki valyutasi. U real pulga sotib olinadi va Battle Pass, skinlar hamda Lucky Draw uchun ishlatiladi. Oddiy o'ynash orqali CP deyarli yig'ilmaydi."
+      },
+      {
+        "q": "CP va Credit farqi nima?",
+        "a": "Credit — o'ynash orqali bepul yig'iladigan valyuta va u Credit Store dagi cheklangan buyumlarga yetadi. CP esa pullik bo'lib, Battle Pass, Lucky Draw va Legendary skinlar faqat u bilan olinadi. Ularni bir-biriga almashtirib bo'lmaydi."
+      },
+      {
+        "q": "Battle Pass necha CP turadi?",
+        "a": "Odatiy Battle Pass taxminan 560 CP, kengaytirilgan (Plus) varianti esa bir necha barobar qimmat bo'ladi. Aniq qiymat mavsum va versiyaga qarab o'zgarishi mumkin, shuning uchun o'yin ichidagi joriy narxni ko'ring."
+      },
+      {
+        "q": "Lucky Draw qancha CP talab qiladi?",
+        "a": "Lucky Draw da har bir keyingi urinish qimmatlashib boradi: birinchisi arzon yoki bepul, oxirgilari esa minglab CP turadi. To'liq to'plamni yig'ish ko'pincha 10 000 CP dan oshadi, shuning uchun byudjetni oldindan belgilab oling."
+      },
+      {
+        "q": "Katta paket olish foydalimi?",
+        "a": "Odatda ha — kattaroq paketlarda bonus CP beriladi va 1 CP ga to'g'ri keladigan narx pasayadi. Lekin faqat haqiqatan kerak bo'lgan miqdorni oling, chunki CP qaytarib pulga aylantirilmaydi."
+      },
+      {
+        "q": "CP narxi nega har kuni o'zgaradi?",
+        "a": "Provayder narxi dollarda belgilanadi va so'mdagi qiymat valyuta kursi bilan birga harakatlanadi. Shu sababli saytda qat'iy summa ko'rsatilmaydi — aniq narx botda paket tanlanganda chiqadi."
+      },
+      {
+        "q": "Bepul CP generatorlari ishlaydimi?",
+        "a": "Yo'q. 'Free CP generator' saytlari akkaunt ma'lumotlarini o'g'irlash uchun tuzilgan va akkauntingiz bloklanishiga olib kelishi mumkin. Bepul CP faqat rasmiy tadbirlar va promo kodlar orqali tarqatiladi."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "FAQPage",
+      "BreadcrumbList",
+      "ItemList"
+    ],
+    "internalLinks": [
+      "/oyinlar/call-of-duty-mobile",
+      "call-of-duty-mobile-cp-sotib-olish",
+      "codm-cp-arzon-qayerdan-olish",
+      "codm-garena-global-farqi"
+    ],
+    "wordCount": 1300
+  },
+  "gameKeywords": {
+    "primary": [
+      "call of duty mobile cp sotib olish",
+      "codm cp sotib olish",
+      "cod mobile cp to'ldirish",
+      "codm garena cp to'ldirish",
+      "codm cp arzon",
+      "call of duty mobile cp uzbekistan",
+      "cod points sotib olish"
+    ],
+    "questions": [
+      "call of duty mobile cp qanday sotib olinadi",
+      "codm player id qayerdan topiladi",
+      "codm garena va global farqi nima",
+      "cp kelmasa nima qilish kerak",
+      "uzcard bilan cp sotib olsa bo'ladimi",
+      "cp qancha vaqtda keladi",
+      "battle pass necha cp turadi",
+      "cp nima va nimaga kerak",
+      "noto'g'ri id ga tushgan cp qaytariladimi",
+      "codm cp sotib olish xavfsizmi",
+      "garena akkauntni global ga ko'chirsa bo'ladimi",
+      "lucky draw qancha cp talab qiladi"
+    ],
+    "russian": [
+      "купить cp call of duty mobile узбекистан",
+      "пополнить cp codm по id",
+      "call of duty mobile гарена пополнение cp",
+      "как узнать player id call of duty mobile",
+      "донат call of duty mobile узбекистан",
+      "cp codm дешево купить",
+      "не пришли cp call of duty mobile",
+      "call of duty mobile garena или global разница",
+      "пополнение codm humo uzcard",
+      "cp call of duty mobile сум оплата"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE: (1) Garena vs Global are two fully separate games — separate publishers (Garena SEA vs Activision), servers, accounts, redeem codes and CP economies; a Garena SG/MY Player ID does NOT work for Global top-ups and vice versa (lootbar, brgeeks, seagm, elitedias). (2) Attempting to transfer/shift an account between builds is punishable by ban — confirmed in multiple community/guide sources, so the region article must WARN, not advise. (3) Player ID location confirmed twice: in-game Settings (top-right) -> User Settings -> Player ID shown at the bottom near 'Legal and Privacy'. (4) Garena SG/MY CP tiers are odd-numbered with bonus CP (114 / 230+23 / 460+69 / 690+104 / 1150+173 / 2300+460 / 4600+1840 / 6858+2744 / 11429+4572 on SEAGM) and differ from Global's round 500/1100/2400/5000 — useful proof that 'which version' changes what you buy. (5) Battle Pass ~560 CP; Lucky Draw is an escalating ladder (25/70/180/360/580/900/1400/2800/4000 CP in one Garena draw, ~10,315 CP total). (6) Codashop's own guidance: they never ask for PlayerID AND password — good trust framing. COMPETITION READ (verified): the Uzbek-language SERP for CODM top-up is effectively EMPTY. Searches in Uzbek Latin ('codm cp to'ldirish o'zbekiston', 'call of duty mobile cp sotib olish uzbekistan') return only YouTube gameplay clips and irrelevant Telegram-bot blog posts — zero commercial pages. The Russian CODM SERP is owned by .ru donate shops (donatov.net, dem-gold, coolgameservice, szmarket, kupikod, ggsel, funpay) plus Codashop KZ — none of which accept UzCard/HUMO/so'm, so 'узбекистан / сум / humo uzcard' modifiers are wide open. By contrast the Uzbek PUBG UC SERP is already contested (Midasbuy UZ, Payme blog, 1pay.uz, hablax, mtcgame, milliysavdo.store) — proof that Uzbek-language money pages DO rank here, and that CODM is the same opportunity with no incumbent. The Telegram-Premium niche (uzgets.uz, starsjoy.uz) shows the exact winning page pattern for this audience: Uzbek Latin + 'so'm' + UzCard/Humo/Click/Payme + bot. INFERRED (not verified with volume data — Ahrefs and Semrush connectors are unauthorized in this session, so there are NO real volume/KD numbers here): relative ordering of the keyword lists, the transliterated spellings ('kod mobayl', 'codm'), and the assumption that a meaningful share of Uzbek CODM players sit on the Garena SG/MY build. That last assumption is exactly why article #2 is written as an identification guide rather than a recommendation — a Global-account reader must be told the honest answer, not pushed into a purchase.",
+  "siblings": [
+    {
+      "slug": "call-of-duty-mobile-cp-sotib-olish",
+      "h1": "Call of Duty: Mobile CP sotib olish — O'zbekistonda so'mda, 3 daqiqada",
+      "type": "howto"
+    },
+    {
+      "slug": "codm-garena-global-farqi",
+      "h1": "CODM Garena va Global farqi: qaysi akkaunt sizda va nega bu CP uchun muhim",
+      "type": "howto"
+    },
+    {
+      "slug": "codm-cp-kelmadi-nima-qilish",
+      "h1": "CODM CP kelmadi: sabablari va qadam-baqadam yechimi",
+      "type": "problem"
+    },
+    {
+      "slug": "codm-cp-arzon-qayerdan-olish",
+      "h1": "CODM CP ni qayerdan olish arzon va xavfsiz: usullar taqqoslandi",
+      "type": "comparison"
+    }
+  ],
+  "cannibalisationFixes": [],
+  "mustLinkTo": [
+    "/oyinlar/call-of-duty-mobile",
+    "call-of-duty-mobile-cp-sotib-olish",
+    "codm-cp-arzon-qayerdan-olish"
+  ],
+  "publishRank": 22
+}

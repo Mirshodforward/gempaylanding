@@ -1,0 +1,191 @@
+{
+  "slug": "bigo-live-olmos-kelmadi-nima-qilish",
+  "game": "bigo-live",
+  "gameTitle": "Bigo Live",
+  "type": "problem",
+  "spec": {
+    "slug": "bigo-live-olmos-kelmadi-nima-qilish",
+    "type": "problem",
+    "h1": "Bigo Live olmos kelmadi yoki ID topilmadi — sabablari va yechimi",
+    "metaTitle": "Bigo Live olmos kelmadi? Sabablari va yechimi",
+    "metaDescription": "Bigo Live olmos kelmadi yoki ID topilmadi? Noto'g'ri Bigo ID, to'lov xatosi va kechikish sabablari, ilovada balansni tekshirish va aniq yechim qadamlari.",
+    "searchIntent": "Muammoli — pul to'langan, olmos ko'rinmayapti yoki ID qabul qilinmayapti. Foydalanuvchi xavotirda va 30 soniya ichida aniq harakat rejasini kutmoqda.",
+    "primaryKeyword": "bigo live olmos kelmadi",
+    "secondaryKeywords": [
+      "bigo id topilmadi",
+      "bigo live olmos tushmadi nima qilish",
+      "bigo live to'lov o'tdi olmos yo'q",
+      "bigo live wallet balans ko'rinmayapti",
+      "bigo live noto'g'ri id kiritdim",
+      "bigo live qo'llab-quvvatlash bilan bog'lanish"
+    ],
+    "answerBox": "Bigo Live olmosi kelmasa, avval ilovada Me → Wallet bo'limini oching va ilovani qayta ishga tushiring. Ko'p hollarda sabab uchtadan biri: Bigo ID noto'g'ri kiritilgan, to'lov bankda tasdiqlanmagan yoki provayder navbati sekinlashgan. Olmos 30 daqiqada ham ko'rinmasa, chek va buyurtma raqami bilan @StarsPaymeeSupport ga yozing.",
+    "outline": [
+      {
+        "h2": "Avval shu 3 narsani tekshiring",
+        "covers": "Eng tez uchta harakat: 1) Me → Wallet bo'limida olmos balansini ko'rish; 2) ilovani to'liq yopib qayta ochish yoki hisobdan chiqib qayta kirish; 3) botdagi buyurtmada ko'rsatilgan Bigo ID ni ilovadagi ID bilan belgima-belgi solishtirish. Ko'p holatlar shu bosqichda yopiladi.",
+        "block": "steps"
+      },
+      {
+        "h2": "Sabab 1: Bigo ID noto'g'ri kiritilgan",
+        "covers": "Eng ko'p uchraydigan sabab. Tipik xatolar: nikneym yoki telefon raqamini ID o'rniga yozish, raqamdan oldin/keyin bo'sh joy qolishi, bitta raqamni adashtirish, eski ID ni yodda saqlash. Adashilgan ID boshqa haqiqiy foydalanuvchiga tegishli bo'lsa, olmos o'sha hisobga tushadi. Shuning uchun nikneym tekshiruvi to'lovdan oldin bepul beriladi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Sabab 2: ilovaga boshqa usul bilan kirgansiz",
+        "covers": "Bigo ga telefon raqami, Google, Facebook yoki boshqa usul bilan kirish mumkin va bu ALOHIDA akkauntlar bo'lishi mumkin — har birining ID si boshqacha. Foydalanuvchi olmosni bir akkauntga to'ldirib, boshqasiga kirgan bo'lishi mumkin. Yechim: chiqib, avvalgi kirish usuli bilan qayta kirish va Me bo'limidagi ID ni tekshirish.",
+        "block": "prose"
+      },
+      {
+        "h2": "Sabab 3: to'lov o'tmagan yoki ushlab turilgan",
+        "covers": "Kartada mablag' yetmasligi, kunlik limit, bank tasdig'ining kechikishi yoki tranzaksiyaning 'hold' holatida qolishi. Qanday tekshiriladi: bank SMS xabari, Click/Payme tarixidagi status. Agar to'lov bekor bo'lgan bo'lsa, mablag' bank qoidasiga ko'ra qaytadi va buyurtma bajarilmaydi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Sabab 4: oddiy kechikish — provayder navbati",
+        "covers": "Normal yetkazish ~3 daqiqa. Bigo tomonidagi texnik ishlar, yirik aksiyalar yoki oqshomgi yuklama paytida navbat cho'zilishi mumkin. Qancha kutish mantiqiy va qachon eskalatsiya qilish kerakligi aniq aytilsin (30 daqiqa chegara sifatida).",
+        "block": "key-facts"
+      },
+      {
+        "h2": "Olmos ilovada qayerda ko'rinadi",
+        "covers": "Me → Wallet → olmos balansi. Balans darhol yangilanmasa ilovani qayta ochish kerakligi. Sovg'a panelidagi balans bilan hamyon balansi bir xil ekani. Ekran suratini olib qo'yish qo'llab-quvvatlash uchun foydali ekani.",
+        "block": "steps"
+      },
+      {
+        "h2": "Noto'g'ri ID ga tushib ketgan bo'lsa nima bo'ladi",
+        "covers": "Ochiq va halol tushuntirish: haqiqiy ID ga yetkazilgan olmosni qaytarib bo'lmaydi — buni na GemPay, na Bigo bekor qila olmaydi. Aynan shuning uchun nikneym tasdig'i majburiy qadam sifatida qo'yilgan. Yetkazilmagan (bajarilmagan) buyurtma bo'lsa, u boshqacha ko'rib chiqiladi — qo'llab-quvvatlashga murojaat qilish kerak.",
+        "block": "warning"
+      },
+      {
+        "h2": "Qo'llab-quvvatlashga nima yozish kerak",
+        "covers": "Checklist: Bigo ID, buyurtma raqami, to'lov cheki yoki Click/Payme tranzaksiya raqami, to'lov vaqti, Me → Wallet balans skrini. GemPay bo'yicha — @StarsPaymeeSupport. Bigo ning o'z xizmati — ilovada Me → Feedback yoki cs@bigo.tv (Bigo ID ni ko'rsatib). Qaysi holatda kimga yozish kerakligi ajratib berilsin.",
+        "block": "checklist"
+      },
+      {
+        "h2": "Muammo hal bo'ldi — keyingi buyurtmani xatosiz qilish",
+        "covers": "Botga qaytish chaqiruvi, ID ni nusxa olish odati, nikneymni har safar tekshirish va /oyinlar/bigo-live sahifasiga havola.",
+        "block": "inline-cta"
+      }
+    ],
+    "faq": [
+      {
+        "q": "To'lov o'tdi, lekin olmos yo'q. Birinchi navbatda nima qilaman?",
+        "a": "Ilovada Me → Wallet bo'limini oching va ilovani to'liq yopib qayta ishga tushiring. Keyin buyurtmada ko'rsatilgan Bigo ID ni ilovadagi ID bilan solishtiring. Aksariyat holatlar shu ikki qadamda hal bo'ladi."
+      },
+      {
+        "q": "Bot «ID topilmadi» deyapti, nega?",
+        "a": "Demak kiritilgan raqam mavjud Bigo akkauntiga to'g'ri kelmayapti. Nikneym yoki telefon raqamini emas, aynan Me bo'limidagi 7-10 xonali raqamni kiriting va oldidan/orqasidan bo'sh joy qolmaganiga ishonch hosil qiling."
+      },
+      {
+        "q": "Noto'g'ri ID kiritsam, olmos qaytariladimi?",
+        "a": "Agar olmos haqiqiy hisobga yetkazib bo'lingan bo'lsa, uni qaytarib bo'lmaydi — bu Bigo tizimining qoidasi. Shuning uchun to'lovdan oldin bot ko'rsatgan nikneymni albatta tekshiring. Buyurtma hali bajarilmagan bo'lsa, darhol qo'llab-quvvatlashga yozing."
+      },
+      {
+        "q": "Nega do'stimning hisobiga tushdi-yu, meniki bo'sh?",
+        "a": "Ehtimol siz o'z ID ingiz o'rniga boshqa ID ni kiritgansiz yoki ilovaga boshqa kirish usuli bilan kirgansiz. Bigo da telefon, Google va Facebook orqali kirish alohida akkaunt bo'lishi mumkin — har birining ID si har xil."
+      },
+      {
+        "q": "Qancha kutish kerak?",
+        "a": "Odatiy yetkazish taxminan 3 daqiqa. Yuklama yuqori paytda 30 daqiqagacha cho'zilishi mumkin. Shundan keyin ham balans o'zgarmasa, chek va buyurtma raqami bilan @StarsPaymeeSupport ga murojaat qiling."
+      },
+      {
+        "q": "Bigo ning o'z qo'llab-quvvatlashiga qanday yozaman?",
+        "a": "Ilovada Me → Feedback bo'limi orqali yoki cs@bigo.tv pochtasiga. Xatda Bigo ID ingizni, to'lov vaqtini va buyurtma ma'lumotlarini ko'rsating. Bu, ayniqsa, olmos ilovaning o'zida ko'rinmayotgan holatlar uchun foydali."
+      },
+      {
+        "q": "Pul yechildi, ammo buyurtma bekor bo'ldi. Mablag' qaytadimi?",
+        "a": "Bajarilmagan buyurtma bo'yicha mablag' qaytariladi yoki bank tomonidan ushlab turilgan summa avtomatik bo'shatiladi — muddat bankka bog'liq. Tranzaksiya raqami va vaqtni saqlab qo'ying va qo'llab-quvvatlashga yuboring."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "HowTo",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "internalLinks": [
+      "/oyinlar/bigo-live",
+      "bigo-live-olmos-sotib-olish",
+      "bigo-id-qayerda-topiladi",
+      "bigo-live-olmos-nima-va-sovgalar"
+    ],
+    "wordCount": 1300
+  },
+  "gameKeywords": {
+    "primary": [
+      "bigo live olmos sotib olish",
+      "bigo live olmos to'ldirish",
+      "bigo olmos sotib olish",
+      "bigo live hisobini to'ldirish",
+      "bigo id orqali olmos to'ldirish",
+      "bigo live donat o'zbekiston"
+    ],
+    "questions": [
+      "bigo live olmosni qanday sotib olish mumkin",
+      "bigo id qayerdan topiladi",
+      "bigo live olmos necha daqiqada tushadi",
+      "bigo id ni birovga berish xavfsizmi",
+      "olmos kelmasa nima qilish kerak",
+      "bigo live da olmos nimaga kerak",
+      "olmos va bin o'rtasida qanday farq bor",
+      "strimerga olmos qanday sovg'a qilinadi",
+      "bigo live da bepul olmos olish mumkinmi",
+      "uzcard bilan bigo live to'ldirsa bo'ladimi",
+      "noto'g'ri id kiritsam olmos qaytadimi",
+      "bigo live olmos narxi nega o'zgarib turadi"
+    ],
+    "russian": [
+      "купить алмазы bigo live узбекистан",
+      "пополнить bigo live в сумах",
+      "биго лайв алмазы uzcard",
+      "bigo live пополнение по id",
+      "как узнать свой bigo id",
+      "алмазы биго не пришли",
+      "сколько стоят алмазы в bigo live",
+      "bigo live бины и алмазы разница",
+      "донат bigo live ташкент",
+      "пополнить биго humo payme click"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE (WebSearch + WebFetch, avgust 2026). (1) ENG MUHIM TOPILMA: Bigo olmosi bo'yicha o'zbek-lotin SERP butunlay bo'sh. \"bigo live olmos sotib olish\", \"bigo live olmos to'ldirish bigo id qayerda\", \"bigo live uz sayt olmos narxi to'ldirish\" so'rovlari bironta ham o'zbek tilidagi tijorat yoki maqola sahifasini qaytarmadi — faqat bigo.tv profil sahifalari, Play Store/App Store listinglari, YouTube/Instagram va bitta uzfor.net maqolasi (\"BIGO LIVE da pul ishlash\"). Ya'ni mavjud yagona o'zbekcha kontent STRIMERGA (pul ishlash) qaratilgan, SOVG'A BERUVCHIGA emas. Hech qaysi .uz sayti bu klasterni egallamagan — raqobat deyarli nol. (2) Rus klasteri real, lekin Rossiyaga qaratilgan, O'zbekistonga emas: donatov.net/bigo, bigo.su, zoy.one/bigo-live, dtf.ru gaydi, pyyplbot, ggsel, plati.market — hammasi rublda va SBP/MIR taklif qiladi. (3) Rasmiy Bigo recharge sahifasini (bigo.tv/ru/blog/bigo-live-recharge) fetch qildim: to'lov usullari sifatida faqat SBP, MIR kartalari va Bigo Card (Smile.One) ko'rsatilgan — UZS/UzCard yo'li rasmiy sahifada yo'q. Bu taqqoslash maqolasi uchun tekshirilgan, iqtibos qilinadigan fakt. (4) O'zbekistonga qaratilgan yagona raqobatchi — hablax.com/en/country/uzbekistan/giftcard-bigo-live-bonus-diamonds: inglizcha gift-card sahifasi, o'zbekcha versiya va mahalliy karta relslari yo'q. play2key.uz Uzcard/Humo bilan Telegram Stars sotadi, lekin unda Bigo Live mahsuloti borligini TASDIQLAY OLMADIM. (5) Bigo ID joylashuvi ikki mustaqil manbada tasdiqlandi: Me bo'limi, nikneym ostidagi 7-10 xonali raqam (shuningdek Settings → Account → User ID). (6) Muammo klasteri tasdiqlandi: \"алмазы не пришли\" / \"ID не найден\" doimiy sarlavha; rasmiy yo'riqnoma — Me → Wallet ni tekshirish, 30 daqiqagacha kutish, Me → Feedback yoki cs@bigo.tv ga buyurtma raqami bilan yozish. (7) Firibgarlik klasteri tasdiqlandi: \"bepul olmos\" generatorlari va MOD APK lar bo'yicha Bigo ning o'z blogida ham sahifa bor (\"BIGO LIVE Hack: Free Diamonds, MOD APKs & Safety\"). (8) O'zbekistonda Bigo Live bloklangani haqida hech qanday dalil topilmadi — shuning uchun maqolalar VPN kerakligini nazarda tutmasligi shart. OGOHLANTIRISH — RAQAMLAR: manbalar olmos↔bin kursida bir-biriga zid (bir joyda 1 olmos = 3 bin, boshqasida 210 bin = 1 USD; sovg'a narxlari ham 2026 yilda o'zgargan). Shu sababli reja hech qaysi maqolada aniq kurs, sovg'a narxi yoki so'mdagi raqam yozishni TAQIQLAYDI — faqat mexanizm tushuntiriladi, raqam ilovada/botda ko'rsatiladi deyiladi. INFERRED (tekshirilmagan): aniq qidiruv hajmlari — bu sessiyada Ahrefs va Semrush konnektorlari avtorizatsiya qilinmagan, shuning uchun volume ma'lumoti yo'q; o'zbekcha iboralarning aniq shakli va transliteratsiya bo'linishi (\"olmos\" vs \"almaz\" vs \"brilliant\"); Toshkentdagi Bigo auditoriyasi ruscha so'rovlarga ko'proq moyil, o'zbek-lotin so'rovlari past hajmli lekin deyarli raqobatsiz degan taxmin; primary/secondary ichidagi tartib — mening bahom, o'lchov emas.",
+  "siblings": [
+    {
+      "slug": "bigo-live-olmos-sotib-olish",
+      "h1": "Bigo Live olmos sotib olish: O'zbekistonda so'mda, 3 daqiqada",
+      "type": "howto"
+    },
+    {
+      "slug": "bigo-live-olmos-qayerdan-arzon-olish",
+      "h1": "Bigo Live olmosini qayerdan olish arzon va xavfsiz: usullar taqqoslandi",
+      "type": "comparison"
+    },
+    {
+      "slug": "bigo-live-olmos-nima-va-sovgalar",
+      "h1": "Bigo Live olmosi nima, bin (beans) dan farqi va sovg'alarga qanday sarflanadi",
+      "type": "info"
+    },
+    {
+      "slug": "bigo-id-qayerda-topiladi",
+      "h1": "Bigo ID qayerda turadi, uni berish xavfsizmi va «bepul olmos» firibgarligi",
+      "type": "trust"
+    }
+  ],
+  "cannibalisationFixes": [
+    {
+      "with": [
+        "bigo-live-olmos-sotib-olish",
+        "bigo-id-qayerda-topiladi",
+        "bigo-live-olmos-qayerdan-arzon-olish",
+        "bigo-live-olmos-nima-va-sovgalar"
+      ],
+      "problem": "All five Bigo articles link to /oyinlar/bigo-live — a live-streaming app filed inside the games category. It dilutes the topical signal of /oyinlar, and the same defect will repeat with Steam and Telegram Stars. Bigo's buyer intent (gifting a streamer during a PK battle) is also structurally different from game topup, so mixing them weakens both category signals.",
+      "fix": "Move to /xizmatlar/bigo-live (or /toldirish/bigo-live) under a separate non-game category with its own breadcrumb, hub page and sitemap section. Keep exactly one cross-link from the games side, placed inside oyin-pul-xavfsiz-toldirish, not from game pillars."
+    }
+  ],
+  "mustLinkTo": [
+    "/xizmatlar/bigo-live",
+    "bigo-live-olmos-sotib-olish",
+    "bigo-id-qayerda-topiladi"
+  ],
+  "publishRank": 23
+}

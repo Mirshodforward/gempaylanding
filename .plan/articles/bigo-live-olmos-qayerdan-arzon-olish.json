@@ -1,0 +1,187 @@
+{
+  "slug": "bigo-live-olmos-qayerdan-arzon-olish",
+  "game": "bigo-live",
+  "gameTitle": "Bigo Live",
+  "type": "comparison",
+  "spec": {
+    "slug": "bigo-live-olmos-qayerdan-arzon-olish",
+    "type": "comparison",
+    "h1": "Bigo Live olmosini qayerdan olish arzon va xavfsiz: usullar taqqoslandi",
+    "metaTitle": "Bigo Live olmos qayerdan arzon: usullar taqqosi",
+    "metaDescription": "Bigo Live olmosini qayerdan olish arzon: ilova ichida, rasmiy veb-sahifa, xalqaro saytlar yoki GemPay. Halol jadval, komissiya va mahalliy kartalar haqida.",
+    "searchIntent": "Tijoriy tadqiqot — foydalanuvchi qayerdan sotib olishni tanlayapti va narx, xavfsizlik hamda to'lov usuli bo'yicha halol solishtiruvni qidiryapti.",
+    "primaryKeyword": "bigo live olmos qayerdan arzon olish",
+    "secondaryKeywords": [
+      "bigo live olmos qayerdan sotib olinadi",
+      "bigo live rasmiy to'ldirish sahifasi",
+      "ilova ichidan olmos qimmatmi",
+      "bigo live xalqaro sayt to'ldirish",
+      "google play uzcard ishlamayapti",
+      "bigo live gempay yoki rasmiy do'kon"
+    ],
+    "answerBox": "O'zbekistonda Bigo Live olmosini to'rt yo'l bilan olish mumkin: ilova ichidan, rasmiy veb-sahifadan, xalqaro reseller saytlaridan yoki GemPay boti orqali. Ilova ichidagi xarid do'kon komissiyasi sababli qimmatroq, xalqaro saytlar esa Visa yoki Mastercard so'raydi. GemPay farqi — so'mda to'lash va mahalliy kartalar.",
+    "outline": [
+      {
+        "h2": "Qisqacha: 4 ta usul va ular kimga mos",
+        "covers": "Jadval. Ustunlar: usul | to'lov vositasi | so'mda to'lash mumkinmi | ID kerakmi yoki akkauntga kirish | odatdagi tezlik | qo'llab-quvvatlash tili | asosiy kamchilik. Qatorlar: ilova ichida (Google Play / App Store), rasmiy veb-recharge sahifasi, xalqaro reseller saytlar, GemPay boti. Jadvalda hech qanday so'm raqami bo'lmaydi.",
+        "block": "compare-table"
+      },
+      {
+        "h2": "Ilova ichidan sotib olish: qulay, lekin qimmatroq",
+        "covers": "Google Play va App Store orqali xarid narxiga do'kon komissiyasi qo'shiladi, shuning uchun bir olmosga to'g'ri keladigan narx odatda veb orqali xariddan yuqori bo'ladi. O'zbekistonlik foydalanuvchi uchun asosiy to'siq — do'kon hisobiga to'lov usuli: ko'p hollarda Visa/Mastercard yoki sovg'a kartasi talab qilinadi, UzCard/HUMO to'g'ridan-to'g'ri qabul qilinmaydi. Bu holat bank va do'kon siyosatiga qarab o'zgarishi mumkinligi halol aytilsin.",
+        "block": "prose"
+      },
+      {
+        "h2": "Rasmiy veb-sahifa (bigo.tv recharge)",
+        "covers": "Rasmiy sahifada bir olmos odatda ilova ichidagidan arzonroq tushadi, chunki do'kon ulushi yo'q. Lekin to'lov usullari hududga bog'liq: rasmiy rus tilidagi sahifada, masalan, SBP, MIR kartalari va Bigo Card ko'rsatilgan — O'zbekiston kartalari uchun tayyor yo'l yo'q. Shuningdek valyuta konvertatsiyasi va bank komissiyasi qo'shiladi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Xalqaro reseller saytlar",
+        "covers": "SEAGM, TopUpLive kabi saytlar Bigo olmosini ID orqali sotadi va ba'zilari rasmiy avtorizatsiyaga ega. Ammo o'zbek foydalanuvchisi uchun: interfeys ingliz/rus tilida, to'lov Visa/Mastercard, PayPal yoki kripto orqali, narx dollarda — bankdagi konvertatsiya va komissiya yakuniy summani oshiradi, nizo holatida yozishmalar chet tilida ketadi.",
+        "block": "prose"
+      },
+      {
+        "h2": "GemPay: so'mda to'lov, mahalliy kartalar, o'zbekcha yordam",
+        "covers": "Telegram ichida, UzCard/HUMO/Click/Payme/Paynet, so'mda narx, ID orqali yetkazish ~3 daqiqada, to'lovdan oldin bepul nikneym tekshiruvi, o'zbek tilidagi qo'llab-quvvatlash (@StarsPaymeeSupport). Akkauntga kirish yoki parol talab qilinmasligi. StarsPaymee ekotizimi qismi ekani.",
+        "block": "prose"
+      },
+      {
+        "h2": "Nega mahalliy karta shuncha muhim",
+        "covers": "Faktlar: valyuta konvertatsiyasi kursi va bank komissiyasi yakuniy narxni oshiradi; xorijiy saytlarda 3D-Secure yoki hudud tekshiruvi tufayli to'lov rad etilishi mumkin; qaytarish jarayoni chet el operatori bilan uzoq davom etadi; VPN yoki hudud almashtirish talab qilinmaydigan yo'l har doim afzal.",
+        "block": "key-facts"
+      },
+      {
+        "h2": "Narxni to'g'ri taqqoslash: bir olmosga qancha to'layapsiz",
+        "covers": "Metodika: paket narxini olmos soniga bo'ling va bonus olmoslarni ham hisobga oling; ustiga to'lov komissiyasi va konvertatsiya farqini qo'shing. Katta paketlar odatda bir olmos hisobida arzonroq. Aniq so'm raqami yozilmaydi — o'quvchiga botdagi joriy narxni shu usulda solishtirish o'rgatiladi.",
+        "block": "price-logic"
+      },
+      {
+        "h2": "Qaysi holatda qaysi usulni tanlash kerak",
+        "covers": "Qisqa xulosa: agar sizda faqat UzCard/HUMO bo'lsa va so'mda to'lamoqchi bo'lsangiz — bot; agar xorijiy karta bo'lsa va o'zingiz solishtirmoqchi bo'lsangiz — rasmiy veb; ilova ichidagi xarid faqat shoshilinch va qulaylik uchun. Botga va /oyinlar/bigo-live ga havola.",
+        "block": "inline-cta"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Eng arzon usul qaysi?",
+        "a": "Buni bir olmosga to'g'ri keladigan yakuniy narx hal qiladi — ya'ni paket narxi, bonus olmoslar, to'lov komissiyasi va valyuta konvertatsiyasi birga hisoblanadi. Ilova ichidagi xarid odatda eng qimmat variant, chunki unga do'kon komissiyasi qo'shiladi."
+      },
+      {
+        "q": "Google Play yoki App Store da UzCard bilan to'lay olamanmi?",
+        "a": "Ko'p hollarda yo'q — do'kon hisobiga odatda Visa/Mastercard yoki sovg'a kartasi kerak bo'ladi. Bu qoidalar bank va do'kon siyosatiga qarab o'zgarishi mumkin, shuning uchun ilova ichidagi to'lov ishonchli yo'l hisoblanmaydi."
+      },
+      {
+        "q": "Rasmiy veb-sahifa ilova ichidagidan arzonmi?",
+        "a": "Odatda ha, chunki do'kon ulushi qo'shilmaydi. Ammo rasmiy sahifadagi to'lov usullari hududga bog'liq va O'zbekiston kartalari uchun tayyor kanal ko'rsatilmagan, shu sababli amalda ko'pchilikka bu yo'l ochilmaydi."
+      },
+      {
+        "q": "Xalqaro saytlardan olish xavfsizmi?",
+        "a": "Ular orasida rasmiy avtorizatsiyaga ega jiddiy platformalar bor. Lekin to'lov chet el kartasini talab qiladi, narx dollarda ko'rsatiladi va nizo bo'lsa yozishma chet tilida ketadi. Har qanday holatda akkaunt paroli so'ralsa — darhol to'xtang."
+      },
+      {
+        "q": "GemPay olmosni qayerdan oladi?",
+        "a": "Buyurtma provayder katalogi orqali Bigo ID ga to'g'ridan-to'g'ri yetkaziladi — akkauntingizga kirilmaydi va parol so'ralmaydi. Shuning uchun bu ID orqali to'ldirishning odatiy, qonuniy usuli hisoblanadi."
+      },
+      {
+        "q": "Bir xil paket turli saytlarda nega har xil turadi?",
+        "a": "Sabablari: dollar/so'm kursi, to'lov tizimi komissiyasi, sayt ustamasi, hududiy aksiyalar va bonus olmoslar. Shu bois narx statik emas va uni solishtirishda faqat yakuniy to'lanadigan summaga qarash kerak."
+      },
+      {
+        "q": "Bonus olmoslar narxni qanchalik o'zgartiradi?",
+        "a": "Bonuslar odatda katta paketlarda beriladi va ular bir olmosning haqiqiy narxini sezilarli pasaytiradi. Solishtirganda paket narxini bonus bilan birga olingan umumiy olmos soniga bo'lish kerak."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "FAQPage",
+      "ItemList",
+      "BreadcrumbList"
+    ],
+    "internalLinks": [
+      "/oyinlar/bigo-live",
+      "bigo-live-olmos-sotib-olish",
+      "bigo-live-olmos-nima-va-sovgalar",
+      "bigo-id-qayerda-topiladi"
+    ],
+    "wordCount": 1500
+  },
+  "gameKeywords": {
+    "primary": [
+      "bigo live olmos sotib olish",
+      "bigo live olmos to'ldirish",
+      "bigo olmos sotib olish",
+      "bigo live hisobini to'ldirish",
+      "bigo id orqali olmos to'ldirish",
+      "bigo live donat o'zbekiston"
+    ],
+    "questions": [
+      "bigo live olmosni qanday sotib olish mumkin",
+      "bigo id qayerdan topiladi",
+      "bigo live olmos necha daqiqada tushadi",
+      "bigo id ni birovga berish xavfsizmi",
+      "olmos kelmasa nima qilish kerak",
+      "bigo live da olmos nimaga kerak",
+      "olmos va bin o'rtasida qanday farq bor",
+      "strimerga olmos qanday sovg'a qilinadi",
+      "bigo live da bepul olmos olish mumkinmi",
+      "uzcard bilan bigo live to'ldirsa bo'ladimi",
+      "noto'g'ri id kiritsam olmos qaytadimi",
+      "bigo live olmos narxi nega o'zgarib turadi"
+    ],
+    "russian": [
+      "купить алмазы bigo live узбекистан",
+      "пополнить bigo live в сумах",
+      "биго лайв алмазы uzcard",
+      "bigo live пополнение по id",
+      "как узнать свой bigo id",
+      "алмазы биго не пришли",
+      "сколько стоят алмазы в bigo live",
+      "bigo live бины и алмазы разница",
+      "донат bigo live ташкент",
+      "пополнить биго humo payme click"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE (WebSearch + WebFetch, avgust 2026). (1) ENG MUHIM TOPILMA: Bigo olmosi bo'yicha o'zbek-lotin SERP butunlay bo'sh. \"bigo live olmos sotib olish\", \"bigo live olmos to'ldirish bigo id qayerda\", \"bigo live uz sayt olmos narxi to'ldirish\" so'rovlari bironta ham o'zbek tilidagi tijorat yoki maqola sahifasini qaytarmadi — faqat bigo.tv profil sahifalari, Play Store/App Store listinglari, YouTube/Instagram va bitta uzfor.net maqolasi (\"BIGO LIVE da pul ishlash\"). Ya'ni mavjud yagona o'zbekcha kontent STRIMERGA (pul ishlash) qaratilgan, SOVG'A BERUVCHIGA emas. Hech qaysi .uz sayti bu klasterni egallamagan — raqobat deyarli nol. (2) Rus klasteri real, lekin Rossiyaga qaratilgan, O'zbekistonga emas: donatov.net/bigo, bigo.su, zoy.one/bigo-live, dtf.ru gaydi, pyyplbot, ggsel, plati.market — hammasi rublda va SBP/MIR taklif qiladi. (3) Rasmiy Bigo recharge sahifasini (bigo.tv/ru/blog/bigo-live-recharge) fetch qildim: to'lov usullari sifatida faqat SBP, MIR kartalari va Bigo Card (Smile.One) ko'rsatilgan — UZS/UzCard yo'li rasmiy sahifada yo'q. Bu taqqoslash maqolasi uchun tekshirilgan, iqtibos qilinadigan fakt. (4) O'zbekistonga qaratilgan yagona raqobatchi — hablax.com/en/country/uzbekistan/giftcard-bigo-live-bonus-diamonds: inglizcha gift-card sahifasi, o'zbekcha versiya va mahalliy karta relslari yo'q. play2key.uz Uzcard/Humo bilan Telegram Stars sotadi, lekin unda Bigo Live mahsuloti borligini TASDIQLAY OLMADIM. (5) Bigo ID joylashuvi ikki mustaqil manbada tasdiqlandi: Me bo'limi, nikneym ostidagi 7-10 xonali raqam (shuningdek Settings → Account → User ID). (6) Muammo klasteri tasdiqlandi: \"алмазы не пришли\" / \"ID не найден\" doimiy sarlavha; rasmiy yo'riqnoma — Me → Wallet ni tekshirish, 30 daqiqagacha kutish, Me → Feedback yoki cs@bigo.tv ga buyurtma raqami bilan yozish. (7) Firibgarlik klasteri tasdiqlandi: \"bepul olmos\" generatorlari va MOD APK lar bo'yicha Bigo ning o'z blogida ham sahifa bor (\"BIGO LIVE Hack: Free Diamonds, MOD APKs & Safety\"). (8) O'zbekistonda Bigo Live bloklangani haqida hech qanday dalil topilmadi — shuning uchun maqolalar VPN kerakligini nazarda tutmasligi shart. OGOHLANTIRISH — RAQAMLAR: manbalar olmos↔bin kursida bir-biriga zid (bir joyda 1 olmos = 3 bin, boshqasida 210 bin = 1 USD; sovg'a narxlari ham 2026 yilda o'zgargan). Shu sababli reja hech qaysi maqolada aniq kurs, sovg'a narxi yoki so'mdagi raqam yozishni TAQIQLAYDI — faqat mexanizm tushuntiriladi, raqam ilovada/botda ko'rsatiladi deyiladi. INFERRED (tekshirilmagan): aniq qidiruv hajmlari — bu sessiyada Ahrefs va Semrush konnektorlari avtorizatsiya qilinmagan, shuning uchun volume ma'lumoti yo'q; o'zbekcha iboralarning aniq shakli va transliteratsiya bo'linishi (\"olmos\" vs \"almaz\" vs \"brilliant\"); Toshkentdagi Bigo auditoriyasi ruscha so'rovlarga ko'proq moyil, o'zbek-lotin so'rovlari past hajmli lekin deyarli raqobatsiz degan taxmin; primary/secondary ichidagi tartib — mening bahom, o'lchov emas.",
+  "siblings": [
+    {
+      "slug": "bigo-live-olmos-sotib-olish",
+      "h1": "Bigo Live olmos sotib olish: O'zbekistonda so'mda, 3 daqiqada",
+      "type": "howto"
+    },
+    {
+      "slug": "bigo-live-olmos-kelmadi-nima-qilish",
+      "h1": "Bigo Live olmos kelmadi yoki ID topilmadi — sabablari va yechimi",
+      "type": "problem"
+    },
+    {
+      "slug": "bigo-live-olmos-nima-va-sovgalar",
+      "h1": "Bigo Live olmosi nima, bin (beans) dan farqi va sovg'alarga qanday sarflanadi",
+      "type": "info"
+    },
+    {
+      "slug": "bigo-id-qayerda-topiladi",
+      "h1": "Bigo ID qayerda turadi, uni berish xavfsizmi va «bepul olmos» firibgarligi",
+      "type": "trust"
+    }
+  ],
+  "cannibalisationFixes": [
+    {
+      "with": [
+        "bigo-live-olmos-sotib-olish",
+        "bigo-id-qayerda-topiladi",
+        "bigo-live-olmos-kelmadi-nima-qilish",
+        "bigo-live-olmos-nima-va-sovgalar"
+      ],
+      "problem": "All five Bigo articles link to /oyinlar/bigo-live — a live-streaming app filed inside the games category. It dilutes the topical signal of /oyinlar, and the same defect will repeat with Steam and Telegram Stars. Bigo's buyer intent (gifting a streamer during a PK battle) is also structurally different from game topup, so mixing them weakens both category signals.",
+      "fix": "Move to /xizmatlar/bigo-live (or /toldirish/bigo-live) under a separate non-game category with its own breadcrumb, hub page and sitemap section. Keep exactly one cross-link from the games side, placed inside oyin-pul-xavfsiz-toldirish, not from game pillars."
+    }
+  ],
+  "mustLinkTo": [
+    "/xizmatlar/bigo-live",
+    "bigo-live-olmos-sotib-olish",
+    "bigo-live-olmos-nima-va-sovgalar",
+    "oyin-valyutasi-qayerdan-arzon"
+  ],
+  "publishRank": 27
+}

@@ -1,0 +1,187 @@
+{
+  "slug": "magic-chess-go-go-codashop-yoki-gempay",
+  "game": "magic-chess-go-go",
+  "gameTitle": "Magic Chess: Go Go",
+  "type": "comparison",
+  "spec": {
+    "slug": "magic-chess-go-go-codashop-yoki-gempay",
+    "type": "comparison",
+    "h1": "Magic Chess: Go Go: Codashop, rasmiy do'kon yoki GemPay — qaysi biri O'zbekiston uchun?",
+    "metaTitle": "Magic Chess Go Go: Codashop yoki GemPay — taqqoslash",
+    "metaDescription": "Magic Chess: Go Go olmosini qayerdan olgan ma'qul? Codashop, o'yin ichidagi do'kon, rus saytlari va GemPay — to'lov, narx va xavfsizlik taqqoslandi.",
+    "searchIntent": "Commercial investigation. O'yinchi variantlarni solishtirmoqda va qaysi biri O'zbekiston kartasi bilan haqiqatan ishlashini bilmoqchi. Halol jadval bilan qaror bosqichini yopadi.",
+    "primaryKeyword": "magic chess go go codashop yoki gempay",
+    "secondaryKeywords": [
+      "magic chess go go olmos qayerdan olish",
+      "magic chess go go rasmiy do'kon",
+      "codashop O'zbekiston uzcard",
+      "magic chess go go donat sayti",
+      "magic chess go go smile one",
+      "magic chess go go olmos qayerda arzon"
+    ],
+    "answerBox": "O'zbekistondagi o'yinchi uchun asosiy farq — to'lov usuli. Codashop va rus donat saytlari ko'pincha UzCard yoki HUMO ni qabul qilmaydi, rasmiy do'kon esa xalqaro karta so'raydi. GemPay so'mda ishlaydi, Click va Payme ni oladi, nikni to'lovdan oldin bepul tekshiradi va olmosni ~2 daqiqada yetkazadi.",
+    "outline": [
+      {
+        "h2": "Qisqacha: qaysi variant kimga to'g'ri keladi",
+        "covers": "Uch qatorli xulosa: xalqaro kartangiz bor va shoshmayapsizmi — rasmiy do'kon; rublda to'lay olasizmi — rus saytlari; O'zbekiston kartasi bilan so'mda to'lamoqchimisiz — GemPay. Javob birinchi ekranda beriladi.",
+        "block": "key-facts"
+      },
+      {
+        "h2": "To'liq taqqoslash jadvali",
+        "covers": "Ustunlar: To'lov usuli, So'mda ishlaydimi, VPN kerakmi, Nik to'lovdan oldin tekshiriladimi, Yetkazish vaqti, Qo'llab-quvvatlash tili, Region xatosi xavfi. Qatorlar: O'yin ichidagi rasmiy do'kon, Codashop, rus donat saytlari, GemPay. Narx ustuniga aniq so'm emas, balki 'kursga bog'liq' izohi qo'yiladi.",
+        "block": "compare-table"
+      },
+      {
+        "h2": "O'yin ichidagi rasmiy do'kon",
+        "covers": "Eng ishonchli yo'l, lekin Google Play/App Store orqali xalqaro karta va do'kon komissiyasi talab qilinadi. O'zbekistondagi ko'pchilik o'yinchida bunday karta yo'q — asosiy to'siq shu.",
+        "block": "prose"
+      },
+      {
+        "h2": "Codashop va xalqaro topup saytlari",
+        "covers": "Codashop MCGG ni sotadi va User ID + Zone ID so'raydi, lekin mintaqaviy to'lov tizimlariga tayanadi — UzCard/HUMO odatda ro'yxatda yo'q. Muhim nuqta: Codashop to'lovdan oldin nikni ko'rsatmaydi, ya'ni xato ID ni ushlab qololmaysiz.",
+        "block": "prose"
+      },
+      {
+        "h2": "Rus donat saytlari: nimaga ehtiyot bo'lish kerak",
+        "covers": "KupiKod, Smile One, Donatov kabi saytlar ishlaydi, lekin rublda, RU kartaga mo'ljallangan va mahsulotni region bo'yicha ajratadi (Rossiya / Global / Turkiya). Noto'g'ri region tanlansa buyurtma yo'qoladi. Yetkazish o'rtacha 10 daqiqadan boshlanadi va yuklama paytida cho'ziladi.",
+        "block": "warning"
+      },
+      {
+        "h2": "GemPay: nima uchun mahalliy karta muhim",
+        "covers": "So'mda to'lov, UzCard/HUMO/Click/Payme/Paynet, konvertatsiya yo'q, VPN yo'q, o'zbek tilida qo'llab-quvvatlash, to'lovdan oldin bepul nik tekshiruvi, ~2 daqiqa yetkazish. StarsPaymee ekotizimi qismi ekani aytiladi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Narx nega har joyda har xil",
+        "covers": "Provayder narxi USDT kursiga bog'langan; do'kon komissiyasi, valyuta konvertatsiyasi va bank ustamasi qo'shiladi. Shuning uchun bir xil paket turli joyda turlicha turadi va biz qat'iy raqam yozmaymiz — aniq narx botda ko'rinadi.",
+        "block": "price-logic"
+      },
+      {
+        "h2": "Xulosa va keyingi qadam",
+        "covers": "O'zbekistondagi o'yinchi uchun tavsiya va botga o'tish chaqirig'i; nik tekshiruvi bepul bo'lgani uchun sinab ko'rish xarajatsiz.",
+        "block": "inline-cta"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Codashop O'zbekiston kartalarini qabul qiladimi?",
+        "a": "Ko'p hollarda yo'q. Codashop mintaqaviy to'lov tizimlariga tayanadi va UzCard yoki HUMO odatda ro'yxatda bo'lmaydi. Shu sababli O'zbekistondagi o'yinchilar ko'pincha to'lov bosqichida to'xtab qoladi."
+      },
+      {
+        "q": "O'yin ichidagi rasmiy do'kondan olganim arzonroqmi?",
+        "a": "Odatda yo'q. Google Play yoki App Store orqali to'lovda xalqaro karta va do'kon komissiyasi qo'shiladi. Bundan tashqari, ko'pchilikda bunday karta umuman yo'q."
+      },
+      {
+        "q": "Rus donat saytlari xavfsizmi?",
+        "a": "Ular ishlaydi, lekin O'zbekiston uchun mo'ljallanmagan: to'lov rublda, RU karta kerak va qo'llab-quvvatlash rus tilida. Eng katta xavf — mahsulot regionini noto'g'ri tanlash, bunda buyurtma yo'qolishi mumkin."
+      },
+      {
+        "q": "GemPay narxi nega o'zgarib turadi?",
+        "a": "Provayder narxi USDT kursiga bog'langan. Kurs o'zgarganda so'mdagi narx ham o'zgaradi. Shuning uchun aniq raqam faqat botda, buyurtma paytida ko'rsatiladi."
+      },
+      {
+        "q": "Qaysi variant eng tez?",
+        "a": "GemPay va o'yin ichidagi do'kon deyarli bir xil — bir necha daqiqa. Ko'p rus saytlarida esa o'rtacha yetkazish 10 daqiqadan boshlanadi va yuklama paytida ancha cho'zilishi mumkin."
+      },
+      {
+        "q": "Nik tekshiruvi nega shunchalik muhim?",
+        "a": "Chunki olmos ID bo'yicha yetkaziladi va noto'g'ri ID ga ketgan mablag'ni qaytarib bo'lmaydi. GemPay to'lovdan oldin nikni bepul ko'rsatadi, ko'pchilik saytlar esa bu bosqichni umuman o'tkazmaydi."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "FAQPage",
+      "BreadcrumbList",
+      "ItemList"
+    ],
+    "internalLinks": [
+      "/oyinlar/magic-chess-go-go",
+      "magic-chess-go-go-olmos-sotib-olish",
+      "magic-chess-go-go-olmos-paketlari",
+      "magic-chess-go-go-olmos-kelmadi",
+      "oyin-valyutasi-qayerdan-arzon",
+      "gempay-ishonli-xizmat"
+    ],
+    "wordCount": 1500
+  },
+  "gameKeywords": {
+    "primary": [
+      "magic chess go go olmos sotib olish",
+      "magic chess go go olmos to'ldirish",
+      "magic chess go go donat",
+      "mcgg olmos sotib olish",
+      "magic chess go go to'ldirish O'zbekiston",
+      "magic chess olmos narxi"
+    ],
+    "questions": [
+      "magic chess go go olmosini O'zbekistonda qanday sotib olaman?",
+      "magic chess go go user id va server id qayerda turadi?",
+      "magic chess go go va mobile legends id bir xilmi?",
+      "magic chess go go olmos qancha vaqtda tushadi?",
+      "nega magic chess go go olmos kelmadi?",
+      "magic chess go go da olmos nimaga sarflanadi?",
+      "magic chess go go eng katta olmos paketi qaysi?",
+      "go go pass nima va arziydimi?",
+      "magic chess go go ni uzcard yoki humo bilan to'ldirsa bo'ladimi?",
+      "codashop O'zbekiston kartasini qabul qiladimi?",
+      "magic chess go go bepul olmos generatori ishlaydimi?",
+      "noto'g'ri server id kiritsam olmos qayerga ketadi?"
+    ],
+    "russian": [
+      "донат magic chess go go",
+      "купить алмазы magic chess go go",
+      "magic chess go go пополнение узбекистан",
+      "как задонатить в magic chess go go",
+      "magic chess go go id сервера где найти",
+      "magic chess go go алмазы дешево",
+      "пополнить magic chess go go через click payme",
+      "magic chess go go не пришли алмазы",
+      "магик чесс го го алмазы купить",
+      "magic chess go go донат по id"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE: (1) Uzbek-language SERP for this game is effectively EMPTY — queries like \"Magic Chess Go Go olmos sotib olish O'zbekiston\" and \"'magic chess' olmos to'ldirish Payme Click UzCard Humo\" returned zero relevant results, only Wikipedia/Google Play and Uzbek gambling-affiliate spam (Mostbet, BetWinner, FairPari). There is no Uzbek-language competitor page for MCGG topup at all. This is the single strongest finding: a first-mover land grab. (2) Russian SERP IS contested but by RU-domestic resellers only: KupiKod, Donatov.net, IGM.GG, GroguPay, GalaxyLink, HornyBox, Smile One, PayClarus, CoolGameService, LuukeDonate. None are Uzbekistan-oriented, none list UzCard/HUMO/Click/Payme — so any RU query qualified with \"узбекистан\" / local payment is winnable. (3) ID mechanics verified: MCGG requires User ID + Zone/Server ID in the format 100000520(1234); found by tapping the avatar in the upper-left corner, or via profile \"Основная информация\"/Basic Info. Donatov.net uses the wording \"ID вашего профиля в игре\" + \"ID сервера, на котором играете\". (4) BIG CONTENT GAP: neither Codashop nor donatov.blog's \"how to donate\" guide actually explains WHERE in the game to find the ID — donatov.blog only says \"Внимательно проверьте все цифры!\". A real step-by-step ID guide has zero real competition. (5) Package tiers verified from Codashop: 55, 275, 565, 1160, 1770, 2975, 4165, 6000 diamonds, plus a Weekly Pass and Go Go Pass (1750 diamonds). These are diamond COUNTS, not so'm prices, so they are safe to publish under the no-invented-prices rule. (6) Codashop does NOT verify/display the player nickname before payment — confirmed on its page. GemPay's free pre-payment nickname check is therefore a genuine, provable differentiator, not marketing fluff. (7) Region trap is REAL: donatov.blog shows separate server products \"Для России\" / \"Глобальный\" / \"Турция\", and Smile One sells a distinct \"Magic Chess: Go Go (Россия)\" SKU. Uzbek players are on Global/APAC, so a wrong-region purchase fails or lands elsewhere. (8) Delivery-time gap: donatov.net states \"среднее время доставки около 10 минут\" and admits it can stretch to hours under load; GemPay's ~2 min is a defensible comparison point. (9) MLBB confusion confirmed: MCGG is a separate app (Google Play packages com.mobilechess.gp global and com.mobilechess.us US) that links to the same Moonton account for cross-game rewards — so users genuinely have one Moonton account but distinct game IDs. (10) Diamond sinks verified via BlueStacks guides: Go Go Pass (seasonal skins, emotes, star protection cards, accessories, star-up effects), commander skins, chessboard cosmetics, limited bundles; commanders cost 150 diamonds but Chess Points are the better route. (11) Scam demand is real: a \"Magic Chess Go Go Hack Tool Gold Generator No Human Verification\" spam page ranks in English SERP, justifying the trust/safety angle. INFERRED, NOT VERIFIED: exact search volumes and keyword difficulty — the Ahrefs and Semrush connectors in this session are unauthorized, so no volume data could be pulled; all volume claims are qualitative. Uzbek Latin phrasings (\"olmos sotib olish\", \"to'ldirish\", \"donat\") are extrapolated from how Uzbek gamers phrase MLBB/PUBG queries and from GemPay's existing ranking blog slugs, not from observed MCGG autocomplete — because MCGG Uzbek autocomplete has essentially no data yet. Transliterated forms (\"medjik chess\", \"magik chess\") are inferred. COMPETITION READ: Uzbek = open field, rank achievable with a single well-structured page per cluster. Russian-with-UZ-qualifier = light, beatable on payment-method relevance. Global English = saturated (SEAGM, MooGold, Codashop, Eneba) — do not chase it. AEO note: LLMs currently have almost no Uzbek-language grounding on MCGG topup, so a clean answerBox + FAQ structure is very likely to become the cited source.",
+  "siblings": [
+    {
+      "slug": "magic-chess-go-go-olmos-sotib-olish",
+      "h1": "Magic Chess: Go Go olmos sotib olish — O'zbekistonda 2 daqiqada",
+      "type": "howto"
+    },
+    {
+      "slug": "magic-chess-go-go-olmos-kelmadi",
+      "h1": "Magic Chess: Go Go olmos kelmadi? Sabablari va yechimi",
+      "type": "problem"
+    },
+    {
+      "slug": "magic-chess-go-go-olmos-paketlari",
+      "h1": "Magic Chess: Go Go olmos paketlari va ularga nima olish mumkin",
+      "type": "info"
+    },
+    {
+      "slug": "magic-chess-go-go-user-id-server-id-qayerda",
+      "h1": "Magic Chess: Go Go User ID va Server ID qayerda? To'liq qo'llanma",
+      "type": "trust"
+    }
+  ],
+  "cannibalisationFixes": [
+    {
+      "with": [
+        "magic-chess-go-go-olmos-sotib-olish",
+        "magic-chess-go-go-olmos-kelmadi",
+        "magic-chess-go-go-olmos-paketlari",
+        "magic-chess-go-go-user-id-server-id-qayerda",
+        "honor-of-kings-token-sotib-olish",
+        "delta-force-coins-arzon-qayerdan-olish"
+      ],
+      "problem": "Fourteen internal links point at URLs that do not exist in the 45-article set: mobile-legends-olmos-toldirish (the real slug is mobile-legends-olmos-sotib-olish), pubg-uc-payme-click, pubg-uc-yetkazish-vaqti, oyin-valyutasi-qayerdan-arzon, oyin-pul-xavfsiz-toldirish, gempay-ishonli-xizmat, /oyinlar/steam. Three URL conventions are used interchangeably in the same arrays (bare slug, /blog/<slug>, /oyinlar/<slug>), which will produce inconsistent hrefs at build time.",
+      "fix": "One convention: /blog/<slug> for articles, /oyinlar/<slug> for game money pages, /xizmatlar/<slug> for non-game services. Fix mobile-legends-olmos-toldirish → mobile-legends-olmos-sotib-olish. Build the three hubs (they are worth building) and delete the two invented PUBG slugs. Either build /oyinlar/steam with at least one supporting article or remove the link — an orphaned money page with zero supporting content ranks for nothing."
+    }
+  ],
+  "mustLinkTo": [
+    "/oyinlar/magic-chess-go-go",
+    "magic-chess-go-go-olmos-sotib-olish",
+    "magic-chess-go-go-olmos-paketlari",
+    "oyin-valyutasi-qayerdan-arzon"
+  ],
+  "publishRank": 29
+}

@@ -1,0 +1,182 @@
+{
+  "slug": "codm-garena-global-farqi",
+  "game": "call-of-duty-mobile",
+  "gameTitle": "Call of Duty: Mobile (CP / COD Points — Garena SG/MY)",
+  "type": "howto",
+  "spec": {
+    "slug": "codm-garena-global-farqi",
+    "type": "howto",
+    "h1": "CODM Garena va Global farqi: qaysi akkaunt sizda va nega bu CP uchun muhim",
+    "metaTitle": "CODM Garena va Global farqi — qaysi akkaunt?",
+    "metaDescription": "CODM Garena (SG/MY) va Global versiyalari farqi: akkaunt, server, Player ID. Qaysi versiyangiz borligini aniqlang va CP ni to'g'ri ID ga to'ldiring.",
+    "searchIntent": "Informational / pre-purchase blocker. O'yinchi CP olishdan oldin 'menda qaysi versiya?' degan savolga javob izlaydi yoki ID si ishlamagani sababini tushunmoqchi. Sahifa aniq tekshiruv usulini berib, to'g'ri qarorga olib chiqishi kerak.",
+    "primaryKeyword": "codm garena global farqi",
+    "secondaryKeywords": [
+      "call of duty mobile garena yoki global",
+      "call of duty mobile player id qayerda",
+      "garena player id topish",
+      "codm sg my akkaunt",
+      "codm qaysi versiya",
+      "codm redeem kod ishlamayapti"
+    ],
+    "answerBox": "Call of Duty: Mobile ikki xil versiyada mavjud: Garena (SG/MY) va Global (Activision). Ularning serverlari, akkauntlari va Player ID lari alohida — bir versiyaning ID siga to'ldirilgan CP ikkinchisiga tushmaydi. Versiyani ilova nomi va kirish usulidan aniqlang. GemPay hozircha Garena SG/MY Player ID bo'yicha to'ldiradi.",
+    "outline": [
+      {
+        "h2": "Qisqacha: bu ikki alohida o'yin",
+        "covers": "Garena versiyasi Janubi-Sharqiy Osiyo (jumladan SG/MY) uchun Garena tomonidan, Global esa Activision tomonidan chiqariladi. Alohida server, alohida akkaunt bazasi, alohida do'kon, alohida tadbirlar va alohida redeem kodlar. Cross-play va akkaunt ko'chirish yo'q.",
+        "block": "key-facts"
+      },
+      {
+        "h2": "Qaysi versiya sizda? 4 ta tekshiruv",
+        "covers": "1) Ilova nomi va ikonkasi: 'Call of Duty: Mobile - Garena' vs oddiy 'Call of Duty: Mobile'. 2) Android paket nomi: com.garena.game.codm vs Activision nashri. 3) Kirish usuli: Garena akkaunti taklif qilinsa — Garena; Activision akkaunti so'ralsa — Global. 4) O'yin ichidagi do'kon va tadbirlar brendi. Har biri uchun qayerga qarash kerakligini aytish.",
+        "block": "steps"
+      },
+      {
+        "h2": "Garena (SG/MY) va Global: taqqoslash jadvali",
+        "covers": "Ustunlar: nashriyot, mintaqa/server, kirish usuli, Player ID, CP do'koni va paket ko'rinishi, redeem kodlar, to'ldirish kanallari, GemPay qo'llab-quvvatlaydimi. Garena paketlari bonus CP bilan nostandart raqamlarda (masalan 230+23 turidagi), Global paketlari esa yaxlit raqamlarda bo'lishini misol sifatida ko'rsatish — bu foydalanuvchiga versiyani do'kondan ham aniqlash imkonini beradi.",
+        "block": "compare-table"
+      },
+      {
+        "h2": "Player ID ikkala versiyada qayerda turadi",
+        "covers": "O'yin lobbisi -> yuqori o'ng burchakdagi Settings -> User Settings -> pastda Legal and Privacy yonida Player ID. Faqat raqamlar, bo'sh joysiz nusxa ko'chirish. Player ID nickname emas; nikni o'zgartirsangiz ham ID o'zgarmaydi. ID ni skrinshot qilib saqlab qo'yish tavsiyasi.",
+        "block": "steps"
+      },
+      {
+        "h2": "Nega bu to'ldirishda hal qiluvchi ahamiyatga ega",
+        "covers": "CP faqat ID kiritilgan versiya ichidagi akkauntga boradi. Noto'g'ri versiya ID si berilsa buyurtma rad etiladi yoki CP butunlay boshqa o'yinchiga tushadi va qaytarilmaydi. GemPay ayni paytda Garena SG/MY Player ID bo'yicha ishlaydi; Global akkaunt egalari avval qo'llab-quvvatlash bilan aniqlashtirishi kerak.",
+        "block": "prose"
+      },
+      {
+        "h2": "Ogohlantirish: akkauntni bir versiyadan ikkinchisiga 'ko'chirish'",
+        "covers": "Rasmiy transfer mavjud emas — progress, skin va CP ko'chmaydi. 'Region o'zgartiramiz', 'Global ni Garena ga aylantiramiz' deydigan xizmatlar akkauntni bloklanish xavfiga qo'yadi. Bepul CP generatorlari ham xuddi shunday. To'g'ri yo'l: o'zingizdagi versiyaga mos to'ldirish kanalini tanlash.",
+        "block": "warning"
+      },
+      {
+        "h2": "Garena akkauntingiz bo'lsa — CP ni shu yerda to'ldiring",
+        "covers": "Player ID ni tayyorlab @Gempayuz_bot ga o'tish, nik bepul tekshiriladi, so'mda to'lov, CP ~3 daqiqada. To'liq qo'llanma uchun call-of-duty-mobile-cp-sotib-olish va /oyinlar/call-of-duty-mobile ga havola.",
+        "block": "inline-cta"
+      }
+    ],
+    "faq": [
+      {
+        "q": "CODM Garena va Global — bu bitta o'yinmi?",
+        "a": "Yo'q. O'yin mexanikasi o'xshash, lekin ular alohida nashriyot (Garena va Activision), alohida server va alohida akkaunt tizimiga ega. Ikkala versiyani telefoningizga o'rnatish mumkin, lekin bitta akkaunt bilan ikkalasida ham o'ynab bo'lmaydi."
+      },
+      {
+        "q": "Player ID qayerdan topiladi?",
+        "a": "O'yinni oching, yuqori o'ng burchakdagi Settings tugmasini bosing va User Settings bo'limiga kiring. Player ID pastda, Legal and Privacy yonida ko'rinadi. Uni ortiqcha bo'sh joysiz nusxa ko'chiring."
+      },
+      {
+        "q": "Garena ID ga to'ldirilgan CP Global akkauntga tushadimi?",
+        "a": "Yo'q. CP faqat siz ID sini kiritgan versiyadagi akkauntga boradi. Noto'g'ri versiya ID si kiritilsa, buyurtma rad etiladi yoki CP boshqa o'yinchiga tushib ketadi."
+      },
+      {
+        "q": "Akkauntni Global dan Garena ga ko'chirsa bo'ladimi?",
+        "a": "Yo'q, rasmiy transfer mavjud emas va progress ko'chmaydi. Bunday 'transfer' yoki 'region o'zgartirish' va'da qiladigan xizmatlar akkauntni bloklanishga olib kelishi mumkin. Xavfsiz yo'l — o'zingizdagi versiyada qolish."
+      },
+      {
+        "q": "Qaysi versiyada CP arzonroq?",
+        "a": "Odatda Garena mintaqaviy narxlar va tez-tez bo'ladigan aksiyalar tufayli arzonroq hisoblanadi. Ammo paket hajmlari ham farq qiladi, shuning uchun taqqoslaganda asosiy CP va bonus CP ni birga hisoblang."
+      },
+      {
+        "q": "Redeem kodlar ikkala versiyada ishlaydimi?",
+        "a": "Yo'q. Garena kodlari Global akkauntda, Global kodlari esa Garena da xatolik beradi. Kodlar har bir versiya uchun alohida chiqariladi, shuning uchun kod olishdan oldin manbaning qaysi versiya uchun ekanini tekshiring."
+      },
+      {
+        "q": "GemPay qaysi versiyani to'ldiradi?",
+        "a": "GemPay Garena SG/MY Player ID bo'yicha ishlaydi va CP taxminan 3 daqiqada tushadi. Global akkaunt uchun avval @StarsPaymeeSupport bilan bog'lanib, hozirgi imkoniyatni aniqlang."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "HowTo",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "internalLinks": [
+      "/oyinlar/call-of-duty-mobile",
+      "call-of-duty-mobile-cp-sotib-olish",
+      "codm-cp-kelmadi-nima-qilish",
+      "cod-points-cp-nima"
+    ],
+    "wordCount": 1500
+  },
+  "gameKeywords": {
+    "primary": [
+      "call of duty mobile cp sotib olish",
+      "codm cp sotib olish",
+      "cod mobile cp to'ldirish",
+      "codm garena cp to'ldirish",
+      "codm cp arzon",
+      "call of duty mobile cp uzbekistan",
+      "cod points sotib olish"
+    ],
+    "questions": [
+      "call of duty mobile cp qanday sotib olinadi",
+      "codm player id qayerdan topiladi",
+      "codm garena va global farqi nima",
+      "cp kelmasa nima qilish kerak",
+      "uzcard bilan cp sotib olsa bo'ladimi",
+      "cp qancha vaqtda keladi",
+      "battle pass necha cp turadi",
+      "cp nima va nimaga kerak",
+      "noto'g'ri id ga tushgan cp qaytariladimi",
+      "codm cp sotib olish xavfsizmi",
+      "garena akkauntni global ga ko'chirsa bo'ladimi",
+      "lucky draw qancha cp talab qiladi"
+    ],
+    "russian": [
+      "купить cp call of duty mobile узбекистан",
+      "пополнить cp codm по id",
+      "call of duty mobile гарена пополнение cp",
+      "как узнать player id call of duty mobile",
+      "донат call of duty mobile узбекистан",
+      "cp codm дешево купить",
+      "не пришли cp call of duty mobile",
+      "call of duty mobile garena или global разница",
+      "пополнение codm humo uzcard",
+      "cp call of duty mobile сум оплата"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE: (1) Garena vs Global are two fully separate games — separate publishers (Garena SEA vs Activision), servers, accounts, redeem codes and CP economies; a Garena SG/MY Player ID does NOT work for Global top-ups and vice versa (lootbar, brgeeks, seagm, elitedias). (2) Attempting to transfer/shift an account between builds is punishable by ban — confirmed in multiple community/guide sources, so the region article must WARN, not advise. (3) Player ID location confirmed twice: in-game Settings (top-right) -> User Settings -> Player ID shown at the bottom near 'Legal and Privacy'. (4) Garena SG/MY CP tiers are odd-numbered with bonus CP (114 / 230+23 / 460+69 / 690+104 / 1150+173 / 2300+460 / 4600+1840 / 6858+2744 / 11429+4572 on SEAGM) and differ from Global's round 500/1100/2400/5000 — useful proof that 'which version' changes what you buy. (5) Battle Pass ~560 CP; Lucky Draw is an escalating ladder (25/70/180/360/580/900/1400/2800/4000 CP in one Garena draw, ~10,315 CP total). (6) Codashop's own guidance: they never ask for PlayerID AND password — good trust framing. COMPETITION READ (verified): the Uzbek-language SERP for CODM top-up is effectively EMPTY. Searches in Uzbek Latin ('codm cp to'ldirish o'zbekiston', 'call of duty mobile cp sotib olish uzbekistan') return only YouTube gameplay clips and irrelevant Telegram-bot blog posts — zero commercial pages. The Russian CODM SERP is owned by .ru donate shops (donatov.net, dem-gold, coolgameservice, szmarket, kupikod, ggsel, funpay) plus Codashop KZ — none of which accept UzCard/HUMO/so'm, so 'узбекистан / сум / humo uzcard' modifiers are wide open. By contrast the Uzbek PUBG UC SERP is already contested (Midasbuy UZ, Payme blog, 1pay.uz, hablax, mtcgame, milliysavdo.store) — proof that Uzbek-language money pages DO rank here, and that CODM is the same opportunity with no incumbent. The Telegram-Premium niche (uzgets.uz, starsjoy.uz) shows the exact winning page pattern for this audience: Uzbek Latin + 'so'm' + UzCard/Humo/Click/Payme + bot. INFERRED (not verified with volume data — Ahrefs and Semrush connectors are unauthorized in this session, so there are NO real volume/KD numbers here): relative ordering of the keyword lists, the transliterated spellings ('kod mobayl', 'codm'), and the assumption that a meaningful share of Uzbek CODM players sit on the Garena SG/MY build. That last assumption is exactly why article #2 is written as an identification guide rather than a recommendation — a Global-account reader must be told the honest answer, not pushed into a purchase.",
+  "siblings": [
+    {
+      "slug": "call-of-duty-mobile-cp-sotib-olish",
+      "h1": "Call of Duty: Mobile CP sotib olish — O'zbekistonda so'mda, 3 daqiqada",
+      "type": "howto"
+    },
+    {
+      "slug": "codm-cp-kelmadi-nima-qilish",
+      "h1": "CODM CP kelmadi: sabablari va qadam-baqadam yechimi",
+      "type": "problem"
+    },
+    {
+      "slug": "codm-cp-arzon-qayerdan-olish",
+      "h1": "CODM CP ni qayerdan olish arzon va xavfsiz: usullar taqqoslandi",
+      "type": "comparison"
+    },
+    {
+      "slug": "cod-points-cp-nima",
+      "h1": "CP (COD Points) nima va Call of Duty: Mobile da nimaga ishlatiladi",
+      "type": "info"
+    }
+  ],
+  "cannibalisationFixes": [
+    {
+      "with": [
+        "call-of-duty-mobile-cp-sotib-olish",
+        "codm-cp-kelmadi-nima-qilish",
+        "codm-cp-arzon-qayerdan-olish"
+      ],
+      "problem": "CODM is the only cluster with two `howto` articles and no trust/ID article. \"call of duty mobile player id qayerda\" is targeted by both the pillar's H2 and codm-garena-global-farqi. Version mismatch is the whole of codm-garena-global-farqi and \"Sabab 2\" of the problem page. And the Garena page's FAQ \"Qaysi versiyada CP arzonroq?\" answers the comparison page's primary query from a different URL.",
+      "fix": "Retype codm-garena-global-farqi as the cluster's trust/ID page — rename to codm-player-id-va-garena-global, ID location as the H1 promise, version identification as the second half. Move the \"qaysi versiyada arzonroq\" FAQ to codm-cp-arzon-qayerdan-olish. Strip HowTo schema from the pillar's ID section so exactly one URL carries HowTo for ID retrieval."
+    }
+  ],
+  "mustLinkTo": [
+    "/oyinlar/call-of-duty-mobile",
+    "call-of-duty-mobile-cp-sotib-olish",
+    "codm-cp-kelmadi-nima-qilish",
+    "oyin-pul-xavfsiz-toldirish"
+  ],
+  "publishRank": 10
+}

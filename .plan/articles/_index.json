@@ -1,0 +1,317 @@
+[
+  {
+    "slug": "mobile-legends-olmos-sotib-olish",
+    "game": "mobile-legends",
+    "type": "howto",
+    "rank": 1,
+    "pillar": true
+  },
+  {
+    "slug": "pubg-mobile-uc-sotib-olish",
+    "game": "pubg-mobile",
+    "type": "howto",
+    "rank": 2,
+    "pillar": true
+  },
+  {
+    "slug": "free-fire-olmos-sotib-olish",
+    "game": "free-fire",
+    "type": "howto",
+    "rank": 3,
+    "pillar": true
+  },
+  {
+    "slug": "mobile-legends-user-id-server-id-qayerda",
+    "game": "mobile-legends",
+    "type": "trust",
+    "rank": 4,
+    "pillar": true
+  },
+  {
+    "slug": "pubg-mobile-player-id-qayerda",
+    "game": "pubg-mobile",
+    "type": "trust",
+    "rank": 5,
+    "pillar": false
+  },
+  {
+    "slug": "free-fire-olmos-kelmadi-id-topilmadi",
+    "game": "free-fire",
+    "type": "problem",
+    "rank": 6,
+    "pillar": false
+  },
+  {
+    "slug": "mobile-legends-olmos-kelmadi-nima-qilish",
+    "game": "mobile-legends",
+    "type": "problem",
+    "rank": 7,
+    "pillar": false
+  },
+  {
+    "slug": "pubg-uc-kelmadi-nima-qilish",
+    "game": "pubg-mobile",
+    "type": "problem",
+    "rank": 8,
+    "pillar": false
+  },
+  {
+    "slug": "call-of-duty-mobile-cp-sotib-olish",
+    "game": "call-of-duty-mobile",
+    "type": "howto",
+    "rank": 9,
+    "pillar": true
+  },
+  {
+    "slug": "codm-garena-global-farqi",
+    "game": "call-of-duty-mobile",
+    "type": "howto",
+    "rank": 10,
+    "pillar": false
+  },
+  {
+    "slug": "pubg-uc-qayerdan-sotib-olish-taqqoslash",
+    "game": "pubg-mobile",
+    "type": "comparison",
+    "rank": 11,
+    "pillar": false
+  },
+  {
+    "slug": "mobile-legends-olmos-arzon-qayerdan-olish",
+    "game": "mobile-legends",
+    "type": "comparison",
+    "rank": 12,
+    "pillar": false
+  },
+  {
+    "slug": "free-fire-olmos-arzon-qayerdan-olish",
+    "game": "free-fire",
+    "type": "comparison",
+    "rank": 13,
+    "pillar": false
+  },
+  {
+    "slug": "codm-cp-kelmadi-nima-qilish",
+    "game": "call-of-duty-mobile",
+    "type": "problem",
+    "rank": 14,
+    "pillar": false
+  },
+  {
+    "slug": "bigo-live-olmos-sotib-olish",
+    "game": "bigo-live",
+    "type": "howto",
+    "rank": 15,
+    "pillar": true
+  },
+  {
+    "slug": "bigo-id-qayerda-topiladi",
+    "game": "bigo-live",
+    "type": "trust",
+    "rank": 16,
+    "pillar": false
+  },
+  {
+    "slug": "free-fire-bepul-olmos-haqiqatmi",
+    "game": "free-fire",
+    "type": "trust",
+    "rank": 17,
+    "pillar": false
+  },
+  {
+    "slug": "mobile-legends-olmos-nima-va-paketlar",
+    "game": "mobile-legends",
+    "type": "info",
+    "rank": 18,
+    "pillar": false
+  },
+  {
+    "slug": "pubg-uc-nima-paketlar-royal-pass",
+    "game": "pubg-mobile",
+    "type": "info",
+    "rank": 19,
+    "pillar": false
+  },
+  {
+    "slug": "free-fire-olmos-nima-va-paketlari",
+    "game": "free-fire",
+    "type": "info",
+    "rank": 20,
+    "pillar": false
+  },
+  {
+    "slug": "codm-cp-arzon-qayerdan-olish",
+    "game": "call-of-duty-mobile",
+    "type": "comparison",
+    "rank": 21,
+    "pillar": false
+  },
+  {
+    "slug": "cod-points-cp-nima",
+    "game": "call-of-duty-mobile",
+    "type": "info",
+    "rank": 22,
+    "pillar": false
+  },
+  {
+    "slug": "bigo-live-olmos-kelmadi-nima-qilish",
+    "game": "bigo-live",
+    "type": "problem",
+    "rank": 23,
+    "pillar": false
+  },
+  {
+    "slug": "magic-chess-go-go-olmos-sotib-olish",
+    "game": "magic-chess-go-go",
+    "type": "howto",
+    "rank": 24,
+    "pillar": true
+  },
+  {
+    "slug": "magic-chess-go-go-user-id-server-id-qayerda",
+    "game": "magic-chess-go-go",
+    "type": "trust",
+    "rank": 25,
+    "pillar": false
+  },
+  {
+    "slug": "magic-chess-go-go-olmos-kelmadi",
+    "game": "magic-chess-go-go",
+    "type": "problem",
+    "rank": 26,
+    "pillar": false
+  },
+  {
+    "slug": "bigo-live-olmos-qayerdan-arzon-olish",
+    "game": "bigo-live",
+    "type": "comparison",
+    "rank": 27,
+    "pillar": false
+  },
+  {
+    "slug": "bigo-live-olmos-nima-va-sovgalar",
+    "game": "bigo-live",
+    "type": "info",
+    "rank": 28,
+    "pillar": false
+  },
+  {
+    "slug": "magic-chess-go-go-codashop-yoki-gempay",
+    "game": "magic-chess-go-go",
+    "type": "comparison",
+    "rank": 29,
+    "pillar": false
+  },
+  {
+    "slug": "magic-chess-go-go-olmos-paketlari",
+    "game": "magic-chess-go-go",
+    "type": "info",
+    "rank": 30,
+    "pillar": false
+  },
+  {
+    "slug": "honor-of-kings-token-sotib-olish",
+    "game": "honor-of-kings",
+    "type": "howto",
+    "rank": 31,
+    "pillar": false
+  },
+  {
+    "slug": "honor-of-kings-player-id-qayerda",
+    "game": "honor-of-kings",
+    "type": "trust",
+    "rank": 32,
+    "pillar": false
+  },
+  {
+    "slug": "honor-of-kings-token-kelmadi-nima-qilish",
+    "game": "honor-of-kings",
+    "type": "problem",
+    "rank": 33,
+    "pillar": false
+  },
+  {
+    "slug": "delta-force-delta-coins-sotib-olish",
+    "game": "delta-force",
+    "type": "howto",
+    "rank": 34,
+    "pillar": false
+  },
+  {
+    "slug": "delta-force-player-id-qayerda",
+    "game": "delta-force",
+    "type": "trust",
+    "rank": 35,
+    "pillar": false
+  },
+  {
+    "slug": "delta-force-coins-kelmadi-nima-qilish",
+    "game": "delta-force",
+    "type": "problem",
+    "rank": 36,
+    "pillar": false
+  },
+  {
+    "slug": "asphalt-9-token-sotib-olish",
+    "game": "asphalt-9",
+    "type": "howto",
+    "rank": 37,
+    "pillar": false
+  },
+  {
+    "slug": "asphalt-9-player-id-va-platforma",
+    "game": "asphalt-9",
+    "type": "trust",
+    "rank": 38,
+    "pillar": false
+  },
+  {
+    "slug": "asphalt-9-token-kelmadi-nima-qilish",
+    "game": "asphalt-9",
+    "type": "problem",
+    "rank": 39,
+    "pillar": false
+  },
+  {
+    "slug": "honor-of-kings-token-qayerdan-arzon-olish",
+    "game": "honor-of-kings",
+    "type": "comparison",
+    "rank": 40,
+    "pillar": false
+  },
+  {
+    "slug": "honor-of-kings-token-nima-va-paketlar",
+    "game": "honor-of-kings",
+    "type": "info",
+    "rank": 41,
+    "pillar": false
+  },
+  {
+    "slug": "delta-force-coins-arzon-qayerdan-olish",
+    "game": "delta-force",
+    "type": "comparison",
+    "rank": 42,
+    "pillar": false
+  },
+  {
+    "slug": "delta-force-delta-coins-nima-va-paketlar",
+    "game": "delta-force",
+    "type": "info",
+    "rank": 43,
+    "pillar": false
+  },
+  {
+    "slug": "asphalt-9-donat-usullari-taqqoslash",
+    "game": "asphalt-9",
+    "type": "comparison",
+    "rank": 44,
+    "pillar": false
+  },
+  {
+    "slug": "asphalt-9-token-nima",
+    "game": "asphalt-9",
+    "type": "info",
+    "rank": 45,
+    "pillar": false
+  }
+]

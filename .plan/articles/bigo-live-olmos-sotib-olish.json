@@ -1,0 +1,229 @@
+{
+  "slug": "bigo-live-olmos-sotib-olish",
+  "game": "bigo-live",
+  "gameTitle": "Bigo Live",
+  "type": "howto",
+  "spec": {
+    "slug": "bigo-live-olmos-sotib-olish",
+    "type": "howto",
+    "h1": "Bigo Live olmos sotib olish: O'zbekistonda so'mda, 3 daqiqada",
+    "metaTitle": "Bigo Live olmos sotib olish — so'mda, 3 daqiqada",
+    "metaDescription": "Bigo Live olmosini O'zbekistonda so'mda sotib olish: Bigo ID orqali, UzCard, HUMO, Click va Payme bilan. Nikneym bepul tekshiriladi, olmos 3 daqiqada tushadi.",
+    "searchIntent": "Tranzaksion — foydalanuvchi hozir olmos sotib olmoqchi va O'zbekiston kartasi bilan ishlaydigan aniq, ishonchli yo'lni qidiryapti. Sahifa savdo qadamlarini oxirigacha olib borishi kerak.",
+    "primaryKeyword": "bigo live olmos sotib olish",
+    "secondaryKeywords": [
+      "bigo live olmos to'ldirish",
+      "bigo olmos sotib olish o'zbekiston",
+      "bigo live hisobini to'ldirish",
+      "bigo id orqali olmos to'ldirish",
+      "bigo live uzcard humo click payme",
+      "bigo live telegram bot to'ldirish",
+      "bigo live donat so'mda",
+      "arzon bigo olmos"
+    ],
+    "answerBox": "Bigo Live olmosini O'zbekistonda so'mda sotib olish uchun @Gempayuz_bot ni oching, Bigo Live ni tanlang va ilovadagi Me bo'limidan olingan Bigo ID ni kiriting. Bot ID egasining nikneymini to'lovdan oldin bepul ko'rsatadi. Paketni tanlab, UzCard, HUMO, Click, Payme yoki Paynet orqali to'laysiz — olmos taxminan 3 daqiqada hisobingizga tushadi.",
+    "outline": [
+      {
+        "h2": "Bigo Live olmosi nima uchun kerak va uni kim sotib oladi",
+        "covers": "Bigo Live o'yin emas, jonli efir ilovasi ekanini aniq aytish: olmos strimerga sovg'a yuborish, PK jangida qo'llab-quvvatlash va fan-klubda ko'rinish uchun ishlatiladi. Sotib oluvchi ikki xil: tomoshabin (sovg'a beradi) va strimerning o'zi (o'z efirini qo'llab-quvvatlash uchun). Xarid akkauntga kirmasdan, faqat Bigo ID orqali bo'lishini shu yerda birinchi marta aytib o'tish.",
+        "block": "prose"
+      },
+      {
+        "h2": "GemPay orqali olmos sotib olish — 5 qadam",
+        "covers": "Aniq qadamlar: 1) Telegramda @Gempayuz_bot ni ochish; 2) katalogdan Bigo Live ni tanlash; 3) Bigo ID ni kiritish; 4) bot ko'rsatgan nikneymni tasdiqlash; 5) paketni tanlab so'mda to'lash. Har qadamda foydalanuvchi ekranda nimani ko'rishi tasvirlansin. Server yoki platforma maydoni Bigo uchun SO'RALMASLIGI alohida aytilsin.",
+        "block": "steps"
+      },
+      {
+        "h2": "Bigo ID ni qayerdan olasiz",
+        "covers": "Qisqa yo'riqnoma: ilovada pastdagi Me bo'limi → nikneym ostidagi 7-10 xonali raqam; muqobil yo'l — Settings → Account. ID ni qo'lda ko'chirib emas, nusxa olish tugmasi bilan olish maslahati. Batafsil qo'llanmaga (bigo-id-qayerda-topiladi) havola.",
+        "block": "steps"
+      },
+      {
+        "h2": "Qaysi to'lov usullari ishlaydi",
+        "covers": "UzCard, HUMO, Click, Payme, Paynet — hammasi so'mda. Visa/Mastercard, xorijiy hamyon, kripto va VPN kerak emasligi. Konvertatsiya va bank valyuta komissiyasi yo'qligi. To'lov Telegram ichida tugashi.",
+        "block": "key-facts"
+      },
+      {
+        "h2": "Narx qanday shakllanadi va nega o'zgarib turadi",
+        "covers": "Bigo olmosi xalqaro katalogda dollarda sanaladi, so'mdagi yakuniy narx joriy USDT kursiga bog'liq va shu sababli kundan kunga o'zgarishi mumkin. Katta paketlarda bir olmosga to'g'ri keladigan narx odatda pastroq bo'ladi. HECH QANDAY aniq so'm raqami yozilmaydi — 'aniq narx botda, buyurtma paytida ko'rsatiladi' formulasi ishlatiladi.",
+        "block": "price-logic"
+      },
+      {
+        "h2": "Do'stingizga yoki strimerga olmos sovg'a qilish",
+        "covers": "Bigo da boshqa odamning ID siga to'ldirish oddiy va qonuniy imkoniyat — akkauntga kirish shart emas. Qanday qilinadi: uning Bigo ID sini olasiz, botga kiritasiz, bot nikneymni ko'rsatadi, tasdiqlaysiz. Strimerlar ID sini profilda ochiq ko'rsatishi. Ogohlantirish: ID ni faqat o'sha odamning o'zidan yoki uning profilidan oling.",
+        "block": "prose"
+      },
+      {
+        "h2": "To'lovdan oldin nikneymni tekshirish nega muhim",
+        "covers": "Bigo ID bir belgiga adashsa ham, u boshqa haqiqiy foydalanuvchining ID si bo'lib chiqishi mumkin va olmos o'sha begona hisobga tushadi — buni qaytarib bo'lmaydi. GemPay nikneymni to'lovdan OLDIN va BEPUL ko'rsatadi, shuning uchun tasdiqlashdan avval nikneymni ilovadagi bilan solishtirish kerak.",
+        "block": "warning"
+      },
+      {
+        "h2": "Buyurtmadan oldingi tekshiruv ro'yxati",
+        "covers": "Qisqa checklist: ID nusxa olingan va bo'sh joysiz; nikneym mos; kerakli paket tanlangan; kartada mablag' bor; internet barqaror; buyurtma cheki saqlab qo'yilgan; olmos kelmasa nima qilishni bilasiz (muammo maqolasiga havola).",
+        "block": "checklist"
+      },
+      {
+        "h2": "Hoziroq boshlash",
+        "covers": "@Gempayuz_bot ga o'tish chaqiruvi, /oyinlar/bigo-live sahifasiga havola, ~3 daqiqa yetkazish va @StarsPaymeeSupport qo'llab-quvvatlashi eslatmasi.",
+        "block": "inline-cta"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Bigo Live olmosini O'zbekistondan so'mda sotib olsa bo'ladimi?",
+        "a": "Ha. @Gempayuz_bot da to'lov to'g'ridan-to'g'ri so'mda amalga oshiriladi — UzCard, HUMO, Click, Payme va Paynet ishlaydi. Visa yoki Mastercard, valyuta konvertatsiyasi va VPN talab qilinmaydi."
+      },
+      {
+        "q": "Olmos necha daqiqada hisobga tushadi?",
+        "a": "Odatda taxminan 3 daqiqa. Bayram va yirik aksiya kunlarida provayder navbati sabab biroz cho'zilishi mumkin. 30 daqiqadan oshsa, to'lov cheki va buyurtma raqami bilan @StarsPaymeeSupport ga yozing."
+      },
+      {
+        "q": "Bigo ID dan boshqa nima talab qilinadi?",
+        "a": "Faqat Bigo ID. Parol, SMS kod yoki akkauntga kirish hech qachon so'ralmaydi — olmos ID orqali to'g'ridan-to'g'ri hisobingizga yoziladi. Shuning uchun bu usul akkaunt uchun xavfsiz hisoblanadi."
+      },
+      {
+        "q": "Boshqa odamning hisobiga olmos to'ldirsa bo'ladimi?",
+        "a": "Ha, bu Bigo ning oddiy imkoniyati. Do'stingiz yoki strimerning Bigo ID sini kiritasiz, bot uning nikneymini ko'rsatadi, siz tasdiqlaganingizdan keyin olmos o'sha hisobga tushadi. Uning parolini bilish shart emas."
+      },
+      {
+        "q": "Narx nega har doim bir xil emas?",
+        "a": "Bigo olmosi xalqaro katalogda dollarda sanaladi, so'mdagi narx esa joriy kursga qarab yangilanadi. Shu sababli saytda qat'iy raqam yozilmaydi — aniq summa buyurtma paytida botda ko'rsatiladi."
+      },
+      {
+        "q": "Nikneym tekshiruvi pullikmi?",
+        "a": "Yo'q, bepul. ID ni kiritganingizda bot akkaunt egasining nikneymini to'lovdan oldin ko'rsatadi. Bu noto'g'ri hisobga to'ldirib yuborishning eng oddiy va ishonchli oldini olish usuli."
+      },
+      {
+        "q": "Bigo Live ni to'ldirish uchun VPN kerakmi?",
+        "a": "Yo'q. Ilova odatdagidek ishlaydi va to'ldirish ID orqali bajariladi. GemPay hududni almashtirishni, akkauntga kirishni yoki boshqa chetlab o'tish usullarini hech qachon so'ramaydi."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "HowTo",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "internalLinks": [
+      "/oyinlar/bigo-live",
+      "bigo-id-qayerda-topiladi",
+      "bigo-live-olmos-kelmadi-nima-qilish",
+      "bigo-live-olmos-qayerdan-arzon-olish",
+      "bigo-live-olmos-nima-va-sovgalar"
+    ],
+    "wordCount": 1500
+  },
+  "gameKeywords": {
+    "primary": [
+      "bigo live olmos sotib olish",
+      "bigo live olmos to'ldirish",
+      "bigo olmos sotib olish",
+      "bigo live hisobini to'ldirish",
+      "bigo id orqali olmos to'ldirish",
+      "bigo live donat o'zbekiston"
+    ],
+    "questions": [
+      "bigo live olmosni qanday sotib olish mumkin",
+      "bigo id qayerdan topiladi",
+      "bigo live olmos necha daqiqada tushadi",
+      "bigo id ni birovga berish xavfsizmi",
+      "olmos kelmasa nima qilish kerak",
+      "bigo live da olmos nimaga kerak",
+      "olmos va bin o'rtasida qanday farq bor",
+      "strimerga olmos qanday sovg'a qilinadi",
+      "bigo live da bepul olmos olish mumkinmi",
+      "uzcard bilan bigo live to'ldirsa bo'ladimi",
+      "noto'g'ri id kiritsam olmos qaytadimi",
+      "bigo live olmos narxi nega o'zgarib turadi"
+    ],
+    "russian": [
+      "купить алмазы bigo live узбекистан",
+      "пополнить bigo live в сумах",
+      "биго лайв алмазы uzcard",
+      "bigo live пополнение по id",
+      "как узнать свой bigo id",
+      "алмазы биго не пришли",
+      "сколько стоят алмазы в bigo live",
+      "bigo live бины и алмазы разница",
+      "донат bigo live ташкент",
+      "пополнить биго humo payme click"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE (WebSearch + WebFetch, avgust 2026). (1) ENG MUHIM TOPILMA: Bigo olmosi bo'yicha o'zbek-lotin SERP butunlay bo'sh. \"bigo live olmos sotib olish\", \"bigo live olmos to'ldirish bigo id qayerda\", \"bigo live uz sayt olmos narxi to'ldirish\" so'rovlari bironta ham o'zbek tilidagi tijorat yoki maqola sahifasini qaytarmadi — faqat bigo.tv profil sahifalari, Play Store/App Store listinglari, YouTube/Instagram va bitta uzfor.net maqolasi (\"BIGO LIVE da pul ishlash\"). Ya'ni mavjud yagona o'zbekcha kontent STRIMERGA (pul ishlash) qaratilgan, SOVG'A BERUVCHIGA emas. Hech qaysi .uz sayti bu klasterni egallamagan — raqobat deyarli nol. (2) Rus klasteri real, lekin Rossiyaga qaratilgan, O'zbekistonga emas: donatov.net/bigo, bigo.su, zoy.one/bigo-live, dtf.ru gaydi, pyyplbot, ggsel, plati.market — hammasi rublda va SBP/MIR taklif qiladi. (3) Rasmiy Bigo recharge sahifasini (bigo.tv/ru/blog/bigo-live-recharge) fetch qildim: to'lov usullari sifatida faqat SBP, MIR kartalari va Bigo Card (Smile.One) ko'rsatilgan — UZS/UzCard yo'li rasmiy sahifada yo'q. Bu taqqoslash maqolasi uchun tekshirilgan, iqtibos qilinadigan fakt. (4) O'zbekistonga qaratilgan yagona raqobatchi — hablax.com/en/country/uzbekistan/giftcard-bigo-live-bonus-diamonds: inglizcha gift-card sahifasi, o'zbekcha versiya va mahalliy karta relslari yo'q. play2key.uz Uzcard/Humo bilan Telegram Stars sotadi, lekin unda Bigo Live mahsuloti borligini TASDIQLAY OLMADIM. (5) Bigo ID joylashuvi ikki mustaqil manbada tasdiqlandi: Me bo'limi, nikneym ostidagi 7-10 xonali raqam (shuningdek Settings → Account → User ID). (6) Muammo klasteri tasdiqlandi: \"алмазы не пришли\" / \"ID не найден\" doimiy sarlavha; rasmiy yo'riqnoma — Me → Wallet ni tekshirish, 30 daqiqagacha kutish, Me → Feedback yoki cs@bigo.tv ga buyurtma raqami bilan yozish. (7) Firibgarlik klasteri tasdiqlandi: \"bepul olmos\" generatorlari va MOD APK lar bo'yicha Bigo ning o'z blogida ham sahifa bor (\"BIGO LIVE Hack: Free Diamonds, MOD APKs & Safety\"). (8) O'zbekistonda Bigo Live bloklangani haqida hech qanday dalil topilmadi — shuning uchun maqolalar VPN kerakligini nazarda tutmasligi shart. OGOHLANTIRISH — RAQAMLAR: manbalar olmos↔bin kursida bir-biriga zid (bir joyda 1 olmos = 3 bin, boshqasida 210 bin = 1 USD; sovg'a narxlari ham 2026 yilda o'zgargan). Shu sababli reja hech qaysi maqolada aniq kurs, sovg'a narxi yoki so'mdagi raqam yozishni TAQIQLAYDI — faqat mexanizm tushuntiriladi, raqam ilovada/botda ko'rsatiladi deyiladi. INFERRED (tekshirilmagan): aniq qidiruv hajmlari — bu sessiyada Ahrefs va Semrush konnektorlari avtorizatsiya qilinmagan, shuning uchun volume ma'lumoti yo'q; o'zbekcha iboralarning aniq shakli va transliteratsiya bo'linishi (\"olmos\" vs \"almaz\" vs \"brilliant\"); Toshkentdagi Bigo auditoriyasi ruscha so'rovlarga ko'proq moyil, o'zbek-lotin so'rovlari past hajmli lekin deyarli raqobatsiz degan taxmin; primary/secondary ichidagi tartib — mening bahom, o'lchov emas.",
+  "siblings": [
+    {
+      "slug": "bigo-live-olmos-kelmadi-nima-qilish",
+      "h1": "Bigo Live olmos kelmadi yoki ID topilmadi — sabablari va yechimi",
+      "type": "problem"
+    },
+    {
+      "slug": "bigo-live-olmos-qayerdan-arzon-olish",
+      "h1": "Bigo Live olmosini qayerdan olish arzon va xavfsiz: usullar taqqoslandi",
+      "type": "comparison"
+    },
+    {
+      "slug": "bigo-live-olmos-nima-va-sovgalar",
+      "h1": "Bigo Live olmosi nima, bin (beans) dan farqi va sovg'alarga qanday sarflanadi",
+      "type": "info"
+    },
+    {
+      "slug": "bigo-id-qayerda-topiladi",
+      "h1": "Bigo ID qayerda turadi, uni berish xavfsizmi va «bepul olmos» firibgarligi",
+      "type": "trust"
+    }
+  ],
+  "cannibalisationFixes": [
+    {
+      "with": [
+        "mobile-legends-olmos-sotib-olish",
+        "free-fire-olmos-sotib-olish",
+        "magic-chess-go-go-olmos-sotib-olish"
+      ],
+      "problem": "Unbranded \"olmos sotib olish\", \"olmos to'ldirish\", \"olmos kelmadi\", \"olmos nima\" are real Uzbek queries, and four pillars plus four problem articles compete for them with no designated owner. Worse, one of the four is a live-streaming app, so the same head term maps to two different buyer intents.",
+      "fix": "Designate MLBB the unbranded-\"olmos\" owner (highest UZ demand): it may lead with the bare term. The other three must place the brand token before \"olmos\" in H1, metaTitle and the first five words of the answerBox, and drop unbranded variants from their keyword sets. Route the unbranded head through the cross-game hub oyin-valyutasi-qayerdan-arzon, which links down to all four."
+    },
+    {
+      "with": [
+        "pubg-mobile-uc-sotib-olish",
+        "mobile-legends-olmos-sotib-olish",
+        "magic-chess-go-go-olmos-sotib-olish",
+        "free-fire-olmos-sotib-olish",
+        "call-of-duty-mobile-cp-sotib-olish",
+        "honor-of-kings-token-sotib-olish",
+        "delta-force-delta-coins-sotib-olish",
+        "asphalt-9-token-sotib-olish"
+      ],
+      "problem": "All nine clusters repeat a near-identical price-logic block (USDT kursi → narx botda ko'rsatiladi), a near-identical \"parol hech qachon so'ralmaydi\" safety block, and a near-identical \"bepul generator = firibgarlik\" block. That is 27+ near-duplicate sections across 45 URLs, and — critically — no single page can rank for the unbranded queries those sections answer: \"donat narxi nega o'zgaradi\", \"o'yinga pul quyish xavfsizmi\", \"bepul olmos generatori ishlaydimi\", \"eng arzon donat qayerda\".",
+      "fix": "Build the three cross-game hubs the plans already link to fourteen times but never planned: oyin-valyutasi-qayerdan-arzon (price mechanics + how to compare), oyin-pul-xavfsiz-toldirish (ID vs password, scam patterns, account recovery), gempay-ishonli-xizmat (who we are, refunds, order IDs, support SLA). Ship them in Wave 1, cut each in-article block to 2-3 sentences plus a link, and let the hubs own the unbranded terms and absorb the duplication."
+    },
+    {
+      "with": [
+        "bigo-id-qayerda-topiladi",
+        "bigo-live-olmos-kelmadi-nima-qilish",
+        "bigo-live-olmos-qayerdan-arzon-olish",
+        "bigo-live-olmos-nima-va-sovgalar"
+      ],
+      "problem": "All five Bigo articles link to /oyinlar/bigo-live — a live-streaming app filed inside the games category. It dilutes the topical signal of /oyinlar, and the same defect will repeat with Steam and Telegram Stars. Bigo's buyer intent (gifting a streamer during a PK battle) is also structurally different from game topup, so mixing them weakens both category signals.",
+      "fix": "Move to /xizmatlar/bigo-live (or /toldirish/bigo-live) under a separate non-game category with its own breadcrumb, hub page and sitemap section. Keep exactly one cross-link from the games side, placed inside oyin-pul-xavfsiz-toldirish, not from game pillars."
+    },
+    {
+      "with": [
+        "pubg-mobile-uc-sotib-olish",
+        "mobile-legends-olmos-sotib-olish",
+        "honor-of-kings-token-sotib-olish",
+        "free-fire-olmos-sotib-olish"
+      ],
+      "problem": "Every plan researched a Russian keyword set — and Honor of Kings verified live Yandex suggest demand for \"хонор оф кингс донат\" while proving the Uzbek equivalents return nothing — yet all 45 pages are Uzbek-only, with Russian strings dropped into secondaryKeywords. An Uzbek-language page will not rank for \"купить алмазы mobile legends узбекистан\". Five pillars nominally target overlapping RU queries that none of them can win, so the plan double-counts traffic that does not exist.",
+      "fix": "Either (a) ship /ru/ twins for the 9 pillars and 9 problem articles with proper hreflang uz-UZ / ru-UZ / x-default and self-referencing canonicals, treating RU as the near-term traffic engine for HOK, Delta Force and Bigo where Uzbek demand is not yet measurable; or (b) delete all Russian keywords from the Uzbek pages' targeting and stop forecasting that traffic. Do not build bilingual single pages — that loses both."
+    }
+  ],
+  "mustLinkTo": [
+    "/xizmatlar/bigo-live",
+    "bigo-id-qayerda-topiladi",
+    "bigo-live-olmos-kelmadi-nima-qilish",
+    "bigo-live-olmos-qayerdan-arzon-olish",
+    "bigo-live-olmos-nima-va-sovgalar"
+  ],
+  "publishRank": 15
+}

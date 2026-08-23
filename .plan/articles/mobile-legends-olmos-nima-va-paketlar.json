@@ -1,0 +1,180 @@
+{
+  "slug": "mobile-legends-olmos-nima-va-paketlar",
+  "game": "mobile-legends",
+  "gameTitle": "Mobile Legends: Bang Bang",
+  "type": "info",
+  "spec": {
+    "slug": "mobile-legends-olmos-nima-va-paketlar",
+    "type": "info",
+    "h1": "Mobile Legends olmos nima va unga nima sotib olinadi",
+    "metaTitle": "Mobile Legends olmos nima va qanday paketlar bor",
+    "metaDescription": "Mobile Legends olmos nima, unga nima olinadi, paketlar qanday tuzilgan, Starlight va Weekly Diamond Pass farqi hamda narx nimaga bog'liqligi.",
+    "searchIntent": "Ma'lumot izlash. Yangi yoki o'rtacha o'yinchi olmosning nima ekanini, unga nima olish mumkinligini, Starlight va Weekly Diamond Pass farqini tushunmoqchi. Bu — klaster uchun mavzuiy chuqurlik beradigan va AI javob mashinalari iqtibos oladigan sahifa.",
+    "primaryKeyword": "mobile legends olmos nima",
+    "secondaryKeywords": [
+      "mobile legends olmos paketlari",
+      "mobile legends starlight nima",
+      "weekly diamond pass nima",
+      "mobile legends olmosga nima olish mumkin",
+      "mobile legends bonus olmos",
+      "mobile legends bepul olmos"
+    ],
+    "answerBox": "Olmos — Mobile Legends ichidagi asosiy pullik valyuta. Unga skinlar, qahramonlar, emblem materiallari, Starlight a'zoligi, Weekly Diamond Pass va Magic Wheel aylantirishlari olinadi. Paketlar kichikdan kattagacha bo'ladi va ko'piga bonus olmos qo'shiladi. Narx USDT kursiga bog'liq bo'lgani uchun o'zgarib turadi va botda ko'rsatiladi.",
+    "outline": [
+      {
+        "h2": "Olmos nima va Battle Point'dan farqi",
+        "covers": "Olmos — pullik valyuta, Battle Point va Ticket — bepul valyutalar. Nima uchun eng qiziqarli narsalar aynan olmosga sotilishi. Olmos akkauntga bog'langan bo'lib, boshqa akkauntga o'tkazib bo'lmasligi (faqat sovg'a mexanikasi orqali).",
+        "block": "key-facts"
+      },
+      {
+        "h2": "Olmosga nima sotib olish mumkin",
+        "covers": "Skinlar va ularning nodir darajalari, yangi qahramonlar (chiqqan zahoti), emblem va Crystal of Aurora materiallari, Magic Wheel va Lucky Box aylantirishlari, ism o'zgartirish kartasi, klan/urush bilan bog'liq elementlar, sovg'a qilish. Qaysilari faqat olmosga, qaysilari bepul yo'l bilan ham olinishi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Olmos paketlari qanday tuzilgan",
+        "covers": "Paketlar zinapoyasi: eng kichikdan eng kattagacha, ko'pchiligiga bonus olmos qo'shiladi va bonus paket kattalashgani sayin ortadi. Birinchi xarid bonusi odatda har bir paket uchun bir martalik va akkauntga bog'langan — buni o'yin ichidagi Recharge oynasidan tekshirish mumkin. Aniq so'm narxi yozilmaydi; paket ro'yxati va joriy narx botda ko'rsatiladi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Starlight va Weekly Diamond Pass: qaysi biri kimga",
+        "covers": "Jadval: nomi | qancha davom etadi | nima beradi | kunlik kirish talab qilinadimi | kimga mos. Starlight — oylik a'zolik, eksklyuziv skin, bosqichli mukofot va do'kon chegirmalari, har oy yangilanadi, kengaytirilgan varianti darajalarni oldindan ochadi. Weekly Diamond Pass — darhol bir qism olmos, keyin 7 kun davomida kunlik olmos; olinmagan kunlik mukofot yonib ketadi. Miqdorlar Moonton tomonidan o'zgartirilishi mumkinligi eslatiladi. So'mdagi narx yo'q.",
+        "block": "compare-table"
+      },
+      {
+        "h2": "Narx nimaga bog'liq",
+        "covers": "Olmos narxi provayder tarifi va USDT kursi orqali shakllanishi, shuning uchun kun davomida o'zgarishi; katta paketlarda bir olmosning tannarxi pasayishi; to'lov tizimi komissiyasi. \"Narx botda ko'rsatiladi\" formulasi. Hech qanday raqam yozilmaydi.",
+        "block": "price-logic"
+      },
+      {
+        "h2": "Bepul olmos: nima haqiqat, nima aldov",
+        "covers": "Rasmiy bepul manbalar — eventlar, kirish mukofotlari, Lucky Box, tadbir kodlari — kam miqdorda va cheklangan. \"Bepul olmos generatori\", mod APK va \"olmos hack\" saytlari akkaunt ma'lumotini o'g'irlash uchun ishlashi va ban xavfi. Foydalanuvchi qanday belgilardan tanishi.",
+        "block": "warning"
+      },
+      {
+        "h2": "Paketlarni botda ko'rish",
+        "covers": "@Gempayuz_bot havolasi, /oyinlar/mobile-legends sahifasi; paketlar va joriy narx botda paket tanlaganda ko'rinishi; nickname bepul tekshirilishi.",
+        "block": "inline-cta"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Olmos nima uchun kerak?",
+        "a": "Olmos — Mobile Legends ichidagi asosiy pullik valyuta. Unga skinlar, yangi qahramonlar, emblem materiallari, Starlight a'zoligi, Magic Wheel aylantirishlari va ism o'zgartirish kartasi olinadi. Bepul valyuta Battle Point bilan bularning ko'pini olib bo'lmaydi."
+      },
+      {
+        "q": "Olmos paketlari bir-biridan qanday farq qiladi?",
+        "a": "Paketlar kichikdan kattagacha bo'ladi va ko'pchiligiga bonus olmos qo'shiladi. Paket qancha katta bo'lsa, bir olmosga to'g'ri keladigan narx odatda arzonlashadi. Aniq ro'yxat va joriy narx botda paket tanlaganda ko'rinadi."
+      },
+      {
+        "q": "Birinchi xaridda bonus bormi?",
+        "a": "Moonton odatda har bir paket uchun birinchi xaridda qo'shimcha bonus olmos beradi. Bu bonus har bir paketga bir martalik va akkauntga bog'langan. Bonus hali ochiqmi yoki ishlatilganmi — buni o'yin ichidagi Recharge oynasida ko'rasiz."
+      },
+      {
+        "q": "Starlight nima va nima beradi?",
+        "a": "Starlight — oylik a'zolik. U o'sha oy uchun eksklyuziv skin, bosqichli va kunlik mukofotlar hamda do'kon imkoniyatlarini ochadi va har oy boshida yangilanadi. Kengaytirilgan varianti bir necha darajani darhol ochib beradi."
+      },
+      {
+        "q": "Weekly Diamond Pass foydalimi?",
+        "a": "U xaridda darhol bir qism olmos beradi, qolgani esa 7 kun davomida kunlik kirishlarda tarqatiladi. Har kuni kirsangiz, bir olmosning narxi bo'yicha eng foydali variantlardan biri bo'ladi. Kunlik mukofotni olmasangiz, u yonib ketadi."
+      },
+      {
+        "q": "Bepul olmos generatorlari ishlaydimi?",
+        "a": "Yo'q. \"Bepul olmos\" saytlari va ilovalari akkaunt ma'lumotlarini o'g'irlash uchun tuzilgan. Rasmiy bepul yo'llar bor — eventlar, kirish mukofotlari va Lucky Box — lekin ular kichik miqdorda beriladi."
+      },
+      {
+        "q": "Olmosni boshqa akkauntga o'tkazsam bo'ladimi?",
+        "a": "To'g'ridan-to'g'ri o'tkazib bo'lmaydi — olmos akkauntga bog'langan. Do'stingizga yordam bermoqchi bo'lsangiz, uning User ID va Server ID'siga to'g'ridan-to'g'ri to'ldirish yoki o'yin ichidagi sovg'a mexanikasidan foydalanish qulayroq."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "FAQPage",
+      "BreadcrumbList",
+      "ItemList"
+    ],
+    "internalLinks": [
+      "/oyinlar/mobile-legends",
+      "mobile-legends-olmos-sotib-olish",
+      "mobile-legends-olmos-arzon-qayerdan-olish",
+      "mobile-legends-user-id-server-id-qayerda"
+    ],
+    "wordCount": 1300
+  },
+  "gameKeywords": {
+    "primary": [
+      "mobile legends olmos sotib olish",
+      "mobile legends olmos to'ldirish",
+      "mlbb olmos sotib olish",
+      "mobile legends donat",
+      "mobile legends olmos arzon",
+      "mobile legends server id",
+      "mobile legends olmos narxi",
+      "mobile legends diamond uzbekistan"
+    ],
+    "questions": [
+      "mobile legends server id qayerda turadi?",
+      "user id va server id farqi nima?",
+      "zone id bilan server id bir xilmi?",
+      "olmos qancha vaqtda tushadi?",
+      "olmos kelmasa nima qilish kerak?",
+      "donat uchun akkaunt bloklanadimi?",
+      "olmosni do'stimga sovg'a qilsam bo'ladimi?",
+      "VPN yoki Visa karta kerakmi?",
+      "narx nega o'zgarib turadi?",
+      "Starlight va Weekly Diamond Pass qaysi biri foydali?",
+      "как узнать server id в mobile legends?",
+      "почему не пришли алмазы после оплаты?"
+    ],
+    "russian": [
+      "купить алмазы mobile legends узбекистан",
+      "пополнение mobile legends сум",
+      "донат mlbb узбекистан",
+      "алмазы мобайл легенд ташкент",
+      "пополнить mobile legends через click",
+      "пополнить mobile legends payme",
+      "как узнать zone id mobile legends",
+      "алмазы не пришли mobile legends",
+      "mobile legends starlight купить",
+      "где дешевле купить алмазы mlbb"
+    ]
+  },
+  "competitorResearch": "VERIFIED ONLINE (WebSearch + WebFetch, avgust 2026): (1) O'zbek tilidagi MLBB donat SERP'i deyarli BO'SH — \"mobile legends olmos sotib olish\", \"olmos to'ldirish narxi\", \"server id qayerda\" kabi so'rovlarda birinchi sahifa Wikipedia, TikTok, YouTube va tasodifiy natijalar bilan to'ladi; hech bir kuchli o'zbekcha tijorat sahifasi yo'q. Bu — eng tez g'alaba nuqtasi. (2) Rus tilida raqobat kuchli, lekin u ROSSIYA sahifalari (kupikod.com, donatov.net, ggpay.gg, vc.ru/DTF gaydlari, prepodsteam) — ular UZS, Click/Payme/UzCard/HUMO'ni umuman ko'rmaydi. O'zbekistonga qaratilgan \".uz\" raqobatchilar zaif: adek.uz (kod orqali, Toshkent do'koni, faqat ruscha katalog sahifalari, kontent yo'q), wildberries.uz karta sahifalari. Global o'yinchilar (mtcgame /uz/ mashina tarjimasi — sahifa 403 qaytardi, codashop, smile.one, topup-balance, hablax, doctorsim) O'zbekiston uchun lokal to'lovni ko'rsatmaydi va kripto/xorijiy karta so'raydi. Ya'ni \"so'mda + mahalliy karta + o'zbekcha\" burchagi egallanmagan. (3) Kupikod FAQ tahlili (WebFetch) real savol shakllarini tasdiqladi: \"olmos nima uchun kerak\", \"pass nima beradi\", \"olmos kelmasa nima qilish\", \"donat uchun ban beriladimi\", \"boshqa odamga sovg'a qilish\", \"yetkazish tezligi\" — 5 ta maqolaning FAQ bloklari shu klasterlarga bog'landi. (4) User ID / Server ID chalkashligi tasdiqlandi: format 123456789 (1234), qavs ichidagi raqam = Server ID; rus segmentida u \"Zone ID\" deb yuritiladi (kupikod, dtf, ggpay hammasi \"User ID va Zone ID\" deydi) — shuning uchun \"zone id\" sinonimini maqola ichida ochiq berish kerak. Bu so'rovda faqat inglizcha bloglar (gpdsgameshop) va YouTube raqobatlashadi — o'zbekcha bo'sh. (5) Region masalasi ham real: Global va Rossiya/MDH klientlari alohida akkaunt bazasi, ID'lar mos kelmaydi — bu \"ID topilmadi\" xatosining haqiqiy sababi. (6) Starlight / Weekly Diamond Pass fakti: Starlight — oylik a'zolik (bazasi 300 olmos, Plus 750), WDP — darhol 80 olmos + 7 kun davomida kuniga 20 olmos (jami ~220); bu raqamlar Moonton tomonidan o'zgartirilishi mumkin, shuning uchun maqolada \"tuzilma\" sifatida beriladi, so'mdagi narx esa hech qayerda yozilmaydi. INFERRED (tasdiqlanmagan): aniq qidiruv hajmlari (volume) — Ahrefs va Semrush MCP konnektorlari bu sessiyada avtorizatsiya qilinmagan, shuning uchun raqamli volume yo'q; kalit so'zlar tartibi SERP zichligi, avtokomplit shakllari va raqobatchi sarlavhalari asosida baholandi. Shuningdek o'zbek foydalanuvchilari \"olmos\" (o'zbekcha) va \"diamond/almaz\" (translit) ni aralash yozadi degan xulosa — bu Telegram MLBB UZ kanallari nomlanishi va aralash so'rovlar asosida taxmin, aniq ulush o'lchanmagan. Strategiya: 5 maqola ham o'zbek tilida yoziladi, lekin har birida ruscha sinonim (алмазы, Zone ID, пополнение) matn ichida tabiiy tilga olinadi — Yandex.uz ruscha so'rovlarda ham ushlab qolsin.",
+  "siblings": [
+    {
+      "slug": "mobile-legends-olmos-sotib-olish",
+      "h1": "Mobile Legends olmos sotib olish: to'liq qo'llanma",
+      "type": "howto"
+    },
+    {
+      "slug": "mobile-legends-olmos-kelmadi-nima-qilish",
+      "h1": "Mobile Legends olmos kelmadi: sabablari va yechimi",
+      "type": "problem"
+    },
+    {
+      "slug": "mobile-legends-olmos-arzon-qayerdan-olish",
+      "h1": "Mobile Legends olmosni qayerdan olish arzon va xavfsiz",
+      "type": "comparison"
+    },
+    {
+      "slug": "mobile-legends-user-id-server-id-qayerda",
+      "h1": "Mobile Legends User ID va Server ID qayerda turadi",
+      "type": "trust"
+    }
+  ],
+  "cannibalisationFixes": [
+    {
+      "with": [
+        "magic-chess-go-go-olmos-paketlari"
+      ],
+      "problem": "Both explain \"olmos nima\", package ladders, bonus diamonds and \"bepul olmos\" scams, for two games from the same publisher using the same currency word. MCGG's title term \"olmos paketlari\" sits inside MLBB's declared secondary set. MCGG also declares Product schema on a page that (correctly) carries no prices — that will throw invalid-offer errors in Search Console.",
+      "fix": "Pivot the MCGG info page to what only it has: Go Go Pass, Chess Points vs Diamonds, commander-unlock economics, chessboard cosmetics. Remove \"olmos nima\" and \"bepul olmos\" targeting and link to the MLBB/Free Fire pages for those. Drop Product from its schema array; keep BlogPosting + FAQPage + ItemList."
+    }
+  ],
+  "mustLinkTo": [
+    "/oyinlar/mobile-legends",
+    "mobile-legends-olmos-sotib-olish",
+    "mobile-legends-olmos-arzon-qayerdan-olish"
+  ],
+  "publishRank": 18
+}
