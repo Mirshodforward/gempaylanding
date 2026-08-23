@@ -77,11 +77,50 @@ const UNSAFE_RE =
 const WARNING_CTX =
   /(firibgar|aldov|ehtiyot|xavf|ishonmang|bermang|yo'l qo'ymang|hech qachon|taklif|scam|yo'qotish)/i;
 
+/**
+ * Bajarib bo'lmaydigan VA'DA.
+ *
+ * NEGA MUHIM: narx provayder kursiga, yetkazish esa uchinchi tomon API'siga
+ * bog'liq — demak «100% kafolat» yoki «har doim ishlaydi» degan gap rost
+ * bo'la olmaydi. Bunday jumla mijoz oldida bajarilmaydigan majburiyat
+ * yaratadi va pul mavzusida Google uchun ham ishonchsizlik signali.
+ *
+ * QAMROV ATAYLAB TOR. Birinchi urinishda bu tekshiruv «eng arzon» kabi
+ * har qanday ustunlik shaklini ushlab olardi va to'rttala topilmasi ham
+ * yolg'on bo'lib chiqdi: ikkitasi SAVOL sarlavhasi («Qaysi usul eng tez?»),
+ * biri versiyani aniqlashning eng ishonchli yo'li haqida, yana biri esa
+ * Magic Wheel'ning O'YIN ICHIDAGI kafolati haqida edi. Doimo bekorga
+ * ishlaydigan tekshiruvni hamma e'tiborsiz qoldiradi, shuning uchun endi
+ * faqat mahsulotning O'ZI bera olmaydigan va'dalar belgilanadi.
+ */
+const BROKEN_PROMISE_RE = new RegExp(
+  [
+    "100\\s*%\\s*(kafolat|ishonchli|xavfsiz|гаранти)",
+    "(to'liq|mutlaq)\\s+kafolat",
+    "kafolatlaymiz",
+    "har\\s+doim\\s+ishlaydi",
+    "hech\\s+qachon\\s+(buzilmaydi|to'xtamaydi|kechikmaydi)",
+    "мы\\s+гарантируем",
+    "\\bwe\\s+guarantee\\b",
+  ].join("|"),
+  "i",
+);
+
+/** Ustunlik da'vosi — ko'rib chiqish uchun, xato emas (savollar tashlanadi). */
+const SUPERLATIVE_RE = /\beng\s+(arzon|yaxshi|tez|ishonchli)\b(?!roq)/i;
+
 function checkText(where, strings, { uzbek = true } = {}) {
   for (const s of strings) {
     if (PRICE_RE.test(s)) fail(where, `narx yozilgan → "${s.slice(0, 120)}"`);
     if (uzbek && BAD_APOSTROPHE.test(s)) {
       fail(where, `noto'g'ri apostrof (faqat ASCII ') → "${s.slice(0, 90)}"`);
+    }
+    if (BROKEN_PROMISE_RE.test(s)) {
+      fail(where, `bajarib bo'lmaydigan va'da → "${s.slice(0, 130)}"`);
+    }
+    // Savol («Qaysi usul eng tez?») da'vo emas — u tashlab yuboriladi.
+    if (SUPERLATIVE_RE.test(s) && !s.trim().endsWith("?")) {
+      warn(where, `ustunlik da'vosi, ko'rib chiqing → "${s.slice(0, 130)}"`);
     }
     if (UNSAFE_RE.test(s) && !WARNING_CTX.test(s)) {
       warn(where, `xavfli bo'lishi mumkin, ko'rib chiqing → "${s.slice(0, 140)}"`);
