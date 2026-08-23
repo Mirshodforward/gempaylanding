@@ -1,0 +1,99 @@
+// AVTOMATIK KIRITILGAN — `npm run ingest`.
+// Manba reja: .plan/articles/mobile-legends-olmos-sotib-olish.json
+// Qo'lda tahrirlash mumkin; keyingi ingest faqat yangi fayllarni qo'shadi.
+
+import type { Article } from "../types";
+
+const article: Article = {
+  slug: "mobile-legends-olmos-sotib-olish",
+  game: "mobile-legends",
+  type: "howto",
+  datePublished: "2026-08-23",
+  dateModified: "2026-08-23",
+  pillar: true,
+  keywords: ["mobile legends olmos sotib olish","mobile legends olmos to'ldirish","mlbb olmos sotib olish","mobile legends donat","mobile legends olmos click orqali","mobile legends olmos payme","mobile legends diamond uzbekistan","mobile legends olmos telegram bot"],
+  locales: {
+    uz: {
+      title: "Mobile Legends olmos sotib olish: to'liq qo'llanma",
+      metaTitle: "Mobile Legends olmos sotib olish — so'mda, 1 daqiqada",
+      metaDescription: "Mobile Legends olmos sotib olish: User ID va Server ID kiriting, nickname bepul tekshiriladi, Click, Payme, UzCard yoki HUMO bilan so'mda to'lang.",
+      excerpt: "Telegram bot orqali Mobile Legends olmosini so'mda to'ldirish: ID kiritasiz, nickname bepul tekshiriladi, keyin Click, Payme, UzCard yoki HUMO bilan to'laysiz.",
+      answer: "Mobile Legends olmos sotib olish uchun @Gempayuz_bot ni oching, Mobile Legends ni tanlang va User ID hamda Server ID (qavs ichidagi raqam) ni kiriting. Nickname bepul chiqadi; u to'g'ri bo'lsa paketni tanlab Click, Payme, UzCard, HUMO yoki Paynet orqali so'mda to'laysiz. Olmos odatda bir daqiqada tushadi.",
+      body: [
+    { t: "p", text: "Mobile Legends'da olmos — skin, emblem, Starlight a'zoligi va boshqa ichki xaridlarni ochadigan asosiy valyuta. O'zbekistonda uni to'ldirishdagi qiyinchilik odatda pulda emas, to'lov yo'lida: o'yin ichidagi rasmiy oyna ko'pincha xorijiy karta yoki chet el do'kon balansini so'raydi, o'zbek kartasi esa o'tmaydi. Shuning uchun ko'p o'yinchi ID orqali ishlaydigan xizmatlarga o'tadi." },
+    { t: "p", text: "Quyida GemPay orqali olmos to'ldirishning to'liq tartibi: nima kerak, ID ni qayerdan olasiz, nickname qanday tekshiriladi, to'lov usullari nimasi bilan farq qiladi va nega saytda qat'iy narx yozilmagan. Paketlar ro'yxati va joriy summalar <a href=\"/oyinlar/mobile-legends\">Mobile Legends to'ldirish sahifasida</a> turadi." },
+    { t: "h2", id: "nima-kerak", text: "Olmos to'ldirish uchun nima kerak" },
+    { t: "p", text: "Ro'yxatdan o'tish, anketa yoki hujjat kerak emas. Amalda uchta narsa yetarli, va ularning hammasi sizda allaqachon bor." },
+    { t: "facts", items: [{"k":"User ID","v":"Profilda ko'rinadigan ochiq raqam, masalan 123456789"},{"k":"Server ID","v":"O'sha raqamdan keyin qavs ichida turadi, masalan (1234)"},{"k":"Telegram","v":"@Gempayuz_bot ochiladigan istalgan qurilma, alohida ilova shart emas"},{"k":"To'lov","v":"UzCard, HUMO, Click, Payme yoki Paynet — hammasi so'mda"},{"k":"Vaqt","v":"ID tayyor bo'lsa, butun jarayon odatda bir necha daqiqada tugaydi"}] },
+    { t: "p", text: "Quyidagilarning hech biri talab qilinmaydi:" },
+    { t: "list", ordered: false, items: ["o'yin akkauntining paroli yoki unga bog'langan pochta,","Moonton hisobiga kirish yoki akkauntni birovga vaqtincha berish,","VPN, region almashtirish yoki boshqa mamlakat do'koni,","Visa, Mastercard yoki xorijiy valyuta hisobi,","o'yindagi darajangiz, rankingiz yoki qaysi paketni oldingiz — bularning hech biri ahamiyatga ega emas."] },
+    { t: "p", text: "Ya'ni akkauntingizga kirish shart emas: to'ldirish o'yin serveri tomonidan ochiq ID bo'yicha bajariladi. Parol, SMS kod yoki akkauntni topshirishni so'ragan xizmat bilan ishlamang — <a href=\"/blog/oyin-pul-xavfsiz-toldirish\">o'yinga xavfsiz pul kiritish qo'llanmasi</a> firibgarlikning tipik shakllarini bir joyga to'plagan." },
+    { t: "p", text: "User ID va Server ID maxfiy ma'lumot emas: ular do'stlar ro'yxatida, klan ichida va profil oynasida ochiq turadi. Ularni bilgan odam akkauntingizga kira olmaydi, faqat unga olmos yuborishi mumkin. Aynan shu sababli ID orqali to'ldirish parol so'raydigan usullardan xavfsizroq hisoblanadi." },
+    { t: "h2", id: "qadam-baqadam", text: "GemPay orqali olmos olish: qadam-baqadam" },
+    { t: "steps", items: [{"title":"Botni oching","text":"Telegramda @Gempayuz_bot ni oching va boshlash tugmasini bosing. Bot Telegram ichida ishlaydi, alohida ilova o'rnatish yoki ro'yxatdan o'tish talab qilinmaydi."},{"title":"O'yinlar ro'yxatidan Mobile Legends ni tanlang","text":"Katalogda o'yin nomi bo'yicha topasiz. Mobile Legends: Bang Bang va Magic Chess: Go Go alohida o'yinlar, shuning uchun nomini diqqat bilan tanlang."},{"title":"User ID ni kiriting","text":"Faqat raqamlarni yozing, qavs va bo'sh joysiz. Bu profilingizdagi birinchi raqam, masalan 123456789."},{"title":"Server ID ni kiriting","text":"Bu profildagi qavs ichidagi raqam, masalan (1234). Rus tilidagi saytlarda u ko'pincha Zone ID deb yuritiladi — bir xil narsa. Server ID siz akkaunt topilmaydi."},{"title":"Ekranda chiqqan nickname'ni tasdiqlang","text":"Bot o'yin serveridan ma'lumot so'raydi va akkaunt nomini ko'rsatadi. Nickname sizniki bo'lsa, tasdiqlang; boshqa nom chiqsa, ID ni qayta tekshiring. Bu bosqichgacha hech narsa to'lanmaydi."},{"title":"Paketni tanlang","text":"Olmos miqdorlari ro'yxatda turadi, joriy summa esa har bir paket yonida so'mda ko'rsatiladi. Kerakli miqdorni tanlaysiz."},{"title":"To'lov usulini tanlab, so'mda to'lang","text":"UzCard, HUMO, Click, Payme yoki Paynet. To'lov oynasi ochilganda uni yopmang va tasdiqlash tugagunicha kuting."},{"title":"Olmosni o'yinda tekshiring","text":"To'lov o'tgach, olmos avtomatik yuboriladi va odatda bir daqiqada balansda ko'rinadi. Agar darrov ko'rinmasa, o'yinni to'liq yopib qayta oching — ilova ko'pincha eski balansni ko'rsatib turadi."}] },
+    { t: "h2", id: "user-id-server-id", text: "User ID va Server ID ni qayerdan olasiz" },
+    { t: "steps", items: [{"title":"Lobbida avatarni oching","text":"O'yinning asosiy ekranida burchakdagi avatarni bosing — profil oynasi ochiladi."},{"title":"Profil oynasidagi raqamni toping","text":"Akkaunt ma'lumotlari orasida raqam 123456789(1234) ko'rinishida turadi. Yonida nusxalash tugmasi bo'lsa, undan foydalanish eng ishonchlisi."},{"title":"Raqamni ikkiga ajrating","text":"Qavsgacha bo'lgan qism — User ID, qavs ichidagi qism — Server ID. Botda ular alohida maydonlarga kiritiladi."}] },
+    { t: "p", text: "Ayni shu raqam o'yin ichidagi to'ldirish oynasida ham ko'rsatiladi, ya'ni profilni topolmasangiz o'sha yerdan ham olsangiz bo'ladi. Interfeys yangilanishlar bilan siljib turadi, shuning uchun ekranma-ekran to'liq tartib, nusxalashdagi tipik xatolar va do'stning ID sini qanday so'rash kerakligi <a href=\"/blog/mobile-legends-user-id-server-id-qayerda\">User ID va Server ID qayerda turadi</a> maqolasida alohida yozilgan." },
+    { t: "p", text: "Yana bir nozik joy — region. Mobile Legends'ning Global va MDH uchun chiqarilgan klientlari alohida akkaunt bazasida ishlaydi, ya'ni bir versiyada olingan ID ikkinchisida topilmaydi. Agar bot \"akkaunt topilmadi\" desa, avval ID dagi xatoni, keyin esa qaysi klientda o'ynayotganingizni tekshiring." },
+    { t: "h2", id: "tolov-usullari", text: "To'lov usullari: Click, Payme, UzCard, HUMO, Paynet" },
+    { t: "p", text: "Barcha to'lovlar so'mda o'tadi — valyuta konvertatsiyasi ham, xorijiy karta ham kerak emas. Usulni paket tanlangandan keyin, oxirgi qadamda tanlaysiz." },
+    { t: "table", caption: "To'lov usullari va ular qanday ishlashi. Barcha summalar so'mda, konvertatsiyasiz.", head: ["To'lov usuli","Qanday ishlaydi","Kimga qulay","Xorijiy karta","Odatiy tasdiqlash"], rows: [["Click","To'lov oynasi Click ilovasiga o'tkazadi, siz summani tasdiqlaysiz","Telefonida Click o'rnatilgan foydalanuvchi","-","Bir necha soniyada"],["Payme","Payme ilovasida to'lov tasdiqlanadi","Payme hisobida mablag' saqlaydiganlar","-","Bir necha soniyada"],["UzCard","Karta ma'lumotlari kiritiladi, keyin bankdan SMS kod keladi","Ilovasiz, to'g'ridan-to'g'ri karta bilan to'laydiganlar","-","SMS kelishiga bog'liq"],["HUMO","Karta ma'lumotlari kiritiladi, keyin bankdan SMS kod keladi","HUMO kartasi asosiy karta bo'lganlar","-","SMS kelishiga bog'liq"],["Paynet","Paynet hisobi orqali to'lanadi","Paynet ilovasidan foydalanadiganlar","-","Bir necha soniyada"]] },
+    { t: "p", text: "Kartani to'g'ridan-to'g'ri ishlatganda bank SMS kod so'rashi mumkin — bu 3D-Secure tasdiqlash. Kod bankdan keladi va uni faqat to'lov oynasiga kiritasiz. GemPay bu kodni Telegram chatida hech qachon so'ramaydi; kimdir so'rasa, bu firibgarlik." },
+    { t: "p", text: "Qaysi biri qulayroq — sizning odatingizga bog'liq. Telefonida Click yoki Payme ilovasi turgan bo'lsa, ular eng kam bosishni talab qiladi: to'lov oynasi ilovaga o'tkazadi va tasdiqlash bir necha soniyada tugaydi. Ilova o'rnatmaganlar uchun UzCard yoki HUMO kartasini to'g'ridan-to'g'ri kiritish oddiyroq, faqat SMS kodni kutishga tayyor turing. Yetkazish tezligi to'lov usuliga bog'liq emas — olmos to'lov tasdiqlangandan keyin bir xil tartibda yuboriladi." },
+    { t: "h2", id: "narx-qanday-shakllanadi", text: "Narx qanday shakllanadi va nega o'zgaradi" },
+    { t: "p", text: "Olmos narxi provayder tarifiga va USDT kursiga bog'langan. Kurs kun davomida siljisa, paket summasi ham siljiydi — shuning uchun saytga qat'iy raqam yozib qo'yish ertaga eskiradigan ma'lumot berish bilan barobar. Joriy summa botda paketni tanlaganingizda so'mda chiqadi va to'lovdan oldin ekranda turadi." },
+    { t: "p", text: "Ikkinchi qoida: kattaroq paketlarda bitta olmosning tannarxi odatda pastroq bo'ladi. Agar rejangizda skin yoki Starlight bo'lsa, kichik paketni bir necha marta olishdan ko'ra bitta kattaroq paketni olish ko'pincha foydaliroq chiqadi. Paketlar tuzilishi va olmosga aslida nima sotib olinishi <a href=\"/blog/mobile-legends-olmos-nima-va-paketlar\">olmos nima va qanday paketlar bor</a> maqolasida ochib berilgan." },
+    { t: "p", text: "Paket qatori Mobile Legends'da odatda kichik miqdorlardan boshlanib, bir necha ming olmosgacha ko'tariladi, oraliqda esa Starlight a'zoligi va Weekly Diamond Pass kabi obuna shakllari turadi — birinchisi oylik, ikkinchisi bir hafta davomida olmosni bo'lib beradigan paket. Moonton bu ro'yxatni vaqti-vaqti bilan o'zgartiradi, shuning uchun aniq miqdorlarni botdagi joriy ro'yxatdan ko'rgan ma'qul." },
+    { t: "p", text: "Xizmatlarni solishtirganda faqat raqamga qaramang: yetkazish usuli, qo'llab-quvvatlash va buyurtma tarixi ham hisobga olinadi. Bu haqda <a href=\"/blog/mobile-legends-olmos-arzon-qayerdan-olish\">olmosni arzon va xavfsiz qayerdan olish</a> hamda <a href=\"/blog/oyin-valyutasi-qayerdan-arzon\">o'yin valyutasi narxi qanday shakllanadi</a> maqolalari bor." },
+    { t: "h2", id: "nickname-tekshiruvi", text: "Nickname tekshiruvi — to'lovdan oldin va bepul" },
+    { t: "p", text: "ID va Server ID kiritilgach, bot o'yin serveriga so'rov yuboradi va ekranda akkaunt nickname'i chiqadi. Bu tekshiruv bepul: shu bosqichgacha hech qanday to'lov o'tmaydi, karta ma'lumoti ham so'ralmaydi. Ya'ni ID ni tekshirib ko'rish uchun hech narsa yo'qotmaysiz." },
+    { t: "p", text: "Chiqqan nomni diqqat bilan o'qing. Agar u sizniki bo'lmasa, demak raqamda xato bor — to'lamang, orqaga qayting va ID ni qayta kiriting. Bir belgilik xato butunlay boshqa akkauntga olib boradi, yuborilgan olmosni esa o'yin serveridan qaytarib bo'lmaydi." },
+    { t: "p", text: "Do'stga sovg'a qilayotganda himoya aynan shu joyda ishlaydi: do'stingizning User ID va Server ID sini kiritasiz, ekranda uning nickname'i chiqadi va faqat shundan keyin to'laysiz. Akkauntni birovga berish yoki parol almashish umuman kerak emas." },
+    { t: "p", text: "Agar xatoni to'lovdan keyin sezib qolsangiz, o'zingiz hech narsa qila olmaysiz: olmos allaqachon o'sha ID ga tushgan bo'ladi. Shu holatda ham darhol @StarsPaymeeSupport ga yozing va chekni yuboring — yechim topilishi buyurtma qanchalik tez xabar qilinganiga bog'liq. Bir daqiqalik tekshiruv bu holatning oldini oladi." },
+    { t: "note", text: "Nickname — to'lovdan oldin ko'ra oladigan yagona ishonchli dalil. GemPay parol, SMS kod yoki akkauntga kirishni hech qachon so'ramaydi: ID orqali to'ldirish bularsiz ham to'liq ishlaydi.", title: "Tekshiruvni o'tkazib yubormang", tone: "good" },
+    { t: "h2", id: "kop-uchraydigan-xatolar", text: "Ko'p uchraydigan xatolar" },
+    { t: "list", ordered: false, items: ["<strong>Server ID ni tushirib qoldirish.</strong> Faqat User ID bilan tizim akkauntni topa olmaydi — qavs ichidagi raqamni alohida maydonga kiriting.","<strong>Qavs ichidagi raqamni User ID ga qo'shib yozish.</strong> 123456789(1234) ni bitta uzun raqam sifatida kiritsangiz, ID topilmaydi.","<strong>ID ni ortiqcha belgilar bilan nusxalash.</strong> Bo'sh joy, qavs yoki ko'rinmas belgi qolib ketadi — nusxalagandan keyin maydonni ko'z bilan tekshiring.","<strong>ID o'rniga nickname yozish.</strong> Nickname'lar takrorlanadi, shuning uchun to'ldirish faqat raqamli ID bo'yicha bajariladi.","<strong>Boshqa region klientidan olingan ID.</strong> Global va MDH versiyalari alohida akkaunt bazasida ishlaydi, ID'lar mos kelmaydi — qaysi klientda o'ynasangiz, o'sha akkauntning ID sini bering.","<strong>To'lov paytida ilovadan chiqib ketish.</strong> To'lov oynasi ochilganda uni yopmang; tasdiqlash tugamasdan chiqsangiz, buyurtma yarim yo'lda qoladi.","<strong>\"Bepul olmos generatori\" va \"ID bilan parolni yuboring\" turidagi takliflar.</strong> Bularning ikkalasi ham firibgarlik: hech qanday generator o'yin serveriga olmos qo'sha olmaydi, parolni bergan akkaunt esa oddiygina o'g'irlanadi."] },
+    { t: "note", text: "Avval o'yinni to'liq yopib qayta oching va balansni tekshiring — ilova eski qiymatni saqlab turgan bo'lishi mumkin. Shundan keyin ham ko'rinmasa, to'lov cheki va ID ni @StarsPaymeeSupport ga yuboring; sabablar va tekshirish tartibi <a href=\"/blog/mobile-legends-olmos-kelmadi-nima-qilish\">olmos kelmadi: sabablari va yechimi</a> maqolasida.", title: "Olmos ko'rinmayotgan bo'lsa", tone: "warn" },
+    { t: "h2", id: "botni-oching", text: "Botni oching va olmos oling" },
+    { t: "p", text: "Tartib qisqacha shunday: ID va Server ID ni kiritasiz, ekranda chiqqan nickname'ni tasdiqlaysiz, paketni tanlab so'mda to'laysiz va olmos odatda bir daqiqada tushadi. Parol so'ralmaydi, VPN kerak emas, xorijiy karta ham talab qilinmaydi." },
+    { t: "p", text: "Joriy paketlar <a href=\"/oyinlar/mobile-legends\">Mobile Legends to'ldirish sahifasida</a>, qolgan o'yinlar esa <a href=\"/oyinlar\">GemPay o'yinlar katalogida</a> — masalan <a href=\"/oyinlar/pubg-mobile\">PUBG Mobile UC to'ldirish</a>. Savol yoki muammo chiqsa, @StarsPaymeeSupport ga buyurtma vaqti va ID bilan yozing." },
+    { t: "p", text: "To'lov chekini va bot bergan buyurtma ma'lumotini o'chirib yubormang. Ular kerak bo'ladigan holatlar kam, lekin bo'lsa — masalan olmos kechikkanda yoki ID xato kiritilganda — aynan shu ikki narsa muammoni tez hal qilishga yordam beradi." },
+    { t: "note", text: "GemPay mustaqil xizmat va hech qanday o'yin nashriyotining rasmiy hamkori emas. To'ldirish o'yindagi ochiq ID orqali bajariladi, akkauntga kirish talab qilinmaydi.", title: "Xizmat haqida", tone: "info" },
+    { t: "cta", text: "Botni oching va Mobile Legends olmosini so'mda to'ldiring: @Gempayuz_bot" },
+    { t: "links", title: "Mobile Legends bo'yicha qolgan maqolalar", items: [{"label":"User ID va Server ID qayerda turadi","href":"/blog/mobile-legends-user-id-server-id-qayerda"},{"label":"Olmos kelmadi: sabablari va yechimi","href":"/blog/mobile-legends-olmos-kelmadi-nima-qilish"},{"label":"Olmosni arzon va xavfsiz qayerdan olish","href":"/blog/mobile-legends-olmos-arzon-qayerdan-olish"},{"label":"Olmos nima va qanday paketlar bor","href":"/blog/mobile-legends-olmos-nima-va-paketlar"},{"label":"Mobile Legends to'ldirish sahifasi","href":"/oyinlar/mobile-legends"}] }
+      ],
+      faq: [
+              {
+                      "q": "Mobile Legends olmos qancha vaqtda tushadi?",
+                      "a": "To'lov tasdiqlangach olmos odatda bir daqiqada akkauntga tushadi. Moonton serverlari band bo'lgan paytda bu bir necha daqiqagacha cho'zilishi mumkin. Agar ko'rinmasa, o'yinni to'liq yopib qayta oching — ilova ko'pincha eski balansni ko'rsatib turadi."
+              },
+              {
+                      "q": "To'lov uchun Visa yoki Mastercard kerakmi?",
+                      "a": "Yo'q. GemPay O'zbekiston to'lov tizimlari bilan ishlaydi: UzCard, HUMO, Click, Payme va Paynet. Xorijiy karta ham, valyuta konvertatsiyasi ham, VPN ham talab qilinmaydi. Summa so'mda hisoblanadi va to'lovdan oldin ekranda turadi."
+              },
+              {
+                      "q": "Parolimni yoki akkauntimni berishim kerakmi?",
+                      "a": "Hech qachon. To'ldirish faqat User ID va Server ID orqali bajariladi — bular ochiq ma'lumot va ular bilan akkauntga kirib bo'lmaydi. Parol, bog'langan pochta yoki SMS kodini so'ragan har qanday xizmat firibgardir."
+              },
+              {
+                      "q": "Olmosni do'stimning akkauntiga to'ldirsam bo'ladimi?",
+                      "a": "Ha. Botga o'z ID'ingizni emas, do'stingizning User ID va Server ID'sini kiriting. To'lovdan oldin chiqadigan nickname aynan do'stingizniki ekaniga ishonch hosil qiling — shundan keyingina to'lang. Akkauntni almashish yoki parol berish kerak emas."
+              },
+              {
+                      "q": "Donat uchun akkaunt bloklanadimi?",
+                      "a": "Yo'q. To'ldirish o'yindagi rasmiy ID orqali bajariladi va bu Moonton qoidalariga zid emas. Ban xavfi akkauntni birovga topshirish yoki \"bepul olmos\" generatorlaridan foydalanish kabi usullarda paydo bo'ladi. Bunday generatorlar ishlamaydi va odatda akkauntni o'g'irlash uchun tuzilgan."
+              },
+              {
+                      "q": "User ID va Server ID nimasi bilan farq qiladi, Zone ID nima?",
+                      "a": "User ID — profildagi asosiy raqam, Server ID esa uning yonida qavs ichida turadigan qisqa raqam. Rus tilidagi saytlarda Server ID ko'pincha Zone ID deb yuritiladi, lekin bu bir xil narsa. Botda ikkalasi ham alohida maydonga kiritiladi, aks holda akkaunt topilmaydi."
+              },
+              {
+                      "q": "Nega saytda narx yozilmagan?",
+                      "a": "Olmos narxi provayder tarifi va USDT kursiga bog'liq bo'lgani uchun kun davomida o'zgaradi. Eskirgan raqam yozib qo'yishdan ko'ra, joriy narxni botda ko'rsatish to'g'riroq. Paket tanlaganingizda aniq summa so'mda chiqadi va to'lovdan oldin tasdiqlaysiz."
+              }
+      ],
+    },
+  },
+};
+
+export default article;

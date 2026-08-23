@@ -1,0 +1,94 @@
+// AVTOMATIK KIRITILGAN — `npm run ingest`.
+// Manba reja: .plan/articles/mobile-legends-olmos-arzon-qayerdan-olish.json
+// Qo'lda tahrirlash mumkin; keyingi ingest faqat yangi fayllarni qo'shadi.
+
+import type { Article } from "../types";
+
+const article: Article = {
+  slug: "mobile-legends-olmos-arzon-qayerdan-olish",
+  game: "mobile-legends",
+  type: "comparison",
+  datePublished: "2026-08-23",
+  dateModified: "2026-08-23",
+  pillar: false,
+  keywords: ["mobile legends olmos arzon","mobile legends olmos qayerdan olish","mobile legends olmos narxi","где дешевле купить алмазы mlbb","mobile legends olmos ishonchli sayt","mlbb donat uzbekistan","mobile legends olmos codashop o'rniga"],
+  locales: {
+    uz: {
+      title: "Mobile Legends olmosni qayerdan olish arzon va xavfsiz",
+      metaTitle: "Mobile Legends olmos arzon: qayerdan olish yaxshi",
+      metaDescription: "Mobile Legends olmosni qayerdan olish arzon va xavfsiz: GemPay, o'yin ichidagi to'lov, xorijiy saytlar va shaxsiy sotuvchilar halol taqqoslovda.",
+      excerpt: "Olmos olishning to'rtta yo'li yonma-yon: to'lov valyutasi, karta talabi, yetkazish vaqti va har birining haqiqiy riski.",
+      answer: "Mobile Legends olmosini O'zbekistonda so'mda olishning ishlaydigan yo'li - ID orqali to'ldirish: GemPay boti Click, Payme, UzCard, HUMO va Paynet ni qabul qiladi hamda faqat User ID bilan Server ID ni so'raydi. O'yin ichidagi do'kon xorijiy valyutadagi kartani, xorijiy saytlar esa Visa yoki Mastercard ni talab qiladi. Joriy narx botda ko'rinadi.",
+      body: [
+    { t: "p", text: "Olmos olishdan oldin ko'pchilik bir xil joyda to'xtaydi: qayerdan olsam arzonroq chiqadi va pul yo'qolmaydi. O'zbekistonda bu savol ko'pincha narx bilan emas, to'lov mexanikasi bilan hal bo'ladi - kartangiz o'tadimi, so'mda to'laysizmi va sizdan akkaunt ma'lumoti so'raladimi. Quyida to'rtta real yo'l bor, har birining kuchli tomoni ham, kamchiligi ham ochiq yozilgan. Qadam-baqadam ko'rsatma esa alohida, <a href=\"/blog/mobile-legends-olmos-sotib-olish\">Mobile Legends olmos sotib olish qo'llanmasida</a> berilgan." },
+    { t: "h2", id: "qisqacha-qaysi-usul-ishlaydi", text: "Qisqacha: O'zbekiston uchun qaysi usul ishlaydi" },
+    { t: "p", text: "To'rtta yo'l bor va ular narxda emas, avvalo <strong>to'lov qadamida</strong> bir-biridan ajraladi. Shuning uchun taqqoslashni valyutadan va kartadan boshlash mantiqiy." },
+    { t: "facts", items: [{"k":"ID orqali mahalliy xizmat (GemPay)","v":"So'mda to'lanadi, Click, Payme, UzCard, HUMO va Paynet ishlaydi. Faqat User ID va Server ID kerak, buyurtma odatda bir necha daqiqada bajariladi."},{"k":"O'yin ichidagi do'kon","v":"Rasmiy yo'l, lekin do'kon hisobi va kartasi xalqaro to'lovga ochiq bo'lishi shart. UzCard va HUMO bu yerda ishlamaydi."},{"k":"Xorijiy topup saytlari","v":"Ishlaydi, agar sizda xalqaro to'lovga ochiq karta bo'lsa. UZS va mahalliy to'lov tizimlari odatda ro'yxatda yo'q, qo'llab-quvvatlash boshqa tilda."},{"k":"Telegram va e'lonlardagi shaxsiy sotuvchilar","v":"Narx past ko'rinadi, kafolat esa yo'q. Akkaunt, parol yoki SMS kod so'ralsa, bu savdo emas - bu boshqa narsa."}] },
+    { t: "p", text: "Birinchi ikkitasi qonuniy va bir-biriga raqib emas: biri so'mda, ikkinchisi xorijiy valyutada ishlaydi. Uchinchisi ko'p qadam talab qiladi. To'rtinchisi esa umuman boshqa toifada - u yerda pulingiz emas, akkauntingiz xavf ostida bo'ladi." },
+    { t: "p", text: "Yana bir narsani boshidan aytib qo'yish kerak: hech bir usul olmosni sehrli tarzda ikki barobar arzon qilmaydi. Farq odatda foizlarda o'lchanadi va uning kattaroq qismi komissiya bilan konvertatsiyadan chiqadi. Shuning uchun tanlovni tejaladigan summa emas, ko'proq qulaylik va xavfsizlik hal qiladi." },
+    { t: "h2", id: "tort-usul-taqqoslash-jadvali", text: "To'rt usul yonma-yon: taqqoslash jadvali" },
+    { t: "p", text: "Jadvalda hech qanday so'm raqami yo'q va bo'lishi ham mumkin emas - narx jonli kursga bog'liq. Taqqoslanayotgan narsa mexanika: nima bilan to'laysiz va evaziga nimani berishingiz so'raladi." },
+    { t: "table", caption: "To'rt usulning mexanikasi. Narx ustuni ataylab yo'q: joriy narx provayder tarifiga va kursga qarab kun davomida o'zgaradi.", head: ["Usul","So'mda to'lov","UzCard yoki HUMO","Akkaunt ma'lumoti so'raladi","Odatiy yetkazish","Asosiy risk"], rows: [["GemPay boti (ID orqali)","+","+","-","Odatda 1-2 daqiqada","ID yoki Server ID ni xato kiritish; nickname tasdiqlash shu xatoni to'xtatadi"],["O'yin ichidagi do'kon","-","-","-","Darhol","To'lov rad etilishi, konvertatsiya va bank komissiyasi"],["Xorijiy topup saytlari","-","-","-","Daqiqalardan bir necha soatgacha","Mos to'lov usuli topilmasligi, nizoda qo'llab-quvvatlash boshqa tilda"],["Telegram va e'londagi shaxsiy sotuvchi","+","+","+","Kelishuvga bog'liq","Oldindan to'lovdan keyin aloqa uzilishi, akkauntni yo'qotish"]] },
+    { t: "p", text: "E'tibor bering, shaxsiy sotuvchi ham so'mda va mahalliy karta bilan ishlaydi - farq to'lovda emas, kafolatda. Rasmiy xizmatda buyurtma tarixi, chek va murojaat qiladigan manzil qoladi, xususiy kelishuvda esa faqat yozishmalar qoladi." },
+    { t: "h2", id: "oyin-ichidan-tolash-nega-qiyin", text: "Nega o'yin ichidan to'lash O'zbekistonda qiyin" },
+    { t: "p", text: "O'yin ichidagi do'kon aslida to'g'ridan-to'g'ri yo'l: xarid akkauntingizga bevosita biriktiriladi va hech kimga ID berish shart emas. Muammo boshqa joyda - to'lov o'yin emas, do'kon hisobi orqali o'tadi. Ya'ni Google Play yoki App Store hisobingiz qaysi mamlakatga bog'langan bo'lsa, tranzaksiya ham shu qoidalar bo'yicha ketadi." },
+    { t: "p", text: "UzCard va HUMO milliy to'lov tizimlari bo'lgani uchun xorijiy do'kon ularni ko'rmaydi. Xalqaro to'lovga ochiq Visa yoki Mastercard kerak bo'ladi va u bankda alohida yoqiladi, ko'pincha valyuta hisobi bilan birga. Shu bosqichda ko'p foydalanuvchi to'xtaydi: karta bor, lekin xalqaro tranzaksiyaga ruxsat yo'q va to'lov rad etiladi." },
+    { t: "p", text: "Ikkinchi nuqta - qo'shimcha xarajat. Xorijiy valyutadagi to'lovda bank konvertatsiya kursi va o'z komissiyasini qo'shadi, ba'zi hollarda esa mamlakatga qarab soliq ham summaga kiradi. Natijada do'konda ko'rgan raqam va kartadan yechilgan raqam bir xil bo'lmaydi. Bu usul yomon degani emas - agar sizda ochiq xalqaro karta bo'lsa, u butunlay normal tanlov, shunchaki O'zbekistonda ko'pchilik uchun yopiq." },
+    { t: "p", text: "Yana bir jihat: do'kon hisobiga bog'langan mamlakat va o'ynayotgan regioningiz har doim bir xil bo'lavermaydi. Hisobni boshqa mamlakatga ko'chirish yoki region almashtirish uchun ilova sozlamalarini aylantirish esa foyda bermaydi - u ko'pincha to'lovni ham, ilgari qilingan xaridlarni ham chalkashtiradi. Ishlaydigan karta bo'lmasa, ID orqali to'ldirishga o'tish tinchroq yechim." },
+    { t: "h2", id: "xorijiy-topup-saytlari", text: "Xorijiy topup saytlari: valyuta va qo'llab-quvvatlash muammosi" },
+    { t: "p", text: "Codashop, Smile.one va shunga o'xshash global platformalar ham ID orqali ishlaydi, ya'ni mexanikasi mahalliy xizmatga o'xshash. Farq ro'yxatdagi to'lov usullarida: O'zbekiston foydalanuvchisiga ko'rsatiladigan variantlar odatda xalqaro kartalar, xorijiy elektron hamyonlar yoki kripto bo'ladi. UZS'da to'lash va Click, Payme, Paynet orqali o'tish imkoni ko'p hollarda umuman ro'yxatda ko'rinmaydi." },
+    { t: "p", text: "Ikkinchi jiddiy nuqta - region. Mobile Legends'ning global va MDH klientlari alohida akkaunt bazasida ishlaydi, ID'lar bir-biriga to'g'ri kelmaydi. Xorijiy saytda noto'g'ri region tanlansa, ID topilmadi degan xato chiqadi yoki olmos boshqa akkauntga tushib qolishi mumkin. ID va Server ID ni qayerdan olishni <a href=\"/blog/mobile-legends-user-id-server-id-qayerda\">User ID va Server ID qayerda turadi maqolasida</a> bosqichma-bosqich ko'rsatganmiz." },
+    { t: "p", text: "Uchinchisi - nizo chiqqan payt. Global platformada qo'llab-quvvatlash boshqa til va boshqa vaqt mintaqasida ishlaydi, murojaat ko'pincha veb-forma orqali ketadi va javob bir necha kunga cho'zilishi mumkin. Bu saytlar yomon degani emas, ular ko'p mamlakatda normal ishlaydi. Shunchaki O'zbekistondagi o'yinchi uchun qadam soni ko'payadi: karta ochish, valyuta, region, keyin esa boshqa tilda yozishma." },
+    { t: "h2", id: "juda-arzon-olmos-belgilari", text: "Telegram va e'lonlardagi juda arzon olmos" },
+    { t: "p", text: "Bozor narxidan sezilarli past taklif odatda ikki narsadan biri bo'ladi: yo pul manbai muammoli, yo sizdan pulingizdan qimmatroq narsa so'raladi. Bu yerda hech kimni ayblash kerak emas - belgilarni bilish yetarli." },
+    { t: "note", text: "Sizdan akkaunt logini, paroli, bog'langan pochta yoki SMS kod so'ralsa, savdoni o'sha yerda to'xtating. Olmos to'ldirish uchun bu ma'lumotlarning hech biri kerak emas - ochiq User ID va Server ID yetarli.", title: "Qachon to'xtash kerak", tone: "warn" },
+    { t: "list", ordered: false, items: ["Narx boshqa hamma joydan keskin past va sababi tushuntirilmaydi.","To'lov faqat shaxsiy karta raqamiga o'tkazma sifatida, oldindan va to'liq so'raladi.","Akkauntga kirish, parol yoki bog'langan pochta talab qilinadi.","Buyurtma raqami, chek yoki hech bo'lmasa yozma tasdiq berilmaydi.","Kanalda faqat maqtov sharhlari bor, ular bir kunda joylangan va tarixi yo'q.","Bepul olmos generatori, promo kod bazasi yoki hack havolasi taklif qilinadi."] },
+    { t: "p", text: "Akkauntni birovga topshirish - shu ro'yxatdagi qimmatga tushadigan xato. Bir marta kirilgan akkauntdan bog'langan pochtani almashtirish, skinlarni boshqa profilga o'tkazish yoki hisobni sotib yuborish mumkin, keyin uni qaytarish uzoq va ko'pincha natijasiz kechadi. Bepul olmos beradigan generatorlar esa umuman ishlamaydi: ular yo reklama aylantiradi, yo login sahifasini taqlid qilib parolingizni oladi. Agar to'lov o'tib, olmos kelmagan bo'lsa, <a href=\"/blog/mobile-legends-olmos-kelmadi-nima-qilish\">olmos kelmadi holatidagi tekshiruv ketma-ketligi</a> aynan shu vaziyat uchun yozilgan." },
+    { t: "h2", id: "narx-nega-har-kuni-bir-xil-emas", text: "Narx nega har kuni bir xil emas" },
+    { t: "p", text: "Olmos narxi bitta raqam emas, bir nechta qatlamning yig'indisi. Shuning uchun bir xizmatda kecha va bugun ko'rgan summangiz farq qilishi mumkin, ikki xizmatni solishtirganda esa raqamlar butunlay boshqacha tuyuladi." },
+    { t: "list", ordered: false, items: ["Provayder tarifi - to'ldirish USDT'da hisoblanadigan ulgurji tarifga bog'lanadi, kurs o'zgarsa so'mdagi summa ham siljiydi.","To'lov tizimi komissiyasi - Click, Payme, Paynet va bank kartasi bir xil ushlab qolmaydi.","Paket hajmi - katta paketda bitta olmosning tannarxi odatda pasayadi.","Bir martalik bonuslar - ba'zi paketlarda birinchi xarid uchun qo'shimcha beriladi, u faqat bir marta ishlaydi va shartlarini nashriyot o'zgartirib turadi."] },
+    { t: "p", text: "Shu sababli taqqoslashning to'g'ri usuli bitta: paket summasini emas, <strong>bir olmosga to'g'ri keladigan narxni</strong> solishtiring. Summani paketdagi olmos soniga bo'lish yetarli, bonus olmoslarni ham hisobga qo'shing. Paket pog'onalari odatda 86, 172, 257, 344 va 706 olmos atrofida bo'ladi, lekin Moonton ro'yxatni vaqti-vaqti bilan o'zgartiradi - paketlar tarkibi va Starlight bilan Weekly Diamond Pass farqi <a href=\"/blog/mobile-legends-olmos-nima-va-paketlar\">olmos nima va paketlar maqolasida</a> batafsil ochilgan." },
+    { t: "p", text: "GemPay'da joriy narx paket tanlash paytida ko'rsatiladi va u o'sha daqiqadagi kursga qarab hisoblanadi. Xuddi shu mantiq boshqa o'yinlarda ham ishlaydi - umumiy tushuntirish <a href=\"/blog/oyin-valyutasi-qayerdan-arzon\">o'yin valyutasini qayerdan arzon olish</a> materialida bor." },
+    { t: "h2", id: "kimga-qaysi-usul-mos", text: "Kimga qaysi usul mos" },
+    { t: "p", text: "Agar so'mda to'lamoqchi bo'lsangiz va kartangiz UzCard yoki HUMO bo'lsa, ID orqali ishlaydigan mahalliy xizmat kam qadam talab qiladi: ID kiritasiz, nickname'ni tasdiqlaysiz, to'laysiz. Bu yerda VPN ham, xorijiy karta ham kerak emas." },
+    { t: "p", text: "Agar sizda xalqaro to'lovga ochiq Visa yoki Mastercard bor va rasmiy do'konni afzal ko'rsangiz, o'yin ichidan to'lash bemalol mantiqiy tanlov. Faqat konvertatsiya va komissiyani hisobga oling - do'kondagi raqam kartadan yechiladigan raqamga teng bo'lmaydi. Xorijiy topup saytlari ham shu toifada: karta muammosi hal bo'lsa ishlaydi, lekin nizo chiqsa javob kutish uzoqroq." },
+    { t: "p", text: "Akkauntni topshirishni so'raydigan har qanday variantdan esa qat'iy voz keching, narx qanchalik jozibali bo'lmasin. Bitta oddiy mezon yordam beradi: agar xizmat ishlashi uchun sizning parolingiz kerak bo'lsa, u sizga olmos sotayotgani yo'q." },
+    { t: "p", text: "Do'stingizga olmos olib bermoqchi bo'lsangiz ham mantiq o'zgarmaydi. Undan akkauntini emas, ochiq User ID va Server ID sini so'rang, keyin nickname ekranda chiqqanda tekshiring - to'g'ri odamga tushayotganini shu joyda ko'rasiz. Akkauntni almashish esa na sizga, na unga kerak." },
+    { t: "note", text: "ID va Server ID raqamlari mos, ekrandagi nickname sizniki, paket va uning ichidagi bonus tushunarli, to'lov usuli tanlangan. Shu to'rttasi joyida bo'lsa, xarid odatda muammosiz o'tadi.", title: "To'lovdan oldin oxirgi tekshiruv", tone: "good" },
+    { t: "h2", id: "gempay-botida-narxni-koring", text: "GemPay botida narxni o'zingiz ko'ring" },
+    { t: "p", text: "Narxni taxmin qilib o'tirmasdan tekshirish oson: <a href=\"https://t.me/Gempayuz_bot\">@Gempayuz_bot</a> ni oching, Mobile Legends'ni tanlang va User ID bilan Server ID ni kiriting. Bot o'yin serveridan nickname'ni tortib olib ko'rsatadi, joriy narx esa paket tanlash oynasida turadi. Tasdiqlamaguningizcha hech narsa yechilmaydi va nickname tekshiruvi bepul. O'yin sahifasi <a href=\"/oyinlar/mobile-legends\">Mobile Legends to'ldirish bo'limida</a>, qolgan o'yinlar esa <a href=\"/oyinlar\">o'yinlar katalogida</a> turadi." },
+    { t: "note", text: "GemPay parol, SMS kod yoki akkauntga kirish so'ramaydi - faqat ochiq ID yetarli. Savol tug'ilsa, qo'llab-quvvatlash: @StarsPaymeeSupport. GemPay hech bir o'yin nashriyotining rasmiy hamkori emas.", title: "Nimalar hech qachon so'ralmaydi", tone: "info" },
+    { t: "cta", text: "Nickname'ni bepul tekshirib, joriy narxni botda ko'ring: @Gempayuz_bot." },
+    { t: "links", title: "Mobile Legends bo'yicha qolgan materiallar", items: [{"label":"Mobile Legends olmos sotib olish: to'liq qo'llanma","href":"/blog/mobile-legends-olmos-sotib-olish"},{"label":"Olmos nima va unga nima sotib olinadi","href":"/blog/mobile-legends-olmos-nima-va-paketlar"},{"label":"User ID va Server ID qayerda turadi","href":"/blog/mobile-legends-user-id-server-id-qayerda"},{"label":"Olmos kelmadi: sabablari va yechimi","href":"/blog/mobile-legends-olmos-kelmadi-nima-qilish"},{"label":"O'yin valyutasini qayerdan arzon olish","href":"/blog/oyin-valyutasi-qayerdan-arzon"}] }
+      ],
+      faq: [
+              {
+                      "q": "O'zbekistonda Mobile Legends olmosini qayerdan olish qulay?",
+                      "a": "So'mda to'lanadigan va faqat ID orqali ishlaydigan xizmat kam qadam talab qiladi. GemPay Telegram boti Click, Payme, UzCard, HUMO va Paynet ni qabul qiladi, VPN yoki xorijiy karta so'ramaydi. Buyurtma odatda bir necha daqiqada bajariladi, joriy narx esa paket tanlashda ko'rinadi."
+              },
+              {
+                      "q": "O'yin ichidan to'g'ridan-to'g'ri to'lasam bo'lmaydimi?",
+                      "a": "Bo'ladi, lekin to'lov Google Play yoki App Store hisobi orqali o'tadi va xalqaro to'lovga ochiq karta talab qilinadi. UzCard va HUMO milliy tizimlar bo'lgani uchun u yerda ishlamaydi, konvertatsiya bilan bank komissiyasi ham qo'shiladi. Shuning uchun ko'pchilik ID orqali to'ldirishga o'tadi."
+              },
+              {
+                      "q": "Xorijiy saytlar orqali olsam bo'ladimi?",
+                      "a": "Bo'ladi, agar sizda xalqaro to'lovga ochiq karta bo'lsa. Lekin bunday platformalar odatda UZS'ni va mahalliy to'lov tizimlarini ro'yxatda ko'rsatmaydi, region tanlashda esa xato qilish oson. Nizo chiqsa, qo'llab-quvvatlash boshqa tilda va boshqa vaqt mintaqasida javob beradi."
+              },
+              {
+                      "q": "Telegramdagi arzon olmos e'lonlariga ishonsa bo'ladimi?",
+                      "a": "Ehtiyot bo'lgan ma'qul. Bozor narxidan keskin past taklif odatda oldindan to'lov, akkaunt so'rash yoki shubhali to'lov manbai bilan bog'liq bo'ladi. Parol, bog'langan pochta yoki SMS kod so'ragan har qanday taklifni darhol rad eting - haqiqiy to'ldirish uchun ular kerak emas."
+              },
+              {
+                      "q": "Nega turli xizmatlarda narx har xil?",
+                      "a": "Narx provayder tarifiga, USDT kursiga, to'lov tizimi komissiyasiga va paket hajmiga bog'liq. Katta paketlarda bir olmosning tannarxi odatda pasayadi, bir martalik bonuslar esa taqqoslashni chalkashtiradi. Solishtirganda paket summasini emas, bir olmosga to'g'ri keladigan narxni hisoblang."
+              },
+              {
+                      "q": "Akkauntni berib to'ldirtirish xavfsizmi?",
+                      "a": "Yo'q. Akkauntni birovga topshirish skinlar, do'stlar ro'yxati va bog'langan pochtani yo'qotishning keng tarqalgan sababi. ID orqali to'ldirishda akkauntga kirish umuman kerak emas - ochiq User ID va Server ID yetarli."
+              }
+      ],
+    },
+  },
+};
+
+export default article;

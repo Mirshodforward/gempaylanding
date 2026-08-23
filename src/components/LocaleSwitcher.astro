@@ -13,9 +13,25 @@ interface Props {
   locale: Locale;
   /** Joriy sahifaning tilsiz yo'li — almashgandan keyin shu sahifada qolamiz */
   path: string;
+  /**
+   * Sahifa QAYSI tillarda mavjud.
+   *
+   * Blog maqolasi hamma tilda bo'lmasligi mumkin. Berilmasa — hammasida bor
+   * deb hisoblanadi (landing sahifalari shunday).
+   */
+  available?: readonly Locale[];
+  /**
+   * Tarjimasi yo'q tilda qayerga olib borish kerak.
+   *
+   * NEGA KERAK: ilgari almashtirgich har doim joriy yo'lni ishlatardi va
+   * tarjimasiz maqolada «Русский» tugmasi 404 ga olib borardi. Endi bunday
+   * holatda o'quvchi o'sha tildagi eng yaqin mazmunli sahifaga tushadi —
+   * maqola uchun bu blog ro'yxati.
+   */
+  fallbackPath?: string;
 }
 
-const { locale, path } = Astro.props;
+const { locale, path, available = LOCALES, fallbackPath = "" } = Astro.props;
 ---
 
 <details class="lang">
@@ -25,20 +41,23 @@ const { locale, path } = Astro.props;
   </summary>
   <ul class="lang__list">
     {
-      LOCALES.map((l) => (
-        <li>
-          <a
-            class:list={["lang__item", l === locale && "is-active"]}
-            href={localePath(l, path)}
-            hreflang={l}
-            lang={l}
-            aria-current={l === locale ? "true" : undefined}
-          >
-            {LOCALE_LABEL[l]}
-            {l === locale && <Icon name="check" size={15} />}
-          </a>
-        </li>
-      ))
+      LOCALES.map((l) => {
+        const has = available.includes(l);
+        return (
+          <li>
+            <a
+              class:list={["lang__item", l === locale && "is-active", !has && "is-missing"]}
+              href={localePath(l, has ? path : fallbackPath)}
+              hreflang={l}
+              lang={l}
+              aria-current={l === locale ? "true" : undefined}
+            >
+              {LOCALE_LABEL[l]}
+              {l === locale && <Icon name="check" size={15} />}
+            </a>
+          </li>
+        );
+      })
     }
   </ul>
 </details>
@@ -107,5 +126,10 @@ const { locale, path } = Astro.props;
 
   .lang__item.is-active {
     color: var(--accent);
+  }
+
+  /* Bu tilda sahifaning o'zi yo'q — havola blog ro'yxatiga olib boradi */
+  .lang__item.is-missing {
+    opacity: 0.55;
   }
 </style>

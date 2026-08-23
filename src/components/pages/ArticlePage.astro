@@ -118,7 +118,9 @@ const fmtDate = (iso: string) =>
   </Fragment>
 
   <Aurora />
-  <Header locale={locale} path={path} />
+  {/* Tarjimasi yo'q tilda almashtirgich blog ro'yxatiga olib boradi —
+      aks holda u mavjud bo'lmagan sahifaga, ya'ni 404 ga yuborardi. */}
+  <Header locale={locale} path={path} available={localesOf(article)} fallbackPath="blog" />
 
   <main id="main">
     <div class="wrap">
@@ -139,22 +141,28 @@ const fmtDate = (iso: string) =>
 
         <AnswerBox title={c.blog.answerTitle} text={content.answer} />
 
-        {
-          items.length > 2 && (
-            <nav class="toc" aria-labelledby="toc-t">
-              <p class="toc__t" id="toc-t">{c.blog.tocTitle}</p>
-              <ol class="toc__l">
-                {items.map((i) => (
-                  <li>
-                    <a href={`#${i.id}`}>{i.text}</a>
-                  </li>
-                ))}
-              </ol>
-            </nav>
-          )
-        }
+        {/* Keng ekranda mundarija YON USTUNGA chiqadi va skrollda yopishib
+            qoladi: 1400 so'zlik maqolada o'quvchi doim qayerdaligini ko'radi
+            va bo'limlar orasida sakray oladi. Tor ekranda esa u matn ustida,
+            oddiy ro'yxat bo'lib qoladi — yon ustun uchun joy yo'q. */}
+        <div class="art__grid">
+          {
+            items.length > 2 && (
+              <nav class="toc" aria-labelledby="toc-t">
+                <p class="toc__t" id="toc-t">{c.blog.tocTitle}</p>
+                <ol class="toc__l">
+                  {items.map((i) => (
+                    <li>
+                      <a href={`#${i.id}`} data-toc={i.id}>{i.text}</a>
+                    </li>
+                  ))}
+                </ol>
+              </nav>
+            )
+          }
 
-        <ArticleBody blocks={content.body} locale={locale} />
+          <ArticleBody blocks={content.body} locale={locale} />
+        </div>
       </article>
     </div>
 
@@ -224,6 +232,35 @@ const fmtDate = (iso: string) =>
     text-wrap: balance;
   }
 
+  /* ------------------------------------------------------------- tartib -- */
+
+  .art__grid {
+    display: grid;
+    gap: var(--sp-5);
+  }
+
+  @media (min-width: 1080px) {
+    .art__grid {
+      /* Matn ustuni oldin, mundarija o'ngda — lekin HTML tartibida
+         mundarija oldin turadi, chunki klaviatura va skrinrider uchun u
+         matndan oldin kelishi mantiqiy. `order` faqat vizual joylashuv. */
+      grid-template-columns: minmax(0, 1fr) 250px;
+      gap: clamp(32px, 5vw, 72px);
+      align-items: start;
+    }
+    .art__grid > :global(.body) {
+      order: 1;
+    }
+    .toc {
+      order: 2;
+      position: sticky;
+      top: 88px;
+      margin-top: 0;
+      max-height: calc(100dvh - 120px);
+      overflow-y: auto;
+    }
+  }
+
   /* --------------------------------------------------------- mundarija -- */
 
   .toc {
@@ -267,6 +304,12 @@ const fmtDate = (iso: string) =>
     color: var(--accent);
   }
 
+  /* Skrollda joriy bo'lim ajratiladi (JS pastda) */
+  .toc__l a[aria-current="true"] {
+    color: var(--accent);
+    font-weight: 700;
+  }
+
   /* ---------------------------------------------------------- o'xshash -- */
 
   .rel__h {
@@ -280,3 +323,40 @@ const fmtDate = (iso: string) =>
     gap: var(--sp-3);
   }
 </style>
+
+<script>
+  /**
+   * Mundarijada joriy bo'limni belgilaydi.
+   *
+   * `IntersectionObserver` skroll hodisasidan afzal: u faqat sarlavha
+   * ekranga kirib-chiqqanda uyg'onadi, skroll tinglovchisi esa har kadrda
+   * ishlab, mobilda sezilarli jank beradi.
+   *
+   * Sarlavha ekranning yuqori uchdan birida bo'lganda «joriy» hisoblanadi
+   * (`rootMargin`) — shunda o'quvchi o'qiyotgan bo'lim belgilanadi, hali
+   * pastda turgani emas.
+   */
+  const links = document.querySelectorAll<HTMLAnchorElement>(".toc__l a[data-toc]");
+  if (links.length) {
+    const byId = new Map([...links].map((a) => [a.dataset.toc!, a]));
+    const heads = [...byId.keys()]
+      .map((id) => document.getElementById(id))
+      .filter((el): el is HTMLElement => Boolean(el));
+
+    let current: HTMLAnchorElement | null = null;
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const e of entries) {
+          if (!e.isIntersecting) continue;
+          const next = byId.get(e.target.id);
+          if (!next || next === current) continue;
+          current?.removeAttribute("aria-current");
+          next.setAttribute("aria-current", "true");
+          current = next;
+        }
+      },
+      { rootMargin: "-88px 0px -66% 0px", threshold: 0 },
+    );
+    heads.forEach((h) => io.observe(h));
+  }
+</script>

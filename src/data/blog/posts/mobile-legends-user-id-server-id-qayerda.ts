@@ -1,0 +1,88 @@
+// AVTOMATIK KIRITILGAN — `npm run ingest`.
+// Manba reja: .plan/articles/mobile-legends-user-id-server-id-qayerda.json
+// Qo'lda tahrirlash mumkin; keyingi ingest faqat yangi fayllarni qo'shadi.
+
+import type { Article } from "../types";
+
+const article: Article = {
+  slug: "mobile-legends-user-id-server-id-qayerda",
+  game: "mobile-legends",
+  type: "trust",
+  datePublished: "2026-08-23",
+  dateModified: "2026-08-23",
+  pillar: true,
+  keywords: ["mobile legends server id qayerda","mobile legends user id qayerda","mobile legends id qanday bilish","mobile legends zone id nima","user id va server id farqi","как узнать server id mobile legends","mobile legends id tekshirish"],
+  locales: {
+    uz: {
+      title: "Mobile Legends User ID va Server ID qayerda turadi",
+      metaTitle: "Mobile Legends User ID va Server ID qayerda",
+      metaDescription: "Mobile Legends User ID va Server ID qayerda turadi: profil orqali topish, Zone ID farqi va qaysi ma'lumotni hech kimga bermaslik kerakligi haqida.",
+      excerpt: "Profil oynasidagi 123456789 (1234) formatini ochib beramiz: qaysi raqam User ID, qaysisi Server ID va qaysi ma'lumotni hech kimga bermaslik kerak.",
+      answer: "Mobile Legends'da lobbi ekranidagi avatarni bosing — ochilgan profil oynasida ID 123456789 (1234) ko'rinishida turadi. Qavsdan oldingi uzun raqam — User ID, qavs ichidagi qisqa raqam — Server ID; rus tilidagi xizmatlar uni Zone ID deb yozadi. Olmos to'ldirish uchun ikkalasi ham kerak. Bu raqamlar ochiq, ammo parolni hech kimga bermang.",
+      body: [
+    { t: "p", text: "Olmos to'ldirmoqchi bo'lgan odam ko'pincha birinchi qadamdayoq to'xtaydi: xizmat User ID bilan Server ID ni so'raydi, o'yinchi esa profilda faqat bitta uzun raqamni ko'rib, qavs ichidagi kichik raqamni sezmay o'tib ketadi. Natijada tizim akkauntni topa olmaydi yoki olmos butunlay boshqa odamga tushadi. Quyida ikkala raqam qayerda turishi, Zone ID nega boshqa nom bilan yozilishi va qaysi ma'lumotni hech qachon bermaslik kerakligi ko'rib chiqiladi. To'ldirishning qolgan bosqichlari <a href=\"/oyinlar/mobile-legends\">Mobile Legends olmos to'ldirish sahifasida</a> jamlangan." },
+    { t: "h2", id: "qisqa-javob-qavs-ichidagi-raqam", text: "Qisqa javob: qavs ichidagi raqam — Server ID" },
+    { t: "p", text: "Profil oynasida ID quyidagi ko'rinishda yoziladi: <strong>123456789 (1234)</strong>. Qavsdan oldingi uzun raqam — User ID, ya'ni akkauntning shaxsiy raqami. Qavs ichidagi qisqa raqam — Server ID, u akkaunt qaysi serverda ochilganini bildiradi. To'ldirish formasida ikkala maydon ham to'ldiriladi, chunki bir xil User ID turli serverlarda uchrashi mumkin va tizim server raqamisiz qaysi akkauntni nazarda tutayotganingizni ajrata olmaydi." },
+    { t: "facts", items: [{"k":"Format","v":"123456789 (1234)"},{"k":"User ID","v":"qavsdan oldingi uzun raqam"},{"k":"Server ID","v":"qavs ichidagi qisqa raqam"},{"k":"Boshqa nomi","v":"Zone ID, server raqami"},{"k":"To'ldirish uchun","v":"ikkalasi ham majburiy"},{"k":"O'zgaradimi","v":"yo'q, akkaunt bilan qoladi"}] },
+    { t: "note", text: "Server ID ni tushirib qoldirish yoki uni User ID ning davomi deb o'ylab, ikkalasini bitta maydonga yopishtirib yozish. 123456789 va 1234 — bu ikki alohida raqam, ular birlashtirilmaydi.", title: "Eng ko'p uchraydigan xato", tone: "info" },
+    { t: "h2", id: "id-ni-topish-qadam-baqadam", text: "ID ni topish: qadam-baqadam" },
+    { t: "p", text: "ID jang ichida emas, akkaunt profilida saqlanadi. Ikki yo'l bor: profil oynasi va o'yin ichidagi to'ldirish bo'limi. Ikkalasi ham bir xil raqamni ko'rsatadi, shuning uchun bittasi qulay bo'lsa, ikkinchisini ochish shart emas." },
+    { t: "steps", items: [{"title":"Lobbiga chiqing","text":"O'yinni oching va asosiy ekranda turing. Jang yoki yuklanish ekranida ID ko'rinmaydi."},{"title":"Avatarni bosing","text":"Ekranning yuqori chap burchagidagi profil rasmini bosing. Odatda uning yonida nickname va daraja turadi."},{"title":"Profil oynasidagi ID qatorini toping","text":"Ochilgan oynada nickname ostida ID: 123456789 (1234) ko'rinishidagi qator bo'ladi. Ba'zi versiyalarda u oynaning pastki qismiga tushadi, lekin format o'sha-o'sha qoladi."},{"title":"Raqamni nusxa oling","text":"Ko'p versiyalarda ID qatorini bosib turib nusxa olish tugmasi chiqadi. Chiqmasa, raqamni qo'lda yozib oling va uzun raqam bilan qavs ichidagi raqamni alohida saqlang."},{"title":"Ikkinchi yo'l: o'yin ichidagi to'ldirish oynasi","text":"Bosh ekrandagi olmos yoki do'kon belgisini bosib to'ldirish bo'limiga kiring. U yerda joriy akkauntning ID si va server raqami ham ko'rsatiladi — profil oynasini topa olmasangiz, shu yo'l ishlaydi."},{"title":"Qavs va bo'sh joyni olib tashlang","text":"Botga kiritishda faqat raqamlar qoladi: User ID maydoniga 123456789, Server ID maydoniga 1234. Qavs, probel yoki nusxa olishda qo'shilib ketgan qo'shimcha belgilar akkauntning topilmasligiga olib keladi."}] },
+    { t: "p", text: "Android va iOS'da ID bir xil joyda turadi, chunki bu akkaunt ma'lumoti, qurilma sozlamasi emas. Interfeys yangilanishlarda biroz siljishi mumkin, ammo ID doim ikki joyda qoladi: profil oynasi va o'yin ichidagi to'ldirish bo'limi." },
+    { t: "h2", id: "zone-id-server-id-region", text: "Zone ID, Server ID, Region — farqi bormi" },
+    { t: "p", text: "Zone ID bilan Server ID — bitta raqam, faqat nomi boshqacha. Rus tilidagi to'ldirish xizmatlari va xalqaro saytlar ko'pincha \"Zone ID\" deb yozadi, ba'zilari esa oddiy qilib \"server raqami\" deydi. Agar formada User ID va Zone ID so'ralayotgan bo'lsa, qavs ichidagi o'sha 4 xonali raqamni kiriting — boshqa joydan raqam qidirish shart emas." },
+    { t: "p", text: "Region esa butunlay boshqa tushuncha. U akkaunt qaysi mintaqaviy klientda ochilganini bildiradi: global versiya va MDH uchun tarqatiladigan versiya alohida bazalarda ishlaydi, ID'lar bir-biriga mos kelmaydi. Region ID formatini o'zgartirmaydi — u baribir 123456789 (1234) ko'rinishida bo'ladi — lekin to'ldirish qaysi bazada qidirilishini belgilaydi." },
+    { t: "p", text: "Aynan shu narsa \"ID topilmadi\" xatosining eng ko'p uchraydigan sababi: raqam to'g'ri, ammo akkaunt boshqa mintaqaviy klientda. Bunday holatda raqamni qayta-qayta kiritishning foydasi yo'q, qo'llab-quvvatlashga yozib, qaysi versiyada o'ynayotganingizni aytgan ma'qul. Moonton'ning boshqa o'yini bo'lmish Magic Chess: Go Go ham alohida ilova va to'ldirishda o'zining ID sini so'raydi — uni qanday topish <a href=\"/blog/magic-chess-go-go-user-id-server-id-qayerda\">Magic Chess: Go Go ID va server raqami</a> maqolasida alohida yozilgan, MLBB ID si u yerga to'g'ri kelmaydi." },
+    { t: "h2", id: "nickname-orqali-id-topib-boladimi", text: "Nickname orqali ID topib bo'ladimi" },
+    { t: "p", text: "Yo'q, bu yo'nalish faqat bir tomonga ishlaydi. ID bo'yicha nickname aniqlanadi, nickname bo'yicha ID emas. Sababi oddiy: bir xil nickname o'nlab o'yinchida bo'lishi mumkin va o'yinda nick bo'yicha ochiq qidiruv bazasi yo'q. Shuning uchun \"nickimni aytaman, o'zingiz topib to'ldiring\" degan iltimos hech qaysi xizmatda bajarilmaydi." },
+    { t: "p", text: "Teskari tekshiruv esa aynan shu sababli foydali. GemPay botida ID va server raqamini kiritganingizdan keyin tizim o'yin serveridan nickname'ni so'raydi va uni ekranda ko'rsatadi. Bu tekshiruv <strong>bepul</strong> va to'lovdan oldin bo'ladi — siz nickname'ni ko'rmaguningizcha hech narsa yechilmaydi. Nickname sizniki (yoki sovg'a qilayotgan do'stingizniki) bo'lsa, tasdiqlab davom etasiz; boshqa nick chiqsa, to'xtash va raqamlarni qaytadan tekshirish kerak. To'ldirishning to'liq ketma-ketligi <a href=\"/blog/mobile-legends-olmos-sotib-olish\">Mobile Legends olmos sotib olish qo'llanmasida</a> yozilgan." },
+    { t: "h2", id: "qaysi-malumot-ochiq", text: "Qaysi ma'lumot ochiq, qaysisini hech qachon bermaslik kerak" },
+    { t: "p", text: "User ID, Server ID, nickname va avatar — ochiq ma'lumot. Ular do'stlar ro'yxatida, klan ro'yxatida va jang natijalarida ham ko'rinadi. Bu raqamlar bilan akkauntga kirib bo'lmaydi: ular manzil vazifasini bajaradi, kalit emas. Kalit esa butunlay boshqa narsalar." },
+    { t: "table", caption: "Yuqoridagi uch qator ochiq ma'lumot, quyidagilari esa akkauntni to'liq qo'ldan chiqaradi.", head: ["Ma'lumot","O'yinda boshqalarga ko'rinadi","To'ldirish uchun berish mumkin"], rows: [["User ID","+","+"],["Server ID (Zone ID)","+","+"],["Nickname va avatar","+","+"],["Akkaunt paroli","-","-"],["Bog'langan pochta va uning paroli","-","-"],["Moonton, Google yoki Facebook kirish kodi","-","-"],["SMS yoki Telegram tasdiqlash kodi","-","-"],["Ekran ulashish (AnyDesk va shunga o'xshash)","-","-"]] },
+    { t: "note", text: "Halol to'ldirish uchun ID va server raqamidan boshqa hech narsa kerak emas. Kimdir \"men kirib to'ldirib beraman\" deb parol, pochta yoki SMS kodini so'rasa, yoxud ekran ulashishni talab qilsa — bu akkauntni o'g'irlash. \"Bepul olmos generatori\" va \"ID ni yozing, olmos beramiz\" turidagi takliflar ham shu qatorga kiradi. GemPay hech qachon parol, SMS kod yoki akkauntga kirishni so'ramaydi.", title: "Akkaunt so'ragan xizmat firibgar", tone: "warn" },
+    { t: "p", text: "Himoyani kuchaytirish uchun akkauntni pochta yoki ijtimoiy tarmoq hisobiga bog'lab qo'ying va o'sha pochtaning parolini boshqa joyda ishlatmang. Ilova sozlamalarida qo'shimcha tasdiqlash imkoniyati bo'lsa, uni yoqib qo'ying. Profil skrinshotini yuborish xavfsiz — unda faqat ochiq ma'lumot bor; xavfli bo'lgani tasdiqlash kodi yoki kirish oynasi tushib qolgan skrinshotlar." },
+    { t: "h2", id: "tolovdan-oldin-tekshiruv", text: "To'lovdan oldin oxirgi tekshiruv ro'yxati" },
+    { t: "p", text: "To'lovni tasdiqlashdan oldin besh nuqtani ko'zdan kechiring. Bu bir daqiqada bajariladi va olmosning noto'g'ri akkauntga ketish ehtimolini deyarli nolga tushiradi." },
+    { t: "list", ordered: false, items: ["User ID to'liq ko'chirilganmi — oxirgi raqam tushib qolmaganmi.","Server ID qavssiz, alohida maydonga kiritilganmi.","Ekranda chiqqan nickname sizniki yoki sovg'a qilayotgan odamniki mi.","Paket to'g'ri tanlanganmi — olmos paketlari odatda 86, 172, 257, 344, 706 kabi qadamlarda beriladi, lekin ro'yxat nashriyot tomonidan o'zgartirilib turadi, joriy variantlar botda ko'rinadi.","To'lov usuli tayyormi — UzCard, HUMO, Click, Payme yoki Paynet, kartada mablag' yetarlimi."] },
+    { t: "p", text: "Agar to'lov o'tib, olmos bir necha daqiqada ko'rinmasa, vahima qilmang: ko'pincha bu o'yin serveridagi kechikish yoki chek nomerini yubormaslikdan bo'ladi. Nima qilish kerakligi <a href=\"/blog/mobile-legends-olmos-kelmadi-nima-qilish\">olmos kelmagan holat bo'yicha qo'llanmada</a> bosqichma-bosqich yozilgan." },
+    { t: "h2", id: "botda-tekshirib-korish", text: "ID tayyor — botda tekshirib ko'ring" },
+    { t: "p", text: "Raqamlar qo'lingizda bo'lsa, tekshirish uchun to'lash shart emas. <a href=\"https://t.me/Gempayuz_bot\">@Gempayuz_bot</a> ni oching, Mobile Legends'ni tanlang, User ID va Server ID ni kiriting — nickname ekranda chiqadi. Shundan keyingina paketni tanlaysiz va so'mda UzCard, HUMO, Click, Payme yoki Paynet orqali to'laysiz, olmos avtomatik tushadi. Joriy narxlar botning o'zida ko'rsatiladi, chunki ular kurs bilan birga o'zgaradi. O'yin bo'yicha umumiy ma'lumot <a href=\"/oyinlar/mobile-legends\">Mobile Legends sahifasida</a>, qolgan o'yinlar esa <a href=\"/oyinlar\">o'yinlar katalogida</a>." },
+    { t: "p", text: "Nickname noto'g'ri chiqsa yoki akkaunt umuman topilmasa, to'lamang: raqamlarni profil oynasidan qaytadan ko'chiring, keyin qayta urinib ko'ring. Baribir bo'lmasa, ID va server raqamini <a href=\"https://t.me/StarsPaymeeSupport\">@StarsPaymeeSupport</a> ga yozib yuboring — qaysi bazada qidirish kerakligini aniqlashtirib beramiz. GemPay hech bir o'yin nashriyotining rasmiy hamkori emas, xizmat mustaqil to'ldirish sifatida ishlaydi." },
+    { t: "cta", text: "ID ni tekshirib ko'ring: @Gempayuz_bot da nickname to'lovdan oldin va bepul ko'rsatiladi." },
+    { t: "links", title: "Shu mavzudagi boshqa maqolalar", items: [{"label":"Mobile Legends olmos to'ldirish sahifasi","href":"/oyinlar/mobile-legends"},{"label":"Mobile Legends olmos sotib olish: to'liq qo'llanma","href":"/blog/mobile-legends-olmos-sotib-olish"},{"label":"Olmos kelmadi: sabablari va yechimi","href":"/blog/mobile-legends-olmos-kelmadi-nima-qilish"},{"label":"Magic Chess: Go Go ID va server raqami","href":"/blog/magic-chess-go-go-user-id-server-id-qayerda"},{"label":"Barcha o'yinlar katalogi","href":"/oyinlar"}] }
+      ],
+      faq: [
+              {
+                      "q": "Server ID qayerda turadi?",
+                      "a": "O'yin lobbisida yuqori chapdagi avatarni bosing — ochilgan profil oynasida ID ko'rinadi. U 123456789 (1234) ko'rinishida yoziladi: qavsdan oldingi raqam User ID, qavs ichidagi raqam Server ID. To'ldirish uchun ikkalasini ham kiritish shart."
+              },
+              {
+                      "q": "Zone ID bilan Server ID bir xilmi?",
+                      "a": "Ha, bu bitta raqam. Ba'zi xizmatlar uni Zone ID, ba'zilari Server ID yoki oddiy qilib server raqami deb yozadi. Region esa boshqa narsa — u akkaunt qaysi mintaqaviy versiyada ochilganini bildiradi va ID formatiga ta'sir qilmaydi."
+              },
+              {
+                      "q": "ID'imni birovga berish xavflimi?",
+                      "a": "User ID va Server ID ochiq ma'lumot, ular do'stlar ro'yxatida ham ko'rinadi va ular bilan akkauntga kirib bo'lmaydi. Xavfli bo'lgani parol, bog'langan pochta, kirish kodi va SMS kod. Bularni hech kimga bermang, halol to'ldirish xizmati ularni so'ramaydi."
+              },
+              {
+                      "q": "ID'ni nickname orqali topib bo'ladimi?",
+                      "a": "Yo'q, teskarisi ishlaydi: ID bo'yicha nickname aniqlanadi. Shuning uchun botga ID kiritganingizda nickname chiqadi va siz to'lovdan oldin akkauntni tasdiqlaysiz. Bu tekshiruv bepul va uning uchun hech narsa yechilmaydi."
+              },
+              {
+                      "q": "Nickname noto'g'ri chiqsa nima qilay?",
+                      "a": "To'xtang va to'lamang — demak ID yoki server raqamida xato bor. Raqamlarni profil oynasidan qaytadan ko'chiring, qavs va bo'sh joy belgilarini olib tashlang, so'ng qayta urinib ko'ring. Nickname to'g'ri chiqqandan keyingina to'lang."
+              },
+              {
+                      "q": "O'yinga kirmasdan ID'ni bilsam bo'ladimi?",
+                      "a": "Ishonchli yo'li yo'q — ID o'yin profilida saqlanadi. Ilovaga kira olmayotgan bo'lsangiz, avval akkauntni tiklang. Ba'zan eski skrinshot yoki do'stingizning do'stlar ro'yxatidagi profilingiz ham ID ni ko'rsatib qoladi, lekin bunga tayanmagan ma'qul."
+              },
+              {
+                      "q": "ID o'zgarib qoladimi?",
+                      "a": "Yo'q. User ID akkaunt yaratilganda beriladi va o'zgarmaydi, nickname'ni almashtirsangiz ham o'sha bo'lib qoladi. Server ID ham o'zgarmaydi. Shuning uchun ID ni bir marta yozib qo'ysangiz, keyingi to'ldirishlar tezroq o'tadi."
+              }
+      ],
+    },
+  },
+};
+
+export default article;

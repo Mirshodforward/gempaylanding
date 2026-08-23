@@ -1,0 +1,98 @@
+// AVTOMATIK KIRITILGAN — `npm run ingest`.
+// Manba reja: .plan/articles/pubg-mobile-uc-sotib-olish.json
+// Qo'lda tahrirlash mumkin; keyingi ingest faqat yangi fayllarni qo'shadi.
+
+import type { Article } from "../types";
+
+const article: Article = {
+  slug: "pubg-mobile-uc-sotib-olish",
+  game: "pubg-mobile",
+  type: "howto",
+  datePublished: "2026-08-23",
+  dateModified: "2026-08-23",
+  pillar: true,
+  keywords: ["pubg mobile uc sotib olish","pubg uc sotib olish","uc sotib olish uzcard","pubg uc humo bilan","pubg uc click orqali","pubg mobile donat uzbekistan","pubg uc quyish","купить uc pubg узбекистан"],
+  locales: {
+    uz: {
+      title: "PUBG Mobile UC sotib olish: O'zbekistonda so'mda, 2 daqiqada",
+      metaTitle: "PUBG Mobile UC sotib olish — so'mda, UzCard va HUMO",
+      metaDescription: "PUBG Mobile UC ni O'zbekistonda so'mda sotib oling: Player ID kiriting, niknem bepul tekshiriladi, UzCard, HUMO, Click yoki Payme bilan to'lang. UC 2 daqiqada.",
+      excerpt: "O'zbekistonda PUBG Mobile UC ni so'mda sotib olish: Player ID, to'lovdan oldin bepul niknem tekshiruvi, UzCard va HUMO to'lovi, UC taxminan 2 daqiqada.",
+      answer: "PUBG Mobile UC ni O'zbekistonda so'mda olish uchun @Gempayuz_bot ni oching, PUBG Mobile ni tanlang va Player ID ni kiriting. Bot niknemingizni to'lovdan oldin bepul ko'rsatadi. Tasdiqlagach paketni tanlab UzCard, HUMO, Click, Payme yoki Paynet bilan to'laysiz. UC odatda 2 daqiqada tushadi. VPN va xorijiy karta kerak emas.",
+      body: [
+    { t: "p", text: "O'zbekistondagi PUBG Mobile o'yinchisi uchun asosiy to'siq UC topish emas, to'lov qilish. Xalqaro to'ldirish saytlarining to'lov ro'yxati odatda Credit Card, PayPal, Apple Pay va kriptovalyuta bilan tugaydi, UzCard yoki HUMO esa u yerda umuman ko'rsatilmaydi. GemPay aynan shu bo'shliq uchun ishlaydi: Telegram bot ichida, so'mda, mahalliy karta va to'lov ilovalari bilan, UC esa ochiq Player ID orqali to'g'ridan-to'g'ri o'yin hisobingizga tushadi." },
+    { t: "h2", id: "qisqacha-javob", text: "Qisqacha javob: UC ni so'mda qanday olasiz" },
+    { t: "p", text: "UC sotib olish uchun sizdan bitta narsa talab qilinadi — Player ID raqami. Parol, SMS kodi yoki Google va Facebook login ma'lumotlari hech qachon so'ralmaydi. Jarayonning kaliti shunda: bot Player ID bo'yicha o'yin serveridan niknemni tortib oladi va uni to'lovdan oldin, bepul ko'rsatadi. Siz niknemni tasdiqlamaguningizcha hisobingizdan hech qanday pul yechilmaydi." },
+    { t: "facts", items: [{"k":"Kerak bo'ladigan yagona ma'lumot","v":"Player ID raqami"},{"k":"To'lov valyutasi","v":"O'zbekiston so'mi, joriy summa botda ko'rsatiladi"},{"k":"To'lov usullari","v":"UzCard, HUMO, Click, Payme, Paynet"},{"k":"Yetkazish vaqti","v":"Odatda taxminan 2 daqiqada"},{"k":"Kerak emas","v":"VPN, xorijiy karta, kriptovalyuta, akkaunt paroli"}] },
+    { t: "p", text: "PUBG Mobile uchun mavjud paketlar va joriy holat <a href=\"/oyinlar/pubg-mobile\">PUBG Mobile to'ldirish sahifasida</a> yig'ilgan, qolgan o'yinlar esa <a href=\"/oyinlar\">o'yinlar katalogida</a> turadi." },
+    { t: "h2", id: "uc-sotib-olish-5-qadam", text: "UC sotib olish: 5 qadam" },
+    { t: "steps", items: [{"title":"Telegramda @Gempayuz_bot ni oching","text":"Telegram qidiruviga @Gempayuz_bot deb yozing va Start tugmasini bosing. Nomni harfma-harf solishtiring: PUBG UC savdosi atrofida o'xshash nomli kanal va botlar ko'p, ularning bir qismi oldindan to'lov olib g'oyib bo'ladi. GemPay bilan bog'liq qo'llab-quvvatlash manzili faqat bitta — @StarsPaymeeSupport."},{"title":"Ro'yxatdan PUBG Mobile ni tanlang","text":"Bot o'yinlar ro'yxatini chiqaradi. PUBG Mobile ni tanlaganingizdan keyin faqat shu o'yin uchun mavjud UC paketlari ko'rinadi. Bu bosqichda hech narsa to'lanmaydi va akkauntingizga hech qanday ulanish talab qilinmaydi."},{"title":"Player ID raqamini kiriting","text":"Bot sizdan Player ID (ba'zi manbalarda Character ID deyiladi) so'raydi. Bu profilingizdagi 10-11 xonali raqam, masalan 51221257198. PUBG Mobile'da bitta global ID ishlaydi, shuning uchun Mobile Legends'dagi kabi server yoki zona raqamini alohida tanlash kerak emas. Raqamni qo'lda yozgandan ko'ra o'yindan nusxalab qo'ying."},{"title":"Bot ko'rsatgan niknemni tasdiqlang","text":"Bir necha soniyada bot ID ga bog'langan niknemni qaytaradi. Uni o'yindagi niknemingiz bilan harfma-harf solishtiring. Mos kelsa tasdiqlaysiz, mos kelmasa ortga qaytib ID ni qayta kiritasiz. Bu tekshiruv bepul va to'lovdan oldin bo'ladi, shuning uchun uni istagancha takrorlash mumkin."},{"title":"Paketni tanlab so'mda to'lang","text":"Kerakli UC paketini tanlaysiz, bot joriy summani so'mda ko'rsatadi va UzCard, HUMO, Click, Payme yoki Paynet orqali to'lash havolasini beradi. To'lov tasdiqlangach UC avtomatik yuboriladi va odatda 2 daqiqada hisobda ko'rinadi. Balansni ko'rish uchun o'yinni butunlay yopib qayta oching."}] },
+    { t: "h2", id: "player-id-qayerda", text: "Player ID raqamini qayerda topasiz" },
+    { t: "p", text: "Player ID — o'yin hisobingizning ochiq raqami, niknem esa ekranda ko'rinadigan nom. Niknemni pul evaziga o'zgartirish mumkin, ID esa o'zgarmaydi va aynan shuning uchun to'ldirishda ID ishlatiladi." },
+    { t: "p", text: "Uni topish uchun o'yin lobbisida yuqori chap burchakdagi avatar yoki profil tugmasini bosing — niknemingiz ostida 10-11 xonali raqam turadi. Interfeys yangilanishlarda biroz siljishi mumkin, lekin raqam har doim profil kartochkasida, niknem yonida bo'ladi va ko'pchilik versiyada uning yonida nusxalash tugmasi ham chiqadi." },
+    { t: "p", text: "ID ni begonaga berish akkauntni xavf ostiga qo'yadimi degan savol tez-tez beriladi. Qisqa javob: Player ID ochiq ma'lumot, u bilan akkauntga kirib bo'lmaydi. To'liq izoh va ekran ko'rinishlari <a href=\"/blog/pubg-mobile-player-id-qayerda\">Player ID ni qayerdan topish haqidagi qo'llanmada</a> berilgan." },
+    { t: "h2", id: "tolov-usullari", text: "Qaysi to'lov usullari ishlaydi va qaysilari ishlamaydi" },
+    { t: "p", text: "GemPay'da to'lov bosqichi O'zbekiston uchun qurilgan: xorijiy karta ochish, xalqaro hamyon to'ldirish yoki kripto sotib olish talab qilinmaydi." },
+    { t: "table", caption: "PUBG Mobile UC to'lovida GemPay qabul qiladigan va umuman talab qilmaydigan usullar.", head: ["To'lov usuli","GemPay'da","Tasdiqlash","Izoh"], rows: [["UzCard","+","Bir necha soniya","O'zbekiston bank kartasi, to'lov so'mda"],["HUMO","+","Bir necha soniya","UzCard bilan bir xil tartib"],["Click","+","Bir necha soniya","Ilova yoki to'lov havolasi orqali"],["Payme","+","Bir necha soniya","Ilova yoki to'lov havolasi orqali"],["Paynet","+","Bir necha soniya","To'lov ilovasi orqali"],["Visa yoki Mastercard","-","Talab qilinmaydi","Xorijiy karta ochish shart emas"],["PayPal","-","Talab qilinmaydi","Xalqaro saytlarda so'raladi, GemPay'da yo'q"],["Kriptovalyuta, USDT","-","Talab qilinmaydi","Kripto sotib olishning hojati yo'q"],["VPN yoki region almashtirish","-","Talab qilinmaydi","To'lov O'zbekistondan to'g'ridan-to'g'ri o'tadi"]] },
+    { t: "p", text: "Xalqaro to'ldirish saytlarini ochib ko'rsangiz, ularning to'lov ro'yxatida UzCard va HUMO yo'qligini darhol sezasiz — tanlov Credit Card, PayPal, Apple Pay va kripto bilan cheklanadi. Midasbuy va boshqa xalqaro saytlarda O'zbekiston kartasi qanday holatlarda o'tadi va qanday holatlarda rad etiladi — buni <a href=\"/blog/pubg-uc-qayerdan-sotib-olish-taqqoslash\">Midasbuy O'zbekistonda ishlaydimi degan taqqoslash maqolasida</a> alohida ko'rib chiqdik." },
+    { t: "h2", id: "uc-paketlari-va-narx", text: "UC paketlari va so'mdagi narx qanday shakllanadi" },
+    { t: "p", text: "PUBG Mobile'da paket qatori odatda 60, 325, 660, 1800, 3850 va 8100 UC ko'rinishida bo'ladi. Katta paketlarda asosiy miqdorga bonus UC qo'shiladi, shuning uchun bitta UC uchun to'lov pastroq tushadi. Nashriyot bu qatorni aksiya va mavsumga qarab o'zgartirib turadi, shuning uchun botdagi joriy ro'yxat har doim ustun hisoblanadi." },
+    { t: "p", text: "So'mdagi summa esa qat'iy emas. Narx provayderdan jonli olinadi va USDT kursiga bog'lanadi, kurs harakatlanganda so'mdagi raqam ham siljiydi. Aynan shuning uchun biz saytda hech qanday narx yozmaymiz: joriy summa siz paketni tanlaganingizda botda ko'rsatiladi va to'lov o'sha ko'rsatilgan summada o'tadi." },
+    { t: "list", ordered: false, items: ["Bitta katta paket olish ikkita kichik paketni ketma-ket olishdan ko'ra ko'pincha tejamliroq chiqadi.","Royal Pass va uning Plus versiyasi uchun kerakli UC miqdori mavsumga qarab o'zgaradi, shuning uchun sotib olishdan oldin o'yin ichidagi joriy talabni ko'ring.","Botdagi summa buyurtma yaratilgan paytdagi kursga bog'langan bo'ladi, ertaga u boshqacha bo'lishi normal holat."] },
+    { t: "p", text: "UC bilan aslida nima olish mumkin, Royal Pass, sandiq ochish va boshqa ichki xaridlar bir-biridan qanday farq qiladi — bularning hammasi <a href=\"/blog/pubg-uc-nima-paketlar-royal-pass\">UC nima va unga nima sotib olinadi degan maqolada</a> yozilgan." },
+    { t: "h2", id: "niknem-tekshiruvi", text: "To'lovdan oldin niknem tekshiruvi nega muhim" },
+    { t: "note", text: "Player ID da bitta raqam xato bo'lsa, UC mavjud boshqa o'yinchining hisobiga tushadi. To'lov texnik jihatdan muvaffaqiyatli hisoblanadi, UC esa allaqachon begona akkauntda bo'ladi — na sotuvchi, na nashriyot uni ortga qaytara olmaydi.", title: "Noto'g'ri ID bilan ketgan UC qaytmaydi", tone: "warn" },
+    { t: "p", text: "Bu to'ldirishda eng ko'p uchraydigan xatolardan biri va aksariyat xizmatlarda u faqat to'lovdan keyin ma'lum bo'ladi: siz ID ni kiritasiz, to'laysiz, keyin esa UC kelmaganini ko'rasiz va qidiruvga xato ID haqida yozishni boshlaysiz." },
+    { t: "p", text: "GemPay'da tartib teskari. Bot ID ni o'yin serveriga yuboradi, niknemni qaytaradi va to'lov oynasi faqat siz bu mening akkauntim deb tasdiqlaganingizdan keyin ochiladi. Tekshiruvning o'zi bepul, u uchun hech narsa to'lanmaydi va noto'g'ri raqam to'lovgacha tutiladi." },
+    { t: "p", text: "Amaliy qoida oddiy: <strong>niknem mos kelmasa, to'lamang</strong>. Ortga qayting, ID ni o'yindan qayta nusxalab kiriting. Klan tegi tufayli nom biroz boshqacha ko'rinishi mumkin, lekin asosiy niknem harfma-harf mos tushishi shart." },
+    { t: "p", text: "To'lov o'tgan, ammo UC ko'rinmayotgan bo'lsa yoki bot ID ni topa olmasa, nima qilish kerakligi <a href=\"/blog/pubg-uc-kelmadi-nima-qilish\">UC kelmadi yoki ID topilmadi maqolasida</a> qadamma-qadam ko'rsatilgan." },
+    { t: "h2", id: "tekshirish-royxati", text: "Xarid oldidan tekshirish ro'yxati" },
+    { t: "p", text: "To'lov tugmasini bosishdan oldin shu ro'yxatdan o'ting. U bir daqiqa oladi va qimmatga tushadigan xatolarning deyarli hammasini oldini oladi." },
+    { t: "list", ordered: false, items: ["Player ID o'yindan nusxalab olindi, xotiradan qo'lda yozilmadi.","Bot ko'rsatgan niknem o'yindagi niknemim bilan bir xil.","Paket to'g'ri tanlandi va botdagi joriy summa ko'rildi.","Kartada yoki Click va Payme hisobida yetarli mablag' bor.","Telegramda ochilgan bot aynan @Gempayuz_bot, o'xshash nomli nusxa emas.","To'lov cheki va buyurtma raqami saqlab qo'yildi.","Hech kim mendan parol, SMS kod yoki akkauntga kirishni so'ramadi."] },
+    { t: "p", text: "Shu bilan birga: bepul UC generatori, cheksiz UC skripti yoki akkauntni vaqtincha berib turishni taklif qiladigan har qanday sahifadan uzoq turing. Bunday vositalar ishlamaydi va odatda akkaunt ma'lumotlarini yig'ish uchun qilingan. To'ldirish faqat ochiq Player ID orqali bajariladi, boshqa har qanday talab firibgarlik belgisi hisoblanadi." },
+    { t: "h2", id: "hozir-sotib-olish", text: "Hozir UC sotib olish" },
+    { t: "p", text: "Jarayon bir marta o'tilgach oddiy ishga aylanadi: bot, ID, niknem tasdig'i, paket, to'lov. Odatda hammasi 2 daqiqada tugaydi va UC o'yinni qayta ochganingizda hisobda ko'rinadi." },
+    { t: "cta", text: "@Gempayuz_bot ni oching, PUBG Mobile ni tanlang va Player ID ni kiriting — niknem tekshiruvi bepul, to'lov esa so'mda." },
+    { t: "p", text: "Buyurtma bo'yicha savol chiqsa, chek va buyurtma raqami bilan @StarsPaymeeSupport ga yozing. Mavjud paketlarning to'liq ro'yxati <a href=\"/oyinlar/pubg-mobile\">PUBG Mobile to'ldirish sahifasida</a> turadi." },
+    { t: "note", text: "GemPay — StarsPaymee ekotizimidagi mustaqil to'ldirish xizmati va hech bir o'yin nashriyotining rasmiy hamkori emas. To'ldirish faqat ochiq Player ID orqali bajariladi, akkauntga kirish yoki parol talab qilinmaydi, har bir buyurtma esa buyurtma raqami bo'yicha kuzatiladi.", title: "Rasmiy hamkorlik haqida", tone: "info" },
+    { t: "links", title: "PUBG Mobile bo'yicha qolgan qo'llanmalar", items: [{"label":"Player ID raqamini qayerdan topish va uni berish xavfsizmi","href":"/blog/pubg-mobile-player-id-qayerda"},{"label":"UC kelmadi yoki ID topilmadi: sabablari va yechimi","href":"/blog/pubg-uc-kelmadi-nima-qilish"},{"label":"Midasbuy O'zbekistonda ishlaydimi: to'lov usullari taqqoslandi","href":"/blog/pubg-uc-qayerdan-sotib-olish-taqqoslash"},{"label":"UC nima va PUBG Mobile'da unga nima sotib olinadi","href":"/blog/pubg-uc-nima-paketlar-royal-pass"},{"label":"PUBG Mobile UC to'ldirish sahifasi","href":"/oyinlar/pubg-mobile"}] }
+      ],
+      faq: [
+              {
+                      "q": "PUBG Mobile UC ni UzCard yoki HUMO bilan sotib olsa bo'ladimi?",
+                      "a": "Ha. GemPay to'lovni O'zbekiston kartalari — UzCard va HUMO — hamda Click, Payme va Paynet orqali so'mda qabul qiladi. Visa yoki Mastercard, xorijiy hamyon yoki kriptovalyuta talab qilinmaydi. VPN va region almashtirish ham kerak emas."
+              },
+              {
+                      "q": "UC necha daqiqada hisobga tushadi?",
+                      "a": "Odatda taxminan 2 daqiqada. Kun davomida yuklama yuqori bo'lsa, bu vaqt 10-15 daqiqagacha cho'zilishi mumkin. UC tushganini ko'rish uchun o'yinni to'liq yopib qayta oching, chunki eski sessiyada balans yangilanmay qolishi mumkin."
+              },
+              {
+                      "q": "UC olish uchun akkaunt parolini berish kerakmi?",
+                      "a": "Yo'q va hech qachon bermang. To'ldirish faqat ochiq Player ID raqami orqali amalga oshiriladi. Parol, SMS kodi yoki Facebook va Google login ma'lumotlarini so'ragan har qanday sotuvchi firibgardir — bunday xizmatdan darhol voz keching."
+              },
+              {
+                      "q": "Server yoki platforma tanlashim kerakmi?",
+                      "a": "Yo'q. PUBG Mobile'da bitta global Player ID ishlaydi, shuning uchun Mobile Legends'dagi kabi server yoki zona raqami so'ralmaydi. Android va iOS uchun ham tartib bir xil: faqat ID raqamini kiritasiz va niknemni tasdiqlaysiz."
+              },
+              {
+                      "q": "UC narxi nega har xil bo'lib turadi?",
+                      "a": "Chunki narx provayderdan jonli olinadi va USDT kursiga bog'lanadi. Kurs o'zgarganda so'mdagi summa ham o'zgaradi. Shuning uchun biz saytda aniq raqam yozmaymiz: joriy narx paket tanlaganingizda botda ko'rsatiladi va to'lov o'sha summada o'tadi."
+              },
+              {
+                      "q": "Qaysi paketni olish foydaliroq?",
+                      "a": "Katta paketlarda bir UC uchun to'lov odatda pastroq tushadi, chunki asosiy miqdorga bonus UC qo'shiladi. Agar maqsadingiz Royal Pass bo'lsa, kerakli miqdorni bitta paketda olish ikkita kichik paketdan ko'ra tejamliroq bo'ladi. Aniq miqdor mavsumga qarab o'zgaradi."
+              },
+              {
+                      "q": "To'lov o'tdi, lekin UC kelmadi. Nima qilaman?",
+                      "a": "Avval o'yinni butunlay yopib qayta kiring, ko'p holatda balans shundan keyin yangilanadi. Agar 15 daqiqadan keyin ham ko'rinmasa, buyurtma raqami va to'lov cheki bilan @StarsPaymeeSupport ga yozing. Batafsil yechimlar UC kelmadi maqolasida ko'rsatilgan."
+              },
+              {
+                      "q": "GemPay rasmiymi va ishonsa bo'ladimi?",
+                      "a": "GemPay — StarsPaymee ekotizimining bir qismi (t.me/StarsPaymee_bot, starstg.uz) va hech bir o'yin nashriyotining rasmiy hamkori emas. To'ldirish faqat ochiq Player ID orqali bajariladi, akkauntga kirish yoki parol talab qilinmaydi, har bir buyurtma esa qo'llab-quvvatlash xizmati orqali kuzatiladi."
+              }
+      ],
+    },
+  },
+};
+
+export default article;

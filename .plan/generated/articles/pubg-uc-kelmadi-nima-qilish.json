@@ -1,0 +1,358 @@
+{
+  "answer": "PUBG UC kelmasa, avval o'yinni fondan ham to'liq yopib qayta oching — balans eski sessiyada yangilanmaydi. GemPay orqali yetkazish odatda 2 daqiqa, band vaqtda 15 daqiqagacha cho'ziladi. Player ID to'g'riligini tekshiring, takroriy to'lov qilmang va chek hamda buyurtma raqami bilan @StarsPaymeeSupport ga yozing.",
+  "slug": "pubg-uc-kelmadi-nima-qilish",
+  "title": "PUBG UC kelmadi yoki ID topilmadi — sabablari va aniq yechimi",
+  "metaTitle": "PUBG UC kelmadi? Sabablari va yechimi (2026)",
+  "metaDescription": "PUBG UC kelmadi, pul yechildi yoki Player ID topilmadi? Har bir sabab va aniq yechimi: qancha kutish, nima tekshirish va qo'llab-quvvatlashga nima yozish.",
+  "excerpt": "UC kelmadi, ID topilmadi yoki pul yechilib buyurtma ko'rinmayapti — har bir holat uchun aniq sabab, kutish vaqti va keyingi qadam.",
+  "body": [
+    {
+      "t": "h2",
+      "id": "tez-javob",
+      "text": "Tez javob: birinchi navbatda nima qilish kerak"
+    },
+    {
+      "t": "p",
+      "text": "To'lov o'tdi, lekin UC balansda ko'rinmayapti — bu holatda ko'pchilik birinchi bo'lib yana bir marta to'lashga urinadi. Aynan shuni qilmang. Yetkazilgan UC ko'p hollarda hisobda allaqachon bor, faqat o'yin uni eski sessiyada ko'rsatmayapti. Quyidagi uchta harakat muammolarning katta qismini bir necha daqiqada yopadi."
+    },
+    {
+      "t": "facts",
+      "items": [
+        {
+          "k": "Odatiy yetkazish vaqti",
+          "v": "2 daqiqa"
+        },
+        {
+          "k": "Band vaqtdagi chegara",
+          "v": "15 daqiqagacha"
+        },
+        {
+          "k": "15 daqiqadan oshsa",
+          "v": "kutmang, murojaat qiling"
+        },
+        {
+          "k": "Niknem tekshiruvi",
+          "v": "to'lovdan oldin, bepul"
+        },
+        {
+          "k": "Qo'llab-quvvatlash",
+          "v": "@StarsPaymeeSupport"
+        }
+      ]
+    },
+    {
+      "t": "list",
+      "ordered": false,
+      "items": [
+        "O'yinni to'liq yoping va qayta oching — ilovani shunchaki orqa fonga tashlash yetarli emas.",
+        "O'yin ichidagi Pochta (Mail) bo'limini tekshiring: ba'zi paketlar va aksiya sovg'alari to'g'ridan-to'g'ri balansga emas, o'sha yerga tushadi va qo'lda qabul qilinadi.",
+        "Botdagi tasdiq xabarini va bank chekini saqlang — buyurtma raqami keyinchalik hamma narsani hal qiladi."
+      ]
+    },
+    {
+      "t": "note",
+      "tone": "warn",
+      "title": "Ikkinchi marta to'lamang",
+      "text": "Takroriy to'lov birinchi buyurtmani tezlashtirmaydi, aksincha ikkita alohida buyurtma hosil qiladi va tekshiruvni chalkashtiradi. Avval 15 daqiqa kuting, keyin buyurtma raqami bilan yozing."
+    },
+    {
+      "t": "h2",
+      "id": "uc-korinmayapti",
+      "text": "Sabab 1: UC tushgan, lekin o'yinda ko'rinmayapti"
+    },
+    {
+      "t": "p",
+      "text": "Bu eng ko'p uchraydigan holat va aksariyat murojaatlar shu bilan yopiladi. O'yin balansni sessiya boshlanganda yuklaydi, shuning uchun siz o'yin ichida turganingizda kelgan UC ekranda darhol paydo bo'lmasligi mumkin. Yechim texnik emas — sessiyani yangilash kifoya."
+    },
+    {
+      "t": "steps",
+      "items": [
+        {
+          "title": "O'yindan chiqing",
+          "text": "Asosiy menyuga qayting va o'yinni yoping. Akkauntdan chiqish (logout) shart emas va tavsiya ham etilmaydi — qayta kirishda ortiqcha muammo tug'ilishi mumkin."
+        },
+        {
+          "title": "Ilovani fon rejimidan yoping",
+          "text": "Telefondagi ochiq ilovalar ro'yxatini oching va PUBG Mobile ni u yerdan ham olib tashlang. Faqat shundagina ilova keyingi kirishda balansni serverdan qaytadan so'raydi."
+        },
+        {
+          "title": "Qayta kiring va balansni tekshiring",
+          "text": "O'yinni oching va UC hisobiga qarang. Ko'p hollarda summa aynan shu bosqichda joyida turadi."
+        },
+        {
+          "title": "Pochta (Mail) bo'limini oching",
+          "text": "Agar balans o'zgarmagan bo'lsa, o'yin ichidagi xabarlar bo'limiga kiring. Ba'zi paketlar va sovg'alar u yerda kutib turadi va ularni qo'lda qabul qilish kerak. Qabul qilinmagan sovg'alarning amal qilish muddati bo'lishi mumkin, shuning uchun kechiktirmang."
+        },
+        {
+          "title": "Tarmoqni almashtiring",
+          "text": "Mobil internetdan Wi-Fi ga yoki aksincha o'ting va yana bir marta kiring. Beqaror ulanishda o'yin keshdagi eski balansni ko'rsatishi mumkin."
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "text": "Agar shu besh qadamdan keyin ham UC ko'rinmasa, muammo o'yin tomonida emas — buyurtmaning o'zida. Pastdagi bo'limlarga o'ting."
+    },
+    {
+      "t": "h2",
+      "id": "player-id-topilmadi",
+      "text": "Sabab 2: Player ID topilmadi yoki niknem chiqmadi"
+    },
+    {
+      "t": "p",
+      "text": "Bot ID ni o'yin serveridan so'raydi va javobda niknemni ko'rsatadi. Agar javob kelmasa, buning bir necha oddiy sababi bor: ID da bitta raqam xato, nusxalashda ortiqcha bo'sh joy tushib qolgan, ID o'rniga niknem yozilgan yoki akkaunt endigina yaratilgan va hali serverda ko'rinmayapti."
+    },
+    {
+      "t": "steps",
+      "items": [
+        {
+          "title": "ID ni o'yin profilidan qayta oling",
+          "text": "Profil bo'limida niknem yonida raqamli ID turadi. Uni nusxalash tugmasi orqali oling, yoddan yozmang — ko'pchilik xato aynan shu yerda paydo bo'ladi."
+        },
+        {
+          "title": "Faqat raqamlarni qoldiring",
+          "text": "Kiritish maydoniga bo'sh joy, qavs, tire yoki 'ID' so'zi tushib qolmasin. Faqat uzluksiz raqamlar qatori bo'lishi kerak."
+        },
+        {
+          "title": "Xonalar sonini tekshiring",
+          "text": "PUBG Mobile ID odatda 10-11 xonali raqamdan iborat bo'ladi; juda eski akkauntlarda u qisqaroq bo'lishi ham mumkin. Agar sizda atigi 5-6 ta raqam chiqsa, siz noto'g'ri maydonni nusxalagansiz."
+        },
+        {
+          "title": "Niknem bilan aralashtirmang",
+          "text": "Niknem harflardan iborat va uni o'zgartirish mumkin, ID esa doimiy va faqat raqamli. To'ldirish har doim ID bo'yicha ketadi, niknem esa faqat tekshiruv uchun ko'rsatiladi."
+        },
+        {
+          "title": "Yangi akkauntga biroz vaqt bering",
+          "text": "Endigina yaratilgan yoki mehmon rejimidan doimiy hisobga bog'langan akkaunt server bazasida darrov paydo bo'lmasligi mumkin. Bir oz kutib, qayta urinib ko'ring."
+        }
+      ]
+    },
+    {
+      "t": "p",
+      "text": "ID ni topishning batafsil tavsifi alohida qo'llanmada bor: <a href=\"/blog/pubg-mobile-player-id-qayerda\">PUBG Mobile Player ID ni qayerdan topish va uni berish xavfsizmi</a>. O'sha maqolada ID ochiq raqam ekani, ya'ni u orqali hech kim hisobingizga kira olmasligi ham tushuntirilgan."
+    },
+    {
+      "t": "h2",
+      "id": "pul-yechildi-buyurtma-yoq",
+      "text": "Sabab 3: pul yechildi, lekin buyurtma tasdiqlanmadi"
+    },
+    {
+      "t": "p",
+      "text": "Kartadan pul ketgani haqidagi SMS har doim ham to'lov yakunlanganini anglatmaydi. Bank ko'pincha summani avval vaqtincha ushlab turadi: mablag' hisobda ko'rinmaydi, lekin hali sotuvchiga o'tmagan. Agar tranzaksiya tasdiqlanmasa, ushlab turilgan summa avtomatik ravishda kartaga qaytadi. Qaytish muddati bankka bog'liq va odatda bir necha soatdan bir necha ish kunigacha cho'ziladi."
+    },
+    {
+      "t": "p",
+      "text": "UzCard va HUMO kartalari, shuningdek Click, Payme va Paynet orqali to'lovlar tarmoq band bo'lganda kechikib tasdiqlanishi mumkin. Bunday paytda bot buyurtmani tasdiqlanmagan holatda ushlab turadi va tasdiq kelishi bilan yetkazishni avtomatik boshlaydi. Ya'ni sizdan qo'shimcha harakat talab qilinmaydi, faqat vaqt kerak."
+    },
+    {
+      "t": "p",
+      "text": "Shu holatda qiladigan uchta narsa bor. Birinchidan, bank chekini yoki to'lov ilovasidagi tranzaksiya skrinshotini saqlang. Ikkinchidan, ikkinchi marta to'lamang — bu ikkita to'lovga va uzoqroq tekshiruvga olib keladi. Uchinchidan, 15 daqiqa o'tgach buyurtma raqami bilan qo'llab-quvvatlashga yozing: buyurtma qo'lda ko'rib chiqiladi va to'lov haqiqatan o'tgan bo'lsa, UC yetkaziladi."
+    },
+    {
+      "t": "h2",
+      "id": "notogri-id-kiritildi",
+      "text": "Sabab 4: noto'g'ri Player ID kiritildi"
+    },
+    {
+      "t": "note",
+      "tone": "warn",
+      "title": "Bu holatni orqaga qaytarib bo'lmaydi",
+      "text": "UC begona akkauntga yetkazilsa, tizim uchun operatsiya muvaffaqiyatli hisoblanadi. Na o'yin nashriyoti, na sotuvchi boshqa odamning hisobidan valyutani qaytarib ola olmaydi. Yagona himoya — to'lovdan oldingi tekshiruv."
+    },
+    {
+      "t": "p",
+      "text": "Aynan shuning uchun niknem tekshiruvi to'lovdan oldin va bepul beriladi. Siz ID ni kiritasiz, tizim o'yin serveriga so'rov yuboradi va ekranda o'sha ID ga tegishli niknem chiqadi. Shu bosqichda hisobingizdan hech narsa yechilmaydi. Agar ekranda o'zingizniki bo'lmagan nom ko'rinsa, to'lovni davom ettirmang va ID ni qaytadan tekshiring."
+    },
+    {
+      "t": "p",
+      "text": "Xato deyarli har doim bitta raqamda bo'ladi: 0 bilan 8, 1 bilan 7 chalkashadi yoki eski yozuvdan do'stning ID si qolib ketadi. Ekrandagi niknemga bir soniya qarash shu xatoni butunlay yopadi — bu bo'limni o'tkazib yubormang."
+    },
+    {
+      "t": "note",
+      "tone": "warn",
+      "title": "Bularga ishonmang",
+      "text": "Bepul UC generatorlari, 'UC ni ikki barobar qilamiz' deb yozadigan kanallar va akkauntingizga kirishni so'raydigan 'ustalar' — bularning barchasi hisob o'g'irlashning odatiy usullari. To'ldirish faqat ochiq Player ID orqali bo'ladi. Halol xizmat sizdan parol, SMS kod yoki akkauntga kirishni hech qachon so'ramaydi."
+    },
+    {
+      "t": "h2",
+      "id": "muammo-turlari-va-vaqt",
+      "text": "Muammo turlari va kutilayotgan vaqt"
+    },
+    {
+      "t": "p",
+      "text": "Quyidagi jadval har bir holat uchun odatiy sababni, sizdan talab qilinadigan harakatni va qancha kutish mantiqli ekanini ko'rsatadi. Oxirgi ustun qo'llab-quvvatlashga yozish kerakmi yoki muammo o'zingizda hal bo'ladimi degan savolga javob beradi."
+    },
+    {
+      "t": "table",
+      "head": [
+        "Muammo",
+        "Odatiy sabab",
+        "Siz nima qilasiz",
+        "Kutish vaqti",
+        "Support kerakmi"
+      ],
+      "rows": [
+        [
+          "UC balansda ko'rinmayapti",
+          "O'yin sessiyasi eski balansni ko'rsatmoqda",
+          "O'yinni fondan yopib qayta oching, Pochtani tekshiring",
+          "2-15 daqiqa",
+          "-"
+        ],
+        [
+          "Player ID topilmadi",
+          "ID da xato raqam yoki ortiqcha bo'sh joy",
+          "ID ni o'yin profilidan qayta nusxalang",
+          "darhol",
+          "-"
+        ],
+        [
+          "To'lov o'tmadi",
+          "Kartada mablag' yetmadi yoki bank rad etdi",
+          "Boshqa to'lov usulini tanlab qayta urinib ko'ring",
+          "darhol",
+          "-"
+        ],
+        [
+          "Pul yechildi, UC yo'q",
+          "Tranzaksiya hali tasdiqlanmagan yoki ushlab turilgan",
+          "Chekni saqlang, takroriy to'lov qilmang",
+          "15 daqiqa, so'ng murojaat",
+          "+"
+        ],
+        [
+          "Noto'g'ri ID ga tushdi",
+          "Niknem solishtirilmasdan tasdiqlangan",
+          "Buyurtma raqami bilan darhol yozing",
+          "qaytarib bo'lmaydi",
+          "+"
+        ],
+        [
+          "Paket noto'g'ri tanlandi",
+          "Ro'yxatdan boshqa qator bosilgan",
+          "Yetkazilgunga qadar darhol xabar bering",
+          "yetkazilgach o'zgarmaydi",
+          "+"
+        ]
+      ],
+      "caption": "PUBG UC to'ldirishdagi asosiy muammolar va ular bo'yicha real kutish oynasi"
+    },
+    {
+      "t": "p",
+      "text": "Paketni noto'g'ri tanlash alohida holat. UC ro'yxati odatda 60, 325, 660, 1800, 3850 va 8100 UC atrofida bo'ladi, lekin nashriyot bu qatorni ham, katta paketlardagi bonuslarni ham vaqti-vaqti bilan o'zgartiradi — shuning uchun tanlashdan oldin botdagi joriy ro'yxatga qarang. Joriy narx ham har doim botning o'zida ko'rsatiladi, chunki u kurs bilan birga o'zgarib turadi. Yetkazilgan paketni keyin boshqasiga almashtirib bo'lmaydi."
+    },
+    {
+      "t": "h2",
+      "id": "qollab-quvvatlashga-tayyorgarlik",
+      "text": "Qo'llab-quvvatlashga yozishdan oldin tayyorlang"
+    },
+    {
+      "t": "p",
+      "text": "Murojaat qancha tez hal bo'lishi deyarli butunlay birinchi xabarga bog'liq. Quyidagilarni bitta xabarda yuborsangiz, tekshiruv bir necha daqiqada tugaydi. Ular bo'lmasa, yozishmalar savol-javob bilan bir necha soatga cho'ziladi."
+    },
+    {
+      "t": "list",
+      "ordered": false,
+      "items": [
+        "Buyurtma raqami — botdagi tasdiq xabarida keladi.",
+        "To'lov cheki yoki Click, Payme, Paynet ilovasidagi tranzaksiya skrinshoti.",
+        "Player ID va tekshiruvda ekranda chiqqan niknem.",
+        "Tanlangan paket nomi.",
+        "To'lov sanasi, taxminiy vaqti va usuli: UzCard, HUMO, Click, Payme yoki Paynet.",
+        "O'yin ichidagi joriy UC balansining skrinshoti.",
+        "Qisqa izoh: o'yinni qayta ochdingizmi va Pochta bo'limini tekshirdingizmi."
+      ]
+    },
+    {
+      "t": "note",
+      "tone": "info",
+      "title": "Skrinshotni kesib yubormang",
+      "text": "Chekdagi vaqt, summa va tranzaksiya raqami ko'rinib turishi kerak — tekshiruv aynan shular bo'yicha ketadi. Kartaning to'liq raqamini, amal qilish muddatini va SMS kodlarni esa hech qachon yubormang, ular hech kimga kerak emas."
+    },
+    {
+      "t": "h2",
+      "id": "bizga-yozing",
+      "text": "Hali ham hal bo'lmadimi — bizga yozing"
+    },
+    {
+      "t": "p",
+      "text": "Yuqoridagilarni bajarib ko'rdingiz va UC hamon yo'qmi — @StarsPaymeeSupport ga yozing. Ro'yxatdagi ma'lumotlarni bir xabarda yuboring, shunda birinchi javobdayoq buyurtmangiz topiladi."
+    },
+    {
+      "t": "p",
+      "text": "Buyurtmalar kelgan tartibda ko'rib chiqiladi. Kechqurun, ya'ni o'yinchilar eng ko'p to'ldiradigan vaqtda, javob biroz kechikishi mumkin — bu buyurtmangiz yo'qolganini anglatmaydi. Buyurtma raqami tizimda saqlanib turadi va to'lov ham ko'rinadi."
+    },
+    {
+      "t": "p",
+      "text": "Keyingi safar hamma narsa birinchi urinishda o'tishi uchun to'liq tartibni <a href=\"/oyinlar/pubg-mobile\">PUBG Mobile UC to'ldirish sahifasida</a> va <a href=\"/blog/pubg-mobile-uc-sotib-olish\">UC sotib olish bo'yicha qadamma-qadam qo'llanmada</a> ko'rib chiqing. Boshqa o'yinlar bo'yicha esa <a href=\"/oyinlar\">o'yinlar katalogi</a> bor."
+    },
+    {
+      "t": "p",
+      "text": "GemPay mustaqil to'ldirish xizmati va hech bir o'yin nashriyotining rasmiy hamkori emas. Akkaunt bloklanishi yoki o'yin ichidagi cheklovlar bilan bog'liq masalalar PUBG Mobile ning o'z qo'llab-quvvatlash xizmati orqali hal qilinadi; to'lov va yetkazish bilan bog'liq hamma narsa esa biz tomonda."
+    },
+    {
+      "t": "cta",
+      "text": "Buyurtmani tekshirish yoki yangi to'ldirish uchun @Gempayuz_bot ni oching — niknem to'lovdan oldin bepul ko'rsatiladi."
+    },
+    {
+      "t": "links",
+      "title": "Shu mavzuda yana",
+      "items": [
+        {
+          "label": "PUBG Mobile UC to'ldirish sahifasi",
+          "href": "/oyinlar/pubg-mobile"
+        },
+        {
+          "label": "UC sotib olish: qadamma-qadam qo'llanma",
+          "href": "/blog/pubg-mobile-uc-sotib-olish"
+        },
+        {
+          "label": "Player ID ni qayerdan topish va uni berish xavfsizmi",
+          "href": "/blog/pubg-mobile-player-id-qayerda"
+        },
+        {
+          "label": "UC ni qayerdan olish kerak: Midasbuy va xalqaro saytlar bilan taqqoslash",
+          "href": "/blog/pubg-uc-qayerdan-sotib-olish-taqqoslash"
+        },
+        {
+          "label": "Barcha o'yinlar katalogi",
+          "href": "/oyinlar"
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "UC kelmasa qancha kutishim kerak?",
+      "a": "Odatda UC 2 daqiqada tushadi. Yuklama yuqori bo'lganda yetkazish 15 daqiqagacha cho'zilishi mumkin. Agar 15 daqiqadan oshsa, kutishni to'xtating va buyurtma raqami bilan qo'llab-quvvatlashga murojaat qiling — takroriy to'lov qilmang."
+    },
+    {
+      "q": "Nega bot mening Player ID mni topa olmayapti?",
+      "a": "Ko'pincha ID da bitta raqam xato bo'ladi yoki nusxalashda ortiqcha bo'sh joy tushib qoladi. ID faqat raqamlardan iborat va odatda 10-11 xonali bo'ladi. Uni niknem bilan aralashtirmang: niknem harflardan iborat va uni o'zgartirish mumkin, ID esa doimiy."
+    },
+    {
+      "q": "Noto'g'ri ID kiritsam UC ni qaytarib olish mumkinmi?",
+      "a": "Afsuski yo'q. UC begona akkauntga tushsa, tizim uchun operatsiya muvaffaqiyatli hisoblanadi va uni bekor qilib bo'lmaydi. Aynan shu sabab niknem to'lovdan oldin bepul ko'rsatiladi — ekrandagi nomni albatta o'zingiznikiga solishtiring."
+    },
+    {
+      "q": "Pul kartadan yechildi, lekin buyurtma ko'rinmayapti. Ikkinchi marta to'laymi?",
+      "a": "Yo'q, ikkinchi marta to'lamang. Ba'zan bank mablag'ni vaqtincha ushlab turadi va tranzaksiya tasdiqlanmasa, u avtomatik qaytariladi. Chekni saqlang va buyurtma raqami bilan qo'llab-quvvatlashga yuboring — buyurtma qo'lda tekshiriladi."
+    },
+    {
+      "q": "UC balansda yo'q, lekin Pochtada nimadir bor. Bu nima?",
+      "a": "Ba'zi paketlar va aksiya sovg'alari to'g'ridan-to'g'ri balansga emas, o'yin ichidagi Pochta (Mail) bo'limiga tushadi. U yerga kirib sovg'ani qo'lda qabul qiling, shundan keyin u hisobingizga qo'shiladi. Qabul qilinmagan sovg'alarning muddati bo'lishi mumkin, shuning uchun kechiktirmang."
+    },
+    {
+      "q": "O'yinni qayta ochdim, baribir ko'rinmayapti. Yana nima qilish mumkin?",
+      "a": "Ilovani fon rejimidan ham to'liq yoping, internetni tekshiring va boshqa tarmoqqa ulanib qayta kiring. Ba'zan o'yin serveri balansni kechikib yangilaydi. Shundan keyin ham natija bo'lmasa, chek va buyurtma raqami bilan murojaat qiling."
+    },
+    {
+      "q": "Buyurtma raqamini qayerdan olaman?",
+      "a": "Buyurtma raqami to'lov yakunlangach botdagi tasdiq xabarida yuboriladi. Uni o'chirmang — muammo yuzaga kelsa, aynan shu raqam orqali to'lovingiz tezda topiladi va tekshiriladi. Xabarni saqlash yoki skrinshot qilib qo'yish yetarli."
+    },
+    {
+      "q": "Akkauntim vaqtincha bloklangan bo'lsa, UC tushadimi?",
+      "a": "Bloklangan yoki cheklangan akkauntlarda to'ldirish amalga oshmasligi yoki UC ko'rinmasligi mumkin. Bunday holatda avval PUBG Mobile qo'llab-quvvatlash xizmati bilan akkaunt holatini hal qiling, keyin to'ldirishni takrorlang. Bu masala to'lov tizimi tomonidan hal qilinmaydi."
+    }
+  ]
+}

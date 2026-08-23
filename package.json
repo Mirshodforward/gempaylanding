@@ -10,7 +10,8 @@
     "fonts": "node scripts/fetch-fonts.mjs",
     "audit": "node scripts/audit.mjs",
     "ingest": "node scripts/ingest.mjs",
-    "indexnow": "node scripts/indexnow.mjs"
+    "indexnow": "node scripts/indexnow.mjs",
+    "links": "node scripts/links.mjs"
   },
   "dependencies": {
     "astro": "^5.18.0"

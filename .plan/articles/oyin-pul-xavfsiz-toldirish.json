@@ -1,0 +1,115 @@
+{
+  "slug": "oyin-pul-xavfsiz-toldirish",
+  "game": null,
+  "gameTitle": "Umumiy (barcha o'yinlar)",
+  "type": "trust",
+  "spec": {
+    "slug": "oyin-pul-xavfsiz-toldirish",
+    "type": "trust",
+    "h1": "O'yin hisobini xavfsiz to'ldirish: nima so'raladi va nima so'ralmaydi",
+    "metaTitle": "O'yinga pul kiritish xavfsizmi — ID va firibgarlik",
+    "metaDescription": "O'yin hisobini to'ldirishda faqat ochiq Player ID kerak. Parol yoki SMS kod so'ralsa — bu firibgarlik. Xavf belgilari va himoya choralari.",
+    "searchIntent": "Ishonch. Foydalanuvchi vositachiga pul berishdan oldin xavf darajasini baholamoqchi. Bu klasterning ishonch hub sahifasi — barcha o'yin maqolalari shunga bog'lanadi.",
+    "primaryKeyword": "o'yin hisobini xavfsiz to'ldirish",
+    "secondaryKeywords": [
+      "id berish xavfsizmi",
+      "o'yin akkaunti o'g'irlanishi",
+      "donat qilish xavfsizmi",
+      "player id berish mumkinmi",
+      "o'yin firibgarligi"
+    ],
+    "answerBox": "O'yin hisobini to'ldirish uchun faqat OCHIQ Player ID kerak — bu profilingizda har kim ko'radigan raqam va uni bilgan odam akkauntga kira olmaydi. Parol, SMS kod, elektron pochta yoki akkauntni vaqtincha berish HECH QANDAY to'ldirish usulida talab qilinmaydi. Bularni so'ragan har qanday xizmat firibgar.",
+    "outline": [
+      {
+        "h2": "Player ID nima va uni berish nega xavfsiz",
+        "covers": "ID — ochiq identifikator, do'stlar ro'yxatida va profilda ko'rinadi. U bilan faqat hisobga narsa YUBORISH mumkin, undan olish emas.",
+        "block": "prose"
+      },
+      {
+        "h2": "Nima so'ralmasligi kerak",
+        "covers": "Parol, SMS/2FA kod, pochta parolini, akkauntni vaqtincha berish, ekranni ulashish, uzoqdan boshqaruv ilovasi. Har biri nima uchun xavfli.",
+        "block": "warning"
+      },
+      {
+        "h2": "Firibgarlikning tipik shakllari",
+        "covers": "Soxta bot va soxta sayt, 'avval to'lang keyin yetkazamiz', o'g'irlangan karta bilan arzon to'ldirish, 'bepul olmos' generatorlari, do'st nomidan yozish.",
+        "block": "prose"
+      },
+      {
+        "h2": "To'lovdan oldin nik tekshiruvi nega muhim",
+        "covers": "Noto'g'ri ID begona hisobga yetkazishga olib keladi va bu qaytarilmaydi. Tekshiruv shu xatoni to'lovgacha tutadi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Akkauntni himoyalash: amaliy choralar",
+        "covers": "Ikki bosqichli tasdiqlash, akkauntni Google/Facebook/Apple ga bog'lash (Guest holatda qoldirmaslik), qurilma sessiyalarini tekshirish, bir xil parolni takrorlamaslik.",
+        "block": "checklist"
+      },
+      {
+        "h2": "Nimadir noto'g'ri ketsa",
+        "covers": "Buyurtma tushmaganda tartib: tarixdan buyurtma raqamini olish, qo'llab-quvvatlashga yozish, bank orqali bahs ochish shartlari. Vaqt chegaralari.",
+        "block": "steps"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Player ID mni bergan odam akkauntimga kira oladimi?",
+        "a": "Yo'q. Player ID — ochiq identifikator, xuddi telefon raqami kabi: uni bilgan odam sizga narsa yubora oladi, lekin hisobingizga kira olmaydi. Kirish uchun parol yoki bog'langan hisob kerak, ular esa hech qachon so'ralmaydi."
+      },
+      {
+        "q": "Nega ba'zi xizmatlar akkauntga kirishni so'raydi?",
+        "a": "Chunki ular boshqa yo'l bilan ishlaydi yoki firibgar. Rasmiy provayder API'si ID bo'yicha yetkazadi va kirish talab qilmaydi. Akkauntni so'ragan odamga bermang — bu hisobni yo'qotishning eng keng tarqalgan yo'li."
+      },
+      {
+        "q": "'Bepul olmos' saytlari ishlaydimi?",
+        "a": "Yo'q. Ular ikki narsani qiladi: akkaunt ma'lumotlaringizni oladi yoki cheksiz 'tekshiruv' aylanishiga tushiradi. O'yin ishlab chiqaruvchilari valyutani bepul tarqatmaydi, bundan tashqari bunday saytdan foydalanish akkaunt blokiga sabab bo'lishi mumkin."
+      },
+      {
+        "q": "Bozordan ancha arzon taklif nima anglatadi?",
+        "a": "Ko'pincha o'g'irlangan karta bilan to'ldirish. Bir necha kundan keyin karta egasi to'lovni bekor qiladi, o'yin esa valyutani qaytarib oladi va akkauntga cheklov qo'yishi mumkin. Ya'ni pul ham, valyuta ham yo'qoladi."
+      },
+      {
+        "q": "Ikki bosqichli tasdiqlash to'ldirishga xalaqit beradimi?",
+        "a": "Yo'q. 2FA faqat akkauntga KIRISHDA so'raladi, to'ldirish esa ID orqali tashqaridan bajariladi. Aksincha, 2FA yoqilgan akkauntni o'g'irlash ancha qiyin, shuning uchun uni yoqib qo'ygan ma'qul."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "FAQPage",
+      "HowTo",
+      "BreadcrumbList"
+    ],
+    "internalLinks": [
+      "/oyinlar",
+      "oyin-valyutasi-qayerdan-arzon",
+      "pubg-mobile-player-id-qayerda",
+      "mobile-legends-user-id-server-id-qayerda"
+    ],
+    "wordCount": 1500
+  },
+  "publishRank": 17,
+  "gameKeywords": {
+    "primary": [],
+    "questions": [],
+    "russian": []
+  },
+  "competitorResearch": "Bu hub sahifa SEO sintezasi natijasida qo'shildi. Sinteza aniqladi: o'yinga xos taqqoslash maqolalari umumiy so'rovlar uchun bir-biri bilan raqobatlashardi — ularning barchasi endi shu hub'ga bog'lanadi, hub esa brendsiz umumiy so'rovlarni o'ziga oladi. Bundan tashqari kamida uchta maqola bu sahifaga havola berib bo'lgan edi, ya'ni u ichki havola grafida allaqachon mavjud.",
+  "siblings": [],
+  "cannibalisationFixes": [
+    {
+      "with": [
+        "pubg-uc-qayerdan-sotib-olish-taqqoslash",
+        "mobile-legends-olmos-arzon-qayerdan-olish",
+        "free-fire-olmos-arzon-qayerdan-olish"
+      ],
+      "problem": "O'yinga xos taqqoslash maqolalari brendsiz umumiy so'rovlarga ham urinardi.",
+      "fix": "Hub brendsiz umumiy so'rovlarni oladi va to'lov usullari mavzusini egallaydi; o'yin maqolalari esa faqat o'z o'yini nomi bilan keladigan so'rovlarga qaratiladi va hub'ga havola beradi."
+    }
+  ],
+  "mustLinkTo": [
+    "/oyinlar",
+    "oyin-valyutasi-qayerdan-arzon",
+    "pubg-mobile-player-id-qayerda",
+    "mobile-legends-user-id-server-id-qayerda"
+  ]
+}

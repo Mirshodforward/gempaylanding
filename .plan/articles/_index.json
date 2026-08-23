@@ -112,11 +112,25 @@
     "pillar": false
   },
   {
+    "slug": "oyin-valyutasi-qayerdan-arzon",
+    "game": null,
+    "type": "comparison",
+    "rank": 16,
+    "pillar": true
+  },
+  {
     "slug": "free-fire-bepul-olmos-haqiqatmi",
     "game": "free-fire",
     "type": "trust",
     "rank": 17,
     "pillar": false
+  },
+  {
+    "slug": "oyin-pul-xavfsiz-toldirish",
+    "game": null,
+    "type": "trust",
+    "rank": 17,
+    "pillar": true
   },
   {
     "slug": "mobile-legends-olmos-nima-va-paketlar",

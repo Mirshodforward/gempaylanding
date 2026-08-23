@@ -59,9 +59,23 @@ const PRICE_RE =
 /** O'zbek matnida bo'lmasligi kerak bo'lgan apostroflar */
 const BAD_APOSTROPHE = /[ʻʼ‘’´`]/;
 
-/** Xavfli maslahat — mahsulot HECH QACHON bularni so'ramaydi */
+/**
+ * Xavfli maslahat — mahsulot HECH QACHON parol yoki kod so'ramaydi.
+ *
+ * MUHIM NOZIKLIK: maqolalar aynan shu jumlalarni FIRIBGARLIK NAMUNASI
+ * sifatida keltiradi («"Akkauntingizni bering" degan takliflardan
+ * ehtiyot bo'ling»). Ya'ni iboraning o'zi hali muammo emas — muammo uni
+ * MASLAHAT sifatida berish. Shuning uchun yaqin atrofda ogohlantirish
+ * belgisi bo'lsa, tekshiruv o'tkazib yuboriladi va bu HAR DOIM
+ * ogohlantirish (`warn`) darajasida qoladi: qaror odamga havola qilinadi,
+ * chunki buni ishonchli aniqlaydigan qoida yo'q.
+ */
 const UNSAFE_RE =
   /(parolingizni\s+(bering|yuboring|kiriting)|SMS\s*kod(ingiz)?ni\s+(bering|yuboring)|akkauntingizni\s+bering|hisobingizga\s+kirish\s+uchun\s+parol)/i;
+
+/** Ogohlantirish konteksti — bu so'zlar bo'lsa, jumla maslahat emas, ogohlik */
+const WARNING_CTX =
+  /(firibgar|aldov|ehtiyot|xavf|ishonmang|bermang|yo'l qo'ymang|hech qachon|taklif|scam|yo'qotish)/i;
 
 function checkText(where, strings, { uzbek = true } = {}) {
   for (const s of strings) {
@@ -69,7 +83,9 @@ function checkText(where, strings, { uzbek = true } = {}) {
     if (uzbek && BAD_APOSTROPHE.test(s)) {
       fail(where, `noto'g'ri apostrof (faqat ASCII ') → "${s.slice(0, 90)}"`);
     }
-    if (UNSAFE_RE.test(s)) fail(where, `xavfli maslahat → "${s.slice(0, 120)}"`);
+    if (UNSAFE_RE.test(s) && !WARNING_CTX.test(s)) {
+      warn(where, `xavfli bo'lishi mumkin, ko'rib chiqing → "${s.slice(0, 140)}"`);
+    }
   }
 }
 
@@ -174,6 +190,12 @@ async function ingestArticles() {
   if (!existsSync(dir)) return [];
 
   const known = await knownPaths();
+  // Rejalashtirilgan barcha maqola sluglari — hali yozilmagan bo'lsa ham
+  const planned = new Set(
+    (await readdir(path.join(ROOT, ".plan", "articles")))
+      .filter((f) => f.endsWith(".json") && !f.startsWith("_"))
+      .map((f) => f.replace(/\.json$/, "")),
+  );
   await mkdir(POSTS, { recursive: true });
 
   // Yozish KECHIKTIRILADI: barcha tekshiruvlar tugamaguncha bironta fayl
@@ -216,7 +238,14 @@ async function ingestArticles() {
     ];
     for (const h of hrefs) {
       const clean = String(h).split("#")[0].replace(/\/$/, "") || "/";
-      if (!known.has(clean)) fail(where, `ichki havola mavjud emas → ${h}`);
+      if (known.has(clean)) continue;
+      // Rejada bor, lekin hali yozilmagan maqola — vaqtinchalik holat.
+      // Keyingi to'lqin kelganda o'zi hal bo'ladi, shuning uchun bu
+      // ogohlantirish. Deploy oldidan `npm run links` o'lik havola
+      // qolmaganini tekshiradi.
+      const slug = clean.startsWith("/blog/") ? clean.slice(6) : null;
+      if (slug && planned.has(slug)) warn(where, `havola hali yozilmagan maqolaga → ${h}`);
+      else fail(where, `ichki havola rejada ham yo'q → ${h}`);
     }
     if (!hrefs.some((h) => String(h).startsWith("/oyinlar/"))) {
       warn(where, "o'yin sahifasiga havola yo'q");

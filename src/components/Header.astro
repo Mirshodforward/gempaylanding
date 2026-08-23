@@ -11,15 +11,19 @@ import Logo from "./Logo.astro";
 import Icon from "./Icon.astro";
 import LocaleSwitcher from "./LocaleSwitcher.astro";
 import { t } from "../i18n/ui";
-import { localePath, botLinkFor, type Locale } from "../data/site";
+import { LOCALES, localePath, botLinkFor, type Locale } from "../data/site";
 
 interface Props {
   locale: Locale;
   /** Joriy sahifaning tilsiz yo'li — til almashtirgich shu yerda qoladi */
   path: string;
+  /** Sahifa qaysi tillarda mavjud (tarjimasiz blog maqolasi uchun) */
+  available?: readonly Locale[];
+  /** Tarjimasi yo'q tilda qayerga o'tish kerak */
+  fallbackPath?: string;
 }
 
-const { locale, path } = Astro.props;
+const { locale, path, available = LOCALES, fallbackPath = "" } = Astro.props;
 const c = t(locale);
 
 const links = [
@@ -44,7 +48,7 @@ const links = [
     </nav>
 
     <div class="hdr__right">
-      <LocaleSwitcher locale={locale} path={path} />
+      <LocaleSwitcher locale={locale} path={path} available={available} fallbackPath={fallbackPath} />
       <a class="btn btn--primary hdr__cta" href={botLinkFor()} target="_blank" rel="noopener">
         <Icon name="telegram" size={17} />
         {c.nav.cta}

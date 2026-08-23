@@ -1,0 +1,121 @@
+{
+  "slug": "oyin-valyutasi-qayerdan-arzon",
+  "game": null,
+  "gameTitle": "Umumiy (barcha o'yinlar)",
+  "type": "comparison",
+  "spec": {
+    "slug": "oyin-valyutasi-qayerdan-arzon",
+    "type": "comparison",
+    "h1": "O'yin valyutasini qayerdan olish arzon: usullar taqqoslandi",
+    "metaTitle": "O'yin puli qayerdan arzon — usullar taqqoslovi",
+    "metaDescription": "O'yin valyutasini rasmiy do'kon, xorijiy sayt va mahalliy xizmat orqali olish: to'lov, kurs, tezlik va xavf bo'yicha halol taqqoslash.",
+    "searchIntent": "Taqqoslash. Foydalanuvchi aniq bir o'yin emas, UMUMAN qayerdan olish arzonroq va xavfsizroq ekanini bilmoqchi. Bu klaster hub sahifasi — o'yinga xos taqqoslash maqolalari shunga bog'lanadi.",
+    "primaryKeyword": "o'yin valyutasi qayerdan arzon",
+    "secondaryKeywords": [
+      "o'yin puli qayerdan olish",
+      "o'yin to'ldirish qayerda arzon",
+      "donat qayerdan olish",
+      "o'yin valyutasi narxi nega farq qiladi",
+      "o'yin to'ldirish o'zbekiston"
+    ],
+    "answerBox": "O'yin valyutasini olishning uchta yo'li bor: o'yin ichidagi rasmiy do'kon, xorijiy vositachi sayt va mahalliy xizmat. O'zbekistonda rasmiy do'kon ko'pincha xorijiy karta so'raydi, xorijiy sayt esa dollarda hisoblab konvertatsiya yo'qotishi qo'shadi. So'mda to'laydigan mahalliy xizmat odatda eng kam qo'shimcha xarajat beradi.",
+    "outline": [
+      {
+        "h2": "Qisqacha: uchta yo'l va ular kimga mos",
+        "covers": "Rasmiy do'kon, xorijiy vositachi, mahalliy xizmat — har birining kuchli va zaif tomoni bitta jadvalda.",
+        "block": "compare-table"
+      },
+      {
+        "h2": "Nega bir xil paket har joyda boshqacha turadi",
+        "covers": "Narx farqining haqiqiy sabablari: valyuta kursi, to'lov tizimi komissiyasi, vositachi ustamasi, hudud narxlari. Hech qanday aniq summa yozilmasin.",
+        "block": "price-logic"
+      },
+      {
+        "h2": "Rasmiy do'kon: qachon eng yaxshi tanlov",
+        "covers": "Halol bo'lish: xorijiy kartasi bor odam uchun rasmiy do'kon ko'pincha eng arzon. Cheklov — O'zbekiston kartalari ko'pincha o'tmaydi.",
+        "block": "prose"
+      },
+      {
+        "h2": "Xorijiy vositachi saytlar",
+        "covers": "Ular nima taklif qiladi, nima uchun arzon ko'rinadi va yashirin xarajat qayerda: konvertatsiya, qo'llab-quvvatlash tili, qaytarish siyosati.",
+        "block": "prose"
+      },
+      {
+        "h2": "Mahalliy xizmat orqali so'mda",
+        "covers": "So'mda to'lov, ID orqali yetkazish, to'lovdan oldin nik tekshiruvi. GemPay shu toifada.",
+        "block": "prose"
+      },
+      {
+        "h2": "Arzonlik ortidagi xavf belgilari",
+        "covers": "Haddan tashqari arzon taklif nimani anglatadi: o'g'irlangan karta bilan to'ldirish (keyin chargeback va akkaunt bloki), akkauntni so'rash, oldindan to'lov talab qilish.",
+        "block": "warning"
+      },
+      {
+        "h2": "Tanlash uchun tekshiruv ro'yxati",
+        "covers": "Nima so'raladi (faqat ochiq ID bo'lishi kerak), narx qachon ko'rsatiladi, chek beriladimi, qo'llab-quvvatlash bormi, to'lov qaysi valyutada.",
+        "block": "checklist"
+      }
+    ],
+    "faq": [
+      {
+        "q": "Nega bir xil paket turli saytlarda har xil turadi?",
+        "a": "Narx uchta narsadan yig'iladi: valyuta kursi, to'lov tizimining komissiyasi va vositachi ustamasi. Dollarda hisoblaydigan sayt kurs o'zgarganda avtomatik qimmatlashadi, so'mda ishlaydigan xizmatda esa bu tebranish kamroq seziladi."
+      },
+      {
+        "q": "Eng arzon taklifni tanlash to'g'rimi?",
+        "a": "Har doim emas. Bozor narxidan sezilarli past taklif odatda ikki narsadan biri: o'g'irlangan karta bilan to'ldirish yoki umuman yetkazmaslik. Birinchisida bir necha kundan keyin o'tkazma bekor qilinadi va akkaunt bloklanishi mumkin."
+      },
+      {
+        "q": "Xizmat akkaunt parolimni so'rasa nima qilay?",
+        "a": "To'xtating. O'yin valyutasini to'ldirish uchun faqat OCHIQ Player ID kerak — bu profilda har kim ko'radigan raqam. Parol, SMS kod yoki akkauntni vaqtincha berish hech qanday to'ldirish usulida talab qilinmaydi."
+      },
+      {
+        "q": "Narx qachon aniq ko'rinishi kerak?",
+        "a": "To'lovdan oldin, aniq summa sifatida. Narxni faqat to'lagandan keyin aytadigan yoki 'kelishamiz' deydigan xizmat bilan ishlamang."
+      },
+      {
+        "q": "Chek yoki buyurtma tarixi nega kerak?",
+        "a": "Bahsli holatda ko'rsatadigan yagona dalil shu. Buyurtma tarixi bo'lmagan xizmatda yetkazilmagan to'lovni isbotlash deyarli imkonsiz."
+      }
+    ],
+    "schema": [
+      "BlogPosting",
+      "FAQPage",
+      "BreadcrumbList"
+    ],
+    "internalLinks": [
+      "/oyinlar",
+      "pubg-uc-qayerdan-sotib-olish-taqqoslash",
+      "mobile-legends-olmos-arzon-qayerdan-olish",
+      "free-fire-olmos-arzon-qayerdan-olish",
+      "oyin-pul-xavfsiz-toldirish"
+    ],
+    "wordCount": 1500
+  },
+  "publishRank": 16,
+  "gameKeywords": {
+    "primary": [],
+    "questions": [],
+    "russian": []
+  },
+  "competitorResearch": "Bu hub sahifa SEO sintezasi natijasida qo'shildi. Sinteza aniqladi: o'yinga xos taqqoslash maqolalari umumiy so'rovlar uchun bir-biri bilan raqobatlashardi — ularning barchasi endi shu hub'ga bog'lanadi, hub esa brendsiz umumiy so'rovlarni o'ziga oladi. Bundan tashqari kamida uchta maqola bu sahifaga havola berib bo'lgan edi, ya'ni u ichki havola grafida allaqachon mavjud.",
+  "siblings": [],
+  "cannibalisationFixes": [
+    {
+      "with": [
+        "pubg-uc-qayerdan-sotib-olish-taqqoslash",
+        "mobile-legends-olmos-arzon-qayerdan-olish",
+        "free-fire-olmos-arzon-qayerdan-olish"
+      ],
+      "problem": "O'yinga xos taqqoslash maqolalari brendsiz umumiy so'rovlarga ham urinardi.",
+      "fix": "Hub brendsiz umumiy so'rovlarni oladi va to'lov usullari mavzusini egallaydi; o'yin maqolalari esa faqat o'z o'yini nomi bilan keladigan so'rovlarga qaratiladi va hub'ga havola beradi."
+    }
+  ],
+  "mustLinkTo": [
+    "/oyinlar",
+    "pubg-uc-qayerdan-sotib-olish-taqqoslash",
+    "mobile-legends-olmos-arzon-qayerdan-olish",
+    "free-fire-olmos-arzon-qayerdan-olish",
+    "oyin-pul-xavfsiz-toldirish"
+  ]
+}

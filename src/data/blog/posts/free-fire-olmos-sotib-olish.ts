@@ -1,0 +1,90 @@
+// AVTOMATIK KIRITILGAN — `npm run ingest`.
+// Manba reja: .plan/articles/free-fire-olmos-sotib-olish.json
+// Qo'lda tahrirlash mumkin; keyingi ingest faqat yangi fayllarni qo'shadi.
+
+import type { Article } from "../types";
+
+const article: Article = {
+  slug: "free-fire-olmos-sotib-olish",
+  game: "free-fire",
+  type: "howto",
+  datePublished: "2026-08-23",
+  dateModified: "2026-08-23",
+  pillar: true,
+  keywords: ["free fire olmos sotib olish","free fire olmos to'ldirish","ff olmos sotib olish","free fire donat uzbekistan","free fire olmos click orqali","free fire olmos payme uzcard","garena free fire to'ldirish","free fire player id bilan olmos"],
+  locales: {
+    uz: {
+      title: "Free Fire olmos sotib olish — O'zbekistonda so'mda, 2 daqiqada",
+      metaTitle: "Free Fire olmos sotib olish: so'mda 2 daqiqada",
+      metaDescription: "Free Fire olmos sotib olish: Player ID kiritasiz, nik bepul tekshiriladi, UzCard, HUMO, Click yoki Payme bilan so'mda to'laysiz. Olmos 2 daqiqada keladi.",
+      excerpt: "Player ID kiritasiz, nik bepul tekshiriladi, so'mda mahalliy karta bilan to'laysiz — Free Fire olmosi odatda 2 daqiqada akkauntga tushadi.",
+      answer: "Free Fire olmosini O'zbekistonda so'mda to'ldirish uchun GemPay botida Free Fire'ni tanlab, Player ID (UID) ni kiritasiz. Bot to'lovdan oldin akkaunt nikini bepul ko'rsatadi. Nikni tasdiqlagach paketni tanlab, UzCard, HUMO, Click, Payme yoki Paynet bilan to'laysiz. Olmos odatda 2 daqiqada tushadi. Parol, VPN yoki xorijiy karta kerak emas.",
+      body: [
+    { t: "p", text: "O'zbekistondan Free Fire olmosini to'ldirmoqchi bo'lgan odam odatda bitta joyda tiqilib qoladi: xalqaro saytlar Visa yoki kripto so'raydi, mahalliy karta esa o'tmaydi. GemPay shu bo'shliqni yopadi — <a href=\"/oyinlar/free-fire\">Free Fire to'ldirish sahifasi</a> so'mda, UzCard va HUMO bilan ishlaydi va akkauntingizdan faqat ochiq Player ID ni so'raydi. Quyida butun jarayon boshidan oxirigacha, tanish xatolari bilan birga." },
+    { t: "h2", id: "qisqacha-nima-kerak", text: "Qisqacha: nima kerak va qancha vaqt oladi" },
+    { t: "facts", items: [{"k":"Kerak bo'lgan yagona ma'lumot","v":"Player ID (UID) — odatda 8-12 raqamli ochiq son"},{"k":"To'lov usullari","v":"UzCard, HUMO, Click, Payme, Paynet"},{"k":"Valyuta","v":"So'm, konvertatsiyasiz"},{"k":"Yetkazish","v":"Odatda 2 daqiqada, avtomatik"},{"k":"Nik tekshiruvi","v":"To'lovdan oldin, bepul"},{"k":"Versiya","v":"Global; Free Fire va Free Fire MAX bitta balansni bo'lishadi"},{"k":"Kerak emas","v":"Parol, SMS kod, VPN, Visa yoki Mastercard, kripto"}] },
+    { t: "p", text: "Ko'p vaqt oladigan yagona qism — UID ni topish; qolgani bir necha bosishdan iborat. Butun jarayon Telegram ichida o'tadi, alohida sayt ochish yoki ro'yxatdan o'tish talab qilinmaydi." },
+    { t: "h2", id: "player-id-uid-nima", text: "Player ID (UID) nima va nima uchun faqat shu kerak" },
+    { t: "p", text: "UID — Free Fire akkauntining raqamli identifikatori. U profilingizda ochiq turadi, do'stlar ro'yxatida ham, klanda ham ko'rinadi va akkaunt yaratilgandan keyin o'zgarmaydi. Nikni siz istagan paytda almashtirishingiz mumkin, UID esa o'sha-o'sha qoladi. To'ldirish aynan shuning uchun nik bo'yicha emas, UID bo'yicha ishlaydi: nik takrorlanishi va o'zgarishi mumkin, UID esa yagona." },
+    { t: "p", text: "UID ni berish xavfsiz. U bilan hech kim akkauntingizga kira olmaydi, chunki kirish Google, Facebook yoki VK hisobi orqali amalga oshadi va parol o'sha xizmatda qoladi. GemPay hech qachon parol, SMS tasdiqlash kodi yoki akkauntga kirish huquqini so'ramaydi. Kimdir sizdan login va parolni so'rasa yoki <strong>akkauntingizga kirib to'ldirib beraman</strong> desa, bu firibgarlik: bunday holatda akkaunt o'g'irlanadi va uni qaytarish deyarli imkonsiz bo'lib qoladi." },
+    { t: "p", text: "E-mail, telefon raqami yoki nik orqali to'ldirib bo'lmaydi — provayder Garena serveriga aynan UID bilan murojaat qiladi. UID ni berish qaysi holatda xavfsiz va qaysi va'dalar aslida akkaunt o'g'irlash sxemasi ekani <a href=\"/blog/free-fire-bepul-olmos-haqiqatmi\">bepul olmos va'dalari haqidagi maqolada</a> batafsil yozilgan." },
+    { t: "h2", id: "uid-ni-qayerdan-topasiz", text: "UID ni qayerdan topasiz: 4 qadam" },
+    { t: "steps", items: [{"title":"Free Fire yoki Free Fire MAX ni oching","text":"Ikkala ilovada UID bir xil, chunki ular bitta akkauntni bo'lishadi. Qaysi biri telefoningizda bo'lsa, o'shani ochsangiz kifoya."},{"title":"Profil avatarini bosing","text":"Asosiy ekranda avatar odatda chap yuqori burchakda turadi; uni bosganingizda profil kartochkasi ochiladi."},{"title":"Nik ostidagi raqamlar qatorini toping","text":"Bu sizning UID'ingiz — odatda 8-12 ta raqam, harflarsiz, yonida ID yoki UID yozuvi bilan."},{"title":"Nusxalash tugmasini bosing","text":"Raqam yonidagi nusxalash belgisi UID ni buferga oladi. Qo'lda terganda 0 bilan O ni almashtirib yuborish yoki oxiriga probel qo'shib qo'yish ko'p uchraydigan xato, nusxalash shundan qutqaradi."}] },
+    { t: "h2", id: "botda-toldirish", text: "GemPay botida olmos to'ldirish: bosqichma-bosqich" },
+    { t: "steps", items: [{"title":"Botni oching","text":"Telegram'da @Gempayuz_bot ni oching va Mini App ni ishga tushiring. Alohida ilova o'rnatish yoki ro'yxatdan o'tish kerak emas."},{"title":"Free Fire ni tanlang","text":"O'yinlar ro'yxatida Free Fire alohida bo'lim sifatida turadi. MAX o'ynasangiz ham shu bo'limni tanlaysiz."},{"title":"UID ni joylang","text":"Buferdagi raqamni maydonga qo'ying. Boshqa hech qanday ma'lumot so'ralmaydi."},{"title":"Nikni bepul tekshiring","text":"Bot Garena serveridan akkaunt nikini olib ekranda ko'rsatadi. Bu bosqich bepul va to'lovsiz: ko'rsatilgan nik sizniki bo'lmasa, to'lamang, UID da xato bor."},{"title":"Paketni tanlang","text":"Olmos paketlari va Membership variantlari ro'yxatda turadi, joriy narx har bir paket yonida so'mda ko'rinadi."},{"title":"So'mda to'lang","text":"UzCard, HUMO, Click, Payme yoki Paynet dan qulayini tanlang. To'lov so'mda o'tadi, konvertatsiya bo'lmaydi."},{"title":"O'yinni qayta oching","text":"To'lov tasdiqlangach olmos avtomatik yoziladi. Balans darrov yangilanmasa, o'yinni fon rejimidan chiqarib emas, to'liq yopib qayta oching."}] },
+    { t: "h2", id: "tolov-usullari", text: "To'lov usullari: qaysi birini tanlash kerak" },
+    { t: "table", caption: "GemPay botidagi to'lov usullari; barchasi so'mda ishlaydi.", head: ["Usul","Qanday to'laysiz","Ilova kerak","Kimga qulay"], rows: [["UzCard","Karta raqami va SMS tasdiq orqali to'g'ridan-to'g'ri","-","Kartasi bor, qo'shimcha ilovasiz to'lamoqchi bo'lganlarga"],["HUMO","UzCard bilan bir xil tartibda, karta raqami orqali","-","Ish haqi HUMO kartasiga tushadiganlarga"],["Click","To'lov Click ilovasida tasdiqlanadi","+","Telefonida Click o'rnatilgan va tez tasdiqlashni istaganlarga"],["Payme","Payme ilovasida saqlangan kartadan tasdiqlaysiz","+","Karta raqamini har safar terishni istamaydiganlarga"],["Paynet","Naqd pul bilan to'ldirilgan hamyondan yechiladi","+","Kartasi yo'q yoki naqd bilan ishlaydiganlarga"]] },
+    { t: "p", text: "Visa, Mastercard, kripto hamyon va xorijiy to'lov tizimlari qabul qilinmaydi. Bu cheklov emas, balki mahalliy foydalanuvchi uchun afzallik: so'mdagi kartadan so'mda to'laganingizda valyuta konvertatsiyasi ham, bankning xorijiy tranzaksiya komissiyasi ham qo'shilmaydi. Xalqaro top-up saytlarida O'zbekiston kartasi ko'pincha aynan shu bosqichda rad etiladi." },
+    { t: "h2", id: "narx-qanday-shakllanadi", text: "Narx qanday shakllanadi va nega o'zgarib turadi" },
+    { t: "p", text: "Free Fire olmosining so'mdagi narxi uch bosqichda shakllanadi: Garena paket uchun bazaviy narx belgilaydi, provayder uni USDT da hisoblaydi, bot esa joriy USDT kursiga ko'ra yakuniy so'm summasini chiqaradi. Kurs kun davomida o'zgarib turadi, shuning uchun saytda qat'iy raqam yozib qo'yish foydalanuvchini chalg'itgan bo'lardi: joriy narx doim botda, paketni tanlaganingizda ko'rinadi." },
+    { t: "p", text: "Paketlar odatda asosiy miqdor va bonus ko'rinishida tuziladi, shu sababli kattaroq paketda bitta olmosning tannarxi pastroqqa tushadi. Bu GemPay chegirmasi emas, Garena paket tuzilishining natijasi. Paketlar tarkibi va bir xil summaga nega har xil miqdor kelishi <a href=\"/blog/free-fire-olmos-nima-va-paketlari\">Free Fire olmos paketlari haqidagi maqolada</a> ochib berilgan, usullarni bir-biri bilan solishtirish esa <a href=\"/blog/free-fire-olmos-arzon-qayerdan-olish\">arzon va xavfsiz to'ldirish usullari taqqoslovida</a>." },
+    { t: "p", text: "Solishtirganda bir olmosga to'g'ri keladigan summani hisoblab ko'ring: paketdagi umumiy olmos miqdorini yakuniy summaga bo'lsangiz, qaysi paket qulayroq ekani darrov ko'rinadi. Xuddi shu hisob turli xizmatlarni taqqoslashda ham ishlaydi, chunki reklamadagi chegirma ko'pincha kichik paketning yuqori tannarxini yashiradi." },
+    { t: "note", text: "Yakuniy summa paketni tanlaganingizdan keyin ekranda chiqadi. Siz tasdiqlamaguningizcha kartadan hech narsa yechilmaydi, nik tekshiruvi esa shu bosqichgacha bepul qoladi.", title: "To'lovdan oldin nima ko'rasiz", tone: "info" },
+    { t: "h2", id: "toldirgandan-keyin", text: "To'ldirgandan keyin: olmos qayerda ko'rinadi" },
+    { t: "p", text: "To'lov o'tgach olmos akkauntga avtomatik yoziladi, lekin o'yin buni darrov ko'rsatmasligi mumkin. Ilovani fon rejimiga tashlab qo'ygan bo'lsangiz, balans eski holicha turaveradi. Ilovani to'liq yopib qayta kirsangiz, olmos miqdori odatda asosiy ekranning yuqori qismida, olmos belgisi yonida yangilangan holda chiqadi." },
+    { t: "p", text: "Free Fire va Free Fire MAX bitta akkauntni bo'lishgani uchun balans ham umumiy: qaysi ilovadan qarasangiz ham bir xil raqam turadi. Paketlar asosiy miqdor va bonus ko'rinishida kelgani uchun balansga paket nomidagi raqamdan ko'proq olmos tushishi mumkin; ayrim aksiya bonuslarida sarflash bo'yicha cheklov bo'ladi va bu o'yin ichidagi tavsifda ko'rsatiladi." },
+    { t: "p", text: "Buyurtma raqami va to'lov chekini saqlab qo'ying. Olmos 15 daqiqadan keyin ham ko'rinmasa, shu ikkisi bilan <a href=\"/blog/free-fire-olmos-kelmadi-id-topilmadi\">olmos kelmagan va ID topilmagan holatlar bo'yicha yo'riqnomaga</a> qarang yoki @StarsPaymeeSupport ga yozing: buyurtmani raqam bo'yicha tekshirish bir necha daqiqa oladi." },
+    { t: "h2", id: "tekshiruv-royxati", text: "Xatolardan saqlanish uchun tekshiruv ro'yxati" },
+    { t: "p", text: "Quyidagi bandlar qo'llab-quvvatlashga ko'p tushadigan holatlardan kelib chiqqan. Har biri bir necha soniya oladi, lekin buyurtmani noto'g'ri akkauntga yuborishdan saqlaydi." },
+    { t: "list", ordered: false, items: ["UID ni qo'lda termang, profildagi nusxalash tugmasidan foydalaning.","Botda chiqqan nik aynan sizniki ekaniga ishonch hosil qiling; boshqa nik chiqsa, to'lovni tasdiqlamang.","Guest akkauntga to'ldirmang: avval uni Google, Facebook yoki VK ga bog'lang, aks holda telefon almashsa akkaunt ham, olmos ham qaytmaydi.","Akkauntingiz Global versiyada ekanini bilib oling: region birinchi kirishda biriktiriladi va keyin o'zgartirilmaydi.","To'lov chekini va buyurtma raqamini kamida bir necha kun saqlang.","Login, parol va SMS kodini hech kimga bermang. GemPay ularni hech qachon so'ramaydi.","Bepul olmos generatori yoki akkauntni berishni talab qiladigan arzon to'ldirish takliflaridan uzoq turing: ular olmos berish uchun emas, akkauntni olish uchun ishlaydi.","VPN bilan region almashtirishga urinmang: akkaunt regioni bundan o'zgarmaydi, ammo xavfsizlik tekshiruvi ishga tushishi mumkin."] },
+    { t: "note", text: "GemPay Garena yoki boshqa nashriyotning rasmiy hamkori emas. Xizmat provayder marshruti orqali ishlaydi, olmos esa o'yin akkauntiga to'g'ridan-to'g'ri yoziladi, hech qanday oraliq akkauntsiz.", title: "Rasmiy status haqida", tone: "warn" },
+    { t: "h2", id: "hozir-toldirish", text: "Hozir to'ldirish" },
+    { t: "p", text: "Nik tekshiruvi bepul, shuning uchun botni to'lovsiz sinab ko'rish mumkin: UID ni kiriting va bot to'g'ri akkauntni topadimi, o'sha yerda ko'rasiz. Free Fire bo'yicha paketlar <a href=\"/oyinlar/free-fire\">Free Fire to'ldirish sahifasida</a>, boshqa o'yinlar esa <a href=\"/oyinlar\">o'yinlar katalogida</a> turadi. Savol chiqsa yoki to'lov osilib qolsa, @StarsPaymeeSupport ga buyurtma raqami bilan yozing." },
+    { t: "cta", text: "Free Fire olmosini so'mda to'ldirish uchun @Gempayuz_bot ni oching va nikni bepul tekshiring." },
+    { t: "links", title: "Free Fire bo'yicha boshqa maqolalar", items: [{"label":"Olmos kelmadi yoki ID topilmadi: sabablari va yechimi","href":"/blog/free-fire-olmos-kelmadi-id-topilmadi"},{"label":"Free Fire olmosini arzon va xavfsiz qayerdan olish","href":"/blog/free-fire-olmos-arzon-qayerdan-olish"},{"label":"Free Fire olmosi nima va qanday paketlar bor","href":"/blog/free-fire-olmos-nima-va-paketlari"},{"label":"Bepul olmos: qaysi usullar haqiqiy, qaysilari firibgarlik","href":"/blog/free-fire-bepul-olmos-haqiqatmi"},{"label":"Free Fire to'ldirish sahifasi","href":"/oyinlar/free-fire"},{"label":"Barcha o'yinlar katalogi","href":"/oyinlar"}] }
+      ],
+      faq: [
+              {
+                      "q": "Free Fire olmos sotib olish uchun akkaunt parolim kerakmi?",
+                      "a": "Yo'q. Faqat Player ID (UID) kerak, u ochiq ma'lumot va uni berish xavfsiz. Parol, SMS kod yoki Google, Facebook, VK logini hech qachon so'ralmaydi. Kimdir bulardan birini so'rasa, bu firibgarlik va akkauntni o'g'irlash urinishi."
+              },
+              {
+                      "q": "Olmos qancha vaqtda keladi?",
+                      "a": "Odatda 2 daqiqa ichida. Garena tomonida navbat bo'lgan paytlarda bu 10-15 daqiqagacha cho'zilishi mumkin. Balans yangilanmasa, o'yinni fon rejimida qoldirmay, to'liq yopib qayta oching."
+              },
+              {
+                      "q": "Visa yoki Mastercard bo'lmasa to'ldira olamanmi?",
+                      "a": "Ha. GemPay aynan mahalliy kartalar uchun ishlaydi: UzCard, HUMO, Click, Payme va Paynet. Xorijiy karta ham, VPN ham, kripto ham kerak emas, to'lov so'mda o'tgani uchun konvertatsiya qo'shilmaydi."
+              },
+              {
+                      "q": "Free Fire MAX o'ynasam, olmos qayerga tushadi?",
+                      "a": "Free Fire va Free Fire MAX bitta akkauntni va bitta olmos balansini bo'lishadi. Qaysi biriga to'ldirsangiz ham, olmos ikkalasida ko'rinadi, chunki UID bir xil. Botda alohida MAX bo'limini qidirish shart emas."
+              },
+              {
+                      "q": "Narxni oldindan qayerdan bilaman?",
+                      "a": "Narx botda, paketni tanlaganingizda ko'rsatiladi. U USDT kursiga bog'liq bo'lgani uchun kun davomida o'zgarib turadi, shu sababli saytda qat'iy so'm narxi e'lon qilinmaydi. To'lovni tasdiqlashdan oldin aniq summani ekranda ko'rasiz."
+              },
+              {
+                      "q": "Nikimni to'lovdan oldin tekshira olamanmi?",
+                      "a": "Ha, va bu bepul. UID ni kiritganingizdan so'ng bot akkaunt nikini ko'rsatadi. Nik sizniki bo'lmasa, to'lamang va UID ni qayta tekshiring. Bu noto'g'ri akkauntga to'ldirishning oldini oladigan asosiy himoya."
+              },
+              {
+                      "q": "Qaysi versiya qo'llab-quvvatlanadi?",
+                      "a": "Global versiya. Free Fire akkaunt regioni birinchi kirishda biriktiriladi va keyin o'zgartirilmaydi, shuning uchun ayrim regional akkauntlarga to'ldirish marshruti mavjud emas. Nik tekshiruvi bu holatni to'lovdan oldin ko'rsatib beradi, ya'ni pul sarflamasdan bilib olasiz."
+              }
+      ],
+    },
+  },
+};
+
+export default article;
