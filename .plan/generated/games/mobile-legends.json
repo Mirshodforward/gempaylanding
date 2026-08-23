@@ -1,0 +1,249 @@
+{
+  "slug": "mobile-legends",
+  "uz": {
+    "answer": "Mobile Legends'da profil ID ikki qismdan iborat: 12345678(1234) - birinchisi User ID, qavs ichidagi to'rt raqam esa Server (Zone) ID, va ikkalasi ham kerak. GemPay botida shu ikkovini kiritasiz, tizim o'yin serveridan nickname'ni bepul ko'rsatadi, siz tasdiqlaysiz, so'mda to'laysiz va olmos taxminan bir daqiqada tushadi. Parol yoki SMS kod so'ralmaydi.",
+    "faq": [
+      {
+        "q": "Advance Server akkauntimga olmos to'ldirsam bo'ladimi?",
+        "a": "Advance Server - alohida akkaunt: u yerdagi User ID va Server ID asosiy o'yindagidan farq qiladi, olmos esa ular orasida o'tmaydi. Botga asosiy akkaunt ID'sini kiriting. Advance Server uchun kerak bo'lsa, avval @StarsPaymeeSupport'ga yozib, shunday buyurtma qabul qilinishini aniqlab oling."
+      },
+      {
+        "q": "Starlight va Weekly Diamond Pass bir vaqtning o'zida ishlaydimi?",
+        "a": "Ha, ular alohida mahsulot va bir-birini bekor qilmaydi. Weekly Diamond Pass bir qism olmosni darhol beradi, qolganini bir hafta davomida har kuni o'yinga kirganingizda qo'shadi. Starlight esa oylik trek, fragment do'koni va reytingdagi qo'shimchalarni ochadi. Ikkalasini bitta akkauntda parallel yuritish mumkin."
+      },
+      {
+        "q": "Paketdagi olmos soni bonus bilan qo'shib yozilganmi?",
+        "a": "Ha, MLBB paketlari asosiy va bonus qismdan tuzilgan - masalan 78+8 jami 86 olmos beradi. Akkauntga to'liq son tushadi, lekin Moonton'ning ayrim recharge aksiyalarida hisob faqat asosiy qismdan yuritiladi, shuning uchun aksiya shartini o'yin ichida o'qib chiqqan ma'qul."
+      },
+      {
+        "q": "Magic Wheel'dan Legend skin olish uchun qancha olmos kerak?",
+        "a": "Magic Wheel kafolatni aylantirishlar soni bilan beradi - odatda 200 ta aylantirishdan keyin, ya'ni bir necha ming olmos hisobiga. Bittalab aylantirgandan ko'ra ko'p aylantirish varianti tejamliroq chiqadi. Shartlar rotatsiyadan rotatsiyaga o'zgarib turadi, shuning uchun paket olishdan oldin o'yin ichidagi tafsilotni oching."
+      },
+      {
+        "q": "Emulyator yoki kompyuter orqali o'ynasam, ID boshqa bo'ladimi?",
+        "a": "Yo'q. Emulyatorda ham xuddi shu akkauntga kirasiz, User ID va Server ID o'zgarmaydi. Profilni ochib, qavs bilan birga o'sha raqamni olasiz. Telefon va kompyuter uchun alohida to'ldirish yo'nalishi yo'q."
+      },
+      {
+        "q": "Olmos o'rniga to'g'ridan-to'g'ri skin buyurtma qilsam bo'ladimi?",
+        "a": "Yo'q, bot akkauntingizga olmos yuboradi, skinni o'yin ichidan o'zingiz tanlaysiz. Bunda hech kim akkauntingizga kirmaydi va tanlangan skin sizning hisobingizda ochiladi. Kerakli olmos miqdorini oldindan hisoblab, shunga mos paketni olganingiz qulay."
+      }
+    ],
+    "gotcha": {
+      "title": "Starlightni oy oxirida olish",
+      "text": "Starlight a'zoligi kalendar oyiga bog'langan: qaysi kuni olsangiz ham, u oy tugashi bilan yopiladi. Oyning oxirgi kunlarida olsangiz, mavsum skini qo'lingizda qoladi, lekin haftalik topshiriqlar va daraja mukofotlarining katta qismini yig'ib ulgurmaysiz. Uni oy boshida olgan ma'qul."
+    },
+    "h1": "Mobile Legends olmos to'ldirish: User ID va Server ID bilan",
+    "idSteps": [
+      "O'yinni oching va ekranning chap yuqorisidagi avatar suratini bosing.",
+      "Ochilgan Profile oynasida nickname ostidagi ID qatorini toping.",
+      "Raqam 12345678(1234) ko'rinishida: birinchi qism User ID, qavs ichidagi to'rt raqam Server ID.",
+      "ID ustiga bosib nusxa oling, qo'lda ko'chirganda bitta raqam adashib ketishi oson.",
+      "Nickname'ni ham eslab qoling - bot uni ko'rsatganda solishtirish oson bo'ladi."
+    ],
+    "intro": [
+      "Mobile Legends: Bang Bang'da olmos - skin do'koni, Magic Wheel va Lucky Box aylantirishlari, Starlight a'zoligi va yangi geroylarni ochish uchun ishlatiladigan asosiy valyuta. Uni ko'proq reyting o'ynaydigan, mavsumiy skinni yig'ib boradigan va do'stiga sovg'a qilmoqchi bo'lgan o'yinchilar oladi. Nick o'zgartirish kartasi hamda recall va emote effektlari ham shu valyutada sotiladi.",
+      "O'yin ichidagi do'kon to'lovni Google Play yoki App Store balansiga yo'naltiradi, u yerda UzCard va HUMO ko'pincha o'tmaydi; xorijiy top-up saytlari esa dollarda ishlaydi va Visa, Mastercard yoki kripto so'raydi. GemPay botida hisob so'mda chiqadi, to'lovni Click, Payme, Paynet yoki mahalliy karta bilan yopasiz, olmos esa taxminan bir daqiqada akkauntga tushadi."
+    ],
+    "metaDescription": "MLBB olmosini User ID va qavs ichidagi Server ID orqali to'ldiring: bot nickni bepul ko'rsatadi, tasdiqlagach so'mda Click, Payme yoki UzCard bilan to'laysiz.",
+    "metaTitle": "Mobile Legends olmos sotib olish - MLBB donat | GemPay",
+    "packages": [
+      "Olmos paketlari kichik pog'onadan boshlanib kattaga qarab ko'tariladi - odatda 86, 172, 257, 344, 429, 514, 706 va undan yuqori miqdorlar; har biri asosiy va bonus qismdan yig'ilgani uchun ro'yxatda 78+8 ko'rinishidagi yozuvni uchratasiz.",
+      "Ular yonida olmos miqdori emas, muddat sotiladigan ikkita mahsulot turadi: Starlight a'zoligi (oddiy va Plus) hamda Weekly Diamond Pass - birinchisi oylik trek bilan fragment do'konini ochadi, ikkinchisi bir qism olmosni darhol, qolganini bir hafta davomida kunlik kirishda beradi.",
+      "Birinchi xarid uchun ikki barobar bonusni Moonton belgilaydi va GemPay unga ta'sir qilmaydi; joriy narx botda ko'rsatiladi."
+    ],
+    "spendOn": [
+      "Skin do'konidagi Elite, Epic va Legend skinlar",
+      "Magic Wheel va Lucky Box aylantirishlari",
+      "Starlight a'zoligi va uning fragment do'koni",
+      "Weekly Diamond Pass hamda Twilight Pass obunalari",
+      "Battle Point yetmaganda yangi geroyni ochish",
+      "Nick o'zgartirish kartasi, emote va recall effektlari"
+    ],
+    "steps": [
+      {
+        "title": "Botda Mobile Legends bo'limini oching",
+        "text": "@Gempayuz_bot katalogida Mobile Legends: Bang Bang'ni tanlaysiz. Ro'yxatda Magic Chess: Go Go alohida o'yin sifatida turadi, shuning uchun MLBB olmosi uchun aynan Mobile Legends bo'limiga kiring."
+      },
+      {
+        "title": "User ID ni kiriting",
+        "text": "Profildagi 8-9 xonali raqamni qavssiz, bo'shliqsiz kiritasiz. Bu akkauntning o'zini bildiradi, lekin yolg'iz o'zi yetarli emas."
+      },
+      {
+        "title": "Server (Zone) ID ni alohida maydonga yozing",
+        "text": "Qavs ichidagi to'rt xonali raqam ikkinchi maydonga kiritiladi. Ruscha manbalarda u Zone ID deb yuritiladi, farqi yo'q. Serversiz bir xil User ID boshqa serverdagi begona akkauntga to'g'ri kelishi mumkin."
+      },
+      {
+        "title": "Chiqqan nickname'ni o'qing",
+        "text": "Tizim o'yin serveridan nickname'ni bepul ko'rsatadi. O'zingizniki bo'lsa tasdiqlaysiz, notanish nick chiqsa Server ID ni qayta tekshirasiz. Tasdiqlanmaguncha hisobdan hech narsa yechilmaydi."
+      },
+      {
+        "title": "Paketni tanlab so'mda to'lang",
+        "text": "Olmos miqdorini yoki Starlight, Weekly Diamond Pass kabi obunani tanlaysiz va UzCard, HUMO, Click, Payme yoxud Paynet orqali to'laysiz. Olmos taxminan bir daqiqada akkauntga tushadi."
+      }
+    ]
+  },
+  "ru": {
+    "metaTitle": "Купить алмазы Mobile Legends — донат MLBB | GemPay",
+    "metaDescription": "Пополните алмазы MLBB по User ID и Server ID в скобках: бот бесплатно покажет ник, после подтверждения платите в сумах через Click, Payme или UzCard.",
+    "h1": "Пополнение алмазов Mobile Legends: User ID и Server ID",
+    "answer": "В Mobile Legends ID профиля состоит из двух частей: 12345678(1234) — первое число это User ID, а четыре цифры в скобках Server (Zone) ID, и нужны оба. В боте GemPay вы вводите оба номера, система бесплатно показывает nickname с игрового сервера, вы подтверждаете, платите в сумах, и алмазы приходят примерно за минуту. Пароль или SMS-код не запрашиваются.",
+    "intro": [
+      "В Mobile Legends: Bang Bang алмазы — основная валюта для магазина скинов, прокруток Magic Wheel и Lucky Box, подписки Starlight и открытия новых героев. Чаще их берут те, кто играет рейтинг, собирает сезонный скин или хочет сделать подарок другу. Карта смены ника, а также эффекты recall и эмоции продаются за ту же валюту.",
+      "Внутриигровой магазин направляет оплату на баланс Google Play или App Store, где UzCard и HUMO часто не проходят; зарубежные топ-ап сайты работают в долларах и просят Visa, Mastercard или крипту. В боте GemPay счёт выставляется в сумах, оплату вы закрываете через Click, Payme, Paynet или местной картой, а алмазы приходят на аккаунт примерно за минуту."
+    ],
+    "spendOn": [
+      "Скины Elite, Epic и Legend в магазине скинов",
+      "Прокрутки Magic Wheel и Lucky Box",
+      "Подписка Starlight и её магазин фрагментов",
+      "Weekly Diamond Pass и подписка Twilight Pass",
+      "Открытие нового героя, когда не хватает Battle Point",
+      "Карта смены ника, эмоции и эффекты recall"
+    ],
+    "packages": [
+      "Пакеты алмазов идут от мелкой ступени к крупной — обычно 86, 172, 257, 344, 429, 514, 706 и выше; каждый собран из основной и бонусной части, поэтому в списке встречается запись вида 78+8.",
+      "Рядом с ними стоят два товара, где продаётся не количество алмазов, а срок: подписка Starlight (обычная и Plus) и Weekly Diamond Pass — первая открывает месячный трек с магазином фрагментов, вторая выдаёт часть алмазов сразу, а остальное за ежедневные входы в течение недели.",
+      "Двойной бонус за первую покупку назначает Moonton, и GemPay на него не влияет; актуальная цена показывается в боте."
+    ],
+    "steps": [
+      {
+        "title": "Откройте раздел Mobile Legends в боте",
+        "text": "В каталоге @Gempayuz_bot выбираете Mobile Legends: Bang Bang. В списке Magic Chess: Go Go стоит как отдельная игра, поэтому за алмазами MLBB заходите именно в раздел Mobile Legends."
+      },
+      {
+        "title": "Введите User ID",
+        "text": "8-9-значный номер из профиля вводится без скобок и без пробелов. Он обозначает сам аккаунт, но в одиночку его недостаточно."
+      },
+      {
+        "title": "Server (Zone) ID впишите в отдельное поле",
+        "text": "Четырёхзначное число из скобок вводится во второе поле. В русскоязычных источниках его называют Zone ID, разницы нет. Без сервера тот же User ID может совпасть с чужим аккаунтом на другом сервере."
+      },
+      {
+        "title": "Прочитайте показанный nickname",
+        "text": "Система бесплатно показывает nickname с игрового сервера. Если он ваш — подтверждаете, если ник незнакомый — перепроверяете Server ID. До подтверждения со счёта ничего не списывается."
+      },
+      {
+        "title": "Выберите пакет и оплатите в сумах",
+        "text": "Отмечаете количество алмазов или подписку вроде Starlight и Weekly Diamond Pass и платите через UzCard, HUMO, Click, Payme или Paynet. Алмазы приходят на аккаунт примерно за минуту."
+      }
+    ],
+    "idSteps": [
+      "Откройте игру и нажмите на аватар в левом верхнем углу экрана.",
+      "В открывшемся окне Profile найдите строку ID под nickname.",
+      "Номер выглядит как 12345678(1234): первая часть — User ID, четыре цифры в скобках — Server ID.",
+      "Скопируйте ID нажатием, при ручном переносе легко ошибиться в одной цифре.",
+      "Запомните и nickname — так будет проще сверить, когда бот его покажет."
+    ],
+    "gotcha": {
+      "title": "Покупка Starlight в конце месяца",
+      "text": "Подписка Starlight привязана к календарному месяцу: в какой бы день вы её ни взяли, она закрывается вместе с концом месяца. Если брать её в последние дни, сезонный скин у вас останется, но большую часть недельных заданий и наград за уровни собрать вы не успеете. Лучше брать её в начале месяца."
+    },
+    "faq": [
+      {
+        "q": "Можно ли пополнить алмазы на аккаунт Advance Server?",
+        "a": "Advance Server — отдельный аккаунт: его User ID и Server ID отличаются от основной игры, а алмазы между ними не переносятся. Вводите в бота ID основного аккаунта. Если нужно именно для Advance Server, сначала напишите в @StarsPaymeeSupport и уточните, принимается ли такой заказ."
+      },
+      {
+        "q": "Starlight и Weekly Diamond Pass работают одновременно?",
+        "a": "Да, это отдельные товары, и они друг друга не отменяют. Weekly Diamond Pass выдаёт часть алмазов сразу, а остальное добавляет каждый день, когда вы заходите в игру в течение недели. Starlight открывает месячный трек, магазин фрагментов и добавки в рейтинге. Оба можно вести на одном аккаунте параллельно."
+      },
+      {
+        "q": "Количество алмазов в пакете указано вместе с бонусом?",
+        "a": "Да, пакеты MLBB собраны из основной и бонусной части — например, 78+8 даёт в сумме 86 алмазов. На аккаунт приходит полное число, но в отдельных recharge-акциях Moonton засчитывает только основную часть, поэтому условия акции лучше прочитать внутри игры."
+      },
+      {
+        "q": "Сколько алмазов нужно на скин Legend из Magic Wheel?",
+        "a": "Magic Wheel даёт гарантию по количеству прокруток — обычно после 200 прокруток, то есть за несколько тысяч алмазов. Вариант с большим числом прокруток выходит экономнее, чем крутить по одной. Условия меняются от ротации к ротации, поэтому перед покупкой пакета откройте подробности внутри игры."
+      },
+      {
+        "q": "Если играю через эмулятор или на компьютере, ID будет другим?",
+        "a": "Нет. В эмуляторе вы заходите в тот же аккаунт, User ID и Server ID не меняются. Откройте профиль и возьмите тот же номер вместе со скобками. Отдельного направления пополнения для телефона и компьютера нет."
+      },
+      {
+        "q": "Можно ли заказать сразу скин вместо алмазов?",
+        "a": "Нет, бот отправляет на ваш аккаунт алмазы, а скин вы выбираете сами внутри игры. При этом в аккаунт никто не заходит, и выбранный скин открывается на вашем профиле. Удобнее заранее посчитать нужное количество алмазов и взять подходящий пакет."
+      }
+    ]
+  },
+  "en": {
+    "metaTitle": "Buy Mobile Legends Diamonds — MLBB Top Up | GemPay",
+    "metaDescription": "Top up MLBB diamonds with your User ID and the Server ID in brackets: the bot shows your nick free, then you pay in so'm via Click, Payme or UzCard.",
+    "h1": "Mobile Legends diamond top-up: User ID and Server ID",
+    "answer": "In Mobile Legends the profile ID has two parts: 12345678(1234) — the first number is the User ID and the four digits in brackets are the Server (Zone) ID, and both are needed. You enter both in the GemPay bot, the system shows your nickname from the game server for free, you confirm, you pay in so'm, and the diamonds arrive in about a minute. No password or SMS code is requested.",
+    "intro": [
+      "In Mobile Legends: Bang Bang, diamonds are the main currency for the skin shop, Magic Wheel and Lucky Box spins, Starlight membership and unlocking new heroes. They are mostly bought by players who grind ranked, collect the seasonal skin or want to gift a friend. The name change card, along with recall and emote effects, is sold for the same currency.",
+      "The in-game shop routes payment to your Google Play or App Store balance, where UzCard and HUMO often fail; foreign top-up sites work in dollars and ask for Visa, Mastercard or crypto. In the GemPay bot the bill comes in so'm, you close it with Click, Payme, Paynet or a local card, and the diamonds land on the account in about a minute."
+    ],
+    "spendOn": [
+      "Elite, Epic and Legend skins in the skin shop",
+      "Magic Wheel and Lucky Box spins",
+      "Starlight membership and its fragment shop",
+      "Weekly Diamond Pass and Twilight Pass subscriptions",
+      "Unlocking a new hero when Battle Points fall short",
+      "Name change card, emotes and recall effects"
+    ],
+    "packages": [
+      "Diamond packs climb from small tiers upward — usually 86, 172, 257, 344, 429, 514, 706 and higher; each is put together from a base and a bonus part, which is why the list carries entries written like 78+8.",
+      "Next to them sit two products that sell a period rather than an amount of diamonds: Starlight membership (standard and Plus) and Weekly Diamond Pass — the first opens a monthly track with the fragment shop, the second gives part of the diamonds at once and the rest across daily logins over a week.",
+      "The double bonus on a first purchase is set by Moonton and GemPay has no effect on it; the current price is shown in the bot."
+    ],
+    "steps": [
+      {
+        "title": "Open the Mobile Legends section in the bot",
+        "text": "In the @Gempayuz_bot catalogue you select Mobile Legends: Bang Bang. Magic Chess: Go Go is listed there as a separate game, so for MLBB diamonds go into the Mobile Legends section specifically."
+      },
+      {
+        "title": "Enter the User ID",
+        "text": "The 8-9 digit number from your profile goes in without brackets and without spaces. It stands for the account itself, but on its own it is not enough."
+      },
+      {
+        "title": "Put the Server (Zone) ID in its own field",
+        "text": "The four digit number from the brackets goes into the second field. Russian-language sources call it the Zone ID; there is no difference. Without the server, the same User ID can match a stranger's account on another server."
+      },
+      {
+        "title": "Read the nickname that comes back",
+        "text": "The system shows the nickname from the game server for free. If it is yours you confirm; if the nick is unfamiliar you recheck the Server ID. Nothing is charged until you confirm."
+      },
+      {
+        "title": "Pick a pack and pay in so'm",
+        "text": "You select a diamond amount or a subscription such as Starlight or Weekly Diamond Pass and pay with UzCard, HUMO, Click, Payme or Paynet. Diamonds land on the account in about a minute."
+      }
+    ],
+    "idSteps": [
+      "Open the game and tap the avatar in the top left of the screen.",
+      "In the Profile window that opens, find the ID line under your nickname.",
+      "The number looks like 12345678(1234): the first part is the User ID, the four digits in brackets are the Server ID.",
+      "Copy the ID with a tap — one digit is easy to get wrong when typing it by hand.",
+      "Note the nickname as well, so it is easy to compare when the bot shows it."
+    ],
+    "gotcha": {
+      "title": "Buying Starlight at the end of the month",
+      "text": "Starlight membership is tied to the calendar month: whichever day you buy it, it closes when the month ends. Take it in the last days and the season skin stays yours, but you will not have time to collect most of the weekly missions and tier rewards. It is better taken at the start of the month."
+    },
+    "faq": [
+      {
+        "q": "Can I top up diamonds on an Advance Server account?",
+        "a": "Advance Server is a separate account: its User ID and Server ID differ from the main game, and diamonds do not carry over between them. Enter the ID of your main account in the bot. If you need it specifically for Advance Server, write to @StarsPaymeeSupport first and check whether such an order is accepted."
+      },
+      {
+        "q": "Do Starlight and Weekly Diamond Pass work at the same time?",
+        "a": "Yes, they are separate products and do not cancel each other out. Weekly Diamond Pass gives part of the diamonds right away and adds the rest each day you log into the game over a week. Starlight opens a monthly track, the fragment shop and rank extras. You can run both on one account in parallel."
+      },
+      {
+        "q": "Is the diamond count in a pack listed with the bonus included?",
+        "a": "Yes, MLBB packs are made of a base and a bonus part — 78+8, for example, gives 86 diamonds in total. The full amount lands on the account, but some Moonton recharge events count only the base part, so it is better to read the event terms inside the game."
+      },
+      {
+        "q": "How many diamonds does a Legend skin from the Magic Wheel take?",
+        "a": "The Magic Wheel gives its guarantee by number of spins — usually after 200 spins, which works out to several thousand diamonds. The multi-spin option comes out more economical than spinning one at a time. The terms change from rotation to rotation, so open the details inside the game before buying a pack."
+      },
+      {
+        "q": "If I play on an emulator or on a computer, is the ID different?",
+        "a": "No. On an emulator you log into the same account, and the User ID and Server ID do not change. Open the profile and take the same number together with the brackets. There is no separate top-up route for phone and computer."
+      },
+      {
+        "q": "Can I order a skin directly instead of diamonds?",
+        "a": "No, the bot sends diamonds to your account and you pick the skin inside the game yourself. Nobody logs into your account, and the skin you choose unlocks on your own profile. It is more convenient to work out the diamond amount in advance and take the matching pack."
+      }
+    ]
+  }
+}

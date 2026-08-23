@@ -1,0 +1,246 @@
+{
+  "slug": "pubg-mobile",
+  "uz": {
+    "answer": "PUBG Mobile'da server tanlash maydoni yo'q: 10-11 xonali Player ID akkauntni o'zi aniqlaydi. @Gempayuz_bot'da o'sha raqamni kiritasiz, bot o'yin serveridan niknemni bepul qaytaradi, siz tasdiqlaysiz, UC paketini tanlaysiz va so'mda — UzCard, HUMO, Click, Payme, Paynet — to'laysiz. Tasdiqlamaguningizcha hech narsa yechilmaydi. UC taxminan 2 daqiqada tushadi.",
+    "faq": [
+      {
+        "q": "UC balansi qurilmagami yoki akkauntgami bog'lanadi?",
+        "a": "Akkauntga. UC Player ID ga biriktiriladi, shuning uchun telefonni almashtirsangiz ham balans va inventar joyida qoladi. Ammo akkaunt Guest holatida bo'lsa, u bulutga saqlanmaydi: qurilmani almashtirish yoki o'yinni o'chirish bilan hammasi yo'qolishi mumkin. To'ldirishdan oldin akkauntni Facebook, Google Play, X yoki Game Center ga bog'lab qo'ying."
+      },
+      {
+        "q": "PUBG Mobile KR yoki BGMI akkauntiga ham UC to'ldirsa bo'ladimi?",
+        "a": "Yo'q. KR (Koreya/Yaponiya) va BGMI (Hindiston) — alohida ilovalar: ularda akkaunt ham, UC ham, to'ldirish tizimi ham boshqa va valyuta versiyalar orasida o'tmaydi. Katalogdagi PUBG Mobile global versiya uchun. Player ID ni qaysi ilovadan olganingizni aniqlab oling, aks holda ID topilmaydi yoki begona akkaunt chiqadi."
+      },
+      {
+        "q": "UC tushdi — endi Royal Pass'ni qanday olaman?",
+        "a": "UC balansga tushgach, o'yin lobbisidagi Royal Pass bo'limini ochib, Elite darajaga o'tishni tanlaysiz va UC bilan to'laysiz. Bu bosqich o'yin ichida bajariladi, GemPay tomonida emas. Kerakli UC miqdori sezondan sezonga o'zgarib turadi, shuning uchun paketni tanlashdan oldin o'yindagi joriy raqamga qarang."
+      },
+      {
+        "q": "Emulyatorda (masalan GameLoop) o'ynayman — UC o'sha akkauntga tushadimi?",
+        "a": "Ha. Emulyator alohida akkaunt yaratmaydi: telefonda ham, kompyuterda ham bir xil akkaunt bilan kirsangiz, Player ID bir xil bo'ladi va UC o'sha balansga tushadi. Faqat ID ni o'zingiz o'ynaydigan akkauntdan olganingizga ishonch hosil qiling."
+      },
+      {
+        "q": "Rename Card bilan niknemni o'zgartirsam, bot qaysi nomni ko'rsatadi?",
+        "a": "Yangi nomni. Player ID akkaunt yaratilganda beriladi va o'zgarmaydi, niknem esa Rename Card bilan almashtiriladi. Bot ID bo'yicha o'yin serveridan joriy nomni so'raydi, ya'ni tekshiruvda o'yin lobbisida turgan nom chiqadi. Eski nom chiqsa — ID boshqa akkauntniki bo'lishi mumkin, to'lamang."
+      },
+      {
+        "q": "Uchinchi tomon orqali to'ldirish akkauntga bloklash xavfi tug'diradimi?",
+        "a": "Bu yerda akkauntingizga hech kim kirmaydi: UC ochiq Player ID bo'yicha yetkaziladi, login, parol va SMS kodi umuman so'ralmaydi. Xavf boshqa yo'llarda — akkauntni sotuvchiga vaqtincha berish, chit dasturlar yoki «bepul UC» generatorlari. Aynan shular akkauntni yo'qotishning odatiy sababi."
+      }
+    ],
+    "gotcha": {
+      "title": "Niknemni o'qimasdan tasdiqlash",
+      "text": "Player ID'da bitta raqam adashsa, u ko'pincha boshqa birovning amaldagi akkaunti bo'lib chiqadi va UC o'sha hisobga tushadi — o'yin ichida bunday o'tkazma orqaga qaytarilmaydi. Shuning uchun botdagi niknemni yuzaki emas, harfma-harf o'qing: nom sizniki bo'lmasa, to'lamang."
+    },
+    "h1": "PUBG Mobile UC sotib olish — Player ID orqali, so'mda",
+    "idSteps": [
+      "PUBG Mobile'ni oching va lobbining chap yuqori burchagidagi avatar ustiga bosing",
+      "Ochilgan profil oynasida niknemingiz ostidagi 10-11 xonali raqamni toping — bu Player ID",
+      "Raqam yonidagi nusxa belgisini bosing: ID buferga to'liq ko'chiriladi, bitta raqam tushib qolmaydi",
+      "Botga qo'ying va chiqqan niknem o'zingizniki ekaniga ishonch hosil qilgach tasdiqlang"
+    ],
+    "intro": [
+      "UC — PUBG Mobile'ning ichki valyutasi. Uni Royal Pass sezonini ochishga, Classic va Premium sandiqlarga, Mythic Forge aylanishlariga, X-Suit va qurol skinlariga sarflashadi. Ko'pchilik uni sezon boshida oladi: Royal Pass qanchalik erta olinsa, sezon davomida shuncha ko'p daraja mukofoti yig'iladi. Kimdir esa faqat Rename Card uchun kichik paket oladi. Balans akkauntga bog'lanadi, telefonni almashtirsangiz ham qoladi.",
+      "O'zbekistondagi to'siq — to'lov bosqichi. Xalqaro to'ldirish saytlarining karta ro'yxatida odatda Visa, Mastercard, PayPal, Apple Pay yoki kripto turadi; UzCard va HUMO u yerda ko'rinmaydi, hisob esa dollarda yuritiladi va konvertatsiya qo'shimcha yo'qotish beradi. GemPay bu bosqichni olib tashlaydi: to'lov so'mda, mahalliy karta yoki hamyon orqali o'tadi, qo'llab-quvvatlash o'zbek tilida javob beradi."
+    ],
+    "metaDescription": "PUBG Mobile UC ni Player ID orqali to'ldiring: server maydoni yo'q, niknem to'lovdan oldin bepul tekshiriladi, so'mda UzCard yoki HUMO bilan, UC ~2 daqiqada.",
+    "metaTitle": "PUBG Mobile UC sotib olish — UzCard va HUMO | GemPay",
+    "packages": [
+      "PUBG Mobile'da UC zinapoyasi odatda 60, 325, 660, 1800, 3850 va 8100 UC dan iborat bo'ladi; paket kattalashgani sayin asosiy miqdorga bonus UC qo'shiladi va u ham o'sha balansga tushadi.",
+      "Royal Pass / Elite Pass hamda World of Wonder rejimi uchun WOW Coins alohida mahsulot sifatida uchraydi — ular UC emas, shuning uchun UC kutayotgan bo'lsangiz ularni tanlamang.",
+      "Joriy narxlar va mavjud paketlar botda ko'rsatiladi."
+    ],
+    "spendOn": [
+      "Royal Pass (o'yinda Royale Pass) va Elite darajaga o'tish",
+      "Classic va Premium sandiqlar, mavsumiy qurol skinlari",
+      "Mythic Forge aylanishlari va Mythic Emblem parchalari",
+      "Lucky Spin va X-Suit chiqadigan tortishuvlar",
+      "Rename Card — niknemni bir marta o'zgartirish",
+      "Emote, mashina skinlari va do'stlarga sovg'alar"
+    ],
+    "steps": [
+      {
+        "title": "Botni oching va PUBG Mobile'ni tanlang",
+        "text": "Telegramda @Gempayuz_bot ni oching va katalogdan PUBG Mobile'ni belgilang. O'yinga kirish, parol yoki SMS kodi talab qilinmaydi."
+      },
+      {
+        "title": "Player ID ni kiriting — server tanlanmaydi",
+        "text": "PUBG Mobile global akkaunt bilan ishlaydi, shuning uchun ba'zi o'yinlardagi kabi alohida Server ID maydoni yo'q. Profildagi 10-11 xonali raqamning o'zi kifoya."
+      },
+      {
+        "title": "Niknemni tekshirib tasdiqlang",
+        "text": "Bot o'yin serveridan niknemni qaytaradi va ekranda ko'rsatadi. Bu bosqich bepul va to'lovdan oldin bo'ladi: nom sizniki bo'lmasa, ortga qaytib ID ni tuzatasiz."
+      },
+      {
+        "title": "UC paketini tanlang",
+        "text": "Zinapoyadan kerakli miqdorni belgilang. Royal Pass yoki WOW Coins kerak bo'lsa, ular alohida mahsulot sifatida turadi — UC paketi bilan almashtirib yubormang."
+      },
+      {
+        "title": "So'mda to'lang va UC ni kuting",
+        "text": "UzCard, HUMO, Click, Payme yoki Paynet orqali to'laysiz. UC taxminan 2 daqiqada balansga tushadi; darhol ko'rinmasa, lobbini qayta oching."
+      }
+    ]
+  },
+  "ru": {
+    "metaTitle": "Купить UC для PUBG Mobile — UzCard и HUMO | GemPay",
+    "metaDescription": "Пополните UC в PUBG Mobile по Player ID: поле сервера не нужно, ник проверяется бесплатно до оплаты, платёж в сумах через UzCard или HUMO, UC за ~2 минуты.",
+    "h1": "Купить UC для PUBG Mobile — по Player ID, в сумах",
+    "answer": "В PUBG Mobile нет поля выбора сервера: 10-11-значный Player ID сам определяет аккаунт. В @Gempayuz_bot вы вводите этот номер, бот бесплатно возвращает ник с игрового сервера, вы подтверждаете, выбираете пакет UC и платите в сумах — UzCard, HUMO, Click, Payme, Paynet. Пока вы не подтвердите, ничего не списывается. UC приходит примерно за 2 минуты.",
+    "intro": [
+      "UC — внутренняя валюта PUBG Mobile. Её тратят на открытие сезона Royal Pass, на Classic и Premium сундуки, на прокрутки Mythic Forge, на X-Suit и скины оружия. Большинство берёт её в начале сезона: чем раньше открыт Royal Pass, тем больше наград за уровни соберётся за сезон. Кто-то берёт небольшой пакет только ради Rename Card. Баланс привязан к аккаунту и остаётся при смене телефона.",
+      "Препятствие в Узбекистане — этап оплаты. В списке карт на международных сайтах пополнения обычно стоят Visa, Mastercard, PayPal, Apple Pay или крипта; UzCard и HUMO там не видно, счёт ведётся в долларах, а конвертация даёт дополнительные потери. GemPay убирает этот этап: оплата идёт в сумах, местной картой или кошельком, поддержка отвечает на узбекском."
+    ],
+    "spendOn": [
+      "Royal Pass (в игре Royale Pass) и переход на уровень Elite",
+      "Classic и Premium сундуки, сезонные скины оружия",
+      "Прокрутки Mythic Forge и осколки Mythic Emblem",
+      "Lucky Spin и розыгрыши, где выпадает X-Suit",
+      "Rename Card — разовая смена ника",
+      "Эмоции, скины машин и подарки друзьям"
+    ],
+    "packages": [
+      "Лестница UC в PUBG Mobile обычно состоит из 60, 325, 660, 1800, 3850 и 8100 UC; чем крупнее пакет, тем больше бонусных UC добавляется к основному количеству, и они приходят на тот же баланс.",
+      "Royal Pass / Elite Pass, а также WOW Coins для режима World of Wonder встречаются как отдельные товары — это не UC, поэтому не выбирайте их, если ждёте именно UC.",
+      "Актуальные цены и доступные пакеты показываются в боте."
+    ],
+    "steps": [
+      {
+        "title": "Откройте бота и выберите PUBG Mobile",
+        "text": "В Telegram откройте @Gempayuz_bot и отметьте PUBG Mobile в каталоге. Вход в игру, пароль или SMS-код не требуются."
+      },
+      {
+        "title": "Введите Player ID — сервер не выбирается",
+        "text": "PUBG Mobile работает с глобальным аккаунтом, поэтому отдельного поля Server ID, как в некоторых играх, здесь нет. Достаточно 10-11-значного номера из профиля."
+      },
+      {
+        "title": "Проверьте ник и подтвердите",
+        "text": "Бот запрашивает ник с игрового сервера и показывает его на экране. Этот шаг бесплатный и идёт до оплаты: если имя не ваше, вы возвращаетесь назад и исправляете ID."
+      },
+      {
+        "title": "Выберите пакет UC",
+        "text": "Отметьте нужное количество из лестницы. Если нужен Royal Pass или WOW Coins, они стоят как отдельные товары — не перепутайте их с пакетом UC."
+      },
+      {
+        "title": "Оплатите в сумах и дождитесь UC",
+        "text": "Оплата проходит через UzCard, HUMO, Click, Payme или Paynet. UC приходит на баланс примерно за 2 минуты; если сразу не видно, перезайдите в лобби."
+      }
+    ],
+    "idSteps": [
+      "Откройте PUBG Mobile и нажмите на аватар в левом верхнем углу лобби",
+      "В открывшемся окне профиля найдите под ником 10-11-значный номер — это Player ID",
+      "Нажмите значок копирования рядом с номером: ID скопируется целиком, ни одна цифра не потеряется",
+      "Вставьте его в бота и подтвердите, убедившись, что показанный ник ваш"
+    ],
+    "gotcha": {
+      "title": "Подтверждение ника не глядя",
+      "text": "Если в Player ID ошибиться на одну цифру, он часто оказывается действующим аккаунтом другого человека, и UC уйдут на тот баланс — внутри игры такой перевод не отменяется. Поэтому читайте ник в боте не бегло, а посимвольно: если имя не ваше, не платите."
+    },
+    "faq": [
+      {
+        "q": "Баланс UC привязан к устройству или к аккаунту?",
+        "a": "К аккаунту. UC привязывается к Player ID, поэтому при смене телефона баланс и инвентарь остаются на месте. Но если аккаунт в статусе Guest, он не сохраняется в облаке: при смене устройства или удалении игры всё может пропасть. Перед пополнением привяжите аккаунт к Facebook, Google Play, X или Game Center."
+      },
+      {
+        "q": "Можно ли пополнить UC на аккаунт PUBG Mobile KR или BGMI?",
+        "a": "Нет. KR (Корея/Япония) и BGMI (Индия) — отдельные приложения: там другой аккаунт, другие UC и другая система пополнения, и валюта между версиями не переносится. PUBG Mobile в каталоге — для глобальной версии. Уточните, из какого приложения ваш Player ID, иначе ID не найдётся или откроется чужой аккаунт."
+      },
+      {
+        "q": "UC пришли — как теперь взять Royal Pass?",
+        "a": "После зачисления UC откройте раздел Royal Pass в лобби игры, выберите переход на уровень Elite и оплатите его UC. Этот шаг делается внутри игры, а не на стороне GemPay. Нужное количество UC меняется от сезона к сезону, поэтому перед выбором пакета посмотрите текущее число в игре."
+      },
+      {
+        "q": "Играю на эмуляторе (например GameLoop) — UC придут на тот же аккаунт?",
+        "a": "Да. Эмулятор не создаёт отдельный аккаунт: если и на телефоне, и на компьютере вы входите под одним аккаунтом, Player ID один и тот же, и UC придут на тот же баланс. Главное — взять ID именно из того аккаунта, на котором вы играете."
+      },
+      {
+        "q": "Если сменить ник через Rename Card, какое имя покажет бот?",
+        "a": "Новое. Player ID выдаётся при создании аккаунта и не меняется, а ник заменяется через Rename Card. Бот запрашивает у игрового сервера текущее имя по ID, то есть при проверке выйдет то имя, что стоит в лобби игры. Если показалось старое — ID может быть от другого аккаунта, не платите."
+      },
+      {
+        "q": "Есть ли риск блокировки аккаунта при пополнении через третью сторону?",
+        "a": "Здесь в ваш аккаунт никто не заходит: UC доставляются по открытому Player ID, логин, пароль и SMS-код не запрашиваются вообще. Риск в другом — отдать аккаунт продавцу на время, читы или генераторы «бесплатных UC». Именно они и есть обычная причина потери аккаунта."
+      }
+    ]
+  },
+  "en": {
+    "metaTitle": "Buy PUBG Mobile UC — UzCard and HUMO | GemPay",
+    "metaDescription": "Top up PUBG Mobile UC by Player ID: no server field, your nickname is checked free before payment, pay in so'm with UzCard or HUMO, UC in about 2 minutes.",
+    "h1": "Buy PUBG Mobile UC — by Player ID, paid in so'm",
+    "answer": "PUBG Mobile has no server selection field: the 10-11 digit Player ID identifies the account on its own. You enter that number in @Gempayuz_bot, the bot returns your nickname from the game server for free, you confirm it, pick a UC pack and pay in so'm — UzCard, HUMO, Click, Payme, Paynet. Nothing is charged until you confirm. UC arrives in about 2 minutes.",
+    "intro": [
+      "UC is the in-game currency of PUBG Mobile. It goes on unlocking the Royal Pass season, on Classic and Premium crates, on Mythic Forge pulls, on X-Suits and weapon skins. Most players buy it at the start of a season: the earlier the Royal Pass is opened, the more tier rewards pile up over the season. Some take a small pack only for a Rename Card. The balance is tied to the account and stays with you when you change phones.",
+      "The obstacle in Uzbekistan is the payment step. International top-up sites usually list Visa, Mastercard, PayPal, Apple Pay or crypto; UzCard and HUMO are not there, the bill is kept in dollars, and conversion costs extra. GemPay removes that step: payment goes through in so'm with a local card or wallet, and support answers in Uzbek."
+    ],
+    "spendOn": [
+      "Royal Pass (Royale Pass in game) and the upgrade to Elite",
+      "Classic and Premium crates, seasonal weapon skins",
+      "Mythic Forge pulls and Mythic Emblem shards",
+      "Lucky Spin and the draws that carry X-Suits",
+      "Rename Card — a one-off nickname change",
+      "Emotes, vehicle skins and gifts for friends"
+    ],
+    "packages": [
+      "The UC ladder in PUBG Mobile usually runs 60, 325, 660, 1800, 3850 and 8100 UC; the larger the pack, the more bonus UC is added on top of the base amount, and it lands on the same balance.",
+      "Royal Pass / Elite Pass, and WOW Coins for the World of Wonder mode, appear as separate products — they are not UC, so do not pick them if UC is what you are waiting for.",
+      "Current prices and available packs are shown in the bot."
+    ],
+    "steps": [
+      {
+        "title": "Open the bot and pick PUBG Mobile",
+        "text": "Open @Gempayuz_bot in Telegram and select PUBG Mobile from the catalogue. No game login, password or SMS code is required."
+      },
+      {
+        "title": "Enter the Player ID — no server to choose",
+        "text": "PUBG Mobile runs on a global account, so there is no separate Server ID field here as in some other games. The 10-11 digit number from your profile is enough."
+      },
+      {
+        "title": "Check the nickname and confirm",
+        "text": "The bot pulls the nickname from the game server and shows it on screen. This step is free and comes before payment: if the name is not yours, you go back and correct the ID."
+      },
+      {
+        "title": "Choose a UC pack",
+        "text": "Pick the amount you need from the ladder. If you want Royal Pass or WOW Coins, they sit there as separate products — do not mix them up with a UC pack."
+      },
+      {
+        "title": "Pay in so'm and wait for the UC",
+        "text": "You pay with UzCard, HUMO, Click, Payme or Paynet. UC lands on the balance in about 2 minutes; if you do not see it right away, reopen the lobby."
+      }
+    ],
+    "idSteps": [
+      "Open PUBG Mobile and tap the avatar in the top left corner of the lobby",
+      "In the profile window that opens, find the 10-11 digit number under your nickname — that is the Player ID",
+      "Tap the copy icon next to the number: the ID is copied in full and no digit goes missing",
+      "Paste it into the bot and confirm once you are sure the nickname shown is yours"
+    ],
+    "gotcha": {
+      "title": "Confirming the nickname without reading it",
+      "text": "If one digit of the Player ID is wrong, it often turns out to be someone else's live account, and the UC goes to that balance — inside the game such a transfer cannot be reversed. So read the nickname in the bot character by character rather than at a glance: if the name is not yours, do not pay."
+    },
+    "faq": [
+      {
+        "q": "Is the UC balance tied to the device or to the account?",
+        "a": "To the account. UC is attached to the Player ID, so the balance and inventory stay in place even if you change phones. But if the account is still a Guest account, it is not saved to the cloud: changing devices or deleting the game can wipe everything. Link the account to Facebook, Google Play, X or Game Center before topping up."
+      },
+      {
+        "q": "Can I top up UC on a PUBG Mobile KR or BGMI account?",
+        "a": "No. KR (Korea/Japan) and BGMI (India) are separate apps: the account, the UC and the top-up system are all different there, and the currency does not move between versions. The PUBG Mobile entry in the catalogue is for the global version. Check which app your Player ID came from, otherwise the ID will not be found or a stranger's account will come up."
+      },
+      {
+        "q": "The UC arrived — how do I get the Royal Pass now?",
+        "a": "Once the UC is on the balance, open the Royal Pass section in the game lobby, choose the upgrade to Elite and pay for it with UC. This step is done inside the game, not on the GemPay side. The UC amount needed changes from season to season, so look at the current number in game before picking a pack."
+      },
+      {
+        "q": "I play on an emulator (GameLoop, for example) — will the UC reach that account?",
+        "a": "Yes. An emulator does not create a separate account: if you log in with the same account on the phone and on the computer, the Player ID is the same and the UC lands on that balance. Just make sure you take the ID from the account you actually play on."
+      },
+      {
+        "q": "If I change my nickname with a Rename Card, which name will the bot show?",
+        "a": "The new one. The Player ID is issued when the account is created and never changes, while the nickname is swapped with a Rename Card. The bot asks the game server for the current name by ID, so the check returns the name that stands in your game lobby. If the old name comes up, the ID may belong to another account — do not pay."
+      },
+      {
+        "q": "Does topping up through a third party risk a ban on the account?",
+        "a": "Nobody logs into your account here: UC is delivered by the public Player ID, and no login, password or SMS code is requested at all. The risk lies elsewhere — handing the account to a seller for a while, cheat software, or so-called free UC generators. Those are the usual reason accounts get lost."
+      }
+    ]
+  }
+}

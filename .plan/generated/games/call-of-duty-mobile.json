@@ -1,0 +1,249 @@
+{
+  "slug": "call-of-duty-mobile",
+  "uz": {
+    "metaTitle": "Call of Duty Mobile CP sotib olish (Garena) | GemPay",
+    "metaDescription": "Garena SG/MY Player ID bo'yicha Call of Duty: Mobile CP to'ldirish: nickname bepul tekshiriladi, so'mda UzCard, Humo, Click yoki Payme, CP 3 daqiqada.",
+    "h1": "Call of Duty: Mobile CP to'ldirish — Garena ID bo'yicha, so'mda",
+    "answer": "GemPay Call of Duty: Mobile ning Garena SG/MY versiyasini to'ldiradi; Global (Activision) akkauntlar bu yerda ishlamaydi. Botda o'yinni tanlab, Sozlamalardagi Player ID ni kiritasiz, tizim nickname ni bepul ko'rsatadi. Tasdiqlagandan keyin CP paketini UzCard yoki Humo bilan so'mda to'laysiz, CP taxminan 3 daqiqada tushadi. Parol so'ralmaydi.",
+    "intro": [
+      "CP (COD Points) — Call of Duty: Mobile ning premium valyutasi. Kredit bilan olinadigan oddiy narsalardan farqli o'laroq, CP do'konning jiddiy qismiga ketadi: Battle Pass va Battle Pass Plus, Lucky Draw va Mythic Drop tirajlari, legendar qurol chizmalari. Ko'pchilik o'yinchi CP ni mavsum boshida oladi, chunki Battle Pass ham aynan CP evaziga ochiladi.",
+      "O'zbekistondan rasmiy yo'l ko'pincha yopiq: Garena to'lov sahifalari mintaqaviy kartalarni kutadi, Google Play va App Store balansi esa chet el kartasi yoki gift karta talab qiladi. GemPay da CP to'g'ridan-to'g'ri Player ID ga yoziladi, to'lov esa UzCard, Humo, Click, Payme yoki Paynet orqali so'mda o'tadi — valyuta konvertatsiyasi ham, chet el kartasi ham kerak emas."
+    ],
+    "spendOn": [
+      "Battle Pass va Battle Pass Plus ni ochish",
+      "Lucky Draw va Mythic Drop tirajlaridagi mifik qurollar",
+      "Do'kondagi legendar qurol chizmalari (blueprint)",
+      "Operator skinlari va mavsumiy Epic to'plamlar",
+      "Battle Pass darajalarini oldindan ochish (tier skip)",
+      "Cheklangan vaqtli event va crate to'plamlari"
+    ],
+    "packages": [
+      "Garena SG/MY dagi CP zinapoyasi Global dagi yumaloq raqamlardan farq qiladi: odatda 114 CP dan boshlanadi, keyin 230, 460, 690, 1150, 2300 va undan yuqori pog'onalar keladi.",
+      "Katta pog'onalarda asosiy miqdorga bonus CP qo'shib beriladi, shuning uchun bitta yirik paket bir nechta kichigidan ko'ra ko'proq CP chiqaradi; pog'onalar ro'yxati provayder tomonidan yangilanib turadi, uni doimiy deb hisoblamang.",
+      "Joriy narxlar botda ko'rsatiladi."
+    ],
+    "steps": [
+      {
+        "title": "Garena versiyasini tasdiqlang",
+        "text": "Botda Call of Duty: Mobile (Garena) ni tanlang. Telefoningizdagi ilova aynan Garena qurilishi bo'lishi kerak: Global (Activision) akkauntga bu yerdan CP yozib bo'lmaydi, chunki ular alohida serverlarda ishlaydi."
+      },
+      {
+        "title": "Player ID ni kiriting",
+        "text": "O'yin ichidagi Sozlamalar > User Settings dan raqamli Player ID ni oling va botdagi maydonga qo'ying. CODM Garena da server yoki platforma tanlash maydoni yo'q, faqat shu raqam so'raladi."
+      },
+      {
+        "title": "Nickname ni tekshiring",
+        "text": "Bot ID ni o'yin serveriga yuboradi va nickname ni ekranga chiqaradi. Tekshiruv bepul, bu bosqichda hech narsa yechilmaydi; nickname begona bo'lsa, raqamni qaytadan kiriting."
+      },
+      {
+        "title": "CP paketini tanlab so'mda to'lang",
+        "text": "Kerakli CP pog'onasini belgilang va UzCard, Humo, Click, Payme yoki Paynet orqali to'lang. Narx botda ko'rsatiladi va tasdiqlashdan oldin ekranda turadi."
+      },
+      {
+        "title": "CP ni o'yinda ko'ring",
+        "text": "CP taxminan 3 daqiqada tushadi. Balans darrov yangilanmasa, o'yindan chiqib qayta kiring; Battle Pass yoki Lucky Draw ni keyin shu CP bilan olasiz."
+      }
+    ],
+    "idSteps": [
+      "Call of Duty: Mobile (Garena) ni oching va asosiy ekranga o'ting.",
+      "O'ng yuqori burchakdagi tishli g'ildirak — Settings tugmasini bosing.",
+      "Settings oynasida User Settings (foydalanuvchi sozlamalari) bo'limini tanlang.",
+      "Pastda, Legal and Privacy yozuvi yonida Player ID raqami turadi.",
+      "Raqamni to'liq nusxalab, botdagi maydonga bo'sh joysiz qo'ying va nickname ni tekshiring."
+    ],
+    "gotcha": {
+      "title": "Global ilovada o'ynab, Garena ID ga to'ldirish",
+      "text": "Buyurtmalar ko'pincha shu sababdan yo'qqa chiqadi: o'yinchi Global (Activision) ilovasida o'ynaydi, ID ni esa Garena to'ldirishiga beradi. Ikki versiya alohida serverda ishlaydi, CP biridan ikkinchisiga o'tmaydi, akkauntni ko'chirishga urinish esa blok bilan tugashi mumkin. To'lovdan oldin ilova nomida Garena borligini tekshiring."
+    },
+    "faq": [
+      {
+        "q": "Player ID bilan nickname bir xil narsami?",
+        "a": "Yo'q. Player ID — Sozlamalarda turadigan o'zgarmas raqam, nickname esa siz almashtira oladigan nom va u boshqa o'yinchilarda takrorlanishi mumkin. Botga faqat raqamni kiritasiz, nickname ni tizim o'zi topib beradi."
+      },
+      {
+        "q": "Do'stimning yoki ukamning ID siga CP to'ldirsam bo'ladimi?",
+        "a": "Ha. Faqat ochiq Player ID kerak, login yoki qurilmaga kirish talab qilinmaydi. Nickname ekranda chiqqanda, u haqiqatan o'sha odamning akkaunti ekanini tasdiqlab oling."
+      },
+      {
+        "q": "PC yoki emulyatorda o'ynayman, ID boshqami?",
+        "a": "Player ID akkauntga bog'langan, qurilmaga emas. Telefonda va PC da bir xil akkaunt (Garena, Facebook yoki Google) bilan kirsangiz, ID ham bir xil bo'ladi va CP o'sha balansga tushadi."
+      },
+      {
+        "q": "CP tushdi, Battle Pass o'zi ochiladimi?",
+        "a": "Yo'q. GemPay CP yetkazadi, Battle Pass va Battle Pass Plus ni esa o'yin ichidagi do'kondan shu CP evaziga o'zingiz olasiz. Lucky Draw va crate lar ham xuddi shu tartibda ishlaydi."
+      },
+      {
+        "q": "Paketdagi bonus CP alohida tushadimi?",
+        "a": "Bonus CP ni Garena paketning o'ziga biriktiradi va u umumiy balansga qo'shilib tushadi, alohida qatorda ko'rinmaydi. Ayrim bonuslar aksiya davrida yoki birinchi xaridda amal qiladi, shuning uchun ularni doimiy deb hisoblamang."
+      },
+      {
+        "q": "Mavsum tugashiga oz qolganda CP olsam, u yonib ketadimi?",
+        "a": "CP balansda muddatsiz qoladi va keyingi mavsumga o'tadi. Yonib ketadigani — Battle Pass darajalari: mavsum yakuniga bir necha kun qolganda pass olsangiz, uni to'liq yopishga ulgurmasligingiz mumkin."
+      }
+    ]
+  },
+  "ru": {
+    "metaTitle": "Покупка CP в Call of Duty Mobile (Garena) | GemPay",
+    "metaDescription": "Пополнение CP в Call of Duty: Mobile по Player ID Garena SG/MY: ник проверяется бесплатно, оплата в сумах через UzCard, Humo, Click или Payme, CP за 3 минуты.",
+    "h1": "Пополнение CP в Call of Duty: Mobile — по Garena ID, в сумах",
+    "answer": "GemPay пополняет версию Call of Duty: Mobile от Garena SG/MY; аккаунты Global (Activision) здесь не работают. В боте выбираете игру и вводите Player ID из Настроек, система бесплатно показывает ник. После подтверждения оплачиваете пакет CP картой UzCard или Humo в сумах, CP приходит примерно за 3 минуты. Пароль не запрашивается.",
+    "intro": [
+      "CP (COD Points) — премиальная валюта Call of Duty: Mobile. В отличие от обычных вещей за кредиты, CP уходит на серьёзную часть магазина: Battle Pass и Battle Pass Plus, розыгрыши Lucky Draw и Mythic Drop, легендарные чертежи оружия. Большинство игроков берёт CP в начале сезона, потому что и сам Battle Pass открывается именно за CP.",
+      "Из Узбекистана официальный путь часто закрыт: платёжные страницы Garena ждут региональные карты, а баланс Google Play и App Store требует зарубежной карты или гифт-карты. В GemPay CP зачисляется прямо на Player ID, а оплата проходит в сумах через UzCard, Humo, Click, Payme или Paynet — ни конвертации валюты, ни зарубежной карты не нужно."
+    ],
+    "spendOn": [
+      "Открытие Battle Pass и Battle Pass Plus",
+      "Мифическое оружие в розыгрышах Lucky Draw и Mythic Drop",
+      "Легендарные чертежи оружия (blueprint) в магазине",
+      "Скины операторов и сезонные Epic-наборы",
+      "Досрочное открытие уровней Battle Pass (tier skip)",
+      "Ивенты с ограниченным временем и наборы ящиков (crate)"
+    ],
+    "packages": [
+      "Лестница CP в Garena SG/MY отличается от круглых чисел Global: обычно она начинается со 114 CP, дальше идут ступени 230, 460, 690, 1150, 2300 и выше.",
+      "На крупных ступенях к основному объёму добавляют бонусные CP, поэтому один большой пакет даёт больше CP, чем несколько мелких; список ступеней обновляется провайдером, не считайте его постоянным.",
+      "Текущие цены показываются в боте."
+    ],
+    "steps": [
+      {
+        "title": "Подтвердите версию Garena",
+        "text": "В боте выберите Call of Duty: Mobile (Garena). Приложение на телефоне должно быть именно сборкой Garena: на аккаунт Global (Activision) отсюда CP зачислить нельзя, они работают на отдельных серверах."
+      },
+      {
+        "title": "Введите Player ID",
+        "text": "Возьмите цифровой Player ID в игре: Настройки > User Settings — и вставьте его в поле в боте. В CODM Garena нет поля выбора сервера или платформы, спрашивается только этот номер."
+      },
+      {
+        "title": "Проверьте ник",
+        "text": "Бот отправляет ID на игровой сервер и выводит ник на экран. Проверка бесплатная, на этом шаге ничего не списывается; если ник чужой, введите номер заново."
+      },
+      {
+        "title": "Выберите пакет CP и оплатите в сумах",
+        "text": "Отметьте нужную ступень CP и оплатите через UzCard, Humo, Click, Payme или Paynet. Цена показывается в боте и остаётся на экране до подтверждения."
+      },
+      {
+        "title": "Заберите CP в игре",
+        "text": "CP приходит примерно за 3 минуты. Если баланс не обновился сразу, выйдите из игры и зайдите снова; Battle Pass или Lucky Draw потом берёте за эти CP."
+      }
+    ],
+    "idSteps": [
+      "Откройте Call of Duty: Mobile (Garena) и перейдите на главный экран.",
+      "Нажмите шестерёнку в правом верхнем углу — кнопку Settings.",
+      "В окне Settings выберите раздел User Settings (пользовательские настройки).",
+      "Внизу, рядом с надписью Legal and Privacy, стоит номер Player ID.",
+      "Скопируйте номер полностью и вставьте в поле бота без пробелов, затем проверьте ник."
+    ],
+    "gotcha": {
+      "title": "Играть в Global, а пополнять Garena ID",
+      "text": "Заказы чаще всего срываются именно из-за этого: игрок играет в приложении Global (Activision), а ID отдаёт на пополнение Garena. Две версии работают на разных серверах, CP не переходит из одной в другую, а попытка перенести аккаунт может закончиться блокировкой. Перед оплатой проверьте, что в названии приложения есть Garena."
+    },
+    "faq": [
+      {
+        "q": "Player ID и ник — это одно и то же?",
+        "a": "Нет. Player ID — неизменный номер, который лежит в Настройках, а ник — имя, которое вы можете сменить, и оно может повторяться у других игроков. В бот вы вводите только номер, ник система находит сама."
+      },
+      {
+        "q": "Можно пополнить ID друга или младшего брата?",
+        "a": "Да. Нужен только открытый Player ID, логин или доступ к устройству не требуется. Когда ник появится на экране, убедитесь, что это действительно аккаунт того человека."
+      },
+      {
+        "q": "Играю на ПК или эмуляторе, ID другой?",
+        "a": "Player ID привязан к аккаунту, а не к устройству. Если на телефоне и на ПК вы заходите под одним аккаунтом (Garena, Facebook или Google), ID будет тем же и CP придёт на этот баланс."
+      },
+      {
+        "q": "CP пришли, Battle Pass откроется сам?",
+        "a": "Нет. GemPay доставляет CP, а Battle Pass и Battle Pass Plus вы берёте сами во внутриигровом магазине за эти CP. Lucky Draw и ящики работают так же."
+      },
+      {
+        "q": "Бонусные CP из пакета приходят отдельно?",
+        "a": "Бонусные CP Garena привязывает к самому пакету, и они приходят общей суммой на баланс, отдельной строкой не видны. Часть бонусов действует только в период акции или при первой покупке, поэтому не считайте их постоянными."
+      },
+      {
+        "q": "Если взять CP под конец сезона, они сгорят?",
+        "a": "CP остаётся на балансе бессрочно и переходит в следующий сезон. Сгорают уровни Battle Pass: если взять пасс за несколько дней до конца сезона, вы можете не успеть закрыть его полностью."
+      }
+    ]
+  },
+  "en": {
+    "metaTitle": "Buy Call of Duty Mobile CP (Garena) | GemPay",
+    "metaDescription": "Top up Call of Duty: Mobile CP by Garena SG/MY Player ID: nickname checked free, pay in so'm with UzCard, Humo, Click or Payme, CP in 3 minutes.",
+    "h1": "Call of Duty: Mobile CP top-up — by Garena ID, in so'm",
+    "answer": "GemPay tops up the Garena SG/MY version of Call of Duty: Mobile; Global (Activision) accounts do not work here. You pick the game in the bot and enter the Player ID from Settings, and the system shows the nickname for free. After you confirm, you pay for the CP pack with UzCard or Humo in so'm, and CP arrives in about 3 minutes. No password is requested.",
+    "intro": [
+      "CP (COD Points) is the premium currency of Call of Duty: Mobile. Unlike the ordinary items you buy with Credits, CP goes to the serious part of the store: Battle Pass and Battle Pass Plus, Lucky Draw and Mythic Drop pulls, legendary weapon blueprints. Most players buy CP at the start of a season, because the Battle Pass itself is unlocked with CP.",
+      "From Uzbekistan the official route is often closed: Garena payment pages expect regional cards, while Google Play and App Store balance needs a foreign card or a gift card. With GemPay, CP is written straight to the Player ID and the payment goes through UzCard, Humo, Click, Payme or Paynet in so'm — no currency conversion and no foreign card."
+    ],
+    "spendOn": [
+      "Unlocking Battle Pass and Battle Pass Plus",
+      "Mythic weapons from Lucky Draw and Mythic Drop pulls",
+      "Legendary weapon blueprints in the store",
+      "Operator skins and seasonal Epic bundles",
+      "Unlocking Battle Pass tiers early (tier skip)",
+      "Limited-time events and crate bundles"
+    ],
+    "packages": [
+      "The CP ladder on Garena SG/MY differs from the round numbers on Global: it usually starts at 114 CP, then 230, 460, 690, 1150, 2300 and higher tiers follow.",
+      "Larger tiers add bonus CP on top of the base amount, so one big pack yields more CP than several small ones; the list of tiers is refreshed by the provider, so do not treat it as fixed.",
+      "Current prices are shown in the bot."
+    ],
+    "steps": [
+      {
+        "title": "Confirm the Garena version",
+        "text": "Pick Call of Duty: Mobile (Garena) in the bot. The app on your phone has to be the Garena build: CP cannot be sent to a Global (Activision) account from here, because they run on separate servers."
+      },
+      {
+        "title": "Enter the Player ID",
+        "text": "Take the numeric Player ID from in-game Settings > User Settings and paste it into the field in the bot. CODM Garena has no server or platform selector, only this number is asked for."
+      },
+      {
+        "title": "Check the nickname",
+        "text": "The bot sends the ID to the game server and shows the nickname on screen. The check is free and nothing is charged at this stage; if the nickname belongs to someone else, enter the number again."
+      },
+      {
+        "title": "Pick a CP pack and pay in so'm",
+        "text": "Select the CP tier you need and pay with UzCard, Humo, Click, Payme or Paynet. The price is shown in the bot and stays on screen before you confirm."
+      },
+      {
+        "title": "See the CP in game",
+        "text": "CP arrives in about 3 minutes. If the balance does not refresh right away, close the game and open it again; you then buy the Battle Pass or Lucky Draw with that CP."
+      }
+    ],
+    "idSteps": [
+      "Open Call of Duty: Mobile (Garena) and go to the main screen.",
+      "Tap the gear icon in the top right corner — the Settings button.",
+      "In the Settings window, choose the User Settings section.",
+      "At the bottom, next to the Legal and Privacy line, sits the Player ID number.",
+      "Copy the number in full, paste it into the bot field with no spaces, and check the nickname."
+    ],
+    "gotcha": {
+      "title": "Playing on Global, topping up a Garena ID",
+      "text": "This is the most common reason an order falls through: the player uses the Global (Activision) app but hands the ID to a Garena top-up. The two versions run on separate servers, CP does not move from one to the other, and trying to migrate the account can end in a ban. Before paying, check that the app name says Garena."
+    },
+    "faq": [
+      {
+        "q": "Are the Player ID and the nickname the same thing?",
+        "a": "No. The Player ID is a fixed number that sits in Settings, while the nickname is a name you can change and it may be shared by other players. You only enter the number in the bot, and the system finds the nickname itself."
+      },
+      {
+        "q": "Can I top up a friend's or my brother's ID?",
+        "a": "Yes. Only the public Player ID is needed, with no login and no access to the device. When the nickname appears on screen, confirm that it really is that person's account."
+      },
+      {
+        "q": "I play on PC or an emulator, is the ID different?",
+        "a": "The Player ID is tied to the account, not the device. If you sign in on the phone and on PC with the same account (Garena, Facebook or Google), the ID is the same and CP lands on that balance."
+      },
+      {
+        "q": "CP has arrived, does the Battle Pass unlock on its own?",
+        "a": "No. GemPay delivers the CP, and you buy the Battle Pass and Battle Pass Plus yourself in the in-game store with that CP. Lucky Draw and crates work the same way."
+      },
+      {
+        "q": "Does the bonus CP in a pack arrive separately?",
+        "a": "Garena attaches bonus CP to the pack itself and it lands as part of the total balance, not as a separate line. Some bonuses apply only during a promo or on a first purchase, so do not treat them as permanent."
+      },
+      {
+        "q": "If I buy CP near the end of a season, does it expire?",
+        "a": "CP stays on the balance with no expiry and carries into the next season. What expires is Battle Pass tiers: if you buy the pass a few days before the season ends, you may not have time to finish it."
+      }
+    ]
+  }
+}

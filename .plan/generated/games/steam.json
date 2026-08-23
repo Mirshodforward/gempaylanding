@@ -1,0 +1,246 @@
+{
+  "slug": "steam",
+  "uz": {
+    "metaTitle": "Steam hamyonini to'ldirish, login orqali | GemPay",
+    "metaDescription": "Steam hamyoni account name - kirish logini bo'yicha to'ldiriladi, nik yoki email emas. So'mda UzCard, HUMO, Click, Payme, Paynet; balans bir daqiqada tushadi.",
+    "h1": "Steam hamyonini so'mda to'ldirish: account name orqali, bir daqiqada",
+    "answer": "Steam hamyoni account name bo'yicha to'ldiriladi - bu Steam'ga kirishda yoziladigan login, profildagi ko'rinadigan nik ham, email ham emas. O'yinlardagi kabi nik tasdiqlash bosqichi bu yerda yo'q, login birinchi martadanoq to'g'ri bo'lishi kerak. GemPay botida Steam tanlanadi, login kiritiladi, summa tanlanib so'mda to'lanadi, balans taxminan bir daqiqada akkauntga tushadi.",
+    "intro": [
+      "Steam Hamyon - o'yin ichidagi valyuta emas, akkauntning o'zidagi balans. U bilan Steam Store'dagi o'yinlar va DLC'lar, CS2 hamda Dota 2 kabi bepul o'yinlardagi ichki xaridlar, Community Market'dagi buyumlar to'lanadi. Uni ko'pincha chegirmalar davrini kutayotgan, wishlist'idagi o'yin arzonlashganda pul tayyor turishini istagan va xalqaro kartasi yo'q O'zbekistondagi PC o'yinchilari to'ldiradi.",
+      "Steam kassasi UzCard va HUMO'ni qabul qilmaydi, xalqaro karta esa hammada ham yo'q va u bilan to'lov ko'pincha rad javobi bilan tugaydi. GemPay to'lovni so'mda, odatiy mahalliy usullar orqali oladi - UzCard, HUMO, Click, Payme, Paynet - va balansni akkauntga o'zi tushiradi. Konvertatsiya yoki chet el kartasini qidirish kerak bo'lmaydi."
+    ],
+    "spendOn": [
+      "Steam Store'da o'yin, DLC va oldindan buyurtma",
+      "CS2'da Prime Status va skin xaridlari",
+      "Dota 2'da Dota Plus obunasi va ichki buyumlar",
+      "Community Market'da skin va buyum sotib olish",
+      "Do'stga Steam Gift orqali o'yin sovg'a qilish"
+    ],
+    "packages": [
+      "Steam'da o'yinlardagi kabi paket zinapoyasi yo'q - bu yerda hamyon summalari ishlaydi va botda bir nechta tayyor to'ldirish miqdori turadi.",
+      "Tanlangan summa akkaunt hamyoniga tushadi, hech qanday o'yinga bog'lanmaydi va keyin o'yinga, DLC'ga, Market buyumiga yoki bepul o'yindagi ichki xaridga sarflanadi, balans esa akkaunt qaysi valyutada ochilgan bo'lsa, o'sha valyutada ko'rinadi.",
+      "Joriy miqdorlar va narx botda ko'rsatiladi."
+    ],
+    "steps": [
+      {
+        "title": "Botda Steam bo'limini oching",
+        "text": "@Gempayuz_bot ni ishga tushiring va ro'yxatdan Steam'ni tanlang. Bu o'yin paketi emas, hamyon to'ldirish: tushgan balansni keyin o'zingiz istagan narsaga sarflaysiz."
+      },
+      {
+        "title": "Account name (login) ni kiriting",
+        "text": "Steam'ga kirishda yoziladigan loginni yozing. Profildagi ko'rinadigan nik ham, email manzil ham bu maydonga to'g'ri kelmaydi - ular boshqa ma'lumotlar."
+      },
+      {
+        "title": "Loginni o'zingiz solishtiring",
+        "text": "O'yinlarda tizim nikni ko'rsatadi va siz tasdiqlaysiz, Steam'da esa bunday tekshiruv yo'q. Shuning uchun yuborishdan oldin loginni Account details sahifasidagi qator bilan solishtiring."
+      },
+      {
+        "title": "Summani tanlab so'mda to'lang",
+        "text": "Botdagi to'ldirish miqdorlaridan birini tanlaysiz va UzCard, HUMO, Click, Payme yoki Paynet orqali to'laysiz. Narx botda ko'rsatiladi, to'lov tasdiqlanmaguncha hech narsa yechilmaydi."
+      },
+      {
+        "title": "Balansni Steam'da ko'ring",
+        "text": "Taxminan bir daqiqada mablag' akkaunt hamyoniga tushadi va Steam'da yuqori o'ngdagi ismingiz yonida ko'rinadi. Savol chiqsa, @StarsPaymeeSupport ga chekni yuboring."
+      }
+    ],
+    "idSteps": [
+      "Steam ilovasida yuqori o'ngdagi ismingizni bosing va Account details bo'limini oching.",
+      "Sahifa boshidagi Account name qatorini toping - bu Steam'ga kirishda yoziladigan login.",
+      "Profil ostida ko'rinadigan nik va email bu emas, aynan shu qatorni oling.",
+      "Mobil Steam ilovasida ham: menyu, so'ng Account details - o'sha qator shu yerda.",
+      "Loginni harfma-harf ko'chiring, oldida yoki oxirida bo'shliq qolib ketmasin."
+    ],
+    "gotcha": {
+      "title": "Nik bilan loginni almashtirib yuborish",
+      "text": "Steam'da ko'rinadigan nik istalgan vaqtda o'zgaradi va boshqalarda ham takrorlanadi, account name esa akkauntning o'zgarmas logini. Bu yerda nikni tasdiqlash oynasi yo'q: noto'g'ri login yozilsa, mablag' begona akkauntga tushadi va Valve hamyon pulini akkauntlar orasida ko'chirmaydi. Yuborishdan oldin loginni ikki marta solishtiring."
+    },
+    "faq": [
+      {
+        "q": "Loginimni eslay olmasam, uni qayerdan ko'raman?",
+        "a": "Steam'da yuqori o'ngdagi ismingizni bosib Account details sahifasini oching - login o'sha yerda yozilgan. Email manzil login emas, brauzer yoki ilova saqlab qolgan avtomatik kirish esa loginni ko'rsatmaydi."
+      },
+      {
+        "q": "Steam Guard yoqilgan bo'lsa to'ldirish ishlaydimi?",
+        "a": "Ha. To'ldirish akkauntga kirish orqali emas, tashqaridan bajariladi, shuning uchun Steam Guard yoki mobil autentifikatorni o'chirish kerak emas. Parol, kirish kodi yoki sessiya hech qachon so'ralmaydi."
+      },
+      {
+        "q": "Hamyondagi mablag'ni boshqa akkauntga o'tkazsa bo'ladimi?",
+        "a": "Yo'q. Valve qoidasiga ko'ra hamyon balansi akkauntlar orasida ko'chirilmaydi va naqd pulga qaytarilmaydi. U faqat o'sha akkauntdagi xaridlarga ishlaydi, shu sababli login to'g'ri kiritilishi muhim."
+      },
+      {
+        "q": "Balans qaysi valyutada ko'rinadi?",
+        "a": "Steam hamyoni valyutasini akkaunt ro'yxatdan o'tgan mamlakat belgilaydi, GemPay emas. Siz to'lovni so'mda qilasiz, balans esa akkauntingiz uchun ochilgan valyutada turadi. Regionni Steam do'konidagi narx ko'rsatkichidan bilib olasiz."
+      },
+      {
+        "q": "Yangi, hali xarid qilinmagan akkauntni to'ldirsa bo'ladimi?",
+        "a": "Ha, login mavjud bo'lsa yetarli. Steam'dagi limited akkaunt cheklovi esa Valve belgilagan miqdordagi xarid yoki to'ldirishdan keyin ochiladi - buni Steam o'zi hal qiladi, GemPay bu jarayonga aralashmaydi."
+      },
+      {
+        "q": "Balans bilan do'stimga o'yin sovg'a qila olamanmi?",
+        "a": "Ha, Steam do'konidagi sovg'a sifatida sotib olish tugmasi hamyon balansidan to'laydi va o'yin do'stlar ro'yxatidagi odamga boradi. Valve ayrim regionlar orasida sovg'a yuborishni cheklaydi, buni Steam tekshiradi."
+      }
+    ]
+  },
+  "ru": {
+    "metaTitle": "Пополнение кошелька Steam по логину | GemPay",
+    "metaDescription": "Кошелек Steam пополняется по account name - логину для входа, а не по нику или email. В сумах: UzCard, HUMO, Click, Payme, Paynet; баланс за минуту.",
+    "h1": "Пополнение кошелька Steam в сумах: по account name, за минуту",
+    "answer": "Кошелек Steam пополняется по account name - это логин, который вводится при входе в Steam, а не видимый в профиле ник и не email. Шага с подтверждением ника, как в играх, здесь нет, логин должен быть верным с первого раза. В боте GemPay выбирается Steam, вводится логин, выбирается сумма и оплачивается в сумах, баланс приходит на аккаунт примерно за минуту.",
+    "intro": [
+      "Steam Кошелек - это не внутриигровая валюта, а баланс на самом аккаунте. Им оплачиваются игры и DLC в Steam Store, внутренние покупки в бесплатных играх вроде CS2 и Dota 2, предметы на Community Market. Чаще всего его пополняют PC-игроки из Узбекистана, которые ждут период скидок, хотят держать деньги наготове к моменту, когда игра из вишлиста подешевеет, и у которых нет международной карты.",
+      "Касса Steam не принимает UzCard и HUMO, а международная карта есть не у всех, и оплата ею часто заканчивается отказом. GemPay принимает оплату в сумах привычными местными способами - UzCard, HUMO, Click, Payme, Paynet - и сам зачисляет баланс на аккаунт. Ни конвертация, ни поиск зарубежной карты не понадобятся."
+    ],
+    "spendOn": [
+      "Игры, DLC и предзаказы в Steam Store",
+      "Prime Status и покупка скинов в CS2",
+      "Подписка Dota Plus и внутренние предметы в Dota 2",
+      "Покупка скинов и предметов на Community Market",
+      "Подарок игры другу через Steam Gift"
+    ],
+    "packages": [
+      "В Steam нет лестницы пакетов, как в играх - здесь работают суммы кошелька, и в боте стоит несколько готовых сумм пополнения.",
+      "Выбранная сумма приходит в кошелек аккаунта, не привязывается ни к одной игре и дальше тратится на игру, DLC, предмет с Market или внутреннюю покупку в бесплатной игре, а баланс отображается в той валюте, в которой открыт аккаунт.",
+      "Актуальные суммы и цена показываются в боте."
+    ],
+    "steps": [
+      {
+        "title": "Откройте раздел Steam в боте",
+        "text": "Запустите @Gempayuz_bot и выберите Steam из списка. Это не игровой пакет, а пополнение кошелька: пришедший баланс вы дальше тратите на то, что захотите."
+      },
+      {
+        "title": "Введите account name (логин)",
+        "text": "Напишите логин, который вводится при входе в Steam. Ни видимый в профиле ник, ни адрес email в это поле не подходят - это другие данные."
+      },
+      {
+        "title": "Сверьте логин сами",
+        "text": "В играх система показывает ник, и вы подтверждаете, а в Steam такой проверки нет. Поэтому перед отправкой сверьте логин со строкой на странице Account details."
+      },
+      {
+        "title": "Выберите сумму и оплатите в сумах",
+        "text": "Вы выбираете одну из сумм пополнения в боте и платите через UzCard, HUMO, Click, Payme или Paynet. Цена показывается в боте, до подтверждения оплаты ничего не списывается."
+      },
+      {
+        "title": "Посмотрите баланс в Steam",
+        "text": "Примерно за минуту средства приходят в кошелек аккаунта и видны в Steam рядом с вашим именем в правом верхнем углу. Если появится вопрос, отправьте чек в @StarsPaymeeSupport."
+      }
+    ],
+    "idSteps": [
+      "В Steam нажмите на свое имя в правом верхнем углу и откройте раздел Account details.",
+      "Найдите в начале страницы строку Account name - это логин, который вводится при входе в Steam.",
+      "Видимый под профилем ник и email - это не он, берите именно эту строку.",
+      "В мобильном приложении Steam так же: меню, затем Account details - та же строка там.",
+      "Перенесите логин буква в букву, чтобы в начале или в конце не остался пробел."
+    ],
+    "gotcha": {
+      "title": "Перепутать ник с логином",
+      "text": "Видимый в Steam ник меняется в любой момент и повторяется у других людей, а account name - неизменный логин аккаунта. Окна подтверждения ника здесь нет: если написать неверный логин, средства уйдут на чужой аккаунт, а Valve не переносит деньги кошелька между аккаунтами. Перед отправкой сверьте логин дважды."
+    },
+    "faq": [
+      {
+        "q": "Если я не помню свой логин, где его посмотреть?",
+        "a": "В Steam нажмите на свое имя в правом верхнем углу и откройте страницу Account details - логин написан там. Адрес email логином не является, а сохраненный браузером или приложением автоматический вход логин не показывает."
+      },
+      {
+        "q": "Работает ли пополнение, если включен Steam Guard?",
+        "a": "Да. Пополнение выполняется извне, а не через вход в аккаунт, поэтому отключать Steam Guard или мобильный аутентификатор не нужно. Пароль, код входа или сессия никогда не запрашиваются."
+      },
+      {
+        "q": "Можно ли перевести средства кошелька на другой аккаунт?",
+        "a": "Нет. По правилам Valve баланс кошелька не переносится между аккаунтами и не возвращается наличными. Он работает только для покупок на том же аккаунте, поэтому важно ввести логин верно."
+      },
+      {
+        "q": "В какой валюте отображается баланс?",
+        "a": "Валюту кошелька Steam определяет страна, в которой зарегистрирован аккаунт, а не GemPay. Вы платите в сумах, а баланс стоит в той валюте, которая открыта для вашего аккаунта. Регион можно узнать по отображению цен в магазине Steam."
+      },
+      {
+        "q": "Можно ли пополнить новый аккаунт, на котором еще не было покупок?",
+        "a": "Да, достаточно того, что логин существует. А ограничение limited-аккаунта в Steam снимается после покупки или пополнения на установленную Valve сумму - это решает сам Steam, GemPay в этот процесс не вмешивается."
+      },
+      {
+        "q": "Можно ли балансом подарить игру другу?",
+        "a": "Да, кнопка покупки в подарок в магазине Steam оплачивается с баланса кошелька, и игра уходит человеку из списка друзей. Valve ограничивает отправку подарков между некоторыми регионами, это проверяет сам Steam."
+      }
+    ]
+  },
+  "en": {
+    "metaTitle": "Steam wallet top-up by account name | GemPay",
+    "metaDescription": "A Steam wallet is topped up by account name - the sign-in login, not a nickname or email. Pay in so'm: UzCard, HUMO, Click, Payme, Paynet; balance in a minute.",
+    "h1": "Top up a Steam wallet in so'm: by account name, in a minute",
+    "answer": "A Steam wallet is topped up by account name - the login you type when signing in to Steam, not the nickname shown on the profile and not the email. There is no nickname confirmation step here as there is with games, so the login has to be right the first time. In the GemPay bot you pick Steam, enter the login, choose an amount and pay in so'm, and the balance lands on the account in about a minute.",
+    "intro": [
+      "The Steam Wallet is not an in-game currency but a balance on the account itself. It pays for games and DLC in the Steam Store, in-game purchases in free games such as CS2 and Dota 2, and items on the Community Market. It is most often topped up by PC players in Uzbekistan who are waiting for a sale period, who want money ready for the moment a game on their wishlist drops in price, and who have no international card.",
+      "The Steam checkout does not accept UzCard or HUMO, an international card is not something everyone has, and paying with one often ends in a decline. GemPay takes the payment in so'm through the usual local methods - UzCard, HUMO, Click, Payme, Paynet - and puts the balance on the account itself. No conversion and no hunt for a foreign card are needed."
+    ],
+    "spendOn": [
+      "Games, DLC and pre-orders in the Steam Store",
+      "Prime Status and skin purchases in CS2",
+      "The Dota Plus subscription and in-game items in Dota 2",
+      "Buying skins and items on the Community Market",
+      "Gifting a game to a friend through Steam Gift"
+    ],
+    "packages": [
+      "Steam has no pack ladder the way games do - here wallet amounts are used, and the bot holds several ready top-up amounts.",
+      "The chosen amount lands in the account wallet, is not tied to any game and is then spent on a game, DLC, a Market item or an in-game purchase in a free game, while the balance is shown in whatever currency the account was opened in.",
+      "The current amounts and the price are shown in the bot."
+    ],
+    "steps": [
+      {
+        "title": "Open the Steam section in the bot",
+        "text": "Start @Gempayuz_bot and pick Steam from the list. This is not a game pack but a wallet top-up: you then spend the balance that arrives on whatever you want."
+      },
+      {
+        "title": "Enter the account name (login)",
+        "text": "Type the login you use when signing in to Steam. Neither the nickname shown on the profile nor the email address fits this field - those are different details."
+      },
+      {
+        "title": "Check the login yourself",
+        "text": "With games the system shows the nickname and you confirm it, but in Steam there is no such check. So before sending, compare the login with the line on the Account details page."
+      },
+      {
+        "title": "Choose an amount and pay in so'm",
+        "text": "You pick one of the top-up amounts in the bot and pay with UzCard, HUMO, Click, Payme or Paynet. The price is shown in the bot, and nothing is charged until the payment is confirmed."
+      },
+      {
+        "title": "Check the balance in Steam",
+        "text": "In about a minute the funds land in the account wallet and appear in Steam next to your name in the top right. If a question comes up, send the receipt to @StarsPaymeeSupport."
+      }
+    ],
+    "idSteps": [
+      "In Steam, click your name in the top right and open the Account details section.",
+      "Find the Account name line at the top of the page - that is the login you type when signing in to Steam.",
+      "The nickname shown under the profile and the email are not it; take exactly that line.",
+      "It is the same in the Steam mobile app: menu, then Account details - the same line is there.",
+      "Copy the login letter by letter, and make sure no space is left at the start or the end."
+    ],
+    "gotcha": {
+      "title": "Mixing up the nickname and the login",
+      "text": "The nickname shown in Steam can be changed at any time and is repeated by other people, while the account name is the account's permanent login. There is no nickname confirmation window here: if the wrong login is entered, the funds go to someone else's account, and Valve does not move wallet money between accounts. Compare the login twice before sending."
+    },
+    "faq": [
+      {
+        "q": "If I cannot remember my login, where do I look it up?",
+        "a": "In Steam, click your name in the top right and open the Account details page - the login is written there. An email address is not the login, and an automatic sign-in saved by the browser or the app does not show it."
+      },
+      {
+        "q": "Does the top-up work if Steam Guard is enabled?",
+        "a": "Yes. The top-up is done from the outside, not by signing in to the account, so there is no need to turn off Steam Guard or the mobile authenticator. A password, a login code or a session is never requested."
+      },
+      {
+        "q": "Can wallet funds be moved to another account?",
+        "a": "No. Under Valve's rules the wallet balance is not transferred between accounts and is not returned as cash. It works only for purchases on that same account, which is why entering the login correctly matters."
+      },
+      {
+        "q": "Which currency is the balance shown in?",
+        "a": "The Steam wallet currency is set by the country the account is registered in, not by GemPay. You pay in so'm, while the balance sits in the currency opened for your account. You can tell the region from how prices are displayed in the Steam store."
+      },
+      {
+        "q": "Can a new account with no purchases yet be topped up?",
+        "a": "Yes, it is enough that the login exists. The limited account restriction in Steam is lifted after a purchase or top-up of the amount Valve sets - Steam handles that itself, and GemPay does not take part in that process."
+      },
+      {
+        "q": "Can I use the balance to gift a game to a friend?",
+        "a": "Yes, the buy as a gift button in the Steam store is paid from the wallet balance, and the game goes to a person on your friends list. Valve restricts gifting between some regions, and Steam checks that itself."
+      }
+    ]
+  }
+}

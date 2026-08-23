@@ -1,0 +1,246 @@
+{
+  "slug": "delta-force",
+  "uz": {
+    "answer": "O'zbekistondagi o'yinchilar Delta Force'ning Global (Level Infinite) versiyasida o'ynaydi, Garena hududida emas, shuning uchun bu yerda server tanlash yo'q: GemPay botiga faqat Player ID kiritiladi. Bot o'yin serveridan niknemni bepul chiqaradi, siz tasdiqlagach so'mda to'laysiz va Delta Coins taxminan 5 daqiqada tushadi. Karta sifatida UzCard, HUMO, Click, Payme ishlaydi.",
+    "faq": [
+      {
+        "q": "Bot ko'rsatgan niknem men bilgan niknemdan boshqa. Nima qilay?",
+        "a": "Buyurtmani tasdiqlamang. Niknem o'yin serveridan keladi, ya'ni ekranda turgan nom aynan siz kiritgan ID egasiniki. Boshqa nom chiqdi degani raqamda xato bor: ID ni profildan qayta nusxa oling va yana urinib ko'ring."
+      },
+      {
+        "q": "Battle Pass ni to'g'ridan-to'g'ri olsa bo'ladimi, yoki avval Delta Coins kerakmi?",
+        "a": "Botda Delta Coins paketlari va Battle Pass alohida bandlar sifatida turadi. Battle Pass ro'yxatda bo'lsa, uni to'g'ridan-to'g'ri olasiz; bo'lmasa coin olib, o'yin ichidagi Battle Pass ekranidan ochasiz. Joriy ro'yxat botda ko'rinadi."
+      },
+      {
+        "q": "Bonus coin asosiy paket bilan birga keladimi?",
+        "a": "Ha, bonus paketning bir qismi va alohida buyurtma emas, u asosiy miqdor bilan birga bitta yetkazishda hisobga yoziladi. Qaysi paketda qancha bonus borligi botdagi paket tavsifida yozib qo'yiladi."
+      },
+      {
+        "q": "Mavsum tugashiga oz qolgan, hozir Battle Pass olish mantiqlimi?",
+        "a": "Battle Pass darajalari o'sha mavsum ichida ochiladi, mavsum yopilgach ochilmagan darajalar qolib ketadi. Bir necha kun qolgan bo'lsa, coin ni olib qo'yib, yangi mavsum boshida Battle Pass ni ochish qulayroq. Mavsum sanalari o'yin ichidagi Battle Pass ekranida turadi."
+      },
+      {
+        "q": "Konsolda o'ynayman, Player ID orqali to'ldirish ishlaydimi?",
+        "a": "Delta Force konsolda 2025-yildan bor va akkaunt bitta Level Infinite profiliga bog'lanadi, ya'ni Player ID o'zgarmaydi. Botga o'sha raqamni kiriting: niknem chiqsa, to'ldirish shu akkauntga ketadi. Niknem chiqmasa yoki boshqa nom ko'rsatilsa, to'lamang va @StarsPaymeeSupport ga yozing."
+      },
+      {
+        "q": "GemPay Level Infinite yoki Team Jade ning rasmiy hamkorimi?",
+        "a": "Yo'q. GemPay mustaqil to'ldirish xizmati, nashriyot bilan rasmiy hamkorligi yo'q. U provayder katalogi orqali Player ID bo'yicha Delta Coins yetkazadi; parol, SMS kod yoki akkauntga kirish hech qachon so'ralmaydi."
+      }
+    ],
+    "gotcha": {
+      "text": "Delta Force'ning Garena hududidagi versiyasi, ya'ni SEA, Turkiya, MENA va LATAM, alohida o'yin hisoblanadi va uning ID'si Global akkaunt bilan mos kelmaydi. O'zbekistondagi o'yinchilar Global versiyada. Bot ID ni topmasa, avval qaysi versiyada ekaningizni tekshiring, noto'g'ri versiya uchun buyurtma bermang.",
+      "title": "Garena versiyasi Global bilan bir xil emas"
+    },
+    "h1": "Delta Force uchun Delta Coins to'ldirish: Player ID bo'yicha, so'mda",
+    "idSteps": [
+      "Mobilda bosh ekranning o'ng pastidagi avatar belgisini bosing, profil kartochkasi ochiladi.",
+      "Niknem ostidagi ID raqamini yonidagi nusxa olish tugmasi bilan ko'chirib oling.",
+      "PC'da lobbidagi profil sahifasini oching, UID bir bosishda nusxalanadi.",
+      "Raqam 11 xonali va odatda 10000 bilan boshlanadi, niknem emas aynan shu kerak.",
+      "PC va mobilda bitta akkauntning ID'si bir xil, birini ko'chirsangiz kifoya."
+    ],
+    "intro": [
+      "Delta Coins Delta Force'dagi pulli valyuta. Delta Ticket o'ynab yig'iladi, Delta Coins esa yig'ilmaydi, uni faqat sotib olish mumkin. Shuning uchun uni Havoc Warfare va Operations rejimlarida o'tirib qoladigan, mavsum boshida Battle Pass ochib qo'yadigan va operator hamda qurol ko'rinishlarini yig'adigan o'yinchilar oladi. O'yin 2024-yil oxirida PC'da, 2025-yilning aprelida mobilda chiqqan, shuning uchun o'zbek auditoriyasi hali yangi.",
+      "Rasmiy yo'l, ya'ni Midasbuy yoki o'yin ichidagi do'kon, xalqaro kassa orqali ishlaydi va odatda Visa, Mastercard yoki PayPal so'raydi. UzCard bilan HUMO esa faqat O'zbekiston ichida va faqat so'mda ishlaydi. Steam orqali olganda ham to'lov xatosi va LIPASS akkaunti noto'g'ri Steam profiliga bog'lanib qolgan holatlar uchraydi. GemPay'da to'lov mahalliy kartada, so'mda ketadi va Delta Coins Player ID'ga yoziladi."
+    ],
+    "metaDescription": "Delta Force Global akkauntiga Delta Coins: Player ID ni kiriting, bot niknemni bepul chiqaradi, so'mda to'laysiz. UzCard, HUMO, Click, Payme. ~5 daqiqada.",
+    "metaTitle": "Delta Force to'ldirish: Delta Coins so'mda | GemPay",
+    "packages": [
+      "Delta Coins bosqichli qator bilan sotiladi, odatda 60, 300, 680, 1280, 3280 va undan yuqori paketlar, kattalariga ustiga bonus coin qo'shiladi.",
+      "Bonus ulushi paket kattalashgani sari ortadi, shuning uchun bitta yirik paket bir nechta maydasidan ko'proq coin berishi mumkin; Battle Pass botda alohida band sifatida turadi.",
+      "Qatorning aniq ro'yxati va joriy narx botda ko'rsatiladi."
+    ],
+    "spendOn": [
+      "Battle Pass: mavsumning Base va Deluxe darajalari",
+      "Operatorlarni ochish va ularning ko'rinishlari",
+      "Qurol skinlari hamda aksessuar to'plamlari",
+      "Delta Coins ni Delta Ticket ga aylantirish",
+      "Do'kondagi mavsumiy va cheklangan muddatli to'plamlar"
+    ],
+    "steps": [
+      {
+        "text": "Telegram'da @Gempayuz_bot ni oching va katalogdan Delta Force'ni tanlang. Ro'yxatda Delta Coins paketlari va Battle Pass chiqadi.",
+        "title": "Botni oching va Delta Force'ni tanlang"
+      },
+      {
+        "text": "Faqat bitta maydon bor, u ham bo'lsa Player ID. Bu 11 xonali raqam, odatda 10000 bilan boshlanadi. Server yoki platforma tanlash so'ralmaydi, chunki O'zbekistondagi akkauntlar Global versiyada; Garena hududidagi akkaunt bu yerga to'g'ri kelmaydi.",
+        "title": "Player ID ni kiriting, server maydoni yo'q"
+      },
+      {
+        "text": "Bot ID ni o'yin serveridan so'raydi va akkaunt niknemini ko'rsatadi. Bu bosqich pulsiz: niknem sizniki bo'lsa tasdiqlaysiz, bo'lmasa buyurtmani bekor qilasiz. Tasdiqlamaguningizcha hisobdan hech narsa yechilmaydi.",
+        "title": "Niknemni bepul tekshiring"
+      },
+      {
+        "text": "Delta Coins zinapoyasidan kerakli bandni yoki Battle Pass ni belgilang. To'lov so'mda ketadi: UzCard, HUMO, Click, Payme, Paynet. Joriy narx to'lovdan oldin ekranda turadi.",
+        "title": "Paketni tanlang va so'mda to'lang"
+      },
+      {
+        "text": "Yetkazish odatda 5 daqiqada tugaydi. O'yinni qayta ishga tushirsangiz yoki do'kon ekranini yangilasangiz, yangi balans ko'rinadi. Kechikish bo'lsa @StarsPaymeeSupport ga yozing.",
+        "title": "Coin tushishini kuting"
+      }
+    ]
+  },
+  "ru": {
+    "metaTitle": "Delta Force: пополнение Delta Coins в сумах | GemPay",
+    "metaDescription": "Delta Coins для Delta Force Global: введите Player ID, бот бесплатно покажет ник, оплата в сумах. UzCard, HUMO, Click, Payme. Зачисление ~5 минут.",
+    "h1": "Пополнение Delta Coins в Delta Force: по Player ID, в сумах",
+    "answer": "Игроки из Узбекистана играют в глобальную версию Delta Force (Level Infinite), а не в регионе Garena, поэтому выбора сервера здесь нет: в бот GemPay вводится только Player ID. Бот бесплатно подтягивает ник с игрового сервера, после вашего подтверждения вы платите в сумах, и Delta Coins приходят примерно за 5 минут. Из карт работают UzCard, HUMO, Click, Payme.",
+    "intro": [
+      "Delta Coins — платная валюта Delta Force. Delta Ticket копится игрой, а Delta Coins не выпадают: их можно только купить. Поэтому их берут те, кто подолгу сидит в режимах Havoc Warfare и Operations, открывает Battle Pass в начале сезона и собирает облики операторов и оружия. Игра вышла на PC в конце 2024 года, на мобильных — в апреле 2025-го, так что узбекская аудитория здесь ещё новая.",
+      "Официальный путь — Midasbuy или внутриигровой магазин — идёт через международную кассу и обычно просит Visa, Mastercard или PayPal. UzCard и HUMO работают только внутри Узбекистана и только в сумах. При покупке через Steam тоже встречаются ошибки оплаты и случаи, когда аккаунт LIPASS оказался привязан не к тому профилю Steam. В GemPay оплата идёт местной картой, в сумах, а Delta Coins зачисляются на Player ID."
+    ],
+    "spendOn": [
+      "Battle Pass: уровни Base и Deluxe текущего сезона",
+      "Открытие операторов и их облики",
+      "Скины оружия и наборы аксессуаров",
+      "Обмен Delta Coins на Delta Ticket",
+      "Сезонные и лимитированные наборы в магазине"
+    ],
+    "packages": [
+      "Delta Coins продаются лесенкой пакетов: обычно 60, 300, 680, 1280, 3280 и выше, к крупным сверху добавляются бонусные coin.",
+      "Доля бонуса растёт вместе с размером пакета, поэтому один крупный пакет может дать больше coin, чем несколько мелких; Battle Pass стоит в боте отдельной позицией.",
+      "Точный список лесенки и текущая цена показываются в боте."
+    ],
+    "steps": [
+      {
+        "title": "Откройте бот и выберите Delta Force",
+        "text": "Откройте @Gempayuz_bot в Telegram и выберите Delta Force в каталоге. В списке появятся пакеты Delta Coins и Battle Pass."
+      },
+      {
+        "title": "Введите Player ID, поля сервера нет",
+        "text": "Поле здесь одно — Player ID. Это 11-значный номер, обычно начинается с 10000. Выбирать сервер или платформу не нужно: аккаунты из Узбекистана на глобальной версии, а аккаунт из региона Garena сюда не подходит."
+      },
+      {
+        "title": "Проверьте ник бесплатно",
+        "text": "Бот запрашивает ID на игровом сервере и показывает ник аккаунта. Этот шаг бесплатный: ник ваш — подтверждаете, чужой — отменяете заказ. Пока вы не подтвердили, с карты ничего не списывается."
+      },
+      {
+        "title": "Выберите пакет и оплатите в сумах",
+        "text": "Отметьте нужную позицию в лесенке Delta Coins или Battle Pass. Оплата идёт в сумах: UzCard, HUMO, Click, Payme, Paynet. Текущая цена видна на экране до оплаты."
+      },
+      {
+        "title": "Дождитесь зачисления coin",
+        "text": "Доставка обычно укладывается в 5 минут. Перезапустите игру или обновите экран магазина — увидите новый баланс. Если есть задержка, напишите в @StarsPaymeeSupport."
+      }
+    ],
+    "idSteps": [
+      "На мобильном нажмите значок аватара в правом нижнем углу главного экрана — откроется карточка профиля.",
+      "Номер ID под ником скопируйте кнопкой копирования рядом с ним.",
+      "На PC откройте страницу профиля в лобби: UID копируется одним нажатием.",
+      "Номер 11-значный и обычно начинается с 10000, нужен именно он, а не ник.",
+      "На PC и на мобильном у одного аккаунта ID одинаковый, достаточно скопировать в любом из них."
+    ],
+    "gotcha": {
+      "title": "Версия Garena — это не Global",
+      "text": "Версия Delta Force в регионе Garena, то есть SEA, Турция, MENA и LATAM, считается отдельной игрой, и её ID не совпадает с аккаунтом Global. Игроки из Узбекистана находятся на глобальной версии. Если бот не находит ID, сначала проверьте, на какой версии вы играете, и не оформляйте заказ для неверной версии."
+    },
+    "faq": [
+      {
+        "q": "Бот показал не тот ник, который я знаю. Что делать?",
+        "a": "Не подтверждайте заказ. Ник приходит с игрового сервера, то есть имя на экране принадлежит владельцу именно того ID, который вы ввели. Другое имя означает ошибку в номере: скопируйте ID из профиля заново и попробуйте ещё раз."
+      },
+      {
+        "q": "Можно взять Battle Pass напрямую или сначала нужны Delta Coins?",
+        "a": "В боте пакеты Delta Coins и Battle Pass стоят отдельными позициями. Если Battle Pass есть в списке, берёте его напрямую; если нет — берёте coin и открываете Battle Pass на его экране в игре. Актуальный список виден в боте."
+      },
+      {
+        "q": "Бонусные coin приходят вместе с основным пакетом?",
+        "a": "Да, бонус — часть пакета, а не отдельный заказ: он зачисляется вместе с основным количеством одной доставкой. Сколько бонуса в каком пакете, написано в описании пакета в боте."
+      },
+      {
+        "q": "До конца сезона осталось немного, есть ли смысл брать Battle Pass сейчас?",
+        "a": "Уровни Battle Pass открываются внутри своего сезона, а после его закрытия неоткрытые уровни так и остаются закрытыми. Если осталось несколько дней, удобнее взять coin и открыть Battle Pass в начале нового сезона. Даты сезона стоят на экране Battle Pass в игре."
+      },
+      {
+        "q": "Я играю на консоли, пополнение по Player ID работает?",
+        "a": "Delta Force на консолях есть с 2025 года, и аккаунт привязан к одному профилю Level Infinite, то есть Player ID не меняется. Введите в бот этот же номер: если ник появился, пополнение уйдёт на этот аккаунт. Если ник не появился или показано чужое имя, не платите и напишите в @StarsPaymeeSupport."
+      },
+      {
+        "q": "GemPay — официальный партнёр Level Infinite или Team Jade?",
+        "a": "Нет. GemPay — независимый сервис пополнения, официального партнёрства с издателем у него нет. Он доставляет Delta Coins по Player ID через каталог провайдера; пароль, SMS-код или вход в аккаунт не запрашиваются никогда."
+      }
+    ]
+  },
+  "en": {
+    "metaTitle": "Delta Force top-up: Delta Coins in so'm | GemPay",
+    "metaDescription": "Delta Coins for your Delta Force Global account: enter the Player ID, the bot shows your nickname free, pay in so'm. UzCard, HUMO, Click, Payme. ~5 min.",
+    "h1": "Delta Coins top-up for Delta Force: by Player ID, in so'm",
+    "answer": "Players in Uzbekistan are on the Global (Level Infinite) version of Delta Force, not the Garena region, so there is no server choice here: the GemPay bot only asks for the Player ID. The bot pulls the nickname from the game server for free, you confirm, then pay in so'm, and Delta Coins arrive in about 5 minutes. UzCard, HUMO, Click and Payme all work as payment cards.",
+    "intro": [
+      "Delta Coins are the paid currency in Delta Force. Delta Tickets build up through play, Delta Coins do not - they can only be bought. That is why they are picked up by players who spend hours in Havoc Warfare and Operations, unlock the Battle Pass at the start of a season, and collect operator and weapon skins. The game came out on PC in late 2024 and on mobile in April 2025, so the Uzbek audience is still new to it.",
+      "The official route - Midasbuy or the in-game store - runs through an international checkout and usually asks for Visa, Mastercard or PayPal. UzCard and HUMO work only inside Uzbekistan and only in so'm. Buying through Steam also brings payment errors and cases where a LIPASS account ends up linked to the wrong Steam profile. With GemPay the payment goes through a local card, in so'm, and the Delta Coins are credited to the Player ID."
+    ],
+    "spendOn": [
+      "Battle Pass: the season's Base and Deluxe tiers",
+      "Unlocking operators and their skins",
+      "Weapon skins and accessory bundles",
+      "Converting Delta Coins into Delta Tickets",
+      "Seasonal and limited-time bundles in the store"
+    ],
+    "packages": [
+      "Delta Coins are sold as a ladder of packs, usually 60, 300, 680, 1280, 3280 and higher, with bonus coins added on top of the larger ones.",
+      "The bonus share grows as the pack gets bigger, so one large pack can give more coins than several small ones; the Battle Pass sits in the bot as a separate item.",
+      "The exact ladder and the current price are shown in the bot."
+    ],
+    "steps": [
+      {
+        "title": "Open the bot and pick Delta Force",
+        "text": "Open @Gempayuz_bot in Telegram and choose Delta Force from the catalogue. The list shows Delta Coins packs and the Battle Pass."
+      },
+      {
+        "title": "Enter the Player ID, there is no server field",
+        "text": "There is only one field here, and it is the Player ID: an 11-digit number that usually starts with 10000. You are not asked to pick a server or a platform, because accounts in Uzbekistan are on the Global version; a Garena-region account does not belong here."
+      },
+      {
+        "title": "Check the nickname for free",
+        "text": "The bot queries the ID on the game server and shows the account nickname. This step costs nothing: if the nickname is yours, you confirm; if it is not, you cancel the order. Nothing is charged until you confirm."
+      },
+      {
+        "title": "Pick a pack and pay in so'm",
+        "text": "Mark the item you need on the Delta Coins ladder, or the Battle Pass. Payment goes in so'm: UzCard, HUMO, Click, Payme, Paynet. The current price is on screen before you pay."
+      },
+      {
+        "title": "Wait for the coins to land",
+        "text": "Delivery usually finishes within 5 minutes. Restart the game or refresh the store screen and the new balance appears. If it is late, write to @StarsPaymeeSupport."
+      }
+    ],
+    "idSteps": [
+      "On mobile, tap the avatar icon in the bottom right of the home screen and the profile card opens.",
+      "Copy the ID number under the nickname with the copy button next to it.",
+      "On PC, open the profile page in the lobby; the UID copies in one click.",
+      "The number is 11 digits and usually starts with 10000 - that is what you need, not the nickname.",
+      "One account has the same ID on PC and mobile, so copying it in either place is enough."
+    ],
+    "gotcha": {
+      "title": "The Garena version is not the same as Global",
+      "text": "The Garena-region version of Delta Force, that is SEA, Turkey, MENA and LATAM, counts as a separate game, and its ID does not match a Global account. Players in Uzbekistan are on the Global version. If the bot cannot find the ID, first check which version you are on, and do not place an order for the wrong version."
+    },
+    "faq": [
+      {
+        "q": "The bot showed a different nickname from the one I know. What should I do?",
+        "a": "Do not confirm the order. The nickname comes from the game server, so the name on screen belongs to the owner of exactly the ID you entered. A different name means there is a mistake in the number: copy the ID from your profile again and try once more."
+      },
+      {
+        "q": "Can I buy the Battle Pass directly, or do I need Delta Coins first?",
+        "a": "In the bot, Delta Coins packs and the Battle Pass are separate items. If the Battle Pass is on the list, you take it directly; if it is not, you buy coins and unlock the Battle Pass from its screen inside the game. The current list is visible in the bot."
+      },
+      {
+        "q": "Do bonus coins come together with the main pack?",
+        "a": "Yes, the bonus is part of the pack and not a separate order; it is credited together with the main amount in a single delivery. How much bonus each pack carries is written in the pack description in the bot."
+      },
+      {
+        "q": "The season is nearly over, does it make sense to buy the Battle Pass now?",
+        "a": "Battle Pass tiers unlock within their own season, and once the season closes the tiers you did not open stay closed. With only a few days left, it is easier to buy coins and unlock the Battle Pass at the start of the new season. The season dates are on the Battle Pass screen in the game."
+      },
+      {
+        "q": "I play on console, does the Player ID top-up work?",
+        "a": "Delta Force has been on consoles since 2025, and the account is tied to a single Level Infinite profile, so the Player ID does not change. Enter that same number in the bot: if the nickname appears, the top-up goes to that account. If no nickname appears or a different name is shown, do not pay and write to @StarsPaymeeSupport."
+      },
+      {
+        "q": "Is GemPay an official partner of Level Infinite or Team Jade?",
+        "a": "No. GemPay is an independent top-up service and has no official partnership with the publisher. It delivers Delta Coins by Player ID through a provider catalogue; a password, SMS code or account login is never requested."
+      }
+    ]
+  }
+}

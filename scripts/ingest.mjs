@@ -244,10 +244,7 @@ async function ingestGameCopy() {
   if (!existsSync(dir)) return { pending: [], count: 0 };
 
   const out = {};
-  // Yozish KECHIKTIRILADI: barcha tekshiruvlar tugamaguncha bironta fayl
-  // ham tegilmaydi. Aks holda muvaffaqiyatsiz tekshiruvdan keyin ham manba
-  // qisman o'zgargan bo'lardi va repo nomuvofiq holatda qolardi.
-  const pending = [];
+  let n = 0;
   for (const file of (await readdir(dir)).filter((f) => f.endsWith(".json"))) {
     const g = JSON.parse(await readFile(path.join(dir, file), "utf8"));
     for (const [locale, copy] of Object.entries(g)) {

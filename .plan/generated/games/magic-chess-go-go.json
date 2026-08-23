@@ -1,0 +1,249 @@
+{
+  "slug": "magic-chess-go-go",
+  "uz": {
+    "answer": "Magic Chess: Go Go'da ID ikki qismdan iborat: avatar ostidagi raqam va qavs ichidagi Server ID — Mobile Legends ID'si bu yerda ishlamaydi. GemPay botida shu ikkisini kiritasiz, nik bepul chiqadi, tasdiqlagach so'mda UzCard, HUMO, Click yoki Payme bilan to'laysiz. Olmos taxminan 2 daqiqada MCGG hisobiga tushadi.",
+    "faq": [
+      {
+        "q": "MCGG'da to'ldirilgan olmos Mobile Legends do'konida ishlaydimi?",
+        "a": "Yo'q. Magic Chess: Go Go alohida ilova va olmos MCGG do'koni ichida qoladi — MLBB skinlari yoki jang mukofotlariga o'tmaydi. Moonton akkaunti bitta bo'lishi ikkala o'yin hamyonini birlashtirmaydi; ular faqat kross-o'yin mukofotlari uchun bog'lanadi."
+      },
+      {
+        "q": "O'zbekistondan o'ynayman — qaysi server mahsuloti kerak?",
+        "a": "Global (APAC) versiya. Rus donat saytlarida «Rossiya» deb belgilangan alohida mahsulot turadi va u boshqa hisobga ketadi. GemPay'da region tanlash bosqichi yo'q: bot siz kiritgan User ID va Server ID juftligi bo'yicha to'g'ridan-to'g'ri o'sha akkauntga ishlaydi."
+      },
+      {
+        "q": "Emulyator yoki PC orqali o'ynasam, olmos o'sha hisobga tushadimi?",
+        "a": "Ha. Olmos qurilmaga emas, User ID va Server ID juftligiga bog'lanadi — telefonda, planshetda yoki emulyatorda kirasizmi, farqi yo'q. Bir nechta akkaunt ishlatsangiz, botga aynan qaysi biriga to'ldirayotganingizni ID orqali ko'rsating."
+      },
+      {
+        "q": "Mehmon (guest) akkaunt bilan to'ldirsa bo'ladimi?",
+        "a": "Texnik jihatdan ha, mehmon akkauntning ham User ID va Server ID si bor. Lekin u qurilmaga bog'langan: ilovani o'chirsangiz yoki telefon almashsangiz, hisob bilan birga olmos ham yo'qoladi. To'ldirishdan oldin akkauntni Moonton, Google yoki Apple ID'ga bog'lab qo'ygan tuzukroq."
+      },
+      {
+        "q": "Botda chiqqan nik o'yindagidan boshqacha ko'rinsa-chi?",
+        "a": "Nikda emoji, maxsus belgi yoki klan prefiksi bo'lsa, server ularni har xil qaytarishi mumkin — harflar mos kelsa, akkaunt o'shaniki. Butunlay boshqa nom chiqsa, to'lamang: ID'da xato bor. Raqamlarni qayta kiriting yoki @StarsPaymeeSupport ga yozing."
+      },
+      {
+        "q": "Olmos yangi mavsum boshlanganda kuyib ketadimi?",
+        "a": "Olmosning o'zi hisobda qoladi va mavsum almashganda yo'qolmaydi. Kuyadigani — pass mukofotlari: Go Go Pass yoki haftalik pass ichidagi olinmagan mukofotlar mavsum tugashi bilan yopiladi. Shuning uchun passni mavsum oxirida emas, boshida olgan foydaliroq."
+      }
+    ],
+    "gotcha": {
+      "title": "Mobile Legends ID'si bu yerga tushmaydi",
+      "text": "Bu yerda pul yo'qotadigan xato bitta: Mobile Legends ID'sini kiritish. Moonton akkaunti umumiy bo'lgani bilan MCGG'ning o'z game ID'si bor, MLBB raqami esa butunlay boshqa o'yinchining Magic Chess hisobiga tushib ketishi mumkin. Botda nik chiqqach, uni MCGG'dagi nikingiz bilan solishtiring."
+    },
+    "h1": "Magic Chess: Go Go olmos to'ldirish — User ID va Server ID bo'yicha, 2 daqiqada",
+    "idSteps": [
+      "Magic Chess: Go Go'ni oching va asosiy menyu ekraniga chiqing.",
+      "Yuqori chap burchakdagi avatar rasmiga bosing — profil oynasi ochiladi.",
+      "«Asosiy ma'lumot» (Basic Info) bo'limida nik ostidagi ID qatorini toping.",
+      "ID 100000520(1234) ko'rinishida: qavsdan oldingi qism — User ID.",
+      "Qavs ichidagi raqam — Server ID; botga ikkisi alohida maydonga kiritiladi."
+    ],
+    "intro": [
+      "Olmos — Magic Chess: Go Go'dagi yagona pullik valyuta. U jangda kuch qo'shmaydi: olmosga komandir skinlari, shaxmat taxtasi bezaklari, emotelar va mavsumiy Go Go Pass olinadi. Shuning uchun uni asosan har mavsumni oxirigacha o'ynaydigan, reyting ko'taradigan va o'z komandirini boshqalardan ajratib turishni xohlaydigan o'yinchilar sotib oladi. Yangi komandirni esa ko'pincha Chess Points bilan ochish arzonroq tushadi.",
+      "Rasmiy yo'l O'zbekistonda uzilib qoladi: o'yin ichidagi to'lov Google Play yoki App Store balansini so'raydi, Codashop'ning mintaqaviy sahifalarida esa UzCard va HUMO ro'yxatda yo'q, ustiga to'lovdan oldin nik ham ko'rsatilmaydi. Rus donat saytlari alohida «Rossiya» server mahsulotini sotadi, o'zbek o'yinchisi esa Global'da. GemPay so'mda ishlaydi va Global hisobga tushiradi."
+    ],
+    "metaDescription": "Magic Chess: Go Go olmosini User ID va qavs ichidagi Server ID orqali to'ldiring: nik to'lovdan oldin bepul chiqadi, so'mda UzCard, HUMO, Click, Payme.",
+    "metaTitle": "Magic Chess Go Go olmos sotib olish — so'mda | GemPay",
+    "packages": [
+      "Olmos zinapoyasi odatda 55 dan boshlanadi va 275, 565, 1160, 1770, 2975, 4165 hamda 6000 olmosgacha ko'tariladi.",
+      "Olmosdan tashqari botda pass tipidagi mahsulotlar ham uchraydi — haftalik pass va mavsumiy Go Go Pass; bular olmos emas, tayyor mukofot to'plami, shuning uchun ular o'z alohida qatorida turadi.",
+      "Ro'yxatdagi paketlar va joriy narxlar botda ko'rsatiladi."
+    ],
+    "spendOn": [
+      "Go Go Pass — mavsumiy skinlar, emotelar va yulduz himoyasi kartalari",
+      "Komandir skinlari hamda yulduz ko'tarish effektlari",
+      "Shaxmat taxtasi bezaklari va aksessuarlar",
+      "Haftalik pass — mavsum ballari tezroq to'planadi",
+      "Cheklangan muddatli event to'plamlari",
+      "Yangi komandirni darhol ochish (odatda 150 olmos)"
+    ],
+    "steps": [
+      {
+        "title": "Botdan Magic Chess: Go Go'ni tanlang",
+        "text": "@Gempayuz_bot ni oching va katalogdan aynan Magic Chess: Go Go'ni belgilang. Mobile Legends alohida bo'lim — ikkisi bitta Moonton akkauntiga ulansa ham, ID'lari boshqa."
+      },
+      {
+        "title": "User ID'ni kiriting",
+        "text": "Profildagi qavsdan oldingi raqam. Bu MCGG'ning o'z game ID'si; Moonton akkaunti umumiy bo'lgani bilan, raqam MLBB'nikidan farq qiladi."
+      },
+      {
+        "title": "Server ID'ni alohida maydonga yozing",
+        "text": "Qavs ichidagi raqam — Server ID, ya'ni zona. U alohida maydonga kiritiladi; User ID bilan qo'shib yubormang, tizim ikkisini alohida kutadi."
+      },
+      {
+        "title": "Nikni bepul tekshiring",
+        "text": "Bot o'yin serveridan nikni tortib ekranda ko'rsatadi. Bu to'lovdan oldin bo'ladi va pul yechilmaydi — nik o'zingizniki bo'lmasa, ID raqamlarini qayta kiriting."
+      },
+      {
+        "title": "Paketni tanlang va so'mda to'lang",
+        "text": "Olmos zinapoyasidan yoki pass mahsulotlaridan birini tanlab, UzCard, HUMO, Click, Payme yoki Paynet orqali to'laysiz. Olmos taxminan 2 daqiqada hisobga tushadi."
+      }
+    ]
+  },
+  "ru": {
+    "metaTitle": "Купить алмазы Magic Chess Go Go за сумы | GemPay",
+    "metaDescription": "Пополните алмазы Magic Chess: Go Go по User ID и Server ID в скобках: ник виден бесплатно до оплаты, оплата в сумах картой UzCard, HUMO, Click, Payme.",
+    "h1": "Пополнение алмазов Magic Chess: Go Go — по User ID и Server ID, за 2 минуты",
+    "answer": "В Magic Chess: Go Go идентификатор состоит из двух частей: номер под аватаром и Server ID в скобках — ID от Mobile Legends здесь не работает. В боте GemPay вы вводите оба номера, ник показывается бесплатно, после подтверждения платите в сумах картой UzCard, HUMO, Click или Payme. Алмазы приходят на счёт MCGG примерно за 2 минуты.",
+    "intro": [
+      "Алмазы — единственная платная валюта в Magic Chess: Go Go. В бою они силы не добавляют: за алмазы берут скины командиров, оформление шахматной доски, эмоции и сезонный Go Go Pass. Поэтому их покупают в основном те, кто играет сезон до конца, поднимает рейтинг и хочет выделить своего командира среди остальных. А нового командира чаще выгоднее открыть за Chess Points.",
+      "Официальный путь в Узбекистане обрывается: оплата внутри игры просит баланс Google Play или App Store, а на региональных страницах Codashop нет UzCard и HUMO, да и ник до оплаты там не показывают. Российские донат-сайты продают отдельный товар для сервера «Россия», а узбекский игрок сидит на Global. GemPay работает в сумах и зачисляет на аккаунт Global."
+    ],
+    "spendOn": [
+      "Go Go Pass — сезонные скины, эмоции и карты защиты звёзд",
+      "Скины командиров и эффекты повышения звёзд",
+      "Оформление шахматной доски и аксессуары",
+      "Недельный пропуск — очки сезона копятся быстрее",
+      "Ограниченные по времени наборы ивентов",
+      "Мгновенное открытие нового командира (обычно 150 алмазов)"
+    ],
+    "packages": [
+      "Лестница алмазов обычно начинается с 55 и поднимается до 275, 565, 1160, 1770, 2975, 4165 и 6000 алмазов.",
+      "Кроме алмазов в боте встречаются товары типа пропуск — недельный пропуск и сезонный Go Go Pass; это не алмазы, а готовый набор наград, поэтому они стоят отдельной строкой.",
+      "Список пакетов и текущие цены показываются в боте."
+    ],
+    "steps": [
+      {
+        "title": "Выберите Magic Chess: Go Go в боте",
+        "text": "Откройте @Gempayuz_bot и отметьте в каталоге именно Magic Chess: Go Go. Mobile Legends — отдельный раздел: даже если обе игры привязаны к одному аккаунту Moonton, ID у них разные."
+      },
+      {
+        "title": "Введите User ID",
+        "text": "Это номер до скобок в профиле. Собственный game ID игры MCGG; аккаунт Moonton общий, но номер отличается от номера в MLBB."
+      },
+      {
+        "title": "Server ID впишите в отдельное поле",
+        "text": "Число в скобках — это Server ID, то есть зона. Оно вводится в отдельное поле; не приписывайте его к User ID, система ждёт их по отдельности."
+      },
+      {
+        "title": "Бесплатно проверьте ник",
+        "text": "Бот запрашивает ник с игрового сервера и показывает его на экране. Это происходит до оплаты и деньги не списываются — если ник не ваш, введите номера заново."
+      },
+      {
+        "title": "Выберите пакет и оплатите в сумах",
+        "text": "Выбираете позицию из лестницы алмазов или один из пропусков и платите через UzCard, HUMO, Click, Payme или Paynet. Алмазы приходят на счёт примерно за 2 минуты."
+      }
+    ],
+    "idSteps": [
+      "Откройте Magic Chess: Go Go и выйдите на экран главного меню.",
+      "Нажмите на аватар в левом верхнем углу — откроется окно профиля.",
+      "В разделе «Основная информация» (Basic Info) найдите строку ID под ником.",
+      "ID выглядит как 100000520(1234): часть до скобок — это User ID.",
+      "Число в скобках — Server ID; в боте они вводятся в разные поля."
+    ],
+    "gotcha": {
+      "title": "ID от Mobile Legends сюда не подходит",
+      "text": "Здесь есть одна ошибка, которая стоит денег: ввести ID от Mobile Legends. Аккаунт Moonton общий, но у MCGG свой game ID, а номер из MLBB может уйти на счёт Magic Chess совсем другого игрока. Когда бот покажет ник, сверьте его со своим ником в MCGG."
+    },
+    "faq": [
+      {
+        "q": "Работают ли алмазы, пополненные в MCGG, в магазине Mobile Legends?",
+        "a": "Нет. Magic Chess: Go Go — отдельное приложение, и алмазы остаются внутри магазина MCGG: на скины MLBB или награды в боях они не переходят. Один аккаунт Moonton не объединяет кошельки двух игр; они связаны только ради кросс-игровых наград."
+      },
+      {
+        "q": "Играю из Узбекистана — товар какого сервера нужен?",
+        "a": "Версия Global (APAC). На российских донат-сайтах стоит отдельный товар с пометкой «Россия», и он уходит на другой аккаунт. В GemPay шага с выбором региона нет: бот работает напрямую с тем аккаунтом, которому соответствует введённая вами пара User ID и Server ID."
+      },
+      {
+        "q": "Если играю через эмулятор или на ПК, придут ли алмазы на тот же счёт?",
+        "a": "Да. Алмазы привязаны не к устройству, а к паре User ID и Server ID — заходите вы с телефона, планшета или эмулятора, разницы нет. Если пользуетесь несколькими аккаунтами, укажите боту через ID, на какой именно пополняете."
+      },
+      {
+        "q": "Можно ли пополнить гостевой (guest) аккаунт?",
+        "a": "Технически да, у гостевого аккаунта тоже есть User ID и Server ID. Но он привязан к устройству: удалите приложение или смените телефон — и вместе со счётом пропадут алмазы. Перед пополнением лучше привязать аккаунт к Moonton, Google или Apple ID."
+      },
+      {
+        "q": "А если ник в боте выглядит не так, как в игре?",
+        "a": "Если в нике есть эмодзи, спецсимволы или клановый префикс, сервер может возвращать их по-разному — если буквы совпадают, аккаунт ваш. Если выводится совсем другое имя, не платите: в ID ошибка. Введите цифры заново или напишите в @StarsPaymeeSupport."
+      },
+      {
+        "q": "Сгорают ли алмазы с началом нового сезона?",
+        "a": "Сами алмазы остаются на счету и при смене сезона не пропадают. Сгорают награды пропуска: неполученные награды внутри Go Go Pass или недельного пропуска закрываются с концом сезона. Поэтому пропуск полезнее брать в начале сезона, а не в конце."
+      }
+    ]
+  },
+  "en": {
+    "metaTitle": "Buy Magic Chess Go Go diamonds in so'm | GemPay",
+    "metaDescription": "Top up Magic Chess: Go Go diamonds by User ID and the Server ID in brackets: your nickname is shown free before payment, pay in so'm with UzCard or HUMO.",
+    "h1": "Magic Chess: Go Go diamond top-up — by User ID and Server ID, in 2 minutes",
+    "answer": "In Magic Chess: Go Go the ID has two parts: the number under your avatar and the Server ID in brackets — a Mobile Legends ID does not work here. In the GemPay bot you enter both, your nickname is shown for free, and after you confirm you pay in so'm with UzCard, HUMO, Click or Payme. Diamonds reach the MCGG account in about 2 minutes.",
+    "intro": [
+      "Diamonds are the only paid currency in Magic Chess: Go Go. They add no power in a fight: diamonds buy commander skins, chessboard designs, emotes and the seasonal Go Go Pass. That is why they are mostly bought by players who play a season to the end, climb the rating and want their commander to stand out from the rest. A new commander is usually cheaper to unlock with Chess Points.",
+      "The official route breaks down in Uzbekistan: in-game payment asks for a Google Play or App Store balance, and Codashop's regional pages list neither UzCard nor HUMO, nor do they show the nickname before payment. Russian top-up sites sell a separate product for the «Russia» server, while an Uzbek player is on Global. GemPay works in so'm and credits the Global account."
+    ],
+    "spendOn": [
+      "Go Go Pass — seasonal skins, emotes and star protection cards",
+      "Commander skins and star-up effects",
+      "Chessboard designs and accessories",
+      "Weekly pass — season points build up faster",
+      "Limited-time event bundles",
+      "Unlocking a new commander right away (usually 150 diamonds)"
+    ],
+    "packages": [
+      "The diamond ladder usually starts at 55 and rises through 275, 565, 1160, 1770, 2975, 4165 and 6000 diamonds.",
+      "Alongside diamonds the bot also carries pass-type products — the weekly pass and the seasonal Go Go Pass; these are not diamonds but ready-made reward sets, so they sit in their own separate line.",
+      "The package list and current prices are shown in the bot."
+    ],
+    "steps": [
+      {
+        "title": "Pick Magic Chess: Go Go in the bot",
+        "text": "Open @Gempayuz_bot and select Magic Chess: Go Go in the catalogue. Mobile Legends is a separate section — even when both are linked to one Moonton account, their IDs are different."
+      },
+      {
+        "title": "Enter the User ID",
+        "text": "It is the number before the brackets in your profile. This is MCGG's own game ID; the Moonton account is shared, but the number differs from the MLBB one."
+      },
+      {
+        "title": "Put the Server ID in its own field",
+        "text": "The number inside the brackets is the Server ID, that is, the zone. It goes into a separate field; do not stick it onto the User ID, the system expects the two apart."
+      },
+      {
+        "title": "Check the nickname for free",
+        "text": "The bot pulls the nickname from the game server and shows it on screen. This happens before payment and nothing is charged — if the nickname is not yours, enter the numbers again."
+      },
+      {
+        "title": "Pick a pack and pay in so'm",
+        "text": "You choose a step from the diamond ladder or one of the pass products and pay with UzCard, HUMO, Click, Payme or Paynet. Diamonds reach the account in about 2 minutes."
+      }
+    ],
+    "idSteps": [
+      "Open Magic Chess: Go Go and get to the main menu screen.",
+      "Tap the avatar image in the top left corner — the profile window opens.",
+      "In the Basic Info section, find the ID line under your nickname.",
+      "The ID looks like 100000520(1234): the part before the brackets is the User ID.",
+      "The number in the brackets is the Server ID; the bot takes the two in separate fields."
+    ],
+    "gotcha": {
+      "title": "A Mobile Legends ID does not fit here",
+      "text": "There is one mistake here that costs money: entering a Mobile Legends ID. The Moonton account is shared, but MCGG has its own game ID, and an MLBB number can land on a completely different player's Magic Chess account. When the bot shows the nickname, compare it with your nickname in MCGG."
+    },
+    "faq": [
+      {
+        "q": "Do diamonds topped up in MCGG work in the Mobile Legends shop?",
+        "a": "No. Magic Chess: Go Go is a separate app and diamonds stay inside the MCGG shop — they do not carry over to MLBB skins or battle rewards. Having one Moonton account does not merge the two games' wallets; they are linked only for cross-game rewards."
+      },
+      {
+        "q": "I play from Uzbekistan — which server's product do I need?",
+        "a": "The Global (APAC) version. Russian top-up sites list a separate product marked «Russia» and it goes to a different account. GemPay has no region selection step: the bot works directly with the account matching the User ID and Server ID pair you enter."
+      },
+      {
+        "q": "If I play through an emulator or on PC, do diamonds land on the same account?",
+        "a": "Yes. Diamonds are tied to the User ID and Server ID pair, not to the device — phone, tablet or emulator makes no difference. If you use several accounts, use the ID to tell the bot exactly which one you are topping up."
+      },
+      {
+        "q": "Can I top up a guest account?",
+        "a": "Technically yes, a guest account also has a User ID and a Server ID. But it is tied to the device: delete the app or change phone and the diamonds go together with the account. It is better to link the account to Moonton, Google or Apple ID before topping up."
+      },
+      {
+        "q": "What if the nickname in the bot looks different from the one in the game?",
+        "a": "If the nickname has emoji, special characters or a clan prefix, the server may return them differently — if the letters match, the account is yours. If a completely different name appears, do not pay: there is a mistake in the ID. Re-enter the numbers or write to @StarsPaymeeSupport."
+      },
+      {
+        "q": "Do diamonds burn out when a new season starts?",
+        "a": "The diamonds themselves stay on the account and do not disappear when the season changes. What burns is pass rewards: unclaimed rewards inside the Go Go Pass or the weekly pass close at the end of the season. That is why the pass is more useful taken at the start of a season, not at the end."
+      }
+    ]
+  }
+}

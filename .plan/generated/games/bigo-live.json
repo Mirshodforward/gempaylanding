@@ -1,0 +1,240 @@
+{
+  "slug": "bigo-live",
+  "uz": {
+    "answer": "Bigo Live - o'yin emas: olmos efir xonasidagi sovg'alarga sarflanadi, strimer esa sovg'adan bin (beans) oladi, bu butunlay boshqa birlik. GemPay botida Me bo'limidagi Bigo ID ni kiritasiz, tizim nikneymni bepul ko'rsatadi, siz tasdiqlaysiz, so'mda UzCard yoki Payme bilan to'laysiz - olmos taxminan 3 daqiqada tushadi.",
+    "faq": [
+      {
+        "q": "Strimer men yuborgan sovg'ani darhol ko'radimi?",
+        "a": "Ha, sovg'a efir xonasida animatsiya bo'lib chiqadi va chatda kimdan kelgani ko'rinadi. Shu sababli olmosni efir boshlanishidan oldin olib qo'ygan ma'qul - to'ldirish o'rtacha 3 daqiqada yakunlanadi."
+      },
+      {
+        "q": "Bitta paketni bir nechta strimerga bo'lib sarflasam bo'ladimi?",
+        "a": "Ha. Olmos akkaunt hamyonida balans bo'lib turadi va biror strimerga bog'lanmaydi. Qaysi xonada qancha sarflashni o'zingiz hal qilasiz, qoldig'i keyingi efirlargacha saqlanadi."
+      },
+      {
+        "q": "PK jang tugashiga oz qolgan bo'lsa, ulgurishning yo'li bormi?",
+        "a": "To'ldirish o'rtacha 3 daqiqa oladi, PK esa qisqa bo'lishi mumkin. Agar jangni kuzatayotgan bo'lsangiz, hisob teng kelgan paytda emas, jang boshlanishidan oldin olmos olib qo'ying."
+      },
+      {
+        "q": "Strimerman - o'zimga olmos olishning ma'nosi bormi?",
+        "a": "Bor. Strimerlar ham boshqa xonalarga sovg'a yuboradi, PK jangdagi sherigini qo'llaydi va tadbirlarda qatnashadi. Ammo hisobingizdagi olmos daromadga aylanmaydi: daromad tomoshabinlar yuborgan sovg'alardan kelgan bin (beans) dan hisoblanadi."
+      },
+      {
+        "q": "Bigo ID ni o'zgartirgan bo'lsam, botga qaysi raqamni kiritaman?",
+        "a": "Hozir Me bo'limida turgan amaldagi raqamni. Eski raqam boshqa profilga tegishli bo'lib qolishi mumkin, shuning uchun nikneym tekshiruvida chiqqan nomga qarang: nom sizniki bo'lsa, ID to'g'ri."
+      },
+      {
+        "q": "Telefondagi balans veb-versiyada ham ko'rinadimi?",
+        "a": "Ha, olmos qurilmaga emas, akkauntga bog'langan. Bir xil Bigo hisobiga kirsangiz, balans ham, sarflash tarixi ham bir xil ko'rinadi."
+      }
+    ],
+    "gotcha": {
+      "title": "Strimerning ID siga to'ldirish - bu sovg'a emas",
+      "text": "Ko'pchilik sevimli strimerini xursand qilmoqchi bo'lib, uning Bigo ID siga olmos to'ldiradi. Bunda strimer sovg'a emas, olmos oladi: bunday olmos bin (beans) ga aylanmaydi va yechib olinmaydi. Sovg'a bo'lishi uchun olmosni o'z hisobingizga oling, so'ng efir xonasidan yuboring."
+    },
+    "h1": "Bigo Live olmos to'ldirish: Bigo ID orqali, so'mda",
+    "idSteps": [
+      "Bigo Live ilovasini oching va pastdagi menyudan Me bo'limiga o'ting.",
+      "Nikneymingiz ostida turgan 7-10 xonali raqamni toping - bu Bigo ID.",
+      "Muqobil yo'l: Settings, so'ng Account bo'limi, u yerda User ID sifatida turadi.",
+      "Raqamni bosib nusxa oling va botga @ belgisisiz, faqat raqamlar bilan kiriting."
+    ],
+    "intro": [
+      "Olmos - Bigo Live ichidagi sotib olinadigan birlik: u efir xonasidagi sovg'a do'konidan strimerga animatsion sovg'a yuborish uchun ishlatiladi. Uni ikki toifa oladi - efirni kuzatib, yoqqan strimerni qo'llab-quvvatlovchi tomoshabinlar va strimerlarning o'zi: PK jangdagi sherigini, ko'p mehmonli xonadagi tanishini yoki boshqa efirni sovg'a bilan qo'llash uchun. Olmos akkaunt hamyonida turadi va faqat siz sarflaganingizda kamayadi.",
+      "Rasmiy yo'l O'zbekistondagi kartaga moslashmagan: rasmiy to'ldirish sahifasi Bigo ID bilan kirishni so'raydi va to'lov usuli sifatida SBP, MIR kartasi hamda Bigo Card ni ko'rsatadi - so'm ham, UzCard ham u yerda yo'q. GemPay shu bo'shliqni yopadi: hisob-kitob so'mda ketadi, UzCard, HUMO, Click, Payme va Paynet ishlaydi, olmos esa o'sha akkauntning o'ziga tushadi."
+    ],
+    "metaDescription": "Bigo Live olmosini Bigo ID orqali so'mda oling: bot Me bo'limidagi ID bo'yicha nikneymni bepul ko'rsatadi, UzCard, HUMO, Click va Payme qabul qilinadi.",
+    "metaTitle": "Bigo Live olmos sotib olish - so'mda, 3 daqiqada | GemPay",
+    "packages": [
+      "Olmos paketlari bir necha o'nlik olmosdan boshlanib, minglik va o'n minglik pog'onalargacha ko'tariladi - odatda kichik, o'rta va yirik guruhlarga bo'linadi.",
+      "Paketni sovg'a rejasiga qarab tanlash qulay: bir nechta arzon animatsiya uchun quyi pog'ona yetadi, katta effektli sovg'a esa yirik paketni talab qiladi, yirik pog'onalarda ba'zan bonus olmos qo'shiladi.",
+      "Joriy paketlar ro'yxati va narx botda ko'rsatiladi."
+    ],
+    "spendOn": [
+      "Efir xonasidagi sovg'a do'konidan animatsion sovg'a yuborish",
+      "PK jangda qo'llab-quvvatlayotgan tomoningizga sovg'a bilan ball qo'shish",
+      "Ko'p mehmonli xonada aynan bitta mehmonni tanlab sovg'alash",
+      "Ilova ichidagi VIP maqomi va maxsus tadbirlarda qatnashish"
+    ],
+    "steps": [
+      {
+        "title": "Botdagi ro'yxatdan Bigo Live ni tanlang",
+        "text": "@Gempayuz_bot ni oching va Mini App ichidagi ro'yxatdan Bigo Live ni toping. Bu bo'lim o'yinlar bilan bir qatorda turadi, ammo server yoki platforma tanlash maydoni yo'q - Bigo hisobi yagona."
+      },
+      {
+        "title": "Bigo ID raqamini kiriting",
+        "text": "Me bo'limidagi 7-10 xonali raqamni yozing. Nikneym, profil havolasi yoki @ belgili nom bu yerga to'g'ri kelmaydi: tizim faqat raqam bo'yicha qidiradi."
+      },
+      {
+        "title": "Nikneym tekshiruvidan o'ting",
+        "text": "Bot ID ga bog'langan profil nomini so'rab oladi va ekranda ko'rsatadi. Bu bosqich bepul, hisobdan hech narsa yechilmaydi. Nom olmos tushishi kerak bo'lgan hisobniki ekaniga ishonch hosil qilib, tasdiqlang."
+      },
+      {
+        "title": "Olmos paketini tanlang",
+        "text": "Paketlar olmos soni bo'yicha tartiblangan. Qaysi sovg'ani yubormoqchi ekaningizga qarab tanlang: kichik animatsiyalar kam olmos oladi, katta effektli sovg'alar esa sezilarli ko'p. Narx botda ko'rsatiladi."
+      },
+      {
+        "title": "So'mda to'lang va Wallet bo'limini tekshiring",
+        "text": "UzCard, HUMO, Click, Payme yoki Paynet bilan to'laysiz. Olmos odatda 3 daqiqada tushadi, balansni Me, so'ng Wallet bo'limida ko'rasiz. Ilova ochiq turgan bo'lsa, uni yopib qayta oching."
+      }
+    ]
+  },
+  "ru": {
+    "metaTitle": "Bigo Live: покупка алмазов в сумах за 3 минуты | GemPay",
+    "metaDescription": "Алмазы Bigo Live по Bigo ID в сумах: бот бесплатно покажет никнейм по ID из раздела Me, оплата UzCard, HUMO, Click и Payme, зачисление за 3 минуты.",
+    "h1": "Пополнение алмазов Bigo Live: по Bigo ID, в сумах",
+    "answer": "Bigo Live - не игра: алмазы тратятся на подарки в эфирной комнате, а стример получает за подарок бины (beans), совсем другую единицу. В боте GemPay вы вводите Bigo ID из раздела Me, система бесплатно показывает никнейм, вы подтверждаете, платите в сумах через UzCard или Payme - алмазы приходят примерно за 3 минуты.",
+    "intro": [
+      "Алмазы - покупаемая внутренняя единица Bigo Live: ими из магазина подарков в эфирной комнате отправляют стримеру анимированный подарок. Покупают их две категории - зрители, которые смотрят эфир и поддерживают понравившегося стримера, и сами стримеры: чтобы поддержать подарком напарника в PK-битве, знакомого в комнате с несколькими гостями или чужой эфир. Алмазы лежат в кошельке аккаунта и уменьшаются только тогда, когда вы их тратите.",
+      "Официальный путь не рассчитан на карту из Узбекистана: официальная страница пополнения просит вход по Bigo ID и предлагает в качестве способов оплаты SBP, карту MIR и Bigo Card - ни сумов, ни UzCard там нет. GemPay закрывает этот пробел: расчет идет в сумах, работают UzCard, HUMO, Click, Payme и Paynet, а алмазы приходят на тот же самый аккаунт."
+    ],
+    "spendOn": [
+      "Отправка анимированного подарка из магазина подарков в эфирной комнате",
+      "Добавление очков подарком той стороне, которую вы поддерживаете в PK-битве",
+      "Подарок конкретному гостю в комнате с несколькими гостями",
+      "VIP-статус внутри приложения и участие в специальных ивентах"
+    ],
+    "packages": [
+      "Пакеты алмазов начинаются с нескольких десятков алмазов и поднимаются до тысячных и десятитысячных ступеней - обычно они разделены на малую, среднюю и крупную группы.",
+      "Пакет удобно подбирать под план подарков: для нескольких недорогих анимаций хватает нижней ступени, а подарок с большим эффектом требует крупного пакета, на верхних ступенях иногда добавляются бонусные алмазы.",
+      "Актуальный список пакетов и цена показываются в боте."
+    ],
+    "steps": [
+      {
+        "title": "Выберите Bigo Live в списке бота",
+        "text": "Откройте @Gempayuz_bot и найдите Bigo Live в списке внутри Mini App. Этот раздел стоит в одном ряду с играми, но поля выбора сервера или платформы здесь нет - аккаунт Bigo единый."
+      },
+      {
+        "title": "Введите номер Bigo ID",
+        "text": "Напишите 7-10-значный номер из раздела Me. Никнейм, ссылка на профиль или имя со знаком @ сюда не подходят: система ищет только по номеру."
+      },
+      {
+        "title": "Пройдите проверку никнейма",
+        "text": "Бот запрашивает имя профиля, привязанного к ID, и показывает его на экране. Этот шаг бесплатный, с карты ничего не списывается. Убедитесь, что имя принадлежит тому аккаунту, куда должны прийти алмазы, и подтвердите."
+      },
+      {
+        "title": "Выберите пакет алмазов",
+        "text": "Пакеты отсортированы по количеству алмазов. Выбирайте по тому, какой подарок собираетесь отправить: небольшие анимации берут мало алмазов, а подарки с большим эффектом заметно больше. Цена показывается в боте."
+      },
+      {
+        "title": "Оплатите в сумах и проверьте раздел Wallet",
+        "text": "Оплата идет через UzCard, HUMO, Click, Payme или Paynet. Алмазы обычно приходят за 3 минуты, баланс видно в разделе Me, затем Wallet. Если приложение было открыто, закройте его и откройте заново."
+      }
+    ],
+    "idSteps": [
+      "Откройте приложение Bigo Live и перейдите в раздел Me в нижнем меню.",
+      "Найдите 7-10-значный номер под вашим никнеймом - это и есть Bigo ID.",
+      "Второй путь: Settings, затем раздел Account, там он указан как User ID.",
+      "Скопируйте номер нажатием и введите в бот без знака @, только цифрами."
+    ],
+    "gotcha": {
+      "title": "Пополнение на ID стримера - это не подарок",
+      "text": "Многие хотят порадовать любимого стримера и пополняют алмазы прямо на его Bigo ID. В этом случае стример получает не подарок, а алмазы: такие алмазы не превращаются в бины (beans) и не выводятся. Чтобы это стало подарком, купите алмазы на свой аккаунт и отправьте их из эфирной комнаты."
+    },
+    "faq": [
+      {
+        "q": "Увидит ли стример мой подарок сразу?",
+        "a": "Да, подарок выходит в эфирной комнате анимацией, и в чате видно, от кого он. Поэтому алмазы лучше взять до начала эфира - пополнение в среднем завершается за 3 минуты."
+      },
+      {
+        "q": "Можно ли разделить один пакет между несколькими стримерами?",
+        "a": "Да. Алмазы лежат балансом в кошельке аккаунта и не привязаны ни к одному стримеру. Сколько и в какой комнате потратить, решаете вы сами, а остаток сохраняется до следующих эфиров."
+      },
+      {
+        "q": "Если до конца PK-битвы осталось мало времени, можно ли успеть?",
+        "a": "Пополнение занимает в среднем 3 минуты, а PK может быть коротким. Если вы следите за битвой, берите алмазы до ее начала, а не в момент, когда счет сравнялся."
+      },
+      {
+        "q": "Я стример - есть ли смысл покупать алмазы себе?",
+        "a": "Есть. Стримеры тоже отправляют подарки в другие комнаты, поддерживают напарника в PK-битве и участвуют в ивентах. Но алмазы на вашем счете не превращаются в доход: доход считается из бинов (beans), которые приходят с подарков от зрителей."
+      },
+      {
+        "q": "Если я менял Bigo ID, какой номер вводить в бот?",
+        "a": "Тот, который сейчас стоит в разделе Me. Старый номер может уже принадлежать другому профилю, поэтому смотрите на имя, которое вышло при проверке никнейма: если имя ваше, ID верный."
+      },
+      {
+        "q": "Виден ли баланс с телефона в веб-версии?",
+        "a": "Да, алмазы привязаны к аккаунту, а не к устройству. Если вы входите в один и тот же аккаунт Bigo, баланс и история трат выглядят одинаково."
+      }
+    ]
+  },
+  "en": {
+    "metaTitle": "Buy Bigo Live diamonds in so'm, 3 minutes | GemPay",
+    "metaDescription": "Get Bigo Live diamonds by Bigo ID in so'm: the bot shows the nickname from your Me tab ID for free, and UzCard, HUMO, Click and Payme are accepted.",
+    "h1": "Bigo Live diamond top-up: by Bigo ID, in so'm",
+    "answer": "Bigo Live is not a game: diamonds are spent on gifts in a live room, and the streamer receives beans for a gift, which is a completely different unit. In the GemPay bot you enter the Bigo ID from the Me tab, the system shows the nickname for free, you confirm, and you pay in so'm with UzCard or Payme - diamonds arrive in about 3 minutes.",
+    "intro": [
+      "Diamonds are the purchasable in-app unit of Bigo Live: they are used to send a streamer an animated gift from the gift shop inside a live room. Two groups buy them - viewers who watch a broadcast and support a streamer they like, and streamers themselves: to back a partner in a PK battle, a friend in a multi-guest room or someone else's broadcast with a gift. Diamonds sit in the account wallet and go down only when you spend them.",
+      "The official route is not built for a card from Uzbekistan: the official top-up page asks you to sign in with a Bigo ID and lists SBP, a MIR card and Bigo Card as payment methods - there is no so'm and no UzCard there. GemPay closes that gap: the settlement runs in so'm, UzCard, HUMO, Click, Payme and Paynet all work, and the diamonds land on that same account."
+    ],
+    "spendOn": [
+      "Sending an animated gift from the gift shop in a live room",
+      "Adding points with a gift to the side you support in a PK battle",
+      "Gifting one specific guest in a multi-guest room",
+      "In-app VIP status and taking part in special events"
+    ],
+    "packages": [
+      "Diamond packs start at a few dozen diamonds and climb to the thousand and ten-thousand tiers - they are usually split into small, medium and large groups.",
+      "It is easiest to pick a pack around your gifting plan: a lower tier is enough for several cheap animations, while a gift with a big effect needs a large pack, and the top tiers sometimes add bonus diamonds.",
+      "The current pack list and the price are shown in the bot."
+    ],
+    "steps": [
+      {
+        "title": "Pick Bigo Live from the list in the bot",
+        "text": "Open @Gempayuz_bot and find Bigo Live in the list inside the Mini App. This section sits alongside the games, but there is no server or platform field here - a Bigo account is single."
+      },
+      {
+        "title": "Enter the Bigo ID number",
+        "text": "Type the 7-10 digit number from the Me tab. A nickname, a profile link or a name with an @ does not fit here: the system searches by number only."
+      },
+      {
+        "title": "Go through the nickname check",
+        "text": "The bot requests the profile name linked to the ID and shows it on screen. This step is free, nothing is charged. Make sure the name belongs to the account the diamonds should land on, then confirm."
+      },
+      {
+        "title": "Choose a diamond pack",
+        "text": "Packs are sorted by diamond count. Choose based on the gift you plan to send: small animations take few diamonds, while gifts with a big effect take noticeably more. The price is shown in the bot."
+      },
+      {
+        "title": "Pay in so'm and check the Wallet tab",
+        "text": "You pay with UzCard, HUMO, Click, Payme or Paynet. Diamonds usually arrive in 3 minutes, and you see the balance under Me, then Wallet. If the app was open, close it and open it again."
+      }
+    ],
+    "idSteps": [
+      "Open the Bigo Live app and go to the Me tab in the bottom menu.",
+      "Find the 7-10 digit number under your nickname - that is the Bigo ID.",
+      "Alternative route: Settings, then the Account section, where it is listed as User ID.",
+      "Tap the number to copy it and enter it in the bot without the @, digits only."
+    ],
+    "gotcha": {
+      "title": "Topping up the streamer's ID is not a gift",
+      "text": "Many people want to make their favorite streamer happy and top diamonds up straight to their Bigo ID. In that case the streamer gets diamonds, not a gift: those diamonds do not turn into beans and cannot be withdrawn. For it to count as a gift, buy the diamonds on your own account and send them from the live room."
+    },
+    "faq": [
+      {
+        "q": "Does the streamer see my gift right away?",
+        "a": "Yes, the gift plays as an animation in the live room and the chat shows who it came from. That is why it is better to get the diamonds before the broadcast starts - a top-up finishes in about 3 minutes on average."
+      },
+      {
+        "q": "Can I split one pack between several streamers?",
+        "a": "Yes. Diamonds sit as a balance in the account wallet and are not tied to any streamer. You decide how much to spend in which room, and the remainder stays there until the next broadcasts."
+      },
+      {
+        "q": "If a PK battle is almost over, is there a way to make it in time?",
+        "a": "A top-up takes about 3 minutes on average, and a PK can be short. If you are following a battle, get the diamonds before it starts rather than at the moment the score levels out."
+      },
+      {
+        "q": "I am a streamer - does it make sense to buy diamonds for myself?",
+        "a": "It does. Streamers also send gifts to other rooms, back a partner in a PK battle and take part in events. But diamonds on your account do not turn into income: income is counted from the beans that come in from gifts sent by viewers."
+      },
+      {
+        "q": "If I changed my Bigo ID, which number do I enter in the bot?",
+        "a": "The current one shown in the Me tab. An old number may already belong to another profile, so look at the name that comes up in the nickname check: if the name is yours, the ID is right."
+      },
+      {
+        "q": "Is the balance from my phone visible in the web version?",
+        "a": "Yes, diamonds are tied to the account, not to the device. If you sign in to the same Bigo account, both the balance and the spending history look the same."
+      }
+    ]
+  }
+}

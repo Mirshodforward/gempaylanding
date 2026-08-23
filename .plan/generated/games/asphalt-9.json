@@ -1,0 +1,243 @@
+{
+  "slug": "asphalt-9",
+  "uz": {
+    "answer": "Asphalt 9'da ikkinchi maydon server emas, platforma: Android, iOS yoki Windows - har birida alohida profil va alohida token hamyoni. Botda Player ID va platformani kiritasiz, bot nikni tekin ko'rsatadi, siz tasdiqlaysiz, so'ngra Token paketini tanlab so'mda to'laysiz. Parol yoki SMS kod so'ralmaydi. Tokenlar taxminan 5 daqiqada o'sha platformadagi profilga tushadi.",
+    "faq": [
+      {
+        "q": "Konsolda - PlayStation yoki Switch'da o'ynayman, token olsam bo'ladimi?",
+        "a": "Botdagi ro'yxat Android, iOS va Windows bilan cheklangan. Konsol profillari alohida yuritiladi va Player ID bo'yicha to'ldirilmaydi, shuning uchun konsolda o'ynasangiz xaridni o'sha konsolning do'konidan qilishga to'g'ri keladi."
+      },
+      {
+        "q": "Do'stimga sovg'a qilmoqchiman, uning Player ID'si yetadimi?",
+        "a": "Ha. Botga do'stingizning Player ID'sini va uning platformasini kiriting, bot nikni chiqaradi - tasdiqlashdan oldin nik to'g'riligini o'zidan so'rab oling. Do'stingizdan parol, SMS kod yoki akkaunt kerak emas, faqat ochiq ID va to'g'ri platforma."
+      },
+      {
+        "q": "Xbox'da o'ynayman, Windows variantini tanlaymanmi?",
+        "a": "Microsoft Store hisobi Xbox va Windows PC uchun umumiy, shu sababli Windows varianti shu profilga ishlaydi. Ikkilansangiz, ID'ni kiritib nik chiqqanini tekshiring yoki to'lovdan oldin @StarsPaymeeSupport'ga yozing."
+      },
+      {
+        "q": "Akkauntni Gameloft yoki Facebook'ga bog'lamaganman, shunda ham to'ldirsa bo'ladimi?",
+        "a": "Player ID bo'lsa, token o'sha profilga tushadi. Lekin bog'lanmagan profil qurilmaga bog'liq qoladi: o'yinni qayta o'rnatsangiz yoki telefonni almashtirsangiz, progress bilan birga tokenlar ham qaytmasligi mumkin. To'lashdan oldin akkauntni bog'lab qo'ygan ma'qul."
+      },
+      {
+        "q": "Tokenni o'yin ichida kreditga almashtirsa bo'ladimi?",
+        "a": "Ha, o'yin do'konida token evaziga kredit olish bandi bor. Almashuv nisbatini Gameloft belgilaydi va u o'yin ichida ko'rsatiladi. GemPay faqat tokenni yetkazadi, kreditga aylantirish sizning qo'lingizda qoladi."
+      },
+      {
+        "q": "Grand Prix yoki boshqa muddatli event uchun tokenni qachon olganim ma'qul?",
+        "a": "Event tugashiga kamida bir necha soat qoldirib buyurtma bering. Yetkazish odatda 5 daqiqa atrofida, lekin bank tasdig'i yoki provayder navbati uzayishi mumkin. Oxirgi daqiqada to'lash - eventni o'tkazib yuborishning odatiy sababi."
+      }
+    ],
+    "gotcha": {
+      "title": "Ikkinchi maydon server emas, platforma",
+      "text": "Pul yo'qotadigan xato - platformani noto'g'ri tanlash. 2024-yilgi Unite yangilanishidan keyin progress bulut orqali ko'chadi, lekin xarid hamyoni platformaga bog'liq qoladi: Microsoft Store'dagi token telefonga o'tmaydi. Boshqa platformaga tushgan token qaytarilmaydi, shuning uchun to'lovdan oldin tanlovni tekshiring."
+    },
+    "h1": "Asphalt 9 (Asphalt Legends) tokenlarini sotib olish",
+    "idSteps": [
+      "Hangar ekranida chap yuqoridagi avatar rasmini bosing - profil oynasi ochiladi.",
+      "Profile bo'limida nik ostida Player ID turadi, ustiga bossangiz nusxa olinadi.",
+      "Muqobil yo'l: Menu, keyin Settings, keyin About - Gameloft Player ID shu yerda.",
+      "ID'ni botga qo'ying va o'zingiz o'ynaydigan platformani alohida maydonda belgilang."
+    ],
+    "intro": [
+      "Token - Asphalt 9'ning premium valyutasi. Kredit poygalarda o'z-o'zidan yig'iladi, token esa deyarli yig'ilmaydi: u Card Pack va Featured Car Pack ochishga, Legend Store'dagi blueprint'larni yopishga, kutish taymerini o'tkazib yuborishga ketadi. Shuning uchun uni ko'pincha S-Class mashinani yig'ayotgan yoki Grand Prix'ni muddatida tugatmoqchi bo'lgan o'yinchilar oladi.",
+      "Rasmiy yo'l - Google Play, App Store yoki Microsoft Store - chet el kartasini talab qiladi, UzCard va HUMO u yerda o'tmaydi. Chet el saytlari esa ko'pincha akkauntga kirishni so'raydi va bu xavfli. GemPay'da to'lov so'mda, UzCard, HUMO, Click, Payme yoki Paynet bilan ketadi, sizdan faqat ochiq Player ID va platforma so'raladi."
+    ],
+    "metaDescription": "Asphalt 9 (Asphalt Legends) tokenlarini so'mda to'ldiring: Player ID va platforma - Android, iOS yoki Windows. Parol so'ralmaydi, token 5 daqiqada.",
+    "metaTitle": "Asphalt 9 token sotib olish: ID va platforma | GemPay",
+    "packages": [
+      "Asphalt 9'da paketlar \"Token Pack 3 (220 tokens)\" ko'rinishida nomlanadi: qavs ichidagi son aynan nechta token tushishini bildiradi, oldidagi raqam esa shunchaki pog'ona nomeri.",
+      "Zinapoya odatda 40, 105, 220, 470, 1275 va 3000 token atrofida bo'ladi, lekin ro'yxat va hajmlar provayder tomonidan yangilanib turadi.",
+      "Joriy narx botda ko'rsatiladi."
+    ],
+    "spendOn": [
+      "Card Pack va Relay Pack ochish",
+      "Legend Store'da yetishmayotgan blueprint'larni sotib olish",
+      "Featured Car Pack orqali S-Class va event mashinalari",
+      "Mashinani yangilash uchun kredit sotib olish",
+      "Kartochka paketi kutish taymerini o'tkazib yuborish"
+    ],
+    "steps": [
+      {
+        "title": "Botni oching va Asphalt 9'ni tanlang",
+        "text": "@Gempayuz_bot'ni Telegram'da oching va katalogdan Asphalt 9'ni toping. O'yin do'konlarda Asphalt Legends nomi bilan ham turadi - bu o'sha o'yinning yangi nomi, alohida versiya emas."
+      },
+      {
+        "title": "Player ID'ni kiriting",
+        "text": "Profil oynasidagi Player ID'ni nusxalab botga qo'ying. Bu ochiq raqam va uni ko'rsatish akkauntga kirish huquqini bermaydi. Parol, SMS kod yoki Gameloft logini hech qachon so'ralmaydi."
+      },
+      {
+        "title": "Platformani belgilang",
+        "text": "Ikkinchi maydon server emas, platforma: Android, iOS yoki Windows. O'zingiz o'ynaydigan qurilmani tanlang - har platformada alohida profil va alohida token hamyoni yuritiladi."
+      },
+      {
+        "title": "Nikni tekshiring",
+        "text": "Bot ID bo'yicha profilni so'rab, nikni ekranga chiqaradi. Bu bosqich tekin va to'lovsiz. Nik o'zingizniki bo'lsa tasdiqlang, begona nom chiqsa - ID yoki platforma noto'g'ri."
+      },
+      {
+        "title": "Paketni tanlab so'mda to'lang",
+        "text": "Token paketini tanlang va UzCard, HUMO, Click, Payme yoki Paynet orqali so'mda to'lang. Joriy narx botda ko'rsatiladi. Tokenlar taxminan 5 daqiqada tanlangan platformadagi profilga tushadi."
+      }
+    ]
+  },
+  "ru": {
+    "metaTitle": "Asphalt 9: покупка токенов по ID и платформе | GemPay",
+    "metaDescription": "Токены Asphalt 9 (Asphalt Legends) в сумах: нужны Player ID и платформа — Android, iOS или Windows. Пароль не спрашиваем, токены приходят за 5 минут.",
+    "h1": "Покупка токенов Asphalt 9 (Asphalt Legends)",
+    "answer": "В Asphalt 9 второе поле — не сервер, а платформа: Android, iOS или Windows, и у каждой свой профиль и свой кошелёк токенов. В боте вы вводите Player ID и платформу, бот бесплатно показывает ник, вы подтверждаете, затем выбираете пакет Token и платите в сумах. Пароль или SMS-код не запрашиваются. Токены приходят примерно за 5 минут на профиль выбранной платформы.",
+    "intro": [
+      "Token — премиальная валюта Asphalt 9. Кредиты копятся в гонках сами собой, а токены почти не выпадают: они уходят на вскрытие Card Pack и Featured Car Pack, на закрытие blueprint'ов в Legend Store и на пропуск таймеров ожидания. Поэтому их чаще берут те, кто собирает машину класса S или хочет закрыть Grand Prix в срок.",
+      "Официальный путь — Google Play, App Store или Microsoft Store — требует зарубежную карту, UzCard и HUMO там не проходят. А зарубежные сайты часто просят вход в аккаунт, и это опасно. В GemPay оплата идёт в сумах через UzCard, HUMO, Click, Payme или Paynet, а у вас спрашивают только открытый Player ID и платформу."
+    ],
+    "spendOn": [
+      "Вскрытие Card Pack и Relay Pack",
+      "Покупка недостающих blueprint'ов в Legend Store",
+      "Машины класса S и ивентовые через Featured Car Pack",
+      "Покупка кредитов на прокачку машины",
+      "Пропуск таймера ожидания карточного пакета"
+    ],
+    "packages": [
+      "В Asphalt 9 пакеты названы в виде «Token Pack 3 (220 tokens)»: число в скобках — это сколько токенов придёт, а цифра перед ним просто номер ступени.",
+      "Лесенка обычно держится около 40, 105, 220, 470, 1275 и 3000 токенов, но список и объёмы провайдер время от времени обновляет.",
+      "Текущая цена показывается в боте."
+    ],
+    "steps": [
+      {
+        "title": "Откройте бот и выберите Asphalt 9",
+        "text": "Откройте @Gempayuz_bot в Telegram и найдите Asphalt 9 в каталоге. В магазинах игра стоит и под названием Asphalt Legends — это новое имя той же игры, а не отдельная версия."
+      },
+      {
+        "title": "Введите Player ID",
+        "text": "Скопируйте Player ID из окна профиля и вставьте в бот. Это открытый номер, и его показ не даёт доступа к аккаунту. Пароль, SMS-код или логин Gameloft не запрашиваются никогда."
+      },
+      {
+        "title": "Укажите платформу",
+        "text": "Второе поле — не сервер, а платформа: Android, iOS или Windows. Выберите то устройство, на котором играете: на каждой платформе ведётся отдельный профиль и отдельный кошелёк токенов."
+      },
+      {
+        "title": "Проверьте ник",
+        "text": "Бот запрашивает профиль по ID и выводит ник на экран. Этот шаг бесплатный, без оплаты. Ник ваш — подтверждайте; появилось чужое имя — значит, неверны ID или платформа."
+      },
+      {
+        "title": "Выберите пакет и оплатите в сумах",
+        "text": "Выберите пакет Token и оплатите в сумах через UzCard, HUMO, Click, Payme или Paynet. Текущая цена показывается в боте. Токены приходят примерно за 5 минут на профиль выбранной платформы."
+      }
+    ],
+    "idSteps": [
+      "На экране Hangar нажмите на аватар в левом верхнем углу — откроется окно профиля.",
+      "В разделе Profile под ником стоит Player ID, по нажатию он копируется.",
+      "Другой путь: Menu, затем Settings, затем About — Gameloft Player ID там.",
+      "Вставьте ID в бот и в отдельном поле укажите платформу, на которой играете."
+    ],
+    "gotcha": {
+      "title": "Второе поле — не сервер, а платформа",
+      "text": "Ошибка, на которой теряют деньги, — неверно выбранная платформа. После обновления Unite 2024 года прогресс переносится через облако, но кошелёк покупок остаётся привязан к платформе: токены из Microsoft Store на телефон не перейдут. Токены, ушедшие на другую платформу, не возвращаются, поэтому проверьте выбор до оплаты."
+    },
+    "faq": [
+      {
+        "q": "Я играю на консоли, на PlayStation или Switch. Можно взять токены?",
+        "a": "Список в боте ограничен Android, iOS и Windows. Консольные профили ведутся отдельно и по Player ID не пополняются, поэтому при игре на консоли покупку придётся делать в магазине самой консоли."
+      },
+      {
+        "q": "Хочу подарить другу, хватит его Player ID?",
+        "a": "Да. Введите в бот Player ID друга и его платформу, бот выведет ник — до подтверждения уточните у самого друга, что ник верный. Пароль, SMS-код или доступ к аккаунту от него не нужны, только открытый ID и правильная платформа."
+      },
+      {
+        "q": "Я играю на Xbox, выбирать вариант Windows?",
+        "a": "Аккаунт Microsoft Store общий для Xbox и Windows PC, поэтому вариант Windows работает с этим профилем. Если сомневаетесь, введите ID и посмотрите, появился ли ник, либо напишите в @StarsPaymeeSupport до оплаты."
+      },
+      {
+        "q": "Аккаунт не привязан к Gameloft или Facebook, пополнение всё равно пройдёт?",
+        "a": "Если есть Player ID, токены придут на этот профиль. Но непривязанный профиль остаётся завязан на устройство: переустановите игру или смените телефон — вместе с прогрессом могут не вернуться и токены. Перед оплатой лучше привязать аккаунт."
+      },
+      {
+        "q": "Токены можно обменять на кредиты внутри игры?",
+        "a": "Да, в игровом магазине есть позиция обмена токенов на кредиты. Курс обмена задаёт Gameloft, и он показывается внутри игры. GemPay только доставляет токены, а превращать их в кредиты остаётся вам."
+      },
+      {
+        "q": "Когда лучше брать токены под Grand Prix или другой ограниченный по времени ивент?",
+        "a": "Оформляйте заказ минимум за несколько часов до конца ивента. Доставка обычно занимает около 5 минут, но подтверждение банка или очередь у провайдера могут затянуться. Оплата в последнюю минуту — обычная причина пропущенного ивента."
+      }
+    ]
+  },
+  "en": {
+    "metaTitle": "Asphalt 9 tokens: Player ID and platform | GemPay",
+    "metaDescription": "Top up Asphalt 9 (Asphalt Legends) tokens in so'm: Player ID and platform - Android, iOS or Windows. No password asked, tokens arrive in about 5 minutes.",
+    "h1": "Buying Asphalt 9 (Asphalt Legends) tokens",
+    "answer": "In Asphalt 9 the second field is not a server but a platform: Android, iOS or Windows, each with its own profile and its own token wallet. In the bot you enter the Player ID and the platform, the bot shows the nickname for free, you confirm, then pick a Token pack and pay in so'm. No password or SMS code is requested. Tokens arrive in about 5 minutes on the profile of the chosen platform.",
+    "intro": [
+      "Tokens are the premium currency in Asphalt 9. Credits pile up on their own from racing, tokens barely do: they go on opening Card Packs and Featured Car Packs, on closing blueprints in the Legend Store, and on skipping wait timers. That is why they are usually bought by players assembling an S-Class car or trying to finish a Grand Prix in time.",
+      "The official route - Google Play, App Store or Microsoft Store - needs a foreign card, and UzCard or HUMO will not go through there. Foreign sites, meanwhile, often ask you to log into the account, which is risky. With GemPay the payment goes in so'm through UzCard, HUMO, Click, Payme or Paynet, and all you are asked for is the public Player ID and the platform."
+    ],
+    "spendOn": [
+      "Opening Card Packs and Relay Packs",
+      "Buying the blueprints you are missing in the Legend Store",
+      "S-Class and event cars through the Featured Car Pack",
+      "Buying credits to upgrade a car",
+      "Skipping the card pack wait timer"
+    ],
+    "packages": [
+      "In Asphalt 9 the packs are named in the form \"Token Pack 3 (220 tokens)\": the number in brackets is how many tokens actually arrive, while the figure in front of it is just the step number.",
+      "The ladder usually sits around 40, 105, 220, 470, 1275 and 3000 tokens, but the list and the amounts are refreshed by the provider from time to time.",
+      "The current price is shown in the bot."
+    ],
+    "steps": [
+      {
+        "title": "Open the bot and pick Asphalt 9",
+        "text": "Open @Gempayuz_bot in Telegram and find Asphalt 9 in the catalogue. In the stores the game also appears as Asphalt Legends - that is the new name of the same game, not a separate version."
+      },
+      {
+        "title": "Enter the Player ID",
+        "text": "Copy the Player ID from the profile window and paste it into the bot. It is a public number, and showing it gives nobody access to the account. A password, SMS code or Gameloft login is never requested."
+      },
+      {
+        "title": "Set the platform",
+        "text": "The second field is not a server but a platform: Android, iOS or Windows. Choose the device you actually play on - each platform keeps a separate profile and a separate token wallet."
+      },
+      {
+        "title": "Check the nickname",
+        "text": "The bot requests the profile by ID and puts the nickname on screen. This step is free and involves no payment. If the nickname is yours, confirm it; if a stranger's name appears, the ID or the platform is wrong."
+      },
+      {
+        "title": "Pick a pack and pay in so'm",
+        "text": "Choose a Token pack and pay in so'm with UzCard, HUMO, Click, Payme or Paynet. The current price is shown in the bot. Tokens arrive in about 5 minutes on the profile of the chosen platform."
+      }
+    ],
+    "idSteps": [
+      "On the Hangar screen, tap the avatar picture in the top left and the profile window opens.",
+      "In the Profile section the Player ID sits under the nickname; tap it to copy the number.",
+      "Another way: Menu, then Settings, then About - the Gameloft Player ID is there.",
+      "Paste the ID into the bot and set the platform you play on in the separate field."
+    ],
+    "gotcha": {
+      "title": "The second field is a platform, not a server",
+      "text": "The mistake that costs money is picking the wrong platform. Since the 2024 Unite update progress carries over through the cloud, but the purchase wallet stays tied to the platform: tokens from the Microsoft Store do not cross over to a phone. Tokens delivered to another platform are not returned, so check your choice before you pay."
+    },
+    "faq": [
+      {
+        "q": "I play on console, on PlayStation or Switch. Can I buy tokens?",
+        "a": "The list in the bot is limited to Android, iOS and Windows. Console profiles are kept separately and are not topped up by Player ID, so if you play on console you will have to buy through that console's own store."
+      },
+      {
+        "q": "I want to gift a friend, is their Player ID enough?",
+        "a": "Yes. Enter your friend's Player ID and their platform in the bot, and the bot shows the nickname - before confirming, check with them that the nickname is right. You need no password, SMS code or account access from them, only the public ID and the correct platform."
+      },
+      {
+        "q": "I play on Xbox, should I choose the Windows option?",
+        "a": "A Microsoft Store account is shared between Xbox and Windows PC, so the Windows option works with that profile. If you are unsure, enter the ID and see whether the nickname appears, or write to @StarsPaymeeSupport before paying."
+      },
+      {
+        "q": "My account is not linked to Gameloft or Facebook, will the top-up still work?",
+        "a": "If there is a Player ID, the tokens land on that profile. But an unlinked profile stays tied to the device: reinstall the game or change the phone and the tokens may not come back along with the progress. It is better to link the account before you pay."
+      },
+      {
+        "q": "Can tokens be exchanged for credits inside the game?",
+        "a": "Yes, the in-game store has an option to exchange tokens for credits. The exchange rate is set by Gameloft and is shown inside the game. GemPay only delivers the tokens; turning them into credits is left to you."
+      },
+      {
+        "q": "When is it best to buy tokens for a Grand Prix or another timed event?",
+        "a": "Place the order at least a few hours before the event ends. Delivery usually takes about 5 minutes, but a bank confirmation or a queue at the provider can drag on. Paying at the last minute is the usual reason for missing an event."
+      }
+    ]
+  }
+}

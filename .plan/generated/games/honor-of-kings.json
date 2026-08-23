@@ -1,0 +1,249 @@
+{
+  "slug": "honor-of-kings",
+  "uz": {
+    "answer": "Honor of Kings'ning global versiyasida alohida server yoki zona maydoni yo'q: region akkaunt ochilganda belgilanadi, shuning uchun to'ldirish uchun faqat Player ID (UID) kerak. GemPay botida ID ni kiritasiz, tizim o'yin serveridan nikni bepul olib beradi, siz tasdiqlaysiz va so'mda to'laysiz. Token taxminan 3 daqiqada tushadi, nik chiqmaguncha hech narsa yechilmaydi.",
+    "faq": [
+      {
+        "q": "Weekly Card ning kunlik tokenlarini olish uchun har kuni o'yinga kirish kerakmi?",
+        "a": "Ha. Weekly Card va Weekly Card Plus tokenning bir qismini darhol, qolganini yetti kun davomida kunlik beradi. Kirmagan kuningizning ulushi qaytarilmaydi, shuning uchun kartani faol o'ynaydigan haftangizda oling."
+      },
+      {
+        "q": "To'ldirgan tokenim Nobility darajamni ko'taradimi?",
+        "a": "Nobility bali token sarflanganda yig'iladi, ya'ni token o'yin ichida biror narsaga ishlatilganda. Muddati cheklangan aksiya tokenlari odatda balga o'tmaydi, shuni hisobga oling."
+      },
+      {
+        "q": "Google Play va Apple orqali kirgan ikki akkauntim bor, qaysi UID ni beray?",
+        "a": "Har bir kirish usuli alohida akkaunt va alohida UID hosil qiladi, ular birlashtirilmaydi. Skin kerak bo'lgan profilga kiring va UID ni o'sha yerdan oling, chunki token faqat kiritilgan UID ga tushadi."
+      },
+      {
+        "q": "Akkauntim regionini keyinchalik o'zgartira olamanmi?",
+        "a": "Region akkaunt yaratilganda belgilanadi va oddiy yo'l bilan almashtirilmaydi, qahramon, skin va reyting o'sha regionda qoladi. To'ldirishga bu xalaqit bermaydi: bot regionni emas, UID ni so'raydi."
+      },
+      {
+        "q": "Honor Pass ni ham token bilan olsam bo'ladimi?",
+        "a": "Ha, Honor Pass o'yin ichida token evaziga ochiladi. Botda alohida 'Pass' tugmasi yo'q: kerakli miqdordagi token paketini olasiz, keyin Pass ni o'yinning o'zidan sotib olasiz. Mavsum tugashidan oldin ulgurish kerak."
+      },
+      {
+        "q": "Skinga bir oz token yetmayapti, kichik paket qo'shsam bo'ladimi?",
+        "a": "Ha, paketlar bir-birining ustiga qo'shiladi va balans jamlanadi. Faqat esda tuting: ilgari olgan paket hajmini takrorlasangiz, birinchi to'ldirish bonusi ikkinchi marta berilmaydi."
+      }
+    ],
+    "gotcha": {
+      "title": "Bir xil paketni takrorlash bonusni yo'qotadi",
+      "text": "Birinchi to'ldirish bonusi odatda har paket hajmiga alohida beriladi: 80 uchun bir marta, 240 uchun yana bir marta. Ayni bir paketni ikkinchi bor olsangiz, bonus qaytarilmaydi. Yangi akkauntda zinapoyani pastdan yuqoriga bittadan o'tgan ma'qul."
+    },
+    "h1": "Honor of Kings token to'ldirish: Player ID orqali, so'mda",
+    "idSteps": [
+      "Honor of Kings'ni oching va lobbi chap yuqorisidagi avatarni bosing",
+      "Profil sahifasida nik ostida turgan ID raqamini toping - bu Player ID",
+      "Ko'rinmasa, yuqori o'ngdagi sozlamalar belgisidan 'View UID' bandini oching",
+      "Raqamni to'liq nusxalang: UID nik yoki telefon almashsa ham o'zgarmaydi",
+      "Botga faqat shu raqamni yuboring, parol yoki SMS kod hech qachon kerak emas"
+    ],
+    "intro": [
+      "Token - Honor of Kings'dagi asosiy pullik valyuta. Jangda yig'iladigan Gold ko'proq qahramon ochishga ketadi, Token esa skinlar, Honor Pass va omadli quraga sarflanadi: Epic skinlar odatda 888-1388, Legendary skinlar 1688-2888 token turadi. Shuning uchun uni bitta qahramonni jiddiy o'ynaydigan yoki har mavsum Pass yig'ib boradigan o'yinchilar oladi.",
+      "Rasmiy yo'l - Midasbuy yoki do'kon ichidagi to'lov - odatda xalqaro karta yoxud Google Play va App Store balansini so'raydi; UzCard bilan HUMO u yerda ro'yxatda ko'rinmaydi. GemPay shu bo'shliqni yopadi: to'lov O'zbekiston kartasi yoki Click, Payme, Paynet orqali so'mda o'tadi. Akkauntga kirish talab qilinmaydi, faqat ochiq UID yetadi."
+    ],
+    "metaDescription": "Honor of Kings token to'ldirish so'mda: Player ID (UID) ni kiriting, server maydoni so'ralmaydi, nik bepul tekshiriladi va token 3 daqiqada UID ga tushadi.",
+    "metaTitle": "Honor of Kings token sotib olish, so'mda | GemPay",
+    "packages": [
+      "Token zinapoyasi odatda 80 dan boshlanadi va 240, 400, 560, 800, 1200 orqali minglik paketlargacha ko'tariladi, yiriklarining ustiga bonus token qo'shiladi.",
+      "Ular yonida Weekly Card va Weekly Card Plus turadi - bu ikkisi tokenni bir yo'la emas, yetti kun davomida kunlik beradi.",
+      "Har paketning hozirgi narxi botda ko'rsatiladi."
+    ],
+    "spendOn": [
+      "Epic va Legendary skinlar - odatda 888-2888 token",
+      "Honor Pass: mavsumiy skin, effekt va resurslar",
+      "Yangi qahramonlarni Gold yig'ib o'tirmasdan ochish",
+      "Treasure va omadli qura - noyob kristallar uchun",
+      "Weekly Card hamda Weekly Card Plus obunalari",
+      "Nobility darajasi: ramka, avatar va chat bezaklari"
+    ],
+    "steps": [
+      {
+        "title": "Botda Honor of Kings'ni tanlang",
+        "text": "@Gempayuz_bot ni oching va katalogdan Honor of Kings'ni belgilang. Gap global versiya haqida: Xitoy versiyasi QQ va WeChat orqali ishlaydigan boshqa o'yin, unga token o'tmaydi."
+      },
+      {
+        "title": "Player ID (UID) ni kiriting",
+        "text": "Faqat raqamlardan iborat UID kifoya. Server yoki zona maydoni yo'q - HoK'da region akkaunt ochilganda belgilanadi, shuning uchun bot qo'shimcha hech narsa so'ramaydi."
+      },
+      {
+        "title": "Ekrandagi nikni tekshiring",
+        "text": "Bot o'yin serveridan nikni olib bepul ko'rsatadi. HoK'da nik takrorlanishi mumkin, UID esa noyob, shuning uchun tasdiqlashdan oldin nikni tinch o'qib chiqing. Bu bosqichgacha hisobdan pul yechilmaydi."
+      },
+      {
+        "title": "Paketni tanlang va so'mda to'lang",
+        "text": "Token paketi yoki Weekly Card ni tanlab, UzCard, HUMO, Click, Payme yoki Paynet orqali to'lang. Joriy narx tugmani bosishdan oldin ekranda turadi."
+      },
+      {
+        "title": "Tokenni o'yinda qabul qiling",
+        "text": "Token o'rtacha 3 daqiqada o'sha UID ga tushadi. Balans darrov yangilanmasa, o'yindan chiqib qayta kiring - hisob lobbi qayta yuklanganda ko'rinadi."
+      }
+    ]
+  },
+  "ru": {
+    "metaTitle": "Покупка Token в Honor of Kings за сумы | GemPay",
+    "metaDescription": "Пополнение Token в Honor of Kings за сумы: введите Player ID (UID), поле сервера не спрашивается, ник проверяется бесплатно, Token приходит за 3 минуты.",
+    "h1": "Пополнение Token в Honor of Kings: по Player ID, в сумах",
+    "answer": "В глобальной версии Honor of Kings нет отдельного поля сервера или зоны: регион задаётся при создании аккаунта, поэтому для пополнения нужен только Player ID (UID). В боте GemPay вы вводите ID, система бесплатно получает ник с игрового сервера, вы подтверждаете и платите в сумах. Token приходит примерно за 3 минуты, до появления ника ничего не списывается.",
+    "intro": [
+      "Token — основная платная валюта в Honor of Kings. Gold, который копится в боях, уходит в основном на открытие героев, а Token тратится на скины, Honor Pass и розыгрыши: скины Epic обычно стоят 888-1388 Token, Legendary — 1688-2888. Поэтому его берут те, кто серьёзно играет на одном герое или каждый сезон собирает Pass.",
+      "Официальный путь — Midasbuy или оплата внутри магазина — обычно просит международную карту либо баланс Google Play и App Store; UzCard и HUMO там в списке не появляются. GemPay закрывает этот пробел: оплата проходит в сумах картой Узбекистана или через Click, Payme, Paynet. Вход в аккаунт не требуется, достаточно открытого UID."
+    ],
+    "spendOn": [
+      "Скины Epic и Legendary — обычно 888-2888 Token",
+      "Honor Pass: сезонный скин, эффекты и ресурсы",
+      "Открытие новых героев без долгого сбора Gold",
+      "Treasure и розыгрыши — ради редких кристаллов",
+      "Подписки Weekly Card и Weekly Card Plus",
+      "Уровень Nobility: рамки, аватары и украшения чата"
+    ],
+    "packages": [
+      "Лестница Token обычно начинается с 80 и поднимается через 240, 400, 560, 800, 1200 до пакетов на тысячи, к крупным сверху добавляется бонусный Token.",
+      "Рядом с ними стоят Weekly Card и Weekly Card Plus — эти два выдают Token не сразу, а ежедневно в течение семи дней.",
+      "Текущая цена каждого пакета показывается в боте."
+    ],
+    "steps": [
+      {
+        "title": "Выберите Honor of Kings в боте",
+        "text": "Откройте @Gempayuz_bot и отметьте Honor of Kings в каталоге. Речь о глобальной версии: китайская версия работает через QQ и WeChat, это другая игра, Token туда не переходит."
+      },
+      {
+        "title": "Введите Player ID (UID)",
+        "text": "Достаточно UID из одних цифр. Поля сервера или зоны нет — в HoK регион задаётся при создании аккаунта, поэтому бот больше ничего не спрашивает."
+      },
+      {
+        "title": "Проверьте ник на экране",
+        "text": "Бот получает ник с игрового сервера и показывает его бесплатно. В HoK ник может повторяться, а UID уникален, поэтому перед подтверждением спокойно прочитайте ник. До этого шага со счёта ничего не списывается."
+      },
+      {
+        "title": "Выберите пакет и оплатите в сумах",
+        "text": "Отметьте пакет Token или Weekly Card и оплатите через UzCard, HUMO, Click, Payme или Paynet. Текущая цена стоит на экране до нажатия кнопки."
+      },
+      {
+        "title": "Заберите Token в игре",
+        "text": "Token приходит на тот же UID в среднем за 3 минуты. Если баланс не обновился сразу, выйдите из игры и зайдите снова — счёт виден после перезагрузки лобби."
+      }
+    ],
+    "idSteps": [
+      "Откройте Honor of Kings и нажмите на аватар в левом верхнем углу лобби",
+      "На странице профиля найдите номер ID под ником — это и есть Player ID",
+      "Если его не видно, откройте пункт 'View UID' в настройках справа вверху",
+      "Скопируйте номер полностью: UID не меняется при смене ника или телефона",
+      "Отправьте боту только этот номер, пароль или SMS-код не нужны никогда"
+    ],
+    "gotcha": {
+      "title": "Повтор одного пакета лишает бонуса",
+      "text": "Бонус за первое пополнение обычно даётся отдельно на каждый объём пакета: один раз за 80, ещё раз за 240. Если взять тот же пакет второй раз, бонус не повторится. На новом аккаунте лучше пройти лестницу снизу вверх по одному шагу."
+    },
+    "faq": [
+      {
+        "q": "Нужно ли заходить в игру каждый день, чтобы получить дневные Token с Weekly Card?",
+        "a": "Да. Weekly Card и Weekly Card Plus выдают часть Token сразу, а остальное — ежедневно в течение семи дней. Доля за пропущенный день не возвращается, поэтому берите карту на той неделе, когда играете активно."
+      },
+      {
+        "q": "Поднимет ли пополненный Token мой уровень Nobility?",
+        "a": "Очки Nobility начисляются при трате Token, то есть когда Token потрачен на что-то внутри игры. Token из акций с ограниченным сроком обычно в очки не идёт, это стоит учитывать."
+      },
+      {
+        "q": "У меня два аккаунта — через Google Play и Apple, какой UID дать?",
+        "a": "Каждый способ входа создаёт отдельный аккаунт и отдельный UID, они не объединяются. Зайдите в тот профиль, где нужен скин, и возьмите UID оттуда: Token приходит только на введённый UID."
+      },
+      {
+        "q": "Можно ли позже сменить регион аккаунта?",
+        "a": "Регион задаётся при создании аккаунта и обычным путём не меняется, герои, скины и рейтинг остаются в том регионе. Пополнению это не мешает: бот спрашивает не регион, а UID."
+      },
+      {
+        "q": "Можно ли взять Honor Pass за Token?",
+        "a": "Да, Honor Pass открывается внутри игры за Token. Отдельной кнопки 'Pass' в боте нет: вы берёте пакет Token нужного объёма, а затем покупаете Pass в самой игре. Успеть нужно до конца сезона."
+      },
+      {
+        "q": "На скин не хватает немного Token, можно добавить маленький пакет?",
+        "a": "Да, пакеты складываются друг с другом и баланс суммируется. Только помните: если повторить объём уже купленного пакета, бонус за первое пополнение второй раз не даётся."
+      }
+    ]
+  },
+  "en": {
+    "metaTitle": "Buy Honor of Kings Token in so'm | GemPay",
+    "metaDescription": "Honor of Kings Token top-up in so'm: enter your Player ID (UID), no server field is asked, the nickname is checked free and Token lands in 3 minutes.",
+    "h1": "Honor of Kings Token top-up: by Player ID, in so'm",
+    "answer": "The global version of Honor of Kings has no separate server or zone field: the region is set when the account is created, so a top-up needs only the Player ID (UID). You enter the ID in the GemPay bot, the system pulls the nickname from the game server for free, you confirm and pay in so'm. Token arrives in about 3 minutes, and nothing is charged until the nickname appears.",
+    "intro": [
+      "Token is the main paid currency in Honor of Kings. The Gold you collect in matches goes mostly into unlocking heroes, while Token is spent on skins, the Honor Pass and lucky draws: Epic skins usually cost 888-1388 Token, Legendary skins 1688-2888. That is why it is bought by players who main one hero seriously or who collect the Pass every season.",
+      "The official route — Midasbuy or paying inside the store — normally asks for an international card or Google Play and App Store balance; UzCard and HUMO do not appear in that list. GemPay closes the gap: payment goes through an Uzbek card or Click, Payme, Paynet in so'm. No account login is required, the public UID is enough."
+    ],
+    "spendOn": [
+      "Epic and Legendary skins — usually 888-2888 Token",
+      "Honor Pass: seasonal skin, effects and resources",
+      "Unlocking new heroes without grinding Gold",
+      "Treasure and lucky draws — for rare crystals",
+      "Weekly Card and Weekly Card Plus subscriptions",
+      "Nobility level: frames, avatars and chat decorations"
+    ],
+    "packages": [
+      "The Token ladder usually starts at 80 and climbs through 240, 400, 560, 800, 1200 up to packs in the thousands, with bonus Token added on top of the larger ones.",
+      "Next to them sit Weekly Card and Weekly Card Plus — these two hand out Token daily over seven days rather than all at once.",
+      "The current price of each pack is shown in the bot."
+    ],
+    "steps": [
+      {
+        "title": "Pick Honor of Kings in the bot",
+        "text": "Open @Gempayuz_bot and select Honor of Kings from the catalogue. This is about the global version: the Chinese version runs through QQ and WeChat, it is a different game and Token does not carry over to it."
+      },
+      {
+        "title": "Enter the Player ID (UID)",
+        "text": "A UID made of digits only is enough. There is no server or zone field — in HoK the region is set when the account is created, so the bot asks for nothing else."
+      },
+      {
+        "title": "Check the nickname on screen",
+        "text": "The bot pulls the nickname from the game server and shows it for free. Nicknames can repeat in HoK while the UID is unique, so read the nickname calmly before you confirm. Nothing is charged up to this step."
+      },
+      {
+        "title": "Choose a pack and pay in so'm",
+        "text": "Select a Token pack or a Weekly Card and pay with UzCard, HUMO, Click, Payme or Paynet. The current price is on screen before you press the button."
+      },
+      {
+        "title": "Receive the Token in game",
+        "text": "Token lands on that same UID in about 3 minutes on average. If the balance does not refresh right away, close the game and open it again — the total shows once the lobby reloads."
+      }
+    ],
+    "idSteps": [
+      "Open Honor of Kings and tap the avatar in the top left of the lobby",
+      "On the profile page, find the ID number under the nickname — that is the Player ID",
+      "If it is not visible, open the 'View UID' item from the settings icon in the top right",
+      "Copy the number in full: the UID does not change if the nickname or phone changes",
+      "Send only that number to the bot, a password or SMS code is never needed"
+    ],
+    "gotcha": {
+      "title": "Repeating the same pack loses the bonus",
+      "text": "The first top-up bonus is usually given separately for each pack size: once for 80, once again for 240. If you take the same pack a second time, the bonus does not repeat. On a new account it is better to walk up the ladder one step at a time."
+    },
+    "faq": [
+      {
+        "q": "Do I have to open the game every day to get the daily Token from a Weekly Card?",
+        "a": "Yes. Weekly Card and Weekly Card Plus give part of the Token straight away and the rest daily over seven days. The share for a day you miss is not returned, so take the card in a week when you play actively."
+      },
+      {
+        "q": "Does topped-up Token raise my Nobility level?",
+        "a": "Nobility points are earned when Token is spent, that is when Token goes towards something inside the game. Token from limited-time promos usually does not count towards points, so keep that in mind."
+      },
+      {
+        "q": "I have two accounts, one via Google Play and one via Apple — which UID do I give?",
+        "a": "Each sign-in method creates a separate account and a separate UID, and they are not merged. Log into the profile where you want the skin and take the UID from there, because Token lands only on the UID you enter."
+      },
+      {
+        "q": "Can I change the account region later?",
+        "a": "The region is set when the account is created and is not changed by any ordinary route; heroes, skins and rank stay in that region. This does not affect a top-up: the bot asks for the UID, not the region."
+      },
+      {
+        "q": "Can I get the Honor Pass with Token as well?",
+        "a": "Yes, the Honor Pass is unlocked inside the game with Token. There is no separate 'Pass' button in the bot: you take a Token pack of the size you need, then buy the Pass in the game itself. You have to do it before the season ends."
+      },
+      {
+        "q": "I am slightly short of Token for a skin, can I add a small pack?",
+        "a": "Yes, packs stack on top of each other and the balance adds up. Just remember: if you repeat the size of a pack you already bought, the first top-up bonus is not given a second time."
+      }
+    ]
+  }
+}

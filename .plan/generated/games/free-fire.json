@@ -1,0 +1,249 @@
+{
+  "slug": "free-fire",
+  "uz": {
+    "answer": "Free Fire'da server maydoni yo'q — hisob regioni birinchi kirishda biriktiriladi, shuning uchun faqat UID kerak. GemPay botida o'yinni tanlaysiz, profil avataringiz ostidagi Player ID'ni kiritasiz, bot nikni bepul ko'rsatadi, tasdiqlaganingizdan keyin paketni tanlab so'mda to'laysiz. Olmos taxminan 2 daqiqada tushadi va Free Fire MAX'da ham ko'rinadi.",
+    "faq": [
+      {
+        "q": "Free Fire'ni to'ldirishda server tanlash kerakmi?",
+        "a": "Yo'q. Free Fire'da alohida server yoki platforma maydoni yo'q — hisob regioni birinchi kirishda o'zi biriktiriladi. Botda faqat Player ID so'raladi, boshqa maydon chiqmaydi."
+      },
+      {
+        "q": "Nikimni o'zgartirsam, UID ham o'zgaradimi?",
+        "a": "Yo'q, UID akkauntga bir marta beriladi va butun umr o'zgarmaydi. Nikni almashtirsangiz ham eski raqam ishlayveradi — bot tekshiruvda sizga yangi nikni ko'rsatadi."
+      },
+      {
+        "q": "Weekly va Monthly Membership'ni bir vaqtda ushlab tursam bo'ladimi?",
+        "a": "Ha, ikkalasi bir vaqtda faol tura oladi va kunlik ulushlari qo'shilib keladi. Botda ular alohida mahsulot, ya'ni har birini alohida buyurtma qilasiz."
+      },
+      {
+        "q": "Membership muddati tugagach avtomatik uzaytiriladimi?",
+        "a": "Yo'q, bu obuna emas — bir martalik buyurtma. Muddat tugasa, kunlik olmos to'xtaydi va davom ettirish uchun yangi buyurtma berasiz. Kunlik ulushni o'yin ichida qo'lda olib turasiz, shuning uchun har kuni kirib turish kerak."
+      },
+      {
+        "q": "Emulyatorda yoki ikkinchi telefonda o'ynasam, to'ldirish ishlaydimi?",
+        "a": "Ha. Olmos qurilmaga emas, UID'ga tushadi. PC emulyatorida yoki boshqa telefonda kirsangiz ham, balans o'sha akkauntda turaveradi."
+      },
+      {
+        "q": "Akkauntim vaqtincha bloklangan bo'lsa, to'ldirsam bo'ladimi?",
+        "a": "Kutganingiz ma'qul. Buyurtma UID bo'yicha o'tsa ham, blok tugamaguncha olmosga tegina olmaysiz, doimiy ban bo'lsa esa u umuman qo'lga kirmaydi. Avval o'yin ichidagi xabardan blok muddatini tekshiring."
+      }
+    ],
+    "gotcha": {
+      "title": "Mehmon (guest) akkauntga to'ldirish",
+      "text": "Free Fire'da guest akkaunt qurilma xotirasida yashaydi. Ilovani o'chirsangiz yoki telefon almashtirsangiz, u tiklanmaydi — sotib olingan olmos ham, Booyah Pass ham qaytmaydi. To'ldirishdan oldin akkauntni Google, Facebook yoki VK'ga bog'lang, keyin UID'ni kiriting."
+    },
+    "h1": "Free Fire olmos to'ldirish — UID bo'yicha, nik tasdiqlangandan keyin",
+    "idSteps": [
+      "Free Fire lobbisida chap yuqoridagi avatar rasmingizni bosing — profil kartasi ochiladi.",
+      "Nikingiz ostida Player ID (UID) turadi: 9-11 raqamli, harfsiz son.",
+      "Raqam yonidagi nusxalash belgisini bosing yoki uni qo'lda yozib oling.",
+      "Free Fire MAX'da ham xuddi shu UID ko'rinadi, Firelink bitta akkauntni ulaydi.",
+      "Nik o'zgarsa ham UID o'zgarmaydi, eski chekdagi raqam ishlayveradi."
+    ],
+    "intro": [
+      "Olmos — Free Fire'ning ichki valyutasi. Uni asosan Booyah Pass'ning Premium yo'nalishini ochish, Diamond Royale va Evo Vault aylanishlari, Alok yoki Chrono kabi personajlarni olish uchun sarflashadi. Ko'p o'yinchi mavsum boshida bir marta to'ldiradi: pass ochilsa, qolgan mukofotlar o'ynab yig'iladi. Weekly va Monthly Membership oluvchilar esa har kuni oz-ozdan olmos yig'ib borishni afzal ko'radi.",
+      "O'yin ichidagi Google Play va Garena to'lov oynasi xorijiy karta so'raydi, Codashop esa O'zbekiston uchun Free Fire yo'nalishini ochmagan. Shu sababli ko'pchilik obmennik yoki kripto orqali aylanma yo'l qidiradi. GemPay'da esa hamma narsa so'mda: UzCard, HUMO, Click, Payme yoki Paynet bilan to'laysiz, olmos to'g'ridan-to'g'ri UID'ga tushadi va akkauntga kirish talab qilinmaydi."
+    ],
+    "metaDescription": "Free Fire olmosini UID orqali to'ldiring: server tanlash yo'q, nik to'lovdan oldin bepul tekshiriladi, so'mda UzCard, HUMO, Click yoki Payme bilan, 2 daqiqada.",
+    "metaTitle": "Free Fire olmos sotib olish — UID bilan, so'mda | GemPay",
+    "packages": [
+      "Olmos paketlari asosiy miqdor va bonus ko'rinishida keladi — odatda 100+10, 310+31, 520+52, 1060+106, 2180+218 va 5600+560 zinapoyasi.",
+      "Ular yonida Weekly va Monthly Membership hamda Elite Pass turadi: bu mahsulotlar olmosni bir yo'la emas, kunlar davomida bosqichma-bosqich beradi (o'yin ichida bu pass endi Booyah Pass deb ataladi).",
+      "Joriy narxlar botda ko'rsatiladi."
+    ],
+    "spendOn": [
+      "Booyah Pass Premium va Premium Plus yo'nalishlari",
+      "Diamond Royale va Weapon Royale aylantirishlari",
+      "Evo Vault'dagi qurol skinlari va Evo tokenlari",
+      "Alok, Chrono, Kelly kabi personajlarni ochish va kuchaytirish",
+      "Incubator va Faded Wheel'dagi cheklangan buyumlar",
+      "Pet, emote va mavsumiy kiyim to'plamlari"
+    ],
+    "steps": [
+      {
+        "title": "Botda Free Fire'ni tanlang",
+        "text": "@Gempayuz_bot ni oching va ro'yxatdan Free Fire'ni bosing. Bu global versiya: Vetnam, Tailand va Indoneziya hisoblari qo'llab-quvvatlanmaydi."
+      },
+      {
+        "title": "Player ID'ni kiriting",
+        "text": "Profilingizdagi 9-11 raqamli UID'ni yozing. Free Fire'da server yoki platforma maydoni yo'q, shuning uchun boshqa hech narsa so'ralmaydi."
+      },
+      {
+        "title": "Nikni tasdiqlang",
+        "text": "Bot o'yin serveridan nikni tortib ekranda ko'rsatadi. Bu bosqich bepul va bu yerda hech narsa yechilmaydi; nik begona chiqsa, UID'ni qaytadan kiriting."
+      },
+      {
+        "title": "Paket yoki membership tanlang",
+        "text": "Bir martalik olmos paketi to'lovdan keyin darhol tushadi. Weekly yoki Monthly Membership tanlasangiz, olmos bir yo'la emas, kunlar davomida bosqichma-bosqich beriladi."
+      },
+      {
+        "title": "So'mda to'lang",
+        "text": "UzCard, HUMO, Click, Payme yoki Paynet orqali to'lov qilasiz. Olmos taxminan 2 daqiqada UID'ga tushadi, chek esa botda saqlanib qoladi."
+      }
+    ]
+  },
+  "ru": {
+    "metaTitle": "Купить алмазы Free Fire по UID, за сумы | GemPay",
+    "metaDescription": "Пополните алмазы Free Fire по UID: выбора сервера нет, ник бесплатно проверяется до оплаты, оплата в сумах через UzCard, HUMO, Click или Payme, за 2 минуты.",
+    "h1": "Пополнение алмазов Free Fire — по UID, после подтверждения ника",
+    "answer": "В Free Fire нет поля сервера — регион аккаунта закрепляется при первом входе, поэтому нужен только UID. В боте GemPay вы выбираете игру, вводите Player ID под аватаром профиля, бот бесплатно показывает ник, а после подтверждения выбираете пакет и платите в сумах. Алмазы приходят примерно за 2 минуты и видны также в Free Fire MAX.",
+    "intro": [
+      "Алмазы — внутренняя валюта Free Fire. Их в основном тратят на премиум-ветку Booyah Pass, на прокрутки Diamond Royale и Evo Vault, на персонажей вроде Alok или Chrono. Многие игроки пополняют один раз в начале сезона: пропуск открыт, а остальные награды добираются игрой. Те, кто берёт Weekly и Monthly Membership, наоборот предпочитают копить алмазы понемногу каждый день.",
+      "Платёжное окно Google Play и Garena внутри игры просит зарубежную карту, а Codashop не открыл направление Free Fire для Узбекистана. Поэтому многие ищут обходной путь через обменники или крипту. В GemPay всё в сумах: платите картой UzCard, HUMO, через Click, Payme или Paynet, алмазы приходят прямо на UID, и вход в аккаунт не требуется."
+    ],
+    "spendOn": [
+      "Ветки Booyah Pass Premium и Premium Plus",
+      "Прокрутки Diamond Royale и Weapon Royale",
+      "Скины оружия и токены Evo из Evo Vault",
+      "Открытие и прокачка персонажей вроде Alok, Chrono, Kelly",
+      "Ограниченные предметы в Incubator и Faded Wheel",
+      "Питомцы, эмоции и сезонные наборы одежды"
+    ],
+    "packages": [
+      "Пакеты алмазов идут как основное количество плюс бонус — обычно лестница 100+10, 310+31, 520+52, 1060+106, 2180+218 и 5600+560.",
+      "Рядом с ними стоят Weekly и Monthly Membership, а также Elite Pass: эти товары выдают алмазы не разом, а постепенно по дням (внутри игры этот пропуск теперь называется Booyah Pass).",
+      "Текущие цены показываются в боте."
+    ],
+    "steps": [
+      {
+        "title": "Выберите Free Fire в боте",
+        "text": "Откройте @Gempayuz_bot и нажмите Free Fire в списке. Это глобальная версия: аккаунты Вьетнама, Таиланда и Индонезии не поддерживаются."
+      },
+      {
+        "title": "Введите Player ID",
+        "text": "Впишите UID из профиля, 9-11 цифр. В Free Fire нет поля сервера или платформы, поэтому больше ничего не спрашивается."
+      },
+      {
+        "title": "Подтвердите ник",
+        "text": "Бот запрашивает ник с игрового сервера и показывает его на экране. Этот шаг бесплатный, здесь ничего не списывается; если ник чужой, введите UID заново."
+      },
+      {
+        "title": "Выберите пакет или membership",
+        "text": "Разовый пакет алмазов приходит сразу после оплаты. Если выбрать Weekly или Monthly Membership, алмазы выдаются не разом, а постепенно по дням."
+      },
+      {
+        "title": "Оплатите в сумах",
+        "text": "Платите через UzCard, HUMO, Click, Payme или Paynet. Алмазы приходят на UID примерно за 2 минуты, а чек остаётся в боте."
+      }
+    ],
+    "idSteps": [
+      "В лобби Free Fire нажмите на аватар слева вверху — откроется карточка профиля.",
+      "Под ником стоит Player ID (UID): число из 9-11 цифр, без букв.",
+      "Нажмите значок копирования рядом с номером или перепишите его вручную.",
+      "В Free Fire MAX виден тот же UID, Firelink связывает один аккаунт.",
+      "Даже если сменить ник, UID не меняется — номер из старого чека работает."
+    ],
+    "gotcha": {
+      "title": "Пополнение гостевого (guest) аккаунта",
+      "text": "Гостевой аккаунт в Free Fire живёт в памяти устройства. Удалите приложение или смените телефон — он не восстановится, и ни купленные алмазы, ни Booyah Pass не вернутся. Перед пополнением привяжите аккаунт к Google, Facebook или VK, и только потом вводите UID."
+    },
+    "faq": [
+      {
+        "q": "Нужно ли выбирать сервер при пополнении Free Fire?",
+        "a": "Нет. В Free Fire нет отдельного поля сервера или платформы — регион аккаунта закрепляется сам при первом входе. Бот спрашивает только Player ID, других полей не появляется."
+      },
+      {
+        "q": "Если сменить ник, изменится ли UID?",
+        "a": "Нет, UID выдаётся аккаунту один раз и не меняется никогда. Даже после смены ника старый номер продолжает работать — при проверке бот покажет вам новый ник."
+      },
+      {
+        "q": "Можно ли держать Weekly и Monthly Membership одновременно?",
+        "a": "Да, оба могут быть активны одновременно, и их ежедневные доли складываются. В боте это отдельные товары, то есть каждый заказывается отдельно."
+      },
+      {
+        "q": "Продлевается ли membership автоматически после окончания срока?",
+        "a": "Нет, это не подписка, а разовый заказ. Когда срок выйдет, ежедневные алмазы прекратятся, и для продолжения вы оформляете новый заказ. Ежедневную долю нужно забирать вручную внутри игры, поэтому заходить придётся каждый день."
+      },
+      {
+        "q": "Если играю на эмуляторе или на втором телефоне, пополнение сработает?",
+        "a": "Да. Алмазы приходят не на устройство, а на UID. Даже если зайти с эмулятора на ПК или с другого телефона, баланс останется на том же аккаунте."
+      },
+      {
+        "q": "Можно ли пополнять, если аккаунт временно заблокирован?",
+        "a": "Лучше подождать. Заказ пройдёт по UID, но до конца блокировки вы до алмазов не доберётесь, а при постоянном бане они вообще не достанутся. Сначала проверьте срок блокировки в сообщении внутри игры."
+      }
+    ]
+  },
+  "en": {
+    "metaTitle": "Buy Free Fire diamonds by UID, in so'm | GemPay",
+    "metaDescription": "Top up Free Fire diamonds by UID: no server to pick, your nickname is checked free before payment, pay in so'm with UzCard, HUMO, Click or Payme.",
+    "h1": "Free Fire diamond top-up — by UID, after the nickname is confirmed",
+    "answer": "Free Fire has no server field — the account region is attached at first login, so only the UID is needed. In the GemPay bot you pick the game, enter the Player ID under your profile avatar, the bot shows the nickname for free, and once you confirm you pick a pack and pay in so'm. Diamonds arrive in about 2 minutes and show up in Free Fire MAX as well.",
+    "intro": [
+      "Diamonds are Free Fire's in-game currency. They mostly go on unlocking the Premium track of the Booyah Pass, on Diamond Royale and Evo Vault spins, and on characters like Alok or Chrono. Many players top up once at the start of a season: with the pass open, the remaining rewards are collected by playing. Those who take the Weekly and Monthly Membership prefer instead to gather diamonds a little at a time each day.",
+      "The in-game Google Play and Garena payment window asks for a foreign card, and Codashop has not opened a Free Fire line for Uzbekistan. That is why many people look for a workaround through exchangers or crypto. With GemPay everything is in so'm: you pay with UzCard, HUMO, Click, Payme or Paynet, the diamonds go straight to the UID, and no account login is required."
+    ],
+    "spendOn": [
+      "Booyah Pass Premium and Premium Plus tracks",
+      "Diamond Royale and Weapon Royale spins",
+      "Weapon skins and Evo tokens from the Evo Vault",
+      "Unlocking and upgrading characters like Alok, Chrono and Kelly",
+      "Limited items in the Incubator and Faded Wheel",
+      "Pets, emotes and seasonal outfit sets"
+    ],
+    "packages": [
+      "Diamond packs come as a base amount plus a bonus — usually the 100+10, 310+31, 520+52, 1060+106, 2180+218 and 5600+560 ladder.",
+      "Next to them sit the Weekly and Monthly Membership and the Elite Pass: these products give diamonds not all at once but step by step over days (in game this pass is now called the Booyah Pass).",
+      "Current prices are shown in the bot."
+    ],
+    "steps": [
+      {
+        "title": "Pick Free Fire in the bot",
+        "text": "Open @Gempayuz_bot and tap Free Fire in the list. This is the global version: Vietnam, Thailand and Indonesia accounts are not supported."
+      },
+      {
+        "title": "Enter the Player ID",
+        "text": "Type the 9-11 digit UID from your profile. Free Fire has no server or platform field, so nothing else is asked for."
+      },
+      {
+        "title": "Confirm the nickname",
+        "text": "The bot pulls the nickname from the game server and shows it on screen. This step is free and nothing is charged here; if the nickname is not yours, enter the UID again."
+      },
+      {
+        "title": "Choose a pack or a membership",
+        "text": "A one-off diamond pack arrives right after payment. If you choose the Weekly or Monthly Membership, the diamonds are given not all at once but step by step over days."
+      },
+      {
+        "title": "Pay in so'm",
+        "text": "You pay with UzCard, HUMO, Click, Payme or Paynet. Diamonds reach the UID in about 2 minutes, and the receipt stays in the bot."
+      }
+    ],
+    "idSteps": [
+      "In the Free Fire lobby, tap your avatar in the top left — the profile card opens.",
+      "Under your nickname sits the Player ID (UID): a 9-11 digit number with no letters.",
+      "Tap the copy icon next to the number or write it down by hand.",
+      "Free Fire MAX shows the same UID; Firelink connects the one account.",
+      "Changing your nickname does not change the UID — the number from an old receipt still works."
+    ],
+    "gotcha": {
+      "title": "Topping up a guest account",
+      "text": "A Free Fire guest account lives in the device's memory. Delete the app or change phone and it does not come back — neither the diamonds you bought nor the Booyah Pass return. Link the account to Google, Facebook or VK before topping up, and only then enter the UID."
+    },
+    "faq": [
+      {
+        "q": "Do I need to pick a server when topping up Free Fire?",
+        "a": "No. Free Fire has no separate server or platform field — the account region is attached by itself at first login. The bot asks only for the Player ID, no other field appears."
+      },
+      {
+        "q": "If I change my nickname, does the UID change too?",
+        "a": "No, the UID is issued to the account once and never changes. Even after a nickname change the old number keeps working — at the check the bot will show you the new nickname."
+      },
+      {
+        "q": "Can I hold the Weekly and Monthly Membership at the same time?",
+        "a": "Yes, both can be active at once and their daily portions add up. In the bot they are separate products, so you order each one separately."
+      },
+      {
+        "q": "Does the membership renew automatically when the term ends?",
+        "a": "No, this is not a subscription but a one-off order. When the term ends the daily diamonds stop, and to continue you place a new order. The daily portion is claimed by hand inside the game, so you need to log in every day."
+      },
+      {
+        "q": "If I play on an emulator or a second phone, does the top-up work?",
+        "a": "Yes. Diamonds go to the UID, not to the device. Even if you log in from a PC emulator or another phone, the balance stays on that account."
+      },
+      {
+        "q": "Can I top up if my account is temporarily banned?",
+        "a": "Better to wait. The order will go through by UID, but you will not be able to touch the diamonds until the ban ends, and with a permanent ban they are out of reach entirely. Check the ban period first in the in-game message."
+      }
+    ]
+  }
+}
