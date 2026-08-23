@@ -44,6 +44,11 @@ const year = new Date().getFullYear();
       <nav class="ftr__col" aria-labelledby="f-games">
         <h2 class="ftr__h" id="f-games">{c.footer.colGames}</h2>
         <ul class="ftr__list">
+          <li>
+            <a class="ftr__link" href={localePath(locale, "oyinlar")}>
+              <strong>{c.games.all}</strong>
+            </a>
+          </li>
           {
             CATALOG.map((g) => (
               <li>

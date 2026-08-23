@@ -101,10 +101,15 @@ export type Copy = {
   game: {
     breadcrumbHome: string;
     breadcrumbGames: string;
+    /** `<title>` — qisqa nom bilan, ≤60 belgi */
     titleTemplate: string;
+    /** Sahifa H1 — pul so'rovini o'z ichiga oladi */
+    h1Template: string;
     metaTemplate: string;
     descTemplate: string;
     answerTemplate: string;
+    /** Meta kalit so'zlar — HAR TIL uchun alohida (Yandex tilni tekshiradi) */
+    keywords: (game: string, unit: string) => string[];
     needLabel: string;
     etaLabel: string;
     payLabel: string;
@@ -349,20 +354,28 @@ const uz: Copy = {
     breadcrumbHome: "Bosh sahifa",
     breadcrumbGames: "O'yinlar",
     titleTemplate: "{game} {unit} sotib olish — so'mda | GemPay",
+    h1Template: "{game}: {unit} ni so'mda sotib olish",
     metaTemplate: "{game} {unit}",
     descTemplate:
       "{game} uchun {unit} ni O'zbekiston so'mida to'ldiring: UzCard, HUMO, Click, Payme. " +
-      "ID bepul tekshiriladi, kredit {eta} da avtomatik tushadi.",
+      "ID bepul tekshiriladi, kredit {etaIn} avtomatik tushadi.",
     answerTemplate:
       "{game} da {unit} ni so'mda to'ldirish uchun Telegram'dagi @Gempayuz_bot ni oching, " +
       "{game} ni tanlang va {idLabel} ni kiriting. Nikingiz bepul tekshirilib ko'rsatiladi — " +
       "tasdiqlagach paketni tanlab UzCard, HUMO, Click yoki Payme bilan to'laysiz. " +
-      "Kredit {eta} da avtomatik tushadi.",
+      "Kredit {etaIn} avtomatik tushadi.",
+    keywords: (game, unit) => [
+      `${game} ${unit} sotib olish`,
+      `${game} to'ldirish`,
+      `${unit} so'mda`,
+      `${game} uzcard humo`,
+      `${game} donat`,
+    ],
     needLabel: "Nima kerak",
     etaLabel: "Yetkazish",
     payLabel: "To'lov",
     idWhere: "ID ni qayerdan topaman",
-    howTitle: "{game} ni qanday to'ldirish",
+    howTitle: "{unit} ni bosqichma-bosqich to'ldirish",
     faqTitle: "{game} — savol-javob",
     relatedTitle: "Foydali maqolalar",
     ctaTitle: "{game} hisobini hoziroq to'ldiring",
@@ -603,20 +616,28 @@ const ru: Copy = {
     breadcrumbHome: "Главная",
     breadcrumbGames: "Игры",
     titleTemplate: "{game}: купить {unit} за сумы | GemPay",
+    h1Template: "{game}: купить {unit} за сумы",
     metaTemplate: "{game} {unit}",
     descTemplate:
       "Пополнение {unit} для {game} в узбекских сумах: UzCard, HUMO, Click, Payme. " +
-      "ID проверяется бесплатно, зачисление за {eta} автоматически.",
+      "ID проверяется бесплатно, зачисление {etaIn} автоматически.",
     answerTemplate:
       "Чтобы пополнить {unit} в {game} за сумы, откройте @Gempayuz_bot в Telegram, выберите " +
       "{game} и введите {idLabel}. Ваш ник бесплатно проверится и появится на экране — после " +
       "подтверждения выбираете пакет и платите картой UzCard, HUMO, через Click или Payme. " +
-      "Зачисление автоматическое, за {eta}.",
+      "Зачисление автоматическое, {etaIn}.",
+    keywords: (game, unit) => [
+      `купить ${unit} ${game}`,
+      `${game} пополнение узбекистан`,
+      `${unit} за сумы`,
+      `${game} uzcard humo`,
+      `донат ${game}`,
+    ],
     needLabel: "Что нужно",
     etaLabel: "Зачисление",
     payLabel: "Оплата",
     idWhere: "Где найти ID",
-    howTitle: "Как пополнить {game}",
+    howTitle: "Как пополнить {unit} — по шагам",
     faqTitle: "{game} — вопросы и ответы",
     relatedTitle: "Полезные статьи",
     ctaTitle: "Пополните {game} прямо сейчас",
@@ -851,19 +872,27 @@ const en: Copy = {
     breadcrumbHome: "Home",
     breadcrumbGames: "Games",
     titleTemplate: "Buy {game} {unit} in Uzbekistan | GemPay",
+    h1Template: "Buy {game} {unit} in Uzbek so'm",
     metaTemplate: "{game} {unit}",
     descTemplate:
       "Top up {unit} for {game} in Uzbek so'm: UzCard, HUMO, Click, Payme. " +
-      "Your ID is verified free and the credit lands automatically in {eta}.",
+      "Your ID is verified free and the credit lands automatically {etaIn}.",
     answerTemplate:
       "To top up {unit} in {game} with so'm, open @Gempayuz_bot in Telegram, choose {game} and enter " +
       "your {idLabel}. Your nickname is verified and shown for free — confirm it, pick a pack and pay " +
-      "with UzCard, HUMO, Click or Payme. The credit arrives automatically within {eta}.",
+      "with UzCard, HUMO, Click or Payme. The credit arrives automatically {etaIn}.",
+    keywords: (game, unit) => [
+      `buy ${game} ${unit}`,
+      `${game} top up uzbekistan`,
+      `${unit} uzbek som`,
+      `${game} uzcard humo`,
+      `${game} recharge`,
+    ],
     needLabel: "What you need",
     etaLabel: "Delivery",
     payLabel: "Payment",
     idWhere: "Where to find your ID",
-    howTitle: "How to top up {game}",
+    howTitle: "Topping up {unit} step by step",
     faqTitle: "{game} — FAQ",
     relatedTitle: "Useful reading",
     ctaTitle: "Top up {game} now",

@@ -1,0 +1,108 @@
+{
+  "game": "PUBG Mobile",
+  "keywords": {
+    "primary": [
+      "pubg mobile uc sotib olish",
+      "pubg uc sotib olish",
+      "uc sotib olish uzcard",
+      "pubg mobile uc olish o'zbekiston",
+      "pubg uc quyish",
+      "pubg mobile donat uzbekistan"
+    ],
+    "questions": [
+      "pubg mobile uc ni qanday sotib olish mumkin",
+      "pubg mobile player id qayerda turadi",
+      "uc kelmadi nima qilish kerak",
+      "pubg uc necha daqiqada tushadi",
+      "midasbuy uzcard qabul qiladimi",
+      "pubg uc sotib olish xavfsizmi",
+      "id berish akkauntni o'g'irlashga olib keladimi",
+      "royal pass necha uc turadi",
+      "uc nima va unga nima olish mumkin",
+      "noto'g'ri id kiritsam uc qaytadimi",
+      "pubg uc narxi nega o'zgarib turadi",
+      "60 uc mi 660 uc mi foydaliroq"
+    ],
+    "russian": [
+      "купить uc pubg узбекистан",
+      "пополнить uc pubg uzcard",
+      "uc pubg humo оплата",
+      "донат pubg mobile узбекистан в сумах",
+      "купить uc pubg по id ташкент",
+      "midasbuy узбекистан оплата картой",
+      "uc pubg mobile click payme",
+      "куда вводить player id pubg",
+      "не пришли uc pubg что делать",
+      "royal pass купить узбекистан"
+    ]
+  },
+  "research": "VERIFIED ONLINE (WebSearch + WebFetch on google-index results): (1) The Uzbek-Latin SERP for every PUBG UC query is essentially empty of real editorial content — it is dominated by t.me/s/ Telegram channel previews (UC_BALLU, UmarPubgm, SENATOR_PUBGM, PUBG_STORE_UZ, MeeBo_PUBG), machine-translated international resellers, and one bank product page (ipakyulibank Visa PUBG card). This is the single biggest finding: there is no Uzbek-language authority page to beat. (2) blog.payme.uz has an Uzbek PUBG page but I fetched it and it is ~200-250 words with exactly ONE H2 and no FAQ — trivially outranked by a 1400-word structured article. (3) hablax.com/uz fetched: machine-translated Uzbek (mixed O' / Oʻ diacritics), has FAQ + steps but NO table, and critically its payment list is Credit Card / PayPal / Apple Pay / crypto — NO UzCard, NO HUMO. That is a verified, citable comparison fact, not an assumption. (4) mtcgame.com/uz and bittopup rank on translated content only. (5) Russian cluster is genuinely more competitive: 1pay.uz has a dedicated 'UC через Humo и UzCard' blog post (returned 403 to my fetch, so I only have its indexed title), adek.uz sells UC as a Tashkent e-shop, midasbuy.com/uz serves Russian-first. But most RU-language competitors (prepodsteam, yoomoney, MTS, ggsel) target RUSSIA, not Uzbekistan — so 'узбекистан'-qualified RU queries are still soft. (6) A Russian competitor page states UC arrives 'within 15 minutes, rarely up to 3 hours' — GemPay's ~2 min is a real, defensible differentiator worth stating. (7) The wrong-ID failure mode is confirmed real and widely searched (topuplist, justanswer, Baxity FAQ all cover 'wrong UID = delivered to wrong account, non-refundable') and has ZERO Uzbek coverage — this makes the free pre-payment nickname check GemPay's strongest story. (8) UC packs 60/325/660/1800/3850/8100 confirmed as standard ladder with bonus UC scaling on larger packs. INFERRED / NOT VERIFIED: no keyword volume or difficulty numbers — the Ahrefs and Semrush MCP connectors in this session are unauthorized (OAuth cannot run non-interactively), so I have NO real volume data; the user should authorize those connectors in claude.ai settings to get hard numbers. Query phrasings above are inferred from indexed competitor titles, Telegram channel copy, and Uzbek morphology (sotib olish / olish / quyish / donat variants), not from an autocomplete API. Royal Pass UC costs (Elite ~720, Elite Plus ~1920) come from third-party guides and shift by season — articles must hedge these, never state them as fixed. COMPETITION READ: attack order = problem cluster (zero competition) > question/AEO cluster (zero competition) > pillar money query (weak, translated competition) > comparison (weak) > Russian cluster (moderate, defer).",
+  "articles": [
+    {
+      "slug": "pubg-mobile-uc-sotib-olish",
+      "h1": "PUBG Mobile UC sotib olish: O'zbekistonda so'mda, 2 daqiqada",
+      "type": "howto"
+    },
+    {
+      "slug": "pubg-uc-kelmadi-nima-qilish",
+      "h1": "PUBG UC kelmadi yoki ID topilmadi — sabablari va aniq yechimi",
+      "type": "problem"
+    },
+    {
+      "slug": "pubg-uc-qayerdan-sotib-olish-taqqoslash",
+      "h1": "PUBG UC ni qayerdan sotib olish kerak: Midasbuy, xalqaro saytlar va GemPay taqqoslandi",
+      "type": "comparison"
+    },
+    {
+      "slug": "pubg-uc-nima-paketlar-royal-pass",
+      "h1": "UC nima va PUBG Mobile'da unga nima sotib olish mumkin",
+      "type": "info"
+    },
+    {
+      "slug": "pubg-mobile-player-id-qayerda",
+      "h1": "PUBG Mobile Player ID raqamini qayerda topish va uni berish xavfsizmi",
+      "type": "trust"
+    }
+  ],
+  "articleFaqs": [
+    "PUBG Mobile UC ni UzCard yoki HUMO bilan sotib olsa bo'ladimi?",
+    "UC necha daqiqada hisobga tushadi?",
+    "UC olish uchun akkaunt parolini berish kerakmi?",
+    "Server yoki platforma tanlashim kerakmi?",
+    "UC narxi nega har xil bo'lib turadi?",
+    "Qaysi paketni olish foydaliroq?",
+    "To'lov o'tdi, lekin UC kelmadi. Nima qilaman?",
+    "GemPay rasmiymi va ishonsa bo'ladimi?",
+    "UC kelmasa qancha kutishim kerak?",
+    "Nega bot mening Player ID mni topa olmayapti?",
+    "Noto'g'ri ID kiritsam UC ni qaytarib olish mumkinmi?",
+    "Pul kartadan yechildi, lekin buyurtma ko'rinmayapti. Ikkinchi marta to'laymi?",
+    "UC balansda yo'q, lekin Pochtada nimadir bor. Bu nima?",
+    "O'yinni qayta ochdim, baribir ko'rinmayapti. Yana nima qilish mumkin?",
+    "Buyurtma raqamini qayerdan olaman?",
+    "Akkauntim vaqtincha bloklangan bo'lsa, UC tushadimi?",
+    "Midasbuy UzCard yoki HUMO ni qabul qiladimi?",
+    "Midasbuy'dan olish arzonroqmi?",
+    "Telegramdagi arzon UC sotuvchilariga ishonsa bo'ladimi?",
+    "Akkauntni sotuvchiga berib to'ldirish xavfsizmi?",
+    "VPN yoki xorijiy karta kerakmi?",
+    "GemPay rasmiy tarqatuvchimi?",
+    "Qaysi usul eng tez?",
+    "UC nima degani?",
+    "PUBG Mobile'da qanday UC paketlari bor?",
+    "Royal Pass necha UC turadi?",
+    "Bonus UC nima va u qanday ishlaydi?",
+    "UC ni do'stimga o'tkazsam bo'ladimi?",
+    "WOW Coins UC bilan bir xilmi?",
+    "UC narxi nega doim o'zgarib turadi?",
+    "Bepul UC olish yo'llari bormi?",
+    "PUBG Mobile Player ID qayerda turadi?",
+    "Player ID ni birovga bersam akkauntim o'g'irlanadimi?",
+    "ID bilan niknem orasidagi farq nima?",
+    "Player ID ni o'zgartirsam bo'ladimi?",
+    "ID ni topa olmayapman, nima qilay?",
+    "To'ldirish uchun akkauntga kirish kerakmi?",
+    "Bepul UC beradigan saytlar xavflimi?",
+    "Do'stimning akkauntiga UC to'ldirsam bo'ladimi?"
+  ]
+}

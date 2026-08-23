@@ -1,0 +1,19 @@
+---
+import ArticlePage from "../../../components/pages/ArticlePage.astro";
+import { articlesFor } from "../../../data/blog";
+
+/**
+ * Faqat SHU TILDA tarkibi bor maqolalar chiqadi.
+ *
+ * Tarjimasi yo'q maqola uchun sahifa umuman yaratilmaydi — aks holda uch
+ * tilda bir xil o'zbekcha matn turgan uchta URL paydo bo'lardi va bu
+ * klassik dublikat kontent bo'lib, butun domen ishonchini tushirardi.
+ */
+export function getStaticPaths() {
+  return articlesFor("en").map((a) => ({ params: { slug: a.slug }, props: { article: a } }));
+}
+
+const { article } = Astro.props;
+---
+
+<ArticlePage article={article} locale="en" />

@@ -1,0 +1,282 @@
+---
+/**
+ * Blog maqolasi — `/blog/<slug>`.
+ *
+ * AEO tuzilishi (javob mashinalari uchun eng muhim tartib):
+ *   1. H1
+ *   2. «Qisqa javob» bloki — 40-60 so'z, mustaqil tushunarli. LLM aynan
+ *      shu bo'lakni iqtibos qiladi, shuning uchun u mundarijadan ham,
+ *      matndan ham OLDIN turadi.
+ *   3. Mundarija — sahifa tuzilishini ham o'quvchiga, ham botga ko'rsatadi
+ *   4. Matn (bloklar)
+ *   5. FAQ — `FAQPage` sxemasi bilan
+ *
+ * `HowTo` sxemasi faqat maqolada haqiqiy `steps` bloki bo'lganda beriladi.
+ */
+import Layout from "../../layouts/Layout.astro";
+import Aurora from "../Aurora.astro";
+import Header from "../Header.astro";
+import Footer from "../Footer.astro";
+import Icon from "../Icon.astro";
+import AnswerBox from "../AnswerBox.astro";
+import Faq from "../Faq.astro";
+import Cta from "../Cta.astro";
+import Breadcrumbs from "../Breadcrumbs.astro";
+import ArticleCard from "../ArticleCard.astro";
+import ArticleBody from "../blog/ArticleBody.astro";
+
+import { t } from "../../i18n/ui";
+import { contentFor, relatedArticles, minutesOf, localesOf } from "../../data/blog";
+import { toc, stepsOf, wordCount } from "../../data/blog/types";
+import type { Article } from "../../data/blog/types";
+import { gameBySlug } from "../../data/games";
+import { hexToRgb } from "../../lib/color";
+import { localePath, type Locale } from "../../data/site";
+import {
+  graph,
+  organizationSchema,
+  websiteSchema,
+  breadcrumbSchema,
+  blogPostingSchema,
+  faqSchema,
+  howToSchema,
+} from "../../lib/seo";
+
+interface Props {
+  article: Article;
+  locale: Locale;
+}
+
+const { article, locale } = Astro.props;
+const c = t(locale);
+const content = contentFor(article, locale)!;
+const game = article.game ? gameBySlug(article.game) : null;
+
+const path = `blog/${article.slug}`;
+const items = toc(content);
+const steps = stepsOf(content);
+const related = relatedArticles(article, locale, 3);
+const image = game ? `/og/${game.slug}.png` : "/og/default.png";
+
+const crumbs = [
+  { name: c.game.breadcrumbHome, path: "" },
+  { name: c.blog.title, path: "blog" },
+  { name: content.title, path },
+];
+
+const schema = graph(
+  organizationSchema(),
+  websiteSchema(locale),
+  breadcrumbSchema(locale, crumbs),
+  blogPostingSchema({
+    locale,
+    slug: article.slug,
+    title: content.title,
+    description: content.metaDescription,
+    datePublished: article.datePublished,
+    dateModified: article.dateModified,
+    image,
+    keywords: article.keywords,
+    wordCount: wordCount(content),
+  }),
+  content.faq.length ? faqSchema(content.faq) : null,
+  steps
+    ? howToSchema({
+        name: content.title,
+        description: content.metaDescription,
+        steps,
+        image,
+      })
+    : null,
+);
+
+/** Sana — o'qish uchun mahalliy formatda. */
+const fmtDate = (iso: string) =>
+  new Date(`${iso}T00:00:00Z`).toLocaleDateString(
+    { uz: "uz-UZ", ru: "ru-RU", en: "en-GB" }[locale],
+    { year: "numeric", month: "long", day: "numeric", timeZone: "UTC" },
+  );
+---
+
+<Layout
+  locale={locale}
+  path={path}
+  title={content.metaTitle}
+  description={content.metaDescription}
+  image={image}
+  keywords={article.keywords}
+  availableLocales={localesOf(article)}
+  ogType="article"
+  schema={schema}
+  accent={game ? { color: game.accent, rgb: hexToRgb(game.accent), color2: game.accent2 } : undefined}
+>
+  <Fragment slot="head">
+    {/* Maqola sanalari — Google News/Discover bularni `article:` dan ham o'qiydi */}
+    <meta property="article:published_time" content={article.datePublished} />
+    <meta property="article:modified_time" content={article.dateModified} />
+    {article.keywords.map((k) => <meta property="article:tag" content={k} />)}
+  </Fragment>
+
+  <Aurora />
+  <Header locale={locale} path={path} />
+
+  <main id="main">
+    <div class="wrap">
+      <Breadcrumbs items={crumbs} locale={locale} />
+
+      <article class="art">
+        <header class="art__head">
+          <p class="art__meta">
+            {game && <a class="art__tag" href={localePath(locale, `oyinlar/${game.slug}`)}>{game.title}</a>}
+            <span class="art__dot" aria-hidden="true">·</span>
+            <time datetime={article.dateModified}>{c.blog.updated}: {fmtDate(article.dateModified)}</time>
+            <span class="art__dot" aria-hidden="true">·</span>
+            <span>{minutesOf(article, locale)} {c.blog.minutes}</span>
+          </p>
+
+          <h1 class="art__h1">{content.title}</h1>
+        </header>
+
+        <AnswerBox title={c.blog.answerTitle} text={content.answer} />
+
+        {
+          items.length > 2 && (
+            <nav class="toc" aria-labelledby="toc-t">
+              <p class="toc__t" id="toc-t">{c.blog.tocTitle}</p>
+              <ol class="toc__l">
+                {items.map((i) => (
+                  <li>
+                    <a href={`#${i.id}`}>{i.text}</a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+          )
+        }
+
+        <ArticleBody blocks={content.body} locale={locale} />
+      </article>
+    </div>
+
+    {
+      content.faq.length > 0 && (
+        <Faq eyebrow={c.faq.eyebrow} title={c.blog.faqTitle} items={content.faq} id="faq" />
+      )
+    }
+
+    {
+      related.length > 0 && (
+        <section class="section">
+          <div class="wrap">
+            <h2 class="rel__h">{c.blog.relatedTitle}</h2>
+            <div class="rel">
+              {related.map((a) => <ArticleCard article={a} locale={locale} />)}
+            </div>
+          </div>
+        </section>
+      )
+    }
+
+    <Cta locale={locale} gameCode={game?.code} />
+  </main>
+
+  <Footer locale={locale} />
+</Layout>
+
+<style>
+  .art {
+    position: relative;
+    z-index: var(--z-body);
+    padding-top: clamp(20px, 3vw, 36px);
+  }
+
+  .art__head {
+    max-width: var(--maxw-prose);
+    margin-bottom: clamp(24px, 4vw, 40px);
+  }
+
+  .art__meta {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--sp-2);
+    margin-bottom: var(--sp-4);
+    font-size: var(--t-xs);
+    color: var(--text-3);
+  }
+
+  .art__tag {
+    padding: 4px 11px;
+    border-radius: var(--r-pill);
+    background: rgba(var(--accent-rgb), 0.13);
+    border: 1px solid rgba(var(--accent-rgb), 0.3);
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  .art__dot {
+    opacity: 0.5;
+  }
+
+  .art__h1 {
+    font-size: var(--t-2xl);
+    /* Maqola sarlavhasi uzun bo'ladi — `balance` uni tekis qatorlarga bo'ladi */
+    text-wrap: balance;
+  }
+
+  /* --------------------------------------------------------- mundarija -- */
+
+  .toc {
+    max-width: var(--maxw-prose);
+    margin-top: var(--sp-5);
+    padding: 18px 20px;
+    border-radius: var(--r-md);
+    background: var(--surface);
+    border: 1px solid var(--line);
+  }
+
+  .toc__t {
+    margin-bottom: var(--sp-3);
+    font-family: var(--font-display);
+    font-size: var(--t-xs);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-3);
+  }
+
+  .toc__l {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    padding-inline-start: 1.25em;
+    font-size: var(--t-sm);
+  }
+
+  .toc__l li::marker {
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  .toc__l a {
+    color: var(--text-2);
+    transition: color var(--dur-fast) var(--ease);
+  }
+
+  .toc__l a:hover {
+    color: var(--accent);
+  }
+
+  /* ---------------------------------------------------------- o'xshash -- */
+
+  .rel__h {
+    font-size: var(--t-xl);
+    margin-bottom: var(--sp-5);
+  }
+
+  .rel {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+    gap: var(--sp-3);
+  }
+</style>

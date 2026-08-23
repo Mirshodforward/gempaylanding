@@ -29,6 +29,16 @@ export type Game = {
   title: string;
   /** Qisqartma — kichik kartochkalar va nav uchun */
   short: string;
+  /**
+   * `<title>` uchun qisqartirilgan nom.
+   *
+   * `<title>` 60 belgidan oshsa Google natijada uni kesadi va kalit so'z
+   * ko'rinmay qolishi mumkin. «Mobile Legends: Bang Bang» yoki
+   * «Asphalt 9: Legends» to'liq nomi bilan sarlavha shu chegaradan chiqadi,
+   * shuning uchun meta'da qisqa shakl ishlatiladi. Sahifadagi H1 va
+   * JSON-LD esa TO'LIQ nomni saqlaydi — brend nomi to'g'ri qolsin.
+   */
+  seoName?: string;
   /** Nima sotib olinadi: UC, Olmos, CP… */
   unit: I18nText;
   unitGroup: UnitGroup;
@@ -55,11 +65,26 @@ export type Game = {
   regionNote?: I18nText;
 };
 
-/** `~2 daqiqa` / `~2 мин` / `~2 min` */
+/** Yorliq shakli: `~2 daqiqa` / `~2 мин` / `~2 min` */
 export function etaText(minutes: number, locale: Locale): string {
   if (locale === "ru") return `~${minutes} мин`;
   if (locale === "en") return `~${minutes} min`;
   return `~${minutes} daqiqa`;
+}
+
+/**
+ * Gap ICHIDAGI shakl: «kredit ~2 daqiqada tushadi».
+ *
+ * NEGA ALOHIDA FUNKSIYA: o'zbek tilida o'rin-payt kelishigi so'zga QO'SHIB
+ * yoziladi — «daqiqada», «daqiqa da» emas. Qolipda `{eta} da` deb yozilsa,
+ * har sahifada ajralib turadigan grammatik xato chiqadi va matn mashina
+ * to'ldirgandek o'qiladi. Rus va ingliz tilida esa predlog ALOHIDA so'z,
+ * shuning uchun shakl har tilda boshqacha yasaladi.
+ */
+export function etaIn(minutes: number, locale: Locale): string {
+  if (locale === "ru") return `за ~${minutes} мин`;
+  if (locale === "en") return `in ~${minutes} min`;
+  return `~${minutes} daqiqada`;
 }
 
 const DIAMOND: I18nText = { uz: "Olmos", ru: "Алмазы", en: "Diamonds" };
@@ -100,6 +125,7 @@ export const GAMES: Game[] = [
     slug: "mobile-legends",
     title: "Mobile Legends: Bang Bang",
     short: "MLBB",
+    seoName: "Mobile Legends",
     unit: DIAMOND,
     unitGroup: "diamond",
     accent: "#5B8DEF",
@@ -164,6 +190,7 @@ export const GAMES: Game[] = [
     slug: "call-of-duty-mobile",
     title: "Call of Duty: Mobile",
     short: "CODM",
+    seoName: "Call of Duty Mobile",
     unit: { uz: "CP", ru: "CP", en: "CP" },
     unitGroup: "cp",
     accent: "#F43F5E",
@@ -223,6 +250,7 @@ export const GAMES: Game[] = [
     slug: "asphalt-9",
     title: "Asphalt 9: Legends",
     short: "A9",
+    seoName: "Asphalt 9",
     unit: TOKEN,
     unitGroup: "token",
     accent: "#EF4444",

@@ -1,0 +1,603 @@
+---
+/**
+ * O'yin sahifasi — `/oyinlar/<slug>`. Saytning PUL sahifasi.
+ *
+ * Har o'yin uchun alohida landing: o'z aksent rangi, o'z muqovasi, o'z ID
+ * qo'llanmasi va o'z FAQ'i. Umumiy qolip faqat TUZILISHNI beradi, matn esa
+ * `gameContent.ts` dan keladi — shu tufayli o'nta sahifa bir-birining
+ * nusxasi bo'lib qolmaydi (bu «thin content» jarimasining asosiy sababi).
+ *
+ * Matn hali yozilmagan o'yinda sahifa baribir to'liq ishlaydi: kirish va
+ * FAQ bloklari shunchaki chiqmaydi, texnik ma'lumot (ID, vaqt, to'lov,
+ * qadamlar) esa `games.ts` dan olinadi.
+ */
+import { Image } from "astro:assets";
+import Layout from "../../layouts/Layout.astro";
+import Aurora from "../Aurora.astro";
+import Header from "../Header.astro";
+import Footer from "../Footer.astro";
+import Icon from "../Icon.astro";
+import AnswerBox from "../AnswerBox.astro";
+import Faq from "../Faq.astro";
+import Cta from "../Cta.astro";
+import Breadcrumbs from "../Breadcrumbs.astro";
+import ArticleCard from "../ArticleCard.astro";
+
+import { t, fill } from "../../i18n/ui";
+import { gameImage } from "../../lib/gameImages";
+import { hexToRgb } from "../../lib/color";
+import { etaText, etaIn, type Game } from "../../data/games";
+import { gameCopy } from "../../data/gameContent";
+import { articlesForGame } from "../../data/blog";
+import { ORG, botLinkFor, type Locale } from "../../data/site";
+import {
+  graph,
+  organizationSchema,
+  websiteSchema,
+  breadcrumbSchema,
+  faqSchema,
+  howToSchema,
+} from "../../lib/seo";
+
+interface Props {
+  game: Game;
+  locale: Locale;
+}
+
+const { game, locale } = Astro.props;
+const c = t(locale);
+const copy = gameCopy(game.slug, locale);
+const img = gameImage(game.slug);
+
+const unit = game.unit[locale];
+const eta = etaText(game.etaMinutes, locale);
+const path = `oyinlar/${game.slug}`;
+
+// `etaIn` — gap ichidagi shakl («~2 daqiqada»), `eta` — yorliq («~2 daqiqa»).
+// Ikkalasi ajratilmasa o'zbekcha matnda «~2 daqiqa da» degan xato chiqadi.
+const vars = {
+  game: game.title,
+  unit,
+  eta,
+  etaIn: etaIn(game.etaMinutes, locale),
+  idLabel: game.idLabel[locale],
+};
+/**
+ * MATN MANBASI: har maydon avval `gameContent.ts` dan olinadi, qolip esa
+ * faqat ZAXIRA.
+ *
+ * Bu tartib ataylab: qolip matni o'nta sahifada bir xil chiqadi va ular
+ * bir-birining dublikatiga aylanadi. Shuning uchun matni bor sahifa o'z
+ * matnini ishlatadi, matni yo'q sahifa esa quyida `noindex` oladi —
+ * indeksga tushib «duplicate» deb tashlanishidan ko'ra, umuman kirmagani
+ * yaxshi.
+ */
+const title = copy?.metaTitle ?? fill(c.game.titleTemplate, { ...vars, game: game.seoName ?? game.title });
+const description = copy?.metaDescription ?? fill(c.game.descTemplate, vars);
+const answer = copy?.answer ?? fill(c.game.answerTemplate, vars);
+const h1 = copy?.h1 ?? fill(c.game.h1Template, vars);
+
+// H2 va `HowTo` sxemasining nomi bir xil — bu TO'G'RI, chunki sarlavha aynan
+// shu bosqichlar ro'yxatini nomlaydi. H1 esa boshqacha bo'lishi SHART: bir
+// sahifada H1 va H2 bir xil matn bo'lsa, sarlavha ierarxiyasi hech qanday
+// qo'shimcha signal bermaydi.
+const stepsTitle = fill(c.game.howTitle, vars);
+
+/**
+ * To'ldirish qadamlari.
+ *
+ * Haqiqiy qadamlar HAR O'YINDA boshqacha: MLBB'da qavs ichidagi Server ID,
+ * Asphalt 9'da platforma tanlash, Steam'da esa nik tekshiruvi UMUMAN YO'Q
+ * (u yerda login kiritiladi va uni tasdiqlab bo'lmaydi). Shuning uchun
+ * qadamlar `gameContent.ts` dan keladi.
+ *
+ * Quyidagi zaxira ro'yxat — faqat matn hali yozilmagan sahifa bo'sh
+ * qolmasligi uchun. U o'yinlar bo'yicha farq qilmaydi, shu sabab bunday
+ * sahifa `HowTo` sxemasini ham BERMAYDI (pastga qarang).
+ */
+const fallbackSteps = [
+  { title: c.how.steps[0].title, text: c.how.steps[0].text },
+  {
+    title: { uz: `${game.title} ni tanlang`, ru: `Выберите ${game.title}`, en: `Choose ${game.title}` }[locale],
+    text: {
+      uz: `Katalogdan ${game.title} ni oching — ${unit} paketlari joriy narx bilan so'mda ko'rinadi.`,
+      ru: `Откройте ${game.title} в каталоге — пакеты ${unit} показываются с актуальной ценой в сумах.`,
+      en: `Open ${game.title} in the catalogue — ${unit} packs are listed with their current price in so'm.`,
+    }[locale],
+  },
+  {
+    title: {
+      uz: `${game.idLabel[locale]}${game.needsServer && game.serverLabel ? ` va ${game.serverLabel[locale]}` : ""} ni kiriting`,
+      ru: `Введите ${game.idLabel[locale]}${game.needsServer && game.serverLabel ? ` и ${game.serverLabel[locale]}` : ""}`,
+      en: `Enter your ${game.idLabel[locale]}${game.needsServer && game.serverLabel ? ` and ${game.serverLabel[locale]}` : ""}`,
+    }[locale],
+    text: {
+      uz: `Tizim ${game.title} serveridan nikingizni bepul so'rab oladi va ekranda ko'rsatadi. Nik siznikimi — tekshirib tasdiqlaysiz.`,
+      ru: `Система бесплатно запрашивает ваш ник с сервера ${game.title} и показывает его на экране. Вы сверяете и подтверждаете.`,
+      en: `The system fetches your nickname from the ${game.title} server for free and shows it. You check it and confirm.`,
+    }[locale],
+  },
+  {
+    title: c.how.steps[3].title,
+    text: {
+      uz: `${ORG.paymentMethods.join(", ")} yoki bot balansi. ${unit} hisobingizga ${vars.etaIn} tushadi.`,
+      ru: `${ORG.paymentMethods.join(", ")} или баланс бота. ${unit} зачисляются ${vars.etaIn}.`,
+      en: `${ORG.paymentMethods.join(", ")} or your bot balance. ${unit} arrives ${vars.etaIn}.`,
+    }[locale],
+  },
+];
+
+const steps = copy?.steps?.length ? copy.steps : fallbackSteps;
+
+const crumbs = [
+  { name: c.game.breadcrumbHome, path: "" },
+  { name: c.game.breadcrumbGames, path: "oyinlar" },
+  { name: game.title, path },
+];
+
+const related = articlesForGame(game.slug, locale).slice(0, 4);
+
+const schema = graph(
+  organizationSchema(),
+  websiteSchema(locale),
+  breadcrumbSchema(locale, crumbs),
+  /*
+   * `HowTo` FAQAT shu o'yinga yozilgan qadamlar bo'lganda beriladi.
+   *
+   * Zaxira qadamlar o'nta sahifada bir xil — ularni sxema qilib jo'natish
+   * Google'ga o'nta bir xil `HowTo` obyekti berish demak, bu esa sxemani
+   * umuman bermaslikdan yomonroq: takroriy strukturali ma'lumot butun
+   * domendagi sxemalarga bo'lgan ishonchni tushiradi.
+   */
+  copy?.steps?.length
+    ? howToSchema({
+        name: stepsTitle,
+        description,
+        steps: steps.map((x) => ({ name: x.title, text: x.text })),
+        totalMinutes: game.etaMinutes,
+        image: `/og/${game.slug}.png`,
+      })
+    : null,
+  // FAQ sxemasi FAQAT matn mavjud bo'lganda — bo'sh `FAQPage` xato beradi
+  copy?.faq?.length ? faqSchema(copy.faq) : null,
+);
+---
+
+<Layout
+  locale={locale}
+  path={path}
+  title={title}
+  description={description}
+  image={`/og/${game.slug}.png`}
+  keywords={c.game.keywords(game.title, unit)}
+  noindex={!copy}
+  schema={schema}
+  accent={{ color: game.accent, rgb: hexToRgb(game.accent), color2: game.accent2 }}
+>
+  <Aurora />
+  <Header locale={locale} path={path} />
+
+  <main id="main">
+    <div class="wrap">
+      <Breadcrumbs items={crumbs} locale={locale} />
+    </div>
+
+    {/* ---------------------------------------------------------- hero -- */}
+    <section class="ghero">
+      <div class="wrap ghero__in">
+        <div class="ghero__art-wrap">
+          {
+            img && (
+              <Image
+                src={img}
+                alt={`${game.title} — ${unit}`}
+                width={260}
+                height={260}
+                densities={[1, 2]}
+                loading="eager"
+                fetchpriority="high"
+                class:list={["ghero__art", game.lightArtwork && "is-light"]}
+              />
+            )
+          }
+        </div>
+
+        <div class="ghero__txt">
+          <p class="eyebrow">{unit}</p>
+          <h1 class="ghero__title">{h1}</h1>
+
+          <ul class="ghero__facts">
+            <li class="gfact">
+              <Icon name="id-card" size={16} />
+              <span class="gfact__k">{c.game.needLabel}</span>
+              <span class="gfact__v">
+                {game.idLabel[locale]}
+                {game.needsServer && game.serverLabel && ` + ${game.serverLabel[locale]}`}
+              </span>
+            </li>
+            <li class="gfact">
+              <Icon name="clock" size={16} />
+              <span class="gfact__k">{c.game.etaLabel}</span>
+              <span class="gfact__v">{eta}</span>
+            </li>
+            <li class="gfact">
+              <Icon name="credit-card" size={16} />
+              <span class="gfact__k">{c.game.payLabel}</span>
+              <span class="gfact__v">{ORG.paymentMethods.join(" · ")}</span>
+            </li>
+          </ul>
+
+          <a class="btn btn--primary btn--lg" href={botLinkFor(game.code)} target="_blank" rel="noopener">
+            <Icon name="telegram" size={19} />
+            {c.hero.ctaPrimary}
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap gsections">
+      <AnswerBox title={c.blog.answerTitle} text={answer} />
+
+      {/* ------------------------------------------------------- kirish -- */}
+      {
+        copy?.intro?.length && (
+          <section class="gsec">
+            {copy.intro.map((p) => <p class="gsec__p">{p}</p>)}
+
+            {copy.spendOn?.length && (
+              <ul class="gchips">
+                {copy.spendOn.map((s) => (
+                  <li class="gchip">
+                    <Icon name="check" size={14} />
+                    {s}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </section>
+        )
+      }
+
+      {/* Hududiy cheklov — `games.ts` dan, provayder eslatmasi */}
+      {
+        game.regionNote && (
+          <div class="gnote gnote--warn">
+            <Icon name="alert-triangle" size={18} />
+            <div>
+              <strong>{c.game.regionTitle}</strong>
+              <p>{game.regionNote[locale]}</p>
+            </div>
+          </div>
+        )
+      }
+
+      {/* --------------------------------------------------- qadamlar ---- */}
+      <section class="gsec">
+        <h2 class="gsec__h">{stepsTitle}</h2>
+        <ol class="gsteps">
+          {
+            steps.map((s, i) => (
+              <li class="gstep">
+                <span class="gstep__n">{i + 1}</span>
+                <div>
+                  <h3 class="gstep__t">{s.title}</h3>
+                  <p class="gstep__d">{s.text}</p>
+                </div>
+              </li>
+            ))
+          }
+        </ol>
+      </section>
+
+      {/* --------------------------------------------------------- ID ---- */}
+      <section class="gsec">
+        <h2 class="gsec__h">{c.game.idWhere}</h2>
+        {
+          copy?.idSteps?.length ? (
+            <ol class="glist">
+              {copy.idSteps.map((s) => <li>{s}</li>)}
+            </ol>
+          ) : (
+            <p class="gsec__p">{game.idHint[locale]}</p>
+          )
+        }
+
+        {
+          copy?.gotcha && (
+            <div class="gnote gnote--warn">
+              <Icon name="alert-triangle" size={18} />
+              <div>
+                <strong>{copy.gotcha.title}</strong>
+                <p>{copy.gotcha.text}</p>
+              </div>
+            </div>
+          )
+        }
+      </section>
+
+      {/* --------------------------------------------------- paketlar ---- */}
+      <section class="gsec">
+        <h2 class="gsec__h">{c.game.packagesTitle}</h2>
+        {
+          copy?.packages?.length ? (
+            copy.packages.map((para) => <p class="gsec__p">{para}</p>)
+          ) : (
+            <p class="gsec__p">{c.game.packagesText}</p>
+          )
+        }
+      </section>
+    </div>
+
+    {
+      copy?.faq?.length && (
+        <Faq
+          eyebrow={c.faq.eyebrow}
+          title={fill(c.game.faqTitle, vars)}
+          items={copy.faq}
+          id="faq"
+        />
+      )
+    }
+
+    {
+      related.length > 0 && (
+        <section class="section">
+          <div class="wrap">
+            <h2 class="gsec__h">{c.game.relatedTitle}</h2>
+            <div class="grelated">
+              {related.map((a) => <ArticleCard article={a} locale={locale} />)}
+            </div>
+          </div>
+        </section>
+      )
+    }
+
+    <Cta locale={locale} title={fill(c.game.ctaTitle, vars)} gameCode={game.code} />
+  </main>
+
+  <Footer locale={locale} />
+</Layout>
+
+<style>
+  /* --------------------------------------------------------------- hero -- */
+
+  .ghero {
+    position: relative;
+    z-index: var(--z-body);
+    padding-block: clamp(20px, 3vw, 40px) clamp(32px, 5vw, 56px);
+  }
+
+  .ghero__in {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: clamp(20px, 3.5vw, 40px);
+  }
+
+  @media (min-width: 760px) {
+    .ghero__in {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+
+  .ghero__art-wrap {
+    flex: none;
+    position: relative;
+    border-radius: var(--r-xl);
+    padding: 8px;
+    /* Muqova ostidagi rangli nur — sahifa aksenti bilan bir xil */
+    background: linear-gradient(150deg, rgba(var(--accent-rgb), 0.34), rgba(var(--accent-rgb), 0.04));
+    box-shadow: var(--glow);
+  }
+
+  .ghero__art {
+    width: clamp(120px, 26vw, 200px);
+    height: auto;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: calc(var(--r-xl) - 6px);
+  }
+
+  .ghero__art.is-light {
+    background: #fff;
+    object-fit: contain;
+    padding: 10%;
+  }
+
+  .ghero__title {
+    font-size: var(--t-2xl);
+    margin-block: var(--sp-2) var(--sp-5);
+    max-width: 18ch;
+  }
+
+  .ghero__facts {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-2);
+    margin-bottom: var(--sp-5);
+    list-style: none;
+  }
+
+  .gfact {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: var(--sp-2) var(--sp-3);
+    padding: 11px 15px;
+    border-radius: var(--r-md);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    font-size: var(--t-sm);
+  }
+
+  .gfact :global(svg) {
+    flex: none;
+    color: var(--accent);
+  }
+
+  .gfact__k {
+    color: var(--text-3);
+    min-width: 74px;
+  }
+
+  .gfact__v {
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  /* ------------------------------------------------------------ bo'lim -- */
+
+  .gsections {
+    position: relative;
+    z-index: var(--z-body);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(32px, 5vw, 56px);
+  }
+
+  .gsec__h {
+    font-size: var(--t-xl);
+    margin-bottom: var(--sp-4);
+  }
+
+  .gsec__p {
+    font-size: var(--t-base);
+    color: var(--text-2);
+    line-height: 1.75;
+    max-width: var(--maxw-prose);
+  }
+
+  .gsec__p + .gsec__p {
+    margin-top: var(--sp-4);
+  }
+
+  .gchips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+    margin-top: var(--sp-5);
+    list-style: none;
+  }
+
+  .gchip {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    padding: 8px 14px;
+    border-radius: var(--r-pill);
+    background: rgba(var(--accent-rgb), 0.1);
+    border: 1px solid rgba(var(--accent-rgb), 0.24);
+    font-size: var(--t-sm);
+    font-weight: 500;
+  }
+
+  .gchip :global(svg) {
+    color: var(--accent);
+    flex: none;
+  }
+
+  /* ---------------------------------------------------------- qadamlar -- */
+
+  .gsteps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: var(--sp-3);
+    list-style: none;
+  }
+
+  .gstep {
+    display: flex;
+    gap: var(--sp-3);
+    padding: 18px;
+    border-radius: var(--r-md);
+    background: var(--surface);
+    border: 1px solid var(--line);
+  }
+
+  .gstep__n {
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    flex: none;
+    border-radius: 50%;
+    background: rgba(var(--accent-rgb), 0.16);
+    color: var(--accent);
+    font-family: var(--font-display);
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+
+  .gstep__t {
+    font-size: var(--t-base);
+    margin-bottom: 5px;
+  }
+
+  .gstep__d {
+    font-size: var(--t-sm);
+    color: var(--text-2);
+    line-height: 1.6;
+  }
+
+  .glist {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-3);
+    padding-inline-start: 1.35em;
+    max-width: var(--maxw-prose);
+    font-size: var(--t-base);
+    color: var(--text-2);
+    line-height: 1.7;
+  }
+
+  .glist li::marker {
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  /* ------------------------------------------------------------ eslatma -- */
+
+  .gnote {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--sp-3);
+    margin-top: var(--sp-5);
+    padding: 16px 20px;
+    border-radius: var(--r-md);
+    max-width: var(--maxw-prose);
+  }
+
+  .gnote--warn {
+    background: rgba(251, 191, 36, 0.08);
+    border: 1px solid rgba(251, 191, 36, 0.26);
+  }
+
+  .gnote--warn :global(svg) {
+    flex: none;
+    margin-top: 2px;
+    color: var(--gold);
+  }
+
+  .gnote strong {
+    display: block;
+    margin-bottom: 4px;
+    font-family: var(--font-display);
+    font-size: var(--t-sm);
+    letter-spacing: -0.015em;
+  }
+
+  .gnote p {
+    font-size: var(--t-sm);
+    color: var(--text-2);
+    line-height: 1.65;
+  }
+
+  /* ---------------------------------------------------------- maqolalar -- */
+
+  .grelated {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+    gap: var(--sp-3);
+  }
+</style>

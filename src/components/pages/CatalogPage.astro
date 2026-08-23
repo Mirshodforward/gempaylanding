@@ -1,0 +1,192 @@
+---
+/**
+ * Katalog hub sahifasi — `/oyinlar`.
+ *
+ * NEGA ALOHIDA SAHIFA, bosh sahifadagi bo'lim yetmaydimi:
+ *   1. «o'yin to'ldirish», «o'yin puli qayerdan» kabi UMUMIY so'rovlar bor —
+ *      ular bironta aniq o'yinga tegishli emas, shuning uchun bosh sahifa
+ *      ham, o'yin sahifasi ham ularga to'g'ri javob bermaydi.
+ *   2. Sarlavha va futerdan har sahifada shu yerga havola boradi, ya'ni hub
+ *      ichki og'irlik to'playdi va uni o'yin sahifalariga uzatadi.
+ */
+import Layout from "../../layouts/Layout.astro";
+import Aurora from "../Aurora.astro";
+import Header from "../Header.astro";
+import Footer from "../Footer.astro";
+import GameCard from "../GameCard.astro";
+import AnswerBox from "../AnswerBox.astro";
+import Breadcrumbs from "../Breadcrumbs.astro";
+import Cta from "../Cta.astro";
+import SectionHead from "../SectionHead.astro";
+
+import { t } from "../../i18n/ui";
+import { GAMES, STEAM, CATALOG, etaText } from "../../data/games";
+import type { Locale } from "../../data/site";
+import {
+  graph,
+  organizationSchema,
+  websiteSchema,
+  breadcrumbSchema,
+  itemListSchema,
+} from "../../lib/seo";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const c = t(locale);
+const path = "oyinlar";
+
+const META = {
+  uz: {
+    title: "O'yin to'ldirish — 10 ta xizmat, so'mda | GemPay",
+    description:
+      "PUBG UC, Mobile Legends olmosi, Free Fire, CODM CP, Steam hamyoni va yana 5 xizmat. " +
+      "So'mda to'lang, ID bepul tekshiriladi, 1-5 daqiqada yetadi.",
+    h1: "O'yin hisobini to'ldirish",
+    lede:
+      "Har bir xizmat uchun kerak bo'ladigan ID, o'rtacha yetkazish vaqti va " +
+      "qabul qilinadigan to'lov usullari quyida. Narx botda jonli ko'rsatiladi.",
+    answer:
+      "GemPay katalogida 10 ta xizmat bor: PUBG Mobile (UC), Mobile Legends, Magic Chess: Go Go, " +
+      "Free Fire, Bigo Live (olmos), Call of Duty: Mobile (CP), Honor of Kings va Asphalt 9 (token), " +
+      "Delta Force (Delta Coins) hamda Steam hamyoni. Hammasi O'zbekiston so'mida — UzCard, HUMO, " +
+      "Click, Payme, Paynet orqali to'lanadi.",
+    gamesTitle: "O'yinlar",
+    walletTitle: "Hamyon",
+    walletLede: "O'yin ichidagi valyuta emas — balansning o'zi to'ldiriladi.",
+  },
+  ru: {
+    title: "Пополнение игр — 10 сервисов, за сумы | GemPay",
+    description:
+      "UC для PUBG, алмазы Mobile Legends, Free Fire, CP для CODM, кошелёк Steam и ещё 5 сервисов. " +
+      "Оплата в сумах, проверка ID бесплатна, зачисление за 1-5 минут.",
+    h1: "Пополнение игрового счёта",
+    lede:
+      "Для каждого сервиса ниже указаны нужный ID, среднее время зачисления и способы оплаты. " +
+      "Актуальная цена показывается в боте.",
+    answer:
+      "В каталоге GemPay 10 сервисов: PUBG Mobile (UC), Mobile Legends, Magic Chess: Go Go, " +
+      "Free Fire, Bigo Live (алмазы), Call of Duty: Mobile (CP), Honor of Kings и Asphalt 9 (токены), " +
+      "Delta Force (Delta Coins) и кошелёк Steam. Всё оплачивается в узбекских сумах — " +
+      "UzCard, HUMO, Click, Payme, Paynet.",
+    gamesTitle: "Игры",
+    walletTitle: "Кошелёк",
+    walletLede: "Не внутриигровая валюта — пополняется сам баланс.",
+  },
+  en: {
+    title: "Game Top-Up — 10 Services, Paid in So'm | GemPay",
+    description:
+      "PUBG UC, Mobile Legends diamonds, Free Fire, CODM CP, Steam wallet and five more services. " +
+      "Pay in so'm, free ID check, delivered in 1-5 minutes.",
+    h1: "Top up your game account",
+    lede:
+      "Each service below lists the ID you need, the average delivery time and the accepted payment " +
+      "methods. Current prices are shown in the bot.",
+    answer:
+      "The GemPay catalogue covers 10 services: PUBG Mobile (UC), Mobile Legends, Magic Chess: Go Go, " +
+      "Free Fire, Bigo Live (diamonds), Call of Duty: Mobile (CP), Honor of Kings and Asphalt 9 (tokens), " +
+      "Delta Force (Delta Coins) and the Steam wallet. All are paid in Uzbek so'm — " +
+      "UzCard, HUMO, Click, Payme, Paynet.",
+    gamesTitle: "Games",
+    walletTitle: "Wallet",
+    walletLede: "Not an in-game currency — the balance itself is topped up.",
+  },
+}[locale];
+
+const crumbs = [
+  { name: c.game.breadcrumbHome, path: "" },
+  { name: c.game.breadcrumbGames, path },
+];
+
+const schema = graph(
+  organizationSchema(),
+  websiteSchema(locale),
+  breadcrumbSchema(locale, crumbs),
+  itemListSchema(
+    locale,
+    CATALOG.map((g) => ({ title: g.title, slug: g.slug })),
+    META.h1,
+  ),
+);
+---
+
+<Layout
+  locale={locale}
+  path={path}
+  title={META.title}
+  description={META.description}
+  image="/og/default.png"
+  keywords={[
+    "o'yin to'ldirish",
+    "o'yin puli so'mda",
+    "pubg uc",
+    "mobile legends olmos",
+    "steam hamyon to'ldirish",
+  ]}
+  schema={schema}
+>
+  <Aurora />
+  <Header locale={locale} path={path} />
+
+  <main id="main">
+    <div class="wrap">
+      <Breadcrumbs items={crumbs} locale={locale} />
+
+      <header class="chead">
+        <h1>{META.h1}</h1>
+        <p class="lede">{META.lede}</p>
+      </header>
+
+      <AnswerBox title={c.blog.answerTitle} text={META.answer} />
+    </div>
+
+    <section class="section">
+      <div class="wrap">
+        <SectionHead eyebrow={c.games.eyebrow} title={META.gamesTitle} />
+        <div class="cgrid">
+          {GAMES.map((g, i) => <GameCard game={g} locale={locale} index={i} eager={i < 5} />)}
+        </div>
+      </div>
+    </section>
+
+    {/* Steam o'yin emas — hamyon. Alohida bo'limda turgani aniqroq, chunki
+        u yerda Player ID emas, LOGIN so'raladi. */}
+    <section class="section">
+      <div class="wrap">
+        <SectionHead eyebrow={c.games.eyebrow} title={META.walletTitle} lede={META.walletLede} />
+        <div class="cgrid cgrid--one">
+          <GameCard game={STEAM} locale={locale} />
+        </div>
+      </div>
+    </section>
+
+    <Cta locale={locale} />
+  </main>
+
+  <Footer locale={locale} />
+</Layout>
+
+<style>
+  .chead {
+    position: relative;
+    z-index: var(--z-body);
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-4);
+    padding-block: clamp(24px, 4vw, 44px) clamp(24px, 4vw, 40px);
+    max-width: 46ch;
+  }
+
+  .cgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(clamp(140px, 19vw, 196px), 1fr));
+    gap: clamp(10px, 1.6vw, 18px);
+  }
+
+  /* Bitta kartochka butun qatorga cho'zilmasin */
+  .cgrid--one {
+    grid-template-columns: repeat(auto-fill, minmax(clamp(140px, 19vw, 196px), 196px));
+  }
+</style>

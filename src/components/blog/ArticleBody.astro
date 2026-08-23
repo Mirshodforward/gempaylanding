@@ -1,0 +1,490 @@
+---
+/**
+ * Maqola tanasi — `Block[]` modelini HTML ga chizadi.
+ *
+ * BUTUN blogda YAGONA render nuqtasi. Shu tufayli:
+ *   · uslub 45 maqolada bir xil qoladi (har maqola o'z jadvalini o'zicha
+ *     chizmaydi);
+ *   · `h2` larga `id` avtomatik tushadi, ya'ni mundarija havolalari hech
+ *     qachon uzilmaydi;
+ *   · jadval mobil ekranda O'Z ichida gorizontal skroll bo'ladi — sahifa
+ *     emas. Sahifaning gorizontal skrolli mobil CWV'da jarima.
+ */
+import Icon from "../Icon.astro";
+import { botLinkFor, type Locale } from "../../data/site";
+import { t } from "../../i18n/ui";
+import type { Block } from "../../data/blog/types";
+
+interface Props {
+  blocks: Block[];
+  locale: Locale;
+}
+
+const { blocks, locale } = Astro.props;
+const c = t(locale);
+
+/** Jadval katagidagi `+` / `-` — belgiga aylanadi, matn bo'lib qolmaydi. */
+const MARK = { "+": "yes", "-": "no" } as const;
+---
+
+<div class="body">
+  {
+    blocks.map((b) => {
+      switch (b.t) {
+        case "h2":
+          return <h2 id={b.id} class="body__h2">{b.text}</h2>;
+
+        case "h3":
+          return <h3 class="body__h3">{b.text}</h3>;
+
+        case "p":
+          return <p class="body__p" set:html={b.text} />;
+
+        case "list":
+          return b.ordered ? (
+            <ol class="body__ol">{b.items.map((i) => <li set:html={i} />)}</ol>
+          ) : (
+            <ul class="body__ul">{b.items.map((i) => <li set:html={i} />)}</ul>
+          );
+
+        case "steps":
+          return (
+            <ol class="body__steps">
+              {b.items.map((s, i) => (
+                <li class="bstep">
+                  <span class="bstep__n">{i + 1}</span>
+                  <div>
+                    <strong class="bstep__t">{s.title}</strong>
+                    <p class="bstep__d" set:html={s.text} />
+                  </div>
+                </li>
+              ))}
+            </ol>
+          );
+
+        case "table":
+          return (
+            <figure class="body__tablewrap">
+              {/* `overflow-x` ANA SHU o'ramda — jadval keng bo'lsa o'zi
+                  siljiydi, sahifa esa joyida qoladi. */}
+              <div class="body__scroll" tabindex="0" role="region" aria-label={b.caption ?? "table"}>
+                <table class="body__table">
+                  <thead>
+                    <tr>{b.head.map((h) => <th scope="col">{h}</th>)}</tr>
+                  </thead>
+                  <tbody>
+                    {b.rows.map((r) => (
+                      <tr>
+                        {r.map((cell, ci) =>
+                          ci === 0 ? (
+                            <th scope="row" set:html={cell} />
+                          ) : MARK[cell as keyof typeof MARK] ? (
+                            <td class={`is-${MARK[cell as keyof typeof MARK]}`}>
+                              <Icon name={cell === "+" ? "check" : "x"} size={17} />
+                              <span class="sr-only">{cell === "+" ? "ha" : "yo'q"}</span>
+                            </td>
+                          ) : (
+                            <td set:html={cell} />
+                          ),
+                        )}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+              {b.caption && <figcaption class="body__cap">{b.caption}</figcaption>}
+            </figure>
+          );
+
+        case "facts":
+          return (
+            <dl class="body__facts">
+              {b.items.map((f) => (
+                <div class="bfact">
+                  <dt>{f.k}</dt>
+                  <dd set:html={f.v} />
+                </div>
+              ))}
+            </dl>
+          );
+
+        case "note":
+          return (
+            <aside class={`body__note is-${b.tone}`}>
+              <Icon
+                name={b.tone === "warn" ? "alert-triangle" : b.tone === "good" ? "check-circle" : "sparkles"}
+                size={18}
+              />
+              <div>
+                {b.title && <strong>{b.title}</strong>}
+                <p set:html={b.text} />
+              </div>
+            </aside>
+          );
+
+        case "cta":
+          return (
+            <a class="body__cta" href={botLinkFor()} target="_blank" rel="noopener">
+              <span class="body__cta-ic"><Icon name="telegram" size={18} /></span>
+              <span class="body__cta-txt">{b.text}</span>
+              <Icon name="arrow-right" size={18} />
+            </a>
+          );
+
+        case "links":
+          return (
+            <nav class="body__links" aria-label={b.title}>
+              <strong class="body__links-t">{b.title}</strong>
+              <ul>
+                {b.items.map((l) => (
+                  <li>
+                    <a href={l.href}>
+                      {l.label}
+                      <Icon name="chevron-right" size={14} />
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
+          );
+      }
+    })
+  }
+</div>
+
+<style>
+  .body {
+    max-width: var(--maxw-prose);
+    font-size: var(--t-base);
+    line-height: 1.75;
+    color: var(--text-2);
+  }
+
+  .body > * + * {
+    margin-top: var(--sp-5);
+  }
+
+  /* Sarlavhadan OLDIN kattaroq bo'shliq — bo'limlar ko'zga ajralib tursin */
+  .body__h2 {
+    margin-top: clamp(36px, 5vw, 56px) !important;
+    font-size: var(--t-xl);
+    color: var(--text);
+    /* Yopishqoq sarlavha ostida qolmasin — mundarija havolasi bosilganda */
+    scroll-margin-top: 88px;
+  }
+
+  .body__h3 {
+    margin-top: var(--sp-6) !important;
+    font-size: var(--t-md);
+    color: var(--text);
+  }
+
+  .body__p :global(a),
+  .body__ul :global(a),
+  .body__ol :global(a) {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    text-decoration-color: rgba(var(--accent-rgb), 0.4);
+  }
+
+  .body__p :global(a:hover) {
+    text-decoration-color: var(--accent);
+  }
+
+  .body__ul,
+  .body__ol {
+    padding-inline-start: 1.35em;
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-2);
+  }
+
+  .body__ul li::marker {
+    color: var(--accent);
+  }
+
+  .body__ol li::marker {
+    color: var(--accent);
+    font-weight: 700;
+  }
+
+  /* ---------------------------------------------------------- qadamlar -- */
+
+  .body__steps {
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-3);
+    list-style: none;
+  }
+
+  .bstep {
+    display: flex;
+    gap: var(--sp-3);
+    padding: 16px 18px;
+    border-radius: var(--r-md);
+    background: var(--surface);
+    border: 1px solid var(--line);
+  }
+
+  .bstep__n {
+    display: grid;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+    flex: none;
+    border-radius: 50%;
+    background: rgba(var(--accent-rgb), 0.16);
+    color: var(--accent);
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  .bstep__t {
+    display: block;
+    margin-bottom: 3px;
+    font-family: var(--font-display);
+    font-size: var(--t-base);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+    color: var(--text);
+  }
+
+  .bstep__d {
+    font-size: var(--t-sm);
+    line-height: 1.65;
+  }
+
+  /* ------------------------------------------------------------ jadval -- */
+
+  .body__tablewrap {
+    margin-inline: 0;
+  }
+
+  .body__scroll {
+    overflow-x: auto;
+    border-radius: var(--r-md);
+    border: 1px solid var(--line);
+    /* Klaviatura bilan ham siljitish mumkin bo'lsin (a11y talabi) */
+    scrollbar-width: thin;
+  }
+
+  .body__table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--t-sm);
+    /* Ustunlar juda siqilib ketmasin — kerak bo'lsa skroll paydo bo'ladi */
+    min-width: 460px;
+  }
+
+  .body__table th,
+  .body__table td {
+    padding: 12px 14px;
+    text-align: start;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .body__table thead th {
+    background: rgba(255, 255, 255, 0.04);
+    font-family: var(--font-display);
+    font-size: var(--t-xs);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--text);
+    white-space: nowrap;
+  }
+
+  .body__table tbody th {
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .body__table tbody tr:last-child th,
+  .body__table tbody tr:last-child td {
+    border-bottom: 0;
+  }
+
+  .body__table .is-yes {
+    color: var(--mint);
+  }
+
+  .body__table .is-no {
+    color: var(--text-3);
+  }
+
+  .body__cap {
+    margin-top: var(--sp-3);
+    font-size: var(--t-xs);
+    color: var(--text-3);
+  }
+
+  /* ------------------------------------------------------------ faktlar -- */
+
+  .body__facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: var(--sp-2);
+  }
+
+  .bfact {
+    padding: 14px 16px;
+    border-radius: var(--r-md);
+    background: var(--surface);
+    border: 1px solid var(--line);
+  }
+
+  .bfact dt {
+    font-size: var(--t-xs);
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+
+  .bfact dd {
+    font-size: var(--t-sm);
+    color: var(--text);
+    line-height: 1.5;
+  }
+
+  /* ------------------------------------------------------------ eslatma -- */
+
+  .body__note {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--sp-3);
+    padding: 16px 18px;
+    border-radius: var(--r-md);
+    border: 1px solid;
+  }
+
+  .body__note strong {
+    display: block;
+    margin-bottom: 4px;
+    font-family: var(--font-display);
+    font-size: var(--t-sm);
+    color: var(--text);
+  }
+
+  .body__note p {
+    font-size: var(--t-sm);
+    line-height: 1.65;
+  }
+
+  .body__note :global(svg) {
+    flex: none;
+    margin-top: 2px;
+  }
+
+  .body__note.is-info {
+    background: rgba(var(--brand-rgb), 0.08);
+    border-color: rgba(var(--brand-rgb), 0.26);
+  }
+  .body__note.is-info :global(svg) {
+    color: var(--brand-bright);
+  }
+
+  .body__note.is-warn {
+    background: rgba(251, 191, 36, 0.08);
+    border-color: rgba(251, 191, 36, 0.26);
+  }
+  .body__note.is-warn :global(svg) {
+    color: var(--gold);
+  }
+
+  .body__note.is-good {
+    background: rgba(52, 211, 153, 0.08);
+    border-color: rgba(52, 211, 153, 0.26);
+  }
+  .body__note.is-good :global(svg) {
+    color: var(--mint);
+  }
+
+  /* --------------------------------------------------------------- CTA -- */
+
+  .body__cta {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-3);
+    padding: 16px 18px;
+    border-radius: var(--r-md);
+    background: linear-gradient(135deg, rgba(var(--accent-rgb), 0.16), rgba(var(--accent-rgb), 0.05));
+    border: 1px solid rgba(var(--accent-rgb), 0.32);
+    color: var(--text);
+    font-weight: 600;
+    font-size: var(--t-sm);
+    transition: border-color var(--dur) var(--ease), transform var(--dur-fast) var(--ease);
+  }
+
+  .body__cta:hover {
+    transform: translateY(-2px);
+    border-color: var(--accent);
+  }
+
+  .body__cta-ic {
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    flex: none;
+    border-radius: var(--r-sm);
+    background: var(--grad-accent);
+    color: #fff;
+  }
+
+  .body__cta-txt {
+    flex: 1;
+  }
+
+  .body__cta > :global(svg:last-child) {
+    flex: none;
+    color: var(--accent);
+  }
+
+  /* ------------------------------------------------------------ havola -- */
+
+  .body__links {
+    padding: 18px;
+    border-radius: var(--r-md);
+    background: var(--surface);
+    border: 1px solid var(--line);
+  }
+
+  .body__links-t {
+    display: block;
+    margin-bottom: var(--sp-3);
+    font-family: var(--font-display);
+    font-size: var(--t-sm);
+    color: var(--text);
+  }
+
+  .body__links ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    list-style: none;
+  }
+
+  .body__links a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--sp-3);
+    padding: 9px 0;
+    font-size: var(--t-sm);
+    color: var(--text-2);
+    border-bottom: 1px solid var(--line);
+    transition: color var(--dur-fast) var(--ease);
+  }
+
+  .body__links li:last-child a {
+    border-bottom: 0;
+  }
+
+  .body__links a:hover {
+    color: var(--accent);
+  }
+</style>

@@ -1,0 +1,13 @@
+---
+import GamePage from "../../../components/pages/GamePage.astro";
+import { CATALOG } from "../../../data/games";
+
+/** Har o'yin uchun bitta statik sahifa — 10 ta, har tilda. */
+export function getStaticPaths() {
+  return CATALOG.map((g) => ({ params: { game: g.slug }, props: { game: g } }));
+}
+
+const { game } = Astro.props;
+---
+
+<GamePage game={game} locale="ru" />

@@ -1,0 +1,144 @@
+---
+/** Blog maqolasi kartochkasi — blog ro'yxatida va o'yin sahifasida. */
+import Icon from "./Icon.astro";
+import { contentFor, minutesOf } from "../data/blog";
+import type { Article } from "../data/blog/types";
+import { gameBySlug } from "../data/games";
+import { t } from "../i18n/ui";
+import { localePath, type Locale } from "../data/site";
+
+interface Props {
+  article: Article;
+  locale: Locale;
+}
+
+const { article, locale } = Astro.props;
+const c = t(locale);
+const content = contentFor(article, locale);
+const game = article.game ? gameBySlug(article.game) : null;
+---
+
+{
+  content && (
+    <a
+      class="acard"
+      href={localePath(locale, `blog/${article.slug}`)}
+      style={game ? `--a:${game.accent}` : undefined}
+    >
+      <span class="acard__top">
+        {game && <span class="acard__tag">{game.short}</span>}
+        <span class="acard__min">
+          <Icon name="clock" size={12} />
+          {minutesOf(article, locale)} {c.blog.minutes}
+        </span>
+      </span>
+
+      <h3 class="acard__t">{content.title}</h3>
+      <p class="acard__x">{content.excerpt}</p>
+
+      <span class="acard__more">
+        {c.blog.readMore}
+        <Icon name="arrow-right" size={15} />
+      </span>
+    </a>
+  )
+}
+
+<style>
+  .acard {
+    --a: var(--brand);
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-3);
+    padding: clamp(18px, 2.4vw, 24px);
+    border-radius: var(--r-lg);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    transition:
+      transform var(--dur) var(--ease),
+      border-color var(--dur) var(--ease),
+      background-color var(--dur) var(--ease);
+  }
+
+  .acard:hover {
+    transform: translateY(-3px);
+    border-color: color-mix(in srgb, var(--a) 45%, transparent);
+    background: var(--surface-2);
+  }
+
+  @supports not (color: color-mix(in srgb, red 50%, blue)) {
+    .acard:hover {
+      border-color: var(--line-strong);
+    }
+  }
+
+  .acard__top {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-3);
+  }
+
+  .acard__tag {
+    padding: 4px 10px;
+    border-radius: var(--r-pill);
+    background: color-mix(in srgb, var(--a) 16%, transparent);
+    border: 1px solid color-mix(in srgb, var(--a) 34%, transparent);
+    color: var(--a);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    line-height: 1.4;
+  }
+
+  @supports not (color: color-mix(in srgb, red 50%, blue)) {
+    .acard__tag {
+      background: var(--surface-2);
+      border-color: var(--line);
+      color: var(--text-2);
+    }
+  }
+
+  .acard__min {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    margin-inline-start: auto;
+    font-size: var(--t-xs);
+    color: var(--text-3);
+  }
+
+  .acard__t {
+    font-size: var(--t-md);
+    line-height: 1.28;
+  }
+
+  .acard__x {
+    font-size: var(--t-sm);
+    color: var(--text-2);
+    line-height: 1.6;
+    /* Uch qatordan uzuni kesiladi — katakdagi kartochkalar bir tekis tursin */
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .acard__more {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: auto;
+    padding-top: var(--sp-2);
+    font-size: var(--t-sm);
+    font-weight: 700;
+    color: var(--a);
+  }
+
+  .acard__more :global(svg) {
+    transition: transform var(--dur) var(--ease);
+  }
+
+  .acard:hover .acard__more :global(svg) {
+    transform: translateX(3px);
+  }
+</style>

@@ -17,6 +17,7 @@
 
 import type { APIRoute } from "astro";
 import { CATALOG } from "../data/games";
+import { isReadyToIndex } from "../data/gameContent";
 import { ARTICLES } from "../data/blog";
 import { localesOf } from "../data/blog";
 import { LOCALES, DEFAULT_LOCALE, absoluteUrl, localePath, type Locale } from "../data/site";
@@ -36,17 +37,26 @@ type Entry = {
 function collect(): Entry[] {
   const out: Entry[] = [
     { path: "", lastmod: STATIC_LASTMOD, changefreq: "weekly", priority: 1.0, locales: LOCALES },
+    // Katalog hub — o'ziga xos matni bor va har sahifadan havola oladi
+    { path: "oyinlar", lastmod: STATIC_LASTMOD, changefreq: "weekly", priority: 0.95, locales: LOCALES },
     { path: "blog", lastmod: STATIC_LASTMOD, changefreq: "daily", priority: 0.8, locales: LOCALES },
   ];
 
   // Pul sahifalari — konversiya shu yerda bo'ladi, eng yuqori ustuvorlik.
+  //
+  // O'ziga xos matni yo'q sahifa `noindex` oladi (`GamePage.astro`), shuning
+  // uchun u sitemapga ham TUSHMAYDI. Sitemapda `noindex` sahifa turishi —
+  // Search Console'da «Submitted URL marked noindex» xatosi va butun
+  // sitemapga bo'lgan ishonchning pasayishi demak.
   for (const g of CATALOG) {
+    const langs = LOCALES.filter((l) => isReadyToIndex(g.slug, l));
+    if (!langs.length) continue;
     out.push({
       path: `oyinlar/${g.slug}`,
       lastmod: STATIC_LASTMOD,
       changefreq: "weekly",
       priority: 0.9,
-      locales: LOCALES,
+      locales: langs,
     });
   }
 

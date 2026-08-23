@@ -23,7 +23,9 @@ const { locale, path } = Astro.props;
 const c = t(locale);
 
 const links = [
-  { href: `${localePath(locale)}#oyinlar`, label: c.nav.games },
+  // Katalog — haqiqiy sahifa, langar emas: har sahifadagi bu havola
+  // hub'ga ichki og'irlik to'playdi va u o'yin sahifalariga uzatiladi.
+  { href: localePath(locale, "oyinlar"), label: c.nav.games },
   { href: `${localePath(locale)}#qanday`, label: c.nav.how },
   { href: `${localePath(locale)}#nega`, label: c.nav.why },
   { href: localePath(locale, "blog"), label: c.nav.blog },

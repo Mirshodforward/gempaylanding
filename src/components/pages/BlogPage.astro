@@ -1,0 +1,231 @@
+---
+/**
+ * Blog ro'yxati — `/blog`.
+ *
+ * Maqolalar O'YIN bo'yicha guruhlanadi, sana bo'yicha emas. Sabab: bu
+ * yangiliklar blogi emas, qo'llanmalar to'plami. Odam «PUBG UC» deb kirsa,
+ * unga eng yangi Bigo maqolasi emas, PUBG bo'limi kerak. Guruhlash
+ * shuningdek mavzu klasterlarini aniq ko'rsatadi — bu Google uchun
+ * mavzuiy avtoritet signali.
+ */
+import Layout from "../../layouts/Layout.astro";
+import Aurora from "../Aurora.astro";
+import Header from "../Header.astro";
+import Footer from "../Footer.astro";
+import Cta from "../Cta.astro";
+import Breadcrumbs from "../Breadcrumbs.astro";
+import ArticleCard from "../ArticleCard.astro";
+import AnswerBox from "../AnswerBox.astro";
+
+import { t } from "../../i18n/ui";
+import { articlesFor } from "../../data/blog";
+import { CATALOG } from "../../data/games";
+import type { Locale } from "../../data/site";
+import { absoluteUrl, localePath } from "../../data/site";
+import {
+  graph,
+  organizationSchema,
+  websiteSchema,
+  breadcrumbSchema,
+} from "../../lib/seo";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const c = t(locale);
+const path = "blog";
+
+const posts = articlesFor(locale);
+
+/** O'yin bo'yicha guruhlar — katalog tartibida, bo'shlari tushib qoladi. */
+const groups = CATALOG.map((g) => ({
+  game: g,
+  posts: posts.filter((p) => p.game === g.slug),
+})).filter((x) => x.posts.length > 0);
+
+/** Hech qaysi o'yinga bog'lanmagan (umumiy) maqolalar */
+const general = posts.filter((p) => !p.game);
+
+const META = {
+  uz: {
+    title: "Blog — o'yin to'ldirish qo'llanmalari | GemPay",
+    description:
+      "PUBG UC, Mobile Legends olmosi, Free Fire va boshqa o'yinlarni to'ldirish bo'yicha " +
+      "qo'llanmalar, taqqoslashlar va tez-tez uchraydigan muammolarning yechimi.",
+    answer:
+      "Bu blogda har bir o'yin uchun beshta maqola bor: qanday to'ldirish, ID ni qayerdan " +
+      "topish, kredit kelmasa nima qilish, qayerdan olish arzonroq va valyutaning o'zi nima. " +
+      "Barchasi O'zbekiston sharoitiga — so'mda to'lov va mahalliy kartalarga — moslangan.",
+  },
+  ru: {
+    title: "Блог — руководства по пополнению игр | GemPay",
+    description:
+      "Руководства, сравнения и разбор частых проблем по пополнению PUBG UC, алмазов " +
+      "Mobile Legends, Free Fire и других игр в Узбекистане.",
+    answer:
+      "В блоге по пять статей на каждую игру: как пополнить, где найти ID, что делать если " +
+      "зачисление не пришло, где выгоднее покупать и что вообще представляет собой валюта. " +
+      "Всё написано под Узбекистан — оплата в сумах и местные карты.",
+  },
+  en: {
+    title: "Blog — game top-up guides | GemPay",
+    description:
+      "Guides, comparisons and fixes for topping up PUBG UC, Mobile Legends diamonds, " +
+      "Free Fire and other games from Uzbekistan.",
+    answer:
+      "The blog carries five articles per game: how to top up, where to find your ID, what to " +
+      "do when the credit does not arrive, where buying is cheaper, and what the currency " +
+      "actually is. All of it is written for Uzbekistan — so'm payments and local cards.",
+  },
+}[locale];
+
+const crumbs = [
+  { name: c.game.breadcrumbHome, path: "" },
+  { name: c.blog.title, path },
+];
+
+const schema = graph(
+  organizationSchema(),
+  websiteSchema(locale),
+  breadcrumbSchema(locale, crumbs),
+  // Blog ro'yxatining o'zi — `Blog` turi, ichida so'nggi yozuvlar
+  posts.length
+    ? {
+        "@type": "Blog",
+        "@id": `${absoluteUrl(localePath(locale, path))}#blog`,
+        name: META.title,
+        description: META.description,
+        inLanguage: locale,
+        publisher: { "@id": `${absoluteUrl("")}/#organization` },
+      }
+    : null,
+);
+---
+
+<Layout
+  locale={locale}
+  path={path}
+  title={META.title}
+  description={META.description}
+  image="/og/default.png"
+  schema={schema}
+>
+  <Aurora />
+  <Header locale={locale} path={path} />
+
+  <main id="main">
+    <div class="wrap">
+      <Breadcrumbs items={crumbs} locale={locale} />
+
+      <header class="bhead">
+        <h1>{c.blog.title}</h1>
+        <p class="lede">{c.blog.lede}</p>
+      </header>
+
+      <AnswerBox title={c.blog.answerTitle} text={META.answer} />
+    </div>
+
+    {
+      posts.length === 0 && (
+        <div class="wrap">
+          <p class="bempty">{c.blog.lede}</p>
+        </div>
+      )
+    }
+
+    {
+      general.length > 0 && (
+        <section class="section">
+          <div class="wrap">
+            <div class="bgrid">
+              {general.map((a) => <ArticleCard article={a} locale={locale} />)}
+            </div>
+          </div>
+        </section>
+      )
+    }
+
+    {
+      groups.map(({ game, posts: gp }) => (
+        <section class="section bsec" style={`--a:${game.accent}`}>
+          <div class="wrap">
+            <div class="bsec__head">
+              <h2 class="bsec__t">{game.title}</h2>
+              <a class="bsec__link" href={localePath(locale, `oyinlar/${game.slug}`)}>
+                {game.unit[locale]}
+              </a>
+            </div>
+            <div class="bgrid">
+              {gp.map((a) => <ArticleCard article={a} locale={locale} />)}
+            </div>
+          </div>
+        </section>
+      ))
+    }
+
+    <Cta locale={locale} />
+  </main>
+
+  <Footer locale={locale} />
+</Layout>
+
+<style>
+  .bhead {
+    position: relative;
+    z-index: var(--z-body);
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-4);
+    padding-block: clamp(24px, 4vw, 44px) clamp(20px, 3vw, 32px);
+    max-width: 46ch;
+  }
+
+  /* Bo'limlar ro'yxati zich bo'lsin — o'nta o'yin guruhi bor */
+  .bsec {
+    padding-block: clamp(28px, 3.5vw, 44px);
+  }
+
+  .bsec__head {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-3);
+    margin-bottom: var(--sp-5);
+  }
+
+  .bsec__t {
+    font-size: var(--t-lg);
+  }
+
+  .bsec__link {
+    padding: 5px 12px;
+    border-radius: var(--r-pill);
+    background: color-mix(in srgb, var(--a) 14%, transparent);
+    border: 1px solid color-mix(in srgb, var(--a) 32%, transparent);
+    color: var(--a);
+    font-size: var(--t-xs);
+    font-weight: 700;
+  }
+
+  @supports not (color: color-mix(in srgb, red 50%, blue)) {
+    .bsec__link {
+      background: var(--surface-2);
+      border-color: var(--line);
+      color: var(--text-2);
+    }
+  }
+
+  .bgrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: var(--sp-3);
+  }
+
+  .bempty {
+    position: relative;
+    z-index: var(--z-body);
+    padding: var(--sp-7) 0;
+    color: var(--text-3);
+  }
+</style>

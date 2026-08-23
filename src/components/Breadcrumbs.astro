@@ -1,0 +1,90 @@
+---
+/**
+ * Non ushoqlari (breadcrumbs).
+ *
+ * SEO roli ikki xil: (1) Google natijada URL o'rniga shu yo'lni ko'rsatadi —
+ * bosilish ehtimoli oshadi; (2) sayt ierarxiyasini aniq bildiradi. Shuning
+ * uchun oxirgi element HAVOLA EMAS (joriy sahifa), qolganlari haqiqiy
+ * `<a href>` — JSON-LD `BreadcrumbList` bilan mos keladi.
+ */
+import Icon from "./Icon.astro";
+import { localePath, type Locale } from "../data/site";
+import type { Crumb } from "../lib/seo";
+
+interface Props {
+  items: Crumb[];
+  locale: Locale;
+}
+
+const { items, locale } = Astro.props;
+---
+
+<nav class="crumbs" aria-label="Breadcrumb">
+  <ol class="crumbs__list">
+    {
+      items.map((c, i) => {
+        const last = i === items.length - 1;
+        return (
+          <li class="crumbs__i">
+            {last ? (
+              <span class="crumbs__cur" aria-current="page">{c.name}</span>
+            ) : (
+              <>
+                <a class="crumbs__a" href={localePath(locale, c.path)}>{c.name}</a>
+                <Icon name="chevron-right" size={13} />
+              </>
+            )}
+          </li>
+        );
+      })
+    }
+  </ol>
+</nav>
+
+<style>
+  .crumbs {
+    position: relative;
+    z-index: var(--z-body);
+    padding-top: var(--sp-5);
+  }
+
+  .crumbs__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4px;
+    list-style: none;
+    font-size: var(--t-xs);
+  }
+
+  .crumbs__i {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    min-width: 0;
+  }
+
+  .crumbs__i :global(svg) {
+    color: var(--text-3);
+    opacity: 0.6;
+  }
+
+  .crumbs__a {
+    color: var(--text-3);
+    transition: color var(--dur-fast) var(--ease);
+  }
+
+  .crumbs__a:hover {
+    color: var(--accent);
+  }
+
+  .crumbs__cur {
+    color: var(--text-2);
+    font-weight: 600;
+    /* Uzun o'yin nomi mobil ekranda qatorni buzmasin */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 60vw;
+  }
+</style>
