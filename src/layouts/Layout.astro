@@ -82,11 +82,19 @@ const accentStyle = accent
     <meta name="description" content={description} />
     {keywords.length > 0 && <meta name="keywords" content={keywords.join(", ")} />}
 
-    <link rel="canonical" href={canonical} />
+    {/*
+      `noindex` sahifada canonical ham, hreflang ham BERILMAYDI.
+
+      404 sahifasining yo'li bo'sh, ya'ni canonical bosh sahifaga ishora
+      qilardi — bu Google'ga «404 aslida bosh sahifa» degan signal beradi va
+      indeksdagi bosh sahifani buzishi mumkin. Indekslanmaydigan sahifa uchun
+      kanonik ko'rsatgichning ma'nosi ham yo'q.
+    */}
+    {!noindex && <link rel="canonical" href={canonical} />}
 
     {/* hreflang — har til o'zini VA barcha qardoshlarini ko'rsatishi shart,
         aks holda Google juftlikni «tasdiqlanmagan» deb tashlab yuboradi. */}
-    {alternates.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
+    {!noindex && alternates.map((a) => <link rel="alternate" hreflang={a.hreflang} href={a.href} />)}
     <link rel="alternate" type="application/rss+xml" title={`${ORG.name} — blog`} href={absoluteUrl("/rss.xml")} />
 
     {/* `max-image-preview:large` — Google Discover'da katta rasm huquqi;

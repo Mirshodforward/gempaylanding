@@ -42,11 +42,42 @@ for (const url of urls) {
     const page = await ctx.newPage();
     await page.goto(url, { waitUntil: "networkidle" });
 
-    // ---- gorizontal overflow: qaysi element hujjatdan kengroq chiqyapti ----
+    // ---- gorizontal overflow ----
+    //
+    // MEZON: sahifa HAQIQATAN yon tomonga siljiydimi. `scrollWidth` o'zi
+    // yetarli emas — `overflow-x: hidden` bilan kesilgan mazmun ham uni
+    // oshiradi, lekin foydalanuvchi hech qayerga sura olmaydi va Google'ning
+    // mobil tekshiruvi ham buni muammo deb hisoblamaydi.
+    //
+    // Shuning uchun ikki daraja: haqiqiy siljish — XATO, kesilgan kenglik —
+    // ogohlantirish (chunki `overflow: hidden` ga tayanish mo'rt yechim).
     const overflow = await page.evaluate(() => {
       const vw = document.documentElement.clientWidth;
       const doc = document.documentElement.scrollWidth;
-      if (doc <= vw + 1) return { ok: true, vw, doc, culprits: [] };
+      window.scrollTo(9999, 0);
+      const scrolled = window.scrollX;
+      window.scrollTo(0, 0);
+      if (!scrolled && doc <= vw + 1) return { ok: true, vw, doc, scrolled, culprits: [] };
+      /**
+       * Element ATAYLAB kesilganmi.
+       *
+       * Keng jadval `overflow-x: auto` o'ramda turishi TO'G'RI yechim: u
+       * o'z ichida siljiydi, sahifa esa joyida qoladi. Bunday elementning
+       * `getBoundingClientRect()` kengligi baribir ekrandan katta chiqadi,
+       * shuning uchun uni aybdor deb ko'rsatish yolg'on signal bo'lardi.
+       * Shu sabab har bir element uchun ota-onalar zanjiri tekshiriladi:
+       * biror ota-ona uni kesayotgan bo'lsa, element o'tkazib yuboriladi.
+       */
+      const isClipped = (el) => {
+        for (let p = el.parentElement; p && p !== document.body; p = p.parentElement) {
+          const cs = getComputedStyle(p);
+          if (/(auto|scroll|hidden|clip)/.test(cs.overflowX)) return true;
+          if (cs.contain.includes("strict") || cs.contain.includes("paint")) return true;
+          if (cs.position === "fixed") return true;
+        }
+        return false;
+      };
+
       const culprits = [];
       for (const el of document.querySelectorAll("body *")) {
         const r = el.getBoundingClientRect();
@@ -56,6 +87,7 @@ for (const url of urls) {
           const cs = getComputedStyle(el);
           // Ataylab kesilgan bezaklar hisobga olinmaydi
           if (cs.position === "fixed") continue;
+          if (isClipped(el)) continue;
           culprits.push({
             sel:
               el.tagName.toLowerCase() +
@@ -70,14 +102,23 @@ for (const url of urls) {
         }
       }
       // Faqat eng tashqi aybdorlarni ko'rsatamiz (ota-ona bo'lsa bola ham chiqadi)
-      return { ok: false, vw, doc, culprits: culprits.slice(0, 12) };
+      return { ok: false, vw, doc, scrolled, culprits: culprits.slice(0, 12) };
     });
 
-    if (!overflow.ok) {
+    if (!overflow.ok && overflow.scrolled) {
       problems++;
-      console.log(`  ✗ [${vp.name}] GORIZONTAL OVERFLOW: hujjat ${overflow.doc}px, ekran ${overflow.vw}px`);
+      console.log(
+        `  ✗ [${vp.name}] SAHIFA YON TOMONGA SILJIYDI (${overflow.scrolled}px): hujjat ${overflow.doc}px, ekran ${overflow.vw}px`,
+      );
       for (const c of overflow.culprits) {
         console.log(`      ${c.sel}  left=${c.left} right=${c.right} w=${c.width}`);
+      }
+    } else if (!overflow.ok) {
+      console.log(
+        `  · [${vp.name}] mazmun ${overflow.doc}px (kesilgan, siljimaydi) — ekran ${overflow.vw}px`,
+      );
+      for (const c of overflow.culprits) {
+        console.log(`      ${c.sel}  right=${c.right} w=${c.width}`);
       }
     } else {
       console.log(`  ✓ [${vp.name}] overflow yo'q (${overflow.doc}px)`);
@@ -110,7 +151,10 @@ for (const url of urls) {
         const title = document.title;
         const desc = document.querySelector('meta[name="description"]')?.content || "";
         const canon = document.querySelector('link[rel="canonical"]')?.href || "";
-        return { h1, jumps, noAlt, ld, title, desc, canon };
+        const noindex = /noindex/.test(
+          document.querySelector('meta[name="robots"]')?.getAttribute("content") || "",
+        );
+        return { h1, jumps, noAlt, ld, title, desc, canon, noindex };
       });
 
       if (struct.h1.length !== 1) {
@@ -126,16 +170,18 @@ for (const url of urls) {
         problems++;
         console.log(`  ✗ alt yo'q: ${struct.noAlt.length} ta rasm`);
       }
-      if (struct.title.length > 60) {
+      // `noindex` sahifa qidiruv natijasida ko'rinmaydi — meta uzunligining
+      // ahamiyati yo'q, shuning uchun tekshirilmaydi.
+      if (!struct.noindex && struct.title.length > 60) {
         problems++;
         console.log(`  ✗ <title> ${struct.title.length} belgi (≤60 tavsiya): ${struct.title}`);
       }
-      if (struct.desc.length < 120 || struct.desc.length > 170) {
+      if (!struct.noindex && (struct.desc.length < 120 || struct.desc.length > 170)) {
         problems++;
         console.log(`  ✗ description ${struct.desc.length} belgi (140-160 kerak)`);
       }
       console.log(`  · JSON-LD: ${struct.ld.join(" | ") || "YO'Q"}`);
-      console.log(`  · canonical: ${struct.canon}`);
+      console.log(`  · canonical: ${struct.canon || "(yo'q — noindex)"}`);
     }
 
     const name = url.replace(/^https?:\/\/[^/]+\/?/, "").replace(/[^\w-]/g, "_") || "home";

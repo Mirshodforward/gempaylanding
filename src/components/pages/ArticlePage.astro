@@ -236,6 +236,11 @@ const fmtDate = (iso: string) =>
 
   .art__grid {
     display: grid;
+    /* `minmax(0, 1fr)` SHART: standart `auto` ustun mazmuni bo'yicha
+       kengayadi, `.toc` esa `max-width: 68ch` (~630px) so'raydi — natijada
+       390px ekranda ustun 630px bo'lib, butun sahifa gorizontal siljirdi.
+       `minmax(0, ...)` ustunga konteynerdan kengaymaslikni buyuradi. */
+    grid-template-columns: minmax(0, 1fr);
     gap: var(--sp-5);
   }
 
@@ -264,7 +269,9 @@ const fmtDate = (iso: string) =>
   /* --------------------------------------------------------- mundarija -- */
 
   .toc {
-    max-width: var(--maxw-prose);
+    /* Tor ekranda konteyner kengligi bilan cheklanadi; keng ekranda yon
+       ustun kengligi (`grid-template-columns`) baribir ustun turadi. */
+    max-width: 100%;
     margin-top: var(--sp-5);
     padding: 18px 20px;
     border-radius: var(--r-md);

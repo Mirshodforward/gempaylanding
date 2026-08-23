@@ -18,8 +18,7 @@
 import type { APIRoute } from "astro";
 import { CATALOG } from "../data/games";
 import { isReadyToIndex } from "../data/gameContent";
-import { ARTICLES } from "../data/blog";
-import { localesOf } from "../data/blog";
+import { ARTICLES, articlesFor, localesOf } from "../data/blog";
 import { LOCALES, DEFAULT_LOCALE, absoluteUrl, localePath, type Locale } from "../data/site";
 
 /** Statik sahifalarning oxirgi jiddiy o'zgarishi — QO'LDA boshqariladi. */
@@ -39,8 +38,21 @@ function collect(): Entry[] {
     { path: "", lastmod: STATIC_LASTMOD, changefreq: "weekly", priority: 1.0, locales: LOCALES },
     // Katalog hub — o'ziga xos matni bor va har sahifadan havola oladi
     { path: "oyinlar", lastmod: STATIC_LASTMOD, changefreq: "weekly", priority: 0.95, locales: LOCALES },
-    { path: "blog", lastmod: STATIC_LASTMOD, changefreq: "daily", priority: 0.8, locales: LOCALES },
   ];
+
+  // Blog ro'yxati faqat MAQOLASI BOR tillarda. Bo'sh ro'yxat sahifasi
+  // `noindex` oladi (`BlogPage.astro`), demak u sitemapda ham turmasligi
+  // kerak — aks holda Search Console'da «Submitted URL marked noindex».
+  const blogLocales = LOCALES.filter((l) => articlesFor(l).length > 0);
+  if (blogLocales.length) {
+    out.push({
+      path: "blog",
+      lastmod: STATIC_LASTMOD,
+      changefreq: "daily",
+      priority: 0.8,
+      locales: blogLocales,
+    });
+  }
 
   // Pul sahifalari — konversiya shu yerda bo'ladi, eng yuqori ustuvorlik.
   //

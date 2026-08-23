@@ -260,6 +260,7 @@ const MARK = { "+": "yes", "-": "no" } as const;
   /* ------------------------------------------------------------ jadval -- */
 
   .body__tablewrap {
+    position: relative;
     margin-inline: 0;
   }
 
@@ -269,6 +270,31 @@ const MARK = { "+": "yes", "-": "no" } as const;
     border: 1px solid var(--line);
     /* Klaviatura bilan ham siljitish mumkin bo'lsin (a11y talabi) */
     scrollbar-width: thin;
+
+    /*
+     * Siljish ishorasi: o'ng chekkada yumshoq soya, jadval oxiriga
+     * yetganda o'zi yo'qoladi.
+     *
+     * NEGA KERAK: 390px ekranda 5 ustunli jadval sig'maydi va o'z ichida
+     * siljiydi. Hech qanday belgi bo'lmasa, o'quvchi jadval kesilgan deb
+     * o'ylaydi va qolgan ustunlarni umuman ko'rmaydi. `scroll-timeline`
+     * kerak emas — soya `background-attachment: local` hiylasi bilan
+     * chiziladi va JS'siz ishlaydi.
+     */
+    background:
+      linear-gradient(to right, var(--bg) 30%, rgba(var(--bg-rgb), 0)) left center,
+      linear-gradient(to left, var(--bg) 30%, rgba(var(--bg-rgb), 0)) right center,
+      radial-gradient(farthest-side at 0 50%, rgba(0, 0, 0, 0.5), transparent) left center,
+      radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, 0.5), transparent) right center;
+    background-repeat: no-repeat;
+    background-size:
+      36px 100%,
+      36px 100%,
+      14px 100%,
+      14px 100%;
+    /* `local` — soya mazmun bilan birga siljiydi, `scroll` — joyida qoladi.
+       Aynan shu juftlik «yana bor / tugadi» hissini beradi. */
+    background-attachment: local, local, scroll, scroll;
   }
 
   .body__table {

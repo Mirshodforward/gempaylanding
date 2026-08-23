@@ -104,12 +104,21 @@ const schema = graph(
 );
 ---
 
+{/*
+  Bu tilda hali maqola bo'lmasa sahifa `noindex` oladi.
+
+  NEGA: bo'sh ro'yxat sahifasi — «thin content». U indeksga tushsa, Google
+  domenning boshqa sahifalariga bo'lgan bahoni ham pasaytiradi va keyin uni
+  qayta ko'rib chiqishga oylar ketadi. Maqola qo'shilishi bilan belgi
+  o'z-o'zidan yo'qoladi.
+*/}
 <Layout
   locale={locale}
   path={path}
   title={META.title}
   description={META.description}
   image="/og/default.png"
+  noindex={posts.length === 0}
   schema={schema}
 >
   <Aurora />
