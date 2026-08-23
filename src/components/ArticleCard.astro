@@ -29,7 +29,9 @@ const game = article.game ? gameBySlug(article.game) : null;
         {game && <span class="acard__tag">{game.short}</span>}
         <span class="acard__min">
           <Icon name="clock" size={12} />
-          {minutesOf(article, locale)} {c.blog.minutes}
+          {/* Bitta ifoda: ko'p qatorli JSX'da qo'shni `{...} {...}` orasidagi
+              probel qirqiladi va matn «10daqiqa» bo'lib chiqadi. */}
+          {`${minutesOf(article, locale)} ${c.blog.minutes}`}
         </span>
       </span>
 

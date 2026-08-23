@@ -133,7 +133,7 @@ const fmtDate = (iso: string) =>
             <span class="art__dot" aria-hidden="true">·</span>
             <time datetime={article.dateModified}>{c.blog.updated}: {fmtDate(article.dateModified)}</time>
             <span class="art__dot" aria-hidden="true">·</span>
-            <span>{minutesOf(article, locale)} {c.blog.minutes}</span>
+            <span>{`${minutesOf(article, locale)} ${c.blog.minutes}`}</span>
           </p>
 
           <h1 class="art__h1">{content.title}</h1>
