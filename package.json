@@ -9,6 +9,7 @@
     "assets": "node scripts/build-assets.mjs",
     "fonts": "node scripts/fetch-fonts.mjs",
     "audit": "node scripts/audit.mjs",
+    "case": "node scripts/case.mjs",
     "ingest": "node scripts/ingest.mjs",
     "indexnow": "node scripts/indexnow.mjs",
     "links": "node scripts/links.mjs",

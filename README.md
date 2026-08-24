@@ -146,10 +146,16 @@ Katak, futer, sitemap, JSON-LD va OG rasm o'zi yangilanadi.
 ## Deploy oldidan
 
 ```bash
+npm run case      # import nomlari harf-baharf to'g'rimi — MAJBURIY
 npm run build
 npm run links     # o'lik havola bo'lmasin — MAJBURIY
 npm run audit -- http://localhost:4399/ ...   # kerakli sahifalarni
 ```
+
+`case` birinchi turadi, chunki uni lokal build ushlamaydi: macOS fayl
+nomidagi katta-kichik harfni ajratmaydi, Vercel'ning Linux'i esa ajratadi.
+`import ... "../Faq.astro"` haqiqiy fayl `FAQ.astro` bo'lsa ham bu yerda
+ishlaydi va deploy'da «Could not resolve» bilan yiqiladi.
 
 `links` xato bersa deploy qilmang: o'lik ichki havola foydalanuvchini
 yo'qotadi va Google uni «soft 404» deb belgilab, sahifaga bo'lgan ishonchni
