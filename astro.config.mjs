@@ -36,9 +36,10 @@ export default defineConfig({
     service: { entrypoint: "astro/assets/services/sharp" },
   },
 
-  // Sof HTML/CSS sayt: sahifada faqat ~1 KB JS bor (mobil menyu va
-  // sarlavha holati). Prefetch shu holatda ham sezilarli foyda beradi —
-  // katalogdan o'yin sahifasiga o'tish deyarli bir zumda bo'ladi.
+  // Sof HTML/CSS sayt: o'z JS'imiz ~1 KB (mobil menyu va sarlavha holati),
+  // ustiga Vercel Web Analytics sanoqchisi qo'shiladi. Prefetch shu holatda
+  // ham sezilarli foyda beradi — katalogdan o'yin sahifasiga o'tish deyarli
+  // bir zumda bo'ladi.
   prefetch: {
     prefetchAll: true,
     defaultStrategy: "hover",

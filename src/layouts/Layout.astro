@@ -18,6 +18,7 @@ import {
   type Locale,
 } from "../data/site";
 import { alternatesFor, type Alternate } from "../lib/seo";
+import Analytics from "../components/Analytics.astro";
 import "../styles/app.css";
 
 interface Props {
@@ -164,5 +165,9 @@ const accentStyle = accent
   <body class={bodyClass} style={accentStyle}>
     <a class="skip-link" href="#main">Asosiy mazmunga o'tish</a>
     <slot />
+
+    {/* Vercel Web Analytics — sanoqchi shu yerda, qobiqda turadi: shunda
+        har bir yangi sahifa uni avtomatik oladi va birortasi unutilmaydi. */}
+    <Analytics />
   </body>
 </html>

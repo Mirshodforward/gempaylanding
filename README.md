@@ -14,11 +14,11 @@ Mahsulotning o'zi bu yerda emas:
 
 ## Nega Astro
 
-Sof marketing/blog sayti uchun statik Astro eng mos: sahifada **~1 KB JS**
-(mobil menyu va sarlavha holati), qolgani to'liq HTML. Google, Yandex va AI
-kraulerlar (GPTBot, ClaudeBot, PerplexityBot) uchun ideal — hech narsani
-render qilib kutish shart emas. Eng yaxshi Core Web Vitals = yuqoriroq
-reyting.
+Sof marketing/blog sayti uchun statik Astro eng mos: o'z JS'imiz **~1 KB**
+(mobil menyu va sarlavha holati) + Vercel analitika sanoqchisi, qolgani
+to'liq HTML. Google, Yandex va AI kraulerlar (GPTBot, ClaudeBot,
+PerplexityBot) uchun ideal — hech narsani render qilib kutish shart emas.
+Eng yaxshi Core Web Vitals = yuqoriroq reyting.
 
 ## Katalog — yagona haqiqat manbasi
 
@@ -55,7 +55,7 @@ src/
     seo.ts             JSON-LD quruvchilar + hreflang
     color.ts, gameImages.ts
   layouts/Layout.astro <head> dagi BARCHA SEO signallari
-  components/          Hero, Games, GameCard, Faq, blog/ArticleBody ...
+  components/          Hero, Games, GameCard, FAQ, blog/ArticleBody ...
   pages/
     index / ru / en             bosh sahifa
     oyinlar/ + [game]           katalog hub + 10 sahifa (har tilda)
@@ -132,6 +132,30 @@ klasterni «tasdiqlanmagan» qilib qo'yardi.
 **Yandex uchun:** `robots.txt` da `Host`, `site.ts` da `yandex-verification`,
 va `npm run indexnow` (Google IndexNow'ni qo'llab-quvvatlamaydi — unga
 sitemap ishlaydi).
+
+## Analitika
+
+Vercel Web Analytics — [src/components/Analytics.astro](src/components/Analytics.astro),
+`Layout.astro` da barcha sahifalarga qo'shiladi.
+
+Sanoqchi skript Vercel'ning o'z domenidan (`/_vercel/insights/...`) keladi:
+uchinchi tomonga so'rov yo'q, cookie qo'yilmaydi — shuning uchun cookie
+banneri ham talab qilinmaydi.
+
+Rasmiy `@vercel/analytics/astro` o'rniga o'z qobig'imiz turibdi. Sabab:
+u manzilni `Astro.url.pathname` dan oladi, bizda esa `build.format: "file"`
+tufayli u `.html` bilan keladi (`/oyinlar/pubg-mobile.html`), haqiqiy manzil
+esa `cleanUrls` bilan `.html`siz. Qobiq `.html` ni kesadi va marshrutni
+build vaqtida hisoblaydi, shuning uchun hisobotda:
+
+| Ko'rsatkich | Qiymat |
+| --- | --- |
+| Pages | `/oyinlar/pubg-mobile` — saytdagi haqiqiy manzil |
+| Routes | `/oyinlar/[game]` — 10 ta o'yin bitta qatorda |
+
+Statik saytda har o'tish to'liq sahifa yuklanishi, shuning uchun avtomatik
+kuzatuv o'chirilgan va ko'rish bir marta yuboriladi — aks holda ikki marta
+sanalardi.
 
 ## Yangi o'yin qo'shish
 

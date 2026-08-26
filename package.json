@@ -16,6 +16,7 @@
     "dupes": "node scripts/dupes.mjs"
   },
   "dependencies": {
+    "@vercel/analytics": "^2.0.1",
     "astro": "^5.18.0"
   },
   "devDependencies": {

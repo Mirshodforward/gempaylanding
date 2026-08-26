@@ -1,0 +1,51 @@
+---
+/**
+ * Vercel Web Analytics — `@vercel/analytics` ustidagi yupqa qobiq.
+ *
+ * NEGA rasmiy `@vercel/analytics/astro` o'rniga o'zimizniki:
+ * u sahifa manzilini `Astro.url.pathname` dan oladi, bizda esa
+ * `build.format: "file"` — ya'ni u `/oyinlar/pubg-mobile.html` deb keladi.
+ * Haqiqiy manzil `vercel.json` dagi `cleanUrls` tufayli `.html`siz. Natijada
+ * hisobotdagi sahifalar ro'yxati saytdagi haqiqiy manzillarga mos kelmasdi
+ * va `[game]` bo'yicha guruhlash ham buzilardi (`.html` naqshga tushmaydi).
+ *
+ * Shuning uchun `.html` ni kesib tashlaymiz va marshrutni build vaqtida
+ * o'zimiz hisoblaymiz. Faqat ochiq API ishlatiladi: `inject`, `pageview`,
+ * `computeRoute`.
+ *
+ * Sanoqchi skript Vercel'ning o'z domenidan (`/_vercel/insights/...`)
+ * keladi — uchinchi tomonga so'rov yo'q, shuning uchun cookie banneri ham
+ * talab qilinmaydi.
+ */
+import { computeRoute } from "@vercel/analytics";
+
+// `/oyinlar/pubg-mobile.html` → `/oyinlar/pubg-mobile`, `/` esa `/` bo'lib qoladi.
+const path = Astro.url.pathname.replace(/\.html$/, "") || "/";
+
+// `/oyinlar/pubg-mobile` → `/oyinlar/[game]`. Shu tufayli hisobotda 10 ta
+// o'yin sahifasi bitta marshrut sifatida ham ko'rinadi.
+const route = computeRoute(path, Astro.params as Record<string, string>);
+---
+
+<gp-analytics data-path={path} data-route={route ?? ""}></gp-analytics>
+
+<script>
+  import { inject, pageview } from "@vercel/analytics";
+
+  customElements.define(
+    "gp-analytics",
+    class extends HTMLElement {
+      constructor() {
+        super();
+        // Sayt statik: har o'tish — to'liq sahifa yuklanishi. Ya'ni
+        // avtomatik kuzatuv (pushState) kerak emas, ko'rishni o'zimiz
+        // bir marta yuboramiz — aks holda ikki marta sanalardi.
+        inject({ disableAutoTrack: true, framework: "astro" });
+        pageview({
+          route: this.dataset.route || null,
+          path: this.dataset.path,
+        });
+      }
+    },
+  );
+</script>
