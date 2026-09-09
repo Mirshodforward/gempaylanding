@@ -1,0 +1,21 @@
+---
+/**
+ * Huquqiy sahifalar — `/oferta`, `/tolov-va-qaytarish`,
+ * `/tolov-xavfsizligi`, `/aloqa`.
+ *
+ * Bitta dinamik marshrut: manzillar `src/data/legal/` reyestridan
+ * keladi, ya'ni yangi hujjat qo'shilsa bu faylga tegish shart emas.
+ * `getStaticPaths` faqat reyestrdagi to'rtta manzilni yaratadi —
+ * boshqa hech qanday ildiz manzilini ushlab qolmaydi.
+ */
+import LegalPage from "../../components/pages/LegalPage.astro";
+import { LEGAL_DOCS } from "../../data/legal";
+
+export function getStaticPaths() {
+  return LEGAL_DOCS.map((doc) => ({ params: { legal: doc.slug }, props: { doc } }));
+}
+
+const { doc } = Astro.props;
+---
+
+<LegalPage doc={doc} locale="ru" />

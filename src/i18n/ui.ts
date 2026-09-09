@@ -96,6 +96,40 @@ export type Copy = {
     ecosystem: string;
     rights: string;
     disclaimer: string;
+    /** Huquqiy hujjatlar ustuni — oferta, to'lov, xavfsizlik, aloqa */
+    colLegal: string;
+  };
+  /**
+   * Huquqiy sahifalar chrome'i. Hujjat MATNI bu yerda emas —
+   * u `src/data/legal/` da, chunki har hujjat o'z tuzilishiga ega.
+   * Bu yerda faqat qayta ishlatiladigan yorliqlar.
+   */
+  legal: {
+    updated: string;
+    payMarks: string;
+    reqTitle: string;
+    reqMissing: string;
+    req: {
+      brand: string;
+      entityType: string;
+      name: string;
+      inn: string;
+      address: string;
+      registeredOn: string;
+      bank: string;
+      account: string;
+      mfo: string;
+    };
+    contact: {
+      phone: string;
+      phoneNote: string;
+      email: string;
+      emailNote: string;
+      billing: string;
+      billingNote: string;
+      telegram: string;
+      telegramNote: string;
+    };
   };
   /** O'yin sahifasi uchun umumiy matnlar — `{game}`, `{unit}` almashtiriladi */
   game: {
@@ -349,6 +383,34 @@ const uz: Copy = {
     disclaimer:
       "GemPay — mustaqil xizmat. O'yin nomlari va logolari o'z egalarining savdo belgilari; " +
       "GemPay ular bilan rasmiy hamkorlikda emas.",
+    colLegal: "Hujjatlar",
+  },
+  legal: {
+    updated: "Yangilangan",
+    payMarks: "Qabul qilinadigan to'lov usullari",
+    reqTitle: "Yuridik shaxs rekvizitlari",
+    reqMissing: "Saytda hali to'ldirilmagan",
+    req: {
+      brand: "Brend",
+      entityType: "Tashkiliy-huquqiy shakl",
+      name: "Rasmiy nom",
+      inn: "STIR (INN)",
+      address: "Yuridik manzil",
+      registeredOn: "Ro'yxatdan o'tgan sana",
+      bank: "Bank",
+      account: "Hisob raqami",
+      mfo: "MFO",
+    },
+    contact: {
+      phone: "Telefon",
+      phoneNote: "Ish kunlari, 9:00-18:00",
+      email: "Elektron pochta",
+      emailNote: "1 ish kuni ichida javob",
+      billing: "To'lov va qaytarish",
+      billingNote: "Ariza va chek bo'yicha",
+      telegram: "Telegram qo'llab-quvvatlash",
+      telegramNote: "Eng tez kanal — buyurtma bo'yicha",
+    },
   },
   game: {
     breadcrumbHome: "Bosh sahifa",
@@ -611,6 +673,34 @@ const ru: Copy = {
     disclaimer:
       "GemPay — независимый сервис. Названия и логотипы игр являются товарными знаками их " +
       "владельцев; GemPay не состоит с ними в официальном партнёрстве.",
+    colLegal: "Документы",
+  },
+  legal: {
+    updated: "Обновлено",
+    payMarks: "Принимаемые способы оплаты",
+    reqTitle: "Реквизиты юридического лица",
+    reqMissing: "На сайте пока не заполнено",
+    req: {
+      brand: "Бренд",
+      entityType: "Организационно-правовая форма",
+      name: "Официальное наименование",
+      inn: "ИНН (STIR)",
+      address: "Юридический адрес",
+      registeredOn: "Дата регистрации",
+      bank: "Банк",
+      account: "Расчётный счёт",
+      mfo: "МФО",
+    },
+    contact: {
+      phone: "Телефон",
+      phoneNote: "Будни, 9:00-18:00",
+      email: "Электронная почта",
+      emailNote: "Ответ в течение 1 рабочего дня",
+      billing: "Оплата и возврат",
+      billingNote: "По заявлениям и чекам",
+      telegram: "Поддержка в Telegram",
+      telegramNote: "Самый быстрый канал — по заказам",
+    },
   },
   game: {
     breadcrumbHome: "Главная",
@@ -867,6 +957,34 @@ const en: Copy = {
     disclaimer:
       "GemPay is an independent service. Game names and logos are trademarks of their respective owners; " +
       "GemPay is not officially affiliated with them.",
+    colLegal: "Legal",
+  },
+  legal: {
+    updated: "Updated",
+    payMarks: "Accepted payment methods",
+    reqTitle: "Company details",
+    reqMissing: "Not filled in yet",
+    req: {
+      brand: "Brand",
+      entityType: "Legal form",
+      name: "Registered name",
+      inn: "Tax ID (STIR)",
+      address: "Registered address",
+      registeredOn: "Registered on",
+      bank: "Bank",
+      account: "Account number",
+      mfo: "Bank code (MFO)",
+    },
+    contact: {
+      phone: "Phone",
+      phoneNote: "Weekdays, 9:00-18:00",
+      email: "Email",
+      emailNote: "Answered within 1 working day",
+      billing: "Payments and refunds",
+      billingNote: "For requests and receipts",
+      telegram: "Telegram support",
+      telegramNote: "Fastest channel — order questions",
+    },
   },
   game: {
     breadcrumbHome: "Home",

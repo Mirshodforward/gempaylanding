@@ -19,6 +19,7 @@ import type { APIRoute } from "astro";
 import { CATALOG } from "../data/games";
 import { isReadyToIndex } from "../data/gameContent";
 import { ARTICLES, articlesFor, localesOf } from "../data/blog";
+import { LEGAL_DOCS } from "../data/legal";
 import { LOCALES, DEFAULT_LOCALE, absoluteUrl, localePath, type Locale } from "../data/site";
 
 /** Statik sahifalarning oxirgi jiddiy o'zgarishi — QO'LDA boshqariladi. */
@@ -41,6 +42,24 @@ function collect(): Entry[] {
     // Ishonch sahifasi — E-E-A-T signali, har tilda to'liq matni bor
     { path: "haqida", lastmod: STATIC_LASTMOD, changefreq: "monthly", priority: 0.6, locales: LOCALES },
   ];
+
+  // Huquqiy hujjatlar. Ustuvorligi past — ular pul so'roviga javob
+  // bermaydi. Lekin indeksda TURISHI kerak: to'lov tizimlari va bank
+  // ularni ochiq deb ko'rishi shart, Google esa pul bilan ishlaydigan
+  // saytda bunday sahifalar borligini ishonch signali deb oladi.
+  //
+  // `lastmod` har hujjatning O'Z tahriri sanasidan olinadi — oferta
+  // o'zgarganda xavfsizlik sahifasi ham «yangilandi» deb ko'rinmasligi
+  // kerak, aks holda `lastmod` ga bo'lgan ishonch yo'qoladi.
+  for (const d of LEGAL_DOCS) {
+    out.push({
+      path: d.slug,
+      lastmod: d.updated,
+      changefreq: "monthly",
+      priority: 0.5,
+      locales: LOCALES,
+    });
+  }
 
   // Blog ro'yxati faqat MAQOLASI BOR tillarda. Bo'sh ro'yxat sahifasi
   // `noindex` oladi (`BlogPage.astro`), demak u sitemapda ham turmasligi

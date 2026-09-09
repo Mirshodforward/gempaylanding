@@ -55,6 +55,7 @@ function resolves(urlPath) {
 
 const dead = new Map();
 const anchorMisses = new Map();
+const protoRel = new Map();
 let checked = 0;
 
 for (const file of htmlFiles) {
@@ -66,6 +67,20 @@ for (const file of htmlFiles) {
 
   for (const m of html.matchAll(/href="([^"]+)"/g)) {
     const href = m[1];
+
+    // `//oferta` — protokolga nisbiy manzil. Brauzer uni `https://oferta/`
+    // deb o'qiydi, ya'ni foydalanuvchi begona domenga ketadi.
+    //
+    // NEGA ALOHIDA TEKSHIRUV: pastdagi `resolves()` bunday manzilni
+    // O'TKAZIB YUBORADI — `path.join` ortiqcha slashni tozalaydi va fayl
+    // topilgandek ko'rinadi. Xato esa faqat brauzerda ma'lum bo'ladi.
+    // Odatda sababi bitta: `localePath()` allaqachon boshida slash
+    // qaytaradi, ustiga yana bittasi qo'shilgan.
+    if (href.startsWith("//")) {
+      (protoRel.get(from) ?? protoRel.set(from, []).get(from)).push(href);
+      continue;
+    }
+
     // Tashqi havola, pochta, telefon va ma'lumot manzillari tekshirilmaydi
     if (/^(https?:|mailto:|tel:|data:|#)/.test(href)) {
       // Faqat o'z sahifasidagi langar
@@ -106,6 +121,15 @@ if (anchorMisses.size) {
   }
 }
 
+if (protoRel.size) {
+  const total = [...protoRel.values()].reduce((n, l) => n + l.length, 0);
+  console.log(`\n❌ ${total} ta protokolga nisbiy manzil (begona domenga olib ketadi):`);
+  for (const [from, list] of protoRel) {
+    console.log(`   ${from}`);
+    [...new Set(list)].forEach((h) => console.log(`      → ${h}   (bitta slash ortiqcha)`));
+  }
+}
+
 if (dead.size) {
   const total = [...dead.values()].reduce((n, l) => n + l.length, 0);
   console.log(`\n❌ ${total} ta o'lik havola:`);
@@ -115,5 +139,7 @@ if (dead.size) {
   }
   process.exit(1);
 }
+
+if (protoRel.size) process.exit(1);
 
 console.log("✓ o'lik havola yo'q");

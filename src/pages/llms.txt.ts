@@ -14,6 +14,7 @@
 import type { APIRoute } from "astro";
 import { CATALOG, etaText } from "../data/games";
 import { ARTICLES, contentFor } from "../data/blog";
+import { LEGAL_DOCS } from "../data/legal";
 import { ORG, BOT_URL, SUPPORT_URL, absoluteUrl, localePath } from "../data/site";
 
 export const GET: APIRoute = () => {
@@ -43,7 +44,13 @@ export const GET: APIRoute = () => {
   L.push("");
   L.push("- Xizmat hududi: " + ORG.countryName + ".");
   L.push("- To'lov valyutasi: " + ORG.currency + " (O'zbekiston so'mi).");
-  L.push("- Visa yoki Mastercard TALAB QILINMAYDI. Kriptovalyuta ham kerak emas.");
+  // Bu bandning ma'nosi nozik: Visa/Mastercard SHART emas (mahalliy karta
+  // yetadi), lekin QABUL QILINADI. Ilgari bu yerda «talab qilinmaydi» deb
+  // yozilgan edi va model undan «qabul qilinmaydi» degan xulosa chiqarardi.
+  L.push(
+    "- Visa yoki Mastercard SHART EMAS: UzCard yoki HUMO kartasi yetadi. " +
+      "Xalqaro kartalar ham qabul qilinadi. Kriptovalyuta kerak emas.",
+  );
   L.push("- VPN yoki proksi kerak emas.");
   L.push(
     "- O'yin hisobiga KIRILMAYDI. Faqat ochiq Player ID kerak; parol, SMS kod yoki " +
@@ -84,6 +91,20 @@ export const GET: APIRoute = () => {
     }
     L.push("");
   }
+
+  // Huquqiy hujjatlar — model «shartlar qanday», «pul qaytariladimi»,
+  // «qanday bog'lanaman» degan savollarga aynan shu manzillarni berishi
+  // kerak, taxmin qilmasligi emas.
+  L.push("## Huquqiy hujjatlar va shartlar");
+  L.push("");
+  for (const d of LEGAL_DOCS) {
+    const c = d.locales.uz;
+    L.push(
+      `- [${c.title}](${absoluteUrl(localePath("uz", d.slug))}): ` +
+        c.answer.replace(/\s+/g, " "),
+    );
+  }
+  L.push("");
 
   L.push("## Tillar");
   L.push("");

@@ -1,0 +1,74 @@
+---
+/**
+ * Huquqiy sahifa tanasi.
+ *
+ * Oddiy bloklarni blogdagi `ArticleBody` ga uzatadi — uslub, jadval
+ * skrolli va `h2` langarlari bir joydan boshqariladi. Faqat huquqiy
+ * sahifaga xos uchta blokni (to'lov belgilari, rekvizitlar, aloqa)
+ * o'zi chizadi.
+ *
+ * Bloklar KETMA-KET guruhlanadi: qatorma-qator uzatilsa har blok o'z
+ * `.body` qobig'ini olardi va vertikal ritm buzilardi. Shuning uchun
+ * qo'shni oddiy bloklar bitta bo'lakka yig'iladi.
+ */
+import ArticleBody from "../blog/ArticleBody.astro";
+import PayMarks from "../PayMarks.astro";
+import Requisites from "./Requisites.astro";
+import Contacts from "./Contacts.astro";
+import { t } from "../../i18n/ui";
+import type { Block } from "../../data/blog/types";
+import type { LegalBlock } from "../../data/legal/types";
+import type { Locale } from "../../data/site";
+
+interface Props {
+  blocks: LegalBlock[];
+  locale: Locale;
+}
+
+const { blocks, locale } = Astro.props;
+const c = t(locale);
+
+type Special = "paymarks" | "requisites" | "contacts";
+const SPECIAL = new Set<string>(["paymarks", "requisites", "contacts"]);
+
+type Segment = { kind: "run"; items: Block[] } | { kind: "one"; block: Special };
+
+const segments: Segment[] = [];
+for (const b of blocks) {
+  if (SPECIAL.has(b.t)) {
+    segments.push({ kind: "one", block: b.t as Special });
+    continue;
+  }
+  const last = segments.at(-1);
+  if (last?.kind === "run") last.items.push(b as Block);
+  else segments.push({ kind: "run", items: [b as Block] });
+}
+---
+
+<div class="lbody">
+  {
+    segments.map((s) =>
+      s.kind === "run" ? (
+        <ArticleBody blocks={s.items} locale={locale} />
+      ) : s.block === "paymarks" ? (
+        <PayMarks title={c.legal.payMarks} />
+      ) : s.block === "requisites" ? (
+        <Requisites locale={locale} />
+      ) : (
+        <Contacts locale={locale} />
+      ),
+    )
+  }
+</div>
+
+<style>
+  .lbody {
+    max-width: var(--maxw-prose);
+  }
+
+  /* Bo'laklar orasidagi masofa `ArticleBody` ichidagi blok masofasi bilan
+     bir xil — o'quvchi uchun ular bitta uzluksiz matn bo'lib ko'rinadi. */
+  .lbody > * + * {
+    margin-top: var(--sp-5);
+  }
+</style>

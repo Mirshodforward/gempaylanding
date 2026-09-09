@@ -1,0 +1,162 @@
+---
+/**
+ * Aloqa kartochkalari — telefon, pochta, Telegram.
+ *
+ * MPS TALABI: kartador savdo nuqtasi bilan bog'lana olishi kerak va
+ * telefon raqami majburiy. Shuning uchun telefon birinchi turadi —
+ * Telegram tez bo'lsa ham, bank uni rasmiy kanal deb hisoblamaydi.
+ *
+ * To'ldirilmagan kanal chiqmaydi: bo'sh `tel:` havolasi ishlamaydi va
+ * ishonchni yo'qotadi. Telegram doim bor, chunki u `site.ts` da
+ * qat'iy yozilgan.
+ */
+import Icon from "../Icon.astro";
+import { t } from "../../i18n/ui";
+import { CONTACT, billingEmail, telHref, type Locale } from "../../data/site";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const c = t(locale).legal.contact;
+
+type Channel = {
+  icon: "phone" | "mail" | "telegram" | "receipt";
+  label: string;
+  note: string;
+  value: string;
+  href: string;
+  external?: boolean;
+};
+
+const channels: Channel[] = [];
+
+if (CONTACT.phone) {
+  channels.push({
+    icon: "phone",
+    label: c.phone,
+    note: c.phoneNote,
+    value: CONTACT.phone,
+    href: telHref(CONTACT.phone),
+  });
+}
+
+if (CONTACT.email) {
+  channels.push({
+    icon: "mail",
+    label: c.email,
+    note: c.emailNote,
+    value: CONTACT.email,
+    href: `mailto:${CONTACT.email}`,
+  });
+}
+
+// Alohida to'lov qutisi bo'lsagina — aks holda umumiy pochta ikki marta chiqardi.
+if (CONTACT.billingEmail && CONTACT.billingEmail !== CONTACT.email) {
+  channels.push({
+    icon: "receipt",
+    label: c.billing,
+    note: c.billingNote,
+    value: billingEmail,
+    href: `mailto:${billingEmail}`,
+  });
+}
+
+channels.push({
+  icon: "telegram",
+  label: c.telegram,
+  note: c.telegramNote,
+  value: CONTACT.telegram.replace(/^https:\/\//, ""),
+  href: CONTACT.telegram,
+  external: true,
+});
+---
+
+<ul class="chans">
+  {
+    channels.map((ch) => (
+      <li>
+        <a
+          class="chan"
+          href={ch.href}
+          target={ch.external ? "_blank" : undefined}
+          rel={ch.external ? "noopener" : undefined}
+        >
+          <span class="chan__ic"><Icon name={ch.icon} size={20} /></span>
+          <span class="chan__body">
+            <span class="chan__label">{ch.label}</span>
+            <span class="chan__value">{ch.value}</span>
+            <span class="chan__note">{ch.note}</span>
+          </span>
+        </a>
+      </li>
+    ))
+  }
+</ul>
+
+<style>
+  .chans {
+    display: grid;
+    gap: var(--sp-3);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 17rem), 1fr));
+    list-style: none;
+    padding: 0;
+    margin-block: var(--sp-5);
+  }
+
+  .chan {
+    display: flex;
+    gap: var(--sp-3);
+    height: 100%;
+    padding: var(--sp-4);
+    border-radius: var(--r-md);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    transition:
+      border-color var(--dur-fast) var(--ease),
+      transform var(--dur-fast) var(--ease);
+  }
+
+  .chan:hover {
+    transform: translateY(-2px);
+    border-color: var(--line-strong);
+  }
+
+  .chan__ic {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    flex: none;
+    border-radius: var(--r-sm);
+    background: linear-gradient(140deg, rgba(var(--brand-rgb), 0.22), rgba(var(--cyan-rgb), 0.1));
+    border: 1px solid rgba(var(--brand-rgb), 0.24);
+    color: var(--brand-bright);
+  }
+
+  .chan__body {
+    display: grid;
+    gap: 2px;
+    min-width: 0;
+  }
+
+  .chan__label {
+    font-size: var(--t-xs);
+    color: var(--text-3);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  .chan__value {
+    font-size: var(--t-base);
+    font-weight: 700;
+    color: var(--text);
+    overflow-wrap: anywhere;
+  }
+
+  .chan__note {
+    font-size: var(--t-sm);
+    color: var(--text-2);
+  }
+</style>

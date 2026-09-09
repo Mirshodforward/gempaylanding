@@ -50,6 +50,10 @@ src/
       types.ts         maqola blok modeli + yordamchilar
       index.ts         reyestr (posts/ ni avtomatik yig'adi)
       posts/*.ts       maqolalar — har biri alohida fayl
+    legal/
+      types.ts         huquqiy blok modeli (blognikidan kengaytirilgan)
+      oferta.ts payments.ts security.ts contact.ts
+      index.ts         reyestr — sahifa, futer, sitemap shundan
   i18n/ui.ts           landing matnlari (uz/ru/en)
   lib/
     seo.ts             JSON-LD quruvchilar + hreflang
@@ -68,6 +72,8 @@ scripts/
   audit.mjs            haqiqiy brauzerda tekshiruv (pastga qarang)
   ingest.mjs           yaratilgan matnni tekshirib saytga kiritadi
   indexnow.mjs         Bing/Yandex ga yangilanish xabari
+  case.mjs             import nomlarida katta-kichik harf mosligi
+  legal.mjs            rekvizit, to'lov belgisi va huquqiy matn to'liqligi
 .plan/                 kontent rejasi va tadqiqot (repo tarixida qoladi)
 ```
 
@@ -133,6 +139,56 @@ klasterni «tasdiqlanmagan» qilib qo'yardi.
 va `npm run indexnow` (Google IndexNow'ni qo'llab-quvvatlamaydi — unga
 sitemap ishlaydi).
 
+## Huquqiy sahifalar va to'lov tizimlari
+
+To'lov tizimlari (МПС) va ekvayer bank saytdan to'rtta narsani ochiq
+talab qiladi. Har biri alohida sahifa, uchala tilda, futerdan har
+sahifada ko'rinadi:
+
+| Sahifa | Nima uchun |
+| --- | --- |
+| `/oferta` | Xizmat shartlari — foydalanuvchi bilan shartnoma o'rnini bosadi |
+| `/tolov-va-qaytarish` | Qanday to'lash mumkin, pul qaysi hollarda qaytariladi |
+| `/tolov-xavfsizligi` | 3-D Secure, OTP va firibgarlikka qarshi choralar |
+| `/aloqa` | Telefon, pochta, Telegram va rekvizitlar |
+
+Matn `src/data/legal/` da, blogdagi `Block` modeli ustida quriladi —
+shuning uchun jadval, ro'yxat va mundarija blog bilan bir xil ko'rinadi.
+Uchta qo'shimcha blok bor: `paymarks`, `requisites`, `contacts`.
+
+### Rekvizitlar — to'ldirilishi shart
+
+`src/data/site.ts` dagi `LEGAL` va `CONTACT` bo'sh turibdi: bu maydonlar
+haqiqiy guvohnomadan ko'chiriladi va ularni o'ylab topib bo'lmaydi.
+To'ldirilmagan maydon sahifada UMUMAN chiqmaydi — yolg'on rekvizitdan
+ko'ra yo'q rekvizit yaxshi.
+
+`npm run legal` nima yetishmayotganini nomma-nom aytadi. **Telefon
+raqami majburiy** — bank Telegram'ni rasmiy kanal deb hisoblamaydi.
+
+Rekvizitlar to'ldirilgach ular JSON-LD `Organization` tuguniga ham
+(`legalName`, `taxID`, `address`, `telephone`) o'zi tushadi.
+
+### To'lov tizimlari belgilari
+
+`PAYMENT_METHODS` (`site.ts`) — yagona ro'yxat: bosh sahifadagi qator,
+o'yin sahifasi, JSON-LD va huquqiy sahifalar shundan oziqlanadi.
+
+Rasmiy belgini tizimning brend sahifasidan olib, `public/pay/<id>.svg`
+nomi bilan qo'ying (`visa`, `mastercard`, `uzcard`, `humo`, `click`,
+`payme`, `paynet`). Fayl paydo bo'lishi bilan `PayMarks` uni o'zi oladi
+— kodga tegish shart emas. Fayl yo'q bo'lsa matnli katak chiziladi.
+
+**Visa va Mastercard belgilari MAJBURIY** — bu ekvayring shartnomasining
+bandi, shuning uchun `npm run legal` ularsiz o'tmaydi.
+
+### Matn o'zgarsa
+
+Hujjat matnini o'zgartirsangiz o'sha fayldagi `updated` sanasini ham
+yangilang (ofertada u `LEGAL.offerRevision` dan keladi). Bu sana
+sahifada ko'rinadi va sitemapga `lastmod` bo'lib tushadi — nizoda
+foydalanuvchi qaysi tahrirga rozi bo'lgani shundan aniqlanadi.
+
 ## Analitika
 
 Vercel Web Analytics — [src/components/Analytics.astro](src/components/Analytics.astro),
@@ -171,6 +227,7 @@ Katak, futer, sitemap, JSON-LD va OG rasm o'zi yangilanadi.
 
 ```bash
 npm run case      # import nomlari harf-baharf to'g'rimi — MAJBURIY
+npm run legal     # rekvizit va to'lov belgilari joyidami — MAJBURIY
 npm run build
 npm run links     # o'lik havola bo'lmasin — MAJBURIY
 npm run audit -- http://localhost:4399/ ...   # kerakli sahifalarni
@@ -180,6 +237,10 @@ npm run audit -- http://localhost:4399/ ...   # kerakli sahifalarni
 nomidagi katta-kichik harfni ajratmaydi, Vercel'ning Linux'i esa ajratadi.
 `import ... "../Faq.astro"` haqiqiy fayl `FAQ.astro` bo'lsa ham bu yerda
 ishlaydi va deploy'da «Could not resolve» bilan yiqiladi.
+
+`legal` xato bersa ham deploy qilmang: oferta va aloqa sahifasi bankka
+topshiriladigan hujjat, yetishmagan rekvizit esa tekshiruvda ma'lum
+bo'ladi — eng noqulay joyda.
 
 `links` xato bersa deploy qilmang: o'lik ichki havola foydalanuvchini
 yo'qotadi va Google uni «soft 404» deb belgilab, sahifaga bo'lgan ishonchni

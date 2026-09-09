@@ -17,6 +17,8 @@
 import {
   SITE_URL,
   ORG,
+  LEGAL,
+  CONTACT,
   BOT_URL,
   SUPPORT_URL,
   absoluteUrl,
@@ -87,8 +89,29 @@ export function organizationSchema() {
         url: SUPPORT_URL,
         availableLanguage: ["uz", "ru", "en"],
         areaServed: ORG.country,
+        // Telefon va pochta `site.ts` da to'ldirilgandagina qo'shiladi.
+        // Bo'sh qiymat yozilsa Google buni «noto'g'ri strukturaviy
+        // ma'lumot» deb belgilaydi — yo'qligi undan yaxshi.
+        ...(CONTACT.phone ? { telephone: CONTACT.phone } : {}),
+        ...(CONTACT.email ? { email: CONTACT.email } : {}),
       },
     ],
+    // Rasmiy nom, STIR va manzil — rekvizitlar to'ldirilgach o'zi paydo
+    // bo'ladi. Bular E-E-A-T signali: pul bilan ishlaydigan sayt ortida
+    // haqiqiy yuridik shaxs turgani Google uchun ham, bank uchun ham muhim.
+    ...(LEGAL.name ? { legalName: `${LEGAL.entityType} ${LEGAL.name}`.trim() } : {}),
+    ...(LEGAL.inn ? { taxID: LEGAL.inn } : {}),
+    ...(LEGAL.address
+      ? {
+          address: {
+            "@type": "PostalAddress",
+            streetAddress: LEGAL.address,
+            addressCountry: ORG.country,
+          },
+        }
+      : {}),
+    ...(CONTACT.phone ? { telephone: CONTACT.phone } : {}),
+    ...(CONTACT.email ? { email: CONTACT.email } : {}),
   };
 }
 

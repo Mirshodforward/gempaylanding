@@ -1,0 +1,317 @@
+---
+/**
+ * Huquqiy sahifa qobig'i — oferta, to'lov va qaytarish, to'lov
+ * xavfsizligi, aloqa. To'rttasi ham AYNAN shu komponent bilan chiziladi.
+ *
+ * NEGA BITTA QOBIQ: bu hujjatlar birga o'qiladi va bank ularni birga
+ * tekshiradi. Har biri o'z sahifasini o'zicha yasasa, biri mundarijasiz,
+ * biri sanasiz qolardi — tekshiruvda esa aynan shunday tafovutlar ko'zga
+ * tashlanadi.
+ *
+ * SOTUV CHAQIRIG'I ATAYLAB YO'Q: huquqiy sahifada «hoziroq to'ldiring»
+ * tugmasi noo'rin — odam bu yerga shart o'qish yoki muammo hal qilish
+ * uchun keladi. Uning o'rniga qolgan uchta hujjatga havola turadi.
+ */
+import Layout from "../../layouts/Layout.astro";
+import Aurora from "../Aurora.astro";
+import Header from "../Header.astro";
+import Footer from "../Footer.astro";
+import Icon from "../Icon.astro";
+import AnswerBox from "../AnswerBox.astro";
+import Breadcrumbs from "../Breadcrumbs.astro";
+import Faq from "../FAQ.astro";
+import LegalBody from "../legal/LegalBody.astro";
+
+import { t } from "../../i18n/ui";
+import { LEGAL_DOCS, tocOf, type LegalDoc } from "../../data/legal";
+import { SITE_URL, localePath, type Locale } from "../../data/site";
+import {
+  graph,
+  organizationSchema,
+  websiteSchema,
+  breadcrumbSchema,
+  faqSchema,
+} from "../../lib/seo";
+
+interface Props {
+  doc: LegalDoc;
+  locale: Locale;
+}
+
+const { doc, locale } = Astro.props;
+const c = t(locale);
+const content = doc.locales[locale];
+const items = tocOf(content.body);
+
+const crumbs = [
+  { name: c.game.breadcrumbHome, path: "" },
+  { name: content.short, path: doc.slug },
+];
+
+// Aloqa sahifasi `ContactPage` — Google uchun bu alohida tur va u
+// tashkilot tuguniga bog'lanadi. Qolganlari oddiy `WebPage`.
+const pageType = doc.slug === "aloqa" ? "ContactPage" : "WebPage";
+
+const schema = graph(
+  organizationSchema(),
+  websiteSchema(locale),
+  breadcrumbSchema(locale, crumbs),
+  content.faq.length > 0 && faqSchema(content.faq),
+  {
+    "@type": pageType,
+    name: content.title,
+    description: content.metaDescription,
+    inLanguage: locale,
+    // Hujjatning oxirgi tahriri — huquqiy sahifada bu bezak emas.
+    dateModified: doc.updated,
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    about: { "@id": `${SITE_URL}/#organization` },
+    publisher: { "@id": `${SITE_URL}/#organization` },
+  },
+);
+
+/** Qolgan uchta hujjat — sahifa oxiridagi havolalar uchun. */
+const siblings = LEGAL_DOCS.filter((d) => d.slug !== doc.slug);
+
+const fmtDate = (iso: string) =>
+  new Intl.DateTimeFormat(locale === "uz" ? "uz-UZ" : locale === "ru" ? "ru-RU" : "en-GB", {
+    day: "numeric",
+    month: "long",
+    year: "numeric",
+  }).format(new Date(iso));
+---
+
+<Layout
+  locale={locale}
+  path={doc.slug}
+  title={`${content.metaTitle} | GemPay`}
+  description={content.metaDescription}
+  image="/og/default.png"
+  schema={schema}
+>
+  <Aurora />
+  <Header locale={locale} path={doc.slug} />
+
+  <main id="main">
+    <div class="wrap">
+      <Breadcrumbs items={crumbs} locale={locale} />
+
+      <header class="lhead">
+        <p class="lhead__meta">
+          <span class="lhead__ic"><Icon name={doc.icon} size={16} /></span>
+          <time datetime={doc.updated}>{c.legal.updated}: {fmtDate(doc.updated)}</time>
+        </p>
+        <h1 class="lhead__h1">{content.title}</h1>
+      </header>
+
+      <AnswerBox title={c.blog.answerTitle} text={content.answer} />
+
+      {/* Mundarija yon ustunda va skrollda yopishib qoladi — oferta uzun
+          hujjat, o'quvchi kerakli bandga to'g'ridan-to'g'ri sakray oladi. */}
+      <div class="lgrid">
+        {
+          items.length > 2 && (
+            <nav class="toc" aria-labelledby="toc-t">
+              <p class="toc__t" id="toc-t">{c.blog.tocTitle}</p>
+              <ol class="toc__l">
+                {items.map((i) => (
+                  <li>
+                    <a href={`#${i.id}`} data-toc={i.id}>{i.text}</a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+          )
+        }
+
+        <LegalBody blocks={content.body} locale={locale} />
+      </div>
+
+      <nav class="lsibs" aria-label={c.footer.colLegal}>
+        {
+          siblings.map((d) => (
+            <a class="lsib" href={`${localePath(locale, d.slug)}`}>
+              <Icon name={d.icon} size={17} />
+              {d.locales[locale].short}
+              <Icon name="chevron-right" size={13} />
+            </a>
+          ))
+        }
+      </nav>
+    </div>
+
+    {
+      content.faq.length > 0 && (
+        <Faq eyebrow={c.faq.eyebrow} title={c.blog.faqTitle} items={content.faq} id="faq" />
+      )
+    }
+  </main>
+
+  <Footer locale={locale} />
+</Layout>
+
+<style>
+  .lhead {
+    position: relative;
+    z-index: var(--z-body);
+    padding-block: clamp(20px, 3.5vw, 36px) clamp(16px, 2.5vw, 24px);
+  }
+
+  .lhead__meta {
+    display: flex;
+    align-items: center;
+    gap: var(--sp-2);
+    font-size: var(--t-sm);
+    color: var(--text-3);
+    margin-bottom: var(--sp-3);
+  }
+
+  .lhead__ic {
+    display: grid;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: var(--r-sm);
+    background: rgba(var(--brand-rgb), 0.14);
+    border: 1px solid rgba(var(--brand-rgb), 0.22);
+    color: var(--brand-bright);
+  }
+
+  .lhead__h1 {
+    font-size: var(--t-2xl);
+    max-width: 22ch;
+  }
+
+  .lgrid {
+    position: relative;
+    z-index: var(--z-body);
+    margin-top: clamp(28px, 4vw, 44px);
+  }
+
+  /* Yon ustun uchun joy 1080px dan boshlab paydo bo'ladi — matn ustuni
+     `--maxw-prose` ni saqlab qolishi kerak, aks holda qator uzayib
+     o'qilishi qiyinlashadi. */
+  @media (min-width: 1080px) {
+    .lgrid {
+      display: grid;
+      grid-template-columns: minmax(0, 16rem) minmax(0, 1fr);
+      gap: clamp(32px, 4vw, 56px);
+      align-items: start;
+    }
+
+    .toc {
+      position: sticky;
+      top: calc(var(--sp-8) + 48px);
+      max-height: calc(100vh - 140px);
+      overflow-y: auto;
+    }
+  }
+
+  .toc {
+    margin-bottom: var(--sp-6);
+    padding: var(--sp-4);
+    border-radius: var(--r-md);
+    background: var(--surface);
+    border: 1px solid var(--line);
+  }
+
+  .toc__t {
+    font-size: var(--t-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-3);
+    margin-bottom: var(--sp-3);
+  }
+
+  .toc__l {
+    display: grid;
+    gap: var(--sp-2);
+    margin: 0;
+    padding-left: var(--sp-4);
+    font-size: var(--t-sm);
+  }
+
+  .toc__l li::marker {
+    color: var(--text-3);
+  }
+
+  .toc__l a {
+    color: var(--text-2);
+    transition: color var(--dur-fast) var(--ease);
+  }
+
+  .toc__l a:hover {
+    color: var(--text);
+  }
+
+  .toc__l a[aria-current="true"] {
+    color: var(--brand-bright);
+    font-weight: 600;
+  }
+
+  .lsibs {
+    position: relative;
+    z-index: var(--z-body);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+    margin-top: clamp(32px, 5vw, 52px);
+  }
+
+  .lsib {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-2);
+    padding: 11px 18px;
+    border-radius: var(--r-pill);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    font-size: var(--t-sm);
+    font-weight: 600;
+    transition:
+      border-color var(--dur-fast) var(--ease),
+      transform var(--dur-fast) var(--ease);
+  }
+
+  .lsib:hover {
+    transform: translateY(-2px);
+    border-color: var(--line-strong);
+  }
+
+  .lsib :global(svg:first-child) {
+    color: var(--accent);
+  }
+
+  .lsib :global(svg:last-child) {
+    opacity: 0.5;
+  }
+</style>
+
+<script>
+  /**
+   * Mundarijada joriy bo'limni belgilash — blogdagi bilan bir xil mantiq.
+   * Uzun ofertada o'quvchi qayerdaligini yo'qotmasligi uchun kerak.
+   */
+  const links = document.querySelectorAll<HTMLAnchorElement>(".toc__l a[data-toc]");
+  if (links.length) {
+    const byId = new Map([...links].map((a) => [a.dataset.toc!, a]));
+    const heads = [...byId.keys()]
+      .map((id) => document.getElementById(id))
+      .filter((el): el is HTMLElement => el !== null);
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        for (const e of entries) {
+          if (!e.isIntersecting) continue;
+          for (const a of links) a.removeAttribute("aria-current");
+          byId.get(e.target.id)?.setAttribute("aria-current", "true");
+        }
+      },
+      // Yuqori chegara ekranning uchdan bir qismida: sarlavha ekranga
+      // kirishi bilan emas, o'qish zonasiga yetganda belgilanadi.
+      { rootMargin: "-80px 0px -66% 0px", threshold: 0 },
+    );
+
+    for (const h of heads) io.observe(h);
+  }
+</script>

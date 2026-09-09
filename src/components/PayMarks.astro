@@ -1,0 +1,109 @@
+---
+/**
+ * Qabul qilinadigan to'lov tizimlari belgilari.
+ *
+ * NEGA KERAK: xalqaro to'lov tizimlari (МПС) savdo nuqtasidan o'z
+ * belgilarini ko'rsatishni TALAB qiladi — bu ekvayring shartnomasining
+ * bandi. Belgilar bo'lmasa hujjatlar tekshiruvi o'tmaydi.
+ *
+ * RASMIY FAYL QANDAY QO'SHILADI: har bir tizimning brend sahifasidan
+ * rasmiy SVG belgisini oling va `public/pay/<id>.svg` nomi bilan qo'ying
+ * (`id` — `site.ts` dagi `PAYMENT_METHODS` dan: `visa`, `mastercard`,
+ * `uzcard`, `humo`, `click`, `payme`, `paynet`). Fayl paydo bo'lishi
+ * bilan shu komponent uni O'ZI oladi — kodga tegish shart emas.
+ *
+ * Fayl hali yo'q bo'lsa matnli belgi chiziladi: tizim nomi karta
+ * shaklidagi katakda. Bu vaqtinchalik yechim — rasmiy belgi qo'yilgach
+ * o'rnini bo'shatadi.
+ */
+import { existsSync } from "node:fs";
+import path from "node:path";
+import { PAYMENT_METHODS } from "../data/site";
+
+interface Props {
+  /** Ro'yxat ustidagi izoh — ekran o'quvchisi uchun ham nom bo'ladi */
+  title?: string;
+}
+
+const { title } = Astro.props;
+
+// Build vaqtida bir marta tekshiriladi — brauzerga tayyor natija boradi.
+const MARK_DIR = path.resolve("public/pay");
+
+const marks = PAYMENT_METHODS.map((m) => ({
+  ...m,
+  file: existsSync(path.join(MARK_DIR, `${m.id}.svg`)) ? `/pay/${m.id}.svg` : null,
+}));
+---
+
+<div class="marks" role="group" aria-label={title ?? "Qabul qilinadigan to'lov usullari"}>
+  {title && <p class="marks__t">{title}</p>}
+  <ul class="marks__l">
+    {
+      marks.map((m) => (
+        <li class:list={["mark", `mark--${m.kind}`]}>
+          {m.file ? (
+            <img class="mark__img" src={m.file} alt={m.name} width="48" height="30" loading="lazy" decoding="async" />
+          ) : (
+            <span class="mark__txt">{m.name}</span>
+          )}
+        </li>
+      ))
+    }
+  </ul>
+</div>
+
+<style>
+  .marks {
+    margin-block: var(--sp-5);
+  }
+
+  .marks__t {
+    font-size: var(--t-sm);
+    color: var(--text-2);
+    margin-bottom: var(--sp-3);
+  }
+
+  .marks__l {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Karta shakli: nisbat va yumaloqlik haqiqiy kartaga yaqin — belgi
+     matn bo'lganda ham «to'lov usuli» bo'lib o'qiladi. */
+  .mark {
+    display: grid;
+    place-items: center;
+    min-width: 76px;
+    height: 46px;
+    padding-inline: 12px;
+    border-radius: 10px;
+    background: var(--surface);
+    border: 1px solid var(--line);
+  }
+
+  /* Xalqaro tizimlar biroz ajratib ko'rsatiladi — МПС talabi aynan
+     ularning ko'rinishiga tegishli. */
+  .mark--card-intl {
+    border-color: var(--line-strong);
+  }
+
+  .mark__img {
+    display: block;
+    width: auto;
+    height: 26px;
+    max-width: 100%;
+  }
+
+  .mark__txt {
+    font-size: var(--t-xs);
+    font-weight: 700;
+    letter-spacing: 0.01em;
+    color: var(--text);
+    white-space: nowrap;
+  }
+</style>

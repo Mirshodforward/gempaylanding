@@ -1,0 +1,133 @@
+---
+/**
+ * Yuridik shaxs rekvizitlari.
+ *
+ * `site.ts` dagi `LEGAL` dan oziqlanadi va FAQAT to'ldirilgan maydonlarni
+ * chiqaradi — bo'sh qator o'rniga tire qo'yish yoki taxminiy qiymat
+ * yozish huquqiy hujjatda yo'l qo'yib bo'lmaydigan narsa.
+ *
+ * Hech bir majburiy maydon to'ldirilmagan bo'lsa, sahifa jim qolmaydi:
+ * nima yetishmayotgani ochiq yoziladi. Bu holat produksiyaga chiqmasligi
+ * kerak va chiqmaydi ham — `npm run legal` deploy oldida to'xtatadi.
+ */
+import Icon from "../Icon.astro";
+import { t } from "../../i18n/ui";
+import { LEGAL, REQUIRED_LEGAL_FIELDS, ORG, type Locale } from "../../data/site";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const c = t(locale).legal;
+
+const rows = [
+  { k: c.req.brand, v: ORG.name },
+  { k: c.req.entityType, v: LEGAL.entityType },
+  { k: c.req.name, v: LEGAL.name },
+  { k: c.req.inn, v: LEGAL.inn },
+  { k: c.req.address, v: LEGAL.address },
+  { k: c.req.registeredOn, v: LEGAL.registeredOn },
+  { k: c.req.bank, v: LEGAL.bank.name },
+  { k: c.req.account, v: LEGAL.bank.account },
+  { k: c.req.mfo, v: LEGAL.bank.mfo },
+].filter((r) => r.v);
+
+// Faqat MAJBURIY maydonlar tekshiriladi — bank rekvizitlari ixtiyoriy.
+const missing = REQUIRED_LEGAL_FIELDS.filter(({ path }) => {
+  const [root, key] = path.split(".");
+  if (root !== "LEGAL") return false;
+  return !(LEGAL as Record<string, unknown>)[key];
+});
+---
+
+<div class="req">
+  <dl class="req__l" aria-label={c.reqTitle}>
+    {
+      rows.map((r) => (
+        <div class="req__row">
+          <dt class="req__k">{r.k}</dt>
+          <dd class="req__v">{r.v}</dd>
+        </div>
+      ))
+    }
+  </dl>
+
+  {
+    missing.length > 0 && (
+      <p class="req__missing">
+        <Icon name="alert-triangle" size={16} />
+        <span>
+          {c.reqMissing}: {missing.map((m) => m.label).join(", ")}.
+        </span>
+      </p>
+    )
+  }
+</div>
+
+<style>
+  .req {
+    margin-block: var(--sp-5);
+  }
+
+  .req__l {
+    display: grid;
+    gap: 1px;
+    border: 1px solid var(--line);
+    border-radius: var(--r-md);
+    background: var(--line);
+    overflow: hidden;
+  }
+
+  .req__row {
+    display: grid;
+    gap: 2px;
+    padding: var(--sp-3) var(--sp-4);
+    background: var(--surface-solid);
+  }
+
+  /* Keng ekranda kalit va qiymat yonma-yon — rekvizitni ko'z bilan
+     tekshirish oson bo'ladi. Tor ekranda ustma-ust, chunki manzil va
+     hisob raqami uzun. */
+  @media (min-width: 640px) {
+    .req__row {
+      grid-template-columns: minmax(0, 15rem) minmax(0, 1fr);
+      gap: var(--sp-4);
+      align-items: baseline;
+    }
+  }
+
+  .req__k {
+    font-size: var(--t-sm);
+    color: var(--text-2);
+  }
+
+  .req__v {
+    font-size: var(--t-base);
+    color: var(--text);
+    font-weight: 600;
+    margin: 0;
+    /* Hisob raqami va STIR — raqamli qiymat, monoshrift o'qishni osonlashtiradi */
+    font-variant-numeric: tabular-nums;
+    overflow-wrap: anywhere;
+  }
+
+  .req__missing {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--sp-2);
+    margin-top: var(--sp-3);
+    padding: var(--sp-3) var(--sp-4);
+    border-radius: var(--r-md);
+    border: 1px solid rgba(var(--accent-rgb), 0.35);
+    background: rgba(var(--accent-rgb), 0.08);
+    font-size: var(--t-sm);
+    color: var(--text-2);
+  }
+
+  .req__missing :global(svg) {
+    flex: none;
+    margin-top: 2px;
+    color: var(--accent);
+  }
+</style>

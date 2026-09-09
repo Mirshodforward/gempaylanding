@@ -9,6 +9,7 @@
 import Logo from "./Logo.astro";
 import Icon from "./Icon.astro";
 import { CATALOG } from "../data/games";
+import { legalNav } from "../data/legal";
 import { t } from "../i18n/ui";
 import {
   localePath,
@@ -27,6 +28,13 @@ interface Props {
 const { locale } = Astro.props;
 const c = t(locale);
 const year = new Date().getFullYear();
+
+/**
+ * Huquqiy hujjatlar HAR SAHIFANING futerida turadi — bu to'lov tizimlari
+ * talabi: oferta, to'lov shartlari, xavfsizlik va aloqa saytning istalgan
+ * nuqtasidan bir bosishda ochilishi kerak.
+ */
+const legal = legalNav(locale);
 ---
 
 <footer class="ftr">
@@ -94,6 +102,19 @@ const year = new Date().getFullYear();
           </li>
         </ul>
       </nav>
+
+      <nav class="ftr__col" aria-labelledby="f-legal">
+        <h2 class="ftr__h" id="f-legal">{c.footer.colLegal}</h2>
+        <ul class="ftr__list">
+          {
+            legal.map((d) => (
+              <li>
+                <a class="ftr__link" href={`${localePath(locale, d.slug)}`}>{d.label}</a>
+              </li>
+            ))
+          }
+        </ul>
+      </nav>
     </div>
 
     <div class="ftr__bot-bar">
@@ -121,9 +142,26 @@ const year = new Date().getFullYear();
     grid-template-columns: 1fr;
   }
 
+  /* O'rta ekranda brend butun qatorni oladi, to'rtta ustun esa 2×2 bo'lib
+     joylashadi. Beshtasini birdaniga tiqishtirish ularni o'qib bo'lmas
+     darajada toraytirardi. */
   @media (min-width: 720px) {
     .ftr__top {
-      grid-template-columns: 1.4fr repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .ftr__brand {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .ftr__top {
+      grid-template-columns: 1.3fr repeat(4, minmax(0, 1fr));
+    }
+
+    .ftr__brand {
+      grid-column: auto;
     }
   }
 
