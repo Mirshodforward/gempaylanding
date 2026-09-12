@@ -634,6 +634,14 @@ const schema = graph(
     font-size: var(--t-md);
   }
 
+  /* Tor ekranda tugma butun kenglikni egallaydi va uzun matn ikonani
+     siqib, uni nuqtaga aylantirib qo'yardi — SVG sukut bo'yicha
+     `flex-shrink: 1`. Ikonka ham, hajm nishoni ham qisqarmaydi. */
+  .ahero__btn :global(svg),
+  .ahero__size {
+    flex: none;
+  }
+
   .ahero__size {
     padding: 3px 9px;
     border-radius: var(--r-pill);

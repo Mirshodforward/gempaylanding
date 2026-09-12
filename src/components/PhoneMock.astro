@@ -29,15 +29,20 @@ interface Props {
 const { locale, alt } = Astro.props;
 const c = t(locale);
 
-// Ikki qator — olti katak. Ramka balandligi cheklangan, qolganini
-// foydalanuvchi ilovaning o'zida ko'radi.
-const tiles = CATALOG.slice(0, 6);
+// BUTUN katalog — o'nta xizmat. Ilovadagi bosh ekran ham aynan shunday:
+// uch ustunda 3+3+3+1. Ilgari bu yerda olti katak chizilardi va ekranning
+// pastki uchdan ikki qismi bo'm-bo'sh qorayib turardi — ilova yarim
+// tayyordek ko'rinardi. Katalog o'zgarsa ramka o'zi ergashadi.
+const tiles = CATALOG;
 ---
 
 <figure class="pm" role="img" aria-label={alt}>
   <div class="pm__frame">
     <div class="pm__screen">
-      <span class="pm__pill" aria-hidden="true"></span>
+      {/* Punch-hole kamera — Android telefonlarning eng tanilgan belgisi.
+          Ilgari bu yerda 44px kenglikdagi pill turardi, u esa iPhone'ning
+          Dynamic Island'iga o'xshab, qurilmani noto'g'ri tanitardi. */}
+      <span class="pm__cam" aria-hidden="true"></span>
 
       <div class="pm__top">
         <span class="pm__brand">
@@ -82,6 +87,8 @@ const tiles = CATALOG.slice(0, 6);
         <span class="pm__dot" aria-hidden="true">·</span>
         <span>{c.footer.support}</span>
       </div>
+
+      <span class="pm__nav" aria-hidden="true"></span>
     </div>
   </div>
 </figure>
@@ -132,7 +139,8 @@ const tiles = CATALOG.slice(0, 6);
     display: flex;
     flex-direction: column;
     gap: 9px;
-    padding: 20px 11px 11px;
+    /* Pastdagi 15px — gesture chizig'iga joy (`.pm__nav`) */
+    padding: 20px 11px 15px;
     border-radius: 26px;
     background:
       radial-gradient(120% 70% at 50% 0%, rgba(var(--brand-rgb), 0.24), transparent 62%),
@@ -141,15 +149,31 @@ const tiles = CATALOG.slice(0, 6);
   }
 
   /* Dinamik oroli — qurilma ekani darhol o'qilsin */
-  .pm__pill {
+  .pm__cam {
     position: absolute;
-    top: 7px;
+    top: 8px;
     left: 50%;
     transform: translateX(-50%);
-    width: 44px;
-    height: 7px;
-    border-radius: 99px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
     background: #05070d;
+    /* Ingichka yorug' halqa — linza chetidagi aks, kamerani "teshik"
+       qilib ko'rsatadi, shunchaki qora nuqta emas. */
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+  }
+
+  /* Pastdagi gesture chizig'i — Android navigatsiyasi. Kamera bilan
+     birga qurilmani bir qarashda tanitadigan ikkinchi belgi. */
+  .pm__nav {
+    position: absolute;
+    left: 50%;
+    bottom: 5px;
+    transform: translateX(-50%);
+    width: 32%;
+    height: 3px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.5);
   }
 
   .pm__top {
