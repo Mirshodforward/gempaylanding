@@ -23,6 +23,7 @@ import Footer from "../Footer.astro";
 import Icon from "../Icon.astro";
 import AnswerBox from "../AnswerBox.astro";
 import Breadcrumbs from "../Breadcrumbs.astro";
+import PhoneMock from "../PhoneMock.astro";
 import Faq from "../FAQ.astro";
 
 import { t } from "../../i18n/ui";
@@ -57,6 +58,17 @@ const COPY = {
       `GemPay Android ilovasi: ${gameCount} ta o'yin va Steam hamyonini so'mda to'ldirish. ` +
       `APK ${app.sizeMb} MB, Android ${app.minAndroid}+. O'rnatish yo'riqnomasi va fayl nazorat summasi.`,
     h1: "GemPay ilovasi",
+    /** Rasmiy ekanini AYTISH — do'kondan tashqarida tarqatilgan APK uchun
+        bu bezak emas: soxta nusxa aynan shu bo'shliqdan foydalanadi. */
+    official: "GemPay'ning rasmiy ilovasi",
+    officialNote:
+      "Faqat shu sahifadan yuklab oling. Boshqa saytlar yoki kanallardagi " +
+      "\"GemPay\" APK'si bizga tegishli emas — faylni quyidagi nazorat summasi bilan tekshiring.",
+    lede:
+      `O'yin hisobi va Steam hamyonini so'mda to'ldirish uchun Android ilovasi. ` +
+      `${gameCount} ta xizmat, Telegram orqali kirish, parolsiz. Play Store'da emas — ` +
+      `APK to'g'ridan-to'g'ri shu yerdan olinadi.`,
+    mockAlt: "GemPay ilovasining bosh ekrani: o'yinlar katalogi va yetkazish muddati",
     answer:
       `GemPay Android ilovasi — o'yin hisobini so'mda to'ldirish uchun. Unda ${gameCount} ta o'yin va ` +
       `Steam hamyoni bor. Ilova Play Store'da emas: APK'ni shu sahifadan yuklab olasiz va bir marta ` +
@@ -165,6 +177,15 @@ const COPY = {
       `Android-приложение GemPay: пополнение ${gameCount} игр и кошелька Steam в сумах. ` +
       `APK ${app.sizeMb} МБ, Android ${app.minAndroid}+. Инструкция по установке и контрольная сумма файла.`,
     h1: "Приложение GemPay",
+    official: "Официальное приложение GemPay",
+    officialNote:
+      "Скачивайте только с этой страницы. APK с названием \"GemPay\" на других сайтах " +
+      "и в каналах нам не принадлежит — проверьте файл по контрольной сумме ниже.",
+    lede:
+      `Приложение для Android: пополнение игрового счёта и кошелька Steam в сумах. ` +
+      `${gameCount} сервисов, вход через Telegram, без пароля. В Play Store его нет — ` +
+      `APK скачивается напрямую отсюда.`,
+    mockAlt: "Главный экран приложения GemPay: каталог игр и время зачисления",
     answer:
       `Android-приложение GemPay — пополнение игрового счёта в сумах. В нём ${gameCount} игр и кошелёк ` +
       `Steam. Приложения нет в Play Store: APK скачивается с этой страницы, один раз выдаётся ` +
@@ -272,6 +293,15 @@ const COPY = {
       `GemPay Android app: top up ${gameCount} games and the Steam wallet in Uzbek som. ` +
       `APK ${app.sizeMb} MB, Android ${app.minAndroid}+. Install guide and file checksum.`,
     h1: "GemPay app",
+    official: "The official GemPay app",
+    officialNote:
+      "Download it only from this page. A \"GemPay\" APK on any other site or channel is " +
+      "not ours — check the file against the checksum below.",
+    lede:
+      `The Android app for topping up game accounts and Steam wallets in Uzbek som. ` +
+      `${gameCount} services, sign-in through Telegram, no password. It is not on the Play ` +
+      `Store — the APK comes straight from here.`,
+    mockAlt: "The GemPay app home screen: the game catalog and delivery times",
     answer:
       `The GemPay Android app tops up game accounts in Uzbek som. It covers ${gameCount} games and the ` +
       `Steam wallet. The app is not on the Play Store: you download the APK from this page and grant ` +
@@ -429,36 +459,48 @@ const schema = graph(
     <div class="wrap">
       <Breadcrumbs items={crumbs} locale={locale} />
 
-      <header class="ihead">
-        <h1>{copy.h1}</h1>
-      </header>
+      {/* Qahramon bloki: chapda nima ekani va yuklab olish, o'ngda
+          ilovaning o'zi. Tugma birinchi ekranda, aylantirmasdan
+          ko'rinishi kerak — sahifaning butun maqsadi shu. */}
+      <section class="ahero">
+        <div class="ahero__text">
+          <p class="ahero__badge">
+            <Icon name="shield-check" size={15} />
+            {copy.official}
+          </p>
 
-      <AnswerBox title={c.blog.answerTitle} text={copy.answer} />
+          <h1 class="ahero__h1">{copy.h1}</h1>
+          <p class="ahero__lede">{copy.lede}</p>
 
-      {/* Yuklab olish bloki — sahifaning asosiy harakati, shuning uchun
-          eng tepada va boshqa hamma narsadan ajralib turadi. */}
-      <section class="dl" aria-labelledby="dl-h">
-        <div class="dl__body">
-          <h2 class="dl__h" id="dl-h">{copy.dlTitle}</h2>
-          <dl class="dl__specs">
+          <a class="btn btn--primary ahero__btn" href={app.url} rel="nofollow" download>
+            <Icon name="download" size={19} />
+            {copy.dlTitle}
+            <span class="ahero__size">{app.sizeMb} MB</span>
+          </a>
+
+          <dl class="ahero__specs">
             {
-              copy.specs.map((s) => (
-                <div class="dl__spec">
-                  <dt>{s.k}</dt>
-                  <dd>{s.v}</dd>
+              copy.specs.map((sp) => (
+                <div class="ahero__spec">
+                  <dt>{sp.k}</dt>
+                  <dd>{sp.v}</dd>
                 </div>
               ))
             }
           </dl>
+
+          <p class="ahero__warn">
+            <Icon name="alert-triangle" size={15} />
+            <span>{copy.officialNote}</span>
+          </p>
         </div>
 
-        <a class="btn btn--primary dl__btn" href={app.url} rel="nofollow" download>
-          <Icon name="download" size={18} />
-          {copy.dlTitle}
-          <span class="dl__size">{app.sizeMb} MB</span>
-        </a>
-        <p class="dl__note">{copy.dlNote} · {app.packageId}</p>
+        <div class="ahero__vis">
+          <PhoneMock locale={locale} alt={copy.mockAlt} />
+        </div>
       </section>
+
+      <AnswerBox title={c.blog.answerTitle} text={copy.answer} />
 
       {/* iOS holati — ochiq aytiladi, "tez orada" va'dasiz */}
       {
@@ -532,13 +574,124 @@ const schema = graph(
 </Layout>
 
 <style>
-  .ihead {
+  /* --- qahramon bloki ------------------------------------------------ */
+
+  .ahero {
     position: relative;
     z-index: var(--z-body);
-    padding-block: clamp(24px, 4vw, 44px) clamp(20px, 3vw, 32px);
+    display: grid;
+    gap: clamp(28px, 5vw, 48px);
+    align-items: center;
+    padding-block: clamp(22px, 4vw, 44px) clamp(28px, 4vw, 48px);
+  }
+
+  /* Ikki ustun faqat telefon ramkasi matnni siqib qo'ymaydigan
+     kenglikdan boshlanadi. Undan torida u matn OSTIDA turadi —
+     yonma-yon tiqilgan ramka o'qishni ham, tugmani ham buzardi. */
+  @media (min-width: 900px) {
+    .ahero {
+      grid-template-columns: minmax(0, 1.12fr) minmax(0, 0.88fr);
+    }
+  }
+
+  .ahero__text {
+    min-width: 0;
+  }
+
+  .ahero__badge {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-2);
+    padding: 6px 14px 6px 11px;
+    margin-bottom: var(--sp-4);
+    border-radius: var(--r-pill);
+    font-size: var(--t-sm);
+    font-weight: 700;
+    color: var(--mint);
+    background: rgba(var(--brand-rgb), 0.1);
+    border: 1px solid rgba(var(--brand-rgb), 0.28);
+  }
+
+  .ahero__h1 {
+    font-size: var(--t-3xl);
+    line-height: 1.08;
+    margin-bottom: var(--sp-4);
+  }
+
+  .ahero__lede {
+    font-size: var(--t-lg);
+    line-height: 1.6;
+    color: var(--text-2);
+    max-width: 46ch;
+  }
+
+  .ahero__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-3);
+    margin-top: clamp(20px, 3vw, 30px);
+    padding: 16px 26px;
+    font-size: var(--t-md);
+  }
+
+  .ahero__size {
+    padding: 3px 9px;
+    border-radius: var(--r-pill);
+    font-size: var(--t-xs);
+    font-weight: 700;
+    background: rgba(0, 0, 0, 0.22);
+  }
+
+  /* Versiya, hajm, Android — tugma ostida, qaror uchun kerakli
+     ma'lumot bir qarashda ko'rinsin. */
+  .ahero__specs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-3) clamp(18px, 3vw, 32px);
+    margin-top: clamp(20px, 3vw, 28px);
+    padding-top: var(--sp-4);
+    border-top: 1px solid var(--line);
+  }
+
+  .ahero__spec dt {
+    font-size: var(--t-xs);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--text-3);
+  }
+
+  .ahero__spec dd {
+    margin: 2px 0 0;
+    font-size: var(--t-base);
+    font-weight: 700;
+    color: var(--text);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .ahero__warn {
+    display: flex;
+    gap: var(--sp-2);
+    margin-top: var(--sp-4);
+    font-size: var(--t-sm);
+    line-height: 1.6;
+    color: var(--text-2);
+    max-width: 52ch;
+  }
+
+  .ahero__warn :global(svg) {
+    flex: none;
+    margin-top: 3px;
+    color: var(--gold);
+  }
+
+  .ahero__vis {
+    display: flex;
+    justify-content: center;
+    min-width: 0;
   }
 
   .ih2 {
+
     position: relative;
     z-index: var(--z-body);
     font-size: var(--t-lg);
@@ -547,66 +700,6 @@ const schema = graph(
   }
 
   /* ---------------------------------------------------------- yuklab olish */
-
-  .dl {
-    position: relative;
-    z-index: var(--z-body);
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: var(--sp-4) clamp(20px, 4vw, 40px);
-    margin-top: clamp(28px, 4vw, 44px);
-    padding: clamp(20px, 3vw, 30px);
-    border-radius: var(--r-lg);
-    background: linear-gradient(140deg, rgba(var(--brand-rgb), 0.16), rgba(var(--cyan-rgb), 0.07));
-    border: 1px solid rgba(var(--brand-rgb), 0.28);
-  }
-
-  .dl__body {
-    flex: 1 1 260px;
-    min-width: 0;
-  }
-
-  .dl__h {
-    font-size: var(--t-md);
-    margin-bottom: var(--sp-3);
-  }
-
-  .dl__specs {
-    display: flex;
-    flex-wrap: wrap;
-    gap: var(--sp-2) clamp(16px, 3vw, 28px);
-  }
-
-  .dl__spec dt {
-    font-size: var(--t-xs);
-    color: var(--text-3);
-  }
-
-  .dl__spec dd {
-    font-size: var(--t-sm);
-    font-weight: 600;
-    margin-top: 2px;
-  }
-
-  .dl__btn {
-    flex: 0 0 auto;
-    gap: var(--sp-2);
-  }
-
-  .dl__size {
-    font-size: var(--t-xs);
-    font-weight: 500;
-    opacity: 0.75;
-  }
-
-  .dl__note {
-    flex: 1 1 100%;
-    font-size: var(--t-xs);
-    color: var(--text-3);
-  }
-
-  /* ------------------------------------------------------------------ iOS */
 
   .ios {
     position: relative;

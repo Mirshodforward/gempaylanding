@@ -1,0 +1,276 @@
+---
+/**
+ * Ilova ekrani telefon ramkasida.
+ *
+ * NEGA MOCKUP, SKRINSHOT EMAS: haqiqiy skrinshot qurilmada olinadi va
+ * har relizda eskiradi — o'yin qo'shilsa yoki muqova almashsa, rasm
+ * yolg'on bo'lib qoladi. Bu ramka esa `games.ts` dan oziqlanadi, ya'ni
+ * katalog o'zgarsa u ham o'zi o'zgaradi.
+ *
+ * TUZILISHI ILOVANIKI: `lib/screens/hub_screen.dart` da bosh ekran
+ * uch ustunli katak (`crossAxisCount: 3`), har katakning chap yuqorisida
+ * yetkazish muddati chipi (`_EtaChip`), pastda esa huquqiy havolalar
+ * turadi. Shu tartib bu yerda takrorlangan — bo'lmagan imkoniyat
+ * chizilmaydi.
+ */
+import { Image } from "astro:assets";
+import Icon from "./Icon.astro";
+import { CATALOG, etaText } from "../data/games";
+import { gameImage } from "../lib/gameImages";
+import { t } from "../i18n/ui";
+import type { Locale } from "../data/site";
+
+interface Props {
+  locale: Locale;
+  /** Ekranni o'quvchiga tasvirlaydigan matn */
+  alt: string;
+}
+
+const { locale, alt } = Astro.props;
+const c = t(locale);
+
+// Ikki qator — olti katak. Ramka balandligi cheklangan, qolganini
+// foydalanuvchi ilovaning o'zida ko'radi.
+const tiles = CATALOG.slice(0, 6);
+---
+
+<figure class="pm" role="img" aria-label={alt}>
+  <div class="pm__frame">
+    <div class="pm__screen">
+      <span class="pm__pill" aria-hidden="true"></span>
+
+      <div class="pm__top">
+        <span class="pm__brand">
+          <Icon name="gem" size={13} />
+          GemPay
+        </span>
+        <span class="pm__bal">
+          <Icon name="wallet" size={11} />
+          UZS
+        </span>
+      </div>
+
+      <div class="pm__grid">
+        {
+          tiles.map((g) => {
+            const img = gameImage(g.slug);
+            return (
+              <span class="pm__tile">
+                {img && (
+                  <Image
+                    class="pm__img"
+                    src={img}
+                    alt=""
+                    width={120}
+                    height={120}
+                    widths={[120, 240]}
+                    sizes="72px"
+                    loading="lazy"
+                    aria-hidden="true"
+                  />
+                )}
+                <span class="pm__eta">{etaText(g.etaMinutes, locale)}</span>
+                <span class="pm__name">{g.title}</span>
+              </span>
+            );
+          })
+        }
+      </div>
+
+      <div class="pm__foot">
+        <span>{c.footer.colLegal}</span>
+        <span class="pm__dot" aria-hidden="true">·</span>
+        <span>{c.footer.support}</span>
+      </div>
+    </div>
+  </div>
+</figure>
+
+<style>
+  .pm {
+    position: relative;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    /* Ramka o'z konteyneridan kengroq bo'lib ketmasin — mobil overflow
+       auditda darhol jarima bo'ladi. */
+    max-width: 100%;
+  }
+
+  /* Ramka ortidagi yumshoq yorug'lik — qurilma fonda «suzib» turgandek
+     ko'rinadi va qora fonda chekkasi yo'qolib qolmaydi. */
+  .pm::before {
+    content: "";
+    position: absolute;
+    inset: -12% -6%;
+    z-index: -1;
+    border-radius: 50%;
+    background: radial-gradient(
+      55% 45% at 50% 42%,
+      rgba(var(--brand-rgb), 0.3),
+      transparent 70%
+    );
+    filter: blur(18px);
+    pointer-events: none;
+  }
+
+  .pm__frame {
+    width: min(268px, 74vw);
+    aspect-ratio: 9 / 19;
+    padding: 9px;
+    border-radius: 34px;
+    background: linear-gradient(160deg, #23283a, #0d1018 55%);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow:
+      0 30px 70px -30px rgba(0, 0, 0, 0.9),
+      0 0 0 1px rgba(0, 0, 0, 0.4) inset;
+  }
+
+  .pm__screen {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding: 20px 11px 11px;
+    border-radius: 26px;
+    background:
+      radial-gradient(120% 70% at 50% 0%, rgba(var(--brand-rgb), 0.24), transparent 62%),
+      var(--bg);
+    overflow: hidden;
+  }
+
+  /* Dinamik oroli — qurilma ekani darhol o'qilsin */
+  .pm__pill {
+    position: absolute;
+    top: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 44px;
+    height: 7px;
+    border-radius: 99px;
+    background: #05070d;
+  }
+
+  .pm__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6px;
+  }
+
+  .pm__brand,
+  .pm__bal {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 9.5px;
+    font-weight: 700;
+    letter-spacing: 0.01em;
+  }
+
+  .pm__brand {
+    color: var(--text);
+  }
+
+  .pm__brand :global(svg) {
+    color: var(--brand-bright);
+  }
+
+  .pm__bal {
+    padding: 3px 7px;
+    border-radius: 99px;
+    color: var(--text-2);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid var(--line);
+  }
+
+  /* Ilovadagi kabi uch ustun */
+  .pm__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 6px;
+  }
+
+  .pm__tile {
+    position: relative;
+    display: block;
+    border-radius: 9px;
+    overflow: hidden;
+    background: var(--surface);
+    border: 1px solid var(--line);
+    aspect-ratio: 1 / 1.28;
+  }
+
+  .pm__img {
+    width: 100%;
+    height: 72%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .pm__eta {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    padding: 1.5px 4px;
+    border-radius: 99px;
+    font-size: 6.5px;
+    font-weight: 700;
+    color: #05070d;
+    background: rgba(var(--accent-rgb), 0.92);
+    white-space: nowrap;
+  }
+
+  .pm__name {
+    display: block;
+    padding: 3px 4px 0;
+    font-size: 6.5px;
+    line-height: 1.25;
+    font-weight: 600;
+    color: var(--text-2);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .pm__foot {
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding-top: 7px;
+    border-top: 1px solid var(--line);
+    font-size: 7px;
+    color: var(--text-3);
+  }
+
+  .pm__dot {
+    opacity: 0.6;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .pm__frame {
+      transition: transform var(--dur) var(--ease);
+    }
+
+    /* Juda sekin egilish — sahifa «tirik» ko'rinsin, lekin diqqatni
+       yuklab olish tugmasidan tortmasin. */
+    @media (min-width: 900px) {
+      .pm__frame {
+        transform: rotate(-2.5deg);
+      }
+
+      .pm:hover .pm__frame {
+        transform: rotate(0deg) translateY(-4px);
+      }
+    }
+  }
+
+  @media (min-width: 1120px) {
+    .pm__frame {
+      width: 300px;
+    }
+  }
+</style>
