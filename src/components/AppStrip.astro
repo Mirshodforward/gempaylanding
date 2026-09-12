@@ -1,0 +1,150 @@
+---
+/**
+ * Bosh sahifadagi ilova chizig'i — APK'ga to'g'ridan-to'g'ri yo'l.
+ *
+ * NEGA TEPADA: ilova Play Store'da yo'q, ya'ni uni qidiruvdan topib
+ * bo'lmaydi. Agar havola faqat futerda tursa, mijoz uning borligini
+ * bilmay ketadi. Shuning uchun u hero'dan keyin, katalogdan OLDIN —
+ * sahifaning birinchi ekranidan keyingi ilk blok.
+ *
+ * Ikki tugma ataylab: birinchisi faylni darhol yuklaydi (asosiy harakat),
+ * ikkinchisi sahifaga olib boradi — o'rnatish yo'riqnomasi, nazorat
+ * summasi va iOS holati o'sha yerda. Faylni bosishdan oldin o'qib
+ * ko'rmoqchi bo'lgan odamni majburlamaymiz.
+ */
+import Icon from "./Icon.astro";
+import { t } from "../i18n/ui";
+import { ANDROID_APP } from "../data/app";
+import { localePath, type Locale } from "../data/site";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const c = t(locale);
+const app = ANDROID_APP;
+
+const COPY = {
+  uz: {
+    badge: "Android",
+    title: "GemPay ilovasi",
+    lede: `To'qqizta o'yin va Steam — telefoningizda. APK ${app.sizeMb} MB, Android ${app.minAndroid}+.`,
+    dl: "APK yuklab olish",
+    more: "Batafsil",
+  },
+  ru: {
+    badge: "Android",
+    title: "Приложение GemPay",
+    lede: `Девять игр и Steam — на вашем телефоне. APK ${app.sizeMb} МБ, Android ${app.minAndroid}+.`,
+    dl: "Скачать APK",
+    more: "Подробнее",
+  },
+  en: {
+    badge: "Android",
+    title: "GemPay app",
+    lede: `Nine games and Steam on your phone. APK ${app.sizeMb} MB, Android ${app.minAndroid}+.`,
+    dl: "Download APK",
+    more: "Details",
+  },
+} as const;
+
+const copy = COPY[locale];
+---
+
+<section class="wrap" aria-labelledby="app-strip-h">
+  <div class="strip">
+    <span class="strip__ic"><Icon name="smartphone" size={22} /></span>
+
+    <div class="strip__txt">
+      <span class="strip__badge">{copy.badge}</span>
+      <h2 class="strip__h" id="app-strip-h">{copy.title}</h2>
+      <p class="strip__p">{copy.lede}</p>
+    </div>
+
+    <div class="strip__acts">
+      <a class="btn btn--primary" href={app.url} rel="nofollow" download>
+        <Icon name="download" size={17} />
+        {copy.dl}
+      </a>
+      <a class="strip__more" href={localePath(locale, "ilova")}>
+        {copy.more}
+        <Icon name="chevron-right" size={14} />
+      </a>
+    </div>
+  </div>
+</section>
+
+<style>
+  .strip {
+    position: relative;
+    z-index: var(--z-body);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--sp-4) clamp(18px, 3vw, 32px);
+    margin-top: clamp(28px, 4vw, 44px);
+    padding: clamp(18px, 2.6vw, 26px);
+    border-radius: var(--r-lg);
+    background: linear-gradient(140deg, rgba(var(--brand-rgb), 0.16), rgba(var(--cyan-rgb), 0.07));
+    border: 1px solid rgba(var(--brand-rgb), 0.28);
+  }
+
+  .strip__ic {
+    display: grid;
+    place-items: center;
+    width: 48px;
+    height: 48px;
+    flex: none;
+    border-radius: var(--r-md);
+    background: rgba(var(--brand-rgb), 0.18);
+    border: 1px solid rgba(var(--brand-rgb), 0.26);
+    color: var(--brand-bright);
+  }
+
+  .strip__txt {
+    flex: 1 1 240px;
+    min-width: 0;
+  }
+
+  .strip__badge {
+    display: inline-block;
+    margin-bottom: 6px;
+    padding: 2px 9px;
+    border-radius: var(--r-pill);
+    font-size: var(--t-xs);
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--brand-bright);
+    background: rgba(var(--brand-rgb), 0.16);
+    border: 1px solid rgba(var(--brand-rgb), 0.24);
+  }
+
+  .strip__h {
+    font-size: var(--t-md);
+    margin-bottom: 4px;
+  }
+
+  .strip__p {
+    font-size: var(--t-sm);
+    color: var(--text-2);
+    line-height: 1.65;
+  }
+
+  .strip__acts {
+    flex: 0 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--sp-3);
+  }
+
+  .strip__more {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: var(--t-sm);
+    font-weight: 600;
+    color: var(--accent);
+  }
+</style>

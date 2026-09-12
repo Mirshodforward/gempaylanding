@@ -11,6 +11,7 @@ import Aurora from "../Aurora.astro";
 import Header from "../Header.astro";
 import Hero from "../Hero.astro";
 import AnswerBox from "../AnswerBox.astro";
+import AppStrip from "../AppStrip.astro";
 import Games from "../Games.astro";
 import HowItWorks from "../HowItWorks.astro";
 import Why from "../Why.astro";
@@ -132,6 +133,11 @@ const schema = graph(
     <div class="wrap answer-slot">
       <AnswerBox title={c.blog.answerTitle} text={c.hero.answer} />
     </div>
+
+    {/* Ilova chizig'i — katalogdan OLDIN: ilova do'konda yo'q, shuning
+        uchun uni ko'rsatadigan yagona joy shu sahifa. Pastda qolsa
+        mijoz borligini bilmay ketardi. */}
+    <AppStrip locale={locale} />
 
     <Games locale={locale} />
     <HowItWorks locale={locale} />

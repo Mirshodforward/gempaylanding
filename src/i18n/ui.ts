@@ -21,6 +21,8 @@ export type Copy = {
   /** `<html lang>` bilan mos til nomi — til almashtirgichda */
   nav: {
     games: string;
+    /** Android ilovasi — `/ilova` */
+    app: string;
     how: string;
     why: string;
     blog: string;
@@ -177,6 +179,7 @@ export type Copy = {
 const uz: Copy = {
   nav: {
     games: "O'yinlar",
+    app: "Ilova",
     how: "Qanday ishlaydi",
     why: "Nega GemPay",
     blog: "Blog",
@@ -469,6 +472,7 @@ const uz: Copy = {
 const ru: Copy = {
   nav: {
     games: "Игры",
+    app: "Приложение",
     how: "Как это работает",
     why: "Почему GemPay",
     blog: "Блог",
@@ -760,6 +764,7 @@ const ru: Copy = {
 const en: Copy = {
   nav: {
     games: "Games",
+    app: "App",
     how: "How it works",
     why: "Why GemPay",
     blog: "Blog",
