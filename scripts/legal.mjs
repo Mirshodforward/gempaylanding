@@ -79,7 +79,10 @@ if (!LEGAL.bank.name && !LEGAL.bank.account) {
 // -------------------------------------------------------- to'lov belgisi ----
 
 const MARK_DIR = path.join(ROOT, "public/pay");
-const noMark = PAYMENT_METHODS.filter((m) => !existsSync(path.join(MARK_DIR, `${m.id}.svg`)));
+// Ichki balansning logotipi yo'q va kerak ham emas — u to'lov tizimi emas.
+const noMark = PAYMENT_METHODS.filter(
+  (m) => m.kind !== "internal" && !existsSync(path.join(MARK_DIR, `${m.id}.svg`)),
+);
 
 const intlNoMark = noMark.filter((m) => m.kind === "card-intl");
 const otherNoMark = noMark.filter((m) => m.kind !== "card-intl");

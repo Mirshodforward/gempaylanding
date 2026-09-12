@@ -18,7 +18,7 @@
  */
 import { existsSync } from "node:fs";
 import path from "node:path";
-import { PAYMENT_METHODS } from "../data/site";
+import { brandedMethods } from "../data/site";
 
 interface Props {
   /** Ro'yxat ustidagi izoh — ekran o'quvchisi uchun ham nom bo'ladi */
@@ -30,7 +30,9 @@ const { title } = Astro.props;
 // Build vaqtida bir marta tekshiriladi — brauzerga tayyor natija boradi.
 const MARK_DIR = path.resolve("public/pay");
 
-const marks = PAYMENT_METHODS.map((m) => ({
+// `brandedMethods` — ichki balansdan tashqarisi. Bot balansi to'lov
+// tizimi emas, uning logotipi yo'q va bo'lishi ham kerak emas.
+const marks = brandedMethods.map((m) => ({
   ...m,
   file: existsSync(path.join(MARK_DIR, `${m.id}.svg`)) ? `/pay/${m.id}.svg` : null,
 }));

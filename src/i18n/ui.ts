@@ -190,12 +190,12 @@ const uz: Copy = {
     titleTail: "to'ldiring",
     lede:
       "PUBG UC, Mobile Legends olmosi, Free Fire, CODM CP va yana 6 ta xizmat — " +
-      "UzCard, HUMO, Click yoki Payme bilan. Xorijiy karta ham, VPN ham, kripto ham kerak emas.",
+      "UzCard, HUMO, Click yoki Uzum Bank bilan. Xorijiy karta ham, VPN ham, kripto ham kerak emas.",
     answer:
       "GemPay — Telegram bot orqali o'yin valyutasini so'mda to'ldirish xizmati. " +
       "O'yinni tanlaysiz, Player ID ni kiritasiz, nikingiz bepul tekshirilib ko'rsatiladi — " +
       "tasdiqlaganingizdan keyingina to'laysiz. Kredit 1-5 daqiqada avtomatik tushadi. " +
-      "To'lov: UzCard, HUMO, Click, Payme, Paynet.",
+      "To'lov: UzCard, HUMO, Click yoki Uzum Bank.",
     ctaPrimary: "Telegram'da ochish",
     ctaSecondary: "O'yinlarni ko'rish",
     payLabel: "To'lov usullari",
@@ -235,7 +235,7 @@ const uz: Copy = {
       },
       {
         title: "So'mda to'lang",
-        text: "UzCard, HUMO, Click, Payme, Paynet yoki bot balansi. Kredit 1-5 daqiqada hisobingizga tushadi.",
+        text: "UzCard, HUMO, Click, Uzum Bank yoki bot balansi. Kredit 1-5 daqiqada hisobingizga tushadi.",
       },
     ],
     note: "ID tekshiruvi bepul va to'lovdan OLDIN bo'ladi — tasdiqlamaguningizcha pul yechilmaydi.",
@@ -256,7 +256,7 @@ const uz: Copy = {
         icon: "wallet",
         title: "To'liq so'mda",
         text:
-          "UzCard, HUMO, Click, Payme, Paynet. Visa/Mastercard, xorijiy hamyon yoki " +
+          "UzCard, HUMO, Click yoki Uzum Bank. Visa/Mastercard, xorijiy hamyon yoki " +
           "kriptovalyuta talab qilinmaydi.",
       },
       {
@@ -320,7 +320,7 @@ const uz: Copy = {
       {
         q: "Qaysi kartalar bilan to'lash mumkin?",
         a:
-          "UzCard, HUMO, shuningdek Click, Payme va Paynet. Visa yoki Mastercard shart emas — " +
+          "UzCard, HUMO, shuningdek Click va Uzum Bank. Visa yoki Mastercard shart emas — " +
           "aynan shu sabab O'zbekistondagi ko'pchilik rasmiy do'konlardan to'lay olmaydi.",
       },
       {
@@ -419,12 +419,12 @@ const uz: Copy = {
     h1Template: "{game}: {unit} ni so'mda sotib olish",
     metaTemplate: "{game} {unit}",
     descTemplate:
-      "{game} uchun {unit} ni O'zbekiston so'mida to'ldiring: UzCard, HUMO, Click, Payme. " +
+      "{game} uchun {unit} ni O'zbekiston so'mida to'ldiring: UzCard, HUMO, Click, Uzum Bank. " +
       "ID bepul tekshiriladi, kredit {etaIn} avtomatik tushadi.",
     answerTemplate:
       "{game} da {unit} ni so'mda to'ldirish uchun Telegram'dagi @Gempayuz_bot ni oching, " +
       "{game} ni tanlang va {idLabel} ni kiriting. Nikingiz bepul tekshirilib ko'rsatiladi — " +
-      "tasdiqlagach paketni tanlab UzCard, HUMO, Click yoki Payme bilan to'laysiz. " +
+      "tasdiqlagach paketni tanlab UzCard, HUMO, Click yoki Uzum Bank bilan to'laysiz. " +
       "Kredit {etaIn} avtomatik tushadi.",
     keywords: (game, unit) => [
       `${game} ${unit} sotib olish`,
@@ -481,12 +481,12 @@ const ru: Copy = {
     titleTail: "",
     lede:
       "PUBG UC, алмазы Mobile Legends, Free Fire, CP для CODM и ещё 6 сервисов — " +
-      "картой UzCard, HUMO, через Click или Payme. Без зарубежной карты, VPN и криптовалюты.",
+      "картой UzCard, HUMO, через Click или Uzum Bank. Без зарубежной карты, VPN и криптовалюты.",
     answer:
       "GemPay — сервис пополнения игровой валюты в сумах через Telegram-бота. " +
       "Вы выбираете игру, вводите Player ID, система бесплатно проверяет и показывает ваш ник — " +
       "оплата проходит только после вашего подтверждения. Зачисление автоматическое, за 1-5 минут. " +
-      "Оплата: UzCard, HUMO, Click, Payme, Paynet.",
+      "Оплата: UzCard, HUMO, Click или Uzum Bank.",
     ctaPrimary: "Открыть в Telegram",
     ctaSecondary: "Смотреть игры",
     payLabel: "Способы оплаты",
@@ -526,7 +526,7 @@ const ru: Copy = {
       },
       {
         title: "Оплатите в сумах",
-        text: "UzCard, HUMO, Click, Payme, Paynet или баланс бота. Зачисление за 1-5 минут.",
+        text: "UzCard, HUMO, Click или Uzum Bank или баланс бота. Зачисление за 1-5 минут.",
       },
     ],
     note: "Проверка ID бесплатна и происходит ДО оплаты — деньги не списываются, пока вы не подтвердите ник.",
@@ -547,7 +547,7 @@ const ru: Copy = {
         icon: "wallet",
         title: "Полностью в сумах",
         text:
-          "UzCard, HUMO, Click, Payme, Paynet. Visa/Mastercard, зарубежный кошелёк или " +
+          "UzCard, HUMO, Click или Uzum Bank. Visa/Mastercard, зарубежный кошелёк или " +
           "криптовалюта не требуются.",
       },
       {
@@ -611,7 +611,7 @@ const ru: Copy = {
       {
         q: "Какими картами можно оплатить?",
         a:
-          "UzCard, HUMO, а также Click, Payme и Paynet. Visa или Mastercard не нужны — именно " +
+          "UzCard, HUMO, а также Click и Uzum Bank. Visa или Mastercard не нужны — именно " +
           "поэтому большинству пользователей в Узбекистане недоступна оплата в официальных магазинах.",
       },
       {
@@ -709,12 +709,12 @@ const ru: Copy = {
     h1Template: "{game}: купить {unit} за сумы",
     metaTemplate: "{game} {unit}",
     descTemplate:
-      "Пополнение {unit} для {game} в узбекских сумах: UzCard, HUMO, Click, Payme. " +
+      "Пополнение {unit} для {game} в узбекских сумах: UzCard, HUMO, Click, Uzum Bank. " +
       "ID проверяется бесплатно, зачисление {etaIn} автоматически.",
     answerTemplate:
       "Чтобы пополнить {unit} в {game} за сумы, откройте @Gempayuz_bot в Telegram, выберите " +
       "{game} и введите {idLabel}. Ваш ник бесплатно проверится и появится на экране — после " +
-      "подтверждения выбираете пакет и платите картой UzCard, HUMO, через Click или Payme. " +
+      "подтверждения выбираете пакет и платите картой UzCard, HUMO, через Click или Uzum Bank. " +
       "Зачисление автоматическое, {etaIn}.",
     keywords: (game, unit) => [
       `купить ${unit} ${game}`,
@@ -771,12 +771,12 @@ const en: Copy = {
     titleTail: "",
     lede:
       "PUBG UC, Mobile Legends diamonds, Free Fire, CODM CP and six more services — " +
-      "paid with UzCard, HUMO, Click or Payme. No foreign card, no VPN, no crypto.",
+      "paid with UzCard, HUMO, Click or Uzum Bank. No foreign card, no VPN, no crypto.",
     answer:
       "GemPay tops up in-game currency in Uzbek so'm through a Telegram bot. " +
       "You pick the game, enter your Player ID, and your nickname is verified and shown for free — " +
       "you only pay after confirming it. Delivery is automatic within 1-5 minutes. " +
-      "Payment: UzCard, HUMO, Click, Payme, Paynet.",
+      "Payment: UzCard, HUMO, Click or Uzum Bank.",
     ctaPrimary: "Open in Telegram",
     ctaSecondary: "Browse games",
     payLabel: "Payment methods",
@@ -816,7 +816,7 @@ const en: Copy = {
       },
       {
         title: "Pay in so'm",
-        text: "UzCard, HUMO, Click, Payme, Paynet or your bot balance. Credit lands within 1-5 minutes.",
+        text: "UzCard, HUMO, Click or Uzum Bank or your bot balance. Credit lands within 1-5 minutes.",
       },
     ],
     note: "The ID check is free and happens BEFORE payment — nothing is charged until you confirm the nickname.",
@@ -837,7 +837,7 @@ const en: Copy = {
         icon: "wallet",
         title: "Entirely in so'm",
         text:
-          "UzCard, HUMO, Click, Payme, Paynet. No Visa/Mastercard, no foreign wallet, no crypto required.",
+          "UzCard, HUMO, Click or Uzum Bank. No Visa/Mastercard, no foreign wallet, no crypto required.",
       },
       {
         icon: "zap",
@@ -897,7 +897,7 @@ const en: Copy = {
       {
         q: "Which cards can I pay with?",
         a:
-          "UzCard and HUMO, plus Click, Payme and Paynet. Visa or Mastercard is not required — which is " +
+          "UzCard and HUMO, plus Click and Uzum Bank. Visa or Mastercard is not required — which is " +
           "exactly why most people in Uzbekistan cannot pay in the official stores.",
       },
       {
@@ -993,12 +993,12 @@ const en: Copy = {
     h1Template: "Buy {game} {unit} in Uzbek so'm",
     metaTemplate: "{game} {unit}",
     descTemplate:
-      "Top up {unit} for {game} in Uzbek so'm: UzCard, HUMO, Click, Payme. " +
+      "Top up {unit} for {game} in Uzbek so'm: UzCard, HUMO, Click, Uzum Bank. " +
       "Your ID is verified free and the credit lands automatically {etaIn}.",
     answerTemplate:
       "To top up {unit} in {game} with so'm, open @Gempayuz_bot in Telegram, choose {game} and enter " +
       "your {idLabel}. Your nickname is verified and shown for free — confirm it, pick a pack and pay " +
-      "with UzCard, HUMO, Click or Payme. The credit arrives automatically {etaIn}.",
+      "with UzCard, HUMO, Click or Uzum Bank. The credit arrives automatically {etaIn}.",
     keywords: (game, unit) => [
       `buy ${game} ${unit}`,
       `${game} top up uzbekistan`,

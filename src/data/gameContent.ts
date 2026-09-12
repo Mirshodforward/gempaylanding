@@ -101,7 +101,7 @@ export const GAME_CONTENT: GameContentMap = {
       ],
       "intro": [
         "Token - Asphalt 9'ning premium valyutasi. Kredit poygalarda o'z-o'zidan yig'iladi, token esa deyarli yig'ilmaydi: u Card Pack va Featured Car Pack ochishga, Legend Store'dagi blueprint'larni yopishga, kutish taymerini o'tkazib yuborishga ketadi. Shuning uchun uni ko'pincha S-Class mashinani yig'ayotgan yoki Grand Prix'ni muddatida tugatmoqchi bo'lgan o'yinchilar oladi.",
-        "Rasmiy yo'l - Google Play, App Store yoki Microsoft Store - chet el kartasini talab qiladi, UzCard va HUMO u yerda o'tmaydi. Chet el saytlari esa ko'pincha akkauntga kirishni so'raydi va bu xavfli. GemPay'da to'lov so'mda, UzCard, HUMO, Click, Payme yoki Paynet bilan ketadi, sizdan faqat ochiq Player ID va platforma so'raladi."
+        "Rasmiy yo'l - Google Play, App Store yoki Microsoft Store - chet el kartasini talab qiladi, UzCard va HUMO u yerda o'tmaydi. Chet el saytlari esa ko'pincha akkauntga kirishni so'raydi va bu xavfli. GemPay'da to'lov so'mda, UzCard, HUMO, Click yoki Uzum Bank bilan ketadi, sizdan faqat ochiq Player ID va platforma so'raladi."
       ],
       "metaDescription": "Asphalt 9 (Asphalt Legends) tokenlarini so'mda to'ldiring: Player ID va platforma - Android, iOS yoki Windows. Parol so'ralmaydi, token 5 daqiqada.",
       "metaTitle": "Asphalt 9 token sotib olish: ID va platforma | GemPay",
@@ -136,7 +136,7 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "Paketni tanlab so'mda to'lang",
-          "text": "Token paketini tanlang va UzCard, HUMO, Click, Payme yoki Paynet orqali so'mda to'lang. Joriy narx botda ko'rsatiladi. Tokenlar taxminan 5 daqiqada tanlangan platformadagi profilga tushadi."
+          "text": "Token paketini tanlang va UzCard, HUMO, Click yoki Uzum Bank orqali so'mda to'lang. Joriy narx botda ko'rsatiladi. Tokenlar taxminan 5 daqiqada tanlangan platformadagi profilga tushadi."
         }
       ]
     },
@@ -147,7 +147,7 @@ export const GAME_CONTENT: GameContentMap = {
       "answer": "В Asphalt 9 второе поле — не сервер, а платформа: Android, iOS или Windows, и у каждой свой профиль и свой кошелёк токенов. В боте вы вводите Player ID и платформу, бот бесплатно показывает ник, вы подтверждаете, затем выбираете пакет Token и платите в сумах. Пароль или SMS-код не запрашиваются. Токены приходят примерно за 5 минут на профиль выбранной платформы.",
       "intro": [
         "Token — премиальная валюта Asphalt 9. Кредиты копятся в гонках сами собой, а токены почти не выпадают: они уходят на вскрытие Card Pack и Featured Car Pack, на закрытие blueprint'ов в Legend Store и на пропуск таймеров ожидания. Поэтому их чаще берут те, кто собирает машину класса S или хочет закрыть Grand Prix в срок.",
-        "Официальный путь — Google Play, App Store или Microsoft Store — требует зарубежную карту, UzCard и HUMO там не проходят. А зарубежные сайты часто просят вход в аккаунт, и это опасно. В GemPay оплата идёт в сумах через UzCard, HUMO, Click, Payme или Paynet, а у вас спрашивают только открытый Player ID и платформу."
+        "Официальный путь — Google Play, App Store или Microsoft Store — требует зарубежную карту, UzCard и HUMO там не проходят. А зарубежные сайты часто просят вход в аккаунт, и это опасно. В GemPay оплата идёт в сумах через UzCard, HUMO, Click, Uzum Bank, а у вас спрашивают только открытый Player ID и платформу."
       ],
       "spendOn": [
         "Вскрытие Card Pack и Relay Pack",
@@ -180,7 +180,7 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "Выберите пакет и оплатите в сумах",
-          "text": "Выберите пакет Token и оплатите в сумах через UzCard, HUMO, Click, Payme или Paynet. Текущая цена показывается в боте. Токены приходят примерно за 5 минут на профиль выбранной платформы."
+          "text": "Выберите пакет Token и оплатите в сумах через UzCard, HUMO, Click, Uzum Bank. Текущая цена показывается в боте. Токены приходят примерно за 5 минут на профиль выбранной платформы."
         }
       ],
       "idSteps": [
@@ -227,7 +227,7 @@ export const GAME_CONTENT: GameContentMap = {
       "answer": "In Asphalt 9 the second field is not a server but a platform: Android, iOS or Windows, each with its own profile and its own token wallet. In the bot you enter the Player ID and the platform, the bot shows the nickname for free, you confirm, then pick a Token pack and pay in so'm. No password or SMS code is requested. Tokens arrive in about 5 minutes on the profile of the chosen platform.",
       "intro": [
         "Tokens are the premium currency in Asphalt 9. Credits pile up on their own from racing, tokens barely do: they go on opening Card Packs and Featured Car Packs, on closing blueprints in the Legend Store, and on skipping wait timers. That is why they are usually bought by players assembling an S-Class car or trying to finish a Grand Prix in time.",
-        "The official route - Google Play, App Store or Microsoft Store - needs a foreign card, and UzCard or HUMO will not go through there. Foreign sites, meanwhile, often ask you to log into the account, which is risky. With GemPay the payment goes in so'm through UzCard, HUMO, Click, Payme or Paynet, and all you are asked for is the public Player ID and the platform."
+        "The official route - Google Play, App Store or Microsoft Store - needs a foreign card, and UzCard or HUMO will not go through there. Foreign sites, meanwhile, often ask you to log into the account, which is risky. With GemPay the payment goes in so'm through UzCard, HUMO, Click, Uzum Bank, and all you are asked for is the public Player ID and the platform."
       ],
       "spendOn": [
         "Opening Card Packs and Relay Packs",
@@ -260,7 +260,7 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "Pick a pack and pay in so'm",
-          "text": "Choose a Token pack and pay in so'm with UzCard, HUMO, Click, Payme or Paynet. The current price is shown in the bot. Tokens arrive in about 5 minutes on the profile of the chosen platform."
+          "text": "Choose a Token pack and pay in so'm with UzCard, HUMO, Click, Uzum Bank. The current price is shown in the bot. Tokens arrive in about 5 minutes on the profile of the chosen platform."
         }
       ],
       "idSteps": [
@@ -303,7 +303,7 @@ export const GAME_CONTENT: GameContentMap = {
   },
   "bigo-live": {
     "uz": {
-      "answer": "Bigo Live - o'yin emas: olmos efir xonasidagi sovg'alarga sarflanadi, strimer esa sovg'adan bin (beans) oladi, bu butunlay boshqa birlik. GemPay botida Me bo'limidagi Bigo ID ni kiritasiz, tizim nikneymni bepul ko'rsatadi, siz tasdiqlaysiz, so'mda UzCard yoki Payme bilan to'laysiz - olmos taxminan 3 daqiqada tushadi.",
+      "answer": "Bigo Live - o'yin emas: olmos efir xonasidagi sovg'alarga sarflanadi, strimer esa sovg'adan bin (beans) oladi, bu butunlay boshqa birlik. GemPay botida Me bo'limidagi Bigo ID ni kiritasiz, tizim nikneymni bepul ko'rsatadi, siz tasdiqlaysiz, so'mda UzCard yoki Uzum Bank bilan to'laysiz - olmos taxminan 3 daqiqada tushadi.",
       "faq": [
         {
           "q": "Strimer men yuborgan sovg'ani darhol ko'radimi?",
@@ -343,9 +343,9 @@ export const GAME_CONTENT: GameContentMap = {
       ],
       "intro": [
         "Olmos - Bigo Live ichidagi sotib olinadigan birlik: u efir xonasidagi sovg'a do'konidan strimerga animatsion sovg'a yuborish uchun ishlatiladi. Uni ikki toifa oladi - efirni kuzatib, yoqqan strimerni qo'llab-quvvatlovchi tomoshabinlar va strimerlarning o'zi: PK jangdagi sherigini, ko'p mehmonli xonadagi tanishini yoki boshqa efirni sovg'a bilan qo'llash uchun. Olmos akkaunt hamyonida turadi va faqat siz sarflaganingizda kamayadi.",
-        "Rasmiy yo'l O'zbekistondagi kartaga moslashmagan: rasmiy to'ldirish sahifasi Bigo ID bilan kirishni so'raydi va to'lov usuli sifatida SBP, MIR kartasi hamda Bigo Card ni ko'rsatadi - so'm ham, UzCard ham u yerda yo'q. GemPay shu bo'shliqni yopadi: hisob-kitob so'mda ketadi, UzCard, HUMO, Click, Payme va Paynet ishlaydi, olmos esa o'sha akkauntning o'ziga tushadi."
+        "Rasmiy yo'l O'zbekistondagi kartaga moslashmagan: rasmiy to'ldirish sahifasi Bigo ID bilan kirishni so'raydi va to'lov usuli sifatida SBP, MIR kartasi hamda Bigo Card ni ko'rsatadi - so'm ham, UzCard ham u yerda yo'q. GemPay shu bo'shliqni yopadi: hisob-kitob so'mda ketadi, UzCard, HUMO, Click, Uzum Bank ishlaydi, olmos esa o'sha akkauntning o'ziga tushadi."
       ],
-      "metaDescription": "Bigo Live olmosini Bigo ID orqali so'mda oling: bot Me bo'limidagi ID bo'yicha nikneymni bepul ko'rsatadi, UzCard, HUMO, Click va Payme qabul qilinadi.",
+      "metaDescription": "Bigo Live olmosini Bigo ID orqali so'mda oling: bot Me bo'limidagi ID bo'yicha nikneymni bepul ko'rsatadi, UzCard, HUMO, Click va Uzum Bank qabul qilinadi.",
       "metaTitle": "Bigo Live olmos sotib olish - so'mda, 3 daqiqada | GemPay",
       "packages": [
         "Olmos paketlari bir necha o'nlik olmosdan boshlanib, minglik va o'n minglik pog'onalargacha ko'tariladi - odatda kichik, o'rta va yirik guruhlarga bo'linadi.",
@@ -377,18 +377,18 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "So'mda to'lang va Wallet bo'limini tekshiring",
-          "text": "UzCard, HUMO, Click, Payme yoki Paynet bilan to'laysiz. Olmos odatda 3 daqiqada tushadi, balansni Me, so'ng Wallet bo'limida ko'rasiz. Ilova ochiq turgan bo'lsa, uni yopib qayta oching."
+          "text": "UzCard, HUMO, Click yoki Uzum Bank bilan to'laysiz. Olmos odatda 3 daqiqada tushadi, balansni Me, so'ng Wallet bo'limida ko'rasiz. Ilova ochiq turgan bo'lsa, uni yopib qayta oching."
         }
       ]
     },
     "ru": {
       "metaTitle": "Bigo Live: покупка алмазов в сумах за 3 минуты | GemPay",
-      "metaDescription": "Алмазы Bigo Live по Bigo ID в сумах: бот бесплатно покажет никнейм по ID из раздела Me, оплата UzCard, HUMO, Click и Payme, зачисление за 3 минуты.",
+      "metaDescription": "Алмазы Bigo Live по Bigo ID в сумах: бот бесплатно покажет никнейм по ID из раздела Me, оплата UzCard, HUMO, Click и Uzum Bank, зачисление за 3 минуты.",
       "h1": "Пополнение алмазов Bigo Live: по Bigo ID, в сумах",
-      "answer": "Bigo Live - не игра: алмазы тратятся на подарки в эфирной комнате, а стример получает за подарок бины (beans), совсем другую единицу. В боте GemPay вы вводите Bigo ID из раздела Me, система бесплатно показывает никнейм, вы подтверждаете, платите в сумах через UzCard или Payme - алмазы приходят примерно за 3 минуты.",
+      "answer": "Bigo Live - не игра: алмазы тратятся на подарки в эфирной комнате, а стример получает за подарок бины (beans), совсем другую единицу. В боте GemPay вы вводите Bigo ID из раздела Me, система бесплатно показывает никнейм, вы подтверждаете, платите в сумах через UzCard или Uzum Bank - алмазы приходят примерно за 3 минуты.",
       "intro": [
         "Алмазы - покупаемая внутренняя единица Bigo Live: ими из магазина подарков в эфирной комнате отправляют стримеру анимированный подарок. Покупают их две категории - зрители, которые смотрят эфир и поддерживают понравившегося стримера, и сами стримеры: чтобы поддержать подарком напарника в PK-битве, знакомого в комнате с несколькими гостями или чужой эфир. Алмазы лежат в кошельке аккаунта и уменьшаются только тогда, когда вы их тратите.",
-        "Официальный путь не рассчитан на карту из Узбекистана: официальная страница пополнения просит вход по Bigo ID и предлагает в качестве способов оплаты SBP, карту MIR и Bigo Card - ни сумов, ни UzCard там нет. GemPay закрывает этот пробел: расчет идет в сумах, работают UzCard, HUMO, Click, Payme и Paynet, а алмазы приходят на тот же самый аккаунт."
+        "Официальный путь не рассчитан на карту из Узбекистана: официальная страница пополнения просит вход по Bigo ID и предлагает в качестве способов оплаты SBP, карту MIR и Bigo Card - ни сумов, ни UzCard там нет. GemPay закрывает этот пробел: расчет идет в сумах, работают UzCard, HUMO, Click, Uzum Bank, а алмазы приходят на тот же самый аккаунт."
       ],
       "spendOn": [
         "Отправка анимированного подарка из магазина подарков в эфирной комнате",
@@ -420,7 +420,7 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "Оплатите в сумах и проверьте раздел Wallet",
-          "text": "Оплата идет через UzCard, HUMO, Click, Payme или Paynet. Алмазы обычно приходят за 3 минуты, баланс видно в разделе Me, затем Wallet. Если приложение было открыто, закройте его и откройте заново."
+          "text": "Оплата идет через UzCard, HUMO, Click, Uzum Bank. Алмазы обычно приходят за 3 минуты, баланс видно в разделе Me, затем Wallet. Если приложение было открыто, закройте его и откройте заново."
         }
       ],
       "idSteps": [
@@ -462,12 +462,12 @@ export const GAME_CONTENT: GameContentMap = {
     },
     "en": {
       "metaTitle": "Buy Bigo Live diamonds in so'm, 3 minutes | GemPay",
-      "metaDescription": "Get Bigo Live diamonds by Bigo ID in so'm: the bot shows the nickname from your Me tab ID for free, and UzCard, HUMO, Click and Payme are accepted.",
+      "metaDescription": "Get Bigo Live diamonds by Bigo ID in so'm: the bot shows the nickname from your Me tab ID for free, and UzCard, HUMO, Click and Uzum Bank are accepted.",
       "h1": "Bigo Live diamond top-up: by Bigo ID, in so'm",
-      "answer": "Bigo Live is not a game: diamonds are spent on gifts in a live room, and the streamer receives beans for a gift, which is a completely different unit. In the GemPay bot you enter the Bigo ID from the Me tab, the system shows the nickname for free, you confirm, and you pay in so'm with UzCard or Payme - diamonds arrive in about 3 minutes.",
+      "answer": "Bigo Live is not a game: diamonds are spent on gifts in a live room, and the streamer receives beans for a gift, which is a completely different unit. In the GemPay bot you enter the Bigo ID from the Me tab, the system shows the nickname for free, you confirm, and you pay in so'm with UzCard or Uzum Bank - diamonds arrive in about 3 minutes.",
       "intro": [
         "Diamonds are the purchasable in-app unit of Bigo Live: they are used to send a streamer an animated gift from the gift shop inside a live room. Two groups buy them - viewers who watch a broadcast and support a streamer they like, and streamers themselves: to back a partner in a PK battle, a friend in a multi-guest room or someone else's broadcast with a gift. Diamonds sit in the account wallet and go down only when you spend them.",
-        "The official route is not built for a card from Uzbekistan: the official top-up page asks you to sign in with a Bigo ID and lists SBP, a MIR card and Bigo Card as payment methods - there is no so'm and no UzCard there. GemPay closes that gap: the settlement runs in so'm, UzCard, HUMO, Click, Payme and Paynet all work, and the diamonds land on that same account."
+        "The official route is not built for a card from Uzbekistan: the official top-up page asks you to sign in with a Bigo ID and lists SBP, a MIR card and Bigo Card as payment methods - there is no so'm and no UzCard there. GemPay closes that gap: the settlement runs in so'm, UzCard, HUMO, Click, Uzum Bank all work, and the diamonds land on that same account."
       ],
       "spendOn": [
         "Sending an animated gift from the gift shop in a live room",
@@ -499,7 +499,7 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "Pay in so'm and check the Wallet tab",
-          "text": "You pay with UzCard, HUMO, Click, Payme or Paynet. Diamonds usually arrive in 3 minutes, and you see the balance under Me, then Wallet. If the app was open, close it and open it again."
+          "text": "You pay with UzCard, HUMO, Click, Uzum Bank. Diamonds usually arrive in 3 minutes, and you see the balance under Me, then Wallet. If the app was open, close it and open it again."
         }
       ],
       "idSteps": [
@@ -543,12 +543,12 @@ export const GAME_CONTENT: GameContentMap = {
   "call-of-duty-mobile": {
     "uz": {
       "metaTitle": "Call of Duty Mobile CP sotib olish (Garena) | GemPay",
-      "metaDescription": "Garena SG/MY Player ID bo'yicha Call of Duty: Mobile CP to'ldirish: nickname bepul tekshiriladi, so'mda UzCard, Humo, Click yoki Payme, CP 3 daqiqada.",
+      "metaDescription": "Garena SG/MY Player ID bo'yicha Call of Duty: Mobile CP to'ldirish: nickname bepul tekshiriladi, so'mda UzCard, HUMO, Click yoki Uzum Bank, CP 3 daqiqada.",
       "h1": "Call of Duty: Mobile CP to'ldirish — Garena ID bo'yicha, so'mda",
       "answer": "GemPay Call of Duty: Mobile ning Garena SG/MY versiyasini to'ldiradi; Global (Activision) akkauntlar bu yerda ishlamaydi. Botda o'yinni tanlab, Sozlamalardagi Player ID ni kiritasiz, tizim nickname ni bepul ko'rsatadi. Tasdiqlagandan keyin CP paketini UzCard yoki Humo bilan so'mda to'laysiz, CP taxminan 3 daqiqada tushadi. Parol so'ralmaydi.",
       "intro": [
         "CP (COD Points) — Call of Duty: Mobile ning premium valyutasi. Kredit bilan olinadigan oddiy narsalardan farqli o'laroq, CP do'konning jiddiy qismiga ketadi: Battle Pass va Battle Pass Plus, Lucky Draw va Mythic Drop tirajlari, legendar qurol chizmalari. Ko'pchilik o'yinchi CP ni mavsum boshida oladi, chunki Battle Pass ham aynan CP evaziga ochiladi.",
-        "O'zbekistondan rasmiy yo'l ko'pincha yopiq: Garena to'lov sahifalari mintaqaviy kartalarni kutadi, Google Play va App Store balansi esa chet el kartasi yoki gift karta talab qiladi. GemPay da CP to'g'ridan-to'g'ri Player ID ga yoziladi, to'lov esa UzCard, Humo, Click, Payme yoki Paynet orqali so'mda o'tadi — valyuta konvertatsiyasi ham, chet el kartasi ham kerak emas."
+        "O'zbekistondan rasmiy yo'l ko'pincha yopiq: Garena to'lov sahifalari mintaqaviy kartalarni kutadi, Google Play va App Store balansi esa chet el kartasi yoki gift karta talab qiladi. GemPay da CP to'g'ridan-to'g'ri Player ID ga yoziladi, to'lov esa UzCard, Humo, Click yoki Uzum Bank orqali so'mda o'tadi — valyuta konvertatsiyasi ham, chet el kartasi ham kerak emas."
       ],
       "spendOn": [
         "Battle Pass va Battle Pass Plus ni ochish",
@@ -578,7 +578,7 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "CP paketini tanlab so'mda to'lang",
-          "text": "Kerakli CP pog'onasini belgilang va UzCard, Humo, Click, Payme yoki Paynet orqali to'lang. Narx botda ko'rsatiladi va tasdiqlashdan oldin ekranda turadi."
+          "text": "Kerakli CP pog'onasini belgilang va UzCard, Humo, Click yoki Uzum Bank orqali to'lang. Narx botda ko'rsatiladi va tasdiqlashdan oldin ekranda turadi."
         },
         {
           "title": "CP ni o'yinda ko'ring",
@@ -625,12 +625,12 @@ export const GAME_CONTENT: GameContentMap = {
     },
     "ru": {
       "metaTitle": "Покупка CP в Call of Duty Mobile (Garena) | GemPay",
-      "metaDescription": "Пополнение CP в Call of Duty: Mobile по Player ID Garena SG/MY: ник проверяется бесплатно, оплата в сумах через UzCard, Humo, Click или Payme, CP за 3 минуты.",
+      "metaDescription": "Пополнение CP в Call of Duty: Mobile по Player ID Garena SG/MY: ник проверяется бесплатно, оплата в сумах через UzCard, HUMO, Click или Uzum Bank, CP за 3 минуты.",
       "h1": "Пополнение CP в Call of Duty: Mobile — по Garena ID, в сумах",
       "answer": "GemPay пополняет версию Call of Duty: Mobile от Garena SG/MY; аккаунты Global (Activision) здесь не работают. В боте выбираете игру и вводите Player ID из Настроек, система бесплатно показывает ник. После подтверждения оплачиваете пакет CP картой UzCard или Humo в сумах, CP приходит примерно за 3 минуты. Пароль не запрашивается.",
       "intro": [
         "CP (COD Points) — премиальная валюта Call of Duty: Mobile. В отличие от обычных вещей за кредиты, CP уходит на серьёзную часть магазина: Battle Pass и Battle Pass Plus, розыгрыши Lucky Draw и Mythic Drop, легендарные чертежи оружия. Большинство игроков берёт CP в начале сезона, потому что и сам Battle Pass открывается именно за CP.",
-        "Из Узбекистана официальный путь часто закрыт: платёжные страницы Garena ждут региональные карты, а баланс Google Play и App Store требует зарубежной карты или гифт-карты. В GemPay CP зачисляется прямо на Player ID, а оплата проходит в сумах через UzCard, Humo, Click, Payme или Paynet — ни конвертации валюты, ни зарубежной карты не нужно."
+        "Из Узбекистана официальный путь часто закрыт: платёжные страницы Garena ждут региональные карты, а баланс Google Play и App Store требует зарубежной карты или гифт-карты. В GemPay CP зачисляется прямо на Player ID, а оплата проходит в сумах через UzCard, HUMO, Click или Uzum Bank — ни конвертации валюты, ни зарубежной карты не нужно."
       ],
       "spendOn": [
         "Открытие Battle Pass и Battle Pass Plus",
@@ -660,7 +660,7 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "Выберите пакет CP и оплатите в сумах",
-          "text": "Отметьте нужную ступень CP и оплатите через UzCard, Humo, Click, Payme или Paynet. Цена показывается в боте и остаётся на экране до подтверждения."
+          "text": "Отметьте нужную ступень CP и оплатите через UzCard, HUMO, Click или Uzum Bank. Цена показывается в боте и остаётся на экране до подтверждения."
         },
         {
           "title": "Заберите CP в игре",
@@ -707,12 +707,12 @@ export const GAME_CONTENT: GameContentMap = {
     },
     "en": {
       "metaTitle": "Buy Call of Duty Mobile CP (Garena) | GemPay",
-      "metaDescription": "Top up Call of Duty: Mobile CP by Garena SG/MY Player ID: nickname checked free, pay in so'm with UzCard, Humo, Click or Payme, CP in 3 minutes.",
+      "metaDescription": "Top up Call of Duty: Mobile CP by Garena SG/MY Player ID: nickname checked free, pay in so'm with UzCard, HUMO, Click or Uzum Bank, CP in 3 minutes.",
       "h1": "Call of Duty: Mobile CP top-up — by Garena ID, in so'm",
       "answer": "GemPay tops up the Garena SG/MY version of Call of Duty: Mobile; Global (Activision) accounts do not work here. You pick the game in the bot and enter the Player ID from Settings, and the system shows the nickname for free. After you confirm, you pay for the CP pack with UzCard or Humo in so'm, and CP arrives in about 3 minutes. No password is requested.",
       "intro": [
         "CP (COD Points) is the premium currency of Call of Duty: Mobile. Unlike the ordinary items you buy with Credits, CP goes to the serious part of the store: Battle Pass and Battle Pass Plus, Lucky Draw and Mythic Drop pulls, legendary weapon blueprints. Most players buy CP at the start of a season, because the Battle Pass itself is unlocked with CP.",
-        "From Uzbekistan the official route is often closed: Garena payment pages expect regional cards, while Google Play and App Store balance needs a foreign card or a gift card. With GemPay, CP is written straight to the Player ID and the payment goes through UzCard, Humo, Click, Payme or Paynet in so'm — no currency conversion and no foreign card."
+        "From Uzbekistan the official route is often closed: Garena payment pages expect regional cards, while Google Play and App Store balance needs a foreign card or a gift card. With GemPay, CP is written straight to the Player ID and the payment goes through UzCard, HUMO, Click or Uzum Bank in so'm — no currency conversion and no foreign card."
       ],
       "spendOn": [
         "Unlocking Battle Pass and Battle Pass Plus",
@@ -742,7 +742,7 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "Pick a CP pack and pay in so'm",
-          "text": "Select the CP tier you need and pay with UzCard, Humo, Click, Payme or Paynet. The price is shown in the bot and stays on screen before you confirm."
+          "text": "Select the CP tier you need and pay with UzCard, HUMO, Click or Uzum Bank. The price is shown in the bot and stays on screen before you confirm."
         },
         {
           "title": "See the CP in game",
@@ -790,7 +790,7 @@ export const GAME_CONTENT: GameContentMap = {
   },
   "delta-force": {
     "uz": {
-      "answer": "O'zbekistondagi o'yinchilar Delta Force'ning Global (Level Infinite) versiyasida o'ynaydi, Garena hududida emas, shuning uchun bu yerda server tanlash yo'q: GemPay botiga faqat Player ID kiritiladi. Bot o'yin serveridan niknemni bepul chiqaradi, siz tasdiqlagach so'mda to'laysiz va Delta Coins taxminan 5 daqiqada tushadi. Karta sifatida UzCard, HUMO, Click, Payme ishlaydi.",
+      "answer": "O'zbekistondagi o'yinchilar Delta Force'ning Global (Level Infinite) versiyasida o'ynaydi, Garena hududida emas, shuning uchun bu yerda server tanlash yo'q: GemPay botiga faqat Player ID kiritiladi. Bot o'yin serveridan niknemni bepul chiqaradi, siz tasdiqlagach so'mda to'laysiz va Delta Coins taxminan 5 daqiqada tushadi. Karta sifatida UzCard, HUMO, Click, Uzum Bank ishlaydi.",
       "faq": [
         {
           "q": "Bot ko'rsatgan niknem men bilgan niknemdan boshqa. Nima qilay?",
@@ -833,7 +833,7 @@ export const GAME_CONTENT: GameContentMap = {
         "Delta Coins Delta Force'dagi pulli valyuta. Delta Ticket o'ynab yig'iladi, Delta Coins esa yig'ilmaydi, uni faqat sotib olish mumkin. Shuning uchun uni Havoc Warfare va Operations rejimlarida o'tirib qoladigan, mavsum boshida Battle Pass ochib qo'yadigan va operator hamda qurol ko'rinishlarini yig'adigan o'yinchilar oladi. O'yin 2024-yil oxirida PC'da, 2025-yilning aprelida mobilda chiqqan, shuning uchun o'zbek auditoriyasi hali yangi.",
         "Rasmiy yo'l, ya'ni Midasbuy yoki o'yin ichidagi do'kon, xalqaro kassa orqali ishlaydi va odatda Visa, Mastercard yoki PayPal so'raydi. UzCard bilan HUMO esa faqat O'zbekiston ichida va faqat so'mda ishlaydi. Steam orqali olganda ham to'lov xatosi va LIPASS akkaunti noto'g'ri Steam profiliga bog'lanib qolgan holatlar uchraydi. GemPay'da to'lov mahalliy kartada, so'mda ketadi va Delta Coins Player ID'ga yoziladi."
       ],
-      "metaDescription": "Delta Force Global akkauntiga Delta Coins: Player ID ni kiriting, bot niknemni bepul chiqaradi, so'mda to'laysiz. UzCard, HUMO, Click, Payme. ~5 daqiqada.",
+      "metaDescription": "Delta Force Global akkauntiga Delta Coins: Player ID ni kiriting, bot niknemni bepul chiqaradi, so'mda to'laysiz. UzCard, HUMO, Click, Uzum Bank. ~5 daqiqada.",
       "metaTitle": "Delta Force to'ldirish: Delta Coins so'mda | GemPay",
       "packages": [
         "Delta Coins bosqichli qator bilan sotiladi, odatda 60, 300, 680, 1280, 3280 va undan yuqori paketlar, kattalariga ustiga bonus coin qo'shiladi.",
@@ -861,7 +861,7 @@ export const GAME_CONTENT: GameContentMap = {
           "title": "Niknemni bepul tekshiring"
         },
         {
-          "text": "Delta Coins zinapoyasidan kerakli bandni yoki Battle Pass ni belgilang. To'lov so'mda ketadi: UzCard, HUMO, Click, Payme, Paynet. Joriy narx to'lovdan oldin ekranda turadi.",
+          "text": "Delta Coins zinapoyasidan kerakli bandni yoki Battle Pass ni belgilang. To'lov so'mda ketadi: UzCard, HUMO, Click yoki Uzum Bank. Joriy narx to'lovdan oldin ekranda turadi.",
           "title": "Paketni tanlang va so'mda to'lang"
         },
         {
@@ -872,9 +872,9 @@ export const GAME_CONTENT: GameContentMap = {
     },
     "ru": {
       "metaTitle": "Delta Force: пополнение Delta Coins в сумах | GemPay",
-      "metaDescription": "Delta Coins для Delta Force Global: введите Player ID, бот бесплатно покажет ник, оплата в сумах. UzCard, HUMO, Click, Payme. Зачисление ~5 минут.",
+      "metaDescription": "Delta Coins для Delta Force Global: введите Player ID, бот бесплатно покажет ник, оплата в сумах. UzCard, HUMO, Click, Uzum Bank. Зачисление ~5 минут.",
       "h1": "Пополнение Delta Coins в Delta Force: по Player ID, в сумах",
-      "answer": "Игроки из Узбекистана играют в глобальную версию Delta Force (Level Infinite), а не в регионе Garena, поэтому выбора сервера здесь нет: в бот GemPay вводится только Player ID. Бот бесплатно подтягивает ник с игрового сервера, после вашего подтверждения вы платите в сумах, и Delta Coins приходят примерно за 5 минут. Из карт работают UzCard, HUMO, Click, Payme.",
+      "answer": "Игроки из Узбекистана играют в глобальную версию Delta Force (Level Infinite), а не в регионе Garena, поэтому выбора сервера здесь нет: в бот GemPay вводится только Player ID. Бот бесплатно подтягивает ник с игрового сервера, после вашего подтверждения вы платите в сумах, и Delta Coins приходят примерно за 5 минут. Из карт работают UzCard, HUMO, Click, Uzum Bank.",
       "intro": [
         "Delta Coins — платная валюта Delta Force. Delta Ticket копится игрой, а Delta Coins не выпадают: их можно только купить. Поэтому их берут те, кто подолгу сидит в режимах Havoc Warfare и Operations, открывает Battle Pass в начале сезона и собирает облики операторов и оружия. Игра вышла на PC в конце 2024 года, на мобильных — в апреле 2025-го, так что узбекская аудитория здесь ещё новая.",
         "Официальный путь — Midasbuy или внутриигровой магазин — идёт через международную кассу и обычно просит Visa, Mastercard или PayPal. UzCard и HUMO работают только внутри Узбекистана и только в сумах. При покупке через Steam тоже встречаются ошибки оплаты и случаи, когда аккаунт LIPASS оказался привязан не к тому профилю Steam. В GemPay оплата идёт местной картой, в сумах, а Delta Coins зачисляются на Player ID."
@@ -906,7 +906,7 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "Выберите пакет и оплатите в сумах",
-          "text": "Отметьте нужную позицию в лесенке Delta Coins или Battle Pass. Оплата идёт в сумах: UzCard, HUMO, Click, Payme, Paynet. Текущая цена видна на экране до оплаты."
+          "text": "Отметьте нужную позицию в лесенке Delta Coins или Battle Pass. Оплата идёт в сумах: UzCard, HUMO, Click или Uzum Bank. Текущая цена видна на экране до оплаты."
         },
         {
           "title": "Дождитесь зачисления coin",
@@ -953,9 +953,9 @@ export const GAME_CONTENT: GameContentMap = {
     },
     "en": {
       "metaTitle": "Delta Force top-up: Delta Coins in so'm | GemPay",
-      "metaDescription": "Delta Coins for your Delta Force Global account: enter the Player ID, the bot shows your nickname free, pay in so'm. UzCard, HUMO, Click, Payme. ~5 min.",
+      "metaDescription": "Delta Coins for your Delta Force Global account: enter the Player ID, the bot shows your nickname free, pay in so'm. UzCard, HUMO, Click, Uzum Bank. ~5 min.",
       "h1": "Delta Coins top-up for Delta Force: by Player ID, in so'm",
-      "answer": "Players in Uzbekistan are on the Global (Level Infinite) version of Delta Force, not the Garena region, so there is no server choice here: the GemPay bot only asks for the Player ID. The bot pulls the nickname from the game server for free, you confirm, then pay in so'm, and Delta Coins arrive in about 5 minutes. UzCard, HUMO, Click and Payme all work as payment cards.",
+      "answer": "Players in Uzbekistan are on the Global (Level Infinite) version of Delta Force, not the Garena region, so there is no server choice here: the GemPay bot only asks for the Player ID. The bot pulls the nickname from the game server for free, you confirm, then pay in so'm, and Delta Coins arrive in about 5 minutes. UzCard, HUMO, Click and Uzum Bank all work as payment cards.",
       "intro": [
         "Delta Coins are the paid currency in Delta Force. Delta Tickets build up through play, Delta Coins do not - they can only be bought. That is why they are picked up by players who spend hours in Havoc Warfare and Operations, unlock the Battle Pass at the start of a season, and collect operator and weapon skins. The game came out on PC in late 2024 and on mobile in April 2025, so the Uzbek audience is still new to it.",
         "The official route - Midasbuy or the in-game store - runs through an international checkout and usually asks for Visa, Mastercard or PayPal. UzCard and HUMO work only inside Uzbekistan and only in so'm. Buying through Steam also brings payment errors and cases where a LIPASS account ends up linked to the wrong Steam profile. With GemPay the payment goes through a local card, in so'm, and the Delta Coins are credited to the Player ID."
@@ -987,7 +987,7 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "Pick a pack and pay in so'm",
-          "text": "Mark the item you need on the Delta Coins ladder, or the Battle Pass. Payment goes in so'm: UzCard, HUMO, Click, Payme, Paynet. The current price is on screen before you pay."
+          "text": "Mark the item you need on the Delta Coins ladder, or the Battle Pass. Payment goes in so'm: UzCard, HUMO, Click or Uzum Bank. The current price is on screen before you pay."
         },
         {
           "title": "Wait for the coins to land",
@@ -1076,9 +1076,9 @@ export const GAME_CONTENT: GameContentMap = {
       ],
       "intro": [
         "Olmos — Free Fire'ning ichki valyutasi. Uni asosan Booyah Pass'ning Premium yo'nalishini ochish, Diamond Royale va Evo Vault aylanishlari, Alok yoki Chrono kabi personajlarni olish uchun sarflashadi. Ko'p o'yinchi mavsum boshida bir marta to'ldiradi: pass ochilsa, qolgan mukofotlar o'ynab yig'iladi. Weekly va Monthly Membership oluvchilar esa har kuni oz-ozdan olmos yig'ib borishni afzal ko'radi.",
-        "O'yin ichidagi Google Play va Garena to'lov oynasi xorijiy karta so'raydi, Codashop esa O'zbekiston uchun Free Fire yo'nalishini ochmagan. Shu sababli ko'pchilik obmennik yoki kripto orqali aylanma yo'l qidiradi. GemPay'da esa hamma narsa so'mda: UzCard, HUMO, Click, Payme yoki Paynet bilan to'laysiz, olmos to'g'ridan-to'g'ri UID'ga tushadi va akkauntga kirish talab qilinmaydi."
+        "O'yin ichidagi Google Play va Garena to'lov oynasi xorijiy karta so'raydi, Codashop esa O'zbekiston uchun Free Fire yo'nalishini ochmagan. Shu sababli ko'pchilik obmennik yoki kripto orqali aylanma yo'l qidiradi. GemPay'da esa hamma narsa so'mda: UzCard, HUMO, Click yoki Uzum Bank bilan to'laysiz, olmos to'g'ridan-to'g'ri UID'ga tushadi va akkauntga kirish talab qilinmaydi."
       ],
-      "metaDescription": "Free Fire olmosini UID orqali to'ldiring: server tanlash yo'q, nik to'lovdan oldin bepul tekshiriladi, so'mda UzCard, HUMO, Click yoki Payme bilan, 2 daqiqada.",
+      "metaDescription": "Free Fire olmosini UID orqali to'ldiring: server tanlash yo'q, nik to'lovdan oldin bepul tekshiriladi, so'mda UzCard, HUMO, Click yoki Uzum Bank bilan, 2 daqiqada.",
       "metaTitle": "Free Fire olmos sotib olish — UID bilan, so'mda | GemPay",
       "packages": [
         "Olmos paketlari asosiy miqdor va bonus ko'rinishida keladi — odatda 100+10, 310+31, 520+52, 1060+106, 2180+218 va 5600+560 zinapoyasi.",
@@ -1112,18 +1112,18 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "So'mda to'lang",
-          "text": "UzCard, HUMO, Click, Payme yoki Paynet orqali to'lov qilasiz. Olmos taxminan 2 daqiqada UID'ga tushadi, chek esa botda saqlanib qoladi."
+          "text": "UzCard, HUMO, Click или Uzum Bank orqali to'lov qilasiz. Olmos taxminan 2 daqiqada UID'ga tushadi, chek esa botda saqlanib qoladi."
         }
       ]
     },
     "ru": {
       "metaTitle": "Купить алмазы Free Fire по UID, за сумы | GemPay",
-      "metaDescription": "Пополните алмазы Free Fire по UID: выбора сервера нет, ник бесплатно проверяется до оплаты, оплата в сумах через UzCard, HUMO, Click или Payme, за 2 минуты.",
+      "metaDescription": "Пополните алмазы Free Fire по UID: выбора сервера нет, ник бесплатно проверяется до оплаты, оплата в сумах через UzCard, HUMO, Click или Uzum Bank, за 2 минуты.",
       "h1": "Пополнение алмазов Free Fire — по UID, после подтверждения ника",
       "answer": "В Free Fire нет поля сервера — регион аккаунта закрепляется при первом входе, поэтому нужен только UID. В боте GemPay вы выбираете игру, вводите Player ID под аватаром профиля, бот бесплатно показывает ник, а после подтверждения выбираете пакет и платите в сумах. Алмазы приходят примерно за 2 минуты и видны также в Free Fire MAX.",
       "intro": [
         "Алмазы — внутренняя валюта Free Fire. Их в основном тратят на премиум-ветку Booyah Pass, на прокрутки Diamond Royale и Evo Vault, на персонажей вроде Alok или Chrono. Многие игроки пополняют один раз в начале сезона: пропуск открыт, а остальные награды добираются игрой. Те, кто берёт Weekly и Monthly Membership, наоборот предпочитают копить алмазы понемногу каждый день.",
-        "Платёжное окно Google Play и Garena внутри игры просит зарубежную карту, а Codashop не открыл направление Free Fire для Узбекистана. Поэтому многие ищут обходной путь через обменники или крипту. В GemPay всё в сумах: платите картой UzCard, HUMO, через Click, Payme или Paynet, алмазы приходят прямо на UID, и вход в аккаунт не требуется."
+        "Платёжное окно Google Play и Garena внутри игры просит зарубежную карту, а Codashop не открыл направление Free Fire для Узбекистана. Поэтому многие ищут обходной путь через обменники или крипту. В GemPay всё в сумах: платите картой UzCard, HUMO, через Click или Uzum Bank, алмазы приходят прямо на UID, и вход в аккаунт не требуется."
       ],
       "spendOn": [
         "Ветки Booyah Pass Premium и Premium Plus",
@@ -1157,7 +1157,7 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "Оплатите в сумах",
-          "text": "Платите через UzCard, HUMO, Click, Payme или Paynet. Алмазы приходят на UID примерно за 2 минуты, а чек остаётся в боте."
+          "text": "Платите через UzCard, HUMO, Click, Uzum Bank. Алмазы приходят на UID примерно за 2 минуты, а чек остаётся в боте."
         }
       ],
       "idSteps": [
@@ -1200,12 +1200,12 @@ export const GAME_CONTENT: GameContentMap = {
     },
     "en": {
       "metaTitle": "Buy Free Fire diamonds by UID, in so'm | GemPay",
-      "metaDescription": "Top up Free Fire diamonds by UID: no server to pick, your nickname is checked free before payment, pay in so'm with UzCard, HUMO, Click or Payme.",
+      "metaDescription": "Top up Free Fire diamonds by UID: no server to pick, your nickname is checked free before payment, pay in so'm with UzCard, HUMO, Click or Uzum Bank.",
       "h1": "Free Fire diamond top-up — by UID, after the nickname is confirmed",
       "answer": "Free Fire has no server field — the account region is attached at first login, so only the UID is needed. In the GemPay bot you pick the game, enter the Player ID under your profile avatar, the bot shows the nickname for free, and once you confirm you pick a pack and pay in so'm. Diamonds arrive in about 2 minutes and show up in Free Fire MAX as well.",
       "intro": [
         "Diamonds are Free Fire's in-game currency. They mostly go on unlocking the Premium track of the Booyah Pass, on Diamond Royale and Evo Vault spins, and on characters like Alok or Chrono. Many players top up once at the start of a season: with the pass open, the remaining rewards are collected by playing. Those who take the Weekly and Monthly Membership prefer instead to gather diamonds a little at a time each day.",
-        "The in-game Google Play and Garena payment window asks for a foreign card, and Codashop has not opened a Free Fire line for Uzbekistan. That is why many people look for a workaround through exchangers or crypto. With GemPay everything is in so'm: you pay with UzCard, HUMO, Click, Payme or Paynet, the diamonds go straight to the UID, and no account login is required."
+        "The in-game Google Play and Garena payment window asks for a foreign card, and Codashop has not opened a Free Fire line for Uzbekistan. That is why many people look for a workaround through exchangers or crypto. With GemPay everything is in so'm: you pay with UzCard, HUMO, Click, Uzum Bank, the diamonds go straight to the UID, and no account login is required."
       ],
       "spendOn": [
         "Booyah Pass Premium and Premium Plus tracks",
@@ -1239,7 +1239,7 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "Pay in so'm",
-          "text": "You pay with UzCard, HUMO, Click, Payme or Paynet. Diamonds reach the UID in about 2 minutes, and the receipt stays in the bot."
+          "text": "You pay with UzCard, HUMO, Click, Uzum Bank. Diamonds reach the UID in about 2 minutes, and the receipt stays in the bot."
         }
       ],
       "idSteps": [
@@ -1324,7 +1324,7 @@ export const GAME_CONTENT: GameContentMap = {
       ],
       "intro": [
         "Token - Honor of Kings'dagi asosiy pullik valyuta. Jangda yig'iladigan Gold ko'proq qahramon ochishga ketadi, Token esa skinlar, Honor Pass va omadli quraga sarflanadi: Epic skinlar odatda 888-1388, Legendary skinlar 1688-2888 token turadi. Shuning uchun uni bitta qahramonni jiddiy o'ynaydigan yoki har mavsum Pass yig'ib boradigan o'yinchilar oladi.",
-        "Rasmiy yo'l - Midasbuy yoki do'kon ichidagi to'lov - odatda xalqaro karta yoxud Google Play va App Store balansini so'raydi; UzCard bilan HUMO u yerda ro'yxatda ko'rinmaydi. GemPay shu bo'shliqni yopadi: to'lov O'zbekiston kartasi yoki Click, Payme, Paynet orqali so'mda o'tadi. Akkauntga kirish talab qilinmaydi, faqat ochiq UID yetadi."
+        "Rasmiy yo'l - Midasbuy yoki do'kon ichidagi to'lov - odatda xalqaro karta yoxud Google Play va App Store balansini so'raydi; UzCard bilan HUMO u yerda ro'yxatda ko'rinmaydi. GemPay shu bo'shliqni yopadi: to'lov O'zbekiston kartasi yoki Click yoki Uzum Bank orqali so'mda o'tadi. Akkauntga kirish talab qilinmaydi, faqat ochiq UID yetadi."
       ],
       "metaDescription": "Honor of Kings token to'ldirish so'mda: Player ID (UID) ni kiriting, server maydoni so'ralmaydi, nik bepul tekshiriladi va token 3 daqiqada UID ga tushadi.",
       "metaTitle": "Honor of Kings token sotib olish, so'mda | GemPay",
@@ -1356,7 +1356,7 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "Paketni tanlang va so'mda to'lang",
-          "text": "Token paketi yoki Weekly Card ni tanlab, UzCard, HUMO, Click, Payme yoki Paynet orqali to'lang. Joriy narx tugmani bosishdan oldin ekranda turadi."
+          "text": "Token paketi yoki Weekly Card ni tanlab, UzCard, HUMO, Click yoki Uzum Bank orqali to'lang. Joriy narx tugmani bosishdan oldin ekranda turadi."
         },
         {
           "title": "Tokenni o'yinda qabul qiling",
@@ -1371,7 +1371,7 @@ export const GAME_CONTENT: GameContentMap = {
       "answer": "В глобальной версии Honor of Kings нет отдельного поля сервера или зоны: регион задаётся при создании аккаунта, поэтому для пополнения нужен только Player ID (UID). В боте GemPay вы вводите ID, система бесплатно получает ник с игрового сервера, вы подтверждаете и платите в сумах. Token приходит примерно за 3 минуты, до появления ника ничего не списывается.",
       "intro": [
         "Token — основная платная валюта в Honor of Kings. Gold, который копится в боях, уходит в основном на открытие героев, а Token тратится на скины, Honor Pass и розыгрыши: скины Epic обычно стоят 888-1388 Token, Legendary — 1688-2888. Поэтому его берут те, кто серьёзно играет на одном герое или каждый сезон собирает Pass.",
-        "Официальный путь — Midasbuy или оплата внутри магазина — обычно просит международную карту либо баланс Google Play и App Store; UzCard и HUMO там в списке не появляются. GemPay закрывает этот пробел: оплата проходит в сумах картой Узбекистана или через Click, Payme, Paynet. Вход в аккаунт не требуется, достаточно открытого UID."
+        "Официальный путь — Midasbuy или оплата внутри магазина — обычно просит международную карту либо баланс Google Play и App Store; UzCard и HUMO там в списке не появляются. GemPay закрывает этот пробел: оплата проходит в сумах картой Узбекистана или через Click или Uzum Bank. Вход в аккаунт не требуется, достаточно открытого UID."
       ],
       "spendOn": [
         "Скины Epic и Legendary — обычно 888-2888 Token",
@@ -1401,7 +1401,7 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "Выберите пакет и оплатите в сумах",
-          "text": "Отметьте пакет Token или Weekly Card и оплатите через UzCard, HUMO, Click, Payme или Paynet. Текущая цена стоит на экране до нажатия кнопки."
+          "text": "Отметьте пакет Token или Weekly Card и оплатите через UzCard, HUMO, Click, Uzum Bank. Текущая цена стоит на экране до нажатия кнопки."
         },
         {
           "title": "Заберите Token в игре",
@@ -1453,7 +1453,7 @@ export const GAME_CONTENT: GameContentMap = {
       "answer": "The global version of Honor of Kings has no separate server or zone field: the region is set when the account is created, so a top-up needs only the Player ID (UID). You enter the ID in the GemPay bot, the system pulls the nickname from the game server for free, you confirm and pay in so'm. Token arrives in about 3 minutes, and nothing is charged until the nickname appears.",
       "intro": [
         "Token is the main paid currency in Honor of Kings. The Gold you collect in matches goes mostly into unlocking heroes, while Token is spent on skins, the Honor Pass and lucky draws: Epic skins usually cost 888-1388 Token, Legendary skins 1688-2888. That is why it is bought by players who main one hero seriously or who collect the Pass every season.",
-        "The official route — Midasbuy or paying inside the store — normally asks for an international card or Google Play and App Store balance; UzCard and HUMO do not appear in that list. GemPay closes the gap: payment goes through an Uzbek card or Click, Payme, Paynet in so'm. No account login is required, the public UID is enough."
+        "The official route — Midasbuy or paying inside the store — normally asks for an international card or Google Play and App Store balance; UzCard and HUMO do not appear in that list. GemPay closes the gap: payment goes through an Uzbek card or Click or Uzum Bank in so'm. No account login is required, the public UID is enough."
       ],
       "spendOn": [
         "Epic and Legendary skins — usually 888-2888 Token",
@@ -1483,7 +1483,7 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "Choose a pack and pay in so'm",
-          "text": "Select a Token pack or a Weekly Card and pay with UzCard, HUMO, Click, Payme or Paynet. The current price is on screen before you press the button."
+          "text": "Select a Token pack or a Weekly Card and pay with UzCard, HUMO, Click, Uzum Bank. The current price is on screen before you press the button."
         },
         {
           "title": "Receive the Token in game",
@@ -1531,7 +1531,7 @@ export const GAME_CONTENT: GameContentMap = {
   },
   "magic-chess-go-go": {
     "uz": {
-      "answer": "Magic Chess: Go Go'da ID ikki qismdan iborat: avatar ostidagi raqam va qavs ichidagi Server ID — Mobile Legends ID'si bu yerda ishlamaydi. GemPay botida shu ikkisini kiritasiz, nik bepul chiqadi, tasdiqlagach so'mda UzCard, HUMO, Click yoki Payme bilan to'laysiz. Olmos taxminan 2 daqiqada MCGG hisobiga tushadi.",
+      "answer": "Magic Chess: Go Go'da ID ikki qismdan iborat: avatar ostidagi raqam va qavs ichidagi Server ID — Mobile Legends ID'si bu yerda ishlamaydi. GemPay botida shu ikkisini kiritasiz, nik bepul chiqadi, tasdiqlagach so'mda UzCard, HUMO, Click yoki Uzum Bank bilan to'laysiz. Olmos taxminan 2 daqiqada MCGG hisobiga tushadi.",
       "faq": [
         {
           "q": "MCGG'da to'ldirilgan olmos Mobile Legends do'konida ishlaydimi?",
@@ -1574,7 +1574,7 @@ export const GAME_CONTENT: GameContentMap = {
         "Olmos — Magic Chess: Go Go'dagi yagona pullik valyuta. U jangda kuch qo'shmaydi: olmosga komandir skinlari, shaxmat taxtasi bezaklari, emotelar va mavsumiy Go Go Pass olinadi. Shuning uchun uni asosan har mavsumni oxirigacha o'ynaydigan, reyting ko'taradigan va o'z komandirini boshqalardan ajratib turishni xohlaydigan o'yinchilar sotib oladi. Yangi komandirni esa ko'pincha Chess Points bilan ochish arzonroq tushadi.",
         "Rasmiy yo'l O'zbekistonda uzilib qoladi: o'yin ichidagi to'lov Google Play yoki App Store balansini so'raydi, Codashop'ning mintaqaviy sahifalarida esa UzCard va HUMO ro'yxatda yo'q, ustiga to'lovdan oldin nik ham ko'rsatilmaydi. Rus donat saytlari alohida «Rossiya» server mahsulotini sotadi, o'zbek o'yinchisi esa Global'da. GemPay so'mda ishlaydi va Global hisobga tushiradi."
       ],
-      "metaDescription": "Magic Chess: Go Go olmosini User ID va qavs ichidagi Server ID orqali to'ldiring: nik to'lovdan oldin bepul chiqadi, so'mda UzCard, HUMO, Click, Payme.",
+      "metaDescription": "Magic Chess: Go Go olmosini User ID va qavs ichidagi Server ID orqali to'ldiring: nik to'lovdan oldin bepul chiqadi, so'mda UzCard, HUMO, Click, Uzum Bank.",
       "metaTitle": "Magic Chess Go Go olmos sotib olish — so'mda | GemPay",
       "packages": [
         "Olmos zinapoyasi odatda 55 dan boshlanadi va 275, 565, 1160, 1770, 2975, 4165 hamda 6000 olmosgacha ko'tariladi.",
@@ -1608,15 +1608,15 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "Paketni tanlang va so'mda to'lang",
-          "text": "Olmos zinapoyasidan yoki pass mahsulotlaridan birini tanlab, UzCard, HUMO, Click, Payme yoki Paynet orqali to'laysiz. Olmos taxminan 2 daqiqada hisobga tushadi."
+          "text": "Olmos zinapoyasidan yoki pass mahsulotlaridan birini tanlab, UzCard, HUMO, Click или Uzum Bank orqali to'laysiz. Olmos taxminan 2 daqiqada hisobga tushadi."
         }
       ]
     },
     "ru": {
       "metaTitle": "Купить алмазы Magic Chess Go Go за сумы | GemPay",
-      "metaDescription": "Пополните алмазы Magic Chess: Go Go по User ID и Server ID в скобках: ник виден бесплатно до оплаты, оплата в сумах картой UzCard, HUMO, Click, Payme.",
+      "metaDescription": "Пополните алмазы Magic Chess: Go Go по User ID и Server ID в скобках: ник виден бесплатно до оплаты, оплата в сумах картой UzCard, HUMO, Click, Uzum Bank.",
       "h1": "Пополнение алмазов Magic Chess: Go Go — по User ID и Server ID, за 2 минуты",
-      "answer": "В Magic Chess: Go Go идентификатор состоит из двух частей: номер под аватаром и Server ID в скобках — ID от Mobile Legends здесь не работает. В боте GemPay вы вводите оба номера, ник показывается бесплатно, после подтверждения платите в сумах картой UzCard, HUMO, Click или Payme. Алмазы приходят на счёт MCGG примерно за 2 минуты.",
+      "answer": "В Magic Chess: Go Go идентификатор состоит из двух частей: номер под аватаром и Server ID в скобках — ID от Mobile Legends здесь не работает. В боте GemPay вы вводите оба номера, ник показывается бесплатно, после подтверждения платите в сумах картой UzCard, HUMO, Click или Uzum Bank. Алмазы приходят на счёт MCGG примерно за 2 минуты.",
       "intro": [
         "Алмазы — единственная платная валюта в Magic Chess: Go Go. В бою они силы не добавляют: за алмазы берут скины командиров, оформление шахматной доски, эмоции и сезонный Go Go Pass. Поэтому их покупают в основном те, кто играет сезон до конца, поднимает рейтинг и хочет выделить своего командира среди остальных. А нового командира чаще выгоднее открыть за Chess Points.",
         "Официальный путь в Узбекистане обрывается: оплата внутри игры просит баланс Google Play или App Store, а на региональных страницах Codashop нет UzCard и HUMO, да и ник до оплаты там не показывают. Российские донат-сайты продают отдельный товар для сервера «Россия», а узбекский игрок сидит на Global. GemPay работает в сумах и зачисляет на аккаунт Global."
@@ -1653,7 +1653,7 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "Выберите пакет и оплатите в сумах",
-          "text": "Выбираете позицию из лестницы алмазов или один из пропусков и платите через UzCard, HUMO, Click, Payme или Paynet. Алмазы приходят на счёт примерно за 2 минуты."
+          "text": "Выбираете позицию из лестницы алмазов или один из пропусков и платите через UzCard, HUMO, Click, Uzum Bank. Алмазы приходят на счёт примерно за 2 минуты."
         }
       ],
       "idSteps": [
@@ -1698,7 +1698,7 @@ export const GAME_CONTENT: GameContentMap = {
       "metaTitle": "Buy Magic Chess Go Go diamonds in so'm | GemPay",
       "metaDescription": "Top up Magic Chess: Go Go diamonds by User ID and the Server ID in brackets: your nickname is shown free before payment, pay in so'm with UzCard or HUMO.",
       "h1": "Magic Chess: Go Go diamond top-up — by User ID and Server ID, in 2 minutes",
-      "answer": "In Magic Chess: Go Go the ID has two parts: the number under your avatar and the Server ID in brackets — a Mobile Legends ID does not work here. In the GemPay bot you enter both, your nickname is shown for free, and after you confirm you pay in so'm with UzCard, HUMO, Click or Payme. Diamonds reach the MCGG account in about 2 minutes.",
+      "answer": "In Magic Chess: Go Go the ID has two parts: the number under your avatar and the Server ID in brackets — a Mobile Legends ID does not work here. In the GemPay bot you enter both, your nickname is shown for free, and after you confirm you pay in so'm with UzCard, HUMO, Click or Uzum Bank. Diamonds reach the MCGG account in about 2 minutes.",
       "intro": [
         "Diamonds are the only paid currency in Magic Chess: Go Go. They add no power in a fight: diamonds buy commander skins, chessboard designs, emotes and the seasonal Go Go Pass. That is why they are mostly bought by players who play a season to the end, climb the rating and want their commander to stand out from the rest. A new commander is usually cheaper to unlock with Chess Points.",
         "The official route breaks down in Uzbekistan: in-game payment asks for a Google Play or App Store balance, and Codashop's regional pages list neither UzCard nor HUMO, nor do they show the nickname before payment. Russian top-up sites sell a separate product for the «Russia» server, while an Uzbek player is on Global. GemPay works in so'm and credits the Global account."
@@ -1735,7 +1735,7 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "Pick a pack and pay in so'm",
-          "text": "You choose a step from the diamond ladder or one of the pass products and pay with UzCard, HUMO, Click, Payme or Paynet. Diamonds reach the account in about 2 minutes."
+          "text": "You choose a step from the diamond ladder or one of the pass products and pay with UzCard, HUMO, Click, Uzum Bank. Diamonds reach the account in about 2 minutes."
         }
       ],
       "idSteps": [
@@ -1820,9 +1820,9 @@ export const GAME_CONTENT: GameContentMap = {
       ],
       "intro": [
         "Mobile Legends: Bang Bang'da olmos - skin do'koni, Magic Wheel va Lucky Box aylantirishlari, Starlight a'zoligi va yangi geroylarni ochish uchun ishlatiladigan asosiy valyuta. Uni ko'proq reyting o'ynaydigan, mavsumiy skinni yig'ib boradigan va do'stiga sovg'a qilmoqchi bo'lgan o'yinchilar oladi. Nick o'zgartirish kartasi hamda recall va emote effektlari ham shu valyutada sotiladi.",
-        "O'yin ichidagi do'kon to'lovni Google Play yoki App Store balansiga yo'naltiradi, u yerda UzCard va HUMO ko'pincha o'tmaydi; xorijiy top-up saytlari esa dollarda ishlaydi va Visa, Mastercard yoki kripto so'raydi. GemPay botida hisob so'mda chiqadi, to'lovni Click, Payme, Paynet yoki mahalliy karta bilan yopasiz, olmos esa taxminan bir daqiqada akkauntga tushadi."
+        "O'yin ichidagi do'kon to'lovni Google Play yoki App Store balansiga yo'naltiradi, u yerda UzCard va HUMO ko'pincha o'tmaydi; xorijiy top-up saytlari esa dollarda ishlaydi va Visa, Mastercard yoki kripto so'raydi. GemPay botida hisob so'mda chiqadi, to'lovni Click yoki Uzum Bank yoki mahalliy karta bilan yopasiz, olmos esa taxminan bir daqiqada akkauntga tushadi."
       ],
-      "metaDescription": "MLBB olmosini User ID va qavs ichidagi Server ID orqali to'ldiring: bot nickni bepul ko'rsatadi, tasdiqlagach so'mda Click, Payme yoki UzCard bilan to'laysiz.",
+      "metaDescription": "MLBB olmosini User ID va qavs ichidagi Server ID orqali to'ldiring: bot nickni bepul ko'rsatadi, tasdiqlagach so'mda Click, Uzum Bank yoki UzCard bilan to'laysiz.",
       "metaTitle": "Mobile Legends olmos sotib olish - MLBB donat | GemPay",
       "packages": [
         "Olmos paketlari kichik pog'onadan boshlanib kattaga qarab ko'tariladi - odatda 86, 172, 257, 344, 429, 514, 706 va undan yuqori miqdorlar; har biri asosiy va bonus qismdan yig'ilgani uchun ro'yxatda 78+8 ko'rinishidagi yozuvni uchratasiz.",
@@ -1856,18 +1856,18 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "Paketni tanlab so'mda to'lang",
-          "text": "Olmos miqdorini yoki Starlight, Weekly Diamond Pass kabi obunani tanlaysiz va UzCard, HUMO, Click, Payme yoxud Paynet orqali to'laysiz. Olmos taxminan bir daqiqada akkauntga tushadi."
+          "text": "Olmos miqdorini yoki Starlight, Weekly Diamond Pass kabi obunani tanlaysiz va UzCard, HUMO, Click, Uzum Bank orqali to'laysiz. Olmos taxminan bir daqiqada akkauntga tushadi."
         }
       ]
     },
     "ru": {
       "metaTitle": "Купить алмазы Mobile Legends — донат MLBB | GemPay",
-      "metaDescription": "Пополните алмазы MLBB по User ID и Server ID в скобках: бот бесплатно покажет ник, после подтверждения платите в сумах через Click, Payme или UzCard.",
+      "metaDescription": "Пополните алмазы MLBB по User ID и Server ID в скобках: бот бесплатно покажет ник, после подтверждения платите в сумах через Click, Uzum Bank или UzCard.",
       "h1": "Пополнение алмазов Mobile Legends: User ID и Server ID",
       "answer": "В Mobile Legends ID профиля состоит из двух частей: 12345678(1234) — первое число это User ID, а четыре цифры в скобках Server (Zone) ID, и нужны оба. В боте GemPay вы вводите оба номера, система бесплатно показывает nickname с игрового сервера, вы подтверждаете, платите в сумах, и алмазы приходят примерно за минуту. Пароль или SMS-код не запрашиваются.",
       "intro": [
         "В Mobile Legends: Bang Bang алмазы — основная валюта для магазина скинов, прокруток Magic Wheel и Lucky Box, подписки Starlight и открытия новых героев. Чаще их берут те, кто играет рейтинг, собирает сезонный скин или хочет сделать подарок другу. Карта смены ника, а также эффекты recall и эмоции продаются за ту же валюту.",
-        "Внутриигровой магазин направляет оплату на баланс Google Play или App Store, где UzCard и HUMO часто не проходят; зарубежные топ-ап сайты работают в долларах и просят Visa, Mastercard или крипту. В боте GemPay счёт выставляется в сумах, оплату вы закрываете через Click, Payme, Paynet или местной картой, а алмазы приходят на аккаунт примерно за минуту."
+        "Внутриигровой магазин направляет оплату на баланс Google Play или App Store, где UzCard и HUMO часто не проходят; зарубежные топ-ап сайты работают в долларах и просят Visa, Mastercard или крипту. В боте GemPay счёт выставляется в сумах, оплату вы закрываете через Click или Uzum Bank или местной картой, а алмазы приходят на аккаунт примерно за минуту."
       ],
       "spendOn": [
         "Скины Elite, Epic и Legend в магазине скинов",
@@ -1901,7 +1901,7 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "Выберите пакет и оплатите в сумах",
-          "text": "Отмечаете количество алмазов или подписку вроде Starlight и Weekly Diamond Pass и платите через UzCard, HUMO, Click, Payme или Paynet. Алмазы приходят на аккаунт примерно за минуту."
+          "text": "Отмечаете количество алмазов или подписку вроде Starlight и Weekly Diamond Pass и платите через UzCard, HUMO, Click, Uzum Bank. Алмазы приходят на аккаунт примерно за минуту."
         }
       ],
       "idSteps": [
@@ -1944,12 +1944,12 @@ export const GAME_CONTENT: GameContentMap = {
     },
     "en": {
       "metaTitle": "Buy Mobile Legends Diamonds — MLBB Top Up | GemPay",
-      "metaDescription": "Top up MLBB diamonds with your User ID and the Server ID in brackets: the bot shows your nick free, then you pay in so'm via Click, Payme or UzCard.",
+      "metaDescription": "Top up MLBB diamonds with your User ID and the Server ID in brackets: the bot shows your nick free, then you pay in so'm via Click, Uzum Bank or UzCard.",
       "h1": "Mobile Legends diamond top-up: User ID and Server ID",
       "answer": "In Mobile Legends the profile ID has two parts: 12345678(1234) — the first number is the User ID and the four digits in brackets are the Server (Zone) ID, and both are needed. You enter both in the GemPay bot, the system shows your nickname from the game server for free, you confirm, you pay in so'm, and the diamonds arrive in about a minute. No password or SMS code is requested.",
       "intro": [
         "In Mobile Legends: Bang Bang, diamonds are the main currency for the skin shop, Magic Wheel and Lucky Box spins, Starlight membership and unlocking new heroes. They are mostly bought by players who grind ranked, collect the seasonal skin or want to gift a friend. The name change card, along with recall and emote effects, is sold for the same currency.",
-        "The in-game shop routes payment to your Google Play or App Store balance, where UzCard and HUMO often fail; foreign top-up sites work in dollars and ask for Visa, Mastercard or crypto. In the GemPay bot the bill comes in so'm, you close it with Click, Payme, Paynet or a local card, and the diamonds land on the account in about a minute."
+        "The in-game shop routes payment to your Google Play or App Store balance, where UzCard and HUMO often fail; foreign top-up sites work in dollars and ask for Visa, Mastercard or crypto. In the GemPay bot the bill comes in so'm, you close it with Click or Uzum Bank or a local card, and the diamonds land on the account in about a minute."
       ],
       "spendOn": [
         "Elite, Epic and Legend skins in the skin shop",
@@ -1983,7 +1983,7 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "Pick a pack and pay in so'm",
-          "text": "You select a diamond amount or a subscription such as Starlight or Weekly Diamond Pass and pay with UzCard, HUMO, Click, Payme or Paynet. Diamonds land on the account in about a minute."
+          "text": "You select a diamond amount or a subscription such as Starlight or Weekly Diamond Pass and pay with UzCard, HUMO, Click, Uzum Bank. Diamonds land on the account in about a minute."
         }
       ],
       "idSteps": [
@@ -2027,7 +2027,7 @@ export const GAME_CONTENT: GameContentMap = {
   },
   "pubg-mobile": {
     "uz": {
-      "answer": "PUBG Mobile'da server tanlash maydoni yo'q: 10-11 xonali Player ID akkauntni o'zi aniqlaydi. @Gempayuz_bot'da o'sha raqamni kiritasiz, bot o'yin serveridan niknemni bepul qaytaradi, siz tasdiqlaysiz, UC paketini tanlaysiz va so'mda — UzCard, HUMO, Click, Payme, Paynet — to'laysiz. Tasdiqlamaguningizcha hech narsa yechilmaydi. UC taxminan 2 daqiqada tushadi.",
+      "answer": "PUBG Mobile'da server tanlash maydoni yo'q: 10-11 xonali Player ID akkauntni o'zi aniqlaydi. @Gempayuz_bot'da o'sha raqamni kiritasiz, bot o'yin serveridan niknemni bepul qaytaradi, siz tasdiqlaysiz, UC paketini tanlaysiz va so'mda — UzCard, HUMO, Click yoki Uzum Bank — to'laysiz. Tasdiqlamaguningizcha hech narsa yechilmaydi. UC taxminan 2 daqiqada tushadi.",
       "faq": [
         {
           "q": "UC balansi qurilmagami yoki akkauntgami bog'lanadi?",
@@ -2103,7 +2103,7 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "So'mda to'lang va UC ni kuting",
-          "text": "UzCard, HUMO, Click, Payme yoki Paynet orqali to'laysiz. UC taxminan 2 daqiqada balansga tushadi; darhol ko'rinmasa, lobbini qayta oching."
+          "text": "UzCard, HUMO, Click или Uzum Bank orqali to'laysiz. UC taxminan 2 daqiqada balansga tushadi; darhol ko'rinmasa, lobbini qayta oching."
         }
       ]
     },
@@ -2111,7 +2111,7 @@ export const GAME_CONTENT: GameContentMap = {
       "metaTitle": "Купить UC для PUBG Mobile — UzCard и HUMO | GemPay",
       "metaDescription": "Пополните UC в PUBG Mobile по Player ID: поле сервера не нужно, ник проверяется бесплатно до оплаты, платёж в сумах через UzCard или HUMO, UC за ~2 минуты.",
       "h1": "Купить UC для PUBG Mobile — по Player ID, в сумах",
-      "answer": "В PUBG Mobile нет поля выбора сервера: 10-11-значный Player ID сам определяет аккаунт. В @Gempayuz_bot вы вводите этот номер, бот бесплатно возвращает ник с игрового сервера, вы подтверждаете, выбираете пакет UC и платите в сумах — UzCard, HUMO, Click, Payme, Paynet. Пока вы не подтвердите, ничего не списывается. UC приходит примерно за 2 минуты.",
+      "answer": "В PUBG Mobile нет поля выбора сервера: 10-11-значный Player ID сам определяет аккаунт. В @Gempayuz_bot вы вводите этот номер, бот бесплатно возвращает ник с игрового сервера, вы подтверждаете, выбираете пакет UC и платите в сумах — UzCard, HUMO, Click или Uzum Bank. Пока вы не подтвердите, ничего не списывается. UC приходит примерно за 2 минуты.",
       "intro": [
         "UC — внутренняя валюта PUBG Mobile. Её тратят на открытие сезона Royal Pass, на Classic и Premium сундуки, на прокрутки Mythic Forge, на X-Suit и скины оружия. Большинство берёт её в начале сезона: чем раньше открыт Royal Pass, тем больше наград за уровни соберётся за сезон. Кто-то берёт небольшой пакет только ради Rename Card. Баланс привязан к аккаунту и остаётся при смене телефона.",
         "Препятствие в Узбекистане — этап оплаты. В списке карт на международных сайтах пополнения обычно стоят Visa, Mastercard, PayPal, Apple Pay или крипта; UzCard и HUMO там не видно, счёт ведётся в долларах, а конвертация даёт дополнительные потери. GemPay убирает этот этап: оплата идёт в сумах, местной картой или кошельком, поддержка отвечает на узбекском."
@@ -2148,7 +2148,7 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "Оплатите в сумах и дождитесь UC",
-          "text": "Оплата проходит через UzCard, HUMO, Click, Payme или Paynet. UC приходит на баланс примерно за 2 минуты; если сразу не видно, перезайдите в лобби."
+          "text": "Оплата проходит через UzCard, HUMO, Click, Uzum Bank. UC приходит на баланс примерно за 2 минуты; если сразу не видно, перезайдите в лобби."
         }
       ],
       "idSteps": [
@@ -2192,7 +2192,7 @@ export const GAME_CONTENT: GameContentMap = {
       "metaTitle": "Buy PUBG Mobile UC — UzCard and HUMO | GemPay",
       "metaDescription": "Top up PUBG Mobile UC by Player ID: no server field, your nickname is checked free before payment, pay in so'm with UzCard or HUMO, UC in about 2 minutes.",
       "h1": "Buy PUBG Mobile UC — by Player ID, paid in so'm",
-      "answer": "PUBG Mobile has no server selection field: the 10-11 digit Player ID identifies the account on its own. You enter that number in @Gempayuz_bot, the bot returns your nickname from the game server for free, you confirm it, pick a UC pack and pay in so'm — UzCard, HUMO, Click, Payme, Paynet. Nothing is charged until you confirm. UC arrives in about 2 minutes.",
+      "answer": "PUBG Mobile has no server selection field: the 10-11 digit Player ID identifies the account on its own. You enter that number in @Gempayuz_bot, the bot returns your nickname from the game server for free, you confirm it, pick a UC pack and pay in so'm — UzCard, HUMO, Click or Uzum Bank. Nothing is charged until you confirm. UC arrives in about 2 minutes.",
       "intro": [
         "UC is the in-game currency of PUBG Mobile. It goes on unlocking the Royal Pass season, on Classic and Premium crates, on Mythic Forge pulls, on X-Suits and weapon skins. Most players buy it at the start of a season: the earlier the Royal Pass is opened, the more tier rewards pile up over the season. Some take a small pack only for a Rename Card. The balance is tied to the account and stays with you when you change phones.",
         "The obstacle in Uzbekistan is the payment step. International top-up sites usually list Visa, Mastercard, PayPal, Apple Pay or crypto; UzCard and HUMO are not there, the bill is kept in dollars, and conversion costs extra. GemPay removes that step: payment goes through in so'm with a local card or wallet, and support answers in Uzbek."
@@ -2229,7 +2229,7 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "Pay in so'm and wait for the UC",
-          "text": "You pay with UzCard, HUMO, Click, Payme or Paynet. UC lands on the balance in about 2 minutes; if you do not see it right away, reopen the lobby."
+          "text": "You pay with UzCard, HUMO, Click, Uzum Bank. UC lands on the balance in about 2 minutes; if you do not see it right away, reopen the lobby."
         }
       ],
       "idSteps": [
@@ -2273,12 +2273,12 @@ export const GAME_CONTENT: GameContentMap = {
   "steam": {
     "uz": {
       "metaTitle": "Steam hamyonini to'ldirish, login orqali | GemPay",
-      "metaDescription": "Steam hamyoni account name - kirish logini bo'yicha to'ldiriladi, nik yoki email emas. So'mda UzCard, HUMO, Click, Payme, Paynet; balans bir daqiqada tushadi.",
+      "metaDescription": "Steam hamyoni account name - kirish logini bo'yicha to'ldiriladi, nik yoki email emas. So'mda UzCard, HUMO, Click yoki Uzum Bank; balans bir daqiqada tushadi.",
       "h1": "Steam hamyonini so'mda to'ldirish: account name orqali, bir daqiqada",
       "answer": "Steam hamyoni account name bo'yicha to'ldiriladi - bu Steam'ga kirishda yoziladigan login, profildagi ko'rinadigan nik ham, email ham emas. O'yinlardagi kabi nik tasdiqlash bosqichi bu yerda yo'q, login birinchi martadanoq to'g'ri bo'lishi kerak. GemPay botida Steam tanlanadi, login kiritiladi, summa tanlanib so'mda to'lanadi, balans taxminan bir daqiqada akkauntga tushadi.",
       "intro": [
         "Steam Hamyon - o'yin ichidagi valyuta emas, akkauntning o'zidagi balans. U bilan Steam Store'dagi o'yinlar va DLC'lar, CS2 hamda Dota 2 kabi bepul o'yinlardagi ichki xaridlar, Community Market'dagi buyumlar to'lanadi. Uni ko'pincha chegirmalar davrini kutayotgan, wishlist'idagi o'yin arzonlashganda pul tayyor turishini istagan va xalqaro kartasi yo'q O'zbekistondagi PC o'yinchilari to'ldiradi.",
-        "Steam kassasi UzCard va HUMO'ni qabul qilmaydi, xalqaro karta esa hammada ham yo'q va u bilan to'lov ko'pincha rad javobi bilan tugaydi. GemPay to'lovni so'mda, odatiy mahalliy usullar orqali oladi - UzCard, HUMO, Click, Payme, Paynet - va balansni akkauntga o'zi tushiradi. Konvertatsiya yoki chet el kartasini qidirish kerak bo'lmaydi."
+        "Steam kassasi UzCard va HUMO'ni qabul qilmaydi, xalqaro karta esa hammada ham yo'q va u bilan to'lov ko'pincha rad javobi bilan tugaydi. GemPay to'lovni so'mda, odatiy mahalliy usullar orqali oladi - UzCard, HUMO, Click yoki Uzum Bank - va balansni akkauntga o'zi tushiradi. Konvertatsiya yoki chet el kartasini qidirish kerak bo'lmaydi."
       ],
       "spendOn": [
         "Steam Store'da o'yin, DLC va oldindan buyurtma",
@@ -2307,7 +2307,7 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "Summani tanlab so'mda to'lang",
-          "text": "Botdagi to'ldirish miqdorlaridan birini tanlaysiz va UzCard, HUMO, Click, Payme yoki Paynet orqali to'laysiz. Narx botda ko'rsatiladi, to'lov tasdiqlanmaguncha hech narsa yechilmaydi."
+          "text": "Botdagi to'ldirish miqdorlaridan birini tanlaysiz va UzCard, HUMO, Click yoki Uzum Bank orqali to'laysiz. Narx botda ko'rsatiladi, to'lov tasdiqlanmaguncha hech narsa yechilmaydi."
         },
         {
           "title": "Balansni Steam'da ko'ring",
@@ -2354,12 +2354,12 @@ export const GAME_CONTENT: GameContentMap = {
     },
     "ru": {
       "metaTitle": "Пополнение кошелька Steam по логину | GemPay",
-      "metaDescription": "Кошелек Steam пополняется по account name - логину для входа, а не по нику или email. В сумах: UzCard, HUMO, Click, Payme, Paynet; баланс за минуту.",
+      "metaDescription": "Кошелек Steam пополняется по account name - логину для входа, а не по нику или email. В сумах: UzCard, HUMO, Click или Uzum Bank; баланс за минуту.",
       "h1": "Пополнение кошелька Steam в сумах: по account name, за минуту",
       "answer": "Кошелек Steam пополняется по account name - это логин, который вводится при входе в Steam, а не видимый в профиле ник и не email. Шага с подтверждением ника, как в играх, здесь нет, логин должен быть верным с первого раза. В боте GemPay выбирается Steam, вводится логин, выбирается сумма и оплачивается в сумах, баланс приходит на аккаунт примерно за минуту.",
       "intro": [
         "Steam Кошелек - это не внутриигровая валюта, а баланс на самом аккаунте. Им оплачиваются игры и DLC в Steam Store, внутренние покупки в бесплатных играх вроде CS2 и Dota 2, предметы на Community Market. Чаще всего его пополняют PC-игроки из Узбекистана, которые ждут период скидок, хотят держать деньги наготове к моменту, когда игра из вишлиста подешевеет, и у которых нет международной карты.",
-        "Касса Steam не принимает UzCard и HUMO, а международная карта есть не у всех, и оплата ею часто заканчивается отказом. GemPay принимает оплату в сумах привычными местными способами - UzCard, HUMO, Click, Payme, Paynet - и сам зачисляет баланс на аккаунт. Ни конвертация, ни поиск зарубежной карты не понадобятся."
+        "Касса Steam не принимает UzCard и HUMO, а международная карта есть не у всех, и оплата ею часто заканчивается отказом. GemPay принимает оплату в сумах привычными местными способами - UzCard, HUMO, Click или Uzum Bank - и сам зачисляет баланс на аккаунт. Ни конвертация, ни поиск зарубежной карты не понадобятся."
       ],
       "spendOn": [
         "Игры, DLC и предзаказы в Steam Store",
@@ -2388,7 +2388,7 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "Выберите сумму и оплатите в сумах",
-          "text": "Вы выбираете одну из сумм пополнения в боте и платите через UzCard, HUMO, Click, Payme или Paynet. Цена показывается в боте, до подтверждения оплаты ничего не списывается."
+          "text": "Вы выбираете одну из сумм пополнения в боте и платите через UzCard, HUMO, Click, Uzum Bank. Цена показывается в боте, до подтверждения оплаты ничего не списывается."
         },
         {
           "title": "Посмотрите баланс в Steam",
@@ -2435,12 +2435,12 @@ export const GAME_CONTENT: GameContentMap = {
     },
     "en": {
       "metaTitle": "Steam wallet top-up by account name | GemPay",
-      "metaDescription": "A Steam wallet is topped up by account name - the sign-in login, not a nickname or email. Pay in so'm: UzCard, HUMO, Click, Payme, Paynet; balance in a minute.",
+      "metaDescription": "A Steam wallet is topped up by account name - the sign-in login, not a nickname or email. Pay in so'm: UzCard, HUMO, Click or Uzum Bank; balance in a minute.",
       "h1": "Top up a Steam wallet in so'm: by account name, in a minute",
       "answer": "A Steam wallet is topped up by account name - the login you type when signing in to Steam, not the nickname shown on the profile and not the email. There is no nickname confirmation step here as there is with games, so the login has to be right the first time. In the GemPay bot you pick Steam, enter the login, choose an amount and pay in so'm, and the balance lands on the account in about a minute.",
       "intro": [
         "The Steam Wallet is not an in-game currency but a balance on the account itself. It pays for games and DLC in the Steam Store, in-game purchases in free games such as CS2 and Dota 2, and items on the Community Market. It is most often topped up by PC players in Uzbekistan who are waiting for a sale period, who want money ready for the moment a game on their wishlist drops in price, and who have no international card.",
-        "The Steam checkout does not accept UzCard or HUMO, an international card is not something everyone has, and paying with one often ends in a decline. GemPay takes the payment in so'm through the usual local methods - UzCard, HUMO, Click, Payme, Paynet - and puts the balance on the account itself. No conversion and no hunt for a foreign card are needed."
+        "The Steam checkout does not accept UzCard or HUMO, an international card is not something everyone has, and paying with one often ends in a decline. GemPay takes the payment in so'm through the usual local methods - UzCard, HUMO, Click or Uzum Bank - and puts the balance on the account itself. No conversion and no hunt for a foreign card are needed."
       ],
       "spendOn": [
         "Games, DLC and pre-orders in the Steam Store",
@@ -2469,7 +2469,7 @@ export const GAME_CONTENT: GameContentMap = {
         },
         {
           "title": "Choose an amount and pay in so'm",
-          "text": "You pick one of the top-up amounts in the bot and pay with UzCard, HUMO, Click, Payme or Paynet. The price is shown in the bot, and nothing is charged until the payment is confirmed."
+          "text": "You pick one of the top-up amounts in the bot and pay with UzCard, HUMO, Click, Uzum Bank. The price is shown in the bot, and nothing is charged until the payment is confirmed."
         },
         {
           "title": "Check the balance in Steam",

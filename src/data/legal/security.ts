@@ -13,12 +13,27 @@
  */
 
 import type { LegalDoc } from "./types";
-import { SUPPORT_URL, localCards, intlCards, localePath } from "../site";
+import { SUPPORT_URL, localCards, intlCards, ACCEPTS_INTL_CARDS, localePath } from "../site";
 
 const LOCAL = localCards.map((m) => m.name).join(" va ");
 const LOCAL_RU = localCards.map((m) => m.name).join(" и ");
 const LOCAL_EN = localCards.map((m) => m.name).join(" and ");
 const INTL = intlCards.map((m) => m.name).join(", ");
+
+/**
+ * 3-D Secure bo'limi MA'LUMOTGA bog'langan.
+ *
+ * Hozir xalqaro karta qabul qilinmaydi, ya'ni «Visa'ni 3-D Secure bilan
+ * tasdiqlaysiz» deb yozish yolg'on bo'lardi — bank tekshiruvida esa aynan
+ * shunday nomuvofiqlik ko'zga tashlanadi. Shu bilan birga bo'limni
+ * butunlay o'chirib tashlab ham bo'lmaydi: ekvayring kengayganda u
+ * qaytishi kerak.
+ *
+ * Yechim: `site.ts` ga xalqaro karta qo'shilsa (`kind: "card-intl"`),
+ * bayroq o'zi yonadi va to'liq 3-D Secure matni qaytadi. Kodga tegish
+ * shart emas.
+ */
+const INTL_ON = ACCEPTS_INTL_CARDS;
 
 export const SECURITY: LegalDoc = {
   slug: "tolov-xavfsizligi",
@@ -69,47 +84,71 @@ export const SECURITY: LegalDoc = {
             "tashkilotining oynasida amalga oshiriladi.",
         },
 
-        { t: "h2", id: "3ds", text: "3-D Secure — xalqaro kartalar uchun" },
-        {
-          t: "p",
-          text: `<strong>${INTL}</strong> kartalari bilan to'lov 3-D Secure protokoli orqali qo'shimcha tasdiqlanadi. Visa'da bu <strong>Visa Secure</strong>, Mastercard'da <strong>Mastercard Identity Check</strong> deb ataladi.`,
-        },
-        {
-          t: "p",
-          text:
-            "3-D Secure to'lovni tasdiqlash huquqini <strong>kartani chiqargan bankka</strong> " +
-            "beradi. Ya'ni karta raqamini bilgan odam ham, sizning bankingiz bergan tasdiqsiz " +
-            "to'lovni yakunlay olmaydi.",
-        },
-        {
-          t: "steps",
-          items: [
+        { t: "h2", id: "3ds", text: INTL_ON ? "3-D Secure — xalqaro kartalar uchun" : "Xalqaro kartalar va 3-D Secure" },
+        ...(INTL_ON
+          ? [
+
             {
-              title: "Karta kiritiladi",
-              text: "To'lov tashkilotining himoyalangan sahifasida. GemPay bu ma'lumotni ko'rmaydi.",
+              t: "p",
+              text: `<strong>${INTL}</strong> kartalari bilan to'lov 3-D Secure protokoli orqali qo'shimcha tasdiqlanadi. Visa'da bu <strong>Visa Secure</strong>, Mastercard'da <strong>Mastercard Identity Check</strong> deb ataladi.`,
             },
             {
-              title: "Bank tasdiq so'raydi",
-              text: "Sahifa kartani chiqargan bankka yo'naltiriladi: bank ilovasidagi push, SMS kodi yoki biometrika.",
+              t: "p",
+              text:
+                "3-D Secure to'lovni tasdiqlash huquqini <strong>kartani chiqargan bankka</strong> " +
+                "beradi. Ya'ni karta raqamini bilgan odam ham, sizning bankingiz bergan tasdiqsiz " +
+                "to'lovni yakunlay olmaydi.",
             },
             {
-              title: "Siz tasdiqlaysiz",
-              text: "Tasdiq bank tomonida bo'ladi. Kod faqat sizga keladi va uni hech kimga aytish kerak emas.",
+              t: "steps",
+              items: [
+                {
+                  title: "Karta kiritiladi",
+                  text: "To'lov tashkilotining himoyalangan sahifasida. GemPay bu ma'lumotni ko'rmaydi.",
+                },
+                {
+                  title: "Bank tasdiq so'raydi",
+                  text: "Sahifa kartani chiqargan bankka yo'naltiriladi: bank ilovasidagi push, SMS kodi yoki biometrika.",
+                },
+                {
+                  title: "Siz tasdiqlaysiz",
+                  text: "Tasdiq bank tomonida bo'ladi. Kod faqat sizga keladi va uni hech kimga aytish kerak emas.",
+                },
+                {
+                  title: "To'lov yakunlanadi",
+                  text: "Bank javobidan keyin to'lov o'tadi va buyurtma bajarilishga uzatiladi.",
+                },
+              ],
             },
             {
-              title: "To'lov yakunlanadi",
-              text: "Bank javobidan keyin to'lov o'tadi va buyurtma bajarilishga uzatiladi.",
+              t: "note",
+              tone: "warn",
+              title: "3-D Secure kodini hech kimga aytmang",
+              text:
+                "Bankdan kelgan bir martalik kod faqat siz uchun. GemPay xodimi ham, qo'llab-" +
+                "quvvatlash ham bu kodni hech qachon so'ramaydi. Kimdir so'rasa — bu firibgarlik.",
             },
-          ],
-        },
-        {
-          t: "note",
-          tone: "warn",
-          title: "3-D Secure kodini hech kimga aytmang",
-          text:
-            "Bankdan kelgan bir martalik kod faqat siz uchun. GemPay xodimi ham, qo'llab-" +
-            "quvvatlash ham bu kodni hech qachon so'ramaydi. Kimdir so'rasa — bu firibgarlik.",
-        },
+            ]
+          : [
+          {
+            t: "p",
+            text:
+              "GemPay hozircha xalqaro to'lov tizimlari kartalarini qabul qilmaydi. " +
+              "To'lov O'zbekiston kartalari va mahalliy hamyonlar orqali, so'mda o'tadi — " +
+              "shuning uchun xorijiy karta ochish, valyuta konvertatsiyasi yoki VPN kerak emas.",
+          },
+          {
+            t: "note",
+            tone: "info",
+            title: "3-D Secure nima va u qachon qo'llanadi",
+            text:
+              "3-D Secure — xalqaro kartalar uchun qo'shimcha tasdiqlash protokoli (Visa'da " +
+              "<strong>Visa Secure</strong>, Mastercard'da <strong>Mastercard Identity Check</strong>). " +
+              "U to'lovni tasdiqlash huquqini kartani chiqargan bankka beradi. Xalqaro kartalar " +
+              "qabul qilina boshlaganda shu himoya majburiy bo'ladi va bu sahifada batafsil " +
+              "yoziladi. Hozirgi to'lovlar quyidagi bo'limda tavsiflangan usulda tasdiqlanadi.",
+          },
+            ]),
 
         { t: "h2", id: "otp", text: `Mahalliy kartalar — ${LOCAL}` },
         {
@@ -293,47 +332,71 @@ export const SECURITY: LegalDoc = {
             "Оплата проходит только в Mini App внутри Telegram, в окне платёжной организации.",
         },
 
-        { t: "h2", id: "3ds", text: "3-D Secure — для международных карт" },
-        {
-          t: "p",
-          text: `Платежи картами <strong>${INTL}</strong> дополнительно подтверждаются по протоколу 3-D Secure. У Visa он называется <strong>Visa Secure</strong>, у Mastercard — <strong>Mastercard Identity Check</strong>.`,
-        },
-        {
-          t: "p",
-          text:
-            "3-D Secure передаёт право подтвердить платёж <strong>банку, выпустившему карту</strong>. " +
-            "То есть даже тот, кто знает номер карты, не завершит платёж без подтверждения, " +
-            "полученного от вашего банка.",
-        },
-        {
-          t: "steps",
-          items: [
+        { t: "h2", id: "3ds", text: INTL_ON ? "3-D Secure — для международных карт" : "Международные карты и 3-D Secure" },
+        ...(INTL_ON
+          ? [
+
             {
-              title: "Ввод карты",
-              text: "На защищённой странице платёжной организации. GemPay этих данных не видит.",
+              t: "p",
+              text: `Платежи картами <strong>${INTL}</strong> дополнительно подтверждаются по протоколу 3-D Secure. У Visa он называется <strong>Visa Secure</strong>, у Mastercard — <strong>Mastercard Identity Check</strong>.`,
             },
             {
-              title: "Банк запрашивает подтверждение",
-              text: "Страница перенаправляется в банк-эмитент: push в приложении, код по SMS или биометрия.",
+              t: "p",
+              text:
+                "3-D Secure передаёт право подтвердить платёж <strong>банку, выпустившему карту</strong>. " +
+                "То есть даже тот, кто знает номер карты, не завершит платёж без подтверждения, " +
+                "полученного от вашего банка.",
             },
             {
-              title: "Вы подтверждаете",
-              text: "Подтверждение происходит на стороне банка. Код приходит только вам, и сообщать его никому не нужно.",
+              t: "steps",
+              items: [
+                {
+                  title: "Ввод карты",
+                  text: "На защищённой странице платёжной организации. GemPay этих данных не видит.",
+                },
+                {
+                  title: "Банк запрашивает подтверждение",
+                  text: "Страница перенаправляется в банк-эмитент: push в приложении, код по SMS или биометрия.",
+                },
+                {
+                  title: "Вы подтверждаете",
+                  text: "Подтверждение происходит на стороне банка. Код приходит только вам, и сообщать его никому не нужно.",
+                },
+                {
+                  title: "Платёж завершается",
+                  text: "После ответа банка платёж проходит, а заказ уходит на исполнение.",
+                },
+              ],
             },
             {
-              title: "Платёж завершается",
-              text: "После ответа банка платёж проходит, а заказ уходит на исполнение.",
+              t: "note",
+              tone: "warn",
+              title: "Никому не сообщайте код 3-D Secure",
+              text:
+                "Одноразовый код от банка предназначен только вам. Ни сотрудник GemPay, ни поддержка " +
+                "никогда его не спрашивают. Если кто-то просит код — это мошенничество.",
             },
-          ],
-        },
-        {
-          t: "note",
-          tone: "warn",
-          title: "Никому не сообщайте код 3-D Secure",
-          text:
-            "Одноразовый код от банка предназначен только вам. Ни сотрудник GemPay, ни поддержка " +
-            "никогда его не спрашивают. Если кто-то просит код — это мошенничество.",
-        },
+            ]
+          : [
+          {
+            t: "p",
+            text:
+              "GemPay пока не принимает карты международных платёжных систем. Оплата проходит " +
+              "картами Узбекистана и местными кошельками, в сумах — поэтому не нужны ни " +
+              "зарубежная карта, ни конвертация валюты, ни VPN.",
+          },
+          {
+            t: "note",
+            tone: "info",
+            title: "Что такое 3-D Secure и когда он применяется",
+            text:
+              "3-D Secure — протокол дополнительного подтверждения для международных карт (у Visa " +
+              "это <strong>Visa Secure</strong>, у Mastercard — <strong>Mastercard Identity Check</strong>). " +
+              "Он передаёт право подтвердить платёж банку-эмитенту. Когда приём международных карт " +
+              "будет подключён, эта защита станет обязательной и будет описана здесь подробно. " +
+              "Текущие платежи подтверждаются способом, описанным в следующем разделе.",
+          },
+            ]),
 
         { t: "h2", id: "otp", text: `Местные карты — ${LOCAL_RU}` },
         {
@@ -517,47 +580,71 @@ export const SECURITY: LegalDoc = {
             "organisation's own window.",
         },
 
-        { t: "h2", id: "3ds", text: "3-D Secure — for international cards" },
-        {
-          t: "p",
-          text: `Payments with <strong>${INTL}</strong> cards are additionally confirmed through the 3-D Secure protocol. Visa calls it <strong>Visa Secure</strong>; Mastercard calls it <strong>Mastercard Identity Check</strong>.`,
-        },
-        {
-          t: "p",
-          text:
-            "3-D Secure hands the right to approve a payment to <strong>the bank that issued the " +
-            "card</strong>. So even someone who knows the card number cannot complete a payment " +
-            "without the confirmation your bank asks you for.",
-        },
-        {
-          t: "steps",
-          items: [
+        { t: "h2", id: "3ds", text: INTL_ON ? "3-D Secure — for international cards" : "International cards and 3-D Secure" },
+        ...(INTL_ON
+          ? [
+
             {
-              title: "The card is entered",
-              text: "On the payment organisation's secure page. GemPay does not see these details.",
+              t: "p",
+              text: `Payments with <strong>${INTL}</strong> cards are additionally confirmed through the 3-D Secure protocol. Visa calls it <strong>Visa Secure</strong>; Mastercard calls it <strong>Mastercard Identity Check</strong>.`,
             },
             {
-              title: "The bank asks for confirmation",
-              text: "The page hands off to the issuing bank: a push in its app, an SMS code, or biometrics.",
+              t: "p",
+              text:
+                "3-D Secure hands the right to approve a payment to <strong>the bank that issued the " +
+                "card</strong>. So even someone who knows the card number cannot complete a payment " +
+                "without the confirmation your bank asks you for.",
             },
             {
-              title: "You confirm",
-              text: "Confirmation happens on the bank's side. The code goes only to you, and you never need to share it.",
+              t: "steps",
+              items: [
+                {
+                  title: "The card is entered",
+                  text: "On the payment organisation's secure page. GemPay does not see these details.",
+                },
+                {
+                  title: "The bank asks for confirmation",
+                  text: "The page hands off to the issuing bank: a push in its app, an SMS code, or biometrics.",
+                },
+                {
+                  title: "You confirm",
+                  text: "Confirmation happens on the bank's side. The code goes only to you, and you never need to share it.",
+                },
+                {
+                  title: "The payment completes",
+                  text: "Once the bank answers, the payment goes through and the order moves to fulfilment.",
+                },
+              ],
             },
             {
-              title: "The payment completes",
-              text: "Once the bank answers, the payment goes through and the order moves to fulfilment.",
+              t: "note",
+              tone: "warn",
+              title: "Never share a 3-D Secure code",
+              text:
+                "The one-time code from your bank is for you alone. No GemPay staff member and no " +
+                "support agent will ever ask for it. If someone asks, it is fraud.",
             },
-          ],
-        },
-        {
-          t: "note",
-          tone: "warn",
-          title: "Never share a 3-D Secure code",
-          text:
-            "The one-time code from your bank is for you alone. No GemPay staff member and no " +
-            "support agent will ever ask for it. If someone asks, it is fraud.",
-        },
+            ]
+          : [
+          {
+            t: "p",
+            text:
+              "GemPay does not currently accept international payment system cards. Payment goes " +
+              "through Uzbek cards and local wallets, in som — so there is no need for a foreign " +
+              "card, currency conversion or a VPN.",
+          },
+          {
+            t: "note",
+            tone: "info",
+            title: "What 3-D Secure is, and when it applies",
+            text:
+              "3-D Secure is the extra confirmation protocol for international cards (Visa calls it " +
+              "<strong>Visa Secure</strong>, Mastercard <strong>Mastercard Identity Check</strong>). " +
+              "It hands the right to approve a payment to the issuing bank. If international cards " +
+              "are enabled, that protection becomes mandatory and will be described here in full. " +
+              "Payments today are confirmed the way the next section describes.",
+          },
+            ]),
 
         { t: "h2", id: "otp", text: `Local cards — ${LOCAL_EN}` },
         {

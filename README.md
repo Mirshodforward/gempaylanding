@@ -169,18 +169,39 @@ raqami majburiy** — bank Telegram'ni rasmiy kanal deb hisoblamaydi.
 Rekvizitlar to'ldirilgach ular JSON-LD `Organization` tuguniga ham
 (`legalName`, `taxID`, `address`, `telephone`) o'zi tushadi.
 
-### To'lov tizimlari belgilari
+### To'lov usullari — yagona ro'yxat
 
-`PAYMENT_METHODS` (`site.ts`) — yagona ro'yxat: bosh sahifadagi qator,
-o'yin sahifasi, JSON-LD va huquqiy sahifalar shundan oziqlanadi.
+`PAYMENT_METHODS` (`site.ts`) dan butun sayt oziqlanadi: bosh sahifadagi
+qator, o'yin sahifasi, JSON-LD `acceptedPaymentMethod`, huquqiy sahifalar
+va `/llms.txt`. Amaldagi holat:
 
-Rasmiy belgini tizimning brend sahifasidan olib, `public/pay/<id>.svg`
-nomi bilan qo'ying (`visa`, `mastercard`, `uzcard`, `humo`, `click`,
-`payme`, `paynet`). Fayl paydo bo'lishi bilan `PayMarks` uni o'zi oladi
-— kodga tegish shart emas. Fayl yo'q bo'lsa matnli katak chiziladi.
+| Usul | Turi | Hudud |
+| --- | --- | --- |
+| UzCard, HUMO | mahalliy karta | UZ |
+| Click, Uzum Bank | ilova orqali to'lov | UZ |
+| SBP | ilova orqali to'lov | RU |
+| Bot balansi | ichki hisob | UZ |
 
-**Visa va Mastercard belgilari MAJBURIY** — bu ekvayring shartnomasining
-bandi, shuning uchun `npm run legal` ularsiz o'tmaydi.
+**Visa/Mastercard, Payme va Paynet ATAYLAB yo'q** — 2026-yil 11-sentabr
+operatsion hujjatiga ko'ra ular faol emas. Ilgari sayt matnlarida ular
+tilga olingan edi; bu foydalanuvchini mavjud bo'lmagan usulni izlashga
+majbur qilardi.
+
+Yordamchilar: `primaryMethods` (O'zbekiston uchun ko'rsatiladigan qator),
+`localCards`, `walletMethods`, `brandedMethods` (belgisi bo'lishi
+kerakli), `ACCEPTS_INTL_CARDS`.
+
+Oxirgisi matnni ham boshqaradi: `/tolov-xavfsizligi` dagi **3-D Secure
+bo'limi** shu bayroqqa qarab o'zgaradi. Hozir u «xalqaro kartalar qabul
+qilinmaydi» holatida; ro'yxatga `kind: "card-intl"` usul qo'shilsa, to'liq
+3-D Secure matni o'zi qaytadi va `npm run legal` o'sha tizimning rasmiy
+belgisini talab qila boshlaydi.
+
+Belgini tizimning brend sahifasidan olib, `public/pay/<id>.svg` nomi
+bilan qo'ying (`uzcard`, `humo`, `click`, `uzum`, `sbp`). Fayl paydo
+bo'lishi bilan `PayMarks` uni o'zi oladi — kodga tegish shart emas. Fayl
+yo'q bo'lsa matnli katak chiziladi. Bot balansining belgisi yo'q va
+talab ham qilinmaydi.
 
 ### Matn o'zgarsa
 

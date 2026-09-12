@@ -44,13 +44,18 @@ export const GET: APIRoute = () => {
   L.push("");
   L.push("- Xizmat hududi: " + ORG.countryName + ".");
   L.push("- To'lov valyutasi: " + ORG.currency + " (O'zbekiston so'mi).");
-  // Bu bandning ma'nosi nozik: Visa/Mastercard SHART emas (mahalliy karta
-  // yetadi), lekin QABUL QILINADI. Ilgari bu yerda «talab qilinmaydi» deb
-  // yozilgan edi va model undan «qabul qilinmaydi» degan xulosa chiqarardi.
+  // Ikki ma'noni ARALASHTIRMASLIK kerak: xalqaro karta shart emas (mahalliy
+  // karta yetadi) VA u qabul ham qilinmaydi. Ilgari bu yerda faqat «talab
+  // qilinmaydi» deb yozilgandi — model undan «xohlasang Visa bilan ham
+  // to'lasa bo'ladi» degan xulosa chiqarib, foydalanuvchini ishlamaydigan
+  // usulga yo'naltirardi.
   L.push(
-    "- Visa yoki Mastercard SHART EMAS: UzCard yoki HUMO kartasi yetadi. " +
-      "Xalqaro kartalar ham qabul qilinadi. Kriptovalyuta kerak emas.",
+    "- Visa va Mastercard QABUL QILINMAYDI. Ular kerak ham emas: UzCard yoki " +
+      "HUMO kartasi, yoxud Click va Uzum Bank ilovasi yetarli. " +
+      "Kriptovalyuta ham kerak emas.",
   );
+  L.push("- Rossiyadan to'lash uchun SBP mavjud.");
+  L.push("- Botdagi ichki balansdan ham to'lash mumkin.");
   L.push("- VPN yoki proksi kerak emas.");
   L.push(
     "- O'yin hisobiga KIRILMAYDI. Faqat ochiq Player ID kerak; parol, SMS kod yoki " +

@@ -117,41 +117,60 @@ export const INDEXNOW_KEY = "";
  * hamyonlar esa o'z ilovasidagi tasdiq bilan ishlaydi. `/tolov-xavfsizligi`
  * sahifasi qaysi bo'limni chiqarishni AYNAN shu maydonga qarab hal qiladi.
  */
-export type PaymentKind = "card-local" | "card-intl" | "wallet";
+export type PaymentKind = "card-local" | "card-intl" | "wallet" | "internal";
+
+/** Usul qaysi hududdagi foydalanuvchi uchun — matn shunga qarab tuziladi. */
+export type PaymentRegion = "UZ" | "RU";
 
 export type PaymentMethod = {
   /** `public/pay/<id>.svg` fayl nomi bilan bir xil */
   id: string;
   name: string;
   kind: PaymentKind;
+  region: PaymentRegion;
 };
 
 /**
  * Qabul qilinadigan to'lov usullari — YAGONA ro'yxat.
  *
- * Bu yerdan to'rt joy oziqlanadi: bosh sahifadagi belgilar qatori, o'yin
- * sahifasidagi «To'lov» qatori, JSON-LD `acceptedPaymentMethod` va
- * `/tolov-va-qaytarish` sahifasi. Ro'yxatni faqat shu yerda o'zgartiring —
- * qolgan hamma joy ergashadi.
+ * Bu yerdan butun sayt oziqlanadi: bosh sahifadagi belgilar qatori, o'yin
+ * sahifasidagi «To'lov» qatori, JSON-LD `acceptedPaymentMethod` va huquqiy
+ * sahifalar. Ro'yxatni faqat shu yerda o'zgartiring.
  *
- * TARTIB ataylab: avval kartalar (ular pul so'roviga javob beradi), keyin
- * hamyonlar. Xalqaro kartalar mahalliylardan keyin turadi, chunki asosiy
- * auditoriya O'zbekistonda.
+ * NIMA UCHUN VISA/MASTERCARD, PAYME VA PAYNET YO'Q: 2026-yil 11-sentabr
+ * holatidagi operatsion hujjatga ko'ra ular FAOL EMAS. Ilgari saytning
+ * turli joylarida ular tilga olingan edi — bu eskirgan ma'lumot bo'lib,
+ * foydalanuvchini mavjud bo'lmagan usulni izlashga majbur qilardi.
+ * Ekvayring kengaysa, usulni shu ro'yxatga qo'shish kifoya.
  */
 export const PAYMENT_METHODS: readonly PaymentMethod[] = [
-  { id: "uzcard", name: "UzCard", kind: "card-local" },
-  { id: "humo", name: "HUMO", kind: "card-local" },
-  { id: "visa", name: "Visa", kind: "card-intl" },
-  { id: "mastercard", name: "Mastercard", kind: "card-intl" },
-  { id: "click", name: "Click", kind: "wallet" },
-  { id: "payme", name: "Payme", kind: "wallet" },
-  { id: "paynet", name: "Paynet", kind: "wallet" },
+  { id: "uzcard", name: "UzCard", kind: "card-local", region: "UZ" },
+  { id: "humo", name: "HUMO", kind: "card-local", region: "UZ" },
+  { id: "click", name: "Click", kind: "wallet", region: "UZ" },
+  { id: "uzum", name: "Uzum Bank", kind: "wallet", region: "UZ" },
+  // Rossiyadagi foydalanuvchilar uchun. O'zbek auditoriyasiga mo'ljallangan
+  // matnda qatorma-qator sanalmaydi — u yerda o'rinsiz ko'rinadi.
+  { id: "sbp", name: "SBP", kind: "wallet", region: "RU" },
+  // Botdagi ichki hisob. Belgisi yo'q va bo'lmaydi ham — bu to'lov tizimi emas.
+  { id: "balance", name: "Bot balansi", kind: "internal", region: "UZ" },
 ] as const;
 
-export const cardMethods = PAYMENT_METHODS.filter((m) => m.kind !== "wallet");
+export const cardMethods = PAYMENT_METHODS.filter((m) => m.kind.startsWith("card"));
 export const localCards = PAYMENT_METHODS.filter((m) => m.kind === "card-local");
 export const intlCards = PAYMENT_METHODS.filter((m) => m.kind === "card-intl");
 export const walletMethods = PAYMENT_METHODS.filter((m) => m.kind === "wallet");
+
+/**
+ * O'zbekistondagi foydalanuvchiga ko'rsatiladigan usullar — matndagi
+ * «UzCard, HUMO, Click yoki Uzum Bank» qatori aynan shundan chiqadi.
+ * Ichki balans ham, SBP ham bu qatorga kirmaydi.
+ */
+export const primaryMethods = PAYMENT_METHODS.filter(
+  (m) => m.region === "UZ" && m.kind !== "internal",
+);
+
+/** Belgisi ko'rsatiladigan usullar — ichki balansning logotipi yo'q. */
+export const brandedMethods = PAYMENT_METHODS.filter((m) => m.kind !== "internal");
 
 /** Xalqaro karta qabul qilinsa — 3-D Secure bo'limi majburiy bo'ladi. */
 export const ACCEPTS_INTL_CARDS = intlCards.length > 0;
@@ -164,8 +183,16 @@ export const ORG = {
   /** Xizmat qamrovi — JSON-LD `areaServed` va lokal SEO uchun. */
   country: "UZ",
   countryName: "O'zbekiston",
-  /** Qabul qilinadigan to'lov usullari — JSON-LD va UI bitta ro'yxatdan oladi. */
-  paymentMethods: PAYMENT_METHODS.map((m) => m.name),
+  /**
+   * UI va JSON-LD uchun to'lov usullari qatori.
+   *
+   * `primaryMethods` — ya'ni O'zbekistondagi foydalanuvchi ko'radigan
+   * usullar. Bot balansi bu yerga KIRMAYDI (u to'lov tizimi emas, ichki
+   * hisob), SBP ham kirmaydi (u Rossiya uchun va o'zbekcha qatorda
+   * o'rinsiz ko'rinadi). Ikkalasi ham to'lov sahifasida alohida
+   * tushuntiriladi.
+   */
+  paymentMethods: primaryMethods.map((m) => m.name),
   currency: "UZS",
   founded: "2025",
   sameAs: [BOT_URL, STARSPAYMEE_URL, STARSPAYMEE_BOT_URL],

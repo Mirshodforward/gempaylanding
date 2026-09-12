@@ -13,17 +13,24 @@
  */
 
 import type { LegalDoc } from "./types";
-import {
-  SUPPORT_URL,
-  localCards,
-  intlCards,
-  walletMethods,
-  localePath,
-} from "../site";
+import { SUPPORT_URL, localCards, walletMethods, localePath } from "../site";
 
 const LOCAL = localCards.map((m) => m.name).join(", ");
-const INTL = intlCards.map((m) => m.name).join(", ");
-const WALLET = walletMethods.map((m) => m.name).join(", ");
+
+/**
+ * Hamyonlar hudud bo'yicha ajratiladi: O'zbekistondagi foydalanuvchi
+ * uchun Click va Uzum Bank, Rossiyadagi uchun SBP. Ularni bitta qatorga
+ * qo'shib yuborish jadvalni chalg'ituvchi qilardi — o'zbek foydalanuvchi
+ * o'ziga tegishli bo'lmagan usulni izlab qolardi.
+ */
+const WALLET = walletMethods
+  .filter((m) => m.region === "UZ")
+  .map((m) => m.name)
+  .join(", ");
+const WALLET_RU = walletMethods
+  .filter((m) => m.region === "RU")
+  .map((m) => m.name)
+  .join(", ");
 
 export const PAYMENTS: LegalDoc = {
   slug: "tolov-va-qaytarish",
@@ -36,12 +43,12 @@ export const PAYMENTS: LegalDoc = {
       title: "To'lov va pulni qaytarish",
       metaTitle: "To'lov va pulni qaytarish tartibi",
       metaDescription:
-        "GemPay'da qanday to'lash mumkin: UzCard, HUMO, Visa, Mastercard, Click, Payme, Paynet. " +
-        "Pul qaysi hollarda qaytariladi, qanday so'raladi va necha kunda tushadi.",
+        "GemPay'da qanday to'lash mumkin: UzCard, HUMO, Click va Uzum Bank. " +
+        "Pul qaysi hollarda qaytariladi, arizani qanday berish va mablag' necha kunda tushadi.",
       short: "To'lov va qaytarish",
       answer:
-        "GemPay'da to'lov O'zbekiston so'mida qabul qilinadi: UzCard, HUMO, Visa, Mastercard, " +
-        "Click, Payme va Paynet. Buyurtma bajarilmasa pul to'liq qaytariladi — ariza 3 ish kunida " +
+        "GemPay'da to'lov O'zbekiston so'mida qabul qilinadi: UzCard, HUMO, " +
+        "Click va Uzum Bank. Buyurtma bajarilmasa pul to'liq qaytariladi — ariza 3 ish kunida " +
         "ko'rib chiqiladi va mablag' to'lov qilingan usulga qaytariladi. Kredit hisobga tushib " +
         "bo'lgan buyurtma qaytarilmaydi.",
 
@@ -59,9 +66,10 @@ export const PAYMENTS: LegalDoc = {
           caption: "Qabul qilinadigan to'lov usullari",
           head: ["Usul", "Turi", "Tasdiqlash"],
           rows: [
-            [LOCAL, "Mahalliy bank kartasi", "SMS orqali bir martalik kod (OTP)"],
-            [INTL, "Xalqaro to'lov tizimi kartasi", "3-D Secure — bank sahifasida tasdiqlash"],
-            [WALLET, "Elektron hamyon", "Hamyon ilovasidagi tasdiq"],
+            [LOCAL, "O'zbekiston bank kartasi", "SMS orqali bir martalik kod (OTP)"],
+            [WALLET, "Hamyon va bank ilovasi", "Ilovadagi tasdiq"],
+            [WALLET_RU, "Rossiyadan to'lov", "Bank ilovasidagi tasdiq"],
+            ["Bot balansi", "Botdagi ichki hisob", "Qo'shimcha tasdiq kerak emas"],
           ],
         },
         {
@@ -236,10 +244,11 @@ export const PAYMENTS: LegalDoc = {
             "ushlab qolishi mumkin — buni to'lov tashkiloti belgilaydi.",
         },
         {
-          q: "Visa yoki Mastercard bilan to'lash shartmi?",
+          q: "Visa yoki Mastercard bilan to'lash mumkinmi?",
           a:
-            "Yo'q. UzCard va HUMO ham, Click, Payme, Paynet hamyonlari ham qabul qilinadi. " +
-            "Xalqaro kartalar qo'shimcha imkoniyat, majburiyat emas.",
+            "Yo'q, xalqaro kartalar hozircha qabul qilinmaydi — va ular kerak ham emas. " +
+            "To'lov O'zbekiston kartalari (UzCard, HUMO), Click va Uzum Bank ilovalari orqali " +
+            "so'mda o'tadi, ya'ni xorijiy karta ochish yoki valyuta almashtirish shart emas.",
         },
       ],
     },
@@ -249,12 +258,12 @@ export const PAYMENTS: LegalDoc = {
       title: "Оплата и возврат средств",
       metaTitle: "Оплата и возврат средств — порядок",
       metaDescription:
-        "Как оплатить в GemPay: UzCard, HUMO, Visa, Mastercard, Click, Payme, Paynet. " +
-        "Когда возвращаются деньги, как подать заявление и за сколько дней приходит возврат.",
+        "Как оплатить в GemPay: UzCard, HUMO, Click и Uzum Bank. В каких случаях возвращаются " +
+        "деньги, как подать заявление и за сколько рабочих дней приходит возврат.",
       short: "Оплата и возврат",
       answer:
-        "Оплата в GemPay принимается в узбекских сумах: UzCard, HUMO, Visa, Mastercard, Click, " +
-        "Payme и Paynet. Если заказ не выполнен, деньги возвращаются полностью — заявление " +
+        "Оплата в GemPay принимается в узбекских сумах: карты UzCard и HUMO, приложения " +
+        "Click и Uzum Bank, баланс бота. Если заказ не выполнен, деньги возвращаются полностью — заявление " +
         "рассматривается за 3 рабочих дня, средства уходят тем же способом, которым была оплата. " +
         "Выполненный заказ возврату не подлежит.",
 
@@ -272,9 +281,10 @@ export const PAYMENTS: LegalDoc = {
           caption: "Принимаемые способы оплаты",
           head: ["Способ", "Тип", "Подтверждение"],
           rows: [
-            [LOCAL, "Карта местного банка", "Одноразовый код по SMS (OTP)"],
-            [INTL, "Карта международной платёжной системы", "3-D Secure — подтверждение на странице банка"],
-            [WALLET, "Электронный кошелёк", "Подтверждение в приложении кошелька"],
+            [LOCAL, "Карта банка Узбекистана", "Одноразовый код по SMS (OTP)"],
+            [WALLET, "Кошелёк и банковское приложение", "Подтверждение в приложении"],
+            [WALLET_RU, "Оплата из России", "Подтверждение в банковском приложении"],
+            ["Баланс бота", "Внутренний счёт в боте", "Дополнительное подтверждение не требуется"],
           ],
         },
         {
@@ -450,10 +460,11 @@ export const PAYMENTS: LegalDoc = {
             "собственному тарифу — это определяет платёжная организация.",
         },
         {
-          q: "Обязательно ли платить картой Visa или Mastercard?",
+          q: "Можно ли оплатить картой Visa или Mastercard?",
           a:
-            "Нет. Принимаются UzCard и HUMO, а также кошельки Click, Payme и Paynet. " +
-            "Международные карты — дополнительная возможность, а не обязательство.",
+            "Нет, международные карты пока не принимаются — и они не нужны. Оплата проходит " +
+            "картами Узбекистана (UzCard, HUMO) и через приложения Click и Uzum Bank, в сумах: " +
+            "открывать зарубежную карту или менять валюту не требуется.",
         },
       ],
     },
@@ -463,12 +474,12 @@ export const PAYMENTS: LegalDoc = {
       title: "Payments and refunds",
       metaTitle: "Payments and refunds — how it works",
       metaDescription:
-        "How to pay on GemPay: UzCard, HUMO, Visa, Mastercard, Click, Payme, Paynet. " +
-        "When money is refunded, how to request it and how many days a refund takes.",
+        "How to pay on GemPay: UzCard, HUMO, Click and Uzum Bank. When money is refunded, how " +
+        "to request it, and how many working days a refund takes to reach your card.",
       short: "Payments and refunds",
       answer:
-        "GemPay takes payment in Uzbek som: UzCard, HUMO, Visa, Mastercard, Click, Payme and " +
-        "Paynet. If an order is not fulfilled the money is refunded in full — requests are " +
+        "GemPay takes payment in Uzbek som: UzCard and HUMO cards, the Click and Uzum Bank " +
+        "apps, and your bot balance. If an order is not fulfilled the money is refunded in full — requests are " +
         "reviewed within 3 working days and refunds go back to the method used to pay. A " +
         "fulfilled order is not refundable.",
 
@@ -486,9 +497,10 @@ export const PAYMENTS: LegalDoc = {
           caption: "Accepted payment methods",
           head: ["Method", "Type", "Confirmation"],
           rows: [
-            [LOCAL, "Local bank card", "One-time SMS code (OTP)"],
-            [INTL, "International payment system card", "3-D Secure — confirmed on the bank's page"],
-            [WALLET, "E-wallet", "Confirmed in the wallet app"],
+            [LOCAL, "Uzbek bank card", "One-time SMS code (OTP)"],
+            [WALLET, "Wallet and banking app", "Confirmed in the app"],
+            [WALLET_RU, "Paying from Russia", "Confirmed in the banking app"],
+            ["Bot balance", "Internal balance in the bot", "No extra confirmation needed"],
           ],
         },
         {
@@ -663,10 +675,11 @@ export const PAYMENTS: LegalDoc = {
             "is set by the payment organisation, not by us.",
         },
         {
-          q: "Do I have to pay with Visa or Mastercard?",
+          q: "Can I pay with Visa or Mastercard?",
           a:
-            "No. UzCard and HUMO are accepted, as are the Click, Payme and Paynet wallets. " +
-            "International cards are an extra option, not a requirement.",
+            "No, international cards are not accepted at the moment — and they are not needed. " +
+            "Payment goes through Uzbek cards (UzCard, HUMO) and the Click and Uzum Bank apps, " +
+            "in som, so there is no foreign card to open and no currency to exchange.",
         },
       ],
     },
