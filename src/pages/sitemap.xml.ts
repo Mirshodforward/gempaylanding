@@ -17,6 +17,7 @@
 
 import type { APIRoute } from "astro";
 import { CATALOG } from "../data/games";
+import { ANDROID_APP } from "../data/app";
 import { isReadyToIndex } from "../data/gameContent";
 import { ARTICLES, articlesFor, localesOf } from "../data/blog";
 import { LEGAL_DOCS } from "../data/legal";
@@ -41,6 +42,10 @@ function collect(): Entry[] {
     { path: "oyinlar", lastmod: STATIC_LASTMOD, changefreq: "weekly", priority: 0.95, locales: LOCALES },
     // Ishonch sahifasi — E-E-A-T signali, har tilda to'liq matni bor
     { path: "haqida", lastmod: STATIC_LASTMOD, changefreq: "monthly", priority: 0.6, locales: LOCALES },
+    // Android ilovasi — do'kon sahifasi o'rnini bosadi, shuning uchun
+    // ustuvorligi yuqori. `lastmod` reliz sanasidan: ilova yangilanmasa
+    // sahifa ham o'zgarmagan bo'ladi.
+    { path: "ilova", lastmod: ANDROID_APP.released, changefreq: "monthly", priority: 0.8, locales: LOCALES },
   ];
 
   // Huquqiy hujjatlar. Ustuvorligi past — ular pul so'roviga javob

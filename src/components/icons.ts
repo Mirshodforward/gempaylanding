@@ -31,6 +31,13 @@ const PATHS = {
   headset:
     '<path d="M3 14h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M18 14h3v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2z"/><path d="M3 14v-3a9 9 0 0 1 18 0v3"/>',
 
+  // Ilova sahifasi uchun — APK yuklab olish va qurilma.
+  download:
+    '<path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><path d="M7 10l5 5 5-5"/><path d="M12 15V3"/>',
+
+  smartphone:
+    '<rect width="14" height="20" x="5" y="2" rx="2"/><path d="M12 18h.01"/>',
+
   check: '<path d="M20 6 9 17l-5-5"/>',
 
   "check-circle": '<circle cx="12" cy="12" r="9"/><path d="m8.5 12.5 2.5 2.5 4.5-5"/>',

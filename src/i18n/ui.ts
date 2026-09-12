@@ -90,6 +90,8 @@ export type Copy = {
     colCompany: string;
     colHelp: string;
     about: string;
+    /** Android ilovasi sahifasi — `/ilova` */
+    app: string;
     blog: string;
     support: string;
     api: string;
@@ -375,6 +377,7 @@ const uz: Copy = {
     colCompany: "Loyiha",
     colHelp: "Yordam",
     about: "Biz haqimizda",
+    app: "Android ilovasi",
     blog: "Blog",
     support: "Qo'llab-quvvatlash",
     api: "Developer API",
@@ -665,6 +668,7 @@ const ru: Copy = {
     colCompany: "Проект",
     colHelp: "Помощь",
     about: "О нас",
+    app: "Приложение для Android",
     blog: "Блог",
     support: "Поддержка",
     api: "Developer API",
@@ -949,6 +953,7 @@ const en: Copy = {
     colCompany: "Project",
     colHelp: "Help",
     about: "About",
+    app: "Android app",
     blog: "Blog",
     support: "Support",
     api: "Developer API",

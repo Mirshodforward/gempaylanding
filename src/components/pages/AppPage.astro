@@ -1,0 +1,830 @@
+---
+/**
+ * Android ilovasi — `/ilova`.
+ *
+ * VAZIFASI: ilova nima qilishini aytish va APK'ni yuklab berish. Bu sahifa
+ * do'kon sahifasining o'rnini bosadi, shuning uchun do'kon ko'rsatadigan
+ * narsalarni o'zi ko'rsatishi kerak: versiya, hajm, talab qilinadigan
+ * Android, nima o'zgargani va — eng muhimi — faylning haqiqiyligini
+ * tekshirish yo'li.
+ *
+ * NEGA SHA-256 OCHIQ TURADI: Play Store'dan tashqarida tarqatilgan APK
+ * uchun foydalanuvchida ishonch uchun boshqa tayanch yo'q. Nazorat summasi
+ * va imzo egasi ko'rsatilsa, u yuklagan fayl aynan bizniki ekanini o'zi
+ * tekshira oladi. Buni yashirish emas, ochiq qo'yish ishonch beradi.
+ *
+ * iOS: `IOS_AVAILABLE` false bo'lsa sahifa buni ochiq yozadi va Mini App'ga
+ * yo'naltiradi. "Tez orada" degan va'da berilmaydi — sana ma'lum emas.
+ */
+import Layout from "../../layouts/Layout.astro";
+import Aurora from "../Aurora.astro";
+import Header from "../Header.astro";
+import Footer from "../Footer.astro";
+import Icon from "../Icon.astro";
+import AnswerBox from "../AnswerBox.astro";
+import Breadcrumbs from "../Breadcrumbs.astro";
+import Faq from "../FAQ.astro";
+
+import { t } from "../../i18n/ui";
+import { ANDROID_APP, IOS_AVAILABLE } from "../../data/app";
+import { CATALOG } from "../../data/games";
+import {
+  SITE_URL,
+  BOT_URL,
+  SUPPORT_URL,
+  ORG,
+  absoluteUrl,
+  localePath,
+  type Locale,
+} from "../../data/site";
+import { graph, organizationSchema, breadcrumbSchema, faqSchema } from "../../lib/seo";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const c = t(locale);
+const path = "ilova";
+
+const app = ANDROID_APP;
+const gameCount = CATALOG.filter((g) => g.code !== "steam").length;
+
+const COPY = {
+  uz: {
+    title: "GemPay ilovasi Android uchun — APK yuklab olish",
+    description:
+      `GemPay Android ilovasi: ${gameCount} ta o'yin va Steam hamyonini so'mda to'ldirish. ` +
+      `APK ${app.sizeMb} MB, Android ${app.minAndroid}+. O'rnatish yo'riqnomasi va fayl nazorat summasi.`,
+    h1: "GemPay ilovasi",
+    answer:
+      `GemPay Android ilovasi — o'yin hisobini so'mda to'ldirish uchun. Unda ${gameCount} ta o'yin va ` +
+      `Steam hamyoni bor. Ilova Play Store'da emas: APK'ni shu sahifadan yuklab olasiz va bir marta ` +
+      `"noma'lum manba" ruxsatini berasiz. Kirish Telegram orqali — parol kerak emas.`,
+    dlTitle: "Android uchun yuklab olish",
+    dlNote: "To'g'ridan-to'g'ri APK fayl",
+    specs: [
+      { k: "Versiya", v: app.version },
+      { k: "Hajm", v: `${app.sizeMb} MB` },
+      { k: "Android", v: `${app.minAndroid} va yuqori` },
+      { k: "Yangilangan", v: app.released },
+    ],
+    iosTitle: "iPhone uchun",
+    iosText:
+      "iOS ilovasi hozircha yo'q. iPhone'da Telegram'dagi Mini App bir xil ishlaydi — " +
+      "o'sha katalog, o'sha narxlar, o'sha to'lov usullari.",
+    iosCta: "Telegram'da ochish",
+    featTitle: "Ilovada nima bor",
+    features: [
+      {
+        icon: "gamepad",
+        h: `${gameCount} ta o'yin va Steam`,
+        p: "PUBG Mobile, Mobile Legends, Free Fire, Call of Duty Mobile, Honor of Kings, Magic Chess, Delta Force, Asphalt 9, Bigo Live va Steam hamyoni.",
+      },
+      {
+        icon: "id-card",
+        h: "ID to'lovdan oldin tekshiriladi",
+        p: "Player ID kiritasiz, ilova nikni ko'rsatadi. Siz tasdiqlaganingizdan keyingina paket sotib olinadi — noto'g'ri hisobga ketmaydi.",
+      },
+      {
+        icon: "credit-card",
+        h: "So'mda to'lov",
+        p: `${ORG.paymentMethods.join(", ")} yoki bot balansi. Yakuniy summa to'lovdan oldin ko'rsatiladi.`,
+      },
+      {
+        icon: "receipt",
+        h: "Tarix va reyting",
+        p: "Har bir buyurtma saqlanadi: qaysi o'yin, qaysi ID, qancha va qachon. Bahsli holatda ko'rsatadigan narsangiz shu.",
+      },
+      {
+        icon: "telegram",
+        h: "Telegram orqali kirish",
+        p: "Parol yo'q, ro'yxatdan o'tish yo'q. Tugmani bosasiz, Telegram ochiladi, «Start» bosasiz — kirdingiz.",
+      },
+      {
+        icon: "lock",
+        h: "Karta ma'lumoti ilovaga kirmaydi",
+        p: "To'lov O'zbekiston to'lov tizimlari tomonida bajariladi. Ilova karta raqamini so'ramaydi ham, saqlamaydi ham.",
+      },
+    ],
+    installTitle: "Qanday o'rnatiladi",
+    steps: [
+      "Yuqoridagi tugmani bosing — APK fayl yuklanadi.",
+      "Yuklangan faylni oching. Android «noma'lum manbadan o'rnatishga ruxsat yo'q» desa, chiqqan oynada ruxsatni yoqing.",
+      "«O'rnatish» ni bosing va tugashini kuting.",
+      "Ilovani oching va «Telegram orqali kirish» ni bosing.",
+    ],
+    installNote:
+      "Bu ruxsat faqat shu fayl uchun beriladi va telefoningizni himoyasiz qoldirmaydi — " +
+      "Android har o'rnatishda qayta so'raydi.",
+    verifyTitle: "Faylni tekshirish",
+    verifyText:
+      "APK'ni faqat gempay.uz dan yuklab oling. Boshqa saytdagi «GemPay» fayli bizniki emas. " +
+      "Yuklagan faylingiz haqiqiyligini nazorat summasi bilan tekshirishingiz mumkin:",
+    verifySigner: "Imzo egasi",
+    faq: [
+      {
+        q: "Nega ilova Play Store'da yo'q?",
+        a:
+          "Hozircha to'g'ridan-to'g'ri APK sifatida tarqatilyapti. Do'konga chiqish jarayoni alohida " +
+          "tekshiruv va vaqt talab qiladi; u yakunlangach ilova o'sha yerda ham paydo bo'ladi. " +
+          "Shu sababli fayl imzosi va nazorat summasi sahifada ochiq ko'rsatilgan.",
+      },
+      {
+        q: "APK o'rnatish xavfsizmi?",
+        a:
+          "Fayl bizning kalitimiz bilan imzolangan va uning SHA-256 summasi shu sahifada yozilgan — " +
+          "yuklagan faylingiz o'zgartirilmaganini o'zingiz tekshira olasiz. Xavf faylning o'zida emas, " +
+          "uni qayerdan olishda: faqat gempay.uz dagi havoladan foydalaning.",
+      },
+      {
+        q: "Ilova iPhone'da ishlaydimi?",
+        a:
+          "iOS ilovasi hozircha yo'q. iPhone'da Telegram'dagi Mini App ishlatiladi — imkoniyatlari " +
+          "bir xil: o'sha katalog, o'sha narxlar, o'sha to'lov usullari.",
+      },
+      {
+        q: "Yangilanish qanday keladi?",
+        a:
+          "Yangi versiya chiqqanda shu sahifadan qayta yuklab olasiz va ustiga o'rnatasiz — " +
+          "ma'lumotlaringiz va kirish holatingiz saqlanadi. Avtomatik yangilanish do'kondan " +
+          "tashqarida ishlamaydi.",
+      },
+      {
+        q: "Ilova va bot o'rtasida farq bormi?",
+        a:
+          "Yo'q. Ikkalasi bitta backendga ulanadi: katalog, narx, buyurtma tarixi va balans bir xil. " +
+          "Ilovada faqat interfeys tezroq va telefon uchun moslangan.",
+      },
+    ],
+  },
+
+  ru: {
+    title: "Приложение GemPay для Android — скачать APK",
+    description:
+      `Android-приложение GemPay: пополнение ${gameCount} игр и кошелька Steam в сумах. ` +
+      `APK ${app.sizeMb} МБ, Android ${app.minAndroid}+. Инструкция по установке и контрольная сумма файла.`,
+    h1: "Приложение GemPay",
+    answer:
+      `Android-приложение GemPay — пополнение игрового счёта в сумах. В нём ${gameCount} игр и кошелёк ` +
+      `Steam. Приложения нет в Play Store: APK скачивается с этой страницы, один раз выдаётся ` +
+      `разрешение «неизвестный источник». Вход через Telegram — пароль не нужен.`,
+    dlTitle: "Скачать для Android",
+    dlNote: "Прямая ссылка на APK",
+    specs: [
+      { k: "Версия", v: app.version },
+      { k: "Размер", v: `${app.sizeMb} МБ` },
+      { k: "Android", v: `${app.minAndroid} и выше` },
+      { k: "Обновлено", v: app.released },
+    ],
+    iosTitle: "Для iPhone",
+    iosText:
+      "Приложения для iOS пока нет. На iPhone работает Mini App в Telegram — тот же каталог, " +
+      "те же цены, те же способы оплаты.",
+    iosCta: "Открыть в Telegram",
+    featTitle: "Что есть в приложении",
+    features: [
+      {
+        icon: "gamepad",
+        h: `${gameCount} игр и Steam`,
+        p: "PUBG Mobile, Mobile Legends, Free Fire, Call of Duty Mobile, Honor of Kings, Magic Chess, Delta Force, Asphalt 9, Bigo Live и кошелёк Steam.",
+      },
+      {
+        icon: "id-card",
+        h: "ID проверяется до оплаты",
+        p: "Вы вводите Player ID, приложение показывает ник. Пакет покупается только после вашего подтверждения — на чужой аккаунт не уйдёт.",
+      },
+      {
+        icon: "credit-card",
+        h: "Оплата в сумах",
+        p: `${ORG.paymentMethods.join(", ")} или баланс бота. Итоговая сумма показывается до оплаты.`,
+      },
+      {
+        icon: "receipt",
+        h: "История и рейтинг",
+        p: "Каждый заказ сохраняется: какая игра, какой ID, сколько и когда. Это то, что вы покажете в спорной ситуации.",
+      },
+      {
+        icon: "telegram",
+        h: "Вход через Telegram",
+        p: "Без пароля и регистрации. Нажимаете кнопку, открывается Telegram, жмёте «Start» — вы вошли.",
+      },
+      {
+        icon: "lock",
+        h: "Данные карты не попадают в приложение",
+        p: "Оплата выполняется на стороне платёжных систем Узбекистана. Приложение не спрашивает и не хранит номер карты.",
+      },
+    ],
+    installTitle: "Как установить",
+    steps: [
+      "Нажмите кнопку выше — файл APK скачается.",
+      "Откройте скачанный файл. Если Android скажет, что установка из неизвестных источников запрещена, включите разрешение в появившемся окне.",
+      "Нажмите «Установить» и дождитесь окончания.",
+      "Откройте приложение и нажмите «Войти через Telegram».",
+    ],
+    installNote:
+      "Это разрешение выдаётся только для этого файла и не оставляет телефон без защиты — " +
+      "Android спрашивает заново при каждой установке.",
+    verifyTitle: "Проверка файла",
+    verifyText:
+      "Скачивайте APK только с gempay.uz. Файл «GemPay» с другого сайта — не наш. " +
+      "Подлинность скачанного файла можно проверить по контрольной сумме:",
+    verifySigner: "Владелец подписи",
+    faq: [
+      {
+        q: "Почему приложения нет в Play Store?",
+        a:
+          "Пока оно распространяется напрямую как APK. Публикация в магазине требует отдельной " +
+          "проверки и времени; когда она завершится, приложение появится и там. Именно поэтому " +
+          "подпись файла и контрольная сумма открыто указаны на странице.",
+      },
+      {
+        q: "Безопасно ли устанавливать APK?",
+        a:
+          "Файл подписан нашим ключом, а его сумма SHA-256 указана на этой странице — вы сами можете " +
+          "проверить, что файл не изменён. Риск не в самом файле, а в источнике: пользуйтесь только " +
+          "ссылкой с gempay.uz.",
+      },
+      {
+        q: "Работает ли приложение на iPhone?",
+        a:
+          "Приложения для iOS пока нет. На iPhone используется Mini App в Telegram — возможности те же: " +
+          "тот же каталог, те же цены, те же способы оплаты.",
+      },
+      {
+        q: "Как приходят обновления?",
+        a:
+          "Когда выйдет новая версия, вы скачаете её с этой страницы и установите поверх — данные и вход " +
+          "сохранятся. Автообновление вне магазина не работает.",
+      },
+      {
+        q: "Есть разница между приложением и ботом?",
+        a:
+          "Нет. Оба подключены к одному бэкенду: каталог, цены, история заказов и баланс одинаковые. " +
+          "В приложении интерфейс быстрее и адаптирован под телефон.",
+      },
+    ],
+  },
+
+  en: {
+    title: "GemPay app for Android — download APK",
+    description:
+      `GemPay Android app: top up ${gameCount} games and the Steam wallet in Uzbek som. ` +
+      `APK ${app.sizeMb} MB, Android ${app.minAndroid}+. Install guide and file checksum.`,
+    h1: "GemPay app",
+    answer:
+      `The GemPay Android app tops up game accounts in Uzbek som. It covers ${gameCount} games and the ` +
+      `Steam wallet. The app is not on the Play Store: you download the APK from this page and grant ` +
+      `the "unknown source" permission once. Sign-in is through Telegram — no password needed.`,
+    dlTitle: "Download for Android",
+    dlNote: "Direct APK file",
+    specs: [
+      { k: "Version", v: app.version },
+      { k: "Size", v: `${app.sizeMb} MB` },
+      { k: "Android", v: `${app.minAndroid} and above` },
+      { k: "Updated", v: app.released },
+    ],
+    iosTitle: "For iPhone",
+    iosText:
+      "There is no iOS app yet. On iPhone the Telegram Mini App works the same — same catalogue, " +
+      "same prices, same payment methods.",
+    iosCta: "Open in Telegram",
+    featTitle: "What the app does",
+    features: [
+      {
+        icon: "gamepad",
+        h: `${gameCount} games and Steam`,
+        p: "PUBG Mobile, Mobile Legends, Free Fire, Call of Duty Mobile, Honor of Kings, Magic Chess, Delta Force, Asphalt 9, Bigo Live and the Steam wallet.",
+      },
+      {
+        icon: "id-card",
+        h: "ID is checked before payment",
+        p: "You enter the Player ID and the app shows the nickname. The pack is bought only after you confirm — it cannot go to the wrong account.",
+      },
+      {
+        icon: "credit-card",
+        h: "Payment in som",
+        p: `${ORG.paymentMethods.join(", ")} or the bot balance. The final amount is shown before payment.`,
+      },
+      {
+        icon: "receipt",
+        h: "History and leaderboard",
+        p: "Every order is stored: which game, which ID, how much and when. That is what you show if something is disputed.",
+      },
+      {
+        icon: "telegram",
+        h: "Sign in with Telegram",
+        p: "No password, no registration. Tap the button, Telegram opens, press Start — you are in.",
+      },
+      {
+        icon: "lock",
+        h: "Card details never reach the app",
+        p: "Payment happens on the Uzbek payment systems' side. The app neither asks for nor stores a card number.",
+      },
+    ],
+    installTitle: "How to install",
+    steps: [
+      "Tap the button above — the APK file downloads.",
+      "Open the downloaded file. If Android says installing from unknown sources is blocked, enable the permission in the dialog that appears.",
+      "Tap Install and wait for it to finish.",
+      "Open the app and tap “Sign in with Telegram”.",
+    ],
+    installNote:
+      "The permission applies to this file only and does not leave your phone unprotected — " +
+      "Android asks again for every install.",
+    verifyTitle: "Verifying the file",
+    verifyText:
+      "Download the APK only from gempay.uz. A “GemPay” file on any other site is not ours. " +
+      "You can verify the file you downloaded against its checksum:",
+    verifySigner: "Signed by",
+    faq: [
+      {
+        q: "Why isn't the app on the Play Store?",
+        a:
+          "For now it is distributed directly as an APK. Store publication takes a separate review and " +
+          "time; once that is done the app will appear there too. This is exactly why the file's " +
+          "signature and checksum are published openly on this page.",
+      },
+      {
+        q: "Is installing an APK safe?",
+        a:
+          "The file is signed with our key and its SHA-256 checksum is on this page — you can verify " +
+          "yourself that it has not been altered. The risk is not the file but where you get it: use " +
+          "only the link on gempay.uz.",
+      },
+      {
+        q: "Does the app work on iPhone?",
+        a:
+          "There is no iOS app yet. On iPhone you use the Telegram Mini App — it does the same things: " +
+          "same catalogue, same prices, same payment methods.",
+      },
+      {
+        q: "How do updates arrive?",
+        a:
+          "When a new version ships you download it from this page and install over the old one — your " +
+          "data and session are kept. Automatic updates do not work outside the store.",
+      },
+      {
+        q: "Is there a difference between the app and the bot?",
+        a:
+          "No. Both talk to the same backend: catalogue, prices, order history and balance are identical. " +
+          "The app is just faster and built for the phone.",
+      },
+    ],
+  },
+} as const;
+
+const copy = COPY[locale];
+
+const crumbs = [
+  { name: "GemPay", href: localePath(locale) },
+  { name: copy.h1, href: localePath(locale, path) },
+];
+
+/**
+ * `SoftwareApplication` — do'kon sahifasi bo'lmagani uchun Google va AI
+ * kraulerlar ilova haqidagi faktlarni (platforma, versiya, hajm, narx)
+ * aynan shu tugundan oladi.
+ *
+ * `price: "0"` — ilovaning O'ZI bepul. To'lov ilova ichidagi xizmat uchun
+ * olinadi, uni bu yerda ko'rsatib bo'lmaydi (narx jonli va kursga bog'liq).
+ */
+const appSchema = {
+  "@type": "SoftwareApplication",
+  "@id": `${absoluteUrl(localePath(locale, path))}#app`,
+  name: "GemPay",
+  operatingSystem: `Android ${app.minAndroid}+`,
+  applicationCategory: "FinanceApplication",
+  softwareVersion: app.version,
+  fileSize: `${app.sizeMb} MB`,
+  datePublished: app.released,
+  downloadUrl: app.url,
+  installUrl: absoluteUrl(localePath(locale, path)),
+  url: absoluteUrl(localePath(locale, path)),
+  inLanguage: "uz",
+  publisher: { "@id": `${SITE_URL}#org` },
+  offers: { "@type": "Offer", price: "0", priceCurrency: ORG.currency },
+};
+
+const schema = graph(
+  organizationSchema(),
+  appSchema,
+  breadcrumbSchema(locale, crumbs),
+  faqSchema([...copy.faq]),
+);
+---
+
+<Layout
+  locale={locale}
+  path={path}
+  title={`${copy.title} | GemPay`}
+  description={copy.description}
+  image="/og/default.png"
+  schema={schema}
+>
+  <Aurora />
+  <Header locale={locale} path={path} />
+
+  <main id="main">
+    <div class="wrap">
+      <Breadcrumbs items={crumbs} locale={locale} />
+
+      <header class="ihead">
+        <h1>{copy.h1}</h1>
+      </header>
+
+      <AnswerBox title={c.blog.answerTitle} text={copy.answer} />
+
+      {/* Yuklab olish bloki — sahifaning asosiy harakati, shuning uchun
+          eng tepada va boshqa hamma narsadan ajralib turadi. */}
+      <section class="dl" aria-labelledby="dl-h">
+        <div class="dl__body">
+          <h2 class="dl__h" id="dl-h">{copy.dlTitle}</h2>
+          <dl class="dl__specs">
+            {
+              copy.specs.map((s) => (
+                <div class="dl__spec">
+                  <dt>{s.k}</dt>
+                  <dd>{s.v}</dd>
+                </div>
+              ))
+            }
+          </dl>
+        </div>
+
+        <a class="btn btn--primary dl__btn" href={app.url} rel="nofollow" download>
+          <Icon name="download" size={18} />
+          {copy.dlTitle}
+          <span class="dl__size">{app.sizeMb} MB</span>
+        </a>
+        <p class="dl__note">{copy.dlNote} · {app.packageId}</p>
+      </section>
+
+      {/* iOS holati — ochiq aytiladi, "tez orada" va'dasiz */}
+      {
+        !IOS_AVAILABLE && (
+          <section class="ios">
+            <span class="ios__ic"><Icon name="smartphone" size={20} /></span>
+            <div>
+              <h2 class="ios__h">{copy.iosTitle}</h2>
+              <p class="ios__p">{copy.iosText}</p>
+              <a class="ios__cta" href={BOT_URL} target="_blank" rel="noopener">
+                <Icon name="telegram" size={16} />
+                {copy.iosCta}
+                <Icon name="external-link" size={13} />
+              </a>
+            </div>
+          </section>
+        )
+      }
+
+      <h2 class="ih2">{copy.featTitle}</h2>
+      <div class="feats">
+        {
+          copy.features.map((f) => (
+            <article class="feat">
+              <span class="feat__ic"><Icon name={f.icon as any} size={20} /></span>
+              <h3 class="feat__h">{f.h}</h3>
+              <p class="feat__p">{f.p}</p>
+            </article>
+          ))
+        }
+      </div>
+
+      <h2 class="ih2">{copy.installTitle}</h2>
+      <ol class="steps">
+        {copy.steps.map((s) => <li class="step">{s}</li>)}
+      </ol>
+      <p class="note">
+        <Icon name="shield-check" size={15} />
+        <span>{copy.installNote}</span>
+      </p>
+
+      <h2 class="ih2">{copy.verifyTitle}</h2>
+      <p class="vtext">{copy.verifyText}</p>
+      <div class="hash">
+        <span class="hash__k">SHA-256</span>
+        <code class="hash__v">{app.sha256}</code>
+      </div>
+      <div class="hash">
+        <span class="hash__k">{copy.verifySigner}</span>
+        <code class="hash__v">CN=GemPay, O=GemPay, L=Tashkent, C=UZ</code>
+      </div>
+
+      <nav class="ilinks" aria-label={c.footer.colHelp}>
+        <a class="alink" href={SUPPORT_URL} target="_blank" rel="noopener">
+          <Icon name="headset" size={17} />
+          {c.footer.support}
+          <Icon name="external-link" size={13} />
+        </a>
+        <a class="alink" href={localePath(locale, "oyinlar")}>
+          <Icon name="gamepad" size={17} />
+          {c.games.all}
+          <Icon name="chevron-right" size={13} />
+        </a>
+      </nav>
+    </div>
+
+    <Faq eyebrow={c.faq.eyebrow} title={c.faq.title} items={[...copy.faq]} id="faq" />
+  </main>
+
+  <Footer locale={locale} />
+</Layout>
+
+<style>
+  .ihead {
+    position: relative;
+    z-index: var(--z-body);
+    padding-block: clamp(24px, 4vw, 44px) clamp(20px, 3vw, 32px);
+  }
+
+  .ih2 {
+    position: relative;
+    z-index: var(--z-body);
+    font-size: var(--t-lg);
+    margin-top: clamp(36px, 5vw, 60px);
+    margin-bottom: var(--sp-4);
+  }
+
+  /* ---------------------------------------------------------- yuklab olish */
+
+  .dl {
+    position: relative;
+    z-index: var(--z-body);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--sp-4) clamp(20px, 4vw, 40px);
+    margin-top: clamp(28px, 4vw, 44px);
+    padding: clamp(20px, 3vw, 30px);
+    border-radius: var(--r-lg);
+    background: linear-gradient(140deg, rgba(var(--brand-rgb), 0.16), rgba(var(--cyan-rgb), 0.07));
+    border: 1px solid rgba(var(--brand-rgb), 0.28);
+  }
+
+  .dl__body {
+    flex: 1 1 260px;
+    min-width: 0;
+  }
+
+  .dl__h {
+    font-size: var(--t-md);
+    margin-bottom: var(--sp-3);
+  }
+
+  .dl__specs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2) clamp(16px, 3vw, 28px);
+  }
+
+  .dl__spec dt {
+    font-size: var(--t-xs);
+    color: var(--text-3);
+  }
+
+  .dl__spec dd {
+    font-size: var(--t-sm);
+    font-weight: 600;
+    margin-top: 2px;
+  }
+
+  .dl__btn {
+    flex: 0 0 auto;
+    gap: var(--sp-2);
+  }
+
+  .dl__size {
+    font-size: var(--t-xs);
+    font-weight: 500;
+    opacity: 0.75;
+  }
+
+  .dl__note {
+    flex: 1 1 100%;
+    font-size: var(--t-xs);
+    color: var(--text-3);
+  }
+
+  /* ------------------------------------------------------------------ iOS */
+
+  .ios {
+    position: relative;
+    z-index: var(--z-body);
+    display: flex;
+    gap: var(--sp-4);
+    margin-top: var(--sp-4);
+    padding: clamp(16px, 2.5vw, 22px);
+    border-radius: var(--r-md);
+    background: var(--surface);
+    border: 1px solid var(--line);
+  }
+
+  .ios__ic {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    flex: none;
+    border-radius: var(--r-md);
+    background: rgba(var(--brand-rgb), 0.14);
+    border: 1px solid rgba(var(--brand-rgb), 0.22);
+    color: var(--brand-bright);
+  }
+
+  .ios__h {
+    font-size: var(--t-base);
+    margin-bottom: var(--sp-2);
+  }
+
+  .ios__p {
+    font-size: var(--t-sm);
+    color: var(--text-2);
+    line-height: 1.7;
+  }
+
+  .ios__cta {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-2);
+    margin-top: var(--sp-3);
+    font-size: var(--t-sm);
+    font-weight: 600;
+    color: var(--accent);
+  }
+
+  /* -------------------------------------------------------------- xossalar */
+
+  .feats {
+    position: relative;
+    z-index: var(--z-body);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--sp-4);
+  }
+
+  .feat {
+    padding: clamp(16px, 2.5vw, 22px);
+    border-radius: var(--r-md);
+    background: var(--surface);
+    border: 1px solid var(--line);
+  }
+
+  .feat__ic {
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: var(--r-sm);
+    background: linear-gradient(140deg, rgba(var(--brand-rgb), 0.22), rgba(var(--cyan-rgb), 0.1));
+    border: 1px solid rgba(var(--brand-rgb), 0.24);
+    color: var(--brand-bright);
+    margin-bottom: var(--sp-3);
+  }
+
+  .feat__h {
+    font-size: var(--t-base);
+    margin-bottom: var(--sp-2);
+  }
+
+  .feat__p {
+    font-size: var(--t-sm);
+    color: var(--text-2);
+    line-height: 1.7;
+  }
+
+  /* --------------------------------------------------------------- qadamlar */
+
+  .steps {
+    position: relative;
+    z-index: var(--z-body);
+    max-width: 74ch;
+    /* Raqamni O'ZIMIZ chizamiz (`.step::before`), shuning uchun brauzerning
+       o'z markeri o'chiriladi — aks holda har qator «1. ①» bo'lib ikki
+       marta raqamlanadi. */
+    list-style: none;
+    padding-left: 0;
+    counter-reset: step;
+    display: flex;
+    flex-direction: column;
+    gap: var(--sp-3);
+  }
+
+  .step {
+    position: relative;
+    padding-left: 42px;
+    font-size: var(--t-base);
+    color: var(--text-2);
+    line-height: 1.75;
+    counter-increment: step;
+  }
+
+  .step::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 1px;
+    display: grid;
+    place-items: center;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    font-size: var(--t-xs);
+    font-weight: 700;
+    color: var(--brand-bright);
+    background: rgba(var(--brand-rgb), 0.16);
+    border: 1px solid rgba(var(--brand-rgb), 0.26);
+  }
+
+  .note {
+    position: relative;
+    z-index: var(--z-body);
+    display: flex;
+    gap: var(--sp-2);
+    max-width: 74ch;
+    margin-top: var(--sp-4);
+    font-size: var(--t-sm);
+    color: var(--text-3);
+    line-height: 1.7;
+  }
+
+  .note :global(svg) {
+    flex: none;
+    margin-top: 3px;
+    color: var(--accent);
+  }
+
+  /* --------------------------------------------------------------- tekshiruv */
+
+  .vtext {
+    position: relative;
+    z-index: var(--z-body);
+    max-width: 74ch;
+    font-size: var(--t-base);
+    color: var(--text-2);
+    line-height: 1.75;
+  }
+
+  .hash {
+    position: relative;
+    z-index: var(--z-body);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: var(--sp-2) var(--sp-3);
+    margin-top: var(--sp-3);
+    padding: 12px 14px;
+    border-radius: var(--r-sm);
+    background: var(--surface);
+    border: 1px solid var(--line);
+  }
+
+  .hash__k {
+    font-size: var(--t-xs);
+    font-weight: 700;
+    color: var(--text-3);
+    letter-spacing: 0.04em;
+  }
+
+  .hash__v {
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+    font-size: var(--t-xs);
+    color: var(--text-2);
+    overflow-wrap: anywhere;
+  }
+
+  /* ------------------------------------------------------------------ links */
+
+  .ilinks {
+    position: relative;
+    z-index: var(--z-body);
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+    margin-top: clamp(32px, 5vw, 52px);
+  }
+
+  .alink {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-2);
+    padding: 11px 18px;
+    border-radius: var(--r-pill);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    font-size: var(--t-sm);
+    font-weight: 600;
+    transition:
+      border-color var(--dur-fast) var(--ease),
+      transform var(--dur-fast) var(--ease);
+  }
+
+  .alink:hover {
+    transform: translateY(-2px);
+    border-color: var(--line-strong);
+  }
+
+  .alink :global(svg:first-child) {
+    color: var(--accent);
+  }
+</style>
