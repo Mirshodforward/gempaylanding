@@ -35,11 +35,11 @@ export type AppRelease = {
 };
 
 export const ANDROID_APP: AppRelease = {
-  version: "1.1.0",
-  versionCode: 2,
-  url: "https://starspaymee.starstg.uz/dl/gempay-1.1.0.apk",
+  version: "1.1.1",
+  versionCode: 3,
+  url: "https://starspaymee.starstg.uz/dl/gempay-1.1.1.apk",
   sizeMb: 32.9,
-  sha256: "fb67ebdca736a02addec25036999dd6925139d799c2aa6e01b43c3108b442083",
+  sha256: "b1b3694196af3127780aeb2b23986643f525dbc8a8ef0c705a35e4ce9c4ca48b",
   released: "2026-09-12",
   minAndroid: "7.0",
   packageId: "uz.starstg.gampay",
