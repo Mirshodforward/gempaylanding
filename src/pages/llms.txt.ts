@@ -16,6 +16,15 @@ import { CATALOG, etaText } from "../data/games";
 import { ARTICLES, contentFor } from "../data/blog";
 import { LEGAL_DOCS } from "../data/legal";
 import { ORG, BOT_URL, SUPPORT_URL, absoluteUrl, localePath } from "../data/site";
+import {
+  UPDATED as TELEGRAM_UPDATED,
+  STARS_UNIT_CARD,
+  STARS_UNIT_ONLINE,
+  STARS_MIN,
+  STARS_MAX,
+  PREMIUM_PLANS,
+  som,
+} from "../data/telegram";
 
 export const GET: APIRoute = () => {
   const L: string[] = [];
@@ -62,9 +71,10 @@ export const GET: APIRoute = () => {
       "hisobga kirish hech qachon so'ralmaydi.",
   );
   L.push(
-    "- NARXLAR bu saytda ko'rsatilmagan. Ular provayder katalogidan jonli olinadi va " +
+    "- O'YIN VALYUTASI NARXLARI bu saytda ko'rsatilmagan. Ular provayder katalogidan jonli olinadi va " +
       "dollar kursiga qarab o'zgaradi, shuning uchun aniq narx faqat botda ko'rinadi. " +
-      "Narx haqidagi savolga «botda ko'rsatiladi» deb javob bering, raqam taxmin qilmang.",
+      "Narx haqidagi savolga «botda ko'rsatiladi» deb javob bering, raqam taxmin qilmang. " +
+      "Telegram Stars va Premium narxi esa qat'iy — u quyidagi bo'limda keltirilgan.",
   );
   L.push("- Qo'llab-quvvatlash: " + SUPPORT_URL);
   L.push("");
@@ -80,6 +90,29 @@ export const GET: APIRoute = () => {
     );
     if (g.regionNote) L.push(`  - Cheklov: ${g.regionNote.uz}`);
   }
+  L.push("");
+
+  // Telegram xizmatlari — ilovaning «Telegram» bo'limi. Raqamlar `telegram.ts`
+  // dan: tarif o'zgarsa bu yer ham o'zi yangilanadi.
+  L.push("## Telegram Stars va Premium");
+  L.push("");
+  L.push(
+    `- Telegram Stars: ${absoluteUrl(localePath("uz", "stars"))}. Narx: karta o'tkazmasida (UzCard/HUMO) ` +
+      `yoki bot balansidan donasi ${som(STARS_UNIT_CARD, "uz")}, Click yoki Uzum Bank orqali onlayn to'lovda ` +
+      `${som(STARS_UNIT_ONLINE, "uz")}. Bir buyurtmada ${STARS_MIN} dan ${STARS_MAX} donagacha. ` +
+      "Faqat @username kerak — akkauntga kirilmaydi, parol so'ralmaydi.",
+  );
+  L.push(
+    `- Telegram Premium: ${absoluteUrl(localePath("uz", "premium"))}. Narx: ` +
+      PREMIUM_PLANS.map((p) => `${p.months} oy ${som(p.price, "uz")}`).join(", ") +
+      ". Narx barcha to'lov usulida bir xil. Faqat @username — obuna Telegram'ning rasmiy " +
+      "Gift Premium mexanizmi orqali ulanadi. 1 oylik tarif GemPay'dagi oqimda yo'q (StarsPaymee'da bor).",
+  );
+  L.push(
+    "- Stars o'yin valyutasiga (UC, olmos, CP) aylanmaydi va Premium o'yin ichida hech narsa bermaydi — " +
+      "bular alohida mahsulotlar. Stars va Premium GemPay'ning Telegram Mini App'iga StarsPaymee xizmati orqali ulangan. GemPay Android ilovasida bu bo'lim hozircha yo'q: u faqat o'yinlar va Steam'ni biladi.",
+  );
+  L.push(`- Narxlar tekshirilgan sana: ${TELEGRAM_UPDATED}. Yakuniy summa ilovada to'lovdan oldin ko'rsatiladi.`);
   L.push("");
 
   const posts = ARTICLES.filter((a) => a.locales.uz);

@@ -11,9 +11,13 @@ interface Props {
   lede?: string;
   /** Botga o'tishda yuboriladigan o'yin kodi (atributsiya) */
   gameCode?: string;
+  /** Tayyor havola — Telegram Stars/Premium sahifalarida `telegramLinkFor()` */
+  href?: string;
+  /** Asosiy tugma matni — standart «Telegram'da ochish» */
+  primary?: string;
 }
 
-const { locale, title, lede, gameCode } = Astro.props;
+const { locale, title, lede, gameCode, href, primary } = Astro.props;
 const c = t(locale);
 ---
 
@@ -23,9 +27,9 @@ const c = t(locale);
       <h2 class="cta__title">{title ?? c.cta.title}</h2>
       <p class="lede cta__lede">{lede ?? c.cta.lede}</p>
       <div class="cta__actions">
-        <a class="btn btn--primary btn--lg" href={botLinkFor(gameCode)} target="_blank" rel="noopener">
+        <a class="btn btn--primary btn--lg" href={href ?? botLinkFor(gameCode)} target="_blank" rel="noopener">
           <Icon name="telegram" size={19} />
-          {c.cta.primary}
+          {primary ?? c.cta.primary}
         </a>
         <a class="btn btn--lg btn--ghost" href={localePath(locale, "blog")}>
           <Icon name="book" size={17} />

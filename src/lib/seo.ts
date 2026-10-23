@@ -271,6 +271,61 @@ export function blogPostingSchema(opts: {
   };
 }
 
+export type ProductOffer = { name: string; price: number; url: string };
+
+/**
+ * `Product` + `AggregateOffer` — Telegram Stars va Premium sahifalari uchun.
+ *
+ * NEGA BU YERDA NARX BOR: o'yin sahifalaridan farqli, Stars va Premium
+ * tarifi botda QAT'IY (`src/data/telegram.ts`) va shu fayldan o'qiladi —
+ * ya'ni sxemadagi raqam sahifadagi jadval bilan HECH QACHON ajralmaydi.
+ * Narx sxemaga faqat shu shart bilan tushadi: eskirgan `Offer.price`
+ * Rich Results'da «mismatch» va ishonch yo'qolishi demak.
+ *
+ * `image` majburiy emas, lekin usiz Google «Product» uchun ogohlantirish
+ * beradi — umumiy OG rasm yetarli.
+ */
+export function productSchema(opts: {
+  locale: Locale;
+  path: string;
+  name: string;
+  description: string;
+  category: string;
+  image: string;
+  offers: ProductOffer[];
+}) {
+  const url = absoluteUrl(localePath(opts.locale, opts.path));
+  const prices = opts.offers.map((o) => o.price);
+  return {
+    "@type": "Product",
+    "@id": `${url}#product`,
+    name: opts.name,
+    description: opts.description,
+    category: opts.category,
+    image: absoluteUrl(opts.image),
+    url,
+    brand: { "@type": "Brand", name: ORG.name },
+    offers: {
+      "@type": "AggregateOffer",
+      priceCurrency: ORG.currency,
+      lowPrice: Math.min(...prices),
+      highPrice: Math.max(...prices),
+      offerCount: opts.offers.length,
+      availability: "https://schema.org/InStock",
+      url,
+      offers: opts.offers.map((o) => ({
+        "@type": "Offer",
+        name: o.name,
+        price: o.price,
+        priceCurrency: ORG.currency,
+        availability: "https://schema.org/InStock",
+        url: o.url,
+        acceptedPaymentMethod: ORG.paymentMethods.map((m) => ({ "@type": "PaymentMethod", name: m })),
+      })),
+    },
+  };
+}
+
 /** Bosh sahifadagi o'yin kataki — `ItemList` bo'lib qidiruvda karusel bo'la oladi. */
 export function itemListSchema(
   locale: Locale,

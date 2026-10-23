@@ -39,7 +39,13 @@ export type Block =
   /** Matn ichidagi chaqiriq — botga havola */
   | { t: "cta"; text: string }
   /** Ichki havola bloki — boshqa maqolaga yoki o'yin sahifasiga */
-  | { t: "links"; title: string; items: { label: string; href: string }[] };
+  | { t: "links"; title: string; items: { label: string; href: string }[] }
+  /**
+   * Rasmiy manbalar — E-E-A-T uchun. Telegram, Fragment va boshqa birlamchi
+   * hujjatlarga TASHQI havola; `note` — manba nimani tasdiqlashi.
+   * Sarlavha `i18n` dan (`blog.sourcesTitle`), shuning uchun blokda yo'q.
+   */
+  | { t: "sources"; items: { label: string; href: string; note?: string }[] };
 
 // --------------------------------------------------------------- maqola ----
 
@@ -109,6 +115,8 @@ export function blockText(b: Block): string[] {
       return [b.text];
     case "links":
       return [b.title, ...b.items.map((i) => i.label)];
+    case "sources":
+      return b.items.flatMap((i) => [i.label, ...(i.note ? [i.note] : [])]);
   }
 }
 

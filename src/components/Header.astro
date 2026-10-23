@@ -33,10 +33,19 @@ const links = [
   // Ilova — do'kon sahifasi o'rnini bosadi, shuning uchun langar emas,
   // alohida sahifa va menyuda ko'rinadigan joyda turadi.
   { href: localePath(locale, "ilova"), label: c.nav.app },
-  { href: `${localePath(locale)}#qanday`, label: c.nav.how },
-  { href: `${localePath(locale)}#nega`, label: c.nav.why },
+  // Telegram Stars va Premium — pul sahifalari, har sahifadan ichki
+  // havola olishi kerak (o'yin sahifalari futerdan oladi, bular sarlavhadan).
+  { href: localePath(locale, "stars"), label: c.nav.stars },
+  { href: localePath(locale, "premium"), label: c.nav.premium },
+  // Langar havolalar (`anchor`) FAQAT mobil menyuda turadi. Desktopda sakkiz
+  // havola 1200px konteynerga CTA va til almashtirgich bilan birga sig'maydi:
+  // 2026-10-23 da brauzerda tekshirildi — «Qanday ishlaydi» va «Nega GemPay»
+  // 1440px kengda ham ikki qatorga tushardi. Bu uchtasi bosh sahifaning
+  // bo'limlari, futerdagi «Yordam» ustunida ham bor.
+  { href: `${localePath(locale)}#qanday`, label: c.nav.how, anchor: true },
+  { href: `${localePath(locale)}#nega`, label: c.nav.why, anchor: true },
   { href: localePath(locale, "blog"), label: c.nav.blog },
-  { href: `${localePath(locale)}#faq`, label: c.nav.faq },
+  { href: `${localePath(locale)}#faq`, label: c.nav.faq, anchor: true },
 ];
 ---
 
@@ -47,7 +56,7 @@ const links = [
     <Logo locale={locale} />
 
     <nav class="hdr__nav" aria-label={c.nav.menu}>
-      {links.map((l) => <a class="hdr__link" href={l.href}>{l.label}</a>)}
+      {links.filter((l) => !l.anchor).map((l) => <a class="hdr__link" href={l.href}>{l.label}</a>)}
     </nav>
 
     <div class="hdr__right">
@@ -164,6 +173,12 @@ const links = [
     .hdr__burger {
       display: none;
     }
+  }
+
+  /* Havola matni hech qachon ikki qatorga tushmasin: joy yetmasa, yangi
+     havola emas, burger menyu kerak (yuqoridagi `min-width: 900px`). */
+  .hdr__link {
+    white-space: nowrap;
   }
 
   /* ---------------------------------------------------------- mobil ----- */

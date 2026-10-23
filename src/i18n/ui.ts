@@ -23,6 +23,9 @@ export type Copy = {
     games: string;
     /** Android ilovasi — `/ilova` */
     app: string;
+    /** Telegram xizmatlari — `/stars`, `/premium` */
+    stars: string;
+    premium: string;
     how: string;
     why: string;
     blog: string;
@@ -98,6 +101,10 @@ export type Copy = {
     support: string;
     api: string;
     ecosystem: string;
+    /** Telegram xizmatlari ustuni — Stars, Premium, StarsPaymee */
+    colTelegram: string;
+    stars: string;
+    premium: string;
     rights: string;
     disclaimer: string;
     /** Huquqiy hujjatlar ustuni — oferta, to'lov, xavfsizlik, aloqa */
@@ -173,6 +180,8 @@ export type Copy = {
     sourcesTitle: string;
     relatedTitle: string;
     allPosts: string;
+    /** Hech qaysi o'yinga bog'lanmagan maqolalar guruhi sarlavhasi */
+    generalTitle: string;
   };
 };
 
@@ -180,6 +189,8 @@ const uz: Copy = {
   nav: {
     games: "O'yinlar",
     app: "Ilova",
+    stars: "Stars",
+    premium: "Premium",
     how: "Qanday ishlaydi",
     why: "Nega GemPay",
     blog: "Blog",
@@ -385,6 +396,9 @@ const uz: Copy = {
     support: "Qo'llab-quvvatlash",
     api: "Developer API",
     ecosystem: "StarsPaymee — Telegram Stars",
+    colTelegram: "Telegram",
+    stars: "Telegram Stars",
+    premium: "Telegram Premium",
     rights: "Barcha huquqlar himoyalangan.",
     disclaimer:
       "GemPay — mustaqil xizmat. O'yin nomlari va logolari o'z egalarining savdo belgilari; " +
@@ -466,6 +480,7 @@ const uz: Copy = {
     sourcesTitle: "Manbalar",
     relatedTitle: "O'xshash maqolalar",
     allPosts: "Barcha maqolalar",
+    generalTitle: "Umumiy qo'llanmalar va Telegram",
   },
 };
 
@@ -473,6 +488,8 @@ const ru: Copy = {
   nav: {
     games: "Игры",
     app: "Приложение",
+    stars: "Stars",
+    premium: "Premium",
     how: "Как это работает",
     why: "Почему GemPay",
     blog: "Блог",
@@ -677,6 +694,9 @@ const ru: Copy = {
     support: "Поддержка",
     api: "Developer API",
     ecosystem: "StarsPaymee — Telegram Stars",
+    colTelegram: "Telegram",
+    stars: "Telegram Stars",
+    premium: "Telegram Premium",
     rights: "Все права защищены.",
     disclaimer:
       "GemPay — независимый сервис. Названия и логотипы игр являются товарными знаками их " +
@@ -758,6 +778,7 @@ const ru: Copy = {
     sourcesTitle: "Источники",
     relatedTitle: "Похожие статьи",
     allPosts: "Все статьи",
+    generalTitle: "Общие руководства и Telegram",
   },
 };
 
@@ -765,6 +786,8 @@ const en: Copy = {
   nav: {
     games: "Games",
     app: "App",
+    stars: "Stars",
+    premium: "Premium",
     how: "How it works",
     why: "Why GemPay",
     blog: "Blog",
@@ -963,6 +986,9 @@ const en: Copy = {
     support: "Support",
     api: "Developer API",
     ecosystem: "StarsPaymee — Telegram Stars",
+    colTelegram: "Telegram",
+    stars: "Telegram Stars",
+    premium: "Telegram Premium",
     rights: "All rights reserved.",
     disclaimer:
       "GemPay is an independent service. Game names and logos are trademarks of their respective owners; " +
@@ -1043,6 +1069,7 @@ const en: Copy = {
     sourcesTitle: "Sources",
     relatedTitle: "Related articles",
     allPosts: "All articles",
+    generalTitle: "General guides and Telegram",
   },
 };
 

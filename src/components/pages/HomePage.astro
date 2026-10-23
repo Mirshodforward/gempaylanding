@@ -12,6 +12,7 @@ import Header from "../Header.astro";
 import Hero from "../Hero.astro";
 import AnswerBox from "../AnswerBox.astro";
 import AppStrip from "../AppStrip.astro";
+import TelegramStrip from "../TelegramStrip.astro";
 import Games from "../Games.astro";
 import HowItWorks from "../HowItWorks.astro";
 import Why from "../Why.astro";
@@ -138,6 +139,10 @@ const schema = graph(
         uchun uni ko'rsatadigan yagona joy shu sahifa. Pastda qolsa
         mijoz borligini bilmay ketardi. */}
     <AppStrip locale={locale} />
+
+    {/* Telegram Stars va Premium — yangi pul sahifalariga bosh sahifadan
+        to'g'ridan-to'g'ri yo'l. Ilova chizig'i ostida, katalog ustida. */}
+    <TelegramStrip locale={locale} />
 
     <Games locale={locale} />
     <HowItWorks locale={locale} />

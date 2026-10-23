@@ -1,0 +1,188 @@
+---
+/**
+ * Bosh sahifadagi Telegram xizmatlari chizig'i — `/stars` va `/premium`.
+ *
+ * NEGA BOSH SAHIFADA: bu ikki sahifa saytdagi yangi pul sahifalari va
+ * ularga eng kuchli ichki havola aynan bosh sahifadan keladi. Chiziq
+ * ilova chizig'idan keyin, katalogdan oldin turadi — mijoz «o'yinim bormi?»
+ * deb kelsa katalogni ko'radi, «yulduz kerak» deb kelsa shu yerda to'xtaydi.
+ *
+ * Narx bu yerda ATAYLAB ko'rsatiladi: Stars va Premium tarifi qat'iy
+ * (`src/data/telegram.ts`), o'yin valyutasidan farqli u kursga bog'liq emas.
+ */
+import Icon from "./Icon.astro";
+import { localePath, type Locale } from "../data/site";
+import { STARS_UNIT_CARD, PREMIUM_PLANS, som } from "../data/telegram";
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const cheapest = PREMIUM_PLANS[0];
+
+const COPY = {
+  uz: {
+    eyebrow: "Telegram",
+    stars: {
+      title: "Telegram Stars",
+      lede: `Yulduzlar donasi ${som(STARS_UNIT_CARD, locale)}dan, faqat @username — Telegram'dagi GemPay'da.`,
+      cta: "Stars sahifasi",
+    },
+    premium: {
+      title: "Telegram Premium",
+      lede: `3, 6 yoki 12 oy, ${som(cheapest.price, locale)}dan. Parolsiz, so'mda.`,
+      cta: "Premium sahifasi",
+    },
+  },
+  ru: {
+    eyebrow: "Telegram",
+    stars: {
+      title: "Telegram Stars",
+      lede: `Звёзды от ${som(STARS_UNIT_CARD, locale)} за штуку, нужен только @username — в GemPay в Telegram.`,
+      cta: "Страница Stars",
+    },
+    premium: {
+      title: "Telegram Premium",
+      lede: `3, 6 или 12 месяцев, от ${som(cheapest.price, locale)}. Без пароля, в сумах.`,
+      cta: "Страница Premium",
+    },
+  },
+  en: {
+    eyebrow: "Telegram",
+    stars: {
+      title: "Telegram Stars",
+      lede: `Stars from ${som(STARS_UNIT_CARD, locale)} each, only a @username needed — in GemPay on Telegram.`,
+      cta: "Stars page",
+    },
+    premium: {
+      title: "Telegram Premium",
+      lede: `3, 6 or 12 months, from ${som(cheapest.price, locale)}. No password, paid in so'm.`,
+      cta: "Premium page",
+    },
+  },
+} as const;
+
+const copy = COPY[locale];
+const tiles = [
+  { key: "stars", icon: "star" as const, ...copy.stars },
+  { key: "premium", icon: "crown" as const, ...copy.premium },
+];
+---
+
+<section class="wrap" aria-label={copy.eyebrow}>
+  <div class="tg">
+    {
+      tiles.map((t) => (
+        <a class="tg__tile" href={localePath(locale, t.key)}>
+          <span class="tg__ic"><Icon name={t.icon} size={22} /></span>
+          <span class="tg__txt">
+            <span class="tg__badge">{copy.eyebrow}</span>
+            <span class="tg__h">{t.title}</span>
+            <span class="tg__p">{t.lede}</span>
+          </span>
+          <span class="tg__more">
+            {t.cta}
+            <Icon name="arrow-right" size={15} />
+          </span>
+        </a>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .tg {
+    position: relative;
+    z-index: var(--z-body);
+    display: grid;
+    gap: var(--sp-3);
+    margin-top: var(--sp-3);
+  }
+
+  @media (min-width: 720px) {
+    .tg {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+
+  .tg__tile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--sp-3) var(--sp-4);
+    padding: clamp(16px, 2.4vw, 22px);
+    border-radius: var(--r-lg);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    transition:
+      transform var(--dur) var(--ease),
+      border-color var(--dur) var(--ease),
+      background-color var(--dur) var(--ease);
+  }
+
+  .tg__tile:hover {
+    transform: translateY(-3px);
+    border-color: rgba(var(--accent-rgb), 0.45);
+    background: var(--surface-2);
+  }
+
+  .tg__ic {
+    display: grid;
+    place-items: center;
+    width: 46px;
+    height: 46px;
+    flex: none;
+    border-radius: var(--r-md);
+    background: linear-gradient(140deg, rgba(251, 191, 36, 0.22), rgba(var(--accent-rgb), 0.12));
+    border: 1px solid rgba(251, 191, 36, 0.3);
+    color: var(--gold);
+  }
+
+  .tg__txt {
+    flex: 1 1 200px;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .tg__badge {
+    font-size: var(--t-xs);
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-3);
+  }
+
+  .tg__h {
+    font-family: var(--font-display);
+    font-size: var(--t-md);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--text);
+  }
+
+  .tg__p {
+    font-size: var(--t-sm);
+    color: var(--text-2);
+    line-height: 1.6;
+  }
+
+  .tg__more {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    font-size: var(--t-sm);
+    font-weight: 700;
+    color: var(--accent);
+  }
+
+  .tg__more :global(svg) {
+    transition: transform var(--dur) var(--ease);
+  }
+
+  .tg__tile:hover .tg__more :global(svg) {
+    transform: translateX(3px);
+  }
+</style>

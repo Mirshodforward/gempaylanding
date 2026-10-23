@@ -55,8 +55,9 @@ const META = {
       "PUBG UC, Mobile Legends olmosi, Free Fire va boshqa o'yinlarni to'ldirish bo'yicha " +
       "qo'llanmalar, taqqoslashlar va tez-tez uchraydigan muammolarning yechimi.",
     answer:
-      "Bu blogda har bir o'yin uchun beshta maqola bor: qanday to'ldirish, ID ni qayerdan " +
-      "topish, kredit kelmasa nima qilish, qayerdan olish arzonroq va valyutaning o'zi nima. " +
+      "Bu blogda o'yin to'ldirish bo'yicha qo'llanmalar bor: qanday to'ldirish, ID ni qayerdan " +
+      "topish, kredit kelmasa nima qilish va qayerdan olish arzonroq. Alohida bo'lim — Telegram " +
+      "Stars va Premium: o'yinchiga nima beradi va GemPay ilovasida so'mda qanday olinadi. " +
       "Barchasi O'zbekiston sharoitiga — so'mda to'lov va mahalliy kartalarga — moslangan.",
   },
   ru: {
@@ -65,8 +66,9 @@ const META = {
       "Руководства, сравнения и разбор частых проблем по пополнению PUBG UC, алмазов " +
       "Mobile Legends, Free Fire и других игр в Узбекистане.",
     answer:
-      "В блоге по пять статей на каждую игру: как пополнить, где найти ID, что делать если " +
-      "зачисление не пришло, где выгоднее покупать и что вообще представляет собой валюта. " +
+      "В блоге — руководства по пополнению игр: как пополнить, где найти ID, что делать, если " +
+      "зачисление не пришло, и где выгоднее покупать. Отдельный раздел — Telegram Stars и Premium: " +
+      "что они дают игроку и как купить их в приложении GemPay за сумы. " +
       "Всё написано под Узбекистан — оплата в сумах и местные карты.",
   },
   en: {
@@ -75,9 +77,10 @@ const META = {
       "Guides, comparisons and fixes for topping up PUBG UC, Mobile Legends diamonds, " +
       "Free Fire and other games from Uzbekistan.",
     answer:
-      "The blog carries five articles per game: how to top up, where to find your ID, what to " +
-      "do when the credit does not arrive, where buying is cheaper, and what the currency " +
-      "actually is. All of it is written for Uzbekistan — so'm payments and local cards.",
+      "The blog carries game top-up guides: how to top up, where to find your ID, what to do when " +
+      "the credit does not arrive, and where buying is cheaper. A separate section covers Telegram " +
+      "Stars and Premium: what they give a gamer and how to buy them in the GemPay app with so'm. " +
+      "All of it is written for Uzbekistan — so'm payments and local cards.",
   },
 }[locale];
 
@@ -146,8 +149,13 @@ const schema = graph(
 
     {
       general.length > 0 && (
-        <section class="section">
+        <section class="section bsec">
           <div class="wrap">
+            {/* Umumiy va Telegram maqolalari — o'yin guruhlari bilan bir xil
+                sarlavha ritmida, aks holda ular sahifada «egasiz» turardi. */}
+            <div class="bsec__head">
+              <h2 class="bsec__t">{c.blog.generalTitle}</h2>
+            </div>
             <div class="bgrid">
               {general.map((a) => <ArticleCard article={a} locale={locale} />)}
             </div>

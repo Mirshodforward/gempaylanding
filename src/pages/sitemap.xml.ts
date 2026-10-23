@@ -9,6 +9,9 @@
  *
  * QOIDALAR:
  *   · Faqat 200 qaytaradigan, indekslanadigan, kanonik URL'lar kiradi.
+ *     Host `SITE_URL` dan keladi — u saytga xizmat qilayotgan host bilan
+ *     bir xil bo'lishi SHART (`www`), aks holda har bir `<loc>` redirect
+ *     bo'lib qoladi va Google ularni indeksdan chiqaradi.
  *   · Tarjimasi yo'q maqola O'Z tilida sitemapga TUSHMAYDI (`noindex` oladi).
  *   · `lastmod` — haqiqiy o'zgarish sanasi. `new Date()` yozilsa Google
  *     har buildda «hammasi yangilandi» deb ko'radi va `lastmod` ga umuman
@@ -21,10 +24,35 @@ import { ANDROID_APP } from "../data/app";
 import { isReadyToIndex } from "../data/gameContent";
 import { ARTICLES, articlesFor, localesOf } from "../data/blog";
 import { LEGAL_DOCS } from "../data/legal";
+import { UPDATED as TELEGRAM_UPDATED } from "../data/telegram";
 import { LOCALES, DEFAULT_LOCALE, absoluteUrl, localePath, type Locale } from "../data/site";
 
-/** Statik sahifalarning oxirgi jiddiy o'zgarishi — QO'LDA boshqariladi. */
-const STATIC_LASTMOD = "2026-08-23";
+/**
+ * Statik sahifalarning oxirgi JIDDIY o'zgarish sanasi — HAR SAHIFA UCHUN ALOHIDA.
+ *
+ * NEGA BITTA SANA EMAS: ilgari hammasi uchun bitta `STATIC_LASTMOD`
+ * (2026-08-23) turardi. Sentabrda bosh sahifaga ilova chizig'i va to'lov
+ * usullari tuzatishi kirdi, sana esa o'zgarmadi — Google uchun «hech narsa
+ * o'zgarmagan». Teskarisi ham yomon: bitta sanani yangilasak o'nlab sahifa
+ * birdaniga «yangilandi» deb ko'rinadi va `lastmod` ishonchini yo'qotadi.
+ *
+ * QOIDA: sahifaning MATNI yoki TUZILISHI o'zgarganda shu jadvaldagi sanani
+ * yangilang. Sarlavha/futerdagi havola o'zgarishi hisobga olinmaydi — u har
+ * sahifada bor, lekin sahifa mazmunini o'zgartirmaydi. Sana manbasi:
+ * `git log -1 --format=%cs -- <sahifa fayli>`.
+ */
+const LASTMOD = {
+  /** Bosh sahifa: Telegram Stars/Premium chizig'i qo'shildi */
+  home: "2026-10-23",
+  /** Katalog hub — `CatalogPage.astro` */
+  catalog: "2026-09-12",
+  /** Biz haqimizda — `AboutPage.astro` */
+  about: "2026-08-24",
+  /** O'yin sahifalari — `gameContent.ts` (to'lov usullari tuzatildi) */
+  games: "2026-09-12",
+  /** Telegram Stars/Premium — narx tekshirilgan sana `telegram.ts` da */
+  telegram: TELEGRAM_UPDATED,
+} as const;
 
 type Entry = {
   path: string;
@@ -35,13 +63,23 @@ type Entry = {
   locales: readonly Locale[];
 };
 
+/** Maqolalar orasidagi eng oxirgi tahrir — blog ro'yxati sahifasining `lastmod`i. */
+function latestArticleDate(): string {
+  return ARTICLES.map((a) => a.dateModified).sort().at(-1) ?? LASTMOD.home;
+}
+
 function collect(): Entry[] {
   const out: Entry[] = [
-    { path: "", lastmod: STATIC_LASTMOD, changefreq: "weekly", priority: 1.0, locales: LOCALES },
+    { path: "", lastmod: LASTMOD.home, changefreq: "weekly", priority: 1.0, locales: LOCALES },
     // Katalog hub — o'ziga xos matni bor va har sahifadan havola oladi
-    { path: "oyinlar", lastmod: STATIC_LASTMOD, changefreq: "weekly", priority: 0.95, locales: LOCALES },
+    { path: "oyinlar", lastmod: LASTMOD.catalog, changefreq: "weekly", priority: 0.95, locales: LOCALES },
+    // Telegram Stars va Premium — pul sahifalari, katalog bilan bir og'irlikda.
+    // Ularning `lastmod`i narx tekshirilgan sana: tarif o'zgarsa sahifa ham
+    // o'zgargan bo'ladi, boshqa holda — yo'q.
+    { path: "stars", lastmod: LASTMOD.telegram, changefreq: "weekly", priority: 0.95, locales: LOCALES },
+    { path: "premium", lastmod: LASTMOD.telegram, changefreq: "weekly", priority: 0.95, locales: LOCALES },
     // Ishonch sahifasi — E-E-A-T signali, har tilda to'liq matni bor
-    { path: "haqida", lastmod: STATIC_LASTMOD, changefreq: "monthly", priority: 0.6, locales: LOCALES },
+    { path: "haqida", lastmod: LASTMOD.about, changefreq: "monthly", priority: 0.6, locales: LOCALES },
     // Android ilovasi — do'kon sahifasi o'rnini bosadi, shuning uchun
     // ustuvorligi yuqori. `lastmod` reliz sanasidan: ilova yangilanmasa
     // sahifa ham o'zgarmagan bo'ladi.
@@ -69,11 +107,12 @@ function collect(): Entry[] {
   // Blog ro'yxati faqat MAQOLASI BOR tillarda. Bo'sh ro'yxat sahifasi
   // `noindex` oladi (`BlogPage.astro`), demak u sitemapda ham turmasligi
   // kerak — aks holda Search Console'da «Submitted URL marked noindex».
+  // `lastmod` — eng oxirgi maqola sanasi: ro'yxat aynan o'shanda o'zgargan.
   const blogLocales = LOCALES.filter((l) => articlesFor(l).length > 0);
   if (blogLocales.length) {
     out.push({
       path: "blog",
-      lastmod: STATIC_LASTMOD,
+      lastmod: latestArticleDate(),
       changefreq: "daily",
       priority: 0.8,
       locales: blogLocales,
@@ -91,7 +130,7 @@ function collect(): Entry[] {
     if (!langs.length) continue;
     out.push({
       path: `oyinlar/${g.slug}`,
-      lastmod: STATIC_LASTMOD,
+      lastmod: LASTMOD.games,
       changefreq: "weekly",
       priority: 0.9,
       locales: langs,

@@ -46,10 +46,12 @@ src/
     site.ts            domen, bot, tillar, tasdiqlash kodlari
     games.ts           katalog (bot bilan sinxron)
     gameContent.ts     har o'yinning O'ZIGA XOS sahifa matni
+    telegram.ts        Telegram Stars/Premium narxi va chegaralari — jonli API bilan tekshirilgan
+    tgContent.ts       /stars va /premium matni (uz/ru/en)
     blog/
       types.ts         maqola blok modeli + yordamchilar
       index.ts         reyestr (posts/ ni avtomatik yig'adi)
-      posts/*.ts       maqolalar — har biri alohida fayl
+      posts/*.ts       maqolalar — har biri alohida fayl (`sources` bloki — rasmiy manbalar)
     legal/
       types.ts         huquqiy blok modeli (blognikidan kengaytirilgan)
       oferta.ts payments.ts security.ts contact.ts
@@ -59,10 +61,11 @@ src/
     seo.ts             JSON-LD quruvchilar + hreflang
     color.ts, gameImages.ts
   layouts/Layout.astro <head> dagi BARCHA SEO signallari
-  components/          Hero, Games, GameCard, FAQ, blog/ArticleBody ...
+  components/          Hero, Games, GameCard, FAQ, TelegramStrip, pages/TgProductPage, blog/ArticleBody ...
   pages/
     index / ru / en             bosh sahifa
     oyinlar/ + [game]           katalog hub + 10 sahifa (har tilda)
+    stars, premium              Telegram Stars va Premium pul sahifalari (har tilda)
     blog/ + [slug]              blog
     sitemap.xml.ts robots.txt.ts llms.txt.ts rss.xml.ts site.webmanifest.ts
   styles/              tokens → base → app (fonts.css avtomatik)
@@ -210,6 +213,42 @@ yangilang (ofertada u `LEGAL.offerRevision` dan keladi). Bu sana
 sahifada ko'rinadi va sitemapga `lastmod` bo'lib tushadi — nizoda
 foydalanuvchi qaysi tahrirga rozi bo'lgani shundan aniqlanadi.
 
+## Telegram Stars va Premium
+
+`/stars` va `/premium` — Mini App'dagi «Telegram» bo'limining (Stars ·
+Premium · Gift plitkalari, o'yin katalogi bilan bitta ilova) sayt tomonidagi
+pul sahifalari, uch tilda.
+
+**Faqat Telegram Mini App'da — Android APK'da YO'Q.** `gampayapp` (v1.1.1, `/ilova`
+sahifasidagi APK) 9 o'yin va Steam'ni biladi, Stars/Premium/Gift plitkalari esa
+faqat Mini App'da (jonli bundle'da 2026-10-23 da tekshirildi). Sahifalar buni
+hero'da ochiq aytadi (`appNote` in `tgContent.ts`) va matnda «Mini App» deydi,
+«ilova» emas — sayt `/ilova` deganda Android'ni nazarda tutadi. APK'ga bo'lim
+qo'shilsa `appNote`, `AppPage.astro` va `llms.txt` ni birga yangilang. Bitta skelet `TgProductPage.astro`, matn
+`src/data/tgContent.ts`, raqamlar `src/data/telegram.ts`.
+
+**Bu yerda narx BOR** — o'yinlardan farqli: Stars va Premium tarifi bot
+`.env` ida qat'iy va kursga bog'liq emas. Manba va tekshiruv usuli
+`telegram.ts` izohida (jonli API: `/api/usdt-stars/price/100`,
+`/api/usdt-premium/price/3`). Tarif o'zgarsa FAQAT shu faylni va undagi
+`UPDATED` sanasini yangilang — jadval, JSON-LD `Product`, FAQ, maqolalar,
+`/llms.txt` va sitemap `lastmod` o'zi ergashadi.
+
+| Mahsulot | Narx | Chegara |
+| --- | --- | --- |
+| Stars | karta o'tkazmasi 220, onlayn (Click, Uzum) 240 so'm/dona | 50–10 000 dona |
+| Premium | 3 / 6 / 12 oy — hamma usulda bir xil | 1 oylik GemPay oqimida yo'q |
+
+1 oylik Premium bot oqimida yo'q (`usdtPremium` faqat 3/6/12 qabul qiladi) —
+sahifa buni ochiq aytadi va StarsPaymee'ga yo'naltiradi.
+
+**starstg.uz bilan matn TAKRORLANMAYDI.** Ikkala sayt bir jamoaniki va bir
+xil mahsulotni sotadi; bir xil matn ikki domenda tursa Google bittasini
+tashlaydi. Shuning uchun sahifalar va `telegram-*` maqolalari GemPay
+nuqtai nazaridan yozilgan: o'yinchi uchun Stars/Premium, Stars ≠ UC,
+ilovaning qaysi bo'limi. Yangi matn yozishdan oldin starstg.uz'dagi 100+
+Stars/Premium maqolasi bilan burchak kesishmasligini tekshiring.
+
 ## Analitika
 
 Vercel Web Analytics — [src/components/Analytics.astro](src/components/Analytics.astro),
@@ -279,15 +318,26 @@ lekin ularsiz indekslanish sekin boradi:
 3. **Bing Webmaster** → HTML Meta Tag → `VERIFICATION.bing`.
 4. **IndexNow** — `npm run indexnow` ko'rsatmani o'zi chiqaradi. Kalit
    qo'yilgach har deploydan keyin ishga tushiring.
-5. Har uchala panelga sitemap manzilini bering: `https://gempay.uz/sitemap.xml`
+5. Har uchala panelga sitemap manzilini bering: `https://www.gempay.uz/sitemap.xml`
 
 ### Domen
 
-`astro.config.mjs` va `src/data/site.ts` da `https://gempay.uz`. Vercel apex
-domenni `www` ga yo'naltirmasligi kerak — aks holda sitemapdagi har bir
-manzil redirect'ga aylanadi va Google ularni «Page with redirect» deb
-indeksdan chiqaradi. Agar `www` kanonik bo'lsa, ikkala faylda ham
-o'zgartiring.
+Kanonik host — **`https://www.gempay.uz`** (`astro.config.mjs` va
+`src/data/site.ts`). Vercel apex `gempay.uz` ni `www` ga 308 bilan
+yo'naltiradi (2026-10-22 da tekshirildi). Ilgari kodda apex turardi va
+canonical, hreflang, sitemap, robots `Host` — hammasi redirect beradigan
+manzilni ko'rsatardi: Google sitemapdagi birorta URL'ni to'g'ridan-to'g'ri
+ocha olmasdi («Page with redirect»). Ikki qoida:
+
+1. Kod va Vercel bir xil hostni aytishi SHART. Apex'ni kanonik qilmoqchi
+   bo'lsangiz, avval Vercel'dagi yo'naltirishni teskari qiling, keyin ikkala
+   faylni birga o'zgartiring.
+2. Search Console'da `www.gempay.uz` mulki bo'lishi va sitemap aynan
+   `https://www.gempay.uz/sitemap.xml` sifatida topshirilishi kerak.
+
+Sitemap `lastmod` sanalari sahifa bo'yicha alohida — `src/pages/sitemap.xml.ts`
+dagi `LASTMOD` jadvali. Sahifa mazmuni o'zgarganda o'sha sanani yangilang;
+blog ro'yxati va Telegram sahifalari sanani o'zi oladi.
 
 ### Bot username
 

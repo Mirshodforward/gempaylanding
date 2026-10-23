@@ -1,0 +1,756 @@
+---
+/**
+ * Telegram xizmati sahifasi — `/stars` va `/premium`. Saytning PUL sahifalari.
+ *
+ * Bitta skelet, ikki mahsulot: hero → javob → narx jadvali → imkoniyatlar →
+ * 4 qadam (HowTo) → to'lov usullari → kafolat → FAQ (FAQPage) → qo'llanmalar
+ * → CTA. Matn `tgContent.ts` dan, raqam `telegram.ts` dan keladi.
+ *
+ * NEGA O'YIN SAHIFASIDAN FARQLI RAVISHDA NARX BOR: Stars va Premium tarifi
+ * botda qat'iy va kursga bog'liq emas. «telegram stars narxi» so'rovi aynan
+ * raqamni so'raydi — raqamsiz sahifa bu so'rovga javob bermaydi. Jadval,
+ * JSON-LD `Product` va FAQ bitta manbadan yasaladi, shuning uchun ular
+ * bir-biriga zid bo'lib qolmaydi.
+ *
+ * ILOVADA QAYERDA: Mini App'dagi «Telegram» bo'limi (Stars · Premium · Gift
+ * plitkalari) — o'yin katalogi bilan bitta ilova. CTA botga `tg_<mahsulot>`
+ * payload bilan boradi (`telegramLinkFor`).
+ */
+import Layout from "../../layouts/Layout.astro";
+import Aurora from "../Aurora.astro";
+import Header from "../Header.astro";
+import Footer from "../Footer.astro";
+import Icon from "../Icon.astro";
+import AnswerBox from "../AnswerBox.astro";
+import Faq from "../FAQ.astro";
+import Cta from "../CTA.astro";
+import Breadcrumbs from "../Breadcrumbs.astro";
+import ArticleCard from "../ArticleCard.astro";
+import SectionHead from "../SectionHead.astro";
+import PayMarks from "../PayMarks.astro";
+
+import { t } from "../../i18n/ui";
+import { tgCopy, type TgProduct } from "../../data/tgContent";
+import {
+  UPDATED,
+  STARS_PACKS,
+  STARS_POPULAR,
+  starsCardPrice,
+  starsOnlinePrice,
+  PREMIUM_PLANS,
+  PREMIUM_BEST,
+  premiumPerMonth,
+  num,
+} from "../../data/telegram";
+import { articleBySlug, contentFor } from "../../data/blog";
+import { hexToRgb } from "../../lib/color";
+import { primaryMethods, telegramLinkFor, localePath, type Locale } from "../../data/site";
+import {
+  graph,
+  organizationSchema,
+  websiteSchema,
+  breadcrumbSchema,
+  productSchema,
+  howToSchema,
+  faqSchema,
+} from "../../lib/seo";
+
+interface Props {
+  product: TgProduct;
+  locale: Locale;
+}
+
+const { product, locale } = Astro.props;
+const c = t(locale);
+const copy = tgCopy(product, locale);
+const path = product;
+const bot = telegramLinkFor(product);
+
+/** Sahifa aksenti: Stars — oltin, Premium — binafsha. Ikkalasi to'q fonda ≥5:1. */
+const ACCENT = {
+  stars: { color: "#FBBF24", color2: "#F59E0B" },
+  premium: { color: "#A78BFA", color2: "#7C3AED" },
+}[product];
+
+/**
+ * Narx jadvali. Stars: miqdor / karta o'tkazmasi / onlayn to'lov.
+ * Premium: muddat / oyiga / jami. Belgi («mashhur», «eng foydali») ham
+ * `telegram.ts` dan — matnda emas.
+ *
+ * KATAKDA FAQAT RAQAM, valyuta ustun sarlavhasida («220 so'm/dona»,
+ * «Jami, so'm»). Sabab: «2 400 000 so'm» uch ustunli jadvalni 390px
+ * ekranda 440px qilib yuborardi va uchinchi ustun kesilardi (2026-10-23
+ * da brauzerda o'lchandi). Raqam ichida NBSP — katak faqat raqam bilan
+ * birlik so'zi orasidan sinadi, «10 | 000» bo'lib emas.
+ */
+const nb = (n: number) => num(n).replace(/ /g, "\u00A0");
+type Row = { label: string; a: string; b: string; tag?: "popular" | "best" };
+const rows: Row[] =
+  product === "stars"
+    ? STARS_PACKS.map((n) => ({
+        label: `${nb(n)} ${copy.prices.unit}`,
+        a: nb(starsCardPrice(n)),
+        b: nb(starsOnlinePrice(n)),
+        tag: n === STARS_POPULAR ? "popular" : undefined,
+      }))
+    : PREMIUM_PLANS.map((p) => ({
+        label: `${p.months} ${copy.prices.unit}`,
+        a: `~${nb(Math.round(premiumPerMonth(p) / 100) * 100)}`,
+        b: nb(p.price),
+        tag: p.months === PREMIUM_BEST.months ? "best" : p.months === 6 ? "popular" : undefined,
+      }));
+
+/** JSON-LD `Offer` ro'yxati — jadval bilan bitta manbadan. */
+const offers =
+  product === "stars"
+    ? STARS_PACKS.flatMap((n) => [
+        { name: `Telegram Stars — ${num(n)} (${copy.prices.cols[1]})`, price: starsCardPrice(n), url: bot },
+        { name: `Telegram Stars — ${num(n)} (${copy.prices.cols[2]})`, price: starsOnlinePrice(n), url: bot },
+      ])
+    : PREMIUM_PLANS.map((p) => ({
+        name: `Telegram Premium — ${p.months} ${copy.prices.unit}`,
+        price: p.price,
+        url: bot,
+      }));
+
+/** Jadval ostidagi «narx tekshirilgan sana» yorlig'i — ishonch signali. */
+const CHECKED = { uz: "Narxlar tekshirildi", ru: "Цены проверены", en: "Prices verified" }[locale];
+const BALANCE_LABEL = { uz: "Bot balansi", ru: "Баланс бота", en: "Bot balance" }[locale];
+
+/** To'lov usullari — saytning yagona ro'yxatidan, tavsif mahsulotga xos. */
+const methods = primaryMethods.map((m) => ({ ...m, text: copy.pay.methods[m.id] ?? "" }));
+
+/** Qo'llanmalar — faqat shu tilda tarjimasi borlari (tarjimasiz kartochka chiqmaydi). */
+const guides = copy.guides.slugs
+  .map((s) => articleBySlug(s))
+  .filter((a): a is NonNullable<typeof a> => Boolean(a && contentFor(a, locale)));
+
+const crumbs = [
+  { name: c.game.breadcrumbHome, path: "" },
+  { name: copy.crumb, path },
+];
+
+const schema = graph(
+  organizationSchema(),
+  websiteSchema(locale),
+  breadcrumbSchema(locale, crumbs),
+  productSchema({
+    locale,
+    path,
+    name: copy.h1,
+    description: copy.metaDescription,
+    category: copy.crumb,
+    image: "/og/default.png",
+    offers,
+  }),
+  howToSchema({
+    name: copy.steps.title,
+    description: copy.steps.lede,
+    steps: copy.steps.items.map((s) => ({ name: s.title, text: s.text })),
+    totalMinutes: 3,
+    image: "/og/default.png",
+  }),
+  faqSchema(copy.faq),
+);
+---
+
+<Layout
+  locale={locale}
+  path={path}
+  title={copy.metaTitle}
+  description={copy.metaDescription}
+  keywords={copy.keywords}
+  image="/og/default.png"
+  schema={schema}
+  accent={{ color: ACCENT.color, rgb: hexToRgb(ACCENT.color), color2: ACCENT.color2 }}
+>
+  <Aurora />
+  <Header locale={locale} path={path} />
+
+  <main id="main">
+    <div class="wrap">
+      <Breadcrumbs items={crumbs} locale={locale} />
+    </div>
+
+    {/* ---------------------------------------------------------- hero -- */}
+    <section class="thero">
+      <div class="wrap thero__in">
+        <p class="eyebrow">
+          <Icon name={product === "stars" ? "star" : "crown"} size={15} />
+          {copy.eyebrow}
+        </p>
+        <h1 class="thero__title">{copy.h1}</h1>
+        <p class="lede thero__lede">{copy.lede}</p>
+
+        <ul class="thero__badges">
+          {
+            copy.badges.map((b) => (
+              <li class="chip">
+                <Icon name="check" size={14} />
+                {b}
+              </li>
+            ))
+          }
+        </ul>
+
+        {/* «Telegram» bo'limi Mini App'da — Android APK'da emas. Aytilmasa APK
+            o'rnatgan odam Stars'ni topolmay qoladi. */}
+        <p class="thero__note">
+          <Icon name="smartphone" size={16} />
+          <span>{copy.appNote}</span>
+        </p>
+
+        <div class="thero__actions">
+          <a class="btn btn--primary btn--lg" href={bot} target="_blank" rel="noopener">
+            <Icon name="telegram" size={19} />
+            {copy.ctaPrimary}
+          </a>
+          <a class="btn btn--lg btn--ghost" href="#narxlar">
+            {copy.ctaPrices}
+            <Icon name="chevron-down" size={17} />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap tsections">
+      <AnswerBox title={c.blog.answerTitle} text={copy.answer} />
+
+      {/* ---------------------------------------------------- narxlar -- */}
+      <section class="tsec" id="narxlar">
+        <SectionHead eyebrow={copy.prices.eyebrow} title={copy.prices.title} lede={copy.prices.lede} />
+
+        {/* `overflow-x` o'ramda — jadval tor ekranda o'z ichida siljiydi,
+            sahifa emas (mobil CWV). */}
+        <div class="tscroll" role="region" tabindex="0" aria-label={copy.prices.title}>
+          <table class="ttable">
+            <thead>
+              <tr>{copy.prices.cols.map((h) => <th scope="col">{h}</th>)}</tr>
+            </thead>
+            <tbody>
+              {
+                rows.map((r) => (
+                  <tr class:list={[r.tag && `is-${r.tag}`]}>
+                    <th scope="row">
+                      {r.label}
+                      {r.tag && <span class="ttag">{copy.prices[r.tag]}</span>}
+                    </th>
+                    <td>
+                      <a class="tprice" href={bot} target="_blank" rel="noopener">{r.a}</a>
+                    </td>
+                    <td>
+                      <a class="tprice" href={bot} target="_blank" rel="noopener">{r.b}</a>
+                    </td>
+                  </tr>
+                ))
+              }
+            </tbody>
+          </table>
+        </div>
+
+        <p class="tnote">{copy.prices.note}</p>
+        <p class="tchecked">
+          <Icon name="check-circle" size={14} />
+          {CHECKED}: <time datetime={UPDATED}>{UPDATED}</time>
+        </p>
+      </section>
+
+      {/* ----------------------------------------------- imkoniyatlar -- */}
+      <section class="tsec" id="imkoniyatlar">
+        <SectionHead eyebrow={copy.features.eyebrow} title={copy.features.title} lede={copy.features.lede} />
+        <ul class="tfeats">
+          {
+            copy.features.items.map((f, i) => (
+              <li class="tfeat card rise" style={`--i:${i}`}>
+                <span class="tfeat__ic"><Icon name={f.icon} size={21} /></span>
+                <h3 class="tfeat__t">{f.title}</h3>
+                <p class="tfeat__d">{f.text}</p>
+              </li>
+            ))
+          }
+        </ul>
+      </section>
+
+      {/* --------------------------------------------------- qadamlar -- */}
+      <section class="tsec" id="qadamlar">
+        <SectionHead eyebrow={copy.steps.eyebrow} title={copy.steps.title} lede={copy.steps.lede} />
+        <ol class="tsteps">
+          {
+            copy.steps.items.map((s, i) => (
+              <li class="tstep">
+                <span class="tstep__n">{i + 1}</span>
+                <div>
+                  <h3 class="tstep__t">{s.title}</h3>
+                  <p class="tstep__d">{s.text}</p>
+                </div>
+              </li>
+            ))
+          }
+        </ol>
+        <a class="btn btn--primary tsteps__cta" href={bot} target="_blank" rel="noopener">
+          <Icon name="telegram" size={18} />
+          {copy.steps.cta}
+        </a>
+      </section>
+
+      {/* ------------------------------------------------------ to'lov -- */}
+      <section class="tsec" id="tolov">
+        <SectionHead eyebrow={copy.pay.eyebrow} title={copy.pay.title} lede={copy.pay.lede} />
+        <PayMarks title={c.legal.payMarks} />
+        <ul class="tpay">
+          {
+            methods.map((m) => (
+              <li class="tpay__i">
+                <strong class="tpay__t">{m.name}</strong>
+                <p class="tpay__d">{m.text}</p>
+              </li>
+            ))
+          }
+          <li class="tpay__i">
+            <strong class="tpay__t">{BALANCE_LABEL}</strong>
+            <p class="tpay__d">{copy.pay.balance}</p>
+          </li>
+        </ul>
+        <p class="tnote tnote--pay">
+          <Icon name="alert-triangle" size={15} />
+          <span>{copy.pay.note}</span>
+        </p>
+      </section>
+
+      {/* ----------------------------------------------------- kafolat -- */}
+      <section class="tsec" id="kafolat">
+        <SectionHead eyebrow={copy.trust.eyebrow} title={copy.trust.title} lede={copy.trust.lede} />
+        <ul class="ttrust">
+          {
+            copy.trust.items.map((x) => (
+              <li class="ttrust__i card">
+                <span class="ttrust__v">{x.value}</span>
+                <strong class="ttrust__t">{x.title}</strong>
+                <p class="ttrust__d">{x.text}</p>
+              </li>
+            ))
+          }
+        </ul>
+        <p class="tdisc">{copy.trust.disclosure}</p>
+      </section>
+    </div>
+
+    <Faq eyebrow={c.faq.eyebrow} title={copy.faqTitle} items={copy.faq} id="faq" />
+
+    {
+      guides.length > 0 && (
+        <section class="section" id="qollanmalar">
+          <div class="wrap">
+            <SectionHead eyebrow={copy.guides.eyebrow} title={copy.guides.title} />
+            <div class="tguides">
+              {guides.map((a) => <ArticleCard article={a} locale={locale} />)}
+            </div>
+            <a class="tall" href={localePath(locale, "blog")}>
+              {c.blog.allPosts}
+              <Icon name="arrow-right" size={16} />
+            </a>
+          </div>
+        </section>
+      )
+    }
+
+    <Cta locale={locale} title={copy.cta.title} lede={copy.cta.lede} href={bot} primary={copy.cta.primary} />
+  </main>
+
+  <Footer locale={locale} />
+</Layout>
+
+<style>
+  /* ---------------------------------------------------------------- hero -- */
+
+  .thero {
+    position: relative;
+    z-index: var(--z-body);
+    padding-block: clamp(20px, 3vw, 40px) clamp(28px, 4vw, 48px);
+  }
+
+  .thero__in {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--sp-4);
+  }
+
+  .thero__title {
+    font-size: var(--t-2xl);
+    max-width: 24ch;
+  }
+
+  .thero__lede {
+    max-width: 62ch;
+  }
+
+  .thero__badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+    list-style: none;
+  }
+
+  .thero__note {
+    display: flex;
+    gap: var(--sp-2);
+    max-width: 62ch;
+    font-size: var(--t-sm);
+    line-height: 1.6;
+    color: var(--text-2);
+  }
+
+  .thero__note :global(svg) {
+    flex: none;
+    margin-top: 3px;
+    color: var(--accent);
+  }
+
+  .thero__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-3);
+    margin-top: var(--sp-2);
+  }
+
+  /* -------------------------------------------------------------- bo'lim -- */
+
+  .tsections {
+    position: relative;
+    z-index: var(--z-body);
+    display: flex;
+    flex-direction: column;
+    gap: clamp(36px, 6vw, 72px);
+  }
+
+  .tsec {
+    scroll-margin-top: 88px;
+  }
+
+  /* -------------------------------------------------------------- jadval -- */
+
+  .tscroll {
+    overflow-x: auto;
+    border-radius: var(--r-md);
+    border: 1px solid var(--line);
+    scrollbar-width: thin;
+    background: var(--surface);
+  }
+
+  .ttable {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--t-sm);
+  }
+
+  .ttable th,
+  .ttable td {
+    padding: 13px clamp(8px, 2vw, 18px);
+    text-align: start;
+    border-bottom: 1px solid var(--line);
+    vertical-align: middle;
+  }
+
+  .ttable thead th {
+    background: rgba(255, 255, 255, 0.04);
+    font-family: var(--font-display);
+    font-size: var(--t-xs);
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    color: var(--text);
+    line-height: 1.35;
+  }
+
+  .ttable tbody th {
+    font-weight: 600;
+    color: var(--text);
+  }
+
+  .ttable tbody tr:last-child th,
+  .ttable tbody tr:last-child td {
+    border-bottom: 0;
+  }
+
+  .ttable tbody tr.is-popular,
+  .ttable tbody tr.is-best {
+    background: rgba(var(--accent-rgb), 0.08);
+  }
+
+  .ttag {
+    display: inline-block;
+    margin-inline-start: 8px;
+    padding: 2px 8px;
+    border-radius: var(--r-pill);
+    background: rgba(var(--accent-rgb), 0.16);
+    border: 1px solid rgba(var(--accent-rgb), 0.34);
+    color: var(--accent-ink);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    vertical-align: middle;
+  }
+
+  /* Telefonda belgi qator ostiga tushadi — aks holda birinchi ustun kengayib,
+     narx ustunlari sig'may qoladi. */
+  @media (max-width: 560px) {
+    .ttag {
+      display: block;
+      width: fit-content;
+      margin: 4px 0 0;
+    }
+  }
+
+  /* 320px kenglikdagi eng tor telefonlar uchun — ruscha sarlavhalar eng uzun */
+  @media (max-width: 340px) {
+    .ttable th,
+    .ttable td {
+      padding-inline: 6px;
+    }
+    .tprice {
+      font-size: 12px;
+    }
+  }
+
+  .tprice {
+    font-family: var(--font-display);
+    font-size: clamp(13px, 3.9vw, 16px);
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+    color: var(--text);
+    transition: color var(--dur-fast) var(--ease);
+  }
+
+  .tprice:hover {
+    color: var(--accent-ink);
+  }
+
+  .tnote {
+    margin-top: var(--sp-4);
+    max-width: var(--maxw-prose);
+    font-size: var(--t-sm);
+    color: var(--text-2);
+    line-height: 1.7;
+  }
+
+  .tnote--pay {
+    display: flex;
+    gap: var(--sp-2);
+    padding: 14px 16px;
+    border-radius: var(--r-md);
+    background: rgba(251, 191, 36, 0.08);
+    border: 1px solid rgba(251, 191, 36, 0.26);
+    color: var(--text);
+  }
+
+  .tnote--pay :global(svg) {
+    flex: none;
+    margin-top: 3px;
+    color: var(--gold);
+  }
+
+  .tchecked {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: var(--sp-3);
+    font-size: var(--t-xs);
+    color: var(--text-3);
+  }
+
+  .tchecked :global(svg) {
+    color: var(--mint);
+  }
+
+  /* -------------------------------------------------------- imkoniyatlar -- */
+
+  .tfeats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(clamp(240px, 30%, 320px), 1fr));
+    gap: clamp(12px, 1.8vw, 18px);
+    list-style: none;
+  }
+
+  .tfeat {
+    padding: clamp(20px, 2.6vw, 26px);
+  }
+
+  .tfeat__ic {
+    display: grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    margin-bottom: var(--sp-3);
+    border-radius: var(--r-md);
+    background: rgba(var(--accent-rgb), 0.14);
+    border: 1px solid rgba(var(--accent-rgb), 0.3);
+    color: var(--accent);
+  }
+
+  .tfeat__t {
+    font-size: var(--t-md);
+    margin-bottom: 8px;
+  }
+
+  .tfeat__d {
+    font-size: var(--t-sm);
+    color: var(--text-2);
+    line-height: 1.66;
+  }
+
+  /* ------------------------------------------------------------ qadamlar -- */
+
+  .tsteps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: var(--sp-3);
+    list-style: none;
+  }
+
+  .tstep {
+    display: flex;
+    gap: var(--sp-3);
+    padding: 18px;
+    border-radius: var(--r-md);
+    background: var(--surface);
+    border: 1px solid var(--line);
+  }
+
+  .tstep__n {
+    display: grid;
+    place-items: center;
+    width: 30px;
+    height: 30px;
+    flex: none;
+    border-radius: 50%;
+    background: rgba(var(--accent-rgb), 0.16);
+    color: var(--accent);
+    font-family: var(--font-display);
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+
+  .tstep__t {
+    font-size: var(--t-base);
+    margin-bottom: 5px;
+  }
+
+  .tstep__d {
+    font-size: var(--t-sm);
+    color: var(--text-2);
+    line-height: 1.6;
+  }
+
+  .tsteps__cta {
+    margin-top: var(--sp-5);
+  }
+
+  /* -------------------------------------------------------------- to'lov -- */
+
+  .tpay {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    gap: var(--sp-3);
+    list-style: none;
+    margin-top: var(--sp-4);
+  }
+
+  .tpay__i {
+    padding: 16px 18px;
+    border-radius: var(--r-md);
+    background: var(--surface);
+    border: 1px solid var(--line);
+  }
+
+  .tpay__t {
+    display: block;
+    margin-bottom: 5px;
+    font-family: var(--font-display);
+    font-size: var(--t-base);
+    color: var(--text);
+  }
+
+  .tpay__d {
+    font-size: var(--t-sm);
+    color: var(--text-2);
+    line-height: 1.65;
+  }
+
+  /* ------------------------------------------------------------- kafolat -- */
+
+  .ttrust {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    gap: var(--sp-3);
+    list-style: none;
+  }
+
+  .ttrust__i {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: clamp(18px, 2.4vw, 24px);
+  }
+
+  .ttrust__v {
+    font-family: var(--font-display);
+    font-size: var(--t-xl);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    background: var(--grad-accent);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .ttrust__t {
+    font-family: var(--font-display);
+    font-size: var(--t-base);
+    color: var(--text);
+  }
+
+  .ttrust__d {
+    font-size: var(--t-sm);
+    color: var(--text-2);
+    line-height: 1.6;
+  }
+
+  .tdisc {
+    margin-top: var(--sp-4);
+    max-width: var(--maxw-prose);
+    font-size: var(--t-xs);
+    color: var(--text-3);
+    line-height: 1.7;
+  }
+
+  /* --------------------------------------------------------- qo'llanmalar -- */
+
+  .tguides {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+    gap: var(--sp-3);
+  }
+
+  .tall {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--sp-2);
+    margin-top: var(--sp-5);
+    padding: 11px 20px;
+    border-radius: var(--r-pill);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    font-size: var(--t-sm);
+    font-weight: 700;
+    transition:
+      border-color var(--dur-fast) var(--ease),
+      transform var(--dur-fast) var(--ease);
+  }
+
+  .tall:hover {
+    transform: translateY(-2px);
+    border-color: var(--line-strong);
+    color: var(--accent);
+  }
+</style>

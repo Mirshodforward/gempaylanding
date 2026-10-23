@@ -76,14 +76,25 @@ const legal = legalNav(locale);
           <li><a class="ftr__link" href={localePath(locale, "ilova")}>{c.footer.app}</a></li>
           <li><a class="ftr__link" href={localePath(locale, "blog")}>{c.footer.blog}</a></li>
           <li>
-            <a class="ftr__link" href={STARSPAYMEE_URL} target="_blank" rel="noopener">
-              {c.footer.ecosystem}
+            <a class="ftr__link" href={DOCS_URL} target="_blank" rel="noopener">
+              {c.footer.api}
               <Icon name="external-link" size={13} />
             </a>
           </li>
+        </ul>
+      </nav>
+
+      {/* Telegram xizmatlari — Stars va Premium pul sahifalari har sahifadan
+          havola oladi; StarsPaymee havolasi ham shu ustunga ko'chdi, chunki
+          u aynan shu mahsulotlarning manbasi. */}
+      <nav class="ftr__col" aria-labelledby="f-tg">
+        <h2 class="ftr__h" id="f-tg">{c.footer.colTelegram}</h2>
+        <ul class="ftr__list">
+          <li><a class="ftr__link" href={localePath(locale, "stars")}>{c.footer.stars}</a></li>
+          <li><a class="ftr__link" href={localePath(locale, "premium")}>{c.footer.premium}</a></li>
           <li>
-            <a class="ftr__link" href={DOCS_URL} target="_blank" rel="noopener">
-              {c.footer.api}
+            <a class="ftr__link" href={STARSPAYMEE_URL} target="_blank" rel="noopener">
+              {c.footer.ecosystem}
               <Icon name="external-link" size={13} />
             </a>
           </li>
@@ -158,7 +169,7 @@ const legal = legalNav(locale);
 
   @media (min-width: 1024px) {
     .ftr__top {
-      grid-template-columns: 1.3fr repeat(4, minmax(0, 1fr));
+      grid-template-columns: 1.3fr repeat(5, minmax(0, 1fr));
     }
 
     .ftr__brand {

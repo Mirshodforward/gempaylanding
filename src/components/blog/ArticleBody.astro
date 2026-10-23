@@ -147,6 +147,26 @@ const MARK = { "+": "yes", "-": "no" } as const;
               </ul>
             </nav>
           );
+
+        case "sources":
+          /* Tashqi manba — `rel="noopener"`, `nofollow` EMAS: rasmiy hujjatga
+             ochiq havola E-E-A-T signali, uni yashirishning ma'nosi yo'q. */
+          return (
+            <section class="body__src" aria-label={c.blog.sourcesTitle}>
+              <strong class="body__links-t">{c.blog.sourcesTitle}</strong>
+              <ul>
+                {b.items.map((s) => (
+                  <li>
+                    <a href={s.href} target="_blank" rel="noopener">
+                      {s.label}
+                      <Icon name="external-link" size={13} />
+                    </a>
+                    {s.note && <span class="body__src-note"> — {s.note}</span>}
+                  </li>
+                ))}
+              </ul>
+            </section>
+          );
       }
     })
   }
@@ -512,5 +532,44 @@ const MARK = { "+": "yes", "-": "no" } as const;
 
   .body__links a:hover {
     color: var(--accent);
+  }
+
+  /* ----------------------------------------------------------- manbalar -- */
+
+  .body__src {
+    padding: 18px;
+    border-radius: var(--r-md);
+    background: var(--surface);
+    border: 1px solid var(--line);
+    font-size: var(--t-sm);
+  }
+
+  .body__src ul {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-inline-start: 1.2em;
+  }
+
+  .body__src li::marker {
+    color: var(--text-3);
+  }
+
+  .body__src a {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--accent-ink);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-color: rgba(var(--accent-rgb), 0.4);
+  }
+
+  .body__src a :global(svg) {
+    opacity: 0.6;
+  }
+
+  .body__src-note {
+    color: var(--text-3);
   }
 </style>
