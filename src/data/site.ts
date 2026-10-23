@@ -4,8 +4,16 @@
  * MUHIM: `SITE_URL` saytga xizmat qilayotgan host bilan AYNAN bir xil bo'lishi
  * shart. Nomuvofiqlik sitemapdagi har bir manzilni redirect'ga aylantiradi va
  * Google ularni «Page with redirect» deb indeksdan chiqaradi.
+ *
+ * NEGA `www`: Vercel'da apex `gempay.uz` → `https://www.gempay.uz` ga 308
+ * bilan yo'naltiriladi (2026-10-22 da tekshirildi: `curl -I https://gempay.uz/`).
+ * Ilgari bu yerda apex turardi, ya'ni canonical, hreflang, sitemap va
+ * robots `Host` — HAMMASI redirect beradigan manzilni ko'rsatardi: Google
+ * sitemapdagi 68 URL'ning birortasini ham to'g'ridan-to'g'ri ocha olmasdi.
+ * Agar kelajakda apex kanonik qilinsa, Vercel'dagi yo'naltirishni teskari
+ * qiling va shu qatorni VA `astro.config.mjs` dagi `site` ni birga o'zgartiring.
  */
-export const SITE_URL = "https://gempay.uz";
+export const SITE_URL = "https://www.gempay.uz";
 
 /** Telegram bot / Mini App. Bot username o'zgarsa — faqat shu qator. */
 export const BOT_USERNAME = "Gempayuz_bot";
@@ -32,6 +40,18 @@ export const DOCS_URL = `${API_URL}/docs`;
  */
 export function botLinkFor(gameCode?: string): string {
   return gameCode ? `${BOT_URL}?start=g_${gameCode}` : BOT_URL;
+}
+
+/**
+ * Telegram xizmatlari (Stars, Premium) sahifalaridan botga o'tish havolasi.
+ *
+ * Mini App ichida bu bo'lim «Telegram» plitkalari ostida turadi (bot
+ * frontend'ida `pages/gampay/GamPay.jsx` → `TG_SERVICES`), ya'ni o'yin
+ * bo'limi bilan bitta ilova. Payload faqat atributsiya uchun — bot uni
+ * `signup_source` sifatida yozib qo'yadi (`A-Za-z0-9_`, 32 belgigacha).
+ */
+export function telegramLinkFor(product: "stars" | "premium"): string {
+  return `${BOT_URL}?start=tg_${product}`;
 }
 
 // ---------------------------------------------------------------- tillar ----

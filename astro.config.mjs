@@ -15,7 +15,9 @@ import { defineConfig } from "astro/config";
  * qo'lda quriladi.
  */
 export default defineConfig({
-  site: "https://gempay.uz",
+  // `www` — Vercel apex'ni shu hostga 308 bilan yo'naltiradi. `src/data/site.ts`
+  // dagi `SITE_URL` bilan AYNAN bir xil bo'lishi shart (izoh o'sha yerda).
+  site: "https://www.gempay.uz",
   output: "static",
 
   // Manzillar oxirida slash YO'Q. `src/data/site.ts` dagi `absoluteUrl()`
