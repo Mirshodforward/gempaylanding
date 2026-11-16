@@ -18,7 +18,7 @@ const article: Article = {
   type: "info",
   datePublished: "2026-11-06",
   dateModified: "2026-11-06",
-  keywords: ["telegram beta yangi funksiyalar oyinchi","telegram beta balans tugmasi","telegram shaxsiy qr kod sozlash","telegram sovga hamyonga otkazish","telegram yangiliklari oyinchilar uchun","jamoadoshga stars sovga qilish","telegram sovga blokcheynga chiqarish","новые функции telegram beta","кнопка баланса в профиле telegram","персональный qr-код telegram","перевод подарков в кошелек без fragment","telegram beta утечки tbetaleak"],
+  keywords: ["telegram beta yangi funksiyalar oyinchi","telegram beta balans tugmasi","telegram shaxsiy qr kod sozlash","telegram sovga hamyonga otkazish","telegram yangiliklari oyinchilar uchun","jamoadoshga stars sovga qilish","telegram sovga blokcheynga chiqarish","новые функции telegram beta","кнопка баланса в профиле telegram","персональный qr-код telegram","перевод подарков в кошелек без fragment","telegram beta утечки"],
   locales: {
     uz: {
       title: "Telegram beta yangi funksiyalari: klanga Stars va Premium berish o‘zgaradimi?",
@@ -34,7 +34,7 @@ const article: Article = {
         },
         {
           t: "p",
-          text: "Yo‘q. So‘nggi paytda kanal postlarida uchta gap aylanyapti: profildagi balans tugmasi, shaxsiy QR-kodni sozlash va sovg‘ani Fragment’siz hamyonga chiqarish. Oxirgisi TBetaLeak va @villageton xabariga tayanadi. Bularning hech biri Telegram’ning o‘z e’loni emas.",
+          text: "Yo‘q. So‘nggi paytda kanal postlarida uchta gap aylanyapti: profildagi balans tugmasi, shaxsiy QR-kodni sozlash va sovg‘ani Fragment’siz hamyonga chiqarish. Oxirgisi faqat beta versiyalarni kuzatuvchi kanallar xabariga tayanadi. Bularning hech biri Telegram’ning o‘z e’loni emas.",
         },
         {
           t: "p",
@@ -76,7 +76,7 @@ const article: Article = {
             ],
             [
               "Sovg‘ani Fragment’siz hamyonga chiqarish",
-              "TBetaLeak, @villageton",
+              "Beta kuzatuvchi kanallar",
               "Tasdiqlanmagan; hujjatda chiqarish Fragment’da import havolasi bilan tugaydi",
               "Faqat kolleksion sovg‘a egalariga tegishli",
             ],
@@ -373,7 +373,7 @@ const article: Article = {
         },
         {
           t: "p",
-          text: "Нет. В каналах, которые следят за бета-версией Telegram, обсуждают три новинки: кнопку баланса в профиле, настройку личного QR-кода и вывод подарка в кошелёк без Fragment. Слух о выводе без Fragment опирается на сообщения TBetaLeak и @villageton. Ни одна из трёх новостей не анонсирована самим Telegram.",
+          text: "Нет. В каналах, которые следят за бета-версией Telegram, обсуждают три новинки: кнопку баланса в профиле, настройку личного QR-кода и вывод подарка в кошелёк без Fragment. Слух о выводе без Fragment опирается только на сообщения каналов, следящих за бета-версиями. Ни одна из трёх новостей не анонсирована самим Telegram.",
         },
         {
           t: "p",
@@ -415,7 +415,7 @@ const article: Article = {
             ],
             [
               "Вывод подарка в кошелёк без Fragment",
-              "TBetaLeak, @villageton",
+              "Каналы о бета-версиях",
               "Не подтверждено; в документации вывод заканчивается ссылкой на импорт во Fragment",
               "Касается только владельцев коллекционных подарков",
             ],
