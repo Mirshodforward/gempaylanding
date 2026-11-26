@@ -87,7 +87,7 @@ npm install
 npm run fonts     # public/fonts/*.woff2 + src/styles/fonts.css
 npm run assets    # favicon, PWA ikona, public/og/*.png
 npm run dev       # http://localhost:4321
-npm run build     # dist/ — Vercel'ga tayyor
+npm run build     # dist/ — saytga chiqadigan papka
 ```
 
 `fonts` va `assets` natijalari git'da yotadi, shuning uchun ularni faqat
@@ -251,6 +251,10 @@ Stars/Premium maqolasi bilan burchak kesishmasligini tekshiring.
 
 ## Analitika
 
+> 2026-11-26 dan sayt Vercel'da emas (o'z serverimizda), shuning uchun quyidagi sanoqchi hozir
+> ma'lumot yig'maydi: server `/_vercel/...` so'roviga bo'sh javob beradi. Boshqa analitika ulanmaguncha
+> tashriflar hisoblanmaydi.
+
 Vercel Web Analytics — [src/components/Analytics.astro](src/components/Analytics.astro),
 `Layout.astro` da barcha sahifalarga qo'shiladi.
 
@@ -282,6 +286,14 @@ sanalardi.
    `noindex` bo'lib qoladi
 
 Katak, futer, sitemap, JSON-LD va OG rasm o'zi yangilanadi.
+
+## Deploy
+
+Sayt o'z serverimizda turadi (2026-11-26 gacha Vercel'da edi): `dist/` ni nginx to'g'ridan-to'g'ri
+diskdan beradi. `main` ga push qilingach server 2 daqiqa ichida o'zi quradi va yangi versiyani yoqadi;
+build yoki tekshiruv o'tmasa saytda oldingi versiya qoladi va Telegram'ga xabar keladi. Qo'lda qayta
+chiqarish: `ssh root@<server> site-build gempay --force`. Server sozlamasi — avtoblogyoz loyihasida,
+`scripts/sites/`. `vercel.json` dagi qoidalar (toza manzillar, kesh, sarlavhalar) nginx'da takrorlangan.
 
 ## Deploy oldidan
 
@@ -323,14 +335,14 @@ lekin ularsiz indekslanish sekin boradi:
 ### Domen
 
 Kanonik host — **`https://www.gempay.uz`** (`astro.config.mjs` va
-`src/data/site.ts`). Vercel apex `gempay.uz` ni `www` ga 308 bilan
-yo'naltiradi (2026-10-22 da tekshirildi). Ilgari kodda apex turardi va
+`src/data/site.ts`). Server (nginx; ilgari Vercel) apex `gempay.uz` ni `www` ga 308 bilan
+yo'naltiradi. Ilgari kodda apex turardi va
 canonical, hreflang, sitemap, robots `Host` — hammasi redirect beradigan
 manzilni ko'rsatardi: Google sitemapdagi birorta URL'ni to'g'ridan-to'g'ri
 ocha olmasdi («Page with redirect»). Ikki qoida:
 
-1. Kod va Vercel bir xil hostni aytishi SHART. Apex'ni kanonik qilmoqchi
-   bo'lsangiz, avval Vercel'dagi yo'naltirishni teskari qiling, keyin ikkala
+1. Kod va server bir xil hostni aytishi SHART. Apex'ni kanonik qilmoqchi
+   bo'lsangiz, avval serverdagi (nginx) yo'naltirishni teskari qiling, keyin ikkala
    faylni birga o'zgartiring.
 2. Search Console'da `www.gempay.uz` mulki bo'lishi va sitemap aynan
    `https://www.gempay.uz/sitemap.xml` sifatida topshirilishi kerak.
