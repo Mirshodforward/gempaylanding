@@ -251,9 +251,9 @@ Stars/Premium maqolasi bilan burchak kesishmasligini tekshiring.
 
 ## Analitika
 
-> 2026-11-26 dan sayt Vercel'da emas (o'z serverimizda), shuning uchun quyidagi sanoqchi hozir
-> ma'lumot yig'maydi: server `/_vercel/...` so'roviga bo'sh javob beradi. Boshqa analitika ulanmaguncha
-> tashriflar hisoblanmaydi.
+> 2026-11-27 dan tashriflarni o'z analitikamiz yig'adi — Tashrif, panel: https://vercel.starstg.uz
+> (to'rttala sayt bitta panelda). Sayt kodi o'zgarmagan: sahifa avvalgidek `/_vercel/insights/script.js` ni
+> so'raydi, server (nginx) shu manzilda Tashrif skriptini beradi. Quyidagi tavsif Vercel davridan qolgan.
 
 Vercel Web Analytics — [src/components/Analytics.astro](src/components/Analytics.astro),
 `Layout.astro` da barcha sahifalarga qo'shiladi.
